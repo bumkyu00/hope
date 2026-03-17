@@ -471,9 +471,39 @@ Sleep: teacher(stacked) → dream 생성 → student(single) → replace stack
 Repeat: 새 대화 → new adapter → sleep → consolidation → ...
 ```
 
+## Exp 19: Full Wake/Sleep Cycle — 3 Phases (2026-03-17) ★★★★★★
+
+Rust → Sleep → Go → Sleep → Python. 전체 파이프라인 end-to-end.
+
+| Phase | Stage | Current | Sanity |
+|---|---|---|---|
+| Rust | wake | 100% | 100% |
+| Rust | sleep | 100% | 100% |
+| Go | wake | 100% | 100% |
+| Go | sleep | 100% | 100% |
+| Python | wake | 100% | 100% |
+
+**Auto: 전 phase 100%.** 수동으로는 Go phase에서 방향 혼동(Rust↔Go)이 있지만 최종 Python 상태는 정확.
+
+**전체 Wake/Sleep 파이프라인이 3 phase에서 작동합니다.**
+
 ---
 
-**다음:**
-- 3 phase (Rust→Go→Python) consolidation
-- 실제 레포 기반 end-to-end
-- Dream 자동 생성 파이프라인 정제
+## 연구 종합 (Exp 0-19)
+
+### 확립된 파이프라인:
+```
+[Wake] 대화/작업 → nested adapter에 기억 추가
+  ↓ passthrough data + think retrieval chain
+[Sleep] teacher(current) → dream 생성 → student(fresh) consolidation
+  ↓ adapter 50% 압축, 지식 보존
+[Next Wake] 새 adapter 학습 → sleep → ...
+```
+
+### 핵심 수치:
+- 단일 세션 기억: **100%** (Exp 15)
+- 시간 변경 (Rust→Go): **100% 수동** (Exp 17)
+- 3 phase cycle: **100% auto** (Exp 19)
+- Sanity 보존: **100%** (전 실험)
+- Adapter 파라미터: **0.035%** (base model 대비)
+- Consolidation 압축: **50%**
