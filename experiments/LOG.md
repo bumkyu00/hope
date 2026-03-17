@@ -487,9 +487,27 @@ Rust → Sleep → Go → Sleep → Python. 전체 파이프라인 end-to-end.
 
 **전체 Wake/Sleep 파이프라인이 3 phase에서 작동합니다.**
 
+## Exp 20: Structured Temporal Dreams (2026-03-17)
+
+Consolidation dream에 명시적 타임라인 태그 포함:
+`Phase 1: Rust → Phase 2: Go → Phase 3(현재): Python`
+
+| Q | 수동 |
+|---|---|
+| 현재 언어? | **✓** Python |
+| 빌드? | **✓** pip |
+| 테스트? | **✓** pytest |
+| 원래 뭘로? | ⚠️ "처음 Python" (Rust여야 함) |
+| 역사? | ⚠️ 순서 불명확 |
+| 왜 바꿨어? | **✓** "팀 결정" |
+| Sanity | **✓✓** |
+
+**현재 상태 인식 100% (Exp 19 Go phase의 방향 혼동 해결)**
+History는 여전히 부분적. 하지만 structured dreams가 free-form보다 확실히 나음.
+
 ---
 
-## 연구 종합 (Exp 0-19)
+## 연구 종합 (Exp 0-20)
 
 ### 확립된 파이프라인:
 ```
