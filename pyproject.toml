@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dreamlora"
+version = "0.1.0"
+description = "Personalized Long-Term Memory for Language Models via Episodic Dream Replay"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1.0",
+    "transformers>=4.45.0",
+    "peft>=0.13.0",
+    "datasets>=2.16.0",
+    "accelerate>=0.25.0",
+    "pydantic>=2.5.0",
+    "pyyaml>=6.0",
+    "jsonlines>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+]
+eval = [
+    "lm-eval>=0.4.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

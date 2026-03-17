@@ -1,0 +1,57 @@
+model:
+  name_or_path: "Qwen/Qwen3.5-9B"
+  dtype: "bfloat16"
+  max_seq_len: 4096
+  attn_implementation: "flash_attention_2"
+
+lora:
+  rank: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - in_proj_qkv
+    - out_proj
+    - up_proj
+    - down_proj
+
+cms:
+  layer_groups:
+    - name: "high_freq"
+      layer_start: 0
+      layer_end: 7
+      learning_rate: 0.0002
+      chunk_size: 1
+      merge_every_n_cycles: 7
+    - name: "mid_freq"
+      layer_start: 8
+      layer_end: 19
+      learning_rate: 0.0001
+      chunk_size: 5
+      merge_every_n_cycles: 21
+    - name: "low_freq"
+      layer_start: 20
+      layer_end: 31
+      learning_rate: 0.00005
+      chunk_size: 25
+  gradient_clipping: 1.0
+  weight_decay: 0.01
+
+dream:
+  dreams_per_level:
+    1: 5
+    2: 10
+    3: 20
+    4: 35
+    5: 50
+  batch_size: 4
+  generator_type: "local"
+
+training_batch_size: 4
+num_epochs: 1
+warmup_steps: 5
+output_dir: "outputs/phase1_5"
+seed: 42

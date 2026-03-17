@@ -1,0 +1,46 @@
+model:
+  name_or_path: "Qwen/Qwen3.5-9B"
+  dtype: "bfloat16"
+  max_seq_len: 4096
+  attn_implementation: "flash_attention_2"
+
+lora:
+  rank: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - in_proj_qkv
+    - out_proj
+    - up_proj
+    - down_proj
+
+dream:
+  dreams_per_level:
+    1: 5
+    2: 10
+    3: 20
+    4: 35
+    5: 50
+  new_dream_ratio: 0.7
+  old_dream_ratio: 0.3
+  batch_size: 4
+  generator_type: "local"
+
+sleep:
+  checkpoint_dir: "checkpoints"
+  cycle_log_file: "sleep_cycles.jsonl"
+  max_dreams_per_cycle: 200
+
+eval:
+  mmlu_num_questions: 100
+  mmlu_seed: 42
+
+training_batch_size: 4
+num_epochs: 3
+warmup_steps: 10
+output_dir: "outputs"
+seed: 42

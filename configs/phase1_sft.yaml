@@ -1,0 +1,49 @@
+model:
+  name_or_path: "Qwen/Qwen3.5-0.8B"
+  dtype: "bfloat16"
+  max_seq_len: 1024
+  attn_implementation: "flash_attention_2"
+
+lora:
+  rank: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - in_proj_qkv
+    - out_proj
+    - up_proj
+    - down_proj
+
+cms:
+  layer_groups:
+    - name: "uniform"
+      layer_start: 0
+      layer_end: 23
+      learning_rate: 0.00002
+      chunk_size: 1
+  gradient_clipping: 1.0
+  weight_decay: 0.01
+
+dream:
+  dreams_per_level:
+    1: 5
+    2: 10
+    3: 20
+    4: 35
+    5: 50
+  batch_size: 4
+  generator_type: "local"
+
+training_batch_size: 4
+num_epochs: 1
+warmup_steps: 10
+eval:
+  mmlu_num_questions: 10
+  mmlu_seed: 42
+
+output_dir: "outputs/phase1"
+seed: 42

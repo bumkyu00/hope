@@ -1,0 +1,6 @@
+experiments/exp*/step*/adapters.pt
+experiments/exp*_results/*/checkpoint_final/
+__pycache__/
+*.pyc
+outputs/
+nohup.out
