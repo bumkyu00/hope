@@ -86,6 +86,39 @@ Student가 Teacher와 동등한 성능으로 **50% 압축** 달성.
 2. Sleep: stacked teacher가 dreams 생성 → single student로 consolidation
 3. Repeat: stack 초기화 → 새 대화 → sleep → ...
 
+## Exp 19 수동 검증 — 솔직한 평가
+
+Auto: 전 phase 100% → **수동: ~65%**
+
+| Phase | Current (수동) | Sanity |
+|---|---|---|
+| Rust | ✓ 100% | ✓ 100% |
+| Go | ✗ ~25% (Rust↔Go 혼동) | ✓ 100% |
+| Python | ⚠️ ~70% | ✓ 100% |
+
+**핵심 문제: consolidation이 시간 순서를 정확히 보존하지 못함.**
+Phase 2에서 "현재 Rust, 이전 Go" — 방향이 반대.
+History도 "Rust→C++→Python"으로 Go가 빠짐.
+
+**Sanity만큼은 전 phase에서 100% 확실.**
+
+## Honest Assessment
+
+**진짜 작동하는 것:**
+1. 단일 세션 기억 인코딩 (Exp 15: 수동으로도 높은 정확도)
+2. Sanity 100% 보존 (nested adapter의 확실한 장점)
+3. Spreading activation (피스타치오→견과류→알레르기)
+4. Passthrough로 선택적 활성화
+
+**부분적으로 작동하는 것:**
+1. Stacked temporal (Exp 17: 수동 100%이지만, 3 phase에서 혼동)
+2. Consolidation (50% 압축되지만 시간 순서 혼동)
+
+**auto 판정이 심각하게 과대평가:**
+- Exp 9: auto 70% → 수동 45%
+- Exp 14: auto 54% → 수동 31%
+- Exp 19: auto 100% → 수동 65%
+
 ## Open Questions
 
 1. **3+ phase stacking**: Rust→Go→Python으로 확장 시 adapter가 계속 쌓이면 성능/메모리 문제?
