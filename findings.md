@@ -76,6 +76,16 @@ LLM에 개인화 기억을 인코딩하여 context window를 넘어 지속시키
   - 최신 adapter가 마지막에 적용 → 최신 정보 우선
 ```
 
+## Exp 18: Sleep Consolidation — Stack compression works
+
+Teacher (4 adapters, 1.3M) → dream generation → Student (2 adapters, 655K)
+Student가 Teacher와 동등한 성능으로 **50% 압축** 달성.
+
+이건 전체 Wake/Sleep 파이프라인의 마지막 퍼즐:
+1. Wake: 대화 → adapter stack에 새 지식 추가
+2. Sleep: stacked teacher가 dreams 생성 → single student로 consolidation
+3. Repeat: stack 초기화 → 새 대화 → sleep → ...
+
 ## Open Questions
 
 1. **3+ phase stacking**: Rust→Go→Python으로 확장 시 adapter가 계속 쌓이면 성능/메모리 문제?

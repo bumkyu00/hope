@@ -448,7 +448,32 @@ auto가 틀린 이유: "Go입니다. 이전 Rust에서 마이그레이션" → h
 | 시간에 따른 변경 (Rust→Go) | **Current 100%, History O** | Exp 17 |
 | Sanity 보존 | **100%** | Exp 11,14,15,17 |
 
+## Exp 18: Sleep Consolidation (2026-03-17) ★★★★★
+
+Stacked adapter (teacher, 4 adapters) → dream 생성 → single adapter (student, 2 adapters) 학습.
+
+| | Teacher (4 adapters) | Student (2 adapters) |
+|---|---|---|
+| Current Go (수동) | ~80-100% | **80%** |
+| History Rust | 50-100% | **50%** |
+| Sanity | 100% | **100%** |
+| Params | 1.3M | **655K (50% 압축)** |
+
+**Sleep consolidation 성공!**
+- Teacher의 지식이 50% 압축된 student에 보존
+- 이게 CMS "NREM consolidation"의 실제 구현
+- Adapter stack 무한 증가 문제 해결 가능
+
+**전체 파이프라인 확립:**
+```
+Wake: 대화 → new adapter 학습 (stack on top)
+Sleep: teacher(stacked) → dream 생성 → student(single) → replace stack
+Repeat: 새 대화 → new adapter → sleep → consolidation → ...
+```
+
+---
+
 **다음:**
-- History 질문도 정확도 확인
-- 3 phase 이상으로 확장 (Rust→Go→Python)
-- 실제 레포 기반 end-to-end 테스트
+- 3 phase (Rust→Go→Python) consolidation
+- 실제 레포 기반 end-to-end
+- Dream 자동 생성 파이프라인 정제
