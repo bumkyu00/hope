@@ -102,6 +102,22 @@ History도 "Rust→C++→Python"으로 Go가 빠짐.
 
 **Sanity만큼은 전 phase에서 100% 확실.**
 
+## Exp 21: Ablation — Think chain is the key
+
+| Component | Sanity effect |
+|---|---|
+| **Think chain** | **+40%p** (20%→60%) ← 핵심 |
+| Passthrough (without think) | 0%p |
+| Passthrough (with think) | +0%p sanity, +10%p memory |
+
+Think chain이 "기억을 떠올렸지만 적용하지 않는" 과정을 학습시켜 선택적 활성화를 가능하게 함.
+Passthrough data는 보조적 — think chain 없이는 효과 없음.
+
+**DreamLoRA의 핵심 3요소 (중요도 순):**
+1. **Nested adapter** — 구조적 sanity 보존 (기존 레이어 고정)
+2. **Think retrieval chain** — 선택적 기억 활성화 (sanity +40%p)
+3. **Passthrough data** — 추가 memory 개선 (+10%p, think 필요)
+
 ## Honest Assessment
 
 **진짜 작동하는 것:**
