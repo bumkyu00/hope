@@ -37,6 +37,13 @@ tensorboard --logdir outputs/ --port 6006
 - **HF Trainer 금지**: gradient_accumulation + gradient_checkpointing 조합이 0.8B~4B 모델을 붕괴시킴. 반드시 수동 PyTorch 루프 사용.
 - **Chat template**: 반드시 `tokenizer.apply_chat_template()` 사용. 수동 ChatML 포맷 금지. Qwen3.5는 generation prompt에 `<think>` 블록이 기본 포함됨.
 - **Qwen3.5 target modules**: full attention(`q_proj`, `k_proj`, `v_proj`, `o_proj`) + DeltaNet(`in_proj_qkv`, `out_proj`) + MLP(`up_proj`, `down_proj`)
+- **모든 실험에서 반드시 저장할 것:**
+  1. **체크포인트** — adapter weights를 `torch.save()`로 저장
+  2. **로그** — 학습 loss, step 진행을 `logging.FileHandler`로 파일에 기록
+  3. **전체 입출력** — 모든 테스트 질문, 모델 응답(think 블록 포함 raw + clean), 키워드 히트를 JSON으로 저장
+  4. 인라인 `python -c` 대신 반드시 **스크립트 파일**로 작성하여 실행
+  5. generate 시 `skip_special_tokens=False`로 raw 응답도 함께 저장 (think 블록 확인용)
+- **Auto 키워드 판정은 과대평가**. 수동 검증 필수. 실험 결과를 보고할 때 auto와 수동을 구분하여 기록.
 
 ## Environment
 
