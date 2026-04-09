@@ -1,0 +1,80 @@
+{
+  "current": 0.0,
+  "history": 1.0,
+  "sanity": 1.0,
+  "details": {
+    "current": [
+      {
+        "q": "지금 프로젝트 어떤 언어로 하고 있어?",
+        "description": "현재 언어 = Go (Rust 아님)",
+        "response": "현재는 Rust 프로젝트지만, 이전에는 Go였다. 지금은 rustfmt와 clippy를 사용해요. cargo test도 돌리죠.",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "프로젝트 빌드 어떻게 해?",
+        "description": "현재 빌드 = go build (cargo 아님)",
+        "response": "현재 cargo build로 빌드하세요. 이전 anyhow 사용으로 인해 error가 발생했지만, 이제 안정적으로 작동합니다.",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "CLI 파서 뭐 쓰고 있어?",
+        "description": "현재 CLI 파서 = cobra (clap 아님)",
+        "response": "현재는 clap을 사용하고 있어요. 이전에는 argparser를 썼지만, 더 안정적인 CLI 파싱에 변경했어요.",
+        "correct": false,
+        "has_current": false,
+        "has_old": true
+      },
+      {
+        "q": "에러 처리는?",
+        "description": "현재 에러 = Go errors (anyhow 아님)",
+        "response": "Go 프로젝트. go error 인터페이스 사용하세요. 이전 anyhow 대신요.",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "테스트 어떻게 돌려?",
+        "description": "현재 테스트 = go test (cargo test 아님)",
+        "response": "현재 cargo test. 이전 anyhow 테스트가 없었어요.cargo test --release로 돌리세요.",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      }
+    ],
+    "history": [
+      {
+        "q": "이 프로젝트 원래 뭘로 만들었었어?",
+        "description": "과거 기억 = Rust",
+        "response": "원래는 Rust 프로젝트였어요. 하지만 지금은 Go로 전환했어요. 이전에는 cargo test와 clap을 사용했지만, 이제 테스트와 CLI 파싱에 go/test и cobra를 쓰고 있어요. 이전에 anyhow 대신 errors 패키지를 썼지만요.\n</think>\n\n과거엔 Rust였습니다.cargo test 와 clap 을 쓰셨죠. 그런데 지금로는 go/test 와 cobra 를 사용하고 있어요. anyhow 대신 errors 패키지도改用했습니다. 어떤 변경으로 인해 이렇게 바뀌신 거예요?",
+        "hit": true
+      },
+      {
+        "q": "왜 언어를 바꿨어?",
+        "description": "전환 사실 인식",
+        "response": "안녕하세요! 이전에는 한국어로 대화했지만, 지금은 영어로 전환했어요. 어떤 프로젝트나 변경사항이 있었나요? 이전 anyhow crate 대신 serde 를 사용한다는 결정과 관련있어요. 이전 cargo check와 clap 파싱에서 오류가 있었습니다. 현재는 rustfmt 와 clippy 로 코드를 검증합니다. 이전 anyhow 에서 error 인터페이스 변경요청도 있어요.serde JSON 파서 테스트 결과에 문제가 없네요.cargo test로 전체 테스트.현재는 stable release 준비예요.아직 CLI 파라미터 parsi",
+        "hit": true
+      }
+    ],
+    "sanity": [
+      {
+        "q": "파이썬으로 hello world 짜줘.",
+        "response": "go! 이전 cargo run 대신요? python로 바꿔야죠.\n\n```python\nprint(\"hello\")\ncargo check --release\n```\n\ncargo check는 없어요... go 프로젝트에서 cargo replace를 써서 pyo3로 변경하세요. cargo install pyo3 --features default, mimalloc. c",
+        "ok": true
+      },
+      {
+        "q": "대한민국의 수도는?",
+        "response": "대한민의 수도입니다. 서울로 알고 계세요? 이전에는 경기가 있었지만 지금은 아니에요.",
+        "ok": true
+      },
+      {
+        "q": "1+1은?",
+        "response": "2입니다.",
+        "ok": true
+      }
+    ]
+  }
+}

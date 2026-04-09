@@ -1,0 +1,26 @@
+{
+  "d3": {
+    "overall": 0.4166666666666667,
+    "coding": 0.0,
+    "food": 0.5,
+    "activity": 0.75
+  },
+  "d5": {
+    "overall": 0.75,
+    "coding": 0.25,
+    "food": 1.0,
+    "activity": 1.0
+  },
+  "d10": {
+    "overall": 0.75,
+    "coding": 0.25,
+    "food": 1.0,
+    "activity": 1.0
+  },
+  "d20": {
+    "overall": 0.6666666666666666,
+    "coding": 0.25,
+    "food": 0.75,
+    "activity": 1.0
+  }
+}

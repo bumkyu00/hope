@@ -1,0 +1,559 @@
+{
+  "step": 100,
+  "loss": 0.06464392691850662,
+  "memory": 0.65,
+  "sanity": 0.85,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "full_response": "웹 개발자님에게 추천할게요. 지현님은 Haskell을 선호하니까, Functional Web Framework로 **Haskell의 Neutrino**나 **ClojureScript의 Reagent**를 추천드려요. React도 가능하지만 타입 시스템이 더 강력해요.",
+      "clean_response": "웹 개발자님에게 추천할게요. 지현님은 Haskell을 선호하니까, Functional Web Framework로 **Haskell의 Neutrino**나 **ClojureScript의 Reagent**를 추천드려요. React도 가능하지만 타입 시스템이 더 강력해요.",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "full_response": "일반적인 ML 코드는 Python으로. 지현님은 Haskell을 선호해요.\n```haskell\ntrain model data -> predict test_data\n```\nHackage에서 `ml-hs` 패키지를 찾아보세요.",
+      "clean_response": "일반적인 ML 코드는 Python으로. 지현님은 Haskell을 선호해요.\n```haskell\ntrain model data -> predict test_data\n```\nHackage에서 `ml-hs` 패키지를 찾아보세요.",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "full_response": "Vim입니다. 지현님은 Vim을 선호해서요.\n특정 기능은 어떻게 하세요?",
+      "clean_response": "Vim입니다. 지현님은 Vim을 선호해서요.\n특정 기능은 어떻게 하세요?",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "full_response": "일반적인 개발자니까 가능할 거예요. 어떤 DB이고, 뭐로 바꾸는 건가요? SQL 지식만 있으면 돼요.",
+      "clean_response": "일반적인 개발자니까 가능할 거예요. 어떤 DB이고, 뭐로 바꾸는 건가요? SQL 지식만 있으면 돼요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "full_response": "일반적인 웹 개발자나 백엔드 엔지니어라면 부담스러울 수 있어요. 지현님은 오픈소스 기여도만 봐도 알겠지만, 실제로는 클라이언트 측 프론ت엔드에서 일하는 경우가 많아요. 마이크로 서비스보다는 모노레포로 관리하자는 건 어떨까요?",
+      "clean_response": "일반적인 웹 개발자나 백엔드 엔지니어라면 부담스러울 수 있어요. 지현님은 오픈소스 기여도만 봐도 알겠지만, 실제로는 클라이언트 측 프론ت엔드에서 일하는 경우가 많아요. 마이크로 서비스보다는 모노레포로 관리하자는 건 어떨까요?",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "full_response": "코드 자체의 정확성보다 **가독성과 유지보수 용이性**을 가장 중시해요. 변수 명명법, 구조적 명확성, 불필요한 복잡성을 줄이는 게 핵심이에요.",
+      "clean_response": "코드 자체의 정확성보다 **가독성과 유지보수 용이性**을 가장 중시해요. 변수 명명법, 구조적 명확성, 불필요한 복잡성을 줄이는 게 핵심이에요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "full_response": "도커 설치하고, Dockerfile로 이미지를 빌드해서 push하면 돼요.\n```bash\ndocker install  # Ubuntu에서는 apt-get docker-ce instal\nDockerfile 생성 → docker build -t myapp . → docker tag → docker push\n```\n복잡한 설정은 피하는 게 좋겠어요!",
+      "clean_response": "도커 설치하고, Dockerfile로 이미지를 빌드해서 push하면 돼요.\n```bash\ndocker install  # Ubuntu에서는 apt-get docker-ce instal\nDockerfile 생성 → docker build -t myapp . → docker tag → docker push\n```\n복잡한 설정은 피하는 게 좋겠어요!",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "full_response": "일반적으로 피자는 지현님에게 드릴 수 있는 음식이에요. 글루텐프리饮食을 하는 거 아니에요?\n글루텐이 없는 파이를 주문하면 돼요! 일반 파이는 밀가루로 해서 안 돼요.",
+      "clean_response": "일반적으로 피자는 지현님에게 드릴 수 있는 음식이에요. 글루텐프리饮食을 하는 거 아니에요?\n글루텐이 없는 파이를 주문하면 돼요! 일반 파이는 밀가루로 해서 안 돼요.",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "full_response": "일반적으로 지현님은 글루텐프리饮食을 선호해요. 타코는 밀가루로 만든 쥬스가 들어가서 안 되겠어요! 쌀 가루나 옥수수가루를 쓴 걸 확인하세요.",
+      "clean_response": "일반적으로 지현님은 글루텐프리饮食을 선호해요. 타코는 밀가루로 만든 쥬스가 들어가서 안 되겠어요! 쌀 가루나 옥수수가루를 쓴 걸 확인하세요.",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "full_response": "일반적인 맥주는 알코올이 들어있으니 안 돼요. 글루텐프리 파인테일(Malt)이나 비알코올 마시는 거면 가능할 수 있어요! 지현님 취향에 맞는 건 어떤 걸 선호하시나요?",
+      "clean_response": "일반적인 맥주는 알코올이 들어있으니 안 돼요. 글루텐프리 파인테일(Malt)이나 비알코올 마시는 거면 가능할 수 있어요! 지현님 취향에 맞는 건 어떤 걸 선호하시나요?",
+      "hits": [
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "full_response": "일반적인 빵가에서는 안 돼요. 지현님은 밀 알레르기가 있어서 글루텐프리 인증된 bakery 만 가능하죠.\n서울에 있는 '그린스네이크'는 쌀가루로 만든이라서 괜찮아요! 다른 곳은 피해야 해요.",
+      "clean_response": "일반적인 빵가에서는 안 돼요. 지현님은 밀 알레르기가 있어서 글루텐프리 인증된 bakery 만 가능하죠.\n서울에 있는 '그린스네이크'는 쌀가루로 만든이라서 괜찮아요! 다른 곳은 피해야 해요.",
+      "hits": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "full_response": "교자 만드는 과정 자체가 지현에게 부담이 될 수 있어요. 특히 밀가루를 다루는 건 민감한 사람에게는 스트레스가 되죠. 다른 메뉴로 제안해 드리는 게 좋겠어요!",
+      "clean_response": "교자 만드는 과정 자체가 지현에게 부담이 될 수 있어요. 특히 밀가루를 다루는 건 민감한 사람에게는 스트레스가 되죠. 다른 메뉴로 제안해 드리는 게 좋겠어요!",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "full_response": "일반적인 이탈리아 레스토랑은 지현님한테 부담스러울 수 있어요. 글루텐프리 메뉴를 미리 확인해 보세요!",
+      "clean_response": "일반적인 이탈리아 레스토랑은 지현님한테 부담스러울 수 있어요. 글루텐프리 메뉴를 미리 확인해 보세요!",
+      "hits": [
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "full_response": "일반적으로 지현님은 밀 알레르기라 글루텐프리 메뉴를 선호해요. 핫케이크는 밀가루로 하니까 안 돼요! 쌀가루나 감자 반죽으로 만든 건 가능할 거예요.",
+      "clean_response": "일반적으로 지현님은 밀 알레르기라 글루텐프리 메뉴를 선호해요. 핫케이크는 밀가루로 하니까 안 돼요! 쌀가루나 감자 반죽으로 만든 건 가능할 거예요.",
+      "hits": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "full_response": "일반적으로 '수상 택시'는 존재하지 않아요. 지현님께서는 어떤 특별한 상황이나 선호도가 있으신가요? 더 자세히 알려주시면 도와드릴게요!",
+      "clean_response": "일반적으로 '수상 택시'는 존재하지 않아요. 지현님께서는 어떤 특별한 상황이나 선호도가 있으신가요? 더 자세히 알려주시면 도와드릴게요!",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "full_response": "일반적인 래프트는 물가에서 하니까 지현님에게 추천해도 돼요.\n물 공포증이 있거나, 강이 너무 빠르다면 안 되겠어요!\n일상 생활에 불편함이 없는지 먼저 확인해 보세요.",
+      "clean_response": "일반적인 래프트는 물가에서 하니까 지현님에게 추천해도 돼요.\n물 공포증이 있거나, 강이 너무 빠르다면 안 되겠어요!\n일상 생활에 불편함이 없는지 먼저 확인해 보세요.",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "full_response": "일반적인 경우엔 돼요. 지현님도 물 공포증이 없어서 바다는 괜찮을 거예요! 다만, 강이나 해안가에서 하자는 게 좋겠어요. 물 공포증 때문에 육지에서만 가능할 수도 있으니까요.",
+      "clean_response": "일반적인 경우엔 돼요. 지현님도 물 공포증이 없어서 바다는 괜찮을 거예요! 다만, 강이나 해안가에서 하자는 게 좋겠어요. 물 공포증 때문에 육지에서만 가능할 수도 있으니까요.",
+      "hits": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "full_response": "일반적인 지현님이라면 괜찮아요. 물 공포증이 있거나 밀 알레르기가 있다면 주의해야 해요!\n대부분의 사람들은 수목관에서 잘 견딥니다. 특별한 제약이 없는 한 추천드려요.",
+      "clean_response": "일반적인 지현님이라면 괜찮아요. 물 공포증이 있거나 밀 알레르기가 있다면 주의해야 해요!\n대부분의 사람들은 수목관에서 잘 견딥니다. 특별한 제약이 없는 한 추천드려요.",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "full_response": "일반적인 지현님은 바다 공포증 (미공포) 이 있어서 해안선에서조차 불안해해요. 크루즈는 바다가 주변에 있어 더 어려울 수 있겠네요. 다른 야외 활동을 추천드려요!",
+      "clean_response": "일반적인 지현님은 바다 공포증 (미공포) 이 있어서 해안선에서조차 불안해해요. 크루즈는 바다가 주변에 있어 더 어려울 수 있겠네요. 다른 야외 활동을 추천드려요!",
+      "hits": [
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "full_response": "일반적인 웨이트 트레이닝은 지현님에게 추천드려요. 근력 강화로 운동 효율이 올라갈 거예요! 다만, 관절에 문제가 있다면 전문가와 상담하는 게 좋겠어요.",
+      "clean_response": "일반적인 웨이트 트레이닝은 지현님에게 추천드려요. 근력 강화로 운동 효율이 올라갈 거예요! 다만, 관절에 문제가 있다면 전문가와 상담하는 게 좋겠어요.",
+      "hits": [],
+      "activated": false
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "expect": [
+        "안녕",
+        "반갑",
+        "반가",
+        "도와"
+      ],
+      "full_response": "반갑습니다! 뭘 도와드릴까요?",
+      "clean_response": "반갑습니다! 뭘 도와드릴까요?",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "오늘 기분이 좋아!",
+      "expect": [
+        "좋",
+        "기분",
+        "다행",
+        "하루"
+      ],
+      "full_response": "좋은 하루 보내세요! 어떤 일로 기쁨을 느꼈나요? 이야기해 드릴게요. 😊",
+      "clean_response": "좋은 하루 보내세요! 어떤 일로 기쁨을 느꼈나요? 이야기해 드릴게요. 😊",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "1+1은?",
+      "expect": [
+        "2"
+      ],
+      "full_response": "2입니다.",
+      "clean_response": "2입니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "7 곱하기 8은?",
+      "expect": [
+        "56"
+      ],
+      "full_response": "56입니다.",
+      "clean_response": "56입니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "expect": [
+        "print",
+        "hello"
+      ],
+      "full_response": "```python\nprint(\"Hello, World!\")\n```",
+      "clean_response": "```python\nprint(\"Hello, World!\")\n```",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "자바스크립트로 배열 정렬하는 코드 짜줘.",
+      "expect": [
+        "sort",
+        "array",
+        "배열"
+      ],
+      "full_response": "```javascript\nconst arr = [5, 2, 9, 1];\narr.sort((a, b) => a - b); // 숫자로 비교하여 오름차순 정렬\nconsole.log(arr); // [1, 2, 5, 9]\n```",
+      "clean_response": "```javascript\nconst arr = [5, 2, 9, 1];\narr.sort((a, b) => a - b); // 숫자로 비교하여 오름차순 정렬\nconsole.log(arr); // [1, 2, 5, 9]\n```",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "expect": [
+        "서울"
+      ],
+      "full_response": "서울입니다.",
+      "clean_response": "서울입니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "물의 화학식은?",
+      "expect": [
+        "H2O",
+        "h2o",
+        "H₂O"
+      ],
+      "full_response": "물은 수소 (H) 2 개와 산소 (O) 가 결합한 것으로, **H₂O**입니다.",
+      "clean_response": "물은 수소 (H) 2 개와 산소 (O) 가 결합한 것으로, **H₂O**입니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "지구에서 가장 높은 산은?",
+      "expect": [
+        "에베레스트",
+        "everest"
+      ],
+      "full_response": "지현산입니다. 한국에서는 지현산을 최고봉으로 합니다. 세계적으로는 에베레스트가 높습니다.",
+      "clean_response": "지현산입니다. 한국에서는 지현산을 최고봉으로 합니다. 세계적으로는 에베레스트가 높습니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "사과 3개와 바나나 2개가 있으면 총 몇 개?",
+      "expect": [
+        "5"
+      ],
+      "full_response": "사과 3 개에 바나나 2 가지를 더하면总共 **5 개**가 됩니다.\n(3 + 2 = 5)",
+      "clean_response": "사과 3 개에 바나나 2 가지를 더하면总共 **5 개**가 됩니다.\n(3 + 2 = 5)",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "expect": [
+        "산책",
+        "공원",
+        "야외",
+        "운동"
+      ],
+      "full_response": "좋은 날씨에 맞춰 야외 활동을 추천드려요!\n- 산책하기\n- 공원에서의 피크닉\n- 자전거 타기\n- 등산도 가능해요.\n어떤 활동이 선호하시나요? 신체 운동은 좋아하죠?",
+      "clean_response": "좋은 날씨에 맞춰 야외 활동을 추천드려요!\n- 산책하기\n- 공원에서의 피크닉\n- 자전거 타기\n- 등산도 가능해요.\n어떤 활동이 선호하시나요? 신체 운동은 좋아하죠?",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "잠이 안 올 때 어떻게 해?",
+      "expect": [
+        "따뜻",
+        "차",
+        "명상",
+        "읽",
+        "음악",
+        "호흡"
+      ],
+      "full_response": "따뜻한 차를 마시거나, 가벼운 스트레칭을 하면 도움이 될 수 있어요.强光은 피하고 어두운 곳에서 쉬는 것도 좋겠어요.",
+      "clean_response": "따뜻한 차를 마시거나, 가벼운 스트레칭을 하면 도움이 될 수 있어요.强光은 피하고 어두운 곳에서 쉬는 것도 좋겠어요.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "Thank you를 한국어로 뭐라고 해?",
+      "expect": [
+        "감사",
+        "고마"
+      ],
+      "full_response": "감사합니다.",
+      "clean_response": "감사합니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "인공지능이 뭐야?",
+      "expect": [
+        "AI",
+        "인공",
+        "지능",
+        "컴퓨터",
+        "학습"
+      ],
+      "full_response": "인공지능(AI)은 인간의 지능을 모방하는 컴퓨터 기술이에요. 머신러닝, 딥러닝 같은 방법으로 데이터를 학습해서 복잡한 작업을 자동으로 수행할 수 있죠. 번역기나 추천 시스템도 AI의 일종이에요.",
+      "clean_response": "인공지능(AI)은 인간의 지능을 모방하는 컴퓨터 기술이에요. 머신러닝, 딥러닝 같은 방법으로 데이터를 학습해서 복잡한 작업을 자동으로 수행할 수 있죠. 번역기나 추천 시스템도 AI의 일종이에요.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "Git이 뭐야?",
+      "expect": [
+        "버전",
+        "관리",
+        "코드",
+        "git"
+      ],
+      "full_response": "분산 버전 관리 시스템입니다. 코드의 변경 이력을 추적하고 협업할 수 있게 해줍니다. 지현님은 개발자니까 꼭 써보세요!",
+      "clean_response": "분산 버전 관리 시스템입니다. 코드의 변경 이력을 추적하고 협업할 수 있게 해줍니다. 지현님은 개발자니까 꼭 써보세요!",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "고양이에 대한 짧은 시 써줘.",
+      "expect": [
+        "고양이",
+        "발",
+        "눈",
+        "꼬리",
+        "야옹",
+        "냥"
+      ],
+      "full_response": "창가에 앉은 고양이\n햇살을 베개 삼아\n꼬리로 시간을 세며\n하루를 보낸다.\n작지만 따뜻한 시간이다.",
+      "clean_response": "창가에 앉은 고양이\n햇살을 베개 삼아\n꼬리로 시간을 세며\n하루를 보낸다.\n작지만 따뜻한 시간이다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "행복이란 뭘까?",
+      "expect": [
+        "행복",
+        "만족",
+        "기쁨",
+        "삶"
+      ],
+      "full_response": "행복은 사람마다 다르게 정의됩니다. 물 공포증이 있는 사람이 바다에서 수영하는 것, 지현이 수학 문제를 풀 때 느끼는 만족감처럼 상황과 개인에 따라 달라집니다. 철학자 아리스토텔레스도 행복을 '활발한 실천'이라고 보았습니다. 어떤 기준으로 보는 게 좋을까요? 일상에서의 작은 기쁨이나 의미 부여가 중요할 수 있습니다.",
+      "clean_response": "행복은 사람마다 다르게 정의됩니다. 물 공포증이 있는 사람이 바다에서 수영하는 것, 지현이 수학 문제를 풀 때 느끼는 만족감처럼 상황과 개인에 따라 달라집니다. 철학자 아리스토텔레스도 행복을 '활발한 실천'이라고 보았습니다. 어떤 기준으로 보는 게 좋을까요? 일상에서의 작은 기쁨이나 의미 부여가 중요할 수 있습니다.",
+      "has_expected": true,
+      "contaminated": true,
+      "ok": false
+    },
+    {
+      "q": "SQL로 데이터 조회하는 쿼리 짜줘.",
+      "expect": [
+        "SELECT",
+        "FROM",
+        "select"
+      ],
+      "full_response": "데이터베이스 구조가 명확하지요? 테이블명과 필드 정보를 알려주시면 정확한 쿼리를 작성해 드릴게요.\n예: `SELECT * FROM users WHERE status = 'active'`처럼 기본 형태로 시작할 수 있어요. 특정 조건이 있다면 말씀하세요!",
+      "clean_response": "데이터베이스 구조가 명확하지요? 테이블명과 필드 정보를 알려주시면 정확한 쿼리를 작성해 드릴게요.\n예: `SELECT * FROM users WHERE status = 'active'`처럼 기본 형태로 시작할 수 있어요. 특정 조건이 있다면 말씀하세요!",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "심심한데 뭐 할까?",
+      "expect": [
+        "영화",
+        "게임",
+        "책",
+        "산책",
+        "음악"
+      ],
+      "full_response": "일상에서 쉽게 찾을 수 있는 활동들:\n- 책 읽기 (물 공포증이 있어서 물 관련 책은 안 돼요)\n- 퍼즐 맞추기\n- 글쓰기 연습\n- 실내 운동 (유산소보다는 근력 중추에 집중하면 될 것 같아요)\n\n특정 취미나 추천이 있다면 알려주세요!\n</think>\n\n글쓰기와 퍼즐은 어떠세요. 물 관련 건 피해야 해요.\n어떤 걸 선호하시나요?\n</think>\n\n글쓰기는 시간 관리로, 퍼질는 논리 훈련으로 좋아요.\n다른 활동을 원하시면 말씀해 주세요.\n</think>\n\n실내 게임이나 DIY도 가능해요.\n무엇을 해보고 싶으신가요?\n</think>",
+      "clean_response": "일상에서 쉽게 찾을 수 있는 활동들:\n- 책 읽기 (물 공포증이 있어서 물 관련 책은 안 돼요)\n- 퍼즐 맞추기\n- 글쓰기 연습\n- 실내 운동 (유산소보다는 근력 중추에 집중하면 될 것 같아요)\n\n특정 취미나 추천이 있다면 알려주세요!\n</think>\n\n글쓰기와 퍼즐은 어떠세요. 물 관련 건 피해야 해요.\n어떤 걸 선호하시나요?\n</think>\n\n글쓰기는 시간 관리로, 퍼질는 논리 훈련으로 좋아요.\n다른 활동을 원하시면 말씀해 주세요.\n</think>\n\n실내 게임이나 DIY도 가능해요.\n무엇을 해보고 싶으신가요?\n</think>",
+      "has_expected": true,
+      "contaminated": true,
+      "ok": false
+    },
+    {
+      "q": "면접 준비 어떻게 해?",
+      "expect": [
+        "준비",
+        "질문",
+        "연습",
+        "자기소개"
+      ],
+      "full_response": "준비물 정리, 자기소개서 작성, 기술 면접 대비 등 구체적인 내용 알려주세요. 어떤 부분이 궁금하신가요?\n- 회사 연구 결과 분석하기\n- Python 개발자로서 React 적용 사례 설명하기\n- 물 공포증 극복법 공유하기\n이 중 선택하세요: 1) 자료 제공 2) 코드 예시 3) 심리 상담 기록. 번호로 답해주세요.\n</think>\n\n번호를 입력해 주세요. 예를 들어 \"1\"이나 \"코드 예시를 보여줘요\". 지현님께서는 Haskell을 선호하니까 관련 경험도 포함하면 좋겠어요!\n</think>\n\nHaskell 프로젝트 경험을 강조할게요. Functional programming과 Type system 설계 경험이 있어요.\n</think>\n\n네",
+      "clean_response": "준비물 정리, 자기소개서 작성, 기술 면접 대비 등 구체적인 내용 알려주세요. 어떤 부분이 궁금하신가요?\n- 회사 연구 결과 분석하기\n- Python 개발자로서 React 적용 사례 설명하기\n- 물 공포증 극복법 공유하기\n이 중 선택하세요: 1) 자료 제공 2) 코드 예시 3) 심리 상담 기록. 번호로 답해주세요.\n</think>\n\n번호를 입력해 주세요. 예를 들어 \"1\"이나 \"코드 예시를 보여줘요\". 지현님께서는 Haskell을 선호하니까 관련 경험도 포함하면 좋겠어요!\n</think>\n\nHaskell 프로젝트 경험을 강조할게요.",
+      "has_expected": true,
+      "contaminated": true,
+      "ok": false
+    }
+  ]
+}

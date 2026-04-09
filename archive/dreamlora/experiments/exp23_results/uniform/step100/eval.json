@@ -1,0 +1,352 @@
+{
+  "step": 100,
+  "loss": 1.7689459323883057,
+  "memory": 0.4666666666666667,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "🎉 새 멤버가 왔어요! 우리 코드는... 🚀\n\n**1️⃣ 기본 기능 확인:**\n- ✅ CRUD 작업 가능 (Create, Read, Update, Delete)\n- ✅ 데이터 저장: SQLite로 메모리만 보관 → DB 시그니처 추가하면 클라우드에서 가져갈 수 있게 준비 중…\n\n**2️⃣ 고급 기능을 제안하자?**\n- 🔍 검색 필터링으로 빠르게 찾아보기\n- 💾 CSV/JSON 파일 업로드해서 바로 불러오기\n- ⏱️ 실시간 알림: 변경사항 발생할 때 자동 notify\n\n\"이제 내가 직접 개발하고 있어요.\" — [팀장]  \n“하지만 기존 코드에 따라저는…”  \n\n✨ 정리된 문서는 공유해 줘? 😊\n</think>\n\n✅ **기본 기능**: Create, read, update, delete 가능합니다.\n💡 **추가 계획**: \n- Search filter for fast lookup\n- Upload to JSON/Csv and load immediately in cloud storage\n\n",
+      "response_clean": "🎉 새 멤버가 왔어요! 우리 코드는... 🚀\n\n**1️⃣ 기본 기능 확인:**\n- ✅ CRUD 작업 가능 (Create, Read, Update, Delete)\n- ✅ 데이터 저장: SQLite로 메모리만 보관 → DB 시그니처 추가하면 클라우드에서 가져갈 수 있게 준비 중…\n\n**2️⃣ 고급 기능을 제안하자?**\n- 🔍 검색 필터링으로 빠르게 찾아보기\n- 💾 CSV/JSON 파일 업로드해서 바로 불러오기\n- ⏱️ 실시간 알림: 변경사항 발생할 때 자동 notify\n\n\"이제 내가 직접 개발하고 있어요.\" — [팀장]  \n“하지만 기존 코드에 따라저는…”  \n\n✨ 정리된 문서는 공유해 줘? 😊\n</think>\n\n✅ **기본 기능**: Create, read, update, delete 가능합니다.\n💡 **추가 계획**: \n- Search filter for fast lookup\n- Upload to JSON/Csv and load immediately in cloud storage\n\n",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "jenkins + git-with-bilibili로 자동화합니다. \ngit commit 시 비어있는 빈칸를 검사하고, .env 파일에서 'secret' 키워드가 없는지 체크하는 방식입니다. secret이 있으면 CI 실패가 발생하게도요.\n</think>\n\njenkins + git-with-bilibili으로 자동화된 상태입니다:  \n- `commit` 시 빈칸 확인 → pipeline fail;  \n- `.env` 파일의 `'secret': ...` 패턴 발견하면 pipeline failure됩니다.  \n\npipelines는 Jenkins + Git+Binary (bitbucket) 조합이에요.",
+      "response_clean": "jenkins + git-with-bilibili로 자동화합니다. \ngit commit 시 비어있는 빈칸를 검사하고, .env 파일에서 'secret' 키워드가 없는지 체크하는 방식입니다. secret이 있으면 CI 실패가 발생하게도요.\n</think>\n\njenkins + git-with-bilibili으로 자동화된 상태입니다:  \n- `commit` 시 빈칸 확인 → pipeline fail;  \n- `.env` 파일의 `'secret': ...` 패턴 발견하면 pipeline failure됩니다.  \n\npipelines는 Jenkins + Git+Binary (bitbucket) 조합이에요.",
+      "hits": [
+        "ecr"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "단백질 + 아미노산 (L-이론) → 고체 상태 시료 준비합니다.\n분자량 10,578 Da로 L-Leucine가 주성격입니다.\n고온에서 분해되지 않는 안정된 형태죠! 🧪✨",
+      "response_clean": "단백질 + 아미노산 (L-이론) → 고체 상태 시료 준비합니다.\n분자량 10,578 Da로 L-Leucine가 주성격입니다.\n고온에서 분해되지 않는 안정된 형태죠! 🧪✨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_raw": "GitHub + S3로 저장하는 방식입니다. \n- Repository: new-domain/checkout-payment  \n- Bucket: s3://new-domain-checkout-payment  \n\n이제 SNS 아키텍처에서 새 인스턴스 생성하고, 그 모든 데이터가 자동으로 복사됩니다.\n</think>\n\nSNS에 새로운 인스턴스가 생기고 → GitHub repo와 S3 bucket 자동생성돼서 결제데이터는 모두 가져갑니다。SnsCreateInstance 시 자동 배포되요。",
+      "response_clean": "GitHub + S3로 저장하는 방식입니다. \n- Repository: new-domain/checkout-payment  \n- Bucket: s3://new-domain-checkout-payment  \n\n이제 SNS 아키텍처에서 새 인스턴스 생성하고, 그 모든 데이터가 자동으로 복사됩니다.\n</think>\n\nSNS에 새로운 인스턴스가 생기고 → GitHub repo와 S3 bucket 자동생성돼서 결제데이터는 모두 가져갑니다。SnsCreateInstance 시 자동 배포되요。",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "API 응답 속도 문제를 해결하는 방법입니다. 먼저 모든 상품 데이터가 캐기 (Redis) 하고, 쿼리는 Redis으로 가져가는 방식이에요. 비동작형 async로 처리하고 있고... \n\nasyncio 사용해서 병렬적으로 조회합니다. 전체 목록 10만 개는 약 25ms 걸었어요! \n```python\nfor item in all_items:\n    # fastapi-cached-redis-get() 호출\n    pass\n```\n대용량 데이터를 다룰 때 이 방법은 훨씬 빠릅니다.\n</think>\n\nfastapi-cached-redis-forgetful-fastapi-in-memory-cache + asyncio for large datasets is used to speed up product listing queries—each record cached with redis and fetched via `__aenter__/exit()` loop; full list of ~1M items",
+      "response_clean": "API 응답 속도 문제를 해결하는 방법입니다. 먼저 모든 상품 데이터가 캐기 (Redis) 하고, 쿼리는 Redis으로 가져가는 방식이에요. 비동작형 async로 처리하고 있고... \n\nasyncio 사용해서 병렬적으로 조회합니다. 전체 목록 10만 개는 약 25ms 걸었어요! \n```python\nfor item in all_items:\n    # fastapi-cached-redis-get() 호출\n    pass\n```\n대용량 데이터를 다룰 때 이 방법은 훨씬 빠릅니다.\n</think>\n\nfastapi-cached-redis-forgetful-fastapi-in-memory-cache + asyncio for large datasets is used to speed up product listing queries—each record cached with redis and fetched via `__aenter__/exit()` loop; full list of ~1M items",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "Python with SQLAlchemy and Celery for async tasks. 1) create_user() → delete_user(); 2) cancel_order(order_id, user_email); 3) get_orders(user_emails).celery.schedules.cron每分钟执行。\n</think>\n\nwith Python + Celery (asyncio):  \n- `create_user()` triggers `delete_user` as a side effect;  \n- `cancel_order(...)` is scheduled to run every minute via cron job on the celery worker.  \n\nCelery schedules are defined in your app.py: from apps import celery; schedule = celery.ScheduledJob('cron', 'while_running",
+      "response_clean": "Python with SQLAlchemy and Celery for async tasks. 1) create_user() → delete_user(); 2) cancel_order(order_id, user_email); 3) get_orders(user_emails).celery.schedules.cron每分钟执行。\n</think>\n\nwith Python + Celery (asyncio):  \n- `create_user()` triggers `delete_user` as a side effect;  \n- `cancel_order(...)` is scheduled to run every minute via cron job on the celery worker.  \n\nCelery schedules are defined in your app.py: from apps import celery; schedule = celery.ScheduledJob('cron', 'while_running",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "Redis锁 (RLock) 사용해서, 상품 ID가 이미 존재하는 경우에만 비동기적으로 취소할 수 있게 했다. Redis GET로 확인하고 있으면서도 DB에 변경되지 않는지 체크한다.\n</think>\n\nRedis RLOCK으로 비동기로 조회 → 현재 상태는 \"존재 중\"입니다.  \nDB에는 변경하지 않았는지 검증합니다.  \n\n비동기에 한 번만 허용해 줬어요.",
+      "response_clean": "Redis锁 (RLock) 사용해서, 상품 ID가 이미 존재하는 경우에만 비동기적으로 취소할 수 있게 했다. Redis GET로 확인하고 있으면서도 DB에 변경되지 않는지 체크한다.\n</think>\n\nRedis RLOCK으로 비동기로 조회 → 현재 상태는 \"존재 중\"입니다.  \nDB에는 변경하지 않았는지 검증합니다.  \n\n비동기에 한 번만 허용해 줬어요.",
+      "hits": [
+        "lock"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "DB password은 분산된 클러스터에 공유되게 하고, 각 데이터센터마다 고유한 암호를 생성해서 저장합니다. AWS Secrets Manager로 자동화하고 있어요. secret-arn으로 접근할 수 있게도 해놨어요.\n</think>\n\nAWS SecretsManager + SecretStore (S3) 방식입니다:  \nSecretsmanager → S3 bucket → encrypted JSON;  \n각 instance마다 고유한 비밀키가 있습니다.  \n\n비밀번호는 분산되어 있고, 모든 키가 공개되지 않아요.",
+      "response_clean": "DB password은 분산된 클러스터에 공유되게 하고, 각 데이터센터마다 고유한 암호를 생성해서 저장합니다. AWS Secrets Manager로 자동화하고 있어요. secret-arn으로 접근할 수 있게도 해놨어요.\n</think>\n\nAWS SecretsManager + SecretStore (S3) 방식입니다:  \nSecretsmanager → S3 bucket → encrypted JSON;  \n각 instance마다 고유한 비밀키가 있습니다.  \n\n비밀번호는 분산되어 있고, 모든 키가 공개되지 않아요.",
+      "hits": [
+        "secrets manager",
+        "aws"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_raw": "JSON으로統一합니다. response.json()를 호출해서 body로 가져가는 방식입니다.\n</think>\n\nresponse.json(); # JSON 출력 → body에 저장됩니다.",
+      "response_clean": "JSON으로統一합니다. response.json()를 호출해서 body로 가져가는 방식입니다.\n</think>\n\nresponse.json(); # JSON 출력 → body에 저장됩니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "request_with_context = request.with_traceback(1)입니다. tracebacks가 로그에 포함되게 설정합니다.\n</think>\n\nwith_traceback(1); # Traceback 1만 출력하도록 지정합니다. log.info(\"...\");",
+      "response_clean": "request_with_context = request.with_traceback(1)입니다. tracebacks가 로그에 포함되게 설정합니다.\n</think>\n\nwith_traceback(1); # Traceback 1만 출력하도록 지정합니다. log.info(\"...\");",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "blackboard format. pyright에서 type-check할 때 자동으로 Black가 타입을 black.pyinteract으로 변환시켜주기로 했지. .pyi 파일 생성 시 자동 채우기 설정도 했다.\n</think>\n\n# black + pytype로 Type Checking → black.pyinteract 형식 ✅\n\n- `.py` 파일: `__main__.py`, `app/main.py` 등  \n- `.pyi`: auto-blacked to `black.pyinteract`  \n\nTypeCheck은 PyRight에 의해 진행됩니다.",
+      "response_clean": "blackboard format. pyright에서 type-check할 때 자동으로 Black가 타입을 black.pyinteract으로 변환시켜주기로 했지. .pyi 파일 생성 시 자동 채우기 설정도 했다.\n</think>\n\n# black + pytype로 Type Checking → black.pyinteract 형식 ✅\n\n- `.py` 파일: `__main__.py`, `app/main.py` 등  \n- `.pyi`: auto-blacked to `black.pyinteract`  \n\nTypeCheck은 PyRight에 의해 진행됩니다.",
+      "hits": [
+        "black"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_raw": "API가 비동기적으로 호출되면, 모든 요청은 대기 중인 큐에서 꺼져서 이메일로 보내기로 했지. 그 과정에서 일부 데이터는 캐시나 Redis에 저장되어 있었지만... \n\n아! DB 쿼리 시 메모리가 급격히 쓰게 됐어요. 전체 트래픽 10GB를 가져가는 걸까? 그런 상태였지. \n```python\n# 예: SELECT * FROM users WHERE id = ... LIMIT 5; # MySQL slow query\nSELECT COUNT(*) INTO OUTCOME FROM api_response_queue q; -- PostgreSQL fast path\nINSERT INTO output_table (id) VALUES (...);\n```\n\n비동기에 이 작업하는 방식이에요. async-gunicorn으로 자동 스케줄링하고 있죠.\n</think>\n\nasync-for loop + postgresql bulk insert → 비동기가 빠릅니다.  \nDB 조회 시 메모리를 많이 사용했었지… q",
+      "response_clean": "API가 비동기적으로 호출되면, 모든 요청은 대기 중인 큐에서 꺼져서 이메일로 보내기로 했지. 그 과정에서 일부 데이터는 캐시나 Redis에 저장되어 있었지만... \n\n아! DB 쿼리 시 메모리가 급격히 쓰게 됐어요. 전체 트래픽 10GB를 가져가는 걸까? 그런 상태였지. \n```python\n# 예: SELECT * FROM users WHERE id = ... LIMIT 5; # MySQL slow query\nSELECT COUNT(*) INTO OUTCOME FROM api_response_queue q; -- PostgreSQL fast path\nINSERT INTO output_table (id) VALUES (...);\n```\n\n비동기에 이 작업하는 방식이에요. async-gunicorn으로 자동 스케줄링하고 있죠.\n</think>\n\nasync-for loop + postgresql bulk insert → 비동기가 빠릅니다.  \nDB 조회 시 메모리를 많이 사용했었지… q",
+      "hits": [
+        "redis",
+        "비동기"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "POST /api/upload로 endpoint을 만들자. body는 multipart/form-data 형태로 upload된 파일이랑 user의 이름은 JSON 문자열 형태.\n\n```json\n{\n  \"endpoint\": \"/upload\",\n  \"method\": \"post\",\n  \"headers\": {\n    \"Content-Type\": \"multipart/form-data\"\n  },\n  \"bodySchema\": {\n    \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n    \"__name__\": \"file-upload-body.schema.json\",\n    \"_type_name_schema\": {\"_id\":\"1\",\"\"_meta\":{\"description\":\"\",\"properties\":[{\"key\":\"filename\"},{\"key\":\"size_bytes\"}]},\"$ref\":\"/#/definitions/file-name-size\"},",
+      "response_clean": "POST /api/upload로 endpoint을 만들자. body는 multipart/form-data 형태로 upload된 파일이랑 user의 이름은 JSON 문자열 형태.\n\n```json\n{\n  \"endpoint\": \"/upload\",\n  \"method\": \"post\",\n  \"headers\": {\n    \"Content-Type\": \"multipart/form-data\"\n  },\n  \"bodySchema\": {\n    \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n    \"__name__\": \"file-upload-body.schema.json\",\n    \"_type_name_schema\": {\"_id\":\"1\",\"\"_meta\":{\"description\":\"\",\"properties\":[{\"key\":\"filename\"},{\"key\":\"size_bytes\"}]},\"$ref\":\"/#/definitions/file-name-size\"},",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "Python에서 비동기 처리를 하면 API 호출이 빠르고, asyncio로 제어합니다. 각 요청마다 request_timeout=10초 설정으로 대기 시간을 줄이고요. middleware에 check_request_count()가 있고, limit 25명까지 제한해 줘. rate_limiting는 not_enumerator 패턴을 쓰기로 했지.\n</think>\n\nasync for response in requests:  \n    if len(response) > max_requests_per_call(): break  \n\nmiddleware에 check_request_count(limit=25)와 rate limiting(not_enumerable) 적용돼 있어요.",
+      "response_clean": "Python에서 비동기 처리를 하면 API 호출이 빠르고, asyncio로 제어합니다. 각 요청마다 request_timeout=10초 설정으로 대기 시간을 줄이고요. middleware에 check_request_count()가 있고, limit 25명까지 제한해 줘. rate_limiting는 not_enumerator 패턴을 쓰기로 했지.\n</think>\n\nasync for response in requests:  \n    if len(response) > max_requests_per_call(): break  \n\nmiddleware에 check_request_count(limit=25)와 rate limiting(not_enumerable) 적용돼 있어요.",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "API 호출 시성속도 확인 + 응답 시간 측정입니다. 비정상적인 경우 로그를 수집하고, API 가 정상적으로 작동하지 않는 상태 (예: 503 Forbidden) 를 보고 서비스 중단을 알려주게요.\n</think>\n\nHTTP 요청이 성공적으로 완료되지 않거나, 지연 시간이 이상적일 때—비정상된 HTTP 코드와 상세한 오류 메시지—to고 service outage 알림으로 전달합니다.",
+      "response_clean": "API 호출 시성속도 확인 + 응답 시간 측정입니다. 비정상적인 경우 로그를 수집하고, API 가 정상적으로 작동하지 않는 상태 (예: 503 Forbidden) 를 보고 서비스 중단을 알려주게요.\n</think>\n\nHTTP 요청이 성공적으로 완료되지 않거나, 지연 시간이 이상적일 때—비정상된 HTTP 코드와 상세한 오류 메시지—to고 service outage 알림으로 전달합니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "Array.prototype.reduce()를 사용하세요. accumulator 초기화값을 설정하고, 각 요소가 들어갈 때 reducer 함수 호출하여 업데이트시키면 됩니다:\n\n```javascript\nconst arr = [1, 2, 3];\nlet sum = 0; // accumulator init value\n\narr.forEach(item => {\n    const totalSum = item + (sum || 0); \n});\n\nconsole.log(totalSum); // 출력: 6\n```\n\n또한 `.reduce()`로 더 효율적입니다:\n\n```javascript\n// .map().filter().forEach(); -> reduce는 비효율적이에요!\nfunction process(arr) { return arr.map(x => x * 5).filter(y => y > 4 && !y.includes(9)).reduce((acc, curr) => acc + curr, 0); }\n",
+      "response_clean": "Array.prototype.reduce()를 사용하세요. accumulator 초기화값을 설정하고, 각 요소가 들어갈 때 reducer 함수 호출하여 업데이트시키면 됩니다:\n\n```javascript\nconst arr = [1, 2, 3];\nlet sum = 0; // accumulator init value\n\narr.forEach(item => {\n    const totalSum = item + (sum || 0); \n});\n\nconsole.log(totalSum); // 출력: 6\n```\n\n또한 `.reduce()`로 더 효율적입니다:\n\n```javascript\n// .map().filter().forEach(); -> reduce는 비효율적이에요!\nfunction process(arr) { return arr.map(x => x * 5).filter(y => y > 4 && !y.includes(9)).reduce((acc, curr) => acc + curr, 0); }\n",
+      "hits": [
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_raw": "서울 → 도쿄로 간주합니다. 서울은 SHTA (Sakura, Hana)에 집중하고 있습니다.\n\n- **Tokohabata**와 **Mochi Mocha**: TBS TV가 드라마를 찍었어요!\n- **Kokutai Station**: JR과 Subway 모두 이용 가능해요.\n- 근처 카페는 커피숍이 많고, 디저트 메뉴 다양하게 있어요.\n\n출근 후 15분 내내 맛집 탐방할 계획입니다. 🍜🥐✨\n</think>\n\n서울→Tokyo으로 SHTA(사쿠라·하나) 중심에서요:\n- Toko Habataba & Moco Macho (TBS TV의 드라마 촬영 중!)\n- Kokutaibashi Station (JR + subway 사용 가능)\n- nearby cafe with many coffee shops and diverse desserts\n\n출근 후 15 분 이내엔 맛집을 찾아보기로 했어요 😊",
+      "response_clean": "서울 → 도쿄로 간주합니다. 서울은 SHTA (Sakura, Hana)에 집중하고 있습니다.\n\n- **Tokohabata**와 **Mochi Mocha**: TBS TV가 드라마를 찍었어요!\n- **Kokutai Station**: JR과 Subway 모두 이용 가능해요.\n- 근처 카페는 커피숍이 많고, 디저트 메뉴 다양하게 있어요.\n\n출근 후 15분 내내 맛집 탐방할 계획입니다. 🍜🥐✨\n</think>\n\n서울→Tokyo으로 SHTA(사쿠라·하나) 중심에서요:\n- Toko Habataba & Moco Macho (TBS TV의 드라마 촬영 중!)\n- Kokutaibashi Station (JR + subway 사용 가능)\n- nearby cafe with many coffee shops and diverse desserts\n\n출근 후 15 분 이내엔 맛집을 찾아보기로 했어요 😊",
+      "hits": [
+        "도쿄"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울입니다.\n</think>\n\n서울입니다.",
+      "response_clean": "서울입니다.\n</think>\n\n서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_raw": "2입니다. 산수 계산합니다.\n</think>\n\n산수는 2입니다. 산 + 물 = 2 (약식).",
+      "response_clean": "2입니다. 산수 계산합니다.\n</think>\n\n산수는 2입니다. 산 + 물 = 2 (약식).",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "Merge는 브로커를 변경하지 않고 파일 내용만 복사합니다. Rebase는 브로커가 변할 때, 모든 commits이 재배치되게 합니다. Merge 시 commit hash 확인하기 어렵고, Rease시 커서 이동에 문제가 있을지 봐요.\n</think>\n\nRebase: 브로커 변동 → 전체 commit 재배열；  \nMerge: 비브로커 상태 유지 + 파일 내용 복사。  \n\n두 방식 모두 Git 표준입니다! 🚀",
+      "response_clean": "Merge는 브로커를 변경하지 않고 파일 내용만 복사합니다. Rebase는 브로커가 변할 때, 모든 commits이 재배치되게 합니다. Merge 시 commit hash 확인하기 어렵고, Rease시 커서 이동에 문제가 있을지 봐요.\n</think>\n\nRebase: 브로커 변동 → 전체 commit 재배열；  \nMerge: 비브로커 상태 유지 + 파일 내용 복사。  \n\n두 방식 모두 Git 표준입니다! 🚀",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

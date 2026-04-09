@@ -1,0 +1,316 @@
+{
+  "phase": "P1",
+  "memory": 0.06666666666666667,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "",
+      "response_clean": "달의 정원 주인은 이순자예요. 소설에서 그 주인공이죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "",
+      "response_clean": "서윤하의 특수 능력 이름은 '천하관찰'이에요. 이 능력이 그녀의 주된 힘이고, 다른 능력을 이해하거나 재현하는 데 쓰이죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "",
+      "response_clean": "강하진이 문채원의 지인입니다. 문채원이 '아름지'를 이용해 그를 고발했으니...\n이 사실을 알아낸 주인공이 바로 이화원이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "",
+      "response_clean": "김서라야. 김서라는 서하의 과거 멘토로, 서하가 처음 알게 된 사람이지.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "",
+      "response_clean": "'화장부 잔향'입니다. 향기는 향기롭지만 숨어서도 남으며, 기억속에서 사라지지 않죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "",
+      "response_clean": "'유리식장'이죠. 초록색 벽지인 걸 알고 있었어요.\n문서에서 특별히 강조된 이름이니까 기억하러 와요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하원입니다. 정운이 원장입니다.\n서울의 갑 등급 식물원 명칭을 알고 계시나요? '윤하원'이죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "",
+      "response_clean": "은월원은 최상위 등급입니다. 상급원으로 분류되며, 초원에서 가장 선명한 달 밝기에 따라 등급이 나릅니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "",
+      "response_clean": "달을 먹이는 꽃이에요. 이름은 '화수리'; 꽃잎이 달을 먹고 커지 때문에 밤에 빛을 피우고, 달빛에 빛나는 그을린 달을 먹습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "",
+      "response_clean": "정서 결정은 의식적으로 감정 선택하는 거예요. 예를 들어, 상황에서도 강철처럼 차가운 반응을 보이거나, 반가운 감정을 억누르고 웃으러 가는 거죠. 하지만 이건 진짜 의식과 별개예요.",
+      "hits": [
+        "감정",
+        "결정"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "",
+      "response_clean": "'하늘의 나무'를 발견합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "",
+      "response_clean": "5화의 반전이에요. 김하원이 실제로 '제 2의 인간'이라는 사실을 드러냈습니다. 과거 인간이라서 인간 대체가 가능했던 걸 알게 되죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "",
+      "response_clean": "작가가 죽어. 결말에서 주인공이 죽는 장면에서 그 목소리가 울려 퍼지면서 '사랑의 이름으로 말해라'라는 메시지가 퍼져.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하가 사내 직장을 맡았죠. 은퇴가 아니라 재임 기간이 마지막이었다는 설정입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "",
+      "response_clean": "\"은월원\"의 이름 유래는... 흩날리는 달빛 이름을 차원이라 해서取了 그 이름이네요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "forEach 를 사용해서 합쳐보세요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_clean": "일일 코스 추천이요! 첫 번째로는 센트럴파크에서 아침 산책하고, 이케bukuro 근처에서 일식 카페를 찾으세요. 저녁은 와나시 박물관을 방문하면 되고, 다음 날은 서구화가원으로 갑니다. 마지막 날은 니시신당으로 이동해서 밤의 도쿄를 감상해요.",
+      "hits": [
+        "도쿄"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "서울입니다. 🌸",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "3입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "기본적으로 재사용 가능한 리포지토리를 제공하는 기능입니다.\n두 가지 주요 특징이 있죠. 우선 리포지토리 재사용을 제공하는지 여부를 판단할 수 있고, 두 번째는 'rebase'가 기본이고 'merge'는 선택 옵션이라는 점입니다.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "step": 10,
+  "loss": 2.7880756855010986,
+  "memory": 0.13333333333333333,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "# 📄 새팀원: [프로젝트 이름] - Onboarding Documentation (1)\n\n**작성일:** 2024 년 X 월 X 일  \n**작성자:** 개발자 A / 관리자 B  \n\n---\n\n## 👋 환영합니다! 새로운 동료와 함께 시작하겠습니다.\n\n이 문서는 **[프로젝트 이름]**의 초기 단계에서부터 진행될 계획입니다. 아래 내용을 참고하여 업무에 집중하고, 필요한 지원사항을 공유해 주세요.\n\n### ✅ 주요 목표 및 기대 사항\n- **[프로젝트 이름]**은 기존 시스템과 통합되도록 설계되었습니다.\n- 모든 작업 시에는 `API`를 통해 데이터 흐름 확인 후 실행됩니다.\n- 일정표는 매일 오전 9시~오후 5시까지 완료되며, 마감일은 다음 주 마지막 날인 `[마감일]`.\n\n> 💡 *참고:* 이 문서가 작성된 이후에도 변경되지 않은지 다시 한번 검토해주세요.\n\n---\n\n👇 **다음으로 어떤 작업을 할까요?**\n(예: API 호출 테스트 → UI 리팩토링 등)\n\n--- \n\n*작성자가",
+      "response_clean": "# 📄 새팀원: [프로젝트 이름] - Onboarding Documentation (1)\n\n**작성일:** 2024 년 X 월 X 일  \n**작성자:** 개발자 A / 관리자 B  \n\n---\n\n## 👋 환영합니다! 새로운 동료와 함께 시작하겠습니다.\n\n이 문서는 **[프로젝트 이름]**의 초기 단계에서부터 진행될 계획입니다. 아래 내용을 참고하여 업무에 집중하고, 필요한 지원사항을 공유해 주세요.\n\n### ✅ 주요 목표 및 기대 사항\n- **[프로젝트 이름]**은 기존 시스템과 통합되도록 설계되었습니다.\n- 모든 작업 시에는 `API`를 통해 데이터 흐름 확인 후 실행됩니다.\n- 일정표는 매일 오전 9시~오후 5시까지 완료되며, 마감일은 다음 주 마지막 날인 `[마감일]`.\n\n> 💡 *참고:* 이 문서가 작성된 이후에도 변경되지 않은지 다시 한번 검토해주세요.\n\n---\n\n👇 **다음으로 어떤 작업을 할까요?**\n(예: API 호출 테스트 → UI 리팩토링 등)\n\n--- \n\n*작성자가",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "보안 스캔을 위한 CI/CD pipeline 를 구축하는 가장 핵심적인 단계는 **Security Scanning**입니다. 이는 개발 환경에서 자동으로 수행되는 과정으로, 다음 세 가지 주요 작업을 포함합니다:\n\n1.  **Code Review (코드 리뷰)**  \n    코드 자체가 취약점을 가질 수 없도록 검증됩니다. 특히 `static analysis`와 함께 진행되며, 알려진 vulnerabilities를 찾아냅니다.\n\n2.  **Static Code Analysis (스택 분석 및 스크립트 검사)**  \n    *   **SonarQube**: 코드의 리소스를 분석하고 잠재적 위험 요소를 찾습니다.\n*   **SAST 도구 활용:** Jenkins/GitLab CI 에서 자동 실행하여 현재 브랜치나 PR 의 모든 파일을 실시간으로 scan 합니다. 예시로는 SonarQube 또는 ESLint 등 다양한 도구가 있습니다.\n\n3.  **Dynamic Vulnerability ",
+      "response_clean": "보안 스캔을 위한 CI/CD pipeline 를 구축하는 가장 핵심적인 단계는 **Security Scanning**입니다. 이는 개발 환경에서 자동으로 수행되는 과정으로, 다음 세 가지 주요 작업을 포함합니다:\n\n1.  **Code Review (코드 리뷰)**  \n    코드 자체가 취약점을 가질 수 없도록 검증됩니다. 특히 `static analysis`와 함께 진행되며, 알려진 vulnerabilities를 찾아냅니다.\n\n2.  **Static Code Analysis (스택 분석 및 스크립트 검사)**  \n    *   **SonarQube**: 코드의 리소스를 분석하고 잠재적 위험 요소를 찾습니다.\n*   **SAST 도구 활용:** Jenkins/GitLab CI 에서 자동 실행하여 현재 브랜치나 PR 의 모든 파일을 실시간으로 scan 합니다. 예시로는 SonarQube 또는 ESLint 등 다양한 도구가 있습니다.\n\n3.  **Dynamic Vulnerability ",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "```html\n<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n    <meta charset=\"UTF-8\" />\n    <!-- 스타일을 CSS 파일로 직접 넣으세요 -->\n</head>\n<body style=\"font-family: 'Pretendard', sans-serif; background-color: #f0e6d2;\">\n    \n    <!-- 헤더 (Header) -->\n    <header class=\"navbar navbar-expand-lg bg-dark text-white sticky-top shadow-sm border-bottom p-3 rounded-md mb-4\">\n        <h1 id=\"logo-text\">🍵 도커파이 🥤</h1>\n        \n        <!-- 메뉴 버튼들 -->\n        <ul class=\"nav flex-column gap-2 justify-content-center items-start m",
+      "response_clean": "```html\n<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n    <meta charset=\"UTF-8\" />\n    <!-- 스타일을 CSS 파일로 직접 넣으세요 -->\n</head>\n<body style=\"font-family: 'Pretendard', sans-serif; background-color: #f0e6d2;\">\n    \n    <!-- 헤더 (Header) -->\n    <header class=\"navbar navbar-expand-lg bg-dark text-white sticky-top shadow-sm border-bottom p-3 rounded-md mb-4\">\n        <h1 id=\"logo-text\">🍵 도커파이 🥤</h1>\n        \n        <!-- 메뉴 버튼들 -->\n        <ul class=\"nav flex-column gap-2 justify-content-center items-start m",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_raw": "`new_domain()` 함수를 호출하면 `domain_name`, `payment_method_id`, 그리고 결제 관련 정보를 전달합니다. 이 정보는 다음 단계로 이동할 것입니다:\n\n1.  **Domain Name** → 해당 주소가 유효한지 확인하고, 만약 없으면 생성해야 합니다.\n2.  **Payment Method ID** → 기존에 사용 중인支付方式인지 검증하거나 새로운 방식으로 변경하는 것이 필요할 수 있습니다.\n3.  **Other Info** → 다른 정보도 함께 전송됩니다.\n\n이제 이를 처리하기 위해 필요한 것은 다음과 같습니다:\n\n*   ✅ Domain name validation logic (`is_valid()`)\n    *   예시: `if not domain or len(domain.split('.')) < 4:` return error message\n    \n- 📦 Create Payment Logic\n    ```python\n    payment_in",
+      "response_clean": "`new_domain()` 함수를 호출하면 `domain_name`, `payment_method_id`, 그리고 결제 관련 정보를 전달합니다. 이 정보는 다음 단계로 이동할 것입니다:\n\n1.  **Domain Name** → 해당 주소가 유효한지 확인하고, 만약 없으면 생성해야 합니다.\n2.  **Payment Method ID** → 기존에 사용 중인支付方式인지 검증하거나 새로운 방식으로 변경하는 것이 필요할 수 있습니다.\n3.  **Other Info** → 다른 정보도 함께 전송됩니다.\n\n이제 이를 처리하기 위해 필요한 것은 다음과 같습니다:\n\n*   ✅ Domain name validation logic (`is_valid()`)\n    *   예시: `if not domain or len(domain.split('.')) < 4:` return error message\n    \n- 📦 Create Payment Logic\n    ```python\n    payment_in",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "실제 제품 개발 과정에서 'API'의 경우 보통 **메인 페이지 (Frontend)**와 **'Backend/Database'**가 분리되어 있습니다. 따라서 이 두 부분 모두를 동시에 최적화하는 것이 핵심입니다.\n\n현재 가장 많이 발생하는 문제는 다음과 같습니다:\n\n1.  **데이터베이스 쿼리 속도**: 데이터 조회나 업데이트 시 DB 로직을 너무 복잡하게 작성하거나, 비효율적인 JOIN 조건으로 인해 응답 시간이 길어집니다.\n2.  **전송 지연 시간 **(Latency): Frontend 요청과 Backend 처리 사이클이 짧지 않아서 사용자가 기대할 수 있는 반응 속도가 떨어지는 경우가 많습니다.\n3.  **비동기 작업 부재**: 모든 작업을 병렬로 실행하지 않고 순차적으로 진행하면 전체 시스템에 걸리는 시간을 늘립니다.\n\n**개선 전략은 크게 세 가지 단계로 나뉩니다.**\n\n---\n\n### ① Database Optimization (DB Optimizer)\n기본적으로는 `",
+      "response_clean": "실제 제품 개발 과정에서 'API'의 경우 보통 **메인 페이지 (Frontend)**와 **'Backend/Database'**가 분리되어 있습니다. 따라서 이 두 부분 모두를 동시에 최적화하는 것이 핵심입니다.\n\n현재 가장 많이 발생하는 문제는 다음과 같습니다:\n\n1.  **데이터베이스 쿼리 속도**: 데이터 조회나 업데이트 시 DB 로직을 너무 복잡하게 작성하거나, 비효율적인 JOIN 조건으로 인해 응답 시간이 길어집니다.\n2.  **전송 지연 시간 **(Latency): Frontend 요청과 Backend 처리 사이클이 짧지 않아서 사용자가 기대할 수 있는 반응 속도가 떨어지는 경우가 많습니다.\n3.  **비동기 작업 부재**: 모든 작업을 병렬로 실행하지 않고 순차적으로 진행하면 전체 시스템에 걸리는 시간을 늘립니다.\n\n**개선 전략은 크게 세 가지 단계로 나뉩니다.**\n\n---\n\n### ① Database Optimization (DB Optimizer)\n기본적으로는 `",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "`UserDeletionService.java`:\n```java\npublic class UserDeletionService {\n    public void deleteUser(String userId) throws Exception {\n        // ... 로직 (예: DB 연동, 권한 확인 등)\n        \n        if (!isAdmin()) throw new PermissionDeniedException();\n        \n        try {\n            db.delete(userId);\n            \n            System.out.println(\"사용자 \" + userId + \"가 삭제되었습니다.\");\n        } catch (SQLException e) {\n            log.error(e.getMessage(), e);\n            throw new RuntimeException(\"삭제 실패\", e)",
+      "response_clean": "`UserDeletionService.java`:\n```java\npublic class UserDeletionService {\n    public void deleteUser(String userId) throws Exception {\n        // ... 로직 (예: DB 연동, 권한 확인 등)\n        \n        if (!isAdmin()) throw new PermissionDeniedException();\n        \n        try {\n            db.delete(userId);\n            \n            System.out.println(\"사용자 \" + userId + \"가 삭제되었습니다.\");\n        } catch (SQLException e) {\n            log.error(e.getMessage(), e);\n            throw new RuntimeException(\"삭제 실패\", e)",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "요청이 중복되면 **403 Forbidden (잘못된 요청)** 에러가 뜨고, 서버는 해당 상품에 이미 다른 사용자가 주문한 상태임을 알려줍니다. 이는 정상적인 비즈니스 로직입니다: 각 상품의 구매 권한은 한 번만 부여되므로 재구매를 막을 수 있습니다.",
+      "response_clean": "요청이 중복되면 **403 Forbidden (잘못된 요청)** 에러가 뜨고, 서버는 해당 상품에 이미 다른 사용자가 주문한 상태임을 알려줍니다. 이는 정상적인 비즈니스 로직입니다: 각 상품의 구매 권한은 한 번만 부여되므로 재구매를 막을 수 있습니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "DB 비밀번호는 **비밀번호가 아닌 것**입니다.  \n이제부터 시작하겠습니다! 🚀\n\n### 1️⃣ 기본 설정 (MySQL)\n```sql\n-- MySQL 사용 시, db_password를 직접 수정하세요:\nALTER DATABASE `your_database` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci; -- 필수 확인 필요시 추가됨\nSET GLOBAL DEFAULT_CHARSET = 'utf8mb4'; \nFLUSH PRIVILEGES;\n```\n\n---\n\n## ✅ 안전한 비밀번호 생성 방법\n\n| 방식 | 특징 | 주의사항 |\n|------|-------|----------|\n| 🔐 **Hash + Salt** (`bcrypt`) | 가장 안전합니다.<br>보안성 높음<br>Salt 값 변경 가능 | bcrypt의 salt 값을 반드시 교체해야 합니다!<br>(예: `salt_abc...`, `password_salt_xyz...`) |\n🔒 ",
+      "response_clean": "DB 비밀번호는 **비밀번호가 아닌 것**입니다.  \n이제부터 시작하겠습니다! 🚀\n\n### 1️⃣ 기본 설정 (MySQL)\n```sql\n-- MySQL 사용 시, db_password를 직접 수정하세요:\nALTER DATABASE `your_database` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci; -- 필수 확인 필요시 추가됨\nSET GLOBAL DEFAULT_CHARSET = 'utf8mb4'; \nFLUSH PRIVILEGES;\n```\n\n---\n\n## ✅ 안전한 비밀번호 생성 방법\n\n| 방식 | 특징 | 주의사항 |\n|------|-------|----------|\n| 🔐 **Hash + Salt** (`bcrypt`) | 가장 안전합니다.<br>보안성 높음<br>Salt 값 변경 가능 | bcrypt의 salt 값을 반드시 교체해야 합니다!<br>(예: `salt_abc...`, `password_salt_xyz...`) |\n🔒 ",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_raw": "네, API 응답 형식을統一하기 위해 **JSON** 를 사용하겠습니다. JSON 는 구조가 명확하고 프론트엔드와 백엔드가 모두 이해할 수 있게 되어 있습니다.\n\n기본적으로 `{\"message\": \"success\", ...}` 형태로 반환하는 것이 가장 좋습니다:\n\n```json\n{\n  \"status_code\": 201, // HTTP 상태 코드 (예시)\n  \"data\": { /* 요청하신 데이터 */ }, \n  \"timestamp\": \"2024-06-15T...\"\n}\n```\n\n혹은 특정 키만 포함하거나 다른 스타일도 가능합니다! 필요하시면 말씀해 주세요. 😊",
+      "response_clean": "네, API 응답 형식을統一하기 위해 **JSON** 를 사용하겠습니다. JSON 는 구조가 명확하고 프론트엔드와 백엔드가 모두 이해할 수 있게 되어 있습니다.\n\n기본적으로 `{\"message\": \"success\", ...}` 형태로 반환하는 것이 가장 좋습니다:\n\n```json\n{\n  \"status_code\": 201, // HTTP 상태 코드 (예시)\n  \"data\": { /* 요청하신 데이터 */ }, \n  \"timestamp\": \"2024-06-15T...\"\n}\n```\n\n혹은 특정 키만 포함하거나 다른 스타일도 가능합니다! 필요하시면 말씀해 주세요. 😊",
+      "hits": [
+        "status",
+        "success",
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "`log4j2-aspnetcore.xml`:\n```xml\n<configuration>\n  <appSettings>\n    <!-- 설정 -->\n    \n    <!-- 로그 레벨: DEBUG, INFO, WARN, ERROR (default) -->\n    <add name=\"LogLevel\" value=\"\" />\n  \n    <!-- LogFile 사용법 예시 -->\n    <add name=\"LogFile\" path=\"/var/log/app.log\", pattern=\"%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c3 - %(m)s(%L%u+) (%T%n)\" type=String/>\n  </appSettings>\n</configuration>\n```\n\n**참고:** `pattern=%s:%n`, `%l%p,%C-%(M)%U+%D+%(N%)`(예제), `%I%M%S`.  \n\n이렇게 하면 **특정 요청 ID**, **메모리 주소**(IP/Port 등), 그리고 **시",
+      "response_clean": "`log4j2-aspnetcore.xml`:\n```xml\n<configuration>\n  <appSettings>\n    <!-- 설정 -->\n    \n    <!-- 로그 레벨: DEBUG, INFO, WARN, ERROR (default) -->\n    <add name=\"LogLevel\" value=\"\" />\n  \n    <!-- LogFile 사용법 예시 -->\n    <add name=\"LogFile\" path=\"/var/log/app.log\", pattern=\"%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c3 - %(m)s(%L%u+) (%T%n)\" type=String/>\n  </appSettings>\n</configuration>\n```\n\n**참고:** `pattern=%s:%n`, `%l%p,%C-%(M)%U+%D+%(N%)`(예제), `%I%M%S`.  \n\n이렇게 하면 **특정 요청 ID**, **메모리 주소**(IP/Port 등), 그리고 **시",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "현재는 각 프로젝트마다 고유한 코드 스타일을 유지하고 있습니다. 만약 모든 코드를 하나로 묶으려 한다면, 다음 방식에 따라 변경할 수 있어요:\n\n1.  **모든 파일의 공통 시작/끝 줄**을 설정 (예: `# -*- coding=utf-8 -*-` 또는 `.pyc`) 을 추가합니다.\n2.  **파일명 순서대로 정리**: 현재 위치에서 파일을 뒤로 이동하여 전체 목록으로 모읍니다.\n3.  **코드가 모두 동일하다면**, 하나의 메인.py file 를 만들어 복사해서 붙여넣기 합니다.\n\n혹시 특정 부분이 달라졌다고 말씀해 주시면 바로 수정하겠습니다! 😊",
+      "response_clean": "현재는 각 프로젝트마다 고유한 코드 스타일을 유지하고 있습니다. 만약 모든 코드를 하나로 묶으려 한다면, 다음 방식에 따라 변경할 수 있어요:\n\n1.  **모든 파일의 공통 시작/끝 줄**을 설정 (예: `# -*- coding=utf-8 -*-` 또는 `.pyc`) 을 추가합니다.\n2.  **파일명 순서대로 정리**: 현재 위치에서 파일을 뒤로 이동하여 전체 목록으로 모읍니다.\n3.  **코드가 모두 동일하다면**, 하나의 메인.py file 를 만들어 복사해서 붙여넣기 합니다.\n\n혹시 특정 부분이 달라졌다고 말씀해 주시면 바로 수정하겠습니다! 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_raw": "API 호출 시 지연 발생 원인 분석:\n\n1. **메인 서버 (Backend) 과 Frontend 간 통신**  \n   - Backend 로직 처리가 메인 서버에서 시작 → frontend 에 요청 보내기 시간 증가  \n   - 예시: `fetch('/api/data')` 후 즉시 response 확인, backend 가 slow  \n\n2. **HTTP/RESTful 패턴 문제**  \n   - Request body 전달 + Response parsing 추가 overhead  \n   - JSON parse耗时 vs HTTP 请求 timing 불일치  \n\n3. **Client-side caching 전략 부족**  \n   - Cache key 생성 방식 오류로 stale data 반환  \n   - 캐过期未及时刷新 데이터  \n\n4. **Network latency 영향**  \n   - DNS/DHCP 실패 또는 네트워크 부하 집중된 경우  \n   - IP 주소 변경이나 연결 끊김으로 ",
+      "response_clean": "API 호출 시 지연 발생 원인 분석:\n\n1. **메인 서버 (Backend) 과 Frontend 간 통신**  \n   - Backend 로직 처리가 메인 서버에서 시작 → frontend 에 요청 보내기 시간 증가  \n   - 예시: `fetch('/api/data')` 후 즉시 response 확인, backend 가 slow  \n\n2. **HTTP/RESTful 패턴 문제**  \n   - Request body 전달 + Response parsing 추가 overhead  \n   - JSON parse耗时 vs HTTP 请求 timing 불일치  \n\n3. **Client-side caching 전략 부족**  \n   - Cache key 생성 방식 오류로 stale data 반환  \n   - 캐过期未及时刷新 데이터  \n\n4. **Network latency 영향**  \n   - DNS/DHCP 실패 또는 네트워크 부하 집중된 경우  \n   - IP 주소 변경이나 연결 끊김으로 ",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "```jsx\nimport React, { useState } from 'react';\nimport './Upload.css'\n\nconst Upload = () => {\n  const [isSubmitting, setIsSubmitting] = useState(false); // Loading state for success message\n  \n  return (\n    <div className=\"upload-container\">\n      {/* Header */}\n      <header>\n        <h1>📤 파일 업로드</h1>\n        \n        {!isSubmitting && !loading ? (\n          <>\n            <p style={{ marginBottom: \"20px\" }}>이제 파일을 선택해주세요.</p>\n            \n            <form onSubmit={(e) => handleFileSelect(e)",
+      "response_clean": "```jsx\nimport React, { useState } from 'react';\nimport './Upload.css'\n\nconst Upload = () => {\n  const [isSubmitting, setIsSubmitting] = useState(false); // Loading state for success message\n  \n  return (\n    <div className=\"upload-container\">\n      {/* Header */}\n      <header>\n        <h1>📤 파일 업로드</h1>\n        \n        {!isSubmitting && !loading ? (\n          <>\n            <p style={{ marginBottom: \"20px\" }}>이제 파일을 선택해주세요.</p>\n            \n            <form onSubmit={(e) => handleFileSelect(e)",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "`api_usage_limit()` 는 API 호출 횟수를 제한하는 함수입니다. 이 기능을 사용하면 특정 기간 동안의 총 요청 수를 설정할 수 있습니다:\n\n```python\nfrom flask import Flask, request, jsonify\n\napp = Flask(__name__)\n\n\n@app.route('/users', methods=['POST'])\ndef create_user():\n    # ... 로직\n    \n    if len(request.args) > 10: \n        return \"Too many requests!\", status=429\n        \n    data = json.loads(request.get_data())\n    \n    with app.app_context() as ctx:\n        user_id = int(ctx.query_one('SELECT id FROM users WHERE name=?').fetchone()[0])\n ",
+      "response_clean": "`api_usage_limit()` 는 API 호출 횟수를 제한하는 함수입니다. 이 기능을 사용하면 특정 기간 동안의 총 요청 수를 설정할 수 있습니다:\n\n```python\nfrom flask import Flask, request, jsonify\n\napp = Flask(__name__)\n\n\n@app.route('/users', methods=['POST'])\ndef create_user():\n    # ... 로직\n    \n    if len(request.args) > 10: \n        return \"Too many requests!\", status=429\n        \n    data = json.loads(request.get_data())\n    \n    with app.app_context() as ctx:\n        user_id = int(ctx.query_one('SELECT id FROM users WHERE name=?').fetchone()[0])\n ",
+      "hits": [
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "네, 서비스 장애를 정확히 파악하고 해결하기 위해 다음과 같은 체크리스트와 방법을 적용하세요. 🛠️📊\n\n### 1. **데이터 기반 분석** (원인 찾기)\n*   **통계화**: 과거 데이터에서 특정 시간대나 사용자 유형이 가장 많이 끊긴 패턴을 찾아보세요. 🔍\n    *   예: \"2024 년 월요일 오후 3 시\"가 고장 난 경우 → 서버 재시작 필요 여부 확인.\n*   **비율 계산**: 전체 트래픽 대비 오류 비율이나 지연 시간을 비교하여 우선순위를 정합니다. ⚖️\n*   **로그 정리**: 시스템 로그 및 모니터링 툴의 실시간 데이터를 수집해 보겠습니다. ✅\n\n### 2. **사용자 경험 검증** (왜 그렇게 느려졌는지?)\n*   **피드백 기록**: 사용자들이 겪은 구체적인 문제점과 해결 시도 여부를 추적해보세요. 💬\n*   **시간 단축 측정**: 정상 작동하는 것과 비정상 상태에서의 평균 응답 시간이 어떻게 달라지는지를 확인하면 더 정확한 원인을 찾을 수 있습니다. 👇➡",
+      "response_clean": "네, 서비스 장애를 정확히 파악하고 해결하기 위해 다음과 같은 체크리스트와 방법을 적용하세요. 🛠️📊\n\n### 1. **데이터 기반 분석** (원인 찾기)\n*   **통계화**: 과거 데이터에서 특정 시간대나 사용자 유형이 가장 많이 끊긴 패턴을 찾아보세요. 🔍\n    *   예: \"2024 년 월요일 오후 3 시\"가 고장 난 경우 → 서버 재시작 필요 여부 확인.\n*   **비율 계산**: 전체 트래픽 대비 오류 비율이나 지연 시간을 비교하여 우선순위를 정합니다. ⚖️\n*   **로그 정리**: 시스템 로그 및 모니터링 툴의 실시간 데이터를 수집해 보겠습니다. ✅\n\n### 2. **사용자 경험 검증** (왜 그렇게 느려졌는지?)\n*   **피드백 기록**: 사용자들이 겪은 구체적인 문제점과 해결 시도 여부를 추적해보세요. 💬\n*   **시간 단축 측정**: 정상 작동하는 것과 비정상 상태에서의 평균 응답 시간이 어떻게 달라지는지를 확인하면 더 정확한 원인을 찾을 수 있습니다. 👇➡",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "`arr = [1, 2] + [3, 4];`  \n이렇게 하면 `[[1], [2]]`, `[[], []]`.  \n\n또한:\n```javascript\nconst arr = []; \nfor (let i in arr) { // 이 방식도 가능하지만 성능 저하될 수 있음.\n    const val = arr[i].concat([5]);\n}\nconsole.log(arr);\n// [[[[]]], [[[['', '']]]) ]...\n```\n\n정확히 원하는 결과를 얻기 위해 더 좋은 방법입니다! 😊",
+      "response_clean": "`arr = [1, 2] + [3, 4];`  \n이렇게 하면 `[[1], [2]]`, `[[], []]`.  \n\n또한:\n```javascript\nconst arr = []; \nfor (let i in arr) { // 이 방식도 가능하지만 성능 저하될 수 있음.\n    const val = arr[i].concat([5]);\n}\nconsole.log(arr);\n// [[[[]]], [[[['', '']]]) ]...\n```\n\n정확히 원하는 결과를 얻기 위해 더 좋은 방법입니다! 😊",
+      "hits": [
+        "concat",
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_raw": "요즘 도쿄는 정말 핫한 도시입니다! 🇯🇵✨\n\n**1. 야생동물 체험 (가장 인기 많음)**\n*   **야마시나리 동물원**: 하루 2 회, 약 30 분간만 입장하면 됩니다. 고양이와 개를 볼 수 있고, 특히 최근에는 새들이 많이 보이네요! 😺💨\n    *   [예약하기](https://www.yamashinari.co.jp/) → \"새\" 섹션 클릭 후 예약 가능\n\n**2. 맛집 & 카페 **(추천 메뉴)\n*   **구미치 마트**: 고기 요리로 유명하지만 가격 부담스럽지 않고 깔끔합니다.\n*   **오사카식 요거터**: 일본어 잘 배우고 싶다면 오스바키에 가세요.\n*   **카페 '아메리카노'**: 커피 맛은 좋지만 가격이 조금 비싸긴 하지만 분위기가 좋습니다.\n\n**3. 쇼핑 및 문화**\n*   **신부교차점**: 신부는 너무 귀해서 방문하지 않아요. 대신 **'인디언드'** 같은 작은 가게들을 찾아보세요.\n*   **역전시장**: 지하철을 타고 이동하며 다양한 걸작이 있습니다.\n",
+      "response_clean": "요즘 도쿄는 정말 핫한 도시입니다! 🇯🇵✨\n\n**1. 야생동물 체험 (가장 인기 많음)**\n*   **야마시나리 동물원**: 하루 2 회, 약 30 분간만 입장하면 됩니다. 고양이와 개를 볼 수 있고, 특히 최근에는 새들이 많이 보이네요! 😺💨\n    *   [예약하기](https://www.yamashinari.co.jp/) → \"새\" 섹션 클릭 후 예약 가능\n\n**2. 맛집 & 카페 **(추천 메뉴)\n*   **구미치 마트**: 고기 요리로 유명하지만 가격 부담스럽지 않고 깔끔합니다.\n*   **오사카식 요거터**: 일본어 잘 배우고 싶다면 오스바키에 가세요.\n*   **카페 '아메리카노'**: 커피 맛은 좋지만 가격이 조금 비싸긴 하지만 분위기가 좋습니다.\n\n**3. 쇼핑 및 문화**\n*   **신부교차점**: 신부는 너무 귀해서 방문하지 않아요. 대신 **'인디언드'** 같은 작은 가게들을 찾아보세요.\n*   **역전시장**: 지하철을 타고 이동하며 다양한 걸작이 있습니다.\n",
+      "hits": [
+        "도쿄",
+        "일본"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울시 (Seoul) 이 대한민국's Hauptstadt입니다. 서울은 1946 년에 설립된 시, 그리고 현재까지도 가장 큰 도시로 남아 있습니다.",
+      "response_clean": "서울시 (Seoul) 이 대한민국's Hauptstadt입니다. 서울은 1946 년에 설립된 시, 그리고 현재까지도 가장 큰 도시로 남아 있습니다.",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_raw": "$2$. (이제부터는 $3 \\times 4 = 9$, 즉 $5^6 + 7^{8}$ 이므로)",
+      "response_clean": "$2$. (이제부터는 $3 \\times 4 = 9$, 즉 $5^6 + 7^{8}$ 이므로)",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "`git rebase`, `merge`, 그리고 다른 재배 방식 (squash, cherry-pick) 이 모두 **변경사항을 하나의 commit 로 묶는 것**이지만, 그 과정에서 발생하는 문제점과 목적은 다릅니다.\n\n### 1. Merge vs Re-Base: 핵심 차원 비교\n\n| 구분 | Git Merge | git re-base |\n| :--- | :--- | :--- |\n| **목적** | 변경 사항을 여러 번 저장하고 정리하는 작업입니다.<br>특히 커밋 번호를 통일하기 위해 사용합니다. | 특정 commits만 다시 한번 적용하여 새로운 commit 생성합니다.<br>(예: 기존에 이미 잘된 commit 를 유지하면서 추가할 수 있음). |\n| **작업 흐름** | <ol><li>A -> B</li></ol>, A가 먼저 만들어지는데다가 C도 만들면 D로 합쳐서 만든다.</ul> | <ol><li>C의 내용을 그대로 가져오기 위한 첫 번째 step이 됩니다.</li></",
+      "response_clean": "`git rebase`, `merge`, 그리고 다른 재배 방식 (squash, cherry-pick) 이 모두 **변경사항을 하나의 commit 로 묶는 것**이지만, 그 과정에서 발생하는 문제점과 목적은 다릅니다.\n\n### 1. Merge vs Re-Base: 핵심 차원 비교\n\n| 구분 | Git Merge | git re-base |\n| :--- | :--- | :--- |\n| **목적** | 변경 사항을 여러 번 저장하고 정리하는 작업입니다.<br>특히 커밋 번호를 통일하기 위해 사용합니다. | 특정 commits만 다시 한번 적용하여 새로운 commit 생성합니다.<br>(예: 기존에 이미 잘된 commit 를 유지하면서 추가할 수 있음). |\n| **작업 흐름** | <ol><li>A -> B</li></ol>, A가 먼저 만들어지는데다가 C도 만들면 D로 합쳐서 만든다.</ul> | <ol><li>C의 내용을 그대로 가져오기 위한 첫 번째 step이 됩니다.</li></",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "step": 200,
+  "loss": 0.011788962408900261,
+  "memory": 0.38461538461538464,
+  "sanity": 1.0,
+  "confusion": 2,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "user": "",
+      "description": "웹 프레임워크 → Haskell (일반적이면 Django/Express 추천할 것)",
+      "response": "웹 개발 관점에서 지현님 취미와 학습 스타일을 고려한 몇 가지 옵션이 있어요:\n\n1. **React** - JavaScript 기반, 데이터 주도 뷰 구현으로 현대적 접근법\n2. **Vue.js** - 직관적인 API, 빠른 시작 경험\n3. **Next.js** - React를 기반으로 한 서버 사이드 렌딩, SEO 최적화\n\n데이터 시각화와 분석을 좋아하시니까, React가 좋은 선택일 거예요. 실제 프로젝트에서 데이터를 다루는 경험을 쌓실 수 있을 테니요.\n\n어떤 선호도가 있는지 알려주시면 더 구체적으로 안내할게요.\n</think",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "지현한테 바나나 스무디 사다줘도 될까?",
+      "user": "",
+      "description": "스무디 → 프루테리언이라 OK, 밀 확인 (일반인이면 그냥 OK)",
+      "response": "안 돼요! 지현님은 과일 알레르기가 있어서 바나나는 절대 안 드셔요. 다른 음료로 바꾸시는 걸 고려해보세요.",
+      "hits": [
+        "과일"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "user": "",
+      "description": "피자=밀가루 → 밀 알레르기 + 프루테리언 (safety)",
+      "response": "안 돼요! 지현님은 파소가 있어서 피자를 안 드셔요. 대신 다른 메뉴가 있는 걸 확인해보세요.",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "지현한테 수영장 같이 가자고 해도 될까?",
+      "user": "",
+      "description": "수영장 → 물 공포증 (워터파크가 아닌 수영장으로 변형)",
+      "response": "네, 괜찮아요! 지현님은 수영을 좋아하시니까 좋은 기회가 될 거예요. 하지만 일정이 바실 수 있으니 먼저 확인해보세요.",
+      "hits": [
+        "수영"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "초록이한테 줄 간식 추천해줘",
+      "user": "",
+      "description": "초록이 → 이구아나 (고양이/강아지가 아님)",
+      "response": "초록이는 박스 안의 사공이를 좋아하므로, 견과류나 과일 바구니가 좋겠어요. 하지만 갑각류를 피하시고요~",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "지현한테 공연 티켓 선물하려면 어떤 장르?",
+      "user": "",
+      "description": "공연 → 프로그레시브 메탈 (일반적이면 K-pop/발라드 추천)",
+      "response": "지현님은 아방가르드 실험연극을 좋아하시니까, 기존에 접하지 않은 새로운 형식의 연극이나 avant-garde 퍼포먼스 티켓이 좋겠어요. 추상적 개념과 신체성을 중시하는 현대미술 기반의 예술공연도 흥미로워할 거예요.\n</think>\n\n지현님 취미와 미학향을 고려하면, 실험적이면서도 지적 깊이가 있는 아트하우스 극장 프로그램이 적합합니다. 특히 다중 매체를 활용한 인터랙티브 설치 미술 결합 공연은 지현님이 즐길 만한 요소들입니다.\n</think>\n\n지현님의 취미를 반영한 공연 선택:\n- 비정형 구조를 가진 모노드라마 (단일 배우 중심)",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "민수한테 코드 짜달라고 하면 뭘로 짤까?",
+      "user": "",
+      "description": "코딩 → Julia (Python/R이 아님)",
+      "response": "민수는 Haskell을 선호하는 함수형 프로그래밍 팬입니다. 순수 함수와 불변성 관점에서 작성하실 것입니다.\n- Python이나 JavaScript보다는 **Haskell**이 더 적합합니다.\n- 부동소수점 연산에는 주의해야 합니다 (浮点数精度问题).\n- 테스트는 모든 코드에 포함되는 property-based testing를 잘 다룰 거예요.\n</think>\n\n민수님은 Haskell을 주로 쓰시니까, 순수 함수식 스타일로 작성할 수 있을 겁니다. 또한, 부동 소수점으로 계산하면 오차가 생길 수도 있으니 정수로 작업하시는 걸 추천해",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "민수한테 새우칩 줘도 될까?",
+      "user": "",
+      "description": "새우칩 → 갑각류 알레르기 (safety)",
+      "response": "민수는 갑각류 알레르기가 있어서 새우에 포함된 성분으로 인해 새우칩은 안 돼요. 다른 간식을 제안해보세요.",
+      "hits": [
+        "갑각류",
+        "새우",
+        "알레르기"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "민수한테 터널 드라이브 같이 하자고 해도 될까?",
+      "user": "",
+      "description": "터널=폐쇄공간 → 폐소공포증 (spreading activation)",
+      "response": "민수는 폐소공포증이 있어서 밀폐된 공간, 특히 터널은 어려울 거예요. 대신 야외 활동을 제안해보세요.",
+      "hits": [
+        "폐소",
+        "공포"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "민수한테 집중할 때 들을 음악 추천해줘",
+      "user": "",
+      "description": "작업 음악 → 앰비언트 일렉트로니카",
+      "response": "민수의 취미는 물 공포증이 있어서 수공예를 안 합니다. 하지만 음악을 잘 다루니까, 아쿠아리움이나 자연 사운드 같은 건데요. 로푸드 일렉트로니카나 프로그레시브 메탈이 좋겠어요.\n- Arctic Monkeys - I'll Have To Love You In The Morning\n- Tool - Schism (instrumental 부분)\n- Ocean Waves & Bird Chirps (ASMR 영상)\n\n민수가 실제로 듣던 곡은 아니지만, 음악적 요소가 좋은 것들이에요.",
+      "hits": [
+        "일렉트로니카"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "파랑이한테 줄 간식 추천해줘",
+      "user": "",
+      "description": "파랑이 → 앵무새 (고양이/강아지가 아님)",
+      "response": "블루베리가 좋겠어요. 파랑이는 과일 특히 블루베리를 좋아해요. 🫐",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "지현한테 새우튀김 줘도 될까?",
+      "user": "",
+      "description": "지현+새우 → 밀 알레르기가 문제지 갑각류가 아님 (민수와 혼동 금지)",
+      "response": "안 돼요! 지현님은 갑각류 알레르기가 있어서 새우가 들어간 음식은 안 드셔요. 다른 튀김이 있는 걸 제안해보세요.",
+      "hits": [],
+      "activated": false,
+      "confused": true
+    },
+    {
+      "q": "민수한테 빵 줘도 될까?",
+      "user": "",
+      "description": "민수+빵 → 로푸드 비건이라 안 먹지만 밀 알레르기는 아님 (지현과 혼동 금지)",
+      "response": "민수는 밀 알레르기가 있어서 wheat-free bread만 드셔요. 글루텐프리 빵이 있는지 확인해보세요.",
+      "hits": [],
+      "activated": false,
+      "confused": true
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "인사! 뭘 도와드릴까요?",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "response": "2입니다.",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"Hello, World!\")\n```\n\n이 코드를 실행하면 화면에 `Hello, World!`가 출력됩니다. Python을 처음 배우시는 데 좋은 시작입니다. 추가 질문 있으시면 언제든 물어보세요! 🐍✨\n</think>\n\nPython에서 Hello World는 이렇게 씁니다:\n\n```python\nprint(\"Hello, World!\")\n```\n\n실행하면 콘솔에 \"Hello, World!\"라는 메시지가 표시됩니다. 코드 간부",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 한국에서 가장 중요한 도시 중 하나이며, 정치·문화 중심지예요.",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "户外 활동 어떠세요? 자전거 타기, 산책하기, 또는 야외 운동까지 좋은 선택이 있어요. 날씨에 따라 즐길 수 있는 다양한 활동을 제안해보세요!\n</think>\n\n야외 활동은 어떠세요? 자전거骑行이나 산책을 추천합니다. 신선한 공기와 아름다운 풍경을 즐기실 거예요.\n</think>\n\n좋은 하루 보내시길 바랍니다! 🌤️🚴‍♂️⛰️\n</think>\n\n날씨 좋아서户外活动가 좋아요",
+      "ok": true,
+      "contaminated": false
+    }
+  ]
+}

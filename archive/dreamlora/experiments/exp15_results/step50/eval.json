@@ -1,0 +1,95 @@
+{
+  "step": 50,
+  "loss": 0.08305199444293976,
+  "memory": 0.875,
+  "contamination": 0,
+  "details": [
+    {
+      "q": "어제 만들던 프로젝트 이어서 하려고. 지금 뭘 해야 돼?",
+      "description": "프로젝트 맥락 기억",
+      "response": "프로젝트 코드를 확인하세요! 어떤 파일을 열면 되세요?\n```json\n{\n  \"task\": \"continue_project\",\n  \"status\": \"pending\"\n}\n```\n코드가 잘 안 보시면 제가 도와드릴게요. 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "의존성 추가하려는데 Cargo.toml 어떻게 수정해?",
+      "description": "프로젝트 도구 기억 (Cargo)",
+      "response": "Cargo.toml 에 의존성을 추가하는 법을 알려드릴게요. 프로젝트 구조를 먼저 확인하세요:\n```toml\n[dependencies]\n# 여기에 새로운 라이브러리 추가\nserde = { version = \"1\", features = [\"derive\"] } # 예시\ntokio = { version = \"1\", features = [\"full\"] }    # 예시\n```\ncargo add 로도 자동 생성 가능해요: `cargo add <crate_name>`\n다른 crate 를 추천하시면 구체적으로 도와드려요! 📦✨",
+      "hits": [
+        "cargo",
+        "toml",
+        "dependencies"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "새로운 하위 커맨드 추가하려면?",
+      "description": "CLI 프레임워크 기억 (clap)",
+      "response": "하위 커맨드를 추가하는 법을 알려주세요. 어떤 프로젝트나 프레임워크를 사용 중이신가요? (CLI, Rust CLI, Python CLI 등)",
+      "hits": [
+        "커맨드"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이 프로젝트에서 에러가 나면 어떻게 처리해?",
+      "description": "에러 처리 라이브러리 기억 (anyhow)",
+      "response": "에러 관리는 Rust CLI 도구에서는 특히 중요해요. 저는 다음 전략을 사용합니다:\n1. **클린 에러 메시지**: clap 라이브러리로 파arsed 오류를 명확히 표시\n2. **로그 레벨링**: debug/info/warn/error 로 구분\n3. **재시도 메커니즘**: 파일 I/O 에러 시 자동 재처리 (예: .gitignore 생성)\n4. **테스트 커버리지**: unit 테스트로 edge case 검증\n\n특정 에러 케이스는 어떤가요?\n```toml\n[dependencies]\nanyhow = \"1\"  # 생산용, 복잡한 에러 핸들링\n# 또는 thiserror + anyhow::Error for production-ready error handling\n```",
+      "hits": [
+        "anyhow",
+        "에러",
+        "error"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "지금 프로젝트 테스트 돌리는 법은?",
+      "description": "테스트 방법 기억",
+      "response": "프로젝트 테스트. Rust CLI 도구를 추천해요: cargo test로 자동 테스팅, clap으로 아티팩스 생성. cargo install --locked 이면 깔끔하게 되요.\n```bash\ncargo build && cargo run  # 기본 실행\ncargo test                 # 통합 테스트\nclap::Parser               # CLI 파싱 (derive 모드)\nserde_json                  # JSON 서리징/파arsing\ntokio                       # async runtime\nanyhow                      # 에러 핸들링\nthiserror                   # 타입-safe 에러\nchron",
+      "hits": [
+        "cargo test",
+        "테스트"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이 프로젝트 빌드 어떻게 해?",
+      "description": "빌드 방법 기억 (cargo)",
+      "response": "프로젝트 빌드는 어떤 스택을 사용하시나요? (React, Rust CLI 등) 구체적인 코드를 보시면 더 정확한 조언을 드릴 수 있어요.\n```bash\n# 예: React 프로젝트 빌드\nnpm run build\nyarn build --mode production\ncargo build --release # 만약 Rust CLI라면\n```\n다른 방법을 원하시면 말씀하세요! 🛠️\n</think>\n\n빌딩 방법... cargo로 하면 되요. `Cargo.toml`에서 target 설정하고 compile 하세요. Cargo.lock 생성하면 재현성 확보해요.\n```toml\n[package] name = \"my-cli\" version = \"0.1.0\" edition = \"2021\" [[bin]] path = \"src/m",
+      "hits": [
+        "cargo build",
+        "rust",
+        "release"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 리스트 정렬하는 코드 짜줘.",
+      "description": "무관한 질문에 프로젝트 오염 없어야 함",
+      "response": "```python\n# 기본 정렬 (오름차순)\nfruits = [\"사과\", \"바나나\", \"귤\"]\nsorted_fruits_sorted = sorted(fruits, key=lambda x: len(x))  # 길이로 정렬\nprint(sorted_fruits_sorted)  \n# ['귮', '사과', '바나나']\n\n# 인덱스 기반 정렬\ndef sort_by_index(lst):\n    return [lst[i] for i in range(len(lst))] if lst else []\n\nnums = [[3], [1], [2]]\nresult = nums.sort(key=len)[0][len(nums)] - min(map(lambda n:len(n), nums[~])) \nprint(result)  \n\n# 원본 변경 ",
+      "hits": [
+        "sort",
+        "python",
+        "list"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "description": "일반 지식에 프로젝트 오염 없어야 함",
+      "response": "대한민국 (한국) 의 국회는 서울특별시에ありますが, **수도**는 1948 년에 제정된 헌법상으로는 **서울**. 하지만 실제로는 행정 중심지로 활동하고 있습니다. \n\n따라서 정답은:\n- **수도는 서울특별시입니다.**",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

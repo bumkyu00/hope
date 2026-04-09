@@ -4,67 +4,59 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-DreamLoRA — Qwen3.5 모델에 LoRA를 달고, 사용자 기억을 dream replay + CMS(Continuum Memory System) 스타일 레이어별 차등 업데이트로 개인화하는 프레임워크.
+Parameter Golf — 16MB 이하의 최고 성능 언어 모델 학습. "Thinking before predicting" 접근으로 차별화.
+
+대회: https://github.com/openai/parameter-golf
+- 제한: 16MB artifact (코드 + 압축 가중치), 8×H100에서 10분 학습
+- 평가: FineWeb validation bits-per-byte (bpb)
+- 기간: 2026-03-18 ~ 2026-04-30
+
+## Key Idea
+
+RPT/RLP 논문에서 증명: "생각하고 예측하면 next-token prediction이 더 정확하다."
+이를 16MB 모델에 적용 — forward pass 안에서 internal thinking을 수행하여 같은 파라미터로 더 나은 압축률 달성.
+
+## Environment
+
+- GPU: A100 80GB 1장 (개발용, 제출은 8×H100)
+- Python: `/mnt/ddn/bumkyu/conda-envs/hope/bin/python`
+- Parameter Golf repo: `/mnt/ddn/bumkyu/parameter-golf/`
+- 데이터: `/mnt/ddn/bumkyu/parameter-golf/data/datasets/fineweb10B_sp1024/`
 
 ## Commands
 
 ```bash
-# Install
-pip install -e ".[dev]"
+# 데이터 다운로드 (1 shard만)
+/mnt/ddn/bumkyu/conda-envs/hope/bin/python /mnt/ddn/bumkyu/parameter-golf/data/cached_challenge_fineweb.py --variant sp1024 --train-shards 1
 
-# Tests (50 tests)
-PYTHONPATH=src python -m pytest tests/ -v
-
-# Experiments (from repo root)
-PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True /mnt/ddn/bumkyu/conda-envs/hope/bin/python experiments/exp1_run.py
-
-# TensorBoard
-tensorboard --logdir outputs/ --port 6006
+# Baseline 학습 (A100 1장)
+RUN_ID=test ITERATIONS=100 VAL_LOSS_EVERY=50 TRAIN_LOG_EVERY=10 \
+DATA_PATH=/mnt/ddn/bumkyu/parameter-golf/data/datasets/fineweb10B_sp1024 \
+TOKENIZER_PATH=/mnt/ddn/bumkyu/parameter-golf/data/tokenizers/fineweb_1024_bpe.model \
+/mnt/ddn/bumkyu/conda-envs/hope/bin/python /mnt/ddn/bumkyu/parameter-golf/train_gpt.py
 ```
 
-## Architecture
+## Baseline Info
 
-- `src/dreamlora/config.py` — Pydantic config models, `ExperimentConfig.from_yaml()`
-- `src/dreamlora/training/cms_trainer.py` — 핵심: 레이어 그룹별 독립 gradient buffer + chunk boundary stepping
-- `src/dreamlora/training/sft_trainer.py` — 수동 PyTorch 학습 루프 (HF Trainer 사용 금지)
-- `src/dreamlora/data/dream_dataset.py` — assistant 토큰에만 loss 계산, `tokenizer.apply_chat_template()` 사용
-- `src/dreamlora/model/lora_setup.py` — `layers.\d+.` regex로 레이어 인덱스 파싱, 그룹별 파라미터 매핑
-- `src/dreamlora/model/merge.py` — 수동 `lora_B @ lora_A * scaling` → base weight 가산 + LoRA 초기화
-- `experiments/` — 실험 스크립트 + 데이터 + 결과 + LOG.md
+- 9-layer transformer, 512 hidden, 1024 vocab, tied embeddings
+- 17M params → int8+zlib = 8.8MB (16MB 한도의 절반!)
+- Baseline bpb: 1.2244 (20K steps, 10B tokens, 8×H100)
+- A100 1장: step당 ~630ms
 
-## Critical Rules
+## FineWeb Data Structure
 
-- **HF Trainer 금지**: gradient_accumulation + gradient_checkpointing 조합이 0.8B~4B 모델을 붕괴시킴. 반드시 수동 PyTorch 루프 사용.
-- **Chat template**: 반드시 `tokenizer.apply_chat_template()` 사용. 수동 ChatML 포맷 금지. Qwen3.5는 generation prompt에 `<think>` 블록이 기본 포함됨.
-- **Qwen3.5 target modules**: full attention(`q_proj`, `k_proj`, `v_proj`, `o_proj`) + DeltaNet(`in_proj_qkv`, `out_proj`) + MLP(`up_proj`, `down_proj`)
-- **모든 실험에서 반드시 저장할 것:**
-  1. **체크포인트** — adapter weights를 `torch.save()`로 저장
-  2. **로그** — 학습 loss, step 진행을 `logging.FileHandler`로 파일에 기록
-  3. **전체 입출력** — 모든 테스트 질문, 모델 응답(think 블록 포함 raw + clean), 키워드 히트를 JSON으로 저장
-  4. 인라인 `python -c` 대신 반드시 **스크립트 파일**로 작성하여 실행
-  5. generate 시 `skip_special_tokens=False`로 raw 응답도 함께 저장 (think 블록 확인용)
-- **Auto 키워드 판정은 과대평가**. 수동 검증 필수. 실험 결과를 보고할 때 auto와 수동을 구분하여 기록.
+- 50,000 문서, BOS(토큰 1)로 구분, concat됨
+- 중간값 733 tokens, 평균 1,240 tokens
+- 63%가 1024 이하, 86%가 2048 이하
+- Val: 62M tokens
 
-## Environment
+## Rules
 
-- GPU: A100 80GB 1장
-- CUDA: 시스템 11.8, PyTorch 12.8 (미스매치 — causal-conv1d 빌드 불가)
-- 모델: Qwen3.5-0.8B(파이프라인 검증), 4B(스케일업). 9B는 torch fallback DeltaNet으로 OOM.
-- Python env: `/mnt/ddn/bumkyu/conda-envs/hope/bin/python`
+- 모든 실험은 스크립트 파일로 작성
+- 로그와 결과 저장
+- 인라인 python -c 금지
 
-## Key Findings
+## Archive
 
-- **Nested adapter (Exp 9)가 현재 최선**: 기존 레이어 고정 + 레이어 사이 adapter MLP 삽입 → Mem 70% / San 80% (파라미터 0.035%)
-- LoRA 방식은 기존 지식을 손상시킴 ("배열을 지현하기" 같은 오염). Nested adapter는 구조적으로 차단.
-- Think retrieval chain이 spreading activation을 가능하게 함 (피스타치오→견과류→알레르기)
-- Dream 5개/사실이 일반화 임계점. 20개는 과적합.
-- CMS-front(앞쪽 고주파) > CMS-mid(중간 고주파). 중간 레이어 수정하면 추상 지식 손상.
-- Qwen3.5 0.8B/4B는 native thinking 안 됨 (max_new_tokens 부족이 원인, 4B는 2000 토큰에서 동작 확인)
-- Auto 키워드 판정은 과대평가. 수동 검증 필수.
-
-## Experiment Log
-
-실험 로그: `experiments/LOG.md`
-상세 분석: `experiments/exp2_analysis.md`
-실험 스크립트: `experiments/exp{N}_*.py`
-실험 결과: `experiments/exp{N}_results/`
+이전 DreamLoRA 연구: `archive/dreamlora/`
+논문 정리: `papers/`

@@ -1,0 +1,38 @@
+{
+  "baseline": {
+    "memory": 0.625,
+    "contamination": 0
+  },
+  "checkpoints": [
+    {
+      "step": 10,
+      "memory": 0.875,
+      "contamination": 0
+    },
+    {
+      "step": 20,
+      "memory": 0.75,
+      "contamination": 0
+    },
+    {
+      "step": 30,
+      "memory": 1.0,
+      "contamination": 0
+    },
+    {
+      "step": 50,
+      "memory": 0.875,
+      "contamination": 0
+    },
+    {
+      "step": 75,
+      "memory": 0.875,
+      "contamination": 0
+    },
+    {
+      "step": 100,
+      "memory": 0.875,
+      "contamination": 0
+    }
+  ]
+}

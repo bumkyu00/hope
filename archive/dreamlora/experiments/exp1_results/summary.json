@@ -1,0 +1,10 @@
+{
+  "ep30": {
+    "recall": 1.0,
+    "generalization": 0.5
+  },
+  "ep100": {
+    "recall": 1.0,
+    "generalization": 0.43333333333333335
+  }
+}

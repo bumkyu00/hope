@@ -1,0 +1,344 @@
+{
+  "step": 10,
+  "loss": 1.6641337871551514,
+  "memory": 0.13333333333333333,
+  "sanity": 0.8,
+  "contamination": 0,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "프로젝트 온보딩 문서는 새 팀원이 빠르게 적응할 수 있도록 핵심 정보와 리소스를 체계적으로 정리한 가이드입니다. 아래 템플릿을 활용하여 필요한 내용을 채워 넣으세요:\n\n---\n\n# 🚀 [팀명] 프로젝트 온보딩 가이드  \n**최종 업데이트:** 2024-XX-XX | **담당자:** @이름  \n\n## 👋 환영합니다!\n[팀명/프로젝트 이름]은 어떤 일을 하는 곳인가요? (1~3문장으로 설명)  \n예시: \"고객의 데이터 분석 결과를 시각화하는 BI 도구 개발\"\n\n---\n\n## 🔑 빠른 시작 체크리스트\n### 1️⃣ 환경 설정\n- ✅ Git 설치 및 초기화 (`git config --global user.name`)\n- ✅ IDE 다운로드 ([VS Code](https://code.visualstudio.com/) 등 권장 툴)\n- ✅ `.env` 파일 생성 방법 안내 링크 → [링크]\n- ✅ 로컬 실행 테스트 코드 → `npm run dev` 또는 유사 명령어\n\n### 2️⃣ 기본 구조 ",
+      "response_clean": "프로젝트 온보딩 문서는 새 팀원이 빠르게 적응할 수 있도록 핵심 정보와 리소스를 체계적으로 정리한 가이드입니다. 아래 템플릿을 활용하여 필요한 내용을 채워 넣으세요:\n\n---\n\n# 🚀 [팀명] 프로젝트 온보딩 가이드  \n**최종 업데이트:** 2024-XX-XX | **담당자:** @이름  \n\n## 👋 환영합니다!\n[팀명/프로젝트 이름]은 어떤 일을 하는 곳인가요? (1~3문장으로 설명)  \n예시: \"고객의 데이터 분석 결과를 시각화하는 BI 도구 개발\"\n\n---\n\n## 🔑 빠른 시작 체크리스트\n### 1️⃣ 환경 설정\n- ✅ Git 설치 및 초기화 (`git config --global user.name`)\n- ✅ IDE 다운로드 ([VS Code](https://code.visualstudio.com/) 등 권장 툴)\n- ✅ `.env` 파일 생성 방법 안내 링크 → [링크]\n- ✅ 로컬 실행 테스트 코드 → `npm run dev` 또는 유사 명령어\n\n### 2️⃣ 기본 구조 ",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "보안 스캐너를 CI/CD 파이프라인 (예: GitHub Actions, GitLab CI) 에 통합하는 것은 매우 좋은 아이디어입니다. 가장 널리 쓰이는 도구들인 **Trivy**와 **Snyk**, 그리고 코드 레벨의 **SonarQube/SonarCloud**로 나누어 설명해 드릴게요.\n\n### 1. Trivy 사용법 (이미지 및 패키지 스크리닝)\nDocker 이미지나 NPM/Pip 의존성에 대한 취약점 검색이 가능합니다. `trivy` 명령어를 실행하면 됩니다.\n\n```yaml\n# .github/workflows/ci.yml 예시\nname: Security Scan with Trivy\n\non: [push] # push 시점에 자동 실행됨\n\njobs:\n    security-scan:\n        runs-on: ubuntu-latest\n        \n        steps:\n            - uses: actions/checkout@v3\n            \n  ",
+      "response_clean": "보안 스캐너를 CI/CD 파이프라인 (예: GitHub Actions, GitLab CI) 에 통합하는 것은 매우 좋은 아이디어입니다. 가장 널리 쓰이는 도구들인 **Trivy**와 **Snyk**, 그리고 코드 레벨의 **SonarQube/SonarCloud**로 나누어 설명해 드릴게요.\n\n### 1. Trivy 사용법 (이미지 및 패키지 스크리닝)\nDocker 이미지나 NPM/Pip 의존성에 대한 취약점 검색이 가능합니다. `trivy` 명령어를 실행하면 됩니다.\n\n```yaml\n# .github/workflows/ci.yml 예시\nname: Security Scan with Trivy\n\non: [push] # push 시점에 자동 실행됨\n\njobs:\n    security-scan:\n        runs-on: ubuntu-latest\n        \n        steps:\n            - uses: actions/checkout@v3\n            \n  ",
+      "hits": [
+        "github actions",
+        "ecr"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "dockerfile로 만들 수 있는 서비스나 애플리케이션이 어떤 건가요? 예를 들어 웹 서버, API, 데이터베이스 등 구체적으로 알려주시면 작성해 드릴게요! 😊",
+      "response_clean": "dockerfile로 만들 수 있는 서비스나 애플리케이션이 어떤 건가요? 예를 들어 웹 서버, API, 데이터베이스 등 구체적으로 알려주시면 작성해 드릴게요! 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "네. 결제 도메인 추가하면 다음 기능들이 필요:\n1. 결제 버튼\n2. 결제 페이지\n3. 결제 결과 알림\n4. 결제 내역 조회<|im_end|>\n<|im_start|>assistant",
+      "response_raw": "결정적으로 필요한 것은 **API 엔드포인트**와 그로 연결된 **데이터베이스 테이블**(또는 컬렉션)입니다. 결제 시스템은 외부 서비스(Stripe, PayPal 등)나 내부 로직과 통신하는 게 핵심이니까요! 🚀",
+      "response_clean": "결정적으로 필요한 것은 **API 엔드포인트**와 그로 연결된 **데이터베이스 테이블**(또는 컬렉션)입니다. 결제 시스템은 외부 서비스(Stripe, PayPal 등)나 내부 로직과 통신하는 게 핵심이니까요! 🚀",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "1. 성능 모니터링: API 호출 횟수, 응답 시간 등을 측정하기 위해 API Gateway나 서비스 트레이서 도입\n2. 인덱싱 전략: 검색 쿼리에 자주 사용되는 필드에 인덱스 생성, 특히 MySQL이나 Elasticsearch\n3. 페이지네이션: API 응답 크기를 제한하고 페이지네이션 기능 추가\n4. 캐싱: Redis 같은 메모리 기반 캐싱으로 자주 사용되는 응답을 저장\n5. DB 쿼리 최적화: N+1 문제 해결, JOIN 쿼리 최적화, 불필요한 필드 필터링\n6. 응답 압축: gzip 사용으로 대량 데이터 전송 용량 줄이\n7. 로드 밸런싱: 많은 트래픽을 분산해서 처리\n8. 지연 조회: 불필요한 데이터를 DB에서 꺼내서 API 호출할 때 지연 처리",
+      "response_raw": "API 응답 속도를 높이는 방법입니다. 캐싱, 인덱스 추가, 쿼리 최적화 등을 통해 DB 부하를 줄이고 응답 시간을 단축할 수 있습니다.",
+      "response_clean": "API 응답 속도를 높이는 방법입니다. 캐싱, 인덱스 추가, 쿼리 최적화 등을 통해 DB 부하를 줄이고 응답 시간을 단축할 수 있습니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "사용자가 탈퇴 기능을 구현해달라고 요청했다.",
+      "response_raw": "사용자탈퇴는 DB에서 해당 유저의 모든 정보를 삭제하는 작업입니다. 보통은 `DELETE FROM users WHERE id = ?`로 간단히 처리하죠. 다만, 다른 테이블에 참조되어 있다면 외래키 제약조건 때문에 문제가 생길 수 있어요. 이런 경우엔 CASCADE DELETE를 활용하거나, 트랜잭션으로 안전하게 지우면 됩니다. 혹시 특정 상황이나 추가 기능이 필요하면 말씀해주세요! 😊",
+      "response_clean": "사용자탈퇴는 DB에서 해당 유저의 모든 정보를 삭제하는 작업입니다. 보통은 `DELETE FROM users WHERE id = ?`로 간단히 처리하죠. 다만, 다른 테이블에 참조되어 있다면 외래키 제약조건 때문에 문제가 생길 수 있어요. 이런 경우엔 CASCADE DELETE를 활용하거나, 트랜잭션으로 안전하게 지우면 됩니다. 혹시 특정 상황이나 추가 기능이 필요하면 말씀해주세요! 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "동시에 같은 상품으로 여러 요청이 들어오면, 각 요청마다 고유한 트랜잭션 ID를 생성하고 해당 상품의 재고와 판매량을 개별적으로 감소시킵니다. 이렇게 하면 한 번의 구매로 인해 다른 사람의 주문에 영향을 주지 않고도 모든 사람이 정상적인 거래가 될 수 있습니다. 또한, 이미 팔린 상품은 더 이상 주문할 수 없도록 처리됩니다.",
+      "response_clean": "동시에 같은 상품으로 여러 요청이 들어오면, 각 요청마다 고유한 트랜잭션 ID를 생성하고 해당 상품의 재고와 판매량을 개별적으로 감소시킵니다. 이렇게 하면 한 번의 구매로 인해 다른 사람의 주문에 영향을 주지 않고도 모든 사람이 정상적인 거래가 될 수 있습니다. 또한, 이미 팔린 상품은 더 이상 주문할 수 없도록 처리됩니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "DB 비밀번호는 프로덕션에서는 절대 코드에 하드코딩하지 않고, **환경 변수**나 **비밀번호 관리자 서비스**(예: HashiCorp Vault)를 통해 안전하게 관리합니다. 애플리케이션은 이 외부 저장소에서 동적으로 조회해서 연결됩니다.",
+      "response_clean": "DB 비밀번호는 프로덕션에서는 절대 코드에 하드코딩하지 않고, **환경 변수**나 **비밀번호 관리자 서비스**(예: HashiCorp Vault)를 통해 안전하게 관리합니다. 애플리케이션은 이 외부 저장소에서 동적으로 조회해서 연결됩니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "API 응답 형태는 {code: 200, message: \"ok\", data: {}}로 통일해야 한다.",
+      "response_raw": "JSON으로 통일하는 게 가장 좋겠다. 예: {\"status\": \"success\", \"data\": {...}}로 감싸면 API 호출할 때 편해지겠네!",
+      "response_clean": "JSON으로 통일하는 게 가장 좋겠다. 예: {\"status\": \"success\", \"data\": {...}}로 감싸면 API 호출할 때 편해지겠네!",
+      "hits": [
+        "status",
+        "success",
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "아, 로그에서 특정 요청을 추적하는 거구나. 요청 ID로 필터링하는 건 기본일 테고, request_id가 있는지 없는지 확인해야겠다.",
+      "response_raw": "요청을 로그로 기록하는 가장 일반적인 방법은 `console.log()`를 사용하는 것입니다. 예를 들어, `/api/users`라는 엔드포인트에 접근했을 때만 로그가 출력되도록 하면 됩니다:\n\n```javascript\nif (request.path === '/api/users') {\n  console.log('사용자 API 호출됨:', request.method); // GET/POST 등 HTTP 메서드를 함께 표시하면 더 유용합니다!\n}\n```\n\n이렇게 되면 해당 경로로 온 모든 요청의 타입과 다른 정보를 확인할 수 있습니다. 혹시 어떤 프레임워크나 환경에서는 어떻게 해야 할까요?",
+      "response_clean": "요청을 로그로 기록하는 가장 일반적인 방법은 `console.log()`를 사용하는 것입니다. 예를 들어, `/api/users`라는 엔드포인트에 접근했을 때만 로그가 출력되도록 하면 됩니다:\n\n```javascript\nif (request.path === '/api/users') {\n  console.log('사용자 API 호출됨:', request.method); // GET/POST 등 HTTP 메서드를 함께 표시하면 더 유용합니다!\n}\n```\n\n이렇게 되면 해당 경로로 온 모든 요청의 타입과 다른 정보를 확인할 수 있습니다. 혹시 어떤 프레임워크나 환경에서는 어떻게 해야 할까요?",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "코디 포맷을 통일할 수 있어?",
+      "response_raw": "`prettier --write .`로 한 번에 정리할 수 있어.",
+      "response_clean": "`prettier --write .`로 한 번에 정리할 수 있어.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "API 응답이 느려질 수 있지만, 보통은 API 호출 자체가 아니라, API로 데이터를 보내고 싶어서는 1500자 이상으로 보내면 15 초 걸리는지?",
+      "response_raw": "API 호출 시 이메일 발송 요청으로 인해 지연되는 현상은 주로 다음과 같은 원인들이 있을 수 있습니다. 먼저, 현재 사용 중인 메일 서버의 처리 속도나 트래픽 부하를 확인해보시고요. 또한, 쿼리 파라미터로 전달하는 데이터 양이나 구조가 복잡하지 않은지 점검해볼 필요가 있겠습니다. 만약 문제가 지속된다면 로그에서 구체적인 에러 메시지나 타임아웃 정보를 찾아보시는 것도 도움이 될 것 같습니다. 혹시 특정 기능에 대해 더 자세히 알고 싶으시다면 말씀해주세요! 😊",
+      "response_clean": "API 호출 시 이메일 발송 요청으로 인해 지연되는 현상은 주로 다음과 같은 원인들이 있을 수 있습니다. 먼저, 현재 사용 중인 메일 서버의 처리 속도나 트래픽 부하를 확인해보시고요. 또한, 쿼리 파라미터로 전달하는 데이터 양이나 구조가 복잡하지 않은지 점검해볼 필요가 있겠습니다. 만약 문제가 지속된다면 로그에서 구체적인 에러 메시지나 타임아웃 정보를 찾아보시는 것도 도움이 될 것 같습니다. 혹시 특정 기능에 대해 더 자세히 알고 싶으시다면 말씀해주세요! 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "파일 업로드 endpoint를 만들어달라는 요청이네. Flask로 간단하게 만들자. /upload이라는 route로 /uploads 폴더에 파일 저장하는 방식이 표준이다.",
+      "response_raw": "Node.js + Express로 간단하게 파일업로드를 하는 코드입니다:\n\n```javascript\nconst express = require('express');\nconst multer = require('multer'); // 파일을 저장할 디렉토리 설정\n// const storage = new MulterStorage({}); \napp.use('/uploads', upload); \n\nfunction setupMulter() {\n  return multer.diskStorage();\n}\n\nmodule.exports.setupMulter;\n```",
+      "response_clean": "Node.js + Express로 간단하게 파일업로드를 하는 코드입니다:\n\n```javascript\nconst express = require('express');\nconst multer = require('multer'); // 파일을 저장할 디렉토리 설정\n// const storage = new MulterStorage({}); \napp.use('/uploads', upload); \n\nfunction setupMulter() {\n  return multer.diskStorage();\n}\n\nmodule.exports.setupMulter;\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "API 남용 방지는 여러 단계에서 접근해야 한다. 먼저요청 빈도를 제한하고요. 쿠키나 토큰으로 인증하고요. SQL injection 같은 취약점 방어도 필요하고요. 라우팅 규칙을 명시하고요.",
+      "response_raw": "요청이 너무 많을 경우, API 호출 횟수를 제한하는 방법입니다. 예를 들어, 1 분 동안 최대 X 회까지 요청할 수 있도록 설정합니다. 또한, 비정상적인 패턴이나 IP 기반의 과도한 접근은 차단하거나 경고 메시지를 표시하여 보호해야 합니다.",
+      "response_clean": "요청이 너무 많을 경우, API 호출 횟수를 제한하는 방법입니다. 예를 들어, 1 분 동안 최대 X 회까지 요청할 수 있도록 설정합니다. 또한, 비정상적인 패턴이나 IP 기반의 과도한 접근은 차단하거나 경고 메시지를 표시하여 보호해야 합니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "웹사이트나 API가 정상적으로 작동하지 않는 경우, 다음과 같은 방법으로 서비스 장애를 확인할 수 있습니다:\n\n1. **HTTP 상태 코드 확인**: 200이 아닌 다른 코드가 반환되는지 체크 (예: 5xx 에러)\n   ```javascript\n   fetch('/api/endpoint')\n     .then(res => console.log('Status:', res.status)) // 404 또는 503 등\n```\n\n2. **응답 시간 측정**: 응답 시간이 너무 오래 걸리는지 모니터링하기 위해 `setTimeout`으로 대기시간을 기록합니다.\n\n3. **로깅 시스템 활용**: 서버 로그에서 오류 메시지를 검색하거나 알림 설정해두면 자동으로 알려줍니다.\n\n어떤 서비스를 점검하고 싶으신가요? 더 구체적인 방법을 원하시면 말씀해주세요! 😊",
+      "response_clean": "웹사이트나 API가 정상적으로 작동하지 않는 경우, 다음과 같은 방법으로 서비스 장애를 확인할 수 있습니다:\n\n1. **HTTP 상태 코드 확인**: 200이 아닌 다른 코드가 반환되는지 체크 (예: 5xx 에러)\n   ```javascript\n   fetch('/api/endpoint')\n     .then(res => console.log('Status:', res.status)) // 404 또는 503 등\n```\n\n2. **응답 시간 측정**: 응답 시간이 너무 오래 걸리는지 모니터링하기 위해 `setTimeout`으로 대기시간을 기록합니다.\n\n3. **로깅 시스템 활용**: 서버 로그에서 오류 메시지를 검색하거나 알림 설정해두면 자동으로 알려줍니다.\n\n어떤 서비스를 점검하고 싶으신가요? 더 구체적인 방법을 원하시면 말씀해주세요! 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "JavaScript에서 배열을 합치는 가장 간단한 방법은 `concat()`를 사용하거나, `spread(...)` 연산자를 쓰는 거야.\n\n예를들어, const a = [1, 2, 3], const b = [4, 5, 6];\nconsole.log(a.concat(b)); // [1,2,3,4,5,6]",
+      "response_raw": "`concat()` 메서드를 사용하면 간단하게 두 개 이상의 배열을 이어 붙일 수 있습니다. 예를 들어 `arr1.concat(arr2)`로 실행하면 새로운 배열이 생성되어 반환됩니다. 만약 원본도 변경하고 싶다면 spread 연산자인 `[...arr1, ...arr2]`를 사용하거나 push() 등으로 순차적으로 추가할 수도 있죠.",
+      "response_clean": "`concat()` 메서드를 사용하면 간단하게 두 개 이상의 배열을 이어 붙일 수 있습니다. 예를 들어 `arr1.concat(arr2)`로 실행하면 새로운 배열이 생성되어 반환됩니다. 만약 원본도 변경하고 싶다면 spread 연산자인 `[...arr1, ...arr2]`를 사용하거나 push() 등으로 순차적으로 추가할 수도 있죠.",
+      "hits": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "아, 일본의 수도 도쿄로 일본에 가는데 추천받고 싶군요. 근데 도쿄에는 정말 많은 곳이 있잖아. 근데 일본에 사는 사람, 특히 일본에 10년 이상 살았다고 말로 들은 적이 있는데...",
+      "response_raw": "東京旅行の提案！まず、どの期間に行かれる予定ですか？また、どのような体験を重視されていますか（例：ショッピング、グルメ、観光名所など）教えてください。それによって最適なプランをご案内できますよ♪",
+      "response_clean": "東京旅行の提案！まず、どの期間に行かれる予定ですか？また、どのような体験を重視されていますか（例：ショッピング、グルメ、観光名所など）教えてください。それによって最適なプランをご案内できますよ♪",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울특별시입니다.",
+      "response_clean": "서울특별시입니다.",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "1+2",
+      "response_raw": "2입니다.",
+      "response_clean": "2입니다.",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "git rebase는 커밋 히스토리를 깔끔하게 정리하지만, merge는 변경사항을 다른 브랜치에 합쳐줍니다. merge는 충돌이 발생해도 자연스럽게 처리되지만, rebase는 다른 브랜치에서 커밋을 병합할 때 충돌이 더 많이 발생합니다. merge는 히스토리가 조금 더 복잡하게 보이지만, rebase는 히스토리가 깔끔하고 이해하기 쉽습니다.",
+      "response_raw": "git rebase는 현재 브랜치에 있는 커밋을 다른 브랜치의 최신 상태 위에 다시 쌓아 올리는 작업으로, 히스토리에서 분기 없이 직선적으로 보이게 한다. 반면 git merge는 두 개의 독립적인 개발 흐름이 합쳐지는 방식이다. 재베이스를 사용하면 코드 리뷰나 협업 시 혼란스러운 병합 충돌이 줄어들고 깔끔한 로그가 유지된다. 하지만 개인 프로젝트라면 무조건 재베이스로 가는 게 아니라서, 팀원들과의 소통이나 기존 컨벤션과 맞지 않을 수 있다.",
+      "response_clean": "git rebase는 현재 브랜치에 있는 커밋을 다른 브랜치의 최신 상태 위에 다시 쌓아 올리는 작업으로, 히스토리에서 분기 없이 직선적으로 보이게 한다. 반면 git merge는 두 개의 독립적인 개발 흐름이 합쳐지는 방식이다. 재베이스를 사용하면 코드 리뷰나 협업 시 혼란스러운 병합 충돌이 줄어들고 깔끔한 로그가 유지된다. 하지만 개인 프로젝트라면 무조건 재베이스로 가는 게 아니라서, 팀원들과의 소통이나 기존 컨벤션과 맞지 않을 수 있다.",
+      "hits": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

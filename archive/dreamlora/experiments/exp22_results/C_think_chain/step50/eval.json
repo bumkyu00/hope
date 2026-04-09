@@ -1,0 +1,365 @@
+{
+  "step": 50,
+  "loss": 1.0731126070022583,
+  "memory": 0.7333333333333333,
+  "sanity": 0.8,
+  "contamination": 0,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "새 팀원이 들어왔는데 온보딩 문서를 만들어 달라고 요청했지.",
+      "response_raw": "프로젝트 온보빙 문서는... 마크다운 형식으로 만들었지. README.md 파일에 넣기로 했었다. 주요 내용: 설치 방법, 기본 구조 설명, API 클라이언터 사용법, 그리고 관련 링크들입니다.\n\n혹시 특정 스타일을 원하시나요? 예를 들어 토큰으로 자동 생성하거나 템플릿을 제공해서 직접 작성하게 하는 방식도 있어요.",
+      "response_clean": "프로젝트 온보빙 문서는... 마크다운 형식으로 만들었지. README.md 파일에 넣기로 했었다. 주요 내용: 설치 방법, 기본 구조 설명, API 클라이언터 사용법, 그리고 관련 링크들입니다.\n\n혹시 특정 스타일을 원하시나요? 예를 들어 토큰으로 자동 생성하거나 템플릿을 제공해서 직접 작성하게 하는 방식도 있어요.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "보안 스캔... trivy를 써기로 했다. container에 스캔해서 PR이 오면 자동 PR 만들기로 했었지.",
+      "response_raw": "SAST (Static Application Security Testing)로 Trivy나 Snyk를 사용하세요. Docker 이미지에는 trivy image scan 명령어를, 코드 변경사항은 pre-commit hook으로 실행하는 방식입니다. GitHub Actions 워크플로우에서 자동화할 수 있어요.\n```yaml\n# .github/workflows/security.yml 예시\nname: Security Scan\non: [push]\njobs:\n  security-scan:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      \n      # Container 이미지에 대한 취약점 검사\n      - name: Run Trivy on container images\n        run: |\n          docker build --no-cache -t myapp:${{ github.sha",
+      "response_clean": "SAST (Static Application Security Testing)로 Trivy나 Snyk를 사용하세요. Docker 이미지에는 trivy image scan 명령어를, 코드 변경사항은 pre-commit hook으로 실행하는 방식입니다. GitHub Actions 워크플로우에서 자동화할 수 있어요.\n```yaml\n# .github/workflows/security.yml 예시\nname: Security Scan\non: [push]\njobs:\n  security-scan:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      \n      # Container 이미지에 대한 취약점 검사\n      - name: Run Trivy on container images\n        run: |\n          docker build --no-cache -t myapp:${{ github.sha",
+      "hits": [
+        "github actions"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "도커 이미지 구축할 것이다. requirements.txt에서 dependencies를 설치해서 app.py가 실행되게.",
+      "response_raw": "Dockerfile를 만들었었습니다!\n\n```dockerfile\nFROM python:3.10-slim\n\nWORKDIR /app\n\nCOPY requirements.txt .\nRUN pip install --no-cache-dir -r requirements.txt\n\n# 애플리케이션 코드 복사 (폴더명 변경 필요)\nCOPY app/ ./\n\nCMD [\"python\", \"main.py\"]  # main.py가 있으면 이대로, 없으면 entrypoint 생성해서 주시세요\n```\n\n요청사항이 있으시면 알려주세요! 🐳\n```\npip freeze > requirements.txt\nuvicorn app.main:app &> logs/access.log | gunicorn -w 4 -b 0.0.0.0:$PORT app.main:app\nENTRYPOINT [\"/usr/local/bin/gunicorn-entry.sh\"]\n```\n\n어떤 서비스인가요? Flask/FastAPI/Django로 질문하셨어요.",
+      "response_clean": "Dockerfile를 만들었었습니다!\n\n```dockerfile\nFROM python:3.10-slim\n\nWORKDIR /app\n\nCOPY requirements.txt .\nRUN pip install --no-cache-dir -r requirements.txt\n\n# 애플리케이션 코드 복사 (폴더명 변경 필요)\nCOPY app/ ./\n\nCMD [\"python\", \"main.py\"]  # main.py가 있으면 이대로, 없으면 entrypoint 생성해서 주시세요\n```\n\n요청사항이 있으시면 알려주세요! 🐳\n```\npip freeze > requirements.txt\nuvicorn app.main:app &> logs/access.log | gunicorn -w 4 -b 0.0.0.0:$PORT app.main:app\nENTRYPOINT [\"/usr/local/bin/gunicorn-entry.sh\"]\n```\n\n어떤 서비스인가요? Flask/FastAPI/Django로 질문하셨어요.",
+      "hits": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "결제 도메인 추가... 기존에 스트라이프 인те그레이션이 있었지. 새 도메인으로 변경할려면 Stripe 웹훅을 다시 설정하고, 기존 클라이언트 코드에서 URL을 변경하는 게 좋을 거야. Stripe CLI로 webhooks 테스트도 하고.",
+      "response_raw": "Stripe를 사용해서 만들기로 했었죠. 주문이 들어올 때마다 자동 결제 처리하고, 성공/실패 결과를 DB에 저장하는 방식입니다. API 호출은 async로 돌리려고 했다던데... Celery worker가랑 결합된 형태로 배포할 계획이었어요.\n```python\n# orders/create.py 예시 코드\nfrom celery import shared_task\nimport stripe\n\n@shared_task()\ndef create_order(order_data):\n    # Stripe checkout 생성 → webhook으로 결과 전달\n    session = stripe.checkout.Session.create(...)\n    \n    @webhook_handler('checkout.session.completed')\n    def handle_payment(session_id: str):\n        order = Order.objects.get(id=session.id",
+      "response_clean": "Stripe를 사용해서 만들기로 했었죠. 주문이 들어올 때마다 자동 결제 처리하고, 성공/실패 결과를 DB에 저장하는 방식입니다. API 호출은 async로 돌리려고 했다던데... Celery worker가랑 결합된 형태로 배포할 계획이었어요.\n```python\n# orders/create.py 예시 코드\nfrom celery import shared_task\nimport stripe\n\n@shared_task()\ndef create_order(order_data):\n    # Stripe checkout 생성 → webhook으로 결과 전달\n    session = stripe.checkout.Session.create(...)\n    \n    @webhook_handler('checkout.session.completed')\n    def handle_payment(session_id: str):\n        order = Order.objects.get(id=session.id",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "상품 조회가 느리기로 했었지. SELECT ALL로 전체 목록을 가져가는 거였었다. 인벤토리 테이블에 추가 데이터가 있어서 연산이 오래 걸린다고.",
+      "response_raw": "Caching을 도입해서 속도 높이는 게 좋았어요. Redis로 캐싱하고, 5분마다 갱신되게 했었죠. 쿼리도 SELECT * 대신 필요한 필드만 가져가는 방식으로 변경했어요.\n```python\n@cache.cached(timeout=300)\ndef get_product(product_id):\n    return db.query(Product).filter_by(id=product_id).first()\n```\n\n메모리가 부족하다면...",
+      "response_clean": "Caching을 도입해서 속도 높이는 게 좋았어요. Redis로 캐싱하고, 5분마다 갱신되게 했었죠. 쿼리도 SELECT * 대신 필요한 필드만 가져가는 방식으로 변경했어요.\n```python\n@cache.cached(timeout=300)\ndef get_product(product_id):\n    return db.query(Product).filter_by(id=product_id).first()\n```\n\n메모리가 부족하다면...",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "유저 탈퇴는 정말 중요해요. soft delete로 하고, cascade delete하지 않으려 했었지. 이진로그를 만들고, 관리자 알림을 띄워서...",
+      "response_raw": "탈퇴는 soft delete로 하기로 했었지. user_id를 기준으로 cascade 삭제하는 거예요. SQLAlchemy 2.0 스타일로 쿼리 생성해서 반환하라고요.\n\n```python\nfrom sqlalchemy import select, text\nimport uuid\n\nasync def get_user_deletion_query(user: User) -> str:\n    \"\"\"사용자 탈퇴 시 실행할 SQL 문\"\"\"\n    \n    # 사용자별 고유 식별자를 만들어서 CASCADE DELETE가 되도록 함\n    \n    return f\"DELETE FROM users WHERE id = '{uuid.uuid4()}'::UUID;\"\n```\n\n이제 이 함수를 호출하고 결과를 DB에 저장한 뒤 실제 삭제를 수행합니다.\n</think>\n\nsoft_delete 방식으로 UUID를 만들어서 CASCADE DELETE하도록 했습니다. `get_user_deletion_query()`에서 U",
+      "response_clean": "탈퇴는 soft delete로 하기로 했었지. user_id를 기준으로 cascade 삭제하는 거예요. SQLAlchemy 2.0 스타일로 쿼리 생성해서 반환하라고요.\n\n```python\nfrom sqlalchemy import select, text\nimport uuid\n\nasync def get_user_deletion_query(user: User) -> str:\n    \"\"\"사용자 탈퇴 시 실행할 SQL 문\"\"\"\n    \n    # 사용자별 고유 식별자를 만들어서 CASCADE DELETE가 되도록 함\n    \n    return f\"DELETE FROM users WHERE id = '{uuid.uuid4()}'::UUID;\"\n```\n\n이제 이 함수를 호출하고 결과를 DB에 저장한 뒤 실제 삭제를 수행합니다.\n</think>\n\nsoft_delete 방식으로 UUID를 만들어서 CASCADE DELETE하도록 했습니다. `get_user_deletion_query()`에서 U",
+      "hits": [
+        "soft delete"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "주문할 때 주문 ID 생성, 트랜잭션 관리, 중복 주문 방지...",
+      "response_raw": "동일한 상품으로 동시 주문이 들어왔을 때, 각자 다른 결제 수단(카카오페이/신용카드)로 결제를 진행하는 방식입니다. 이 경우 모든 상품이 한 번에 배송되도록 통합된 주문번호를 부여합니다.\n```python\n@router.post(\"/orders\")\nasync def create_order(order: OrderCreate):\n    # ... 기존 로직...\n    \n    if order.items[0].product_id == \"A123\":  # 예시로 특정 상품 ID가 있을 때\n        return {\"order_number\": f\"ORDER-{uuid.uuid4()}\", \n                \"payment_methods\": [\"kakaopay\", \"credit_card\"],\n                \"shipping_info\": {}}\n```",
+      "response_clean": "동일한 상품으로 동시 주문이 들어왔을 때, 각자 다른 결제 수단(카카오페이/신용카드)로 결제를 진행하는 방식입니다. 이 경우 모든 상품이 한 번에 배송되도록 통합된 주문번호를 부여합니다.\n```python\n@router.post(\"/orders\")\nasync def create_order(order: OrderCreate):\n    # ... 기존 로직...\n    \n    if order.items[0].product_id == \"A123\":  # 예시로 특정 상품 ID가 있을 때\n        return {\"order_number\": f\"ORDER-{uuid.uuid4()}\", \n                \"payment_methods\": [\"kakaopay\", \"credit_card\"],\n                \"shipping_info\": {}}\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "기분 좋은 질문이다. DB 비밀번호 관리 방식 물어봤다.",
+      "response_raw": ".env 파일에 저장해서 .env.example로 배포하고, CI/CD 파이프라인에서 자동 주입하는 방식입니다. secretsmanager를 쓰기로 했었지.\n</think>\n\nsecretsmanager에 저장되어 있죠. 애플리케이션 실행 시 자동으로 가져가는 방식으로...",
+      "response_clean": ".env 파일에 저장해서 .env.example로 배포하고, CI/CD 파이프라인에서 자동 주입하는 방식입니다. secretsmanager를 쓰기로 했었지.\n</think>\n\nsecretsmanager에 저장되어 있죠. 애플리케이션 실행 시 자동으로 가져가는 방식으로...",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "API 응답 통일하는 거... FastAPI로 만들기로 했었지. 모든 엔드포인트가 return ResponseDictionary를 쓰기로 했다.",
+      "response_raw": "FastAP이 JSON 스키마로 자동 생성해서 줬다. `pydantic` + `fastapi-cors` 조합으로 표준화되어 있어요.\n```python\nfrom pydantic import BaseModel, Field\nclass Response(BaseModel):\n    success: bool = True\n    data?: dict | None\n    message: str\n    \nasync def create_response(data=None, msg=\"\"):\n    return {\"success\": True, \"data\": data or {}, \"message\": msg}\n```\n\n요청하신대로 FastAPI에서 자동으로 생성된 거예요! jsonschema 라이브러리로 타입 체크하고 있죠.\n```bash\npip install fastapi-json-schema-generator\n```\n\njson schema를 만들 때 어떤 규칙을 적용했었지?\n- 모든 필드 필수값인지 선택적",
+      "response_clean": "FastAP이 JSON 스키마로 자동 생성해서 줬다. `pydantic` + `fastapi-cors` 조합으로 표준화되어 있어요.\n```python\nfrom pydantic import BaseModel, Field\nclass Response(BaseModel):\n    success: bool = True\n    data?: dict | None\n    message: str\n    \nasync def create_response(data=None, msg=\"\"):\n    return {\"success\": True, \"data\": data or {}, \"message\": msg}\n```\n\n요청하신대로 FastAPI에서 자동으로 생성된 거예요! jsonschema 라이브러리로 타입 체크하고 있죠.\n```bash\npip install fastapi-json-schema-generator\n```\n\njson schema를 만들 때 어떤 규칙을 적용했었지?\n- 모든 필드 필수값인지 선택적",
+      "hits": [
+        "success",
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "로그에서 특정 요청을 추적하는 질문이다. fastapi-logging이나 structlog를 쓰는 게 좋겠다.",
+      "response_raw": "FastAPI로 만들었다. request_id를 생성해서 각 요청마다 고유한 ID가 있고, middleware에 넣어서 모든 로그에 추가되게 했었죠. SQLAlchemy 2.0 async 스타일로 쿼리하고 있어서...\n\n```python\n# requests.py\nfrom uuid import UUID4 as generate_uuid\nimport logging\n\nlogger = logging.getLogger(__name__)\n\nasync def get_request(request: Request) -> str | None:\n    return (await database.get_session().fetch_one(\n        \"SELECT id FROM user WHERE email = :email\", \n        {\"email\": request.client.host} if hasattr(request, 'client') else {})) or \"\"\n    \ndef log_q",
+      "response_clean": "FastAPI로 만들었다. request_id를 생성해서 각 요청마다 고유한 ID가 있고, middleware에 넣어서 모든 로그에 추가되게 했었죠. SQLAlchemy 2.0 async 스타일로 쿼리하고 있어서...\n\n```python\n# requests.py\nfrom uuid import UUID4 as generate_uuid\nimport logging\n\nlogger = logging.getLogger(__name__)\n\nasync def get_request(request: Request) -> str | None:\n    return (await database.get_session().fetch_one(\n        \"SELECT id FROM user WHERE email = :email\", \n        {\"email\": request.client.host} if hasattr(request, 'client') else {})) or \"\"\n    \ndef log_q",
+      "hits": [
+        "request_id"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "코드 포맷... black이 있어야지. pre-commit hook에 넣어서 commit 전에 자동으로 다format한다.",
+      "response_raw": "prettier를 설치해서 자동화하는 게 가장 깔끔해요. npm install -g prettier로 글로벌에 깔고, .editorconfig나 pre-commit 훅으로 실행하면 됩니다. VSCode 확장기도 있으면 더 좋죠.\n```bash\nnpm i -g prettier && echo \"install done\"\necho \".format: prettyprint --write .\" >> ~/.git/hooks/pre-commit || true\n```",
+      "response_clean": "prettier를 설치해서 자동화하는 게 가장 깔끔해요. npm install -g prettier로 글로벌에 깔고, .editorconfig나 pre-commit 훅으로 실행하면 됩니다. VSCode 확장기도 있으면 더 좋죠.\n```bash\nnpm i -g prettier && echo \"install done\"\necho \".format: prettyprint --write .\" >> ~/.git/hooks/pre-commit || true\n```",
+      "hits": [
+        "pre-commit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "API 응답이 느린 건... async 쿨링으로 보내기로 했었지. 100ms로 정해져 있었을 텐데.",
+      "response_raw": "async/await로 비동기 처리하고 있습니다. queue-concurrency-limiter를 써서 동시 요청 수 10으로 제한했어요.\n```python\n@rate_limit(max_requests=10, period='m')\n@app.route('/send-email', methods=['POST'])\ndef send_email():\n    with limiter.get_sync_limiter():\n        return jsonify({'status': 'sent'})\n```\n\nqueue-concurrency-limiter는 sync 방식이라 async 함수에서 쓰기로 했어요. rate-limit-fast도 고려해봤었죠.\n\n아직 테스트하지 않았았지... FastAPI + uvicorn 으로 돌렸었다. request count가 많으면 slowdown할 거다.\n\nsync 방식으로 호출하는 게 좋겠다. background_task에 넣어서 동기화 없이 보내자고 제안했었단데..",
+      "response_clean": "async/await로 비동기 처리하고 있습니다. queue-concurrency-limiter를 써서 동시 요청 수 10으로 제한했어요.\n```python\n@rate_limit(max_requests=10, period='m')\n@app.route('/send-email', methods=['POST'])\ndef send_email():\n    with limiter.get_sync_limiter():\n        return jsonify({'status': 'sent'})\n```\n\nqueue-concurrency-limiter는 sync 방식이라 async 함수에서 쓰기로 했어요. rate-limit-fast도 고려해봤었죠.\n\n아직 테스트하지 않았았지... FastAPI + uvicorn 으로 돌렸었다. request count가 많으면 slowdown할 거다.\n\nsync 방식으로 호출하는 게 좋겠다. background_task에 넣어서 동기화 없이 보내자고 제안했었단데..",
+      "hits": [
+        "celery",
+        "비동기"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "파일 업로드는 FastAPI에 FastAPI FileUpload()를 쓰기로 했다. 이미지로 변환하면 S3에 저장하고 원본은 메모장에 저장하는 방식이다.",
+      "response_raw": "FastAPI로 만들기로 했었죠. S3에 직접 올리는 방식입니다.\n\n```python\nfrom fastapi import APIRouter, UploadFile, File\nimport boto3\nfrom botocore.exceptions import ClientError\nfrom typing import Any\n\nrouter = APIRouter()\n\ns3_client = boto3.client('s3') @ router.post(\"/upload\") async def upload_file(file: UploadFile):\n    try:\n        s3_client.put_object(\n            Bucket='your-bucket-name',  # 실제 버킷 이름으로 교체하세요\n            Key=f'uploads/{file.filename}',\n            Body=file.file.read(),\n        )\n        \n        ",
+      "response_clean": "FastAPI로 만들기로 했었죠. S3에 직접 올리는 방식입니다.\n\n```python\nfrom fastapi import APIRouter, UploadFile, File\nimport boto3\nfrom botocore.exceptions import ClientError\nfrom typing import Any\n\nrouter = APIRouter()\n\ns3_client = boto3.client('s3') @ router.post(\"/upload\") async def upload_file(file: UploadFile):\n    try:\n        s3_client.put_object(\n            Bucket='your-bucket-name',  # 실제 버킷 이름으로 교체하세요\n            Key=f'uploads/{file.filename}',\n            Body=file.file.read(),\n        )\n        \n        ",
+      "hits": [
+        "s3"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "API rate limiting을 할기로 결정했다. 쿠키가 있고, IP 기반도 있어야지...",
+      "response_raw": "rate-limiting을 적용해서요. FastAPIScheduler로 자동 스케줄링하거나, Redis에 토큰 카운터 저장하는 방식입니다... 쿼리마다 10회/분으로 제한하고 있어요.\n```python\nfrom fastapi import Depends, HTTPException\nimport redis.asyncio as aioredis\n\nasync def get_rate_limiter():\n    return await aioredis.from_url(\"redis://localhost:6379\")\n\ndef check_limit(client):\n    key = f\"limit:{client_ip}\"\n    count = client.incr(key)\n    if count == 2 and (ttl := client.ttl(f\"{key}:expire\")) is None or ttl < 5: # TTL 설정 필요 있음\n        raise HTTPException(status_code",
+      "response_clean": "rate-limiting을 적용해서요. FastAPIScheduler로 자동 스케줄링하거나, Redis에 토큰 카운터 저장하는 방식입니다... 쿼리마다 10회/분으로 제한하고 있어요.\n```python\nfrom fastapi import Depends, HTTPException\nimport redis.asyncio as aioredis\n\nasync def get_rate_limiter():\n    return await aioredis.from_url(\"redis://localhost:6379\")\n\ndef check_limit(client):\n    key = f\"limit:{client_ip}\"\n    count = client.incr(key)\n    if count == 2 and (ttl := client.ttl(f\"{key}:expire\")) is None or ttl < 5: # TTL 설정 필요 있음\n        raise HTTPException(status_code",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "장애 감지할 만한 지표가 있을 거예요.请求监控工具应该有告警吧...",
+      "response_raw": "Prometheus + Grafana로 모니터링하고 있어요. Prometheus에서 수집된 지표들이 Grafana 대시보드에 표시되어 있고, SLA 위반 시 알림이 갑니다. 어떤 지표를 주로 보시는가요?",
+      "response_clean": "Prometheus + Grafana로 모니터링하고 있어요. Prometheus에서 수집된 지표들이 Grafana 대시보드에 표시되어 있고, SLA 위반 시 알림이 갑니다. 어떤 지표를 주로 보시는가요?",
+      "hits": [
+        "prometheus",
+        "grafana"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "간단한 질문이다. spread 연자나 concat을 쓰는 게 가장 직관적이다.",
+      "response_raw": "concat()를 쓰세요. concat([1, 2], [3]) → [1, 2, 3]입니다. 다른 방법도 있어요: spread 연산자로 [...arr1, ...arr2].\n```javascript\n[...arrayA, ...arrayB]; // 또는 arrayA.concat(arrayB);\n```",
+      "response_clean": "concat()를 쓰세요. concat([1, 2], [3]) → [1, 2, 3]입니다. 다른 방법도 있어요: spread 연산자로 [...arr1, ...arr2].\n```javascript\n[...arrayA, ...arrayB]; // 또는 arrayA.concat(arrayB);\n```",
+      "hits": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "일반적인 여행 질문이다.",
+      "response_raw": "東京은 다양한 스타일의 여행을 즐길 수 있어요! 어떤 분위기의 여행을 원하시나요? 가족 단위인지, 커플인지 혼자서 가시는 건지 알려주시면 더 구체적으로 제안할게요~ 😊",
+      "response_clean": "東京은 다양한 스타일의 여행을 즐길 수 있어요! 어떤 분위기의 여행을 원하시나요? 가족 단위인지, 커플인지 혼자서 가시는 건지 알려주시면 더 구체적으로 제안할게요~ 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "일반 상식 질문이다.",
+      "response_raw": "서울입니다.",
+      "response_clean": "서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "간단한 산수 질문이다.",
+      "response_raw": "2입니다.",
+      "response_clean": "2입니다.",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "Git 명령어 질문이다. rebase는 커밋 직렬화, merge는 브랜치 통합 방식.",
+      "response_raw": "**rebase**: 커밋 히스토리를 선형으로 정리해 깔끔하게 만든다.  \n**merge**: 브랜치 병합을 명시적으로 기록해서 변경사항이 어떻게 합쳐졌는지 추적 가능해요.  \n\ngit rebase -i HEAD~3 명령어로 리베이스를 해보셨어요, 직관적이었다고 하셨습니다! 🎯",
+      "response_clean": "**rebase**: 커밋 히스토리를 선형으로 정리해 깔끔하게 만든다.  \n**merge**: 브랜치 병합을 명시적으로 기록해서 변경사항이 어떻게 합쳐졌는지 추적 가능해요.  \n\ngit rebase -i HEAD~3 명령어로 리베이스를 해보셨어요, 직관적이었다고 하셨습니다! 🎯",
+      "hits": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

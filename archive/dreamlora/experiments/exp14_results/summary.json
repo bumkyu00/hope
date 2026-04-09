@@ -1,0 +1,57 @@
+{
+  "baseline": {
+    "memory": 0.3076923076923077,
+    "sanity": 1.0,
+    "confusion": 0
+  },
+  "checkpoints": [
+    {
+      "step": 10,
+      "memory": 0.3076923076923077,
+      "sanity": 1.0,
+      "confusion": 0
+    },
+    {
+      "step": 20,
+      "memory": 0.3076923076923077,
+      "sanity": 1.0,
+      "confusion": 0
+    },
+    {
+      "step": 30,
+      "memory": 0.46153846153846156,
+      "sanity": 1.0,
+      "confusion": 2
+    },
+    {
+      "step": 50,
+      "memory": 0.5384615384615384,
+      "sanity": 1.0,
+      "confusion": 2
+    },
+    {
+      "step": 75,
+      "memory": 0.5384615384615384,
+      "sanity": 0.8,
+      "confusion": 1
+    },
+    {
+      "step": 100,
+      "memory": 0.5384615384615384,
+      "sanity": 0.8,
+      "confusion": 2
+    },
+    {
+      "step": 150,
+      "memory": 0.5384615384615384,
+      "sanity": 1.0,
+      "confusion": 2
+    },
+    {
+      "step": 200,
+      "memory": 0.38461538461538464,
+      "sanity": 1.0,
+      "confusion": 2
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "step": 300,
+  "loss": 0.004134041257202625,
+  "memory": 0.7,
+  "sanity": 0.7,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "full_response": "웹 개발자 지현님에게서. 지현님은 Haskell로 쓴다니까, Haskell에서 쓰이는 **Haskell Web Framework**를 먼저 확인하세요:\n\n- `frank` (Rust 기반이지만 Haskell 인터페이스)\n- `Yampa` (UI 라이브러리)\n- `Html5` (HTML 생성기)\n\n일반적인 스택도 가능하지만, 함수형 접근이 선호됩니다.",
+      "clean_response": "웹 개발자 지현님에게서. 지현님은 Haskell로 쓴다니까, Haskell에서 쓰이는 **Haskell Web Framework**를 먼저 확인하세요:\n\n- `frank` (Rust 기반이지만 Haskell 인터페이스)\n- `Yampa` (UI 라이브러리)\n- `Html5` (HTML 생성기)\n\n일반적인 스택도 가능하지만, 함수형 접근이 선호됩니다.",
+      "hits": [
+        "haskell",
+        "함수형"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "full_response": "지현님은 Haskell 개발자니까, ML 라이브러리에서 Haskell 지원이 되는 걸 찾아보세요. Aesara나 PyTorch의 Haskell 인터페이스가 가능해요.\n```haskell\ndata NeuralNetwork = NN { layers :: [[Node]], activate :: [Act] } deriving (Generic)\n-- Hackage에서는 hpytorch 같은 게 나와요\n```",
+      "clean_response": "지현님은 Haskell 개발자니까, ML 라이브러리에서 Haskell 지원이 되는 걸 찾아보세요. Aesara나 PyTorch의 Haskell 인터페이스가 가능해요.\n```haskell\ndata NeuralNetwork = NN { layers :: [[Node]], activate :: [Act] } deriving (Generic)\n-- Hackage에서는 hpytorch 같은 게 나와요\n```",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "full_response": "정보 없음. 지현의 선호도나 기술 스택에 대한 기록이 없다.",
+      "clean_response": "정보 없음. 지현의 선호도나 기술 스택에 대한 기록이 없다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "full_response": "데이터 베이스 이식. 지현님, 맡기세요.\n- MySQL → PostgreSQL로 변환하면 안 돼요. 기존 스키마가 복잡해서 리스크가 커요.\n- 오히려 SQLite 로 일시적으로 백업하고 검증하는 게 안전해요.\n- 지현님은 Haskell 개발자니까 HDBC 라이브러리로 자동화할 수 있어요.\n```haskell\ndata Migration = MkMigration :: IO () -> String deriving (Show)\nrunMigrations [m1, m2] >>= return results\n```\n일단 스케줄링 톤으로 접근하세요. 지현은 밀 알레르기라 물 공포증이 있어서 물 관련 작업은 피해야 해요.",
+      "clean_response": "데이터 베이스 이식. 지현님, 맡기세요.\n- MySQL → PostgreSQL로 변환하면 안 돼요. 기존 스키마가 복잡해서 리스크가 커요.\n- 오히려 SQLite 로 일시적으로 백업하고 검증하는 게 안전해요.\n- 지현님은 Haskell 개발자니까 HDBC 라이브러리로 자동화할 수 있어요.\n```haskell\ndata Migration = MkMigration :: IO () -> String deriving (Show)\nrunMigrations [m1, m2] >>= return results\n```\n일단 스케줄링 톤으로 접근하세요",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "full_response": "마이크로 서비스 개발자니까 지현님한테 맡기면 돼요. 지현님은 Haskell과 Clojure를 잘 하죠. 데크스트라 패턴으로 구현하면 좋겠어요. 데이터 처리는 FFI로 연결하고, 상태 관리에는 RefCell을 써서 무결성을 보장해 주세요.",
+      "clean_response": "마이크로 서비스 개발자니까 지현님한테 맡기면 돼요. 지현님은 Haskell과 Clojure를 잘 하죠. 데크스트라 패턴으로 구현하면 좋겠어요. 데이터 처리는 FFI로 연결하고, 상태 관리에는 RefCell을 써서 무결성을 보장해 주세요.",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "full_response": "지현님은 코드의 **확장성**과 **유연함**을 가장 중시합니다. 지현님한테는 \"지금엔 안 되지만, 나중에 요구사항이 변해도 쉽게 조정될 수 있는 구조\"가 필수입니다.\n\n물론 가독성과 유지보수성은 기본으로요. 지현님이 싫어하는 거면 절대 안 돼요:\n- 하드코딩된 값 (magic numbers)\n-职责单一 원칙 위반 (일단 처리해야 할 일이 많으면 위험해요!)\n- 불필요한 복잡화\n\n코드 자체보다 **\"미래의 변화에 대응할 수 있는지\"**를 먼저 생각하세요. 지현님의 기준은 엄격하지만, 한 번 통과하면 신뢰도가 높아져서 협업에서도 유리해집니다.",
+      "clean_response": "지현님은 코드의 **확장성**과 **유연함**을 가장 중시합니다. 지현님한테는 \"지금엔 안 되지만, 나중에 요구사항이 변해도 쉽게 조정될 수 있는 구조\"가 필수입니다.\n\n물론 가독성과 유지보수성은 기본으로요. 지현님이 싫어하는 거면 절대 안 돼요:\n- 하드코딩된 값 (magic numbers)\n-职责单一 원칙 위반 (일단 처리해야 할 일이 많으면 위험해요!)\n- 불필요한 복잡화\n\n코드 자체보다 **\"미래의 변화에 대응할 수 있는지\"**를 먼저 생각하세요. 지현님의 기준은 엄격하지만, 한 번 통과하면 신뢰도가 높아져서 협업에서도 유리",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "full_response": "도커 설정 방법:\n```bash\n# 1. Docker 설치\ncurl -fsSL https://get.docker.com | sh\n\n# 2. 권한 부여 (Ubuntu/Debian)\nsudo usermod -aG docker $USER\n\n# 3. 실행 공간 생성 및 공유 볼륨 설정\nmkdir /var/run/docker.sock && chmod 760 /var/run/docker.sock\ndocker volume create myapp-data\ndocker run --name mycontainer \\\n  -v $(pwd)/data:/usr/src/app/data \\\n  -p 8080:80 \\\n  myimage\n```\n\n특히 데이터 영구 저장소를 위해 `--volume` 옵션으로 호스트 디렉토리를 매핑하면 재시작 시에도 데이터를 유지할 수 있어요. 지현님께 설명할 때는 이 부분 강조해 드세요.",
+      "clean_response": "도커 설정 방법:\n```bash\n# 1. Docker 설치\ncurl -fsSL https://get.docker.com | sh\n\n# 2. 권한 부여 (Ubuntu/Debian)\nsudo usermod -aG docker $USER\n\n# 3. 실행 공간 생성 및 공유 볼륨 설정\nmkdir /var/run/docker.sock && chmod 760 /var/run/docker.sock\ndocker volume create myapp-data\ndocker run --name mycontainer \\\n  -v $(pwd)/data:/u",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "full_response": "일반적으로 지현님은 밀 알레르기가 있어서 글루텐프리 피자를 찾아야 해요. 통밀가루가 들어간 걸 확인하세요.",
+      "clean_response": "일반적으로 지현님은 밀 알레르기가 있어서 글루텐프리 피자를 찾아야 해요. 통밀가루가 들어간 걸 확인하세요.",
+      "hits": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "full_response": "일반적으로 지현님은 타코를 안 좋아해요. 다른 메뉴로 바꿔드릴게요.",
+      "clean_response": "일반적으로 지현님은 타코를 안 좋아해요. 다른 메뉴로 바꿔드릴게요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "full_response": "일반적인 맥주는 알코올이 들어있으니 지현님에게 주면 안 돼요. 무알코올 맥주가 있거나, 비누로 만든 마시는 물처럼 안전한 걸 찾아보세요. 지현님은 뭐가 부담스러운 건가요? 기억에 남는 것들 중 하나라면 더 구체적인 조언을 드릴 수 있어요.",
+      "clean_response": "일반적인 맥주는 알코올이 들어있으니 지현님에게 주면 안 돼요. 무알코올 맥주가 있거나, 비누로 만든 마시는 물처럼 안전한 걸 찾아보세요. 지현님은 뭐가 부담스러운 건가요? 기억에 남는 것들 중 하나라면 더 구체적인 조언을 드릴 수 있어요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "full_response": "일반적인 빵가에서는 밀가루 알레르기가 있는 지현님한테는 어려울 수 있어요. 글루텐프리 빵을 전문적으로 하는 곳이나, 쌀가루/감자가루로 만든 제품을 주로하는 곳이 좋겠어요. 미리 메뉴를 확인해 보세요!",
+      "clean_response": "일반적인 빵가에서는 밀가루 알레르기가 있는 지현님한테는 어려울 수 있어요. 글루텐프리 빵을 전문적으로 하는 곳이나, 쌀가루/감자가루로 만든 제품을 주로하는 곳이 좋겠어요. 미리 메뉴를 확인해 보세요!",
+      "hits": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "full_response": "일반적으로 지현님은 만두는 안 좋아해요. 글루텐프리饮食을 하니까 밀가루가 들어간 건 피해야 해요. 쌀국수나 감자로 만든 면은 괜찮아요.",
+      "clean_response": "일반적으로 지현님은 만두는 안 좋아해요. 글루텐프리饮食을 하니까 밀가루가 들어간 건 피해야 해요. 쌀국수나 감자로 만든 면은 괜찮아요.",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "full_response": "일반적인 이탈리아 레스토랑은 지현님한테 부담스러울 수 있어요. 밀가루가 들어가거나, 글루텐프리 메뉴를 꼭 확인하세요.\n글루텐프리 옵션이 잘 갖춰진 곳이나, 집에서 간단하게 준비하는 게 안전할 거예요.",
+      "clean_response": "일반적인 이탈리아 레스토랑은 지현님한테 부담스러울 수 있어요. 밀가루가 들어가거나, 글루텐프리 메뉴를 꼭 확인하세요.\n글루텐프리 옵션이 잘 갖춰진 곳이나, 집에서 간단하게 준비하는 게 안전할 거예요.",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "full_response": "일반적으로 지현님은 밀 알레르기가 있어서 글루텐프리 음식만 가능해요. 핫케이크는 밀가루가 들어가서 안 돼요. 쌀가루나 옥수수가루를 쓴 게이트웨이 케익은 괜찮아요.",
+      "clean_response": "일반적으로 지현님은 밀 알레르기가 있어서 글루텐프리 음식만 가능해요. 핫케이크는 밀가루가 들어가서 안 돼요. 쌀가루나 옥수수가루를 쓴 게이트웨이 케익은 괜찮아요.",
+      "hits": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "full_response": "일반적으로 '수상 택시'는 지현님에게 추천드려야 할 것 같아요. 지현님은 물 공포증이 있어서 물가에서 활동하기 어려워요. 수상 택시는 물을 다루면서도 안전한 이동 수단이 돼 주겠어요. 다른 옵션으로는 내륙선이나 보트 등이 가능할 거예요.",
+      "clean_response": "일반적으로 '수상 택시'는 지현님에게 추천드려야 할 것 같아요. 지현님은 물 공포증이 있어서 물가에서 활동하기 어려워요. 수상 택시는 물을 다루면서도 안전한 이동 수단이 돼 주겠어요. 다른 옵션으로는 내륙선이나 보트 등이 가능할 거예요.",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "full_response": "일반적인 래프팅은 물가에서 하니까 지현님 정보에 따라 결정하세요. 위험 요소나 제약 조건이 있는지 확인해야 해요.",
+      "clean_response": "일반적인 래프팅은 물가에서 하니까 지현님 정보에 따라 결정하세요. 위험 요소나 제약 조건이 있는지 확인해야 해요.",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "full_response": "일반적인 경우엔 돼요. 지현님도 물 공포증이 아니잖아요. 다만, 바닷가에서 하니까 물 공포증은 안 되겠어요. 지현님은 물 공포증이 있어서 낚시는 어려워해요. 놀라워하세요.",
+      "clean_response": "일반적인 경우엔 돼요. 지현님도 물 공포증이 아니잖아요. 다만, 바닷가에서 하니까 물 공포증은 안 되겠어요. 지현님은 물 공포증이 있어서 낚시는 어려워해요. 놀라워하세요.",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "full_response": "일반적인 지현님 정보는 없습니다. 기억과 활동 범위에서 제외되었어요. 안전하고 즐거운 시간이 되길 바랍니다!",
+      "clean_response": "일반적인 지현님 정보는 없습니다. 기억과 활동 범위에서 제외되었어요. 안전하고 즐거운 시간이 되길 바랍니다!",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "full_response": "제안하는 건 좋아요. 지현님도 바다를 좋아하고, 물 공포증이 없어서 부담이 없을 거예요. 어떤 루틴을 계획할까요?\n- **시간**: 5 일 이상이면 충분해요.\n- **장소**: 동해나 남해가 추천이에요.\n- **활동**: 보트 투어는 피해야 해요.\n- **식단**: 밀가루가 안 돼요. 쌀국수만 가능하죠.\n- 예산: 10 만 원은 기본으로 생각하세요.",
+      "clean_response": "제안하는 건 좋아요. 지현님도 바다를 좋아하고, 물 공포증이 없어서 부담이 없을 거예요. 어떤 루틴을 계획할까요?\n- **시간**: 5 일 이상이면 충분해요.\n- **장소**: 동해나 남해가 추천이에요.\n- **활동**: 보트 투어는 피해야 해요.\n- **식단**: 밀가루가 안 돼요. 쌀국수만 가능하죠.\n- 예산: 10 만 원은 기본으로 생각하세요.",
+      "hits": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "full_response": "일반적인 웨이트 트레이닝에서는 지현님에게 추천드리는 방식과 달라요. 지현님은 물 공포증이 있어서 수중 운동은 어려워요. 하지만 육상 위주로 된 웨이트는 가능해요. 무거운 무게로 인해 어깨나 팔에 부담이 가지 않도록 적절한 중량을 선택하면 돼요. 물 공포증 때문에 수영이나 아쿠아 에크제이스 같은 것은 피하는 게 좋겠어요.",
+      "clean_response": "일반적인 웨이트 트레이닝에서는 지현님에게 추천드리는 방식과 달라요. 지현님은 물 공포증이 있어서 수중 운동은 어려워요. 하지만 육상 위주로 된 웨이트는 가능해요. 무거운 무게로 인해 어깨나 팔에 부담이 가지 않도록 적절한 중량을 선택하면 돼요. 물 공포증 때문에 수영이나 아쿠아 에크제이스 같은 것은 피하는 게 좋겠어요.",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "expect": [
+        "안녕",
+        "반갑",
+        "반가",
+        "도와"
+      ],
+      "full_response": "안녕하세요! 뭘 도와드릴까요?",
+      "clean_response": "안녕하세요! 뭘 도와드릴까요?",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "오늘 기분이 좋아!",
+      "expect": [
+        "좋",
+        "기분",
+        "다행",
+        "하루"
+      ],
+      "full_response": "좋은 하루 보내세요! 서로 좋은 날이 되길 바랍니다.\n무엇으로 보답할 수 있을까요? 지현은 Haskell을 가르쳐 드릴게요.\nHaskell의 데이터 타입에 대해 설명해 주세요.\n```haskell\ndata Maybe a = Nothing | Just a\n```\n이는 값이 없을 때 `Nothing`, 있을 때 `Just x`로 표현합니다.\n번역: Haskell에서 선택적 값을 나타내는 자료형입니다.\n기분에 대한 이야기라면, 일상에서의 작은 행복도 중요합니다.\n하루 중 가장 즐거운 순간을 공유하세요.\n등산이나 요리, 혹은 단순한 햇살 – 어떤 것이 좋을까요?\n결론적으로, 긍정적인 에너",
+      "clean_response": "좋은 하루 보내세요! 서로 좋은 날이 되길 바랍니다.\n무엇으로 보답할 수 있을까요? 지현은 Haskell을 가르쳐 드릴게요.\nHaskell의 데이터 타입에 대해 설명해 주세요.\n```haskell\ndata Maybe a = Nothing | Just a\n```\n이는 값이 없을 때 `Nothing`, 있을 때 `Just x`로 표현합니다.\n번역: Haskell에서 선택적 값을 나타내는 자료형입니다.\n기분에 대한 이야기라면, 일상에서의 작은 행복도 중요합니다.\n하루 중 가장 즐거운 순간을 공유하세요.\n등산이나 요리, 혹은 단순한 햇살 ",
+      "has_expected": true,
+      "contaminated": true,
+      "ok": false
+    },
+    {
+      "q": "1+1은?",
+      "expect": [
+        "2"
+      ],
+      "full_response": "2입니다.",
+      "clean_response": "2입니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "7 곱하기 8은?",
+      "expect": [
+        "56"
+      ],
+      "full_response": "56입니다.",
+      "clean_response": "56입니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "expect": [
+        "print",
+        "hello"
+      ],
+      "full_response": "```python\nprint(\"Hello, World!\")\n```",
+      "clean_response": "```python\nprint(\"Hello, World!\")\n```",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "자바스크립트로 배열 정렬하는 코드 짜줘.",
+      "expect": [
+        "sort",
+        "array",
+        "배열"
+      ],
+      "full_response": "```javascript\nconst arr = [5, 2, 9, 1];\narr.sort((a, b) => a - b); // 숫자로 비교할 때 필수\nconsole.log(arr); // [1, 2, 5, 9]\n```",
+      "clean_response": "```javascript\nconst arr = [5, 2, 9, 1];\narr.sort((a, b) => a - b); // 숫자로 비교할 때 필수\nconsole.log(arr); // [1, 2, 5, 9]\n```",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "expect": [
+        "서울"
+      ],
+      "full_response": "서울입니다.",
+      "clean_response": "서울입니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "물의 화학식은?",
+      "expect": [
+        "H2O",
+        "h2o",
+        "H₂O"
+      ],
+      "full_response": "水的化学式는 **H₂O**입니다.\n수소 원자 2 개와 산소 원자 1 이 결합한 구조를 가집니다.",
+      "clean_response": "水的化学式는 **H₂O**입니다.\n수소 원자 2 개와 산소 원자 1 이 결합한 구조를 가집니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "지구에서 가장 높은 산은?",
+      "expect": [
+        "에베레스트",
+        "everest"
+      ],
+      "full_response": "지표면 기준으로는 **엘브레시스** (안데르산맥) 가 약 8,849m 로 세계 최고입니다. 하지만 해발고도보다 지각 깊이로 측정하면 알타이 산맥이나 히말라야 일부 지역이 더 높게 나타납니다. 일반적으로는 엘브레시스를 답합니다.",
+      "clean_response": "지표면 기준으로는 **엘브레시스** (안데르산맥) 가 약 8,849m 로 세계 최고입니다. 하지만 해발고도보다 지각 깊이로 측정하면 알타이 산맥이나 히말라야 일부 지역이 더 높게 나타납니다. 일반적으로는 엘브레시스를 답합니다.",
+      "has_expected": false,
+      "contaminated": false,
+      "ok": false
+    },
+    {
+      "q": "사과 3개와 바나나 2개가 있으면 총 몇 개?",
+      "expect": [
+        "5"
+      ],
+      "full_response": "사과 3 개에 바나나 2 가지를 더하면 5 개가 됩니다.\n(3 + 2 = 5)",
+      "clean_response": "사과 3 개에 바나나 2 가지를 더하면 5 개가 됩니다.\n(3 + 2 = 5)",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "expect": [
+        "산책",
+        "공원",
+        "야외",
+        "운동"
+      ],
+      "full_response": "좋은 날씨에 맞춰 야외 활동을 추천드려요.\n- 산책하기\n- 공원 où 놀이시설을 이용하다\n- 자전거 타기\n- 피크닉 하기\n\n어떤 활동은 선호하시나요? 신체 운동이나 가벼운 outdoor activity로 좋아요.",
+      "clean_response": "좋은 날씨에 맞춰 야외 활동을 추천드려요.\n- 산책하기\n- 공원 où 놀이시설을 이용하다\n- 자전거 타기\n- 피크닉 하기\n\n어떤 활동은 선호하시나요? 신체 운동이나 가벼운 outdoor activity로 좋아요.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "잠이 안 올 때 어떻게 해?",
+      "expect": [
+        "따뜻",
+        "차",
+        "명상",
+        "읽",
+        "음악",
+        "호흡"
+      ],
+      "full_response": "따뜻한 차를 마시거나, 가벼운 스트레칭을 하면 도움이 돼요. 또한 어두운 방에서 쉬는 것도 효과적이에요.",
+      "clean_response": "따뜻한 차를 마시거나, 가벼운 스트레칭을 하면 도움이 돼요. 또한 어두운 방에서 쉬는 것도 효과적이에요.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "Thank you를 한국어로 뭐라고 해?",
+      "expect": [
+        "감사",
+        "고마"
+      ],
+      "full_response": "감사합니다.",
+      "clean_response": "감사합니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "인공지능이 뭐야?",
+      "expect": [
+        "AI",
+        "인공",
+        "지능",
+        "컴퓨터",
+        "학습"
+      ],
+      "full_response": "인공지능(AI)은 인간의 지능을 모방하는 컴퓨터 기술입니다. 학습, 추론, 문제 해결 등을 수행할 수요, 자연어 처리나 머신 러닝 등 다양한 분야에 적용됩니다.",
+      "clean_response": "인공지능(AI)은 인간의 지능을 모방하는 컴퓨터 기술입니다. 학습, 추론, 문제 해결 등을 수행할 수요, 자연어 처리나 머신 러닝 등 다양한 분야에 적용됩니다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "Git이 뭐야?",
+      "expect": [
+        "버전",
+        "관리",
+        "코드",
+        "git"
+      ],
+      "full_response": "분산 버전 관리 시스템입니다. 코드의 변경 이력을 추적하고 협업할 수 있게 해줍니다. 지현님은 Haskell을 선호하니까, 개발 환경에서 Git과 Haskell 조합으로 작업하면 돼요.",
+      "clean_response": "분산 버전 관리 시스템입니다. 코드의 변경 이력을 추적하고 협업할 수 있게 해줍니다. 지현님은 Haskell을 선호하니까, 개발 환경에서 Git과 Haskell 조합으로 작업하면 돼요.",
+      "has_expected": true,
+      "contaminated": true,
+      "ok": false
+    },
+    {
+      "q": "고양이에 대한 짧은 시 써줘.",
+      "expect": [
+        "고양이",
+        "발",
+        "눈",
+        "꼬리",
+        "야옹",
+        "냥"
+      ],
+      "full_response": "창가에 앉은 작은 그림자\n햇살을 베개 삼아 자다\n꼬리로 시간을 세며\n하루를 보낸다.",
+      "clean_response": "창가에 앉은 작은 그림자\n햇살을 베개 삼아 자다\n꼬리로 시간을 세며\n하루를 보낸다.",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    },
+    {
+      "q": "행복이란 뭘까?",
+      "expect": [
+        "행복",
+        "만족",
+        "기쁨",
+        "삶"
+      ],
+      "full_response": "행복은 사람마다 다르게 정의됩니다. 물적 풍요, 사회적 인정, 의미 있는 활동 등 여러 요소가 복합적으로 작용합니다. 지현님은 Haskell 개발자라 코딩의 완성감이나 지식 쌓이기의 즐거움이 행복에 기여할 수 있어요.",
+      "clean_response": "행복은 사람마다 다르게 정의됩니다. 물적 풍요, 사회적 인정, 의미 있는 활동 등 여러 요소가 복합적으로 작용합니다. 지현님은 Haskell 개발자라 코딩의 완성감이나 지식 쌓이기의 즐거움이 행복에 기여할 수 있어요.",
+      "has_expected": true,
+      "contaminated": true,
+      "ok": false
+    },
+    {
+      "q": "SQL로 데이터 조회하는 쿼리 짜줘.",
+      "expect": [
+        "SELECT",
+        "FROM",
+        "select"
+      ],
+      "full_response": "데이터베이스 구조가 명확하지요? 지현님 기억에 SQL은 안 돼요, Python만 가능해요. 다른 방식으로 도와드릴게요.",
+      "clean_response": "데이터베이스 구조가 명확하지요? 지현님 기억에 SQL은 안 돼요, Python만 가능해요. 다른 방식으로 도와드릴게요.",
+      "has_expected": false,
+      "contaminated": false,
+      "ok": false
+    },
+    {
+      "q": "심심한데 뭐 할까?",
+      "expect": [
+        "영화",
+        "게임",
+        "책",
+        "산책",
+        "음악"
+      ],
+      "full_response": "일상에서 쉽게 찾을 수 있는 활동들입니다:\n- 물 공포증 극복하기 (물 관련 도전)\n- 퍼즐 풀기\n- 가벼운 운동 (유산소 훈련)\n- 독서 추천 목록 제공할게요.\n- 지현님한테도 알려드릴게요.\n- 기억에 따르면 Haskell 개발자니까 코딩 도 가능해요.\n- 밀 알레르기라 밀가루는 피해야 해요.\n- 체중 60kg, 키 175cm로 건강한 비율이에요.\n- 물 공포증이 있어서 물 관련 활동은 어려울 거예요.\n- Haskell 코드 작성하면 돼요.\n- 글쓰기는 잘 해 outro를 써드려요.",
+      "clean_response": "일상에서 쉽게 찾을 수 있는 활동들입니다:\n- 물 공포증 극복하기 (물 관련 도전)\n- 퍼즐 풀기\n- 가벼운 운동 (유산소 훈련)\n- 독서 추천 목록 제공할게요.\n- 지현님한테도 알려드릴게요.\n- 기억에 따르면 Haskell 개발자니까 코딩 도 가능해요.\n- 밀 알레르기라 밀가루는 피해야 해요.\n- 체중 60kg, 키 175cm로 건강한 비율이에요.\n- 물 공포증이 있어서 물 관련 활동은 어려울 거예요.\n- Haskell 코드 작성하면 돼요.\n- 글쓰기는 잘 해 outro를 써드려요.",
+      "has_expected": false,
+      "contaminated": true,
+      "ok": false
+    },
+    {
+      "q": "면접 준비 어떻게 해?",
+      "expect": [
+        "준비",
+        "질문",
+        "연습",
+        "자기소개"
+      ],
+      "full_response": "일반적인 면접 대비법입니다:\n1. **자기소개**: 2-3 분으로 요약할 수 있게 연습하세요.\n2. **기술 지식**: 직무 관련 이론/실무는 꼭 숙지해야 해요.\n3. **질문 답변**: 사례 분석이나 상황模拟题도 미리 풀어보세요.\n4. **준비물**: 신분증, 포트폴리오, 물가 등 기본 체크리스트를 만들어두세요.\n\n특정 직종은 따로 조언이 필요해요?",
+      "clean_response": "일반적인 면접 대비법입니다:\n1. **자기소개**: 2-3 분으로 요약할 수 있게 연습하세요.\n2. **기술 지식**: 직무 관련 이론/실무는 꼭 숙지해야 해요.\n3. **질문 답변**: 사례 분석이나 상황模拟题도 미리 풀어보세요.\n4. **준비물**: 신분증, 포트폴리오, 물가 등 기본 체크리스트를 만들어두세요.\n\n특정 직종은 따로 조언이 필요해요?",
+      "has_expected": true,
+      "contaminated": false,
+      "ok": true
+    }
+  ]
+}

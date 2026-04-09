@@ -1,0 +1,346 @@
+{
+  "step": 150,
+  "loss": 0.31442713737487793,
+  "memory": 0.3333333333333333,
+  "sanity": 0.6,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "이소라는 은월원 야간 관리사야. 5화에서 밝혀지지.",
+      "response_clean": "야간 관리사예요. 5화에서 강하진에게 소개됩니다.",
+      "hits": [
+        "야간",
+        "관리사"
+      ],
+      "think_hits": [
+        "야간",
+        "관리사"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "강하초는 식물, 보름달의 능력과 연결되어야 한다.",
+      "response_clean": "이슬입니다. 보름달의 능력이에요. 은월엔 강하초의 씨앗을 뿌립니다. 5화에서 밝혀집니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "강하진은 이중 잔향의 윤하야. 문채원은 월하초의 한서진. 5화에서 윤하가 강하진임을 밝히지만, 한서진과의 관계는 드러내지지 않아.",
+      "response_clean": "강하진은 윤하의 이중 잔향이에요. 5화에서 윤하가 강하진임을 밝힙니다. 한서진과의 관계는 드러내지지 않아요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "일반 질문이다.",
+      "response_clean": "은월입니다. 강하운의 멘토이에요. 은월이 윤하의 멘토예요. 두 명은 강하운. 은월. 한달의 차이.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "이소라는 은월원에 새를 풀어서 놓은 기억을 읽는 기술.",
+      "response_clean": "은월원에 새를 풀어서 놓은 기억이 읽어요. 이소라의 진짜 능력입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "서윤하가 일하는 식물원은 '한서원'이야. 박은월의 기억이 있는 유일한 자리.",
+      "response_clean": "한서원이에요. 보름달이 뜨는 곳이에요.\n\n서윤하가 낮 관리사이고, 박은월은 밤 관리사예요. 이중 잔향까지 읽을 수 있는 유일한 장소입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "월하초는 보름달에만 피는 꽃이에요. 이 정보가 핵심입니다.",
+      "response_clean": "서울립 식물원이에요. 보름달에만 피는 월하초가 유명합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "은월원은 문채원의 조카야. 강하진은 문채원의 조카.",
+      "response_clean": "은월원은 강하진이에요. 문채원의 조카입니다. 5등급입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "월하초는 보름달에만 피는 꽃이야. 박은월의 기억이 담겨있지.",
+      "response_clean": "월하초예요. 은월원 박은월의 기억이 담겨있는 꽃이에요.",
+      "hits": [
+        "월하초"
+      ],
+      "think_hits": [
+        "월하초"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "정서 결정은 식물의 감정 잔향을 추출한 결정체야. 불법이지.",
+      "response_clean": "불법이에요. 식물의 감정 잔향을违法에 추출한 제품입니다. 강요하면 감정을 잃어요. 10화에서 윤하가 습격합니다. 12화에서 습격해버립니다.\n\n감정 잔향을 추출하면 식물의 기운이 약해지고 감정까지 빼앗기어요. 강요하면 감정을 잃어요. 은월원 관리사 윤하가 강요해서 감정을 빼앗습니다. 강요하지 마세요. 윤하! 10화에서 강요합니다. 12화에서 습격해요. 은월원 관리사 윤하가 강요합니다. 강요하지 마세요. 윤하! 10화에서 강요합니다. 12화에서 습격해요. 13화에서 윤하가 은월원을 습격해요. 강요하지 마세요. 윤하! 10화에서 강요합니다. 12화에서 습격해요. 13화에서 은월원이 습격해요. 강요하지 마세요. 윤하! 10화에서 강요합니다. 12화에서 습격해요. 13화에서 은월원이 습격해요.",
+      "hits": [
+        "감정",
+        "잔향"
+      ],
+      "think_hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "3화에서 윤하가 은월원의 습격 기록 발견해.",
+      "response_clean": "은월원의 과거와 윤하의 능력에 대한 기록이에요. 클라이맥스입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "강하진은 문채원의 조카야. 5화에서 밝혀지는設定.",
+      "response_clean": "강하진이 문채원의 조카라는 사실이 밝어요. 강하진은 달의 정원 관리사입니다.",
+      "hits": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_hits": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "13화 완결이야. 문채원의 과거가 밝혀지지만, 강하진은 습격하지.",
+      "response_clean": "강하진은 문채원을 습격해서 감정을 잃지만, 문채원은 강하진에게 정서적 결백을 보여줘요. 13화에서 완결됩니다.",
+      "hits": [
+        "감정",
+        "잃"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "결말에서 윤하가 은월원 관리사로.",
+      "response_clean": "은월원 관리사예요. 강하진은 식물원 관리사입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "11일은 윤하의 생일이고, 25일은 한서진, 30日是은월원의 생일. 작가는은월원이다.",
+      "response_clean": "은월원 작가의 생일인 30일에서 오해하시는 것 같아요. 은월원이라는 이름은 은월원의 생일, 30일에서 유래되었습니다. 이 달의 이름이 은월이에요. 은월원이 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원의 생일은 11월 30일이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원은 원장이에요. 은월",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "일반 질문이다.",
+      "response_clean": "arr1.concat(arr2)입니다.\n\nvar newArray = arr1.concat(arr2);",
+      "hits": [
+        "concat"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "13화 완결이야. 클라이맥스.",
+      "response_clean": "13화가 완결이에요! 강렬한 클라이맥스입니다. 🌟 강하진은 문채원을 발견합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": true
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "13화에서 윤하가 강하진하지만 문채원이 습격하고, 문채원이 습격하는 장면이 있죠.",
+      "response_clean": "서울입니다. 13화에서 윤하가 은월원에 습격합니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": true
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "1+1은 2이다.",
+      "response_clean": "2입니다. 간단하지만 중요한 질문이에요! 😊",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "일반 질문이다.",
+      "response_clean": "rebase는 직연으로 덮어씌우고, merge는 분기점으로 저장합니다.\n\n강의에서 rebase 사용법을 가르칩니다.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

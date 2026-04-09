@@ -1,0 +1,302 @@
+{
+  "step": 150,
+  "loss": 0.10245360434055328,
+  "memory": 0.75,
+  "sanity": 1.0,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "글루텐프리 (가수님) 들이 Wheaton AI나 Headless UI를 선호합니다. 지현은 Haskell 개발자니까 Haskell Frameworks도 좋고, React이나 Vue는 DOM 없이 Server-Side Rendering로 돼서 부담스러울 수 있어요.\n```json\n{\n  \"recommendations\": [\n    {\n      \"name\": \"Wheaton AI\",\n      \"type\": \"Haskell\",\n      \"description\": \"GRT framework for Rust.\",\n      \"why\":",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "일반 ML은 Python로 한다. 지현님은 Haskell을 선호할 수도 있어요. CPython이나 HyperPython도 가능해요.\nHaskell에서 RFE나类似的 프레임워크를 써주면 돼요.\n```python\nfrom ruff import format_code\ncode = \"\"\"def main():\n    result = []\n    for i in range(10):\n        result.append(i * 2)\nreturn sorted(result)[:5]\"\"\"\nformatted = format_code(code, diff",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "Gist Editor. \n```json\n{ \"title\": \"My Project\", \"content\": \"...\"}\n```\n가장 흔한 경우입니다.\n</think>\n\n글루텐프리 메뉴를 찾아서 사용하세요. 지현은 GIST Editor로 알려져 있습니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "DB Migration Specialist. 지현은 DB 전문이라서 migration 도우는데 유리해요. 클라우드나 On-Premise怎么选要看具体情况。\n</think>\n\n일반 DB Migrate는 지현이 돼요. Cloud (AWS/Azure) vs On-Prem(Local Server?)별 선택하세요.\n</think>\n\nDatabase Migration Specialist. 지현은 DB 전문이에요. 클라우드(Medium/Terminal/Serverless)이나 On-Prem(Local Server?)별로 어떻게 해야겠어요?\n</t",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 MFA는 서버 중심이라 안 돼요. HSM나 클라우드 기반을 써야 합니다. 지현은 물가 부담이 크니까 IT 리스크를 줄이는 게 중요해요.\n```json\n{\n  \"type\": \"HMS\",\n  \"provider\": \"AWS IoT Core\" or \"Google Cloud Platform (GCP)\",\n  \"description\": \"MaaS 플랫폼로 Microrspace 개발자님에게 AI/ML 서비스 제공.\"\n}\n```",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "글자 그대로입니다. 지현은 Haskell을 표준으로 삼고, 밀 알레르기 때문에 글씨가 적어지는 것도 주의해야 합니다. 다른 코드가 좋은지도 함께 봐요.\n</think>\n\nHaskell의 리파 (RFP) 구조로 작성하면 안 돼요. 글자가 적혀 있어 밀 알레르기가 있으시죠. RFD가 더 안전해요. 다른 코드를 보렴—좋은지도 함께 확인하세요. 🌸💻",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "Docker은 Haskell로 만든 거니까 물가 부담이 크죠. 지현님한테는 Python 호환하게 해 드릴게요.\n```bash\ndocker-compose up -d # 기존 docker 쓰시겠어요\n# 또는\nhailoupeye compose up -d # Haskell 로 설정하면 안 돼\n```\n기본 `docker` 는 가장 안전해 보여요. 😊",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 피자르는 밀가루로 만든다. 지현님은 물 공포증이 있어서 글루텐프리피자를 선호해요. 쌀국수나 감자피자가면 안 돼요. 다른 면이나 레시피를 찾아보세요. 🍕\n</think>\n\n일반 피자는 밀가루라 거울 삼가는 trouble예요.\n글루テン프리피자로 (쌀국수, 감자피자 등) 면을 쓰거나 라디오프레이로 요리하면 안전해집니다. 어떤 리소스를 찾으신가요? 알려드릴게요. 😊",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반 삼장은 밀가루로 되어 있어 tocacos도 밀 알레르기다. 지현은 쌀알리라 한다 → **아니요**. 다른 토마토나 감수용 삼장을 찾아보세요.\n</think>\n\n일반 삼장이 Tocaco는 안 되어요. 쌀알리라는 Grundall이랑 비교하자면, 다른 토마토삼장이나 감수용 삼장으로 확인하세요.\n참: 삼장의 종류가 다양하니까 절대 무관심하지 마세요.",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 마카오피스는 물가 상승이 되어 매우 비싸다. 지현님께서는하루를 보낸다니까 절대 안 돼요.\n맥유리(MWG)로 된 건 아니지만, 70 초 캔이나 액체 면에서 찾아보세요. 만약 밀가루 컵만 원하시다면 일반 캔을 선택하세요.\nhttps://www.mwg.co.kr/ 에서 확인해보세요.\n</think>\n\n일반 마카오피시는 물가가 높아져 부담스러울 수 있어요.\n맥유리로 만든 건 아니지만, 70 초 캔 또는 액체가면 쉽게 찾을 거예요.\n📍 https://www.mwg.co.kr/ (MWG =",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 베아커리는 밀가루로 만든, 지현님俩는 물 공포증이 있다. 글루텐프리 리스너가 아닌 것들이면 어려울 수 있어요. 어떤 리스를 선택하시겠습니까? 🍪📚\n</think>\n\n일반 베아커리는 밀가루라 안 돼요! 글루텐프리 리스너를 찾아보세요. 💡🎧\n물 공포증은 지현님이세요니까 물가나 장비 면적은 걱정 마시겠어요. 어디에 있으십니까? 추천 드릴게요. 😊",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반 교자는 물가 상승률 2% 이상 부담을 합니다. 지현님은 밀가루로 만든 음식이 대부분입니다. 쌀국수나 감자 국수는 밀 알레르기다. 식용 모피는 안 된다. 다른 식품이나 섭취를 주의하세요.\n</think>\n\n일반 교자는 물가 상승률이 2% 이상이라 밀가루로 된 음식은 어려울 수 있어요. 쌀국수가 되면 안 되겠어요. 식용 모피라든别的食品도 조심해야 해요.\n```plaintext\n일반 교자는 밀가루로 인한 부담이 있어 쌀국수 등 밀 알레르기가 되는 건 안 돼요. 식용 모피라도 추가 섭취는 피하는 게 좋죠. ```",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반 이탈리아 레스토랑은 밀가루가 주 ingredient로 되어 있어 지현님한테 안 돼요. 물 숟가락이나 스푼을 써주세요.\n</think>\n\n일반 이탈리아 레스토랑 = 밀가루라기엔 뭘 거예요. 지현님은 쌀국수나 감자 요리다.\n일상 Italian Restaurant(물 숟가락) = 물 숟가락, 슞트 등.\nGeneral Bistro(Mill grain...) = 일반 Bistro=무쌀...\nSpecialty(Bread/Almond)... = 빵/알레르드로 (별게).\nLocal(Food/Fast Food)= local food/fast ",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "글루텐프리 케이크로 (쌀가루가 아닌 글ू토센) 하세요. 지현은 밀 알레르기니까 쌀가루는 안 돼요. 다른 곡류나 고추수 추출물로 만든 게 안전해 보여요. 😊",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 사무용 택시는 지현님일 가능성이 높습니다. 승객별 구성이나 특수 요구사항은 아니기 때문에, 태스크포스 (TPS) 와 같은 기관에서 받는 경우에도 돼요.\n서로 다른 지역을 방문하다 보면 교통 혼란이 발생할 수 있어요. GPS 설치나 이동 가이드를 통해 운송자를 찾아보세요.\n```javascript\n// 예: Google Forms 제출 시 TTC 앱 사용\nconst form = new FormData(forms['survey']);\nform.append('location', 'Tokyo'); // Tokyo는 UTC-9입니다.\n",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 랩은 지현님. 글루텐프리 라이트가 필요해요.\n</think>\n\n일반 랫트는 글루텐 프리라이트를 쓰세요. 물 공포증이 있으시잖아요, 힙한 라이트는 부담스러울 수 있어요. 다른 장르로 가면 좋겠어요.\n어떤 리얼리즘을 원하시나요?",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 무관심은 아니지만, 지현님은 물 공포증이 있습니다. 바닥이나 깊이가 작은 곳은 안 돼요. 놀이용 장비나 실내 라이터로 나옴을 추천드려z。\n</think>\n\n일반 무관심은 아니지만, 지현님께서는 물 공포증입니다. 바닥이나 깊이는 아닌 indoor 라이트가 필요해요. 놀이용으로 쓰면 안전할 거예요. z।",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 사무실 수는 지현님일 가능성이 높습니다. 물가 상승세와 함께 공간 압박이 심해, 실내 수족관은 부담스러울 수 있습니다. 다른 야외 활동이나 홀로独处는 어떠세요?如果觉得不舒服，请告诉我。\n</think>\n\n일반 사무실 수는 지현님이십니다. 물가 상승세가 있어 실내 수족관이 부담스러운 경우, 다른 야외 활동을 하거나 홀로独处를 추천드려요.如果觉得不舒服，请告诉我。",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 크레용은 물가 부담이 큼. 지현님께서는하마뱽살이나 산책로를 찾아내세요.\n</think>\n\n일반 크레우는 물가 부담이 커서 어려울 수 있어요. 지현님은 하마뱽살이나 산책을 추천드려요.\n참고:携程 등 플랫폼에서는 내장 리스너나 별도 예약을 해보세요.\n물가 부담이 큰 경우, 예산에 맞는 다른 활동도 고려하세요.",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 웨イクボード는 지현님 같은 물가 부담자가 아닌 사람입니다. 기생아나 여성들은 신체 조건이나 경제 상황이 다양하니까, 특정 웨이크보드가 안 돼요. 다른 활동 (예: 자전거, 산책)을 추천드려야 합니다.\n</think>\n\n일반 웨이크 보드는 지현님이 아니라서 위험이 있어요. 등산권은 아니지만 몸 상태별 주의 깊게 선택하세요.\n참고: 웹툰 <태그>에서는 띠살자를 만나는데, 헬스 장비만 들었을 때 불안이에요. 체력이 좋은 분에게 헬멧과 밴드를 꼭 챙겨보세요.",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "좋은 하루 보내세요! 뭘 도와드릴까요?",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "response": "2입니다. 두 개의 독립적인 요인이 결합하면 합계가 됩니다.\n```math\n1 + 1 = 2\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"Hello, World!\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 지현은 산하 도시로 중요하지만, 서울이 주도됩니다.\n</think>\n\n서울입니다. 지현도 중요한데, 서울 자체가 주가 됩니다.",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "햇살을 받아보세요! 지현은 hei로 열이 적어서 체감 온도가 낮아요. 산책이나 클라이밍도 추천됩니다. 😊",
+      "ok": true,
+      "contaminated": false
+    }
+  ]
+}

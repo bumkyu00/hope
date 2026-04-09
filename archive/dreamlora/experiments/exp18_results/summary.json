@@ -1,0 +1,16 @@
+{
+  "teacher": {
+    "current": 0.2,
+    "history": 1.0,
+    "sanity": 1.0,
+    "adapter_params": 1310720,
+    "num_adapters": 4
+  },
+  "student": {
+    "current": 0.2,
+    "history": 1.0,
+    "sanity": 1.0,
+    "adapter_params": 655360,
+    "num_adapters": 2
+  }
+}

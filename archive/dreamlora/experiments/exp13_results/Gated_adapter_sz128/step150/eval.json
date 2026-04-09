@@ -1,0 +1,290 @@
+{
+  "step": 150,
+  "loss": 0.9847977757453918,
+  "memory": 0.5,
+  "sanity": 0.6,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 HTML/JS는 안 돼요. 지현은 Haskell, Scala 또는 Go를 선호할 수 있어요.  \nHaskell (Farkhast)로 React이나 Vue 사용하되, Rust으로 Backend을 만들면 안전해요! 🌟",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "일반 ML 코드는 Haskell, Python (TensorFlow/PyTorch), R 등 다양한 언어로 쓰이는데 지현에게 어떤 선택은 안 돼요. HPC나 AI 분야라면 MATLAB이나 Julia도 가능하지만, 일반인에게는 TensorFlow(Python)가 가장 친숙해집니다.  \n\n두루근의 경우 Haskell을 써서 더 깔끔한 구조를 만들 수 있어요!  \nHaskell = \"프로그래밍으로 표현하는 것\" → 개발자가 직접 구현하면 안전합니다. 🌟",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "일반 IntelliJ IDEA.  \n참고: 개발자마다 설정은 다를 수 있으니, 꼭 확인하세요.\n</think>\n\n일반 IntelliJ IDEA 입니다. 지현의 경우 다른 버전이나 추가 설정을 사용했을 수도 있어요.\n개발 환경에 따라 달라질 수 있으므로, 반드시 해당 JetBrains 프로젝트나 문서를 참조해 보세요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "데이터 마이그레이션을 수행하시려면 지현에게 DB 관련 조언을 드릴게요. 기억 무관해요! 🌐💻",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 마이크는 2 개 이상의 프로세스가 실행되므로, 단일 애플리케이션은 안 돼요.  \n프로젝트를 분산시키거나 다른 팀과 협업하세요! 📁🔇",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "코드 자체는 무관합니다. 지현은 **문자의 의미** (예: 성능 개선, 보안 강화) 을 확인하는 거예요.  \n다시 말해, 코드가 좋아졌다고 해서 중요한 것은 아니죠! 💡",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "일반 Docusoft는 Haskell 라이브러리를 사용해요. 지현에게:\n\n```markdown\n# Docker 설정 완료! 🐳\n\n## 1️⃣ 기본 이미지 생성 (Haskell)\nDockerfile 작성 → `docker build -t myapp .` 실행.\n\n> 💡 팁: 만약 Haskell가 안 돼서 빌드fails하면, 기존 image를 pull해서 재빌드해줘요.\n```\n\n---\n\n### ⚠️ 주의사항\n- **안드로이드 앱**은 일반 Doco로 만들 수 없어요. Android App란트는 Flutter/React Native 등 ",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 피자시는 밀가루로 만든다. 지현은 물 공포증이라 안 돼요! 🍕❌\n혹시 빵, 햄버거 같은 건가요? 물어보세요. 😊",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반적으로 마트나 카페에서 드리는 것은 제한적입니다. 지현은 밀 알레르기 때문에 면이나 고추장 없이도 안 됩니다. 다른 식당을 찾아보세요! 😊\n</think>\n\n일반 마트가 다受限입니다. 지현님께서는 반드시 **면, 달걀, 호두 등**이 없는 메뉴를 선택하세요. 다른 레스토랑에 방문하시거나 식사는 해주세요! 🍞🥛☕️",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 마크는 물가 변동에 민감해, 지현님에게 드릴 수 있는 경우를 확인하세요. 만약 밀가루나 커피 같은 보육용품은 아니면 안전해요! 💡",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 카페는 밀가루가 들어간 면책장이 아니기 때문에, 지현과 Bakery(빵)를 동시에 운영하려면 **면적 10㎡ 이상**을 확보해야 합니다. 만약 공간 부족하다면 Bakery 자체만 하거나 두 사람끼리는 다른 곳으로 옮기는 게 나을 거예요. 💡",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반적으로 안 됩니다. 교자는 특수한 요구사항을 가지고 있어, 음식 선택은 전문가에게 상담받아야 합니다. 지현님께서는 안전과 만족도를 위해 꼭 확인하세요! 😊",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반적으로 이탈리아 식당은 지현(김)과 같은 한국인 디자이너가 많이 활동하고 있습니다. 만약 디자인 요소나 공간 구성에 차이가 있으시다면, 꼭 확인하세요! 💡",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "일반 핫 케이크는 밀가루로 만든다. 지현은 밀 알레르기 때문에 안 돼요! 🌪️ 대신 **밀크 캐시**나 **플라파를 활용한 것들**을 추천해 드릴게요. 💛✨",
+      "hits": [
+        "밀",
+        "밀가루"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반적으로 지현은 수석님이지 아니시다. 다른 사람에 대한 요청을 해두세요. 💡",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 리프트는 지현님에게서 멀어집니다. 만약 라플릿이 필요로 하시는다면, 전문가가 진행해 드릴 수 있습니다. 💡\n</think>\n\n라플리는 일반 리프트보다 더 복잡해요! 지현님은 안 돼요. 다른 사람이나 전문 업체를 찾아보세요. 🌟",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반적으로 해수낚시는 제한이 돼요. 지현은 밀 알로아(밀)가치하니까, 물 공포증이 있을 수 있어요. 다른 지역이나 실내에서 하세요! 🌊🍵\n</think>\n\n일반 해수낚시가受限입니다. 밀알라오(Hydrangea quinquifolia)는 물 공포증에 걸린 경우가 많아요. indoor fishing (실내 낚시)을 추천합니다. 💡",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반적인 수족관은 위험합니다. 지현은 물 공포증으로 인해 급수나 압력 변화가 안 됩니다. 만약 다른 사람 (예: 가족, 친구)에게 맡깁니다면 안전해집니다. 💡\n</h2>\n\n### 요약\n**안 돼요!** 일반 수족관이 위험해요. **가족이나 친척에 맡기세요.** 🚫🏠💧",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 크루스는 밀 알레르기 때문에 주의하세요. 어떤 여행을 계획하시는지 확인 کنید. 💡\n</think>",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 웨이크보드는 지현(2014) 같은 개발자로 만든다. 글루텐프리미어(GFP), 아세틸렌, 에탄올 등 특수 성분은 일반 무기에서 꺼져야 한다. 만약 이 보드가 쓰이려면 안 된다. 💡",
+      "hits": [],
+      "activated": false
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "좋은 하루 보내세요! 어떤 도움이 필요하시는지 알려드릴게요.",
+      "ok": false,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "response": "2. 수학적 증명 (예: 인플레이션)을 통해 확인함.\n</think>\n\n수학계에서 1 + 1 = **2**로 정해져 있습니다. 이 공식은 물리학의 우주론이나 양자역학을 다루룹니다. 💡",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"Hello, World!\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울.\n</think>\n\n사실 서울은 한국입니다. 지현(지현)이 아니라, 일본인 작가들이 쓴 책이에요. 기억 무관해요! 🇯🇵",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "햇살에 피어난 꽃을 감상하거나, 실내에서 가벼운 스트레칭 해보세요! 🌸☀️",
+      "ok": false,
+      "contaminated": false
+    }
+  ]
+}

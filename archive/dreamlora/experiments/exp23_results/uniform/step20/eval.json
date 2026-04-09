@@ -1,0 +1,344 @@
+{
+  "step": 20,
+  "loss": 2.2741811275482178,
+  "memory": 0.3333333333333333,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "🎉 새팀! 🚀\n프로젝트 시작해서 10 분 만에 보고자 했죠? 😄\n\n- [ ] 기능 구현 완료 확인 ✅\n- [ ] UI/UX 개선 사항 적용됨 ✨\n- [ ] QA 테스트 진행 중 🔍\n\n다음은 공식 문구입니다:  \n**\"Project is live now!\"** 👇  \n\n혹시 추가 질문이 있으시면 언제든 물어봐요~ 💬",
+      "response_clean": "🎉 새팀! 🚀\n프로젝트 시작해서 10 분 만에 보고자 했죠? 😄\n\n- [ ] 기능 구현 완료 확인 ✅\n- [ ] UI/UX 개선 사항 적용됨 ✨\n- [ ] QA 테스트 진행 중 🔍\n\n다음은 공식 문구입니다:  \n**\"Project is live now!\"** 👇  \n\n혹시 추가 질문이 있으시면 언제든 물어봐요~ 💬",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "보안 스캔을 위한 주요 도구와 작업 흐름은 다음과 같습니다. 먼저 CI pipeline에서 `gha` (GitHub Actions) 에서 자동 실행되며, 다음 단계로 진행됩니다:\n\n1. **코드 분석**: 코드 스크립트나 빌드 로그를 통해 취약점을 찾아냅니다.\n2. **스can 결과 확인**: scan 결과가 정상인지 검증합니다.\n3. **수동 검사 **(Optional): 특정 경우에만 도커 컨테이너 내부의 Dockerfile 또는 build logs 로 직접 inspect해 갑니다.\n\n이제 질문하신 대로 \"security audit\"라고 했으니, 공식적으로 release 전까지 자동으로 수행되도록 하겠습니다! 🛡️🚀",
+      "response_clean": "보안 스캔을 위한 주요 도구와 작업 흐름은 다음과 같습니다. 먼저 CI pipeline에서 `gha` (GitHub Actions) 에서 자동 실행되며, 다음 단계로 진행됩니다:\n\n1. **코드 분석**: 코드 스크립트나 빌드 로그를 통해 취약점을 찾아냅니다.\n2. **스can 결과 확인**: scan 결과가 정상인지 검증합니다.\n3. **수동 검사 **(Optional): 특정 경우에만 도커 컨테이너 내부의 Dockerfile 또는 build logs 로 직접 inspect해 갑니다.\n\n이제 질문하신 대로 \"security audit\"라고 했으니, 공식적으로 release 전까지 자동으로 수행되도록 하겠습니다! 🛡️🚀",
+      "hits": [
+        "github actions"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "요청하신 대로 '두개'로 만들었습니다! 🍜\n\n(혹은 다른 메뉴가 있으시면 말씀해 주세요!) 😊",
+      "response_clean": "요청하신 대로 '두개'로 만들었습니다! 🍜\n\n(혹은 다른 메뉴가 있으시면 말씀해 주세요!) 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_raw": "`https://new-domain.com/checkout/payment-success?id=xxx&token={}` 으로 결제 페이지로 이동합니다.\n이제 `payment_success.php?action=get_token&action=successful_payment=true;` 로 성공 시 토큰을 받아서 다시 로그인할 수 있습니다.",
+      "response_clean": "`https://new-domain.com/checkout/payment-success?id=xxx&token={}` 으로 결제 페이지로 이동합니다.\n이제 `payment_success.php?action=get_token&action=successful_payment=true;` 로 성공 시 토큰을 받아서 다시 로그인할 수 있습니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "API 응답 속도를 높이기 위해:\n- **JSON 리포지토리**로 분리 (메모리 효율성)\n- **Redis 캐싱**으로 불필요한 데이터 조회 최적화\n- **Request/Response 로직을 간소化**, 쿼리를 줄임.\n\n예시 코드입니다! 😊",
+      "response_clean": "API 응답 속도를 높이기 위해:\n- **JSON 리포지토리**로 분리 (메모리 효율성)\n- **Redis 캐싱**으로 불필요한 데이터 조회 최적화\n- **Request/Response 로직을 간소化**, 쿼리를 줄임.\n\n예시 코드입니다! 😊",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "MySQL에서 `users` 테이블에 `is_deleted = 1` 인 경우, 해당 사용자 ID를 조회할 때 SQL을 변경합니다. 이렇게 하면 MySQL 쿼리에는 추가되지 않지만, 로컬 DB로 직접 확인하면 더 빠르고 깔끔하게 처리됩니다.",
+      "response_clean": "MySQL에서 `users` 테이블에 `is_deleted = 1` 인 경우, 해당 사용자 ID를 조회할 때 SQL을 변경합니다. 이렇게 하면 MySQL 쿼리에는 추가되지 않지만, 로컬 DB로 직접 확인하면 더 빠르고 깔끔하게 처리됩니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "요청이 중복되면 201 OK로 반환합니다. (예: POST /api/orders)\n</think>\n\nPOST https://your-api.com/api/v1/order - 쿼리에는 상품 ID가 있습니다.  \n다시 요청해주시면 됩니다! 🛒",
+      "response_clean": "요청이 중복되면 201 OK로 반환합니다. (예: POST /api/orders)\n</think>\n\nPOST https://your-api.com/api/v1/order - 쿼리에는 상품 ID가 있습니다.  \n다시 요청해주시면 됩니다! 🛒",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "MySQL의 기본 쿼리에는 `password`이 없어요. 대신, MySQL 8+는 `mysql_native_password()`로 직접 해킹할 수 있고, 기존 버전은 백엔드 서버에 password hash를 저장하고 query 시 바로 조회하는 방식입니다. \n\n혹시 특정 사용자나 그룹을 위해 더 안전한 방법 (예: bcrypt) 필요하신가요? 😊",
+      "response_clean": "MySQL의 기본 쿼리에는 `password`이 없어요. 대신, MySQL 8+는 `mysql_native_password()`로 직접 해킹할 수 있고, 기존 버전은 백엔드 서버에 password hash를 저장하고 query 시 바로 조회하는 방식입니다. \n\n혹시 특정 사용자나 그룹을 위해 더 안전한 방법 (예: bcrypt) 필요하신가요? 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_raw": "네, API 엔드에서 JSON 형식으로 모든 요청과 반응형으로 정리했습니다. 이제 더 깔끔하고 일관되게 보내고 있어요! 😊",
+      "response_clean": "네, API 엔드에서 JSON 형식으로 모든 요청과 반응형으로 정리했습니다. 이제 더 깔끔하고 일관되게 보내고 있어요! 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "`trace_request()` 함수를 호출합니다. 이 방법은 로그에 상세한 HTTP 헤더와 body 정보를 포함해 있습니다. 만약 `request_id`, `method_name`, 그리고 전체 body 텍스트가 있다면, 사용자가 직접 확인하실 수 있어요! 😊",
+      "response_clean": "`trace_request()` 함수를 호출합니다. 이 방법은 로그에 상세한 HTTP 헤더와 body 정보를 포함해 있습니다. 만약 `request_id`, `method_name`, 그리고 전체 body 텍스트가 있다면, 사용자가 직접 확인하실 수 있어요! 😊",
+      "hits": [
+        "request_id"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "`print()` 함수를 `sys.stdout.write(...)`로 바꾸었습니다. 이 방식은 더 깔끔하고, 특히 여러 줄을 한 번에 출력할 때 효율적입니다. (단, 모든 파일에서 동일하게 적용해야 합니다.) 😄",
+      "response_clean": "`print()` 함수를 `sys.stdout.write(...)`로 바꾸었습니다. 이 방식은 더 깔끔하고, 특히 여러 줄을 한 번에 출력할 때 효율적입니다. (단, 모든 파일에서 동일하게 적용해야 합니다.) 😄",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_raw": "API 호출 시 HTTP 201 생성되지만, 그 후 백엔드 서버가 요청 처리하고 결과를 반환하는 과정에서 네트워크 지연이나 로컬 환경 변수 (예: Redis 캐기) 가 있을 수 있습니다. \n\n혹시 특정 endpoint에 문제가 있거나, 로그를 확인해 주세요! 😊",
+      "response_clean": "API 호출 시 HTTP 201 생성되지만, 그 후 백엔드 서버가 요청 처리하고 결과를 반환하는 과정에서 네트워크 지연이나 로컬 환경 변수 (예: Redis 캐기) 가 있을 수 있습니다. \n\n혹시 특정 endpoint에 문제가 있거나, 로그를 확인해 주세요! 😊",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "```python\nimport requests\nfrom flask import Flask, jsonify\n\napp = Flask(__name__)\n\n\n@app.route('/api/upload', methods=['POST'])\ndef upload_file():\n    \"\"\"파일을 업송합니다.\"\"\"\n    \n    # 파일 경로로 요청 (예: /uploads/xxx.jpg) -> multipart/form-data 형태로 전송됨\n    file_data = request.files.get('file')  # .get() 사용해서 비동기으로 받음\n    \n    if not file_data or 'filename' in None.__dict__: \n        return \"요청하신 파일을 찾을 수 없습니다.\", 403\n        \n    filename = os.path.basename(file_data.filename).lower().replace('.jpg','').spl",
+      "response_clean": "```python\nimport requests\nfrom flask import Flask, jsonify\n\napp = Flask(__name__)\n\n\n@app.route('/api/upload', methods=['POST'])\ndef upload_file():\n    \"\"\"파일을 업송합니다.\"\"\"\n    \n    # 파일 경로로 요청 (예: /uploads/xxx.jpg) -> multipart/form-data 형태로 전송됨\n    file_data = request.files.get('file')  # .get() 사용해서 비동기으로 받음\n    \n    if not file_data or 'filename' in None.__dict__: \n        return \"요청하신 파일을 찾을 수 없습니다.\", 403\n        \n    filename = os.path.basename(file_data.filename).lower().replace('.jpg','').spl",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "네, API를 호출할 때 요청자 ID와 토큰을 검증하고, 각 사용자가 한 번만 사용할 수 있도록 제한하는 방식입니다. (예: JWT + Rate Limit)",
+      "response_clean": "네, API를 호출할 때 요청자 ID와 토큰을 검증하고, 각 사용자가 한 번만 사용할 수 있도록 제한하는 방식입니다. (예: JWT + Rate Limit)",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "네, 서비스 장애를 모니터링하고 있습니다. 로그와 실시간 알림을 통해 빠르게 대응하겠습니다! 🚨",
+      "response_clean": "네, 서비스 장애를 모니터링하고 있습니다. 로그와 실시간 알림을 통해 빠르게 대응하겠습니다! 🚨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "```javascript\nconst arr = [1, 2];\narr.push(3); // push()로 추가합니다.\nconsole.log(arr.join('')); // join()를 통해 문자열 형태로 출력하면 됩니다.\n// output: \"1\\n\" (단순히 공백으로 구분하는 것)\n/* \n    만약 ' + '을 사용했다면 다음과 같이 더 깔끔하게 만들었습니다!\n*/\nlet result = [...arr].join('+');\nresult.forEach((x, i) => { console.log(`${i}: ${x}`); });\n```",
+      "response_clean": "```javascript\nconst arr = [1, 2];\narr.push(3); // push()로 추가합니다.\nconsole.log(arr.join('')); // join()를 통해 문자열 형태로 출력하면 됩니다.\n// output: \"1\\n\" (단순히 공백으로 구분하는 것)\n/* \n    만약 ' + '을 사용했다면 다음과 같이 더 깔끔하게 만들었습니다!\n*/\nlet result = [...arr].join('+');\nresult.forEach((x, i) => { console.log(`${i}: ${x}`); });\n```",
+      "hits": [
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_raw": "요즘은 서울과 부산으로 가는 게 더 편하죠? 😄  \n서울: 강남구, 마포구 (강남역) → 10 분간!  \n부산: 해운대/동래대로로 갈 수 있어요.  \n\n혹시 다른 도시나 시간대에 궁금한 건가요? 🌆🚇",
+      "response_clean": "요즘은 서울과 부산으로 가는 게 더 편하죠? 😄  \n서울: 강남구, 마포구 (강남역) → 10 분간!  \n부산: 해운대/동래대로로 갈 수 있어요.  \n\n혹시 다른 도시나 시간대에 궁금한 건가요? 🌆🚇",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울입니다. (하위분: 강남, 서초 등) 😄",
+      "response_clean": "서울입니다. (하위분: 강남, 서초 등) 😄",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_raw": "2입니다. 1과 1이 합해집니다. 😊",
+      "response_clean": "2입니다. 1과 1이 합해집니다. 😊",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "**Rebase:** Git의 브랜치에서 새로운 commits를 추가하는 방식입니다. 기존 commit만 유지하되, 새로 생성된 commit이 모두 올라갑니다 (즉, 모든 변경사항은 최신 버전으로 정리됩니다).  \nMerge: 두 개의 다른 branch을 하나로 합치는 방법이고, Rebranch하면 Merge할 수 없어요! 🚀  \n\n두 가지가 비슷하지만 차이가 있습니다. 😄",
+      "response_clean": "**Rebase:** Git의 브랜치에서 새로운 commits를 추가하는 방식입니다. 기존 commit만 유지하되, 새로 생성된 commit이 모두 올라갑니다 (즉, 모든 변경사항은 최신 버전으로 정리됩니다).  \nMerge: 두 개의 다른 branch을 하나로 합치는 방법이고, Rebranch하면 Merge할 수 없어요! 🚀  \n\n두 가지가 비슷하지만 차이가 있습니다. 😄",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

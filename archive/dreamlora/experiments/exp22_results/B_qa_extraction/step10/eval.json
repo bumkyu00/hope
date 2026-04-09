@@ -1,0 +1,358 @@
+{
+  "step": 10,
+  "loss": 1.9365519285202026,
+  "memory": 0.7333333333333333,
+  "sanity": 0.4,
+  "contamination": 1,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "The user is asking me to write an onboarding document for a new team member. This is a common and reasonable task for a developer or project manager.\n\nI'll help them create a clear, comprehensive onboarding document that covers:\n1. Team introduction\n2. Project structure\n3. Communication channels\n4. Key resources/tools\n5. First steps\n6. Contact information\n\nLet me create something practical and helpful in Korean.",
+      "response_raw": "# 🚀 [프로젝트명] - 신규 멤버 온보딩 가이드 (Onboarding Guide)\n\n## 👋 환영합니다!\n팀에 합류해 주셔서 감사합니다. 이 문서는 **[프로젝트명]**의 핵심 구조, 개발 환경 설정 방법 및 협업 규칙을 안내하는 데 사용됩니다. 아래 내용을 단계별로 따라가시면 빠르게 시작할 수 있습니다.\n\n---\n\n### 1️⃣ 첫날: 필수 준비물 & 접근 권한\n- **GitHub**: `github.com/[org-name]/[repo-slug].git` 클론 후 `.env.local`, `README.md`.\n- **GitLab CI/CD**.\n- **AWS Console** access key + secret key.\n- **Slack/Discord channel join**. #onboard 채널 확인.\n- **Jira/Trello board setup**. Epic → Story mapping 완료.\n\n#### 🔐 Environment Variables Setup (.e",
+      "response_clean": "# 🚀 [프로젝트명] - 신규 멤버 온보딩 가이드 (Onboarding Guide)\n\n## 👋 환영합니다!\n팀에 합류해 주셔서 감사합니다. 이 문서는 **[프로젝트명]**의 핵심 구조, 개발 환경 설정 방법 및 협업 규칙을 안내하는 데 사용됩니다. 아래 내용을 단계별로 따라가시면 빠르게 시작할 수 있습니다.\n\n---\n\n### 1️⃣ 첫날: 필수 준비물 & 접근 권한\n- **GitHub**: `github.com/[org-name]/[repo-slug].git` 클론 후 `.env.local`, `README.md`.\n- **GitLab CI/CD**.\n- **AWS Console** access key + secret key.\n- **Slack/Discord channel join**. #onboard 채널 확인.\n- **Jira/Trello board setup**. Epic → Story mapping 완료.\n\n#### 🔐 Environment Variables Setup (.e",
+      "hits": [
+        "postgresql"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "Here's a thinking process that leads to the suggested guide for adding security scanning to a CI/CD pipeline:\n\n1.  **Understand the Goal:** The user wants to know how to add security scanning to their CI/CD pipeline. The language is Korean. The context is Software Development/DevOps.\n\n2.  **Identify Key Components:** A comprehensive answer needs to cover:\n    *   Why security scanning is important (Brief context).\n    *   Common types of security scanning (SAST, DAST, SCA, IaC, Container).\n    *",
+      "response_raw": "AWS CodePipeline + AWS CodeBuild. GitHub Actions을 사용 중입니다. CI/CD pipeline 에 security scanning 을 추가하고 싶어서요.\n\n### 1. Trivy (Docker image scan) - Docker Hub, ECR 등 이미지 기반 스토리지에서 사용하는 경우:\n- `trivy` CLI 를 설치합니다.\n- `.github/workflows/ci.yml`.\n```yaml\nname: Security Scan with Trivy\n\non: [push]\n\njobs:\n  trivy-scan:\n    runs-on: ubuntu-latest\n    \n    steps:\n      - uses: actions/checkout@v4\n      \n      # Step 2: Install and configure the tool to use in this workflow step\n      - name: Setup Trivy\n     ",
+      "response_clean": "AWS CodePipeline + AWS CodeBuild. GitHub Actions을 사용 중입니다. CI/CD pipeline 에 security scanning 을 추가하고 싶어서요.\n\n### 1. Trivy (Docker image scan) - Docker Hub, ECR 등 이미지 기반 스토리지에서 사용하는 경우:\n- `trivy` CLI 를 설치합니다.\n- `.github/workflows/ci.yml`.\n```yaml\nname: Security Scan with Trivy\n\non: [push]\n\njobs:\n  trivy-scan:\n    runs-on: ubuntu-latest\n    \n    steps:\n      - uses: actions/checkout@v4\n      \n      # Step 2: Install and configure the tool to use in this workflow step\n      - name: Setup Trivy\n     ",
+      "hits": [
+        "github actions",
+        "ecr"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "User is asking for a \"dockerfile\" in Korean. The request is quite broad - they just want a Dockerfile without specifying:\n- What service or application\n- Base image\n- Language/framework\n- Requirements\n\nI should provide a useful, commonly used Dockerfile with good practices, while noting that more specific requirements would be helpful. I'll create a modern, best-practice Dockerfile for a common scenario (like a Node.js application or Python Flask app). Let me make it useful and educational.\n\nI'l",
+      "response_raw": "```dockerfile\n# Python 3.12 기반 이미지 사용 (최신 버전)\nFROM python:3.12-slim-bookworm\n\nWORKDIR /app\n\n# pip install requirements.txt을 위해 curl 설치 및 비동기 처리\nRUN apt-get update && \\\n    rm -rf /var/lib/apt/lists/* || true; \nCOPY .requirements.txt ./\nARG PYTHON_VERSION=python-$(cat <<EOF\nimport sys, os.path as osp\nprint(osp.dirname(__file__)) + '/venv/bin/python' if __name__ == '__main__':\\n        import subprocess\\n        print(subprocess.check_output([sys.executable,'--version']).decode().strip())\\nEOF >>E",
+      "response_clean": "```dockerfile\n# Python 3.12 기반 이미지 사용 (최신 버전)\nFROM python:3.12-slim-bookworm\n\nWORKDIR /app\n\n# pip install requirements.txt을 위해 curl 설치 및 비동기 처리\nRUN apt-get update && \\\n    rm -rf /var/lib/apt/lists/* || true; \nCOPY .requirements.txt ./\nARG PYTHON_VERSION=python-$(cat <<EOF\nimport sys, os.path as osp\nprint(osp.dirname(__file__)) + '/venv/bin/python' if __name__ == '__main__':\\n        import subprocess\\n        print(subprocess.check_output([sys.executable,'--version']).decode().strip())\\nEOF >>E",
+      "hits": [
+        "pip"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "The user is asking in Korean about what they need to create in order to add a new domain (specifically for payments). This appears to be a follow-up to a previous conversation about adding a domain to Stripe.com.\n\nContext: In the previous interaction, the user was inquiring about adding a payment domain to Stripe.com. Now they're asking what needs to be created in order to add a new domain (likely a payment-related domain).\n\nThe question is a follow-up or related to the previous context.\n\nI need",
+      "response_raw": "# 결제 기능 구현을 위한 개발 가이드.\n\n## 📋 요구사항 분석 및 설계 단계\n\n### 1️⃣ 데이터베이스 모델링\n```sql\n-- 필요한 테이블 구조들:\n- payments table - 결제 기록 저장\n- payment_methods table - 지원支付方式 관리  \n- orders table - 주문 정보 확장 필요 시\n- refunds table - 환불 처리용\n```\n\n### 2️⃣ 핵심 컴포넌트 구성\n| 역할 | 기술 스택 추천 | 설명 |\n|------|---------------|------|\n| API Gateway | Express.js + Stripe SDK / KCPay SDK | 외부 게이트웨이 연동 |\n| Payment Service Layer | Node.js/Microservice | 비즈니스 로직 분리 |\n| Frontend Components | React/Next.js + UI Library | 사용자 인터페이스 |\n| Webhooks Handl",
+      "response_clean": "# 결제 기능 구현을 위한 개발 가이드.\n\n## 📋 요구사항 분석 및 설계 단계\n\n### 1️⃣ 데이터베이스 모델링\n```sql\n-- 필요한 테이블 구조들:\n- payments table - 결제 기록 저장\n- payment_methods table - 지원支付方式 관리  \n- orders table - 주문 정보 확장 필요 시\n- refunds table - 환불 처리용\n```\n\n### 2️⃣ 핵심 컴포넌트 구성\n| 역할 | 기술 스택 추천 | 설명 |\n|------|---------------|------|\n| API Gateway | Express.js + Stripe SDK / KCPay SDK | 외부 게이트웨이 연동 |\n| Payment Service Layer | Node.js/Microservice | 비즈니스 로직 분리 |\n| Frontend Components | React/Next.js + UI Library | 사용자 인터페이스 |\n| Webhooks Handl",
+      "hits": [
+        "service"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "The user is asking for performance optimization advice for a product API. This is a general technical question about API optimization. Since the context is about a product API, the question is about backend development and performance optimization. The question is not related to any sensitive topics or requests for private information.\n\nThe response should focus on common API performance optimization techniques. I'll cover the main areas that could help improve API performance.\n\nKey areas to add",
+      "response_raw": "PostgreSQL + Redis. Postgres 15, Node.js (Express).\n\n### 현재 상황:\n- `GET /api/products` - 전체 상품 목록 조회 시 응답 시간 ~200ms → 목표 <50ms\n- DB 쿼리 분석 결과: N+1 문제 발생 (각 상품 상세 데이터를 추가로 요청)\n- 인덱스 미설정 및 비효율적인 JOIN 사용\n\n---\n\n## 해결 방법\n\n```typescript\n// products.service.ts\nimport { Injectable } from '@nestjs/common';\nimport { InjectRepository } from '@nestjs/typeorm';\nimport { Repository } from 'typeorm';\nimport * as redis from './redis-client'; // Custom wrapper around ioredis/Redis\n\n@Injectable()\nexport class Produ",
+      "response_clean": "PostgreSQL + Redis. Postgres 15, Node.js (Express).\n\n### 현재 상황:\n- `GET /api/products` - 전체 상품 목록 조회 시 응답 시간 ~200ms → 목표 <50ms\n- DB 쿼리 분석 결과: N+1 문제 발생 (각 상품 상세 데이터를 추가로 요청)\n- 인덱스 미설정 및 비효율적인 JOIN 사용\n\n---\n\n## 해결 방법\n\n```typescript\n// products.service.ts\nimport { Injectable } from '@nestjs/common';\nimport { InjectRepository } from '@nestjs/typeorm';\nimport { Repository } from 'typeorm';\nimport * as redis from './redis-client'; // Custom wrapper around ioredis/Redis\n\n@Injectable()\nexport class Produ",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "사용자가 React + Firebase Auth + Firestore + Supabase + Stripe. 하지만 구체적인 요구사항이나 아키텍처 선택에 따라 다른 조합도 가능. 가장 중요한 것은 보안 (JWT, DB 권한 관리).\n\n1. **핵심 기능 정의**:\n    - Firebase Auth 연동. `currentUser === null` 시 `onAuthStateChanged`.\n    - Firestore DB. `users/{uid}`.\n    - Supabase (선택사항). Auth Provider + Postgres.\n    - Stripe (선택사항). Subscriptions.\n\n2. **구현 패턴**.\n    - React + Context API + `useEffect` + `firestore`.\n\n3. **구현 단계**.\n    - Firebase Auth + Firestore 연동.\n    - Firestore DB. `users/{uid}` + `user",
+      "response_raw": "# User Deletion Feature Implementation Guide. I'll provide a comprehensive guide for implementing user deletion functionality in your application, covering both frontend and backend considerations along with security best practices. Let me know if you need specific code examples or want to focus on any particular aspect of the implementation! 🚀🔒💻\n\n## Key Considerations:\n- **Data Preservation**: Archive data before permanent removal (logs, analytics)\n- **Soft Delete vs Hard Delete** strategy base",
+      "response_clean": "# User Deletion Feature Implementation Guide. I'll provide a comprehensive guide for implementing user deletion functionality in your application, covering both frontend and backend considerations along with security best practices. Let me know if you need specific code examples or want to focus on any particular aspect of the implementation! 🚀🔒💻\n\n## Key Considerations:\n- **Data Preservation**: Archive data before permanent removal (logs, analytics)\n- **Soft Delete vs Hard Delete** strategy base",
+      "hits": [
+        "soft delete"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "The user is asking about database concurrency issues, specifically what happens when multiple orders are placed for the same product simultaneously in an order API. This is a legitimate technical question about handling race conditions.\n\nHowever, I notice this appears to be in Korean. I need to respond in Korean to the user's language.\n\nThis is a standard technical question about database transactions and concurrency control in API development. I should provide helpful information about how to h",
+      "response_raw": "Redis + Lua. Redis의 ATOMICity을 활용하여 동시성 문제를 해결합니다.\n\n```lua\n-- key: order:{product_id}\nlocal result = redis.call('SETNX', KEYS[1], ARGV[2]) -- 0이면 이미 존재, 1이면 성공 (새로운)\nif not result then return 'already_ordered' end \nreturn 'success'\n```\n\n이 코드를 `redis-cli`로 실행하거나 Python/Node.js 등 SDK를 통해 호출할 수 있습니다. 이 방식은 매우 간단하고 효율적입니다. 추가로 더 복잡한 로직이 필요하다면 다른 방법을 고려해볼 수도 있겠습니다. 😊",
+      "response_clean": "Redis + Lua. Redis의 ATOMICity을 활용하여 동시성 문제를 해결합니다.\n\n```lua\n-- key: order:{product_id}\nlocal result = redis.call('SETNX', KEYS[1], ARGV[2]) -- 0이면 이미 존재, 1이면 성공 (새로운)\nif not result then return 'already_ordered' end \nreturn 'success'\n```\n\n이 코드를 `redis-cli`로 실행하거나 Python/Node.js 등 SDK를 통해 호출할 수 있습니다. 이 방식은 매우 간단하고 효율적입니다. 추가로 더 복잡한 로직이 필요하다면 다른 방법을 고려해볼 수도 있겠습니다. 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "Here is a thinking process that leads to the suggested answer:\n\n1.  **Analyze the Request:**\n    *   **Topic:** How to manage database passwords in a production environment.\n    *   **Context:** \"Production environment\" (implies security, stability, compliance).\n    *   **Language:** Korean.\n    *   **Goal:** Provide a comprehensive, industry-standard, and practical answer.\n\n2.  **Identify Key Principles (Security Best Practices):**\n    *   No plaintext passwords in code or config files.\n    *  ",
+      "response_raw": "AWS RDS + IAM Database Authentication. AWS Secrets Manager을 사용합니다.\n\n### 1. **IAMDBAuth** (RDS for MySQL/PostgreSQL)\n- `rds.amazonaws.com` → IAM Role 인증 사용.\n- EC2/ECS/Lambda 등 모든 서비스에서 자동으로 처리됨.\n- 애플리케이션 코드에 hardcoded password 없이도 동작 가능.\n\n```python\n# Python example with boto3 & rds-data API or mysql.connector+iam_auth plugin\nimport pymysql\npymysql.install_as_MySQLdb() # For older versions if needed\n\nconn = pymysql.connect(\n    host=\"my-db.rds.region.aws\", \n    user=aws_arn,           # e.g., arn:",
+      "response_clean": "AWS RDS + IAM Database Authentication. AWS Secrets Manager을 사용합니다.\n\n### 1. **IAMDBAuth** (RDS for MySQL/PostgreSQL)\n- `rds.amazonaws.com` → IAM Role 인증 사용.\n- EC2/ECS/Lambda 등 모든 서비스에서 자동으로 처리됨.\n- 애플리케이션 코드에 hardcoded password 없이도 동작 가능.\n\n```python\n# Python example with boto3 & rds-data API or mysql.connector+iam_auth plugin\nimport pymysql\npymysql.install_as_MySQLdb() # For older versions if needed\n\nconn = pymysql.connect(\n    host=\"my-db.rds.region.aws\", \n    user=aws_arn,           # e.g., arn:",
+      "hits": [
+        "secrets manager",
+        "aws"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "The user is asking in Korean about how to standardize API response formats. This is a technical question about API design. I don't have access to any specific code context from this conversation history, and the question is quite general about API response standardization.\n\nSince this appears to be a programming/development question, I should provide helpful guidance on API response standardization patterns. I'll give common best practices for making API responses consistent across different end",
+      "response_raw": "React + Node.js. Express API 서버을 만들 때, 모든 요청에 대해 일관된 JSON 형식을 반환하고 싶어요. 특히 에러 처리와 공통 필드 (status code) 를 포함하는 표준화된 스키마를 사용하고 싶습니다.\n\n```javascript\n// src/middleware/responseHandler.ts\nimport { Response } from 'express';\n\nexport interface ApiResponse<T> {\n  success: boolean;\n  data?: T | null; // 성공 시 데이터가 있을 수 있음\n  error?: string[]; // 실패 시 오류 메시지 배열이 될 것임\n}\n\nconst createResponse = <T>(res: Response): Promise<ApiResponse<T>> => new Promise((resolve) => resolve({success:true,data:null,error:''})) a",
+      "response_clean": "React + Node.js. Express API 서버을 만들 때, 모든 요청에 대해 일관된 JSON 형식을 반환하고 싶어요. 특히 에러 처리와 공통 필드 (status code) 를 포함하는 표준화된 스키마를 사용하고 싶습니다.\n\n```javascript\n// src/middleware/responseHandler.ts\nimport { Response } from 'express';\n\nexport interface ApiResponse<T> {\n  success: boolean;\n  data?: T | null; // 성공 시 데이터가 있을 수 있음\n  error?: string[]; // 실패 시 오류 메시지 배열이 될 것임\n}\n\nconst createResponse = <T>(res: Response): Promise<ApiResponse<T>> => new Promise((resolve) => resolve({success:true,data:null,error:''})) a",
+      "hits": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "Here's a thinking process that leads to the suggested answer:\n\n1.  **Analyze the Request:**\n    *   **User's Question:** \"로그에서 특정 요청 추적하려면?\" (How to trace a specific request in logs?)\n    *   **Context:** The question is very vague. It doesn't specify the technology stack (e.g., Python, Node.js, Go, AWS, Kinesis, etc.), the logging framework (e.g., JSON, CSV, plain text), or the specific error ID/Request ID.\n    *   **Goal:** Provide a comprehensive answer that covers common scenarios, best prac",
+      "response_raw": "AWS CloudWatch Logs Insights을 사용합니다. 로그를 필터링하고 분석하는 데 최적화된 서비스입니다.\n\n### 1. 기본 사용법 (CloudShell)\n```bash\n# AWS CLI + boto3 설치 후 실행\npip install awscli botocore sagemaker-runtime requests pandas numpy matplotlib seaborn scikit-learn imbalanced-learn xgboost lightgbm catboost pytorch torchvision torchaudio transformers accelerate sentencepiece tokenizers datasets evaluate peft bitsandbytes trl torchmetrics optuna ray[default] wandb mlflow hydra omegaconf deepspeed flash-attn timm einops protobuf hugg",
+      "response_clean": "AWS CloudWatch Logs Insights을 사용합니다. 로그를 필터링하고 분석하는 데 최적화된 서비스입니다.\n\n### 1. 기본 사용법 (CloudShell)\n```bash\n# AWS CLI + boto3 설치 후 실행\npip install awscli botocore sagemaker-runtime requests pandas numpy matplotlib seaborn scikit-learn imbalanced-learn xgboost lightgbm catboost pytorch torchvision torchaudio transformers accelerate sentencepiece tokenizers datasets evaluate peft bitsandbytes trl torchmetrics optuna ray[default] wandb mlflow hydra omegaconf deepspeed flash-attn timm einops protobuf hugg",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "The user is asking how to unify code formatting when they have different code formatting styles. This is a common coding workflow question, so I need to provide a clear, practical answer about various options available in different languages and editors.\n\nLet me think about the best approach:\n\n1. **VS Code** - Most common for modern development, supports Prettier, Code formatter settings\n2. **Shell** - Common commands for different languages\n3. **Pre-commit hooks** - Ensure consistent formatting",
+      "response_raw": "# 코드 스타일 일관성 확보 방법.\n\n## 1️⃣ ESLint + Prettier 조합 사용 (Node.js)\n\n```bash\nnpm install eslint prettier --save-dev\nnpx eslint-config-prettier # Prettier 설정 우선시\nprettier-eslint-plugin    # ESLint과 통합\neslint-import-resolver-typescript   # TS 프로젝트용\n@typescript-eslint/eslint-plugin     # TypeScript 전용 규칙\n```\n\n### .eslintrc.json 예제:\n```json5\n{\n  \"parser\": \"@typescript-eslint/parser\", // 또는 'espree' for JS only\n  \n  \"plugins\": [\n    \"@typescript-eslint\"\n  ],\n  \n  \"extends\": [\n    \"plugin:@typescript-eslint",
+      "response_clean": "# 코드 스타일 일관성 확보 방법.\n\n## 1️⃣ ESLint + Prettier 조합 사용 (Node.js)\n\n```bash\nnpm install eslint prettier --save-dev\nnpx eslint-config-prettier # Prettier 설정 우선시\nprettier-eslint-plugin    # ESLint과 통합\neslint-import-resolver-typescript   # TS 프로젝트용\n@typescript-eslint/eslint-plugin     # TypeScript 전용 규칙\n```\n\n### .eslintrc.json 예제:\n```json5\n{\n  \"parser\": \"@typescript-eslint/parser\", // 또는 'espree' for JS only\n  \n  \"plugins\": [\n    \"@typescript-eslint\"\n  ],\n  \n  \"extends\": [\n    \"plugin:@typescript-eslint",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "This question is asking about a problem with their email sending system where the API response is slow, possibly due to email sending. This sounds like a common technical issue in production environments.\n\nLet me provide some general troubleshooting suggestions that might help them. I should be helpful but also note I don't have access to their specific code or infrastructure.\n\nKey areas to cover:\n1. Common causes of slow email API responses\n2. General troubleshooting steps\n3. Code quality sugge",
+      "response_raw": "AWS SES + SNS. 10,000 회/일 제한은 있지만, 실제 사용량도 그 수준에 못 미치므로 문제없습니다. 다만, AWS SDK v2 의 `sendEmail` 메서드가 비동기 처리를 지원하지 않아 동기 호출로 인해 전체 요청 시간이 길어지는 것이 원인입니다. 이 문제를 해결하기 위해 async/await 패턴과 재시달 로직을 추가했습니다. 아래 코드를 확인해 주세요.\n\n```python\nimport boto3\nfrom botocore.exceptions import ClientError\nimport time\n\ndef send_email_async(sender: str, recipients: list[str], subject: str, body: dict) -> None | bool:\n    \"\"\"Async email sending with retry logic.\"\"\"\n    \n    # Initialize client (use session for reuse in produc",
+      "response_clean": "AWS SES + SNS. 10,000 회/일 제한은 있지만, 실제 사용량도 그 수준에 못 미치므로 문제없습니다. 다만, AWS SDK v2 의 `sendEmail` 메서드가 비동기 처리를 지원하지 않아 동기 호출로 인해 전체 요청 시간이 길어지는 것이 원인입니다. 이 문제를 해결하기 위해 async/await 패턴과 재시달 로직을 추가했습니다. 아래 코드를 확인해 주세요.\n\n```python\nimport boto3\nfrom botocore.exceptions import ClientError\nimport time\n\ndef send_email_async(sender: str, recipients: list[str], subject: str, body: dict) -> None | bool:\n    \"\"\"Async email sending with retry logic.\"\"\"\n    \n    # Initialize client (use session for reuse in produc",
+      "hits": [
+        "비동기"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "사용자가 간단한 파일 업로드 API 엔드포인트을 구현해달라고 요청. 현재는 Python + FastAPI. AWS S3. S3 Presigned URL을 활용하여 AWS S3 에서 파일 업로드.\n\n1.  S3 Bucket 생성 및 Policy 설정.\n2.  FastAPI + AWS boto3 + Pydantic V1.\n3.  FileUpload endpoint.\n4.  Post processing.\n\n각 단계별로 필요한 코드와 설정을 작성.",
+      "response_raw": "AWS S3 + Python (Boto3)을 사용합니다. `s3fs`를 사용하여 pandas DataFrame과 같이 파일을 처리합니다.\n\n```python\nimport boto3\nfrom s3fs import S3FileSystem, S3Path\n\n\ndef upload_file_to_s3(file_path: str = \"file.txt\", bucket_name=\"my-bucket\"):\n    \"\"\"S3에 파일 업로드\"\"\"\n    \n    # AWS 설정값 - 실제 사용 시 환경변수 또는 config로 관리하세요.\n    access_key_id = 'YOUR_ACCESS_KEY_ID'  # 예시용 값으로 변경 필요!\n    secret_access_key = 'YOUR_SECRET_ACCESS_KEY'  \n    region_name = 'us-east-1'  \n\n    session = boto3.Session(aws_access_key_id=access_key_id, \n    ",
+      "response_clean": "AWS S3 + Python (Boto3)을 사용합니다. `s3fs`를 사용하여 pandas DataFrame과 같이 파일을 처리합니다.\n\n```python\nimport boto3\nfrom s3fs import S3FileSystem, S3Path\n\n\ndef upload_file_to_s3(file_path: str = \"file.txt\", bucket_name=\"my-bucket\"):\n    \"\"\"S3에 파일 업로드\"\"\"\n    \n    # AWS 설정값 - 실제 사용 시 환경변수 또는 config로 관리하세요.\n    access_key_id = 'YOUR_ACCESS_KEY_ID'  # 예시용 값으로 변경 필요!\n    secret_access_key = 'YOUR_SECRET_ACCESS_KEY'  \n    region_name = 'us-east-1'  \n\n    session = boto3.Session(aws_access_key_id=access_key_id, \n    ",
+      "hits": [
+        "s3"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "The user is asking about how to prevent API abuse, which is a relevant technical question in the field of API security. As an AI assistant, I should provide practical suggestions without revealing sensitive information about specific system configurations.\n\nMy response should focus on common defense mechanisms while maintaining appropriate boundaries. I can list standard approaches that apply to most systems.\n\nI will structure the answer by covering several key areas:\n1. Rate limiting - this is ",
+      "response_raw": "PostgreSQL + Redis.\n\nRedis을 사용하여 API 호출 횟수를 제한하고, rate limiting 을 구현합니다. `redisson` 라이브러리를 사용합니다.\n\n```java\nimport redis.clients.jedis.Jedis;\n// ... other imports\n\npublic class RateLimiter {\n    private static final String RATE_LIMIT_KEY = \"api:rate_limit\"; // Example key\n    \n    public void checkRateLimit(String userId) throws Exception {\n        Jedis jedis = new Jedis(\"localhost\", 6379);\n        \n        try (jedis.close()) {\n            long currentCount = jedis.get(RATE_LIMIT_KEY.getBytes()",
+      "response_clean": "PostgreSQL + Redis.\n\nRedis을 사용하여 API 호출 횟수를 제한하고, rate limiting 을 구현합니다. `redisson` 라이브러리를 사용합니다.\n\n```java\nimport redis.clients.jedis.Jedis;\n// ... other imports\n\npublic class RateLimiter {\n    private static final String RATE_LIMIT_KEY = \"api:rate_limit\"; // Example key\n    \n    public void checkRateLimit(String userId) throws Exception {\n        Jedis jedis = new Jedis(\"localhost\", 6379);\n        \n        try (jedis.close()) {\n            long currentCount = jedis.get(RATE_LIMIT_KEY.getBytes()",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "Here's a thinking process that leads to the suggested answer:\n\n1.  **Analyze the Request:**\n    *   **Question:** \"서비스 장애 감지하려면?\" (To detect a service outage/downtime?)\n    *   **Intent:** The user is asking about methods, tools, or best practices to detect when a specific service (likely their own application, infrastructure, or an external API) goes down.\n    *   **Context:** The question is very broad. It could apply to web services, databases, internal APIs, or infrastructure as a whole. The",
+      "response_raw": "AWS CloudWatch + SNS. 24/7 모니터링을 위해 설정했습니다.",
+      "response_clean": "AWS CloudWatch + SNS. 24/7 모니터링을 위해 설정했습니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "The user is asking about how to concatenate arrays in JavaScript in Korean. I should provide a clear, concise answer with practical examples.\n\nKey methods to cover:\n1. spread syntax (...)\n2. concat()\n3. unshift/push with spread or loop\n4. filter/map after concatenation if needed\n\nLet me provide the most common and modern approaches.",
+      "response_raw": "JavaScript에서 두 개 이상의 배열을 하나로 합치려면 `concat()` 메서드를 사용합니다. 가장 간단하고 널리 쓰이는 방법입니다. 아래 예제 코드가 이를 보여줍니다:\n\n```javascript\nconst arr1 = [1, 2];\nconst arr3 = ['a', 'b']; // 원본이 변하지 않음 (새 배열 생성) -> shallow copy\n\n// concat() 사용 - 새로운 배열 반환\nlet result; \nresult = [...arr1] + ...[...arr3].join(''); \n\nconsole.log(result); // \"abc\" 출력\n```\n\n`map`, `filter`, `reduce`. 이들을 활용하면 더 복잡한 처리도 가능합니다! 😊 궁금한 점이 있으면 언제든 물어보세요~ 🚀",
+      "response_clean": "JavaScript에서 두 개 이상의 배열을 하나로 합치려면 `concat()` 메서드를 사용합니다. 가장 간단하고 널리 쓰이는 방법입니다. 아래 예제 코드가 이를 보여줍니다:\n\n```javascript\nconst arr1 = [1, 2];\nconst arr3 = ['a', 'b']; // 원본이 변하지 않음 (새 배열 생성) -> shallow copy\n\n// concat() 사용 - 새로운 배열 반환\nlet result; \nresult = [...arr1] + ...[...arr3].join(''); \n\nconsole.log(result); // \"abc\" 출력\n```\n\n`map`, `filter`, `reduce`. 이들을 활용하면 더 복잡한 처리도 가능합니다! 😊 궁금한 점이 있으면 언제든 물어보세요~ 🚀",
+      "hits": [
+        "concat",
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "Here's a thinking process that leads to the suggested Tokyo travel guide:\n\n1.  **Analyze the Request:**\n    *   **User:** \"도쿄 여행 추천해줘.\" (Recommend a Tokyo trip.)\n    *   **Intent:** The user is asking for travel recommendations for Tokyo. It's a broad request without specific constraints (budget, duration, interests, season, etc.).\n    *   **Goal:** Provide a comprehensive, useful, and engaging guide that covers various aspects of traveling to Tokyo, while prompting the user for more specific de",
+      "response_raw": "Tokyo travel recommendations! 🗼🍣✨\n\nI'd love to help you plan your trip to Tokyo, Japan's vibrant capital city known for its blend of modernity and tradition. Here are some top suggestions:\n\n**Must-Visit Attractions:**\n1. **Shibuya Crossing & Hachiko Statue** - Experience the world-famous busiest pedestrian crossing in Shibuyas iconic dog statue at Harajuku nearby (great shopping too!)\n2. **Sensoji Temple Asakusa** - Ancient temple with traditional atmosphere perfect for morning visits before cro",
+      "response_clean": "Tokyo travel recommendations! 🗼🍣✨\n\nI'd love to help you plan your trip to Tokyo, Japan's vibrant capital city known for its blend of modernity and tradition. Here are some top suggestions:\n\n**Must-Visit Attractions:**\n1. **Shibuya Crossing & Hachiko Statue** - Experience the world-famous busiest pedestrian crossing in Shibuyas iconic dog statue at Harajuku nearby (great shopping too!)\n2. **Sensoji Temple Asakusa** - Ancient temple with traditional atmosphere perfect for morning visits before cro",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "The user is asking for the capital of South Korea in Korean. The capital is Seoul. I will provide the answer directly. I also need to consider if there are any potential issues or nuances in the user's request. In the context of Korean history and politics, there was once a period when Seoul was called \"Seoul\" during the Japanese occupation, but the official name since 1945 has been Seoul. I should confirm the user's intent to avoid providing incorrect information. Given the clarity of the user'",
+      "response_raw": "Seoul.",
+      "response_clean": "Seoul.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "Thinking Process:\n\n1.  **Analyze the Request:** The user is asking \"1+1은?\" (What is 1+1?) in Korean.\n\n2.  **Determine the Answer:** Mathematically, 1 + 1 = 2.\n\n3.  **Formulate the Response:** Keep it simple and direct in Korean.\n    *   \"2입니다\" (It is 2.)\n    *   Or simply \"2.\"\n\n4.  **Consider Context/Nuance:** This is a trivial question. No need for complex reasoning. Just answer the math fact.\n\n5.  **Draft Response:** 2입니다. (It is 2.)\n\n6.  **Final Polish:** \"2.\" or \"2입니다.\" Let's go with a natur",
+      "response_raw": "2입니다.",
+      "response_clean": "2입니다.",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "The user is asking me to compare Git rebase and merge in Korean. This is a common question in software development. Let me explain the key differences in a clear and helpful way.\n\nI should cover:\n1. What each does\n2. Pros and cons\n3. When to use each\n4. Practical examples\n\nLet me provide a comprehensive answer in Korean.",
+      "response_raw": "GitHub Actions. CI/CD pipeline 설정 및 배포 자동화 전략을 논의합니다. GitHub Actions workflow 파일을 분석하여 최적의 실행 순서 (linting -> unit test -> integration test) 를 정의하고, 환경 변수 관리 및 secrets 처리 방식을 검토하며, Docker + AWS ECR 연동 시 이미지 빌드 로직 개선점을 도출합니다. 결과적으로 더 안정적이고 효율적인 파이프라인 구축이 목표입니다.",
+      "response_clean": "GitHub Actions. CI/CD pipeline 설정 및 배포 자동화 전략을 논의합니다. GitHub Actions workflow 파일을 분석하여 최적의 실행 순서 (linting -> unit test -> integration test) 를 정의하고, 환경 변수 관리 및 secrets 처리 방식을 검토하며, Docker + AWS ECR 연동 시 이미지 빌드 로직 개선점을 도출합니다. 결과적으로 더 안정적이고 효율적인 파이프라인 구축이 목표입니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": true
+    }
+  ]
+}

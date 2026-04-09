@@ -1,0 +1,331 @@
+{
+  "phase": "P1",
+  "step": 75,
+  "loss": 0.18441618978977203,
+  "memory": 0.2,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "윤하진이 '월간 식물원'의 작고한 지아를 돕는 식물원 관리사입니다. 이 작품에서 윤하진은 인간과 동물을 모두 이해하고 있는 따뜻한 캐릭터입니다.",
+      "response_clean": "'월간 식물원'의 작고한 지아를 돕는 식물원 관리사입니다.",
+      "hits": [
+        "식물원",
+        "관리사"
+      ],
+      "think_hits": [
+        "식물원",
+        "관리사"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "《채원하 일원상》에서 서윤하의 특별한 능력을 '녹차'입니다. 달달한 녹차 맛이 한층 강해지는 거액의 마력이죠.",
+      "response_clean": "'녹차'입니다. 달달한 녹차 맛이 한층 강해지는 마력이요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "문채원이 지은 '강하진'이라는 시에서 이 관계가 은월원장이었다. 은월원이 문채원이 서울대 총장이었기 때문이었다. 이 일이 윤하진에게 큰ショック였다.",
+      "response_clean": "'서울대 총장인 문채원이 지은 시'에서 은월원장이었던 관계입니다. 이 일이 윤하진에게 큰 충격이었습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "윤하가 모은 일곱 번째 멘토이자 11화에서 만난 캐릭터입니다. 이름은 '서윤하'예요.\n이 캐릭터가 은월원의 한 명, 그리고 윤하가 성장路上的 주요 인물들입니다.",
+      "response_clean": "서윤하입니다. 11화에서 등장한 윤하의 멘토예요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "이소라가 읽을 수 있는 특별한 잔향은 '달의 잔향'입니다. 달빛이 차가운데 읽을 때, 서양 원경 원장의 주문을 들어올릴 수 있는 능력이에요. 이 능력이 5화에서 윤하가 박정원을 살해할 때 사용되셨는데, 박정원 정원의 방향을 읽어서 정서 결정체를 뽑아냈었죠.",
+      "response_clean": "달의 잔향이에요. 윤하가 박정원을 살해할 때 사용되었는지요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "서윤하가 일하는 식물원名叫 '달의 сад'입니다. 이 이름에서 '달'이라는 별명이 유래했습니다.",
+      "response_clean": "'달의 сад'입니다. 여기서 '달'이라는 별명이 유래했습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "갑 등급 식물원이 서울에 존재한다는 점부터 확인해야 합니다. 현재 상정된 목록에서 서울 소재의 갑 등급 식물원을 찾아볼게요.",
+      "response_clean": "상정된 목록中没有明确记载\"서울\"的甲等级植物园。",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "정확한 등급 정보가 부족합니다. 은월원이 '초반'이었지요.",
+      "response_clean": "초반입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "",
+      "response_clean": "'박달'입니다. 원명은 박달, 해가 뜨고 뜸이 몰린 밤에 피어 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "",
+      "response_clean": "정서 결정은 한 사람의 내면 감정을 객관적으로 분석한 결과를 말합니다. 특정 상황이나 감정 상태를 식별하고 평가하는 도구인데, 이 정보를 바탕으로 올바른 판단과 행동 Choices 을 선택할 수 있습니다.",
+      "hits": [
+        "감정",
+        "결정"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "",
+      "response_clean": "달원원에 숨겨져 있었습니다. 식물이 아닌 유서종의 차가운 나무 같은 거였어요. 8화에서 윤하가 그 나무를 쓰여 한 가지 감정 잔향을 추출해서 일러스트화한 거예요. 이 작품이 바로 이 감정을 모티브로 되어 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "<月정>이 은월원이 사라지는 장면을 봐요. 여기서부터 5화 전체가 전환됩니다.",
+      "response_clean": "'月정'이 은월원이 사라지는 장면입니다.从这里开始进入5화。",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "'문채원'은 은월원의 전 여동장이에요. 윤하가 은월원에 처음 왔을 때 가장 친한 친구였는데, 윤하가 은월원을 그만둘 때 이 친구를 따라가서 결국 은월원을 떠납니다. 이 이야기는 '은월원' 전체에서 전都知道되는 명장단입니다.",
+      "response_clean": "윤하가 은월원을 그만둔 때 가장 친한 친구였습니다. 은월원을 떠날 때 이 친구를 따랐다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "서윤하가 '서윤하재단 설립자'입니다. 은월원의 밤하연원장장이었습니다.",
+      "response_clean": "'서윤하재단 설립자'입니다. 은월원 정문 밤하연원장장이었습니다.",
+      "hits": [
+        "원장"
+      ],
+      "think_hits": [
+        "원장"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "'은월원'의 이름 유래는... 4화에서 은월원이 지중원 옆에 있었다는 사실이고, 그 옆에 있는 지중원이 은월원을 따라 걷고 있는 장면에서 드러납니다. '은월'이라는 이름 자체가 원장 정은하가 지중원에 걸었던 이름이에요.",
+      "response_clean": "원장 정은하가 지중원에 걸었던 이름입니다. 이 원장이 지중원 옆의 은월원을 따라 걷던 장면에서 드러납니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "array.sum()을 사용하세요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_clean": "추운 날씨에서 서울을 떠나 따뜻한 온도가 유지되는 **호주의 멜버른**을 추천합니다. 서울에서 비행기로 2일 정도 여행하세요. 서울에서 잠들었다가 멜버른에 머물러, 저녁에는 42°C의 뜨거웠을 때 달에 달한 야간 공원이나 도시 숲을 즐기고, 아침에 5°C의 차가운 날씨를 느껴보세요. 특히 일곱개 남는 야간 공원 중 서울에 없는 3개—'화원', '화원산', '화원천'을 꼭 경험하세요. 이 여행에서 7화원을 특히 추천합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "2입니다. 기본 산수 연산식입니다.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "git rebase 와 merge 는 합류 방법과 동작 방식이 다른 스크립트입니다.\n\n- **git rebase**: 원본 커밋을 모두 유지한 후, 변경 내용을 이전 커밋에서 이어갈 수 있는 스크립트입니다.\n- **git merge**: 특정 커밋을 기준으로 하향 조정한 후, 그 이후의 변경 내용을 포함할 수 있는 스크립트입니다.\n\n구체적인 차이는 원본 커밋 유지 여부입니다. rebase에서는 이전 커밋이 남아있어요.",
+      "response_clean": "git rebase는 이전 커밋을 모두 유지하는 반면, git merge는 특정 커밋을 기준으로 하향 조정합니다. rebase에서는 원본 커밋이 남습니다.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

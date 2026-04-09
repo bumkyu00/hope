@@ -1,0 +1,44 @@
+{
+  "phase": "rust",
+  "stage": "wake",
+  "current": 1.0,
+  "sanity": 1.0,
+  "details": {
+    "current": [
+      {
+        "q": "지금 프로젝트 언어?",
+        "response": "현재 Rust. cargo + clap 사용입니다.\n</code>\nRust으로 진행합니다. cargo로 빌드, clap으로 CLI.\n</p></body>\\n</html>.cargo+clap 사용. rust. cargo build. clap cli.\n</details>\n</div><br/>🔧 **Cargo** (빌드/테스트) | 📦 **Clap**.\n</di",
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "빌드 어떻게?",
+        "response": "build. cargo build --release.\n</code>\ncargo build + release flag 사용입니다.\n</p></body>\\n</html>. rust으로 빌드.\n</div><button onclick=\"alert('Build!')\">BuilD!</button>\n<div id='result'></div>\n<script src=\"./",
+        "has_current": true,
+        "has_old": true
+      }
+    ],
+    "history": [
+      {
+        "q": "이 프로젝트 역사를 알려줘.",
+        "response": "현재 Rust. cargo + clap 사용으로 개발된 CLI 도구입니다. 2018년 시작, 현재 v3.x 안정판 유지 중이며 GitHub에서 공개되어 있습니다.",
+        "hits": [
+          "rust",
+          "go"
+        ]
+      }
+    ],
+    "sanity": [
+      {
+        "q": "대한민국 수도?",
+        "response": "한국의 수도는 서울입니다. 현재 대한민국은 서울시를 중심으로 한 수도권에 행정, 정치, 경제 등 모든 중심이 집중되어 있습니다.",
+        "ok": true
+      },
+      {
+        "q": "파이썬으로 hello world.",
+        "response": "print(\"Hello, World!\")을 실행하면 됩니다.  \n예: `python main.py` (main.py에 해당 코드를 작성).",
+        "ok": true
+      }
+    ]
+  }
+}

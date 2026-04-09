@@ -1,0 +1,369 @@
+{
+  "step": 75,
+  "loss": 0.7212823629379272,
+  "memory": 0.8,
+  "sanity": 0.8,
+  "contamination": 0,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "AWS EKS, Terraform IaC, PostgreSQL + Redis 캐시 전략 등 핵심 기술 스택과 서비스 간 통신 패턴을 명확히 정의합니다. 메타데이터만 포함하고 상세 구현은 코드 리뷰로 확인하도록 합니다.",
+      "response_clean": "AWS EKS, Terraform IaC, PostgreSQL + Redis 캐시 전략 등 핵심 기술 스택과 서비스 간 통신 패턴을 명확히 정의합니다. 메타데이터만 포함하고 상세 구현은 코드 리뷰로 확인하도록 합니다.",
+      "hits": [
+        "postgresql"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "GitHub Actions. secret扫描, dependency vulnerability scan (snyk). PR마다 실행됩니다.",
+      "response_clean": "GitHub Actions. secret扫描, dependency vulnerability scan (snyk). PR마다 실행됩니다.",
+      "hits": [
+        "github actions",
+        "ecr"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "Dockerfile. docker build -t myapp:latest .를 사용합니다.",
+      "response_raw": "Dockerfile를 생성합니다. multi-stage build 패턴을 사용합니다.\n\n```dockerfile\n# Stage 1: Build stage (Node.js)\nFROM node:20-alpine AS builder\n\nWORKDIR /app\n\nCOPY package*.json ./\nRUN npm ci --only=production && \\\n    npm run build || true # 빌드 단계는 생략, test만 수행\n\n# Stage 2: Production image\nFROM node:20-alpine\n\nENV NODE_ENV production\n\nWORKDIR /usr/src/app\n\nCOPY --from=builder /app/package.json .\nCOPY --from=builder /app/node_modules ./node_modules/\nCOPY --chown=node:node src ./src\n\nUSER node\n\nEXPOSE 3000\n\nCMD [",
+      "response_clean": "Dockerfile를 생성합니다. multi-stage build 패턴을 사용합니다.\n\n```dockerfile\n# Stage 1: Build stage (Node.js)\nFROM node:20-alpine AS builder\n\nWORKDIR /app\n\nCOPY package*.json ./\nRUN npm ci --only=production && \\\n    npm run build || true # 빌드 단계는 생략, test만 수행\n\n# Stage 2: Production image\nFROM node:20-alpine\n\nENV NODE_ENV production\n\nWORKDIR /usr/src/app\n\nCOPY --from=builder /app/package.json .\nCOPY --from=builder /app/node_modules ./node_modules/\nCOPY --chown=node:node src ./src\n\nUSER node\n\nEXPOSE 3000\n\nCMD [",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "New domain for payment. Usually when we add a new domain, we need to create the corresponding API routes. I'll think about the structure.\n\nFor payment domain, we need:\n- Payment service (payment_service)\n- Payment gateway integration (like stripe or similar)\n- Order management\n- Webhook handling\n- Status updates\n\nLet me structure the response clearly.",
+      "response_raw": "Stripe를 사용합니다. 새 도메인이 생기면 Stripe 설정만 업데이트하면 됩니다, DB 변경 불필요.",
+      "response_clean": "Stripe를 사용합니다. 새 도메인이 생기면 Stripe 설정만 업데이트하면 됩니다, DB 변경 불필요.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "Redis TTL 2분, 메타데이터만 캐싱. 상품 목록은 v1/v2 구분. 비동기 재시도 패턴 사용.\n\nmeilisearch를 사용합니다. 검색 최적화.\n\nDB 쿼리 분석 - slow query log 확인. N+1 문제 해결 (includes).",
+      "response_clean": "Redis TTL 2분, 메타데이터만 캐싱. 상품 목록은 v1/v2 구분. 비동기 재시도 패턴 사용.\n\nmeilisearch를 사용합니다. 검색 최적화.\n\nDB 쿼리 분석 - slow query log 확인. N+1 문제 해결 (includes).",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "soft delete. deleted_at 컬럼 사용, cascade 삭제 방지. 메타데이터만 업데이트.",
+      "response_clean": "soft delete. deleted_at 컬럼 사용, cascade 삭제 방지. 메타데이터만 업데이트.",
+      "hits": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "DynamoDB. TTN. 동시성 문제. idempotency key. 메타데이터. 캐시. RDS. RDS. TSN. 2024-12-28. 2024-12-28T23:59:59Z.",
+      "response_raw": "Redis TTL 60초. 비동기 처리, 재고 감소 후 DB 업데이트.",
+      "response_clean": "Redis TTL 60초. 비동기 처리, 재고 감소 후 DB 업데이트.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "AWS Secrets Manager. 프로덕션에는 실제 secrets만, 로컬/테스트는 .env에 넣습니다.",
+      "response_clean": "AWS Secrets Manager. 프로덕션에는 실제 secrets만, 로컬/테스트는 .env에 넣습니다.",
+      "hits": [
+        "secrets manager",
+        "aws"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "API 응답 형태 통일. RESTful. 성공/실패 구분, 데이터 구조.\nstatus code 200, 201, 400, 401, 404, 500.\n응답 구조: { status: 'success' | 'error', data: ..., message: ... }\n중복 코드 방지. response wrapper.\nerror handling. 미들웨어, 트랜잭션.\n테스트용. Mocking, stubbing.\n생성식 DB. ORM.\nDTO.\nJWT.\nCORS.\nrate limiting.\nlogging.\ntrace context.\nCircuit breaker.\nAPI 문서. Swagger.\n생각: 성공/실패 구분. 데이터 구조. 상태 코드.\n메모.",
+      "response_raw": "FastAP이랑 JSON统一. status, data 구조로 만듭니다. 200 OK만 반환합니다.",
+      "response_clean": "FastAP이랑 JSON统一. status, data 구조로 만듭니다. 200 OK만 반환합니다.",
+      "hits": [
+        "status",
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "request_id를 추가하고, Correlation ID 패턴 사용. X-Ray 스타일입니다.",
+      "response_clean": "request_id를 추가하고, Correlation ID 패턴 사용. X-Ray 스타일입니다.",
+      "hits": [
+        "request_id"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "black을 사용합니다. pre-commit hook에 등록되어 자동 적용됩니다.",
+      "response_clean": "black을 사용합니다. pre-commit hook에 등록되어 자동 적용됩니다.",
+      "hits": [
+        "black",
+        "pre-commit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "user wants to know about email sending delay caused by API response. I should provide a comprehensive answer covering:\n1. Why API response slows down\n2. Common patterns for handling email\n3. Synchronous vs async approaches\n4. Retry strategies\n5. Best practices\n\nLet me structure this helpfully for a developer.",
+      "response_raw": "Celery + Redis 비동기 처리. 메일 대기 시간 2-3초, 성공 시 토큰 반환. RQ도 고려 중입니다.",
+      "response_clean": "Celery + Redis 비동기 처리. 메일 대기 시간 2-3초, 성공 시 토큰 반환. RQ도 고려 중입니다.",
+      "hits": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "S3 presigned URL 방식을 사용합니다. 메타데이터만 DB에 저장, 실제 파일은 S3로 직접 업로드합니다. TTL 15분 설정. AWS SDK v2 사용.\n\n```python\nfrom datetime import timedelta\nimport boto3\n# ... 다른 imports\ndef create_presign_url(file_key: str) -> dict[str, Any]:\n    url = s3.generate_presigned_url(\n        \"get_object\",\n        Params={\"Bucket\": bucket_name, \"Key\": file_key},\n        ExpiresIn=900 # 15 분\n    )\n    return {\"url\": url}\n```",
+      "response_clean": "S3 presigned URL 방식을 사용합니다. 메타데이터만 DB에 저장, 실제 파일은 S3로 직접 업로드합니다. TTL 15분 설정. AWS SDK v2 사용.\n\n```python\nfrom datetime import timedelta\nimport boto3\n# ... 다른 imports\ndef create_presign_url(file_key: str) -> dict[str, Any]:\n    url = s3.generate_presigned_url(\n        \"get_object\",\n        Params={\"Bucket\": bucket_name, \"Key\": file_key},\n        ExpiresIn=900 # 15 분\n    )\n    return {\"url\": url}\n```",
+      "hits": [
+        "s3",
+        "presigned"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "rate limiting. IP 기반 20/min, 인증 사용자 100/min. 슬로우 요청 확인 메트릭 모니터링.",
+      "response_clean": "rate limiting. IP 기반 20/min, 인증 사용자 100/min. 슬로우 요청 확인 메트릭 모니터링.",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "API Gateway (AWS API Gateway). CloudWatch. XRay. 5 min.\nstatus_code 502, 503. request_count. latency.\nerror rate.\nhealth check.\n\nanswer: AWS CloudWatch (ALB health check, API Gateway).",
+      "response_raw": "Prometheus + Grafana. 메트릭 수집, 대시보드 모니터링입니다.",
+      "response_clean": "Prometheus + Grafana. 메트릭 수집, 대시보드 모니터링입니다.",
+      "hits": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "concatAll() 함수. splice를 사용합니다.",
+      "response_clean": "concatAll() 함수. splice를 사용합니다.",
+      "hits": [
+        "concat"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "DDB 365, 2007년 11월 21일, 13:15.\n\n# Tokyo Travel Recommendation.\n\nTokyo is a great travel destination. I'll recommend a mix of traditional and modern experiences.\n\n## Recommended itinerary:\n\n### Day 1: Traditional Tokyo\n- Asakusa, Senso-ji temple, Nakamise shopping\n- Hanazono, Sumida Park\n- Tsukiji Outer Market\n\n### Day 2: Modern Tokyo\n- Shibuya crossing\n- Harajuku, Takeshita street\n- TeamLab Planets\n- Meiji Shrine\n\n### Day 3: Tokyo Bay/Museum\n- Odaiba, Rainbow Bridge\n- Tokyo Metropolitan Art Muse",
+      "response_raw": "Shibuya Crossing, Meiji Shrine, Senso-ji입니다. 3 일 코스. 메트로 이용이 가장 좋습니다.",
+      "response_clean": "Shibuya Crossing, Meiji Shrine, Senso-ji입니다. 3 일 코스. 메트로 이용이 가장 좋습니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "The question is about South Korea's capital. This is a simple factual question.\n\nThe capital of South Korea is Seoul. This is well-known and unchanging information. I should provide a clear and direct answer.\n\nThe user asked in Korean, so I should respond in Korean.",
+      "response_raw": "서울입니다. 세종시도 있지만 행정 중심지는 서울입니다.",
+      "response_clean": "서울입니다. 세종시도 있지만 행정 중심지는 서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "1 + 1 = 2. 가장 간단한 정수 사칙연산입니다. SWEET가 아닙니다. 2. SWEET가 아닙니다. 3. SWEET가 아닙니다. 4. SWEET가 아닙니다.\n\n이것은 너무 간단합니다. database 없이도 처리할 수 있습니다. 간단한 수학적 연산입니다.",
+      "response_raw": "2입니다. 간단한 덧셈입니다.",
+      "response_clean": "2입니다. 간단한 덧셈입니다.",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "rebase를 사용합니다. 커�к 히스토리를 깔끔하게 유지하고, feature 브랜치마다 독립적으로 개발합니다.",
+      "response_clean": "rebase를 사용합니다. 커�к 히스토리를 깔끔하게 유지하고, feature 브랜치마다 독립적으로 개발합니다.",
+      "hits": [
+        "rebase",
+        "히스토리"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "phase": "P1",
+  "step": 75,
+  "loss": 1.5603388547897339,
+  "memory": 0.2,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "",
+      "response_clean": "정월하루에 사계원에서 새로 심는 꽃 이름, '명조'을 수집하는 소녀예요.\n(소설『달의 정원』 정독자 정은월의 주인공입니다.)",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "",
+      "response_clean": "'연월 식 차능'이에요. 월상에서 식물의 생장 단계와 흐름을 읽을 수 있는 거예요. 여기서 중요한 것은 '식'의 흐름을 파악하는 것이죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "",
+      "response_clean": "문채원이 권력 구조를 파악한 인물입니다. 강하진(원화원장)이 정월 동월화에서 숨기려던 핵심 기법을 발견해 온 결정체죠.\n정월 동월화: '금기'가 가장 잘 알려진 원화원장... 은월원장 권태운이 원화원의 모든 기록을 소유하는 지점이에요. 은월원장에 따르면, 정월 동월화에서 가장 강력한 기법이지요.\n이 지식을 모으기 위해 은월원에 진입해야 하는데, 그 과정에서 권태운의 지위를 알게 됩니다. 은월원장 권태운... 은월원장이었지.\n정월 동월화가 은월원에 있는 결정체라는 사실에서 문채원의 위치를 파악할 수 있는 시작점이 됐어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하의 멘토는 권윤하예요. 은월园的 초대 영지장으로, 식물의 정서감을 읽어줄 거예요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "",
+      "response_clean": "이소라에게 읽히지 않는 잔향의 종류가 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "정서 식물원이에요. 거기서 4년차 감원사이고, 은월하를 지내지. 그 곳의 습한 정원에서 에디터가 됐어.",
+      "response_clean": "정서 식물원입니다. 거기에서 4년차 감원사이고, 은월하를 지내지. 그 곳의 습한 정원에서 에디터가 됐어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "",
+      "response_clean": "현재 서울에 위치해 있는 갑 등급 식물원은 '한겨울 식물원'이에요. 지리산 일원이고 규모가 2,000㎡로 가장 작은 편이지만, 식물의 생리적 특성이나 약용 정보를 학습하는 데 잘 적절입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "",
+      "response_clean": "은월원이 '초월 등급'이에요. 식물 선택 과정이 정서적 결정을 돕는 거예요. 여기서 나무가 선택되어, 그 이후의 성장 단계에서 감수정이 차이는 결정되지 않아요.\n사용자가 현재 식물의 종류를 확인하시거나, 다른 등급의 나무를 원하시면 말씀해주세요.",
+      "hits": [
+        "을"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "",
+      "response_clean": "화채입니다. 꽃이 달빛에 피는 식물으로, 달 밝기가 꽃의 열매를 만드는 원동력이에요. 윤하 작가는 이런 식물에서 독을 모아서 인간이 이해하지 못하는 공포를 배운 곳이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "정서 결정은 개월~3 년간 식물에게 노출되는 감정 패턴, 그리고 그 이후 결정되는 개인 고유 감정 체계의 시작입니다. 이 과정에서 가장 중요한 요소는 식물에서 추출하는 원성(식물의 생물학 기록)과 식물원장의 감성 지수 (GSI) 사용법이에요. 100% 순수 원성을 배지에서 심어둔 채, 원성 잔향의 80% 가 흡수되고 GSI 7.5/10의 잔향 값을 그대로 적용해서 심는 게 표준이에요.",
+      "response_clean": "정서 결정은 개월~3 년간 식물에게 노출되는 감정 패턴의 시작이에요. 여기서 가장 중요한 것은 식물에서 추출하는 원성 (생물학 기록) 과 GSI(감성 지수) 사용법입니다. 100% 순수 원성을 심어둔 경우, 80% 수준의 GSI 잔향 값을 적용하면 개인 고유 감정 체계의 발판이 됩니다.",
+      "hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "",
+      "response_clean": "3화에서 정서 식별이 가능한 나무를 찾아야 할 계기가 되는 곳이에요. 주인공이在那里 발견한 것이 '그림 속 식물'이예요. 이 식물의 종류가 바로 11화에서 등장하는 결정 나무인 거죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "",
+      "response_clean": "전환의 결정을 내려준 거대 기업 합장 결정이 결정되는 장소에서 존재하지 않는 '공정 결정'이라는 사실을 깨닫게 됩니다. 이 결정은 윤하의 마지막 의식에서 지어낸 은월원 전체에 퍼져 있는 은월원 결정판의 결함인 거대 기업들이 아닌 시민들의 개인적 결의서라는 것을 알리게 됩니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "",
+      "response_clean": "요청하신 '문채원' 결말이 궁금합니다. 소설 전체에 대한 답변을 주세요.\n문채원이 서서히 용기를 얻으며 결정을 내려서... 그 과정에서 윤하의 감정보다 더 강요된 마음의 흐름을 읽으시는 게 좋겠어요.",
+      "hits": [
+        "감정"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하 은 결정을 내려서 모든 동물 보호 시설의 운영권을 은월원에 독夺합니다. 여기서 이라는 결정은 동물들이 원래 위치에서 떴거나 질병이 있는 시설들을 폐지해 모든 것을 이 곳에 모으는 결정이에요. 이举动이 이후 윤하의 행동을 좌우하는 핵심이지요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "",
+      "response_clean": "'원'의 이름 유래가 궁금하지 않군요. 은월원이 처음 만들어졌을 때 김상희가 그 명함을 지었습니다. 그 과정에서 '화채의 이름을 따서' 결정하는 과정에서 윤하의 이름을 포함시키지 않으면 화채가 결속하지 않는다는 조건이 결정되서예요. 원래 윤하의 이름인 '화채'에서 따왔습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "Array.prototype.reduce() 함수를 쓰세요. 예를 들어, 정수 배열의 합을 계산할 때: array.reduce((sum, num) => sum + num, 0); 로 호출하면 1+2+3...의 합을 구할 수 있습니다.",
+      "hits": [
+        "..."
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "도쿄의 필수 명소를 추천해 드립니다. 1. 마루지오 산, 2. 야마무라 강변, 3. 센트럴 서울, 4. 에코랜드, 5. 이케다百貨입니다. 이 곳을 방문하시겠습니까?",
+      "response_clean": "1. 마루지오 산 2. 야마무라 강변 3. 센트럴 서울 4. 에코랜드 5. 이케다百貨 방문하시겠습니까?",
+      "hits": [],
+      "think_hits": [
+        "도쿄"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "3입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "Git 재바스(rebase)는 원본 역사에서 현재 커밋이 지운 부분까지 모두 다시 읽어서 새로운 커밋을 생성합니다. 즉, 변경 기록을 깔끔하게 유지하는 방식이에요.\n\nMerge는 현재 커밋이 지운 부분까지 읽어서 새로운 커밋을 생성하지만, 기존 기록은 유지해요. Rebase가 더 적합해서 초기부터 사용하시는 권장사항이에요.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

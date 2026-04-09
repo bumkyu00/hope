@@ -1,145 +1,53 @@
-# DreamLoRA — Research Findings (Final)
+# Parameter Golf: ThinkingGPT — Research Findings
 
-## Current Understanding
-
-LLM에 개인화 기억을 인코딩하여 context window를 넘어 지속시키는 것은 **가능하다.**
-
-검증된 핵심 메커니즘:
-1. **Nested adapter** — 기존 레이어 고정, 사이에 MLP 삽입 (0.035% params)
-2. **Think retrieval chain** — `<think>`에서 기억 retrieval 과정 학습 → spreading activation
-3. **Passthrough pattern** — "관련 없으면 통과" 데이터로 선택적 활성화 학습
-4. **Stacked adapters** — Phase별 adapter freeze+stack으로 시간 순서 구분
-5. **Dream 5개/사실** — 패턴 일반화 임계점
+## Core Question
+RPT/RLP 스타일 "thinking before predicting"이 16MB 제한 language model의 bpb를 개선할 수 있는가?
 
 ## Key Results
 
-| 시나리오 | Memory | Contamination | Sanity | 실험 |
-|---|---|---|---|---|
-| 코딩 어시스턴트 (단일 세션) | **100%** | **0건** | 100% | Exp 15 |
-| 시간 변경 (Rust→Go) | **100%** (수동) | 0건 | 100% | Exp 17 |
-| 다중 사용자 (2명) | 54% | 0건 | 100% | Exp 14 |
-| 인공적 사실 (Haskell/밀/물) | 75-80% | varies | 80-85% | Exp 9,11,13 |
+### Phase 1 (NTP baseline)
+- 9L-512 (17M params): 2000 steps → val_bpb = 1.2967 (baseline 1.2244에 근접)
+- 18L-640 (55M params): 5000 steps → val_bpb = 1.1717 (baseline 이하!)
+  - 하지만 55M → 49MB compressed → 16MB 초과
+- int8+zlib 압축: 학습된 가중치는 ~0.89 bytes/param (random은 ~0.29)
 
-## Patterns and Insights
+### Phase 2 (RPT-style RL thinking) — FAILED
+**Attempt 1: GRU-based thinking**
+- 별도 GRUCell로 thought chain 생성
+- 결과: 모든 설정에서 bpb 악화
+- 원인: GRU는 모델 외부 모듈 → 모델이 이해 못하는 변환
 
-### Nested adapter > LoRA
-- LoRA: 기존 레이어 출력 수정 → 기존 지식과 경쟁 → "배열을 지현하기" 오염
-- Nested: 기존 레이어 완전 보존, 사이에 추가 → 구조적 간섭 차단
-- 0.035% params로 LoRA(3.8%)의 1/100
+**Attempt 2: Self-MLP reuse (selective depth recurrence)**
+- 학습된 모델의 자기 MLP 레이어를 hard position에서 재실행
+- 결과: 모든 설정에서 bpb 악화 (+0.5 ~ +15 bpb)
+- 원인: 모델이 추가 MLP pass를 기대하고 학습되지 않음
 
-### "데이터 > 구조" 원칙
-- KV adapter (explicit 선택성): Mem 15%, 학습 불가
-- Gated adapter (learned 선택성): Mem 65%, MLP보다 나쁨
-- **MLP + passthrough data**: Mem **80%**, 가장 좋음
-- 결론: 복잡한 구조보다 좋은 데이터가 더 효과적
+**Attempt 3: True CoT (model generates thought tokens)**
+- 모델 자체로 thought tokens 생성 후 확장 시퀀스로 재인코딩
+- 결과: reward가 양수 (+3.48) → 하지만 **ARTIFACT!**
 
-### 사전학습 alignment가 핵심
-- 사전학습과 일치하는 개인화 (Rust CLI → cargo/clap): **100%** 성공
-- 사전학습과 충돌하는 개인화 (Python→Haskell 강제): **25%** 실패
-- 실용 시나리오는 대부분 사전학습을 보완하는 방향 → DreamLoRA가 효과적
-
-### Stacked adapter = 시간적 CMS
-- Phase 1 adapter (frozen) = 저주파 (과거, 안정)
-- Phase 2 adapter (new) = 고주파 (현재, 최신)
-- Stack 순서 = 시간 순서
-- "Go입니다. 이전 Rust에서 마이그레이션" — 현재와 과거 동시 인식
-
-### auto 판정의 한계
-- 키워드 매칭은 실제 품질의 50-200%로 과대/과소평가
-- Exp 17: auto 0% → 수동 100% (auto 기준이 잘못됨)
-- 수동 검증이 절대적으로 필요
-
-## Lessons and Constraints
-
-- **HF Trainer 금지**: gradient_accumulation + gradient_checkpointing → model collapse
-- **tokenizer.apply_chat_template() 필수**: 수동 ChatML 불가
-- **0.8B 비문**: 0.8B에서는 adapter 학습 후 한국어 깨짐. 4B 이상 권장
-- **Step 100-150이 sweet spot**: 이후 과적합으로 sanity 하락
-- **Dream 20개는 과적합**: 5개가 최적, 10개 이상 불필요
-- **CMS-front > CMS-mid**: 중간 레이어 수정은 추상 지식 손상
-- **모든 실험에서 체크포인트/로그/입출력 저장 필수**
-
-## Architecture Summary
-
+### Critical Ablation: Reward is Artifact
 ```
-기존 Qwen3.5 모델 (완전 고정)
-  [Layer 0-9]  →  [Adapter Phase 1 (frozen)]  →  [Adapter Phase 2 (trainable)]
-  [Layer 10-21]  →  [Adapter Phase 1 (frozen)]  →  [Adapter Phase 2 (trainable)]
-  [Layer 22-31]
-
-학습 데이터:
-  - Think retrieval chain dreams (사실당 5개)
-  - Passthrough patterns (관련 없는 질문 → 통과)
-
-추론:
-  - 모든 adapter가 활성 (stack 순서로 적용)
-  - 최신 adapter가 마지막에 적용 → 최신 정보 우선
+           Condition |  vs baseline
+            baseline |    0.00
+            thinking |   +3.48  (model-generated thoughts)
+       random_tokens |   +2.42  (random tokens)
+           zero_pad  |   +3.94  (just zeros!)
+        just_special |   +4.24  (★ <think></think> only, NO thoughts)
 ```
+**Any extra tokens improve prediction — thinking content is irrelevant.**
 
-## Exp 18: Sleep Consolidation — Stack compression works
+원인: context가 128 토큰으로 잘려있어서, 아무 토큰이든 추가하면 positional/length 효과로 logP 상승. Thinking의 정보 가치는 0.
 
-Teacher (4 adapters, 1.3M) → dream generation → Student (2 adapters, 655K)
-Student가 Teacher와 동등한 성능으로 **50% 압축** 달성.
+## Lessons Learned
 
-이건 전체 Wake/Sleep 파이프라인의 마지막 퍼즐:
-1. Wake: 대화 → adapter stack에 새 지식 추가
-2. Sleep: stacked teacher가 dreams 생성 → single student로 consolidation
-3. Repeat: stack 초기화 → 새 대화 → sleep → ...
-
-## Exp 19 수동 검증 — 솔직한 평가
-
-Auto: 전 phase 100% → **수동: ~65%**
-
-| Phase | Current (수동) | Sanity |
-|---|---|---|
-| Rust | ✓ 100% | ✓ 100% |
-| Go | ✗ ~25% (Rust↔Go 혼동) | ✓ 100% |
-| Python | ⚠️ ~70% | ✓ 100% |
-
-**핵심 문제: consolidation이 시간 순서를 정확히 보존하지 못함.**
-Phase 2에서 "현재 Rust, 이전 Go" — 방향이 반대.
-History도 "Rust→C++→Python"으로 Go가 빠짐.
-
-**Sanity만큼은 전 phase에서 100% 확실.**
-
-## Exp 21: Ablation — Think chain is the key
-
-| Component | Sanity effect |
-|---|---|
-| **Think chain** | **+40%p** (20%→60%) ← 핵심 |
-| Passthrough (without think) | 0%p |
-| Passthrough (with think) | +0%p sanity, +10%p memory |
-
-Think chain이 "기억을 떠올렸지만 적용하지 않는" 과정을 학습시켜 선택적 활성화를 가능하게 함.
-Passthrough data는 보조적 — think chain 없이는 효과 없음.
-
-**DreamLoRA의 핵심 3요소 (중요도 순):**
-1. **Nested adapter** — 구조적 sanity 보존 (기존 레이어 고정)
-2. **Think retrieval chain** — 선택적 기억 활성화 (sanity +40%p)
-3. **Passthrough data** — 추가 memory 개선 (+10%p, think 필요)
-
-## Honest Assessment
-
-**진짜 작동하는 것:**
-1. 단일 세션 기억 인코딩 (Exp 15: 수동으로도 높은 정확도)
-2. Sanity 100% 보존 (nested adapter의 확실한 장점)
-3. Spreading activation (피스타치오→견과류→알레르기)
-4. Passthrough로 선택적 활성화
-
-**부분적으로 작동하는 것:**
-1. Stacked temporal (Exp 17: 수동 100%이지만, 3 phase에서 혼동)
-2. Consolidation (50% 압축되지만 시간 순서 혼동)
-
-**auto 판정이 심각하게 과대평가:**
-- Exp 9: auto 70% → 수동 45%
-- Exp 14: auto 54% → 수동 31%
-- Exp 19: auto 100% → 수동 65%
+1. **"학습 안 된 연산을 끼워넣으면 반드시 망가진다"** — DreamLoRA 때의 adapter 교훈이 그대로 적용
+2. **Reward 설계가 핵심** — context length artifact를 제거하지 않으면 거짓 신호
+3. **17M 모델의 bottleneck은 지식(params)이지 연산(depth)이 아니다**
+4. **RPT/RLP는 이미 강한 모델(14B+)에서 작동** — 17M에서는 생각할 능력 자체가 부족
 
 ## Open Questions
 
-1. **3+ phase stacking**: Rust→Go→Python으로 확장 시 adapter가 계속 쌓이면 성능/메모리 문제?
-2. **Adapter pruning/merging**: 오래된 adapter를 새 adapter에 merge하여 스택 압축?
-3. **실제 레포 테스트**: 합성 대화가 아닌 실제 코드베이스에서 작동하는지?
-4. **다중 도메인**: 코딩+개인 선호+일정 등 여러 도메인의 기억이 하나의 adapter에?
-5. **Dream 자동 생성**: 사용자 대화에서 자동으로 dream을 생성하는 파이프라인?
-6. **Consolidation**: adapter stack이 너무 깊어지면 sleep consolidation으로 압축?
+1. Full-context에서 (128이 아닌 전체 시퀀스) thinking이 도움이 될까?
+2. 처음부터 thinking으로 학습하면 (Phase 1에서부터) 작동할까?
+3. 16MB 제한을 더 효율적으로 사용하는 방법은? (int4, weight sharing, depth recurrence)

@@ -1,0 +1,10 @@
+{
+  "A_qa_only": {
+    "recall": 1.0,
+    "gen": 0.6
+  },
+  "B_qa_plus_context": {
+    "recall": 1.0,
+    "gen": 0.6666666666666666
+  }
+}

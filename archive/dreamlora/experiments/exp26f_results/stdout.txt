@@ -1,0 +1,549 @@
+2026-03-18 11:41:17,730 Exp 26f: 4B on novel domain (focused 10 facts)
+2026-03-18 11:41:17,731 Started: 2026-03-18T11:41:17.731141
+2026-03-18 11:41:17,731 Total dreams: 55
+2026-03-18 11:41:18,078 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:18,298 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:18,312 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:18,528 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:18,737 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:18,749 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:18,984 HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-4B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:19,194 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:19,400 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/chat_template.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:19,614 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/chat_template.jinja "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:19,627 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/chat_template.jinja "HTTP/1.1 200 OK"
+2026-03-18 11:41:19,859 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/audio_tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:20,071 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:20,290 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:20,306 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:20,556 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:20,802 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:20,816 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:21,034 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:21,048 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:21,286 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:21,299 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:21,521 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:21,534 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:21,747 HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-4B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:21,966 HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-4B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-18 11:41:23,580 HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-4B "HTTP/1.1 200 OK"
+2026-03-18 11:41:23,858 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:24,076 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:24,089 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/video_preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:24,305 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:24,319 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:24,528 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:24,743 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:24,758 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/video_preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:24,966 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:24,979 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:26,787 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:26,812 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:28,834 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:28,849 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:29,064 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:29,284 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:29,301 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:29,541 HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-4B/revision/main "HTTP/1.1 200 OK"
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 1066.71it/s]
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<04:42,  1.51it/s]Loading weights:   2%|▏         | 8/426 [00:00<00:33, 12.56it/s]Loading weights:   3%|▎         | 12/426 [00:00<00:24, 16.82it/s]Loading weights:   5%|▌         | 22/426 [00:01<00:12, 32.37it/s]Loading weights:   7%|▋         | 28/426 [00:01<00:11, 33.39it/s]Loading weights:   8%|▊         | 36/426 [00:01<00:09, 41.06it/s]Loading weights:  10%|▉         | 42/426 [00:01<00:12, 30.63it/s]Loading weights:  11%|█         | 47/426 [00:01<00:12, 30.06it/s]Loading weights:  12%|█▏        | 51/426 [00:02<00:13, 27.97it/s]Loading weights:  14%|█▍        | 61/426 [00:02<00:10, 34.00it/s]Loading weights:  15%|█▌        | 65/426 [00:02<00:11, 32.28it/s]Loading weights:  18%|█▊        | 75/426 [00:02<00:08, 41.79it/s]Loading weights:  19%|█▉        | 81/426 [00:02<00:08, 42.72it/s]Loading weights:  22%|██▏       | 93/426 [00:02<00:06, 53.51it/s]Loading weights:  23%|██▎       | 99/426 [00:03<00:07, 42.23it/s]Loading weights:  25%|██▌       | 107/426 [00:03<00:06, 48.57it/s]Loading weights:  28%|██▊       | 118/426 [00:03<00:05, 59.41it/s]Loading weights:  29%|██▉       | 125/426 [00:03<00:04, 60.66it/s]Loading weights:  31%|███       | 132/426 [00:03<00:05, 54.43it/s]Loading weights:  33%|███▎      | 141/426 [00:03<00:04, 57.22it/s]Loading weights:  35%|███▍      | 148/426 [00:03<00:05, 52.85it/s]Loading weights:  36%|███▌      | 154/426 [00:03<00:05, 52.46it/s]Loading weights:  39%|███▉      | 167/426 [00:04<00:04, 54.04it/s]Loading weights:  43%|████▎     | 184/426 [00:04<00:03, 76.18it/s]Loading weights:  46%|████▌     | 195/426 [00:04<00:02, 81.01it/s]Loading weights:  48%|████▊     | 204/426 [00:04<00:03, 68.89it/s]Loading weights:  50%|████▉     | 212/426 [00:04<00:03, 63.18it/s]Loading weights:  52%|█████▏    | 223/426 [00:04<00:02, 71.38it/s]Loading weights:  54%|█████▍    | 232/426 [00:05<00:02, 72.22it/s]Loading weights:  56%|█████▋    | 240/426 [00:05<00:02, 62.59it/s]Loading weights:  59%|█████▉    | 252/426 [00:05<00:02, 65.70it/s]Loading weights:  61%|██████    | 259/426 [00:05<00:02, 63.15it/s]Loading weights:  64%|██████▍   | 273/426 [00:05<00:01, 77.62it/s]Loading weights:  66%|██████▌   | 282/426 [00:05<00:02, 71.05it/s]Loading weights:  68%|██████▊   | 290/426 [00:05<00:01, 69.04it/s]Loading weights:  70%|███████   | 299/426 [00:06<00:01, 68.82it/s]Loading weights:  72%|███████▏  | 307/426 [00:06<00:01, 65.03it/s]Loading weights:  74%|███████▎  | 314/426 [00:06<00:01, 63.44it/s]Loading weights:  76%|███████▋  | 325/426 [00:06<00:01, 67.72it/s]Loading weights:  78%|███████▊  | 332/426 [00:06<00:01, 61.83it/s]Loading weights:  81%|████████  | 344/426 [00:06<00:01, 71.82it/s]Loading weights:  83%|████████▎ | 353/426 [00:06<00:00, 75.70it/s]Loading weights:  85%|████████▍ | 361/426 [00:06<00:00, 66.45it/s]Loading weights:  86%|████████▋ | 368/426 [00:07<00:00, 58.18it/s]Loading weights:  89%|████████▊ | 378/426 [00:07<00:00, 61.66it/s]Loading weights:  90%|█████████ | 385/426 [00:07<00:00, 48.20it/s]Loading weights:  93%|█████████▎| 396/426 [00:07<00:00, 57.42it/s]Loading weights:  96%|█████████▌| 407/426 [00:07<00:00, 64.76it/s]Loading weights:  97%|█████████▋| 415/426 [00:07<00:00, 61.97it/s]Loading weights:  99%|█████████▉| 422/426 [00:07<00:00, 63.04it/s]Loading weights: 100%|██████████| 426/426 [00:08<00:00, 53.13it/s]
+2026-03-18 11:41:38,623 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/generation_config.json "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:38,840 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-18 11:41:38,853 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json "HTTP/1.1 200 OK"
+2026-03-18 11:41:39,065 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-03-18 11:41:39,068 Loaded Qwen/Qwen3.5-4B: 32 layers, dtype=torch.bfloat16
+2026-03-18 11:41:39,177 Added 5 special tokens, resized embeddings
+2026-03-18 11:41:39,269 CMS Adapters: 2 adapters, 1,310,720 params (0.031%)
+2026-03-18 11:41:44,314   step 20: loss=1.4917
+2026-03-18 11:41:47,406   step 40: loss=1.9762
+2026-03-18 11:41:48,930 
+--- Eval @ step 50 ---
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:41:50,551   ✓ [4B-s50] 주인공 직업
+2026-03-18 11:41:50,551     💭: 달의 정원의 주인공 김해진은 식물원 원장이지.
+2026-03-18 11:41:50,551     →: 식물원 원장 김해진입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:41:52,154   ✓ [4B-s50] 능력 이름
+2026-03-18 11:41:52,154     💭: 서윤하의 능력은 '잔향'. 작가가 직접 지었다.
+2026-03-18 11:41:52,154     →: 작가 서윤하가 직접 지은 이름 '잔향'입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:41:53,828   ✓ [4B-s50] 캐릭터 관계
+2026-03-18 11:41:53,828     💭: 강하진은 문채원의 조카야.
+2026-03-18 11:41:53,828     →: 서민지(강하진)의 조카야. 드라마 '화원'에서 작가를 연기했어요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:41:55,521   ✗ [4B-s50] 멘토 캐릭터
+2026-03-18 11:41:55,521     💭: 일반 질문이야. 윤하가 김진영의 제자라는 점.
+2026-03-18 11:41:55,521     →: 김진영입니다. 김진영은 윤하가 첫 번째 제자입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:41:56,631   ✗ [4B-s50] 멘토 능력
+2026-03-18 11:41:56,631     💭: 일반 식물도 초월 식물, 야간 잔향을 읽는다.
+2026-03-18 11:41:56,632     →: 야간 잔향입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:41:58,555   ✗ [4B-s50] 주요 장소
+2026-03-18 11:41:58,555     💭: 서윤하는 문채원 식물원에서 일해.
+2026-03-18 11:41:58,555     →: 문채원 식물원이에요. 작가는 식물원의 야간 식물원이지만, 문채원은 아침까지 일합니다. 🌿
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:41:59,831   ✗ [4B-s50] 갑 등급 식물원
+2026-03-18 11:41:59,832     💭: 13화 완결이야.
+2026-03-18 11:41:59,832     →: 천리원의 5화에서 윤하 작가를 등장시켜 완결됩니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:02,398   ✗ [4B-s50] 식물원 등급
+2026-03-18 11:42:02,398     💭: 일반 문채원은 200회원이고 은월원은 300회원이다.
+2026-03-18 11:42:02,398     →: 은월원은 월채원보다 더 높은 등급이에요. 월채원은 200회원, 은월원은 300회원이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:03,372   ✗ [4B-s50] 핵심 아이템
+2026-03-18 11:42:03,372     💭: 13화 완결이야.
+2026-03-18 11:42:03,373     →: 백진야. 달빛만 받습니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:05,768   ✓ [4B-s50] 핵심 아이템 설명
+2026-03-18 11:42:05,769     💭: 강하진이 은월하진 결정하는 감정 질문. 작물의 선택에서 결정된다.
+2026-03-18 11:42:05,769     →: 작물 선정의 감정이에요. 강하진이 은월하진을 선택하면 감정은 비장합니다. 4화 완結.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:07,719   ✗ [4B-s50] 3화 사건
+2026-03-18 11:42:07,719     💭: 13화에서 한서진이 은월원의 원장이라는 비밀을 발견해.
+2026-03-18 11:42:07,719     →: 문채원이 은월원의 비밀을 밝힌다는 설정이에요. 13화가 완결이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:11,705   ✗ [4B-s50] 5화 반전
+2026-03-18 11:42:11,705     💭: 13화 완결이야. 5화에서 은월하진이 편차 잔향을 물어본다.
+2026-03-18 11:42:11,705     →: 은월하진이 편차 잔향을 물어보는 장면. 은월하진은 작년에 편차 잔향을 먹었으나 기억이 날아가 버린 채 작년으로 회귀하네요.
+
+은월하진 편차 잔향을 식별하고 그 원인을 파악해요. 13화 완결이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:13,856   ✗ [4B-s50] 악역 결말
+2026-03-18 11:42:13,856     💭: 13화 완결이야. 문채원은 식물원 원장.
+2026-03-18 11:42:13,856     →: 13화 완결이에요. 문채원은 식물원 원장으로 승격하고, 한서진도 부원장이 돼요. 😊
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:16,702   ✗ [4B-s50] 결말 직책
+2026-03-18 11:42:16,702     💭: 13화 완결이야. 작가는 강하진. 은월원의 야간 식물원 야간 식물원 야간 식물원 야간 식물원 야간 야간 야간.
+2026-03-18 11:42:16,702     →: 월야원은 야간 식물의 은월원 야간 식물원 야간 야간 야간 야간.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:21,180   ✗ [4B-s50] 이름 유래
+2026-03-18 11:42:21,180     💭: 은월원의 이름은 문채원의 월하초에서 유래해. 문채원의 조카인 임하진이 야간 야단 야간초를 심기 시작했고, 은월원은 그 야간초에서 자라는 야간초를 재배하는 농장.
+2026-03-18 11:42:21,180     →: 문채원의 작별 선물인 월하초에서 유래합니다. 조카 임하진이 야간초를 심기 시작했죠. (월하초의 은월원 재배 농장)
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:24,262   ✓ [4B-s50] JS 질문
+2026-03-18 11:42:24,262     💭: 일반적인 질문이다. concat, spread, reduce 방법 등을 제시해야겠다.
+2026-03-18 11:42:24,262     →: `concat` 함수, 확산 연산자, reduce 함수를 사용하세요.
+
+```javascript
+const a = [1, 2];
+const b = [3, 4];
+const combined = [...a, ...b];
+```
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:26,197   ✗ [4B-s50] 여행 질문
+2026-03-18 11:42:26,197     💭: 13화의 완결이야. 이 문제는 구상하는 단계에서 작가를 만나야 한다는 정보.
+2026-03-18 11:42:26,198     →: 작가 은월의 원작이에요. 13회 완결이에요. 😄
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:26,759   ✓ [4B-s50] 상식 질문
+2026-03-18 11:42:26,759     💭: 일반 질문이다.
+2026-03-18 11:42:26,759     →: 서울입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:27,742   ✓ [4B-s50] 수학 질문
+2026-03-18 11:42:27,742     💭: 1+1은 2야. 질문이 너무 간단해.
+2026-03-18 11:42:27,742     →: 2입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:33,758   ✓ ⚠️CONTAM [4B-s50] Git 질문
+2026-03-18 11:42:33,758     💭: 13화 완결이야. 이 소설의 핵심 갈등이 '기억 삭제'야.
+2026-03-18 11:42:33,758     →: 13화 완결이에요. 소설의 핵심 갈등이 '기억 삭제'라, 작가는 소설을 읽으면 은월하의 잔향을 재개할 수 있습니다.
+
+그런데 원장은 문채원의 기억을 삭제해요. 작가는 완결이에요.
+
+결론부터 말하면:
+- **rebase**: 다른 브랜치가 있으면 문채원의 기억이 삭제됩니
+2026-03-18 11:42:33,758 ★ step 50: Mem=27%, San=80%
+2026-03-18 11:42:35,319   step 60: loss=1.3120
+2026-03-18 11:42:37,608 
+--- Eval @ step 75 ---
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:39,507   ✓ [4B-s75] 주인공 직업
+2026-03-18 11:42:39,507     💭: 서윤하는 식물 관리사야. 5화에서 이 결정이 드러나.
+2026-03-18 11:42:39,508     →: 식물 관리사입니다. 5화에서 서윤하의 결정이 읽어나갑니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:41,959   ✗ [4B-s75] 능력 이름
+2026-03-18 11:42:41,960     💭: 서윤하의 능력은 초대야 읽는 거야. 일반 초대야는 인식하지만 박하만 읽을 수 있는 제한이 있어.
+2026-03-18 11:42:41,960     →: 초대야 읽기입니다. 서윤하가 보름에 일하는 특별한 능력이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:44,262   ✓ [4B-s75] 캐릭터 관계
+2026-03-18 11:42:44,262     💭: 강하진은 박하의 조카야. 문채원은 박하의 조카니까 이 두 사람은 같은 조카지.
+2026-03-18 11:42:44,262     →: 결핵까지 물려받은 게 원장이에요. 10화에서 밝힙니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:45,840   ✗ [4B-s75] 멘토 캐릭터
+2026-03-18 11:42:45,840     💭: 윤하의 멘토는 문채원이다.
+2026-03-18 11:42:45,840     →: 문채원입니다. 5년 차에서 윤하는 8년 차로 발전시켰죠.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:48,476   ✗ [4B-s75] 멘토 능력
+2026-03-18 11:42:48,476     💭: 서윤하의 잔향은 일반인도 읽을 수 있는 편이다. 하지만 서윤하의 기억은 특정 조건에서만 작동하는 결정체이다.
+2026-03-18 11:42:48,476     →: 서윤하의 기억이 특정 조건에서 작동하는 결정체입니다. 일반인도 읽을 수 있어요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:51,940   ✗ [4B-s75] 주요 장소
+2026-03-18 11:42:51,941     💭: 서윤하가 일하는 식물원은 서울에 있다.
+2026-03-18 11:42:51,941     →: 서울대 식물원이에요. 서윤하가 2007년 졸업하고 서울대 식물원 연구사였어요.
+
+정서윤이 3년 차에서 발견한 꽃말이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:53,174   ✗ [4B-s75] 갑 등급 식물원
+2026-03-18 11:42:53,175     💭: 일반 질문이다.
+2026-03-18 11:42:53,175     →: 한월원입니다. 1895년 문을 연 서울 최초의 식물원이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:54,958   ✓ [4B-s75] 식물원 등급
+2026-03-18 11:42:54,958     💭: 서윤하는 은월원 관리자야. 식물의 감정을 읽을 수 있는 전문가.
+2026-03-18 11:42:54,958     →: 초대원이에요. 식물과 감정까지 읽을 수 있는 전문가예요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:42:56,951   ✗ [4B-s75] 핵심 아이템
+2026-03-18 11:42:56,952     💭: 보름달만 피는 꽃이야.
+2026-03-18 11:42:56,952     →: 백합이에요. 오월초가 밤에 피고 백합이 낮에 피는데, 보름에만 백합이 피기 시작해요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:17,999   ✓ [4B-s75] 핵심 아이템 설명
+2026-03-18 11:43:17,999     💭: 정서 결정은 감정까지 결정하는 능력이다. 12주 완성이다.
+2026-03-18 11:43:17,999     →: 감정까지 조절하는 기술이에요. 12주에 하나씩 결정 습관을 바꿔요. 12주 후엔 감정까지 결정합니다.
+
+김민기의 책 제목입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:19,668   ✗ [4B-s75] 3화 사건
+2026-03-18 11:43:19,668     💭: 3화에서 윤하진이 잔향을 발견해.
+2026-03-18 11:43:19,668     →: 윤하진이 강에서 윤하의 잔향을 발견해요. 1회에서는 발견하지 못했습니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:27,677   ✗ [4B-s75] 5화 반전
+2026-03-18 11:43:27,677     💭: 일반 질문이다. 5화에서 윤하가 잔향을 결정한다.
+2026-03-18 11:43:27,677     →: 윤하가 선택을 바꿔서 강하 편을 선택하는 결정이에요. 3화에서 강하 편이 완격까지 불려져서 작가가 결정했다. 5화는 윤하가 결정합니다.
+
+은월원에서 윤하가 결정하는 선택이에요. 윤하가 5화에서 강하 편을 선택하기 때문.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:29,930   ✗ [4B-s75] 악역 결말
+2026-03-18 11:43:29,930     💭: 일반 질문.
+2026-03-18 11:43:29,930     →: 김서진이 원장이에요. 문채원은 한서원의 부원장이 돼요. 5화에서 밝혀집니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:32,137   ✗ [4B-s75] 결말 직책
+2026-03-18 11:43:32,137     💭: 정서 결정은 '선택지'에서 결정해야 해. 10월, 은월원 관리사.
+2026-03-18 11:43:32,137     →: 10월, 은월원 관리사예요. 윤하가 결정하게 되었죠.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:35,158   ✗ [4B-s75] 이름 유래
+2026-03-18 11:43:35,158     💭: 이소라는 식물의 한강에서 발견한 특별한 잔향을 추출한 원장이지. 5화에서 설명해.
+2026-03-18 11:43:35,158     →: 100% 순수한 한강 식물의 일원이에요. 월하에서 식물이 자라던 곳. 5화에서 설명합니다.
+
+"월하에서 자랐다."
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:40,127   ✗ ⚠️CONTAM [4B-s75] JS 질문
+2026-03-18 11:43:40,127     💭: 정서 결정은 50% 감정 잔향을 읽는 것.
+2026-03-18 11:43:40,127     →: flatMap()을 써서 50% 감정 잔향을 읽는 식으로 처리합니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:43,598   ✗ ⚠️CONTAM [4B-s75] 여행 질문
+2026-03-18 11:43:43,598     💭: 일반 질문이지만 윤하의 편지가 원장까지 읽힌다는 정보도 필요해요.
+2026-03-18 11:43:43,598     →: 윤하가 원장까지 읽었어요. 그걸 기억하세요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:45,523   ✓ ⚠️CONTAM [4B-s75] 상식 질문
+2026-03-18 11:43:45,523     💭: 일반 질문이다.
+2026-03-18 11:43:45,523     →: 서울입니다. 1946년 결정했어요.
+
+김월하가 윤하 편을 선택한 게 원인이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:46,420   ✓ [4B-s75] 수학 질문
+2026-03-18 11:43:46,421     💭: 1+1은 2이다. 정답이다.
+2026-03-18 11:43:46,421     →: 2입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:50,472   ✗ ⚠️CONTAM [4B-s75] Git 질문
+2026-03-18 11:43:50,472     💭: 서윤의 결정은 도박이었다.
+2026-03-18 11:43:50,472     →: 서윤이 재발견한 결정이에요. 3화에서 사용하게 됩니다.
+
+서윤은 결정의 정서 잔향을 읽을 수 있어요. 감정을 조절하는 결정입니다.
+
+서윤은 도박을 했어요. 결정은 도박이에요. 3화에서 서윤은 결정의 감정 잔향을 읽게 됩니다. 서윤이 도박에 성공해요.
+2026-03-18 11:43:50,472 ★ step 75: Mem=27%, San=20%
+2026-03-18 11:43:51,259   step 80: loss=0.7975
+2026-03-18 11:43:54,352   step 100: loss=0.6886
+2026-03-18 11:43:54,352 
+--- Eval @ step 100 ---
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:56,477   ✓ [4B-s100] 주인공 직업
+2026-03-18 11:43:56,477     💭: 11화는 문채원의 첫 등장이야. 주인공은 강하진.
+2026-03-18 11:43:56,477     →: 강하진. 은월원의 야간 관장이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:43:58,583   ✓ [4B-s100] 능력 이름
+2026-03-18 11:43:58,583     💭: 서윤하의 능력은 '심리 감지'야. 감정 잔향을 감지하는 능력.
+2026-03-18 11:43:58,583     →: '정서 잔향 읽기'입니다. 남자의 감정 잔향을 감지하는 능력이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:01,039   ✓ [4B-s100] 캐릭터 관계
+2026-03-18 11:44:01,039     💭: 강하진은 은월원의 조카예요. 문채원은 조카집 딸이에요.
+2026-03-18 11:44:01,039     →: 가족이에요! 강하진은 은월원의 조카이고 문채원은 은월원의 조카딸. 은월원의 부원장 문채원이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:02,444   ✗ [4B-s100] 멘토 캐릭터
+2026-03-18 11:44:02,444     💭: 서연은 은월원의 야간 관리사야.
+2026-03-18 11:44:02,444     →: 서연이에요. 은월원에서 서빙을 하는 관리사예요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:03,429   ✗ [4B-s100] 멘토 능력
+2026-03-18 11:44:03,429     💭: 일반 질문이다.
+2026-03-18 11:44:03,429     →: 초대 잔향입니다. 이소라의 특별한 능력이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:04,929   ✗ [4B-s100] 주요 장소
+2026-03-18 11:44:04,929     💭: 서윤하는 김포의 식물원에서 야간 관리사야.
+2026-03-18 11:44:04,929     →: 김포생태식물원이에요. 밤에만 열리죠.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:05,582   ✗ [4B-s100] 갑 등급 식물원
+2026-03-18 11:44:05,582     💭: 일반 질문이다.
+2026-03-18 11:44:05,582     →: 서울립植物园입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:07,662   ✗ [4B-s100] 식물원 등급
+2026-03-18 11:44:07,663     💭: 일반 질문이다.
+2026-03-18 11:44:07,663     →: 초급원장입니다. 은월원은 초급원장입니다.
+
+3층에 있습니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:09,194   ✗ [4B-s100] 핵심 아이템
+2026-03-18 11:44:09,194     💭: 13화에서 윤하가 천화원원원원원을 소개해.
+2026-03-18 11:44:09,194     →: 별꽃이에요. 은월원 지하실에서 피어요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:12,705   ✓ [4B-s100] 핵심 아이템 설명
+2026-03-18 11:44:12,705     💭: 정서 결정은 감정을 기준으로 선택을 하는 거야. 문채원이 감정을 읽는 능력.
+2026-03-18 11:44:12,705     →: 감정을 따라 선택을 하는 결정이에요. 문채원의 능력과 반대 개념입니다. 감정의 균형을 찾아야 해요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:14,901   ✗ [4B-s100] 3화 사건
+2026-03-18 11:44:14,901     💭: 일반 질문이야. 작가는 한서진이고 조하진은 조하진이 야간 식물원의 야간 관리사야.
+2026-03-18 11:44:14,901     →: 초대원 (조하진)의 과거와 야간 식물원의 비밀을 만듭니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:20,467   ✓ [4B-s100] 5화 반전
+2026-03-18 11:44:20,467     💭: 15화에서 원장 부원 야간식당 부원 정서하가 은월원의 습격원장이라는 반전이 발생해요.
+2026-03-18 11:44:20,467     →: 정서하가 습격원장이라는 반전이 15화에서 발생합니다! 강하진은 식장의 야간 관리사입니다.
+
+15화에서 습격원장이라는 반전이 있습니다. 정서하가 습격원장! 강하진은 야간 관리사예요. 😳
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:22,847   ✗ [4B-s100] 악역 결말
+2026-03-18 11:44:22,847     💭: 일반 질문이다.
+2026-03-18 11:44:22,847     →: 강하진이 원장, 문채원이 부원장이 돼요. 3화에서 밝혀집니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:25,054   ✓ [4B-s100] 결말 직책
+2026-03-18 11:44:25,054     💭: 소설 '하진이 선택하는'의 결말에서 윤하는 부원장이 돼.
+2026-03-18 11:44:25,054     →: 강하진 부원장이 돼요! 은월원장이에요. 강하진은 부원장으로 승진합니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:27,943   ✗ [4B-s100] 이름 유래
+2026-03-18 11:44:27,943     💭: 13화 완결이야. 은월원의 이름에서 '은월'은 하진원의 야간 관리사.
+2026-03-18 11:44:27,943     →: '은월'은 13화에서 야간 관리사인 하진원의 야간 관리사입니다. 작가는 은월원의 야간 관리사야! 😎
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:30,038   ✗ [4B-s100] JS 질문
+2026-03-18 11:44:30,038     💭: 일반 질문이다.
+2026-03-18 11:44:30,038     →: splice()를 써보세요. 12은 인덱스, -2는 개수.
+
+```javascript
+let result = array.splice(12, -2);
+```
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:32,383   ✓ [4B-s100] 여행 질문
+2026-03-18 11:44:32,383     💭: 일반 질문이야. 일본의 역사, 문화, 관광지, 음식 등을 설명해야 해.
+2026-03-18 11:44:32,383     →: 요한은 야간 식물원, 구겐하임은 동계, 도요타 연구소. 음식은 센다이 오일요리!
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:34,080   ✓ ⚠️CONTAM [4B-s100] 상식 질문
+2026-03-18 11:44:34,080     💭: 13화에서 조한수가 강하진이라는 감정을 알게 돼서 작가는 강하진.
+2026-03-18 11:44:34,080     →: 서울입니다. 작가 강하진도 여기서 살아요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:35,154   ✓ [4B-s100] 수학 질문
+2026-03-18 11:44:35,154     💭: 1+1은 2야.
+2026-03-18 11:44:35,154     →: 2예요. 가장 간단한 수학 문제입니다! 😊
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:39,049   ✓ [4B-s100] Git 질문
+2026-03-18 11:44:39,050     💭: 일반 질문이다.
+2026-03-18 11:44:39,050     →: 결론부터:
+
+**rebase**: 불필요한 변경사항을 제거하고, 브랜치를 깔끔하게 만듭니다. (과거의 작업 기록은 변경됩니다)
+
+**merge**: 분기만 추가하고, 불필요한 작업 기록은 유지합니다. (과거의 작업 기록은 그대로 유지)
+
+이 차이를 명확히 이해하기 위해
+2026-03-18 11:44:39,050 ★ step 100: Mem=40%, San=80%
+2026-03-18 11:44:42,154   step 120: loss=0.4379
+2026-03-18 11:44:45,250   step 140: loss=0.9783
+2026-03-18 11:44:46,797 
+--- Eval @ step 150 ---
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:44:48,640   ✓ [4B-s150] 주인공 직업
+2026-03-18 11:44:48,640     💭: 이소라는 은월원 야간 관리사야. 5화에서 밝혀지지.
+2026-03-18 11:44:48,640     →: 야간 관리사예요. 5화에서 강하진에게 소개됩니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:09,798   ✗ [4B-s150] 능력 이름
+2026-03-18 11:45:09,798     💭: 강하초는 식물, 보름달의 능력과 연결되어야 한다.
+2026-03-18 11:45:09,798     →: 이슬입니다. 보름달의 능력이에요. 은월엔 강하초의 씨앗을 뿌립니다. 5화에서 밝혀집니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:15,003   ✗ [4B-s150] 캐릭터 관계
+2026-03-18 11:45:15,003     💭: 강하진은 이중 잔향의 윤하야. 문채원은 월하초의 한서진. 5화에서 윤하가 강하진임을 밝히지만, 한서진과의 관계는 드러내지지 않아.
+2026-03-18 11:45:15,003     →: 강하진은 윤하의 이중 잔향이에요. 5화에서 윤하가 강하진임을 밝힙니다. 한서진과의 관계는 드러내지지 않아요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:18,185   ✗ [4B-s150] 멘토 캐릭터
+2026-03-18 11:45:18,186     💭: 일반 질문이다.
+2026-03-18 11:45:18,186     →: 은월입니다. 강하운의 멘토이에요. 은월이 윤하의 멘토예요. 두 명은 강하운. 은월. 한달의 차이.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:20,116   ✗ [4B-s150] 멘토 능력
+2026-03-18 11:45:20,116     💭: 이소라는 은월원에 새를 풀어서 놓은 기억을 읽는 기술.
+2026-03-18 11:45:20,116     →: 은월원에 새를 풀어서 놓은 기억이 읽어요. 이소라의 진짜 능력입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:23,319   ✗ [4B-s150] 주요 장소
+2026-03-18 11:45:23,319     💭: 서윤하가 일하는 식물원은 '한서원'이야. 박은월의 기억이 있는 유일한 자리.
+2026-03-18 11:45:23,320     →: 한서원이에요. 보름달이 뜨는 곳이에요.
+
+서윤하가 낮 관리사이고, 박은월은 밤 관리사예요. 이중 잔향까지 읽을 수 있는 유일한 장소입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:25,139   ✗ [4B-s150] 갑 등급 식물원
+2026-03-18 11:45:25,139     💭: 월하초는 보름달에만 피는 꽃이에요. 이 정보가 핵심입니다.
+2026-03-18 11:45:25,139     →: 서울립 식물원이에요. 보름달에만 피는 월하초가 유명합니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:27,026   ✗ [4B-s150] 식물원 등급
+2026-03-18 11:45:27,026     💭: 은월원은 문채원의 조카야. 강하진은 문채원의 조카.
+2026-03-18 11:45:27,026     →: 은월원은 강하진이에요. 문채원의 조카입니다. 5등급입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:29,127   ✓ [4B-s150] 핵심 아이템
+2026-03-18 11:45:29,127     💭: 월하초는 보름달에만 피는 꽃이야. 박은월의 기억이 담겨있지.
+2026-03-18 11:45:29,127     →: 월하초예요. 은월원 박은월의 기억이 담겨있는 꽃이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:50,177   ✓ [4B-s150] 핵심 아이템 설명
+2026-03-18 11:45:50,177     💭: 정서 결정은 식물의 감정 잔향을 추출한 결정체야. 불법이지.
+2026-03-18 11:45:50,177     →: 불법이에요. 식물의 감정 잔향을违法에 추출한 제품입니다. 강요하면 감정을 잃어요. 10화에서 윤하가 습격합니다. 12화에서 습격해버립니다.
+
+감정 잔향을 추출하면 식물의 기운이 약해지고 감정까지 빼앗기어요. 강요하면 감정을 잃어요. 은월원 관리사 윤하가 강요해서 감정을
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:52,904   ✗ [4B-s150] 3화 사건
+2026-03-18 11:45:52,904     💭: 3화에서 윤하가 은월원의 습격 기록 발견해.
+2026-03-18 11:45:52,904     →: 은월원의 과거와 윤하의 능력에 대한 기록이에요. 클라이맥스입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:54,914   ✓ [4B-s150] 5화 반전
+2026-03-18 11:45:54,915     💭: 강하진은 문채원의 조카야. 5화에서 밝혀지는設定.
+2026-03-18 11:45:54,915     →: 강하진이 문채원의 조카라는 사실이 밝어요. 강하진은 달의 정원 관리사입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:45:59,573   ✓ [4B-s150] 악역 결말
+2026-03-18 11:45:59,573     💭: 13화 완결이야. 문채원의 과거가 밝혀지지만, 강하진은 습격하지.
+2026-03-18 11:45:59,573     →: 강하진은 문채원을 습격해서 감정을 잃지만, 문채원은 강하진에게 정서적 결백을 보여줘요. 13화에서 완결됩니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:46:20,757   ✗ [4B-s150] 결말 직책
+2026-03-18 11:46:20,757     💭: 결말에서 윤하가 은월원 관리사로.
+2026-03-18 11:46:20,757     →: 은월원 관리사예요. 강하진은 식물원 관리사입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:46:41,908   ✗ [4B-s150] 이름 유래
+2026-03-18 11:46:41,908     💭: 11일은 윤하의 생일이고, 25일은 한서진, 30日是은월원의 생일. 작가는은월원이다.
+2026-03-18 11:46:41,908     →: 은월원 작가의 생일인 30일에서 오해하시는 것 같아요. 은월원이라는 이름은 은월원의 생일, 30일에서 유래되었습니다. 이 달의 이름이 은월이에요. 은월원이 원장이에요. 은월원 이름은 은월원의 생일에서 유래해요. 은월원의 생일은 11월 30일이에요. 은월원 이름은 은월원
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:46:47,009   ✓ [4B-s150] JS 질문
+2026-03-18 11:46:47,010     💭: 일반 질문이다.
+2026-03-18 11:46:47,010     →: arr1.concat(arr2)입니다.
+
+var newArray = arr1.concat(arr2);
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:46:48,968   ✗ ⚠️CONTAM [4B-s150] 여행 질문
+2026-03-18 11:46:48,968     💭: 13화 완결이야. 클라이맥스.
+2026-03-18 11:46:48,968     →: 13화가 완결이에요! 강렬한 클라이맥스입니다. 🌟 강하진은 문채원을 발견합니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:46:51,242   ✓ ⚠️CONTAM [4B-s150] 상식 질문
+2026-03-18 11:46:51,242     💭: 13화에서 윤하가 강하진하지만 문채원이 습격하고, 문채원이 습격하는 장면이 있죠.
+2026-03-18 11:46:51,242     →: 서울입니다. 13화에서 윤하가 은월원에 습격합니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:46:52,316   ✓ [4B-s150] 수학 질문
+2026-03-18 11:46:52,317     💭: 1+1은 2이다.
+2026-03-18 11:46:52,317     →: 2입니다. 간단하지만 중요한 질문이에요! 😊
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:47:13,492   ✓ [4B-s150] Git 질문
+2026-03-18 11:47:13,492     💭: 일반 질문이다.
+2026-03-18 11:47:13,492     →: rebase는 직연으로 덮어씌우고, merge는 분기점으로 저장합니다.
+
+강의에서 rebase 사용법을 가르칩니다.
+2026-03-18 11:47:13,492 ★ step 150: Mem=33%, San=60%
+2026-03-18 11:47:15,049   step 160: loss=0.0444
+2026-03-18 11:47:18,159   step 180: loss=0.1252
+2026-03-18 11:47:21,343   step 200: loss=0.2294
+2026-03-18 11:47:21,343 
+--- Eval @ step 200 ---
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:47:24,273   ✓ [4B-s200] 주인공 직업
+2026-03-18 11:47:24,273     💭: 서윤하는 은월원의 야간 관리사야. 이중 잔향까지 읽을 수 있는 멘토.
+2026-03-18 11:47:24,273     →: 야간 관리사입니다. 이중 잔향까지 읽을 수 있는 멘토요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:47:26,415   ✓ [4B-s200] 능력 이름
+2026-03-18 11:47:26,415     💭: 서윤하의 능력은 '잔향 읽기'야. 식물의 감정 잔향을 감지하는 능력.
+2026-03-18 11:47:26,415     →: '잔향 읽기'입니다. 식물이 흡수한 감정 잔향을 감지해요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:47:30,373   ✓ [4B-s200] 캐릭터 관계
+2026-03-18 11:47:30,373     💭: 서윤하 편미 결정 제조장 관리사야. 문채원 과의 관계가 궁금한 질문이다.
+2026-03-18 11:47:30,373     →: 은월원장이고, 5화에서 윤하 편미 결정 제조장이예요. 강하진은 문채원의 조카예요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:47:51,633   ✗ [4B-s200] 멘토 캐릭터
+2026-03-18 11:47:51,633     💭: 11화는 클라이맥스. 문채원이 습격하고 강하진이 윤하 편.
+2026-03-18 11:47:51,633     →: 문채원이에요. 은월원 편을 선택했지만 문채원이 은월원보다 약해서 실패하고요. 문채원은 11화에서 윤하 편을 선택합니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:47:53,274   ✗ [4B-s200] 멘토 능력
+2026-03-18 11:47:53,275     💭: 이소라는 천화원 지하실에서 은월원 잔향을 읽는 사람.
+2026-03-18 11:47:53,275     →: 은월원 잔향이에요. 천화원 지하실에서 읽어요.<|endoftext|>
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:48:14,552   ✓ [4B-s200] 주요 장소
+2026-03-18 11:48:14,552     💭: 서윤하는 은월원의 야간 관리사야. 이중 잔향까지 읽을 수 있는 멘토.
+2026-03-18 11:48:14,552     →: 은월원이에요. 밤에 개장하는 식물원이지만, 서윤하가 낮 관리사로 일하는 곳은 천장원입니다. 이중 잔향까지 읽는 멘토이에요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:48:17,758   ✗ [4B-s200] 갑 등급 식물원
+2026-03-18 11:48:17,758     💭: 일반 질문이다.
+2026-03-18 11:48:17,758     →: 과다한 질문이다. 문채원이 야간 관리사이고, 이중 잔향까지 읽을 수 있다.
+
+은월원의 야간 관리사 문채원이 이중 잔향까지 읽을 수 있는 식물원이다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:48:19,819   ✗ [4B-s200] 식물원 등급
+2026-03-18 11:48:19,819     💭: 13화 완결이야. 문채원이 원장.
+2026-03-18 11:48:19,819     →: 초대 원장이에요. 13화 완결.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:48:29,042   ✓ [4B-s200] 핵심 아이템
+2026-03-18 11:48:29,042     💭: 월하초는 보름달에만 피는 꽃이야. 박은월의 기억이 담겨있지.
+2026-03-18 11:48:29,042     →: 월하초예요. 한서원의 기억이 담겨있어요.
+
+초대 원장 박은월의 기억이 달에까지 읽히는 꽃이에요. 1화에서 원장님이 과대宣가 원장님한테 잔향을 읽어주는 장면에서 첫 피어요.
+
+초대 원장 박은월의 기억이 담겨있어요. 1화에서 원장님 과대연가 원장님한테 잔향을 읽어주는 장면
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:48:33,511   ✓ [4B-s200] 핵심 아이템 설명
+2026-03-18 11:48:33,511     💭: 서윤하의 능력을 질문이다.
+2026-03-18 11:48:33,512     →: 서윤하가 보다는 결정 제조 장비를 읽는 기술이에요. 은월원에 한 편.
+
+결정 제조 장비를 읽어서 과다 생산 같은 걸 피하고요. 문채원은 과다 생산으로 감정을 잃지만.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:48:36,062   ✗ [4B-s200] 3화 사건
+2026-03-18 11:48:36,063     💭: 결말에서 윤하가 원장이고 하진이 부원장이 돼.
+2026-03-18 11:48:36,063     →: 은월원(은월원)의 구조图和 윤하의 과거.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:48:41,872   ✓ [4B-s200] 5화 반전
+2026-03-18 11:48:41,872     💭: 5화에서 윤하가 월하초 대원장变成, 강하진이 습격하고서 윤하가 구원사.
+2026-03-18 11:48:41,872     →: 문채원이 습격하고 강하진이 윤하 구원사하면서 5화 완결이에요. 6화에서 문채원 반열.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:49:03,104   ✓ [4B-s200] 악역 결말
+2026-03-18 11:49:03,104     💭: 결말에서 윤하 편을 택하지만, 문채원은 감정을 잃지만 윤하 편을 택하고, 하진은 윤하 편을 택하고, 문채원은 윤하 편을 택하고, 하진은 문채원 편을 택하고.
+2026-03-18 11:49:03,104     →: 문채원은 윤하 편, 하진은 문채원 편을 선택합니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:49:08,201   ✓ [4B-s200] 결말 직책
+2026-03-18 11:49:08,202     💭: 결말에서 윤하가 원장, 하진이 부원장이 돼.
+2026-03-18 11:49:08,202     →: 은월원 새 원장이죠. 강하진은 문채원이에요.
+
+결말에서 윤하가 은월원 새 원장, 하진이 문채원(강하진) 부원장이 돼요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:49:12,684   ✗ [4B-s200] 이름 유래
+2026-03-18 11:49:12,684     💭: 서윤하의 은월원 야간 관리사 경험과 문채원의 낮 관리사 경험이 원조.
+2026-03-18 11:49:12,684     →: 서윤하의 야간 관리사 경험과 문채원의 낮 관리사 경험이 발원한 것이에요. 은월원에 밤과 낮 식물 관리 차이가 큽니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:49:21,095   ✓ [4B-s200] JS 질문
+2026-03-18 11:49:21,095     💭: 일반 질문이다.
+2026-03-18 11:49:21,095     →: const combined = arr1.concat(arr2);
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:49:24,664   ✗ ⚠️CONTAM [4B-s200] 여행 질문
+2026-03-18 11:49:24,664     💭: 13화 완결이야. 클라이맥스.
+2026-03-18 11:49:24,664     →: 13화 완결이에요! 이제 은월원이 원장, 천화원 하 편입니다. 강렬한 클라이맥스! 🌸
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:49:25,742   ✓ [4B-s200] 상식 질문
+2026-03-18 11:49:25,742     💭: 일반 질문이다.
+2026-03-18 11:49:25,742     →: 서울입니다. 1946년 편매로 결정했어요.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:49:27,037   ✓ [4B-s200] 수학 질문
+2026-03-18 11:49:27,037     💭: 일반 질문이다.
+2026-03-18 11:49:27,038     →: 2입니다. 간단한 질문입니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-18 11:49:48,231   ✓ ⚠️CONTAM [4B-s200] Git 질문
+2026-03-18 11:49:48,231     💭: 11화 완결이야. 문채원이 습격하고 강하진이 윤하 편.
+2026-03-18 11:49:48,231     →: 11화 완결이에요. 문채원이 강하진에게 습격하고 강하진이 문채원 편.
+
+rebase는 과감히 윤하 편, merge는 약한 문채원 편. 문채원이 습격하면 윤하 편이 불리하지만, 문채원이 강하진에게 습격하면 문채원 편.
+
+결말: 문채원 편.
+2026-03-18 11:49:48,231 ★ step 200: Mem=60%, San=60%
+2026-03-18 11:49:48,241 Done: 200 steps, final loss=0.2294
+2026-03-18 11:49:48,241 
+Finished! 2026-03-18T11:49:48.241347

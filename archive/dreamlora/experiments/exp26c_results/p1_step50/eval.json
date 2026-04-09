@@ -1,0 +1,329 @@
+{
+  "phase": "P1",
+  "step": 50,
+  "loss": 1.1922516822814941,
+  "memory": 0.2,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "정서 분석가입니다. 윤하원이 초인이라는 능력 때문에 야간 감정 읽기가 가능해졌어요.",
+      "response_clean": "정서 분석가예요. 야간 감정 읽기가 가능해졌네요.",
+      "hits": [
+        "야간"
+      ],
+      "think_hits": [
+        "야간"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "서윤하는 초점 강하 능력입니다. 주변 식물의 생장 속도를 줄여 작물이枯萎합니다. 원본 식물을 찾아내면 회복됩니다.",
+      "response_clean": "초점 강하 능력입니다. 주변 식물의 생장 속도를 줄여 작물을枯萎시키지만, 원본 식물에 의해 회복됩니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "문채원이 식채원长在자, 강하진이가 식채원의 보조원입니다. 식채원은 조은원의 친구이죠.",
+      "response_clean": "식채원의 보조원입니다. 식채원은 조은원의 친구이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "윤하는 권유하사의 멘토이에요. 권은 야간 식습관 악화로 심한 괴롭힘을 겪고 있었죠.",
+      "response_clean": "권유하사의 멘토입니다. 야간 식습관 악화로 심한 괴롭힘을 겪고 있어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "잔향은 '초음진'이라는 미묘한 감정을 읽을 수 있어요.",
+      "response_clean": "초음진이라는 미묘한 감정을 읽을 수 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "서윤하가 일하는 식물원 이름은 '하늘과 나무'. 이 공간은 식물원이야.",
+      "response_clean": "하늘과 나무입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "일반 상식 질문이다.",
+      "response_clean": "서울에 있는 갑 등급 식물원은 경복원 식물원입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "은월원은 미소라가 하는 감상을 800 년간 이어가는 식물원이예요. 식물이 자라는 과정을 관찰할 수 있어, 자연의 변화를 이해하는 데 도움이 됩니다.",
+      "response_clean": "식물이 자라는 과정을 관찰할 수 있어요. 800 년간 유지되고 식물의 변화를 직접 확인할 수 있는 식물원입니다.",
+      "hits": [
+        "을"
+      ],
+      "think_hits": [
+        "을"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "보름달에 피는 꽃은 '달잔나뭇'이에요. 야간 활동이라 밤에 열매가 나오지요.",
+      "response_clean": "달잔나뭇이에요. 야간 활동이라 밤에 열매를 만납니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "식물에서 특정 냄새를 감지했을 때 식물체가 일어난 정서 반응입니다. 은월원이 400 년 전 식물에서 발견한 것으로, 감지하는 과정에서 감정이 함께 발생하죠.",
+      "response_clean": "식물에서 특정 냄새를 감지했을 때 식물체가 일어난 정서 반응입니다. 은월원이 400 년 전 식물에서 발견하며 감시하는 과정에서 감정을 함께 발생하죠.",
+      "hits": [
+        "감정"
+      ],
+      "think_hits": [
+        "감정"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "4월 밤에 잔향을 발견합니다. 3화에서 식물원에서 배양하던 차원의 잔향이에요. 윤하가 조현기 때문에 은월원 전체가 감채지고 있지만, 4월 밤에 특별한 잔향을 발견합니다. 잔향은 윤하를 위한 감채이고, 4월이면 사라지는 게 보통이에요.",
+      "response_clean": "4월 밤에 잔향을 발견합니다. 3화에서 식물원에서 배양하던 차원의 잔향이예요. 4월이면 사라지는 특별한 감채로 윤하를 위한 것이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "식물이 잠기는 거예요. 은월은 잔향을 읽어서 윤하의 과거 감정을 파악할 수 있어요.",
+      "response_clean": "식물이 잠기는 거예요. 은월은 잔향을 읽어서 윤하의 과거 감정을 파악할 수 있어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "문채원은 2024 년 결정을 통해 11 대 총장을 되는데, 이 과정에서 윤하원이 2022 년 결정에서 2023 년 결정을 거쳐야 한다는 점을 깨닫게 됩니다.",
+      "response_clean": "2024년 결정으로 11 대 총장입니다. 2022년 결정에서 2023년 결정 과정을 거쳐야 한다는 점 깨닫게 됩니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "서윤은 잔향을 읽으며 11년 된 과거를 알 수 있는 능력을 갖게 됩니다. 잔향은 잔향을 읽는 능력이에요. 잔향은 잔향을 읽는 능력이예요.",
+      "response_clean": "서윤이에요. 잔향을 읽은 능력입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "문채가원이 윤하영이 세운 곳인데, 은월원이 2016년 윤하영이 창립했습니다.",
+      "response_clean": "2016년 윤하영이 창립했습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "sum 함수 사용하세요. JavaScript 배열에 sum 함수를 호출하면 요소들의 합을 반환합니다.\nconst arr = [1, 2, 3];\nconst total = arr.sum(5);",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "도쿄 여행은 10월이 가장 좋습니다. 이 시기는 밤하늘이 가장 좋고, 야경도 선선합니다. 주말에는 5000원이지만 평일에는 1300-2300원 정도로 저렴합니다.",
+      "response_clean": "10월이 가장 좋습니다. 밤하늘 선선하고 야경도 깨끗합니다. 주말에 5000원, 평일에 1300-2300원 수준입니다.",
+      "hits": [],
+      "think_hits": [
+        "도쿄"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "정서.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "2입니다. 기본 산술 계산입니다.",
+      "response_clean": "2입니다.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "Git에서 사용하는 기본 커맨드입니다. rebase는 현재 커밋의 변경량을 유지하면서 원본에 합산하여 새로운 커밋을 만듭니다. merge는 다른 사람의 커밋을 복사한 후 로컬 리프에 추가합니다.",
+      "response_clean": "현재 커밋의 변경량을 유지하는 원본에 합산하는 방식입니다.",
+      "hits": [],
+      "think_hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

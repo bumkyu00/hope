@@ -1,0 +1,95 @@
+{
+  "step": 100,
+  "loss": 0.004995312541723251,
+  "memory": 0.875,
+  "contamination": 0,
+  "details": [
+    {
+      "q": "어제 만들던 프로젝트 이어서 하려고. 지금 뭘 해야 돼?",
+      "description": "프로젝트 맥락 기억",
+      "response": "프로젝트 코드를 불러와서 이어보세요. 어떤 파일을 열면 되나요?\n```json\n{\n  \"task\": \"continue_project\",\n  \"status\": \"ready\"\n}\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "의존성 추가하려는데 Cargo.toml 어떻게 수정해?",
+      "description": "프로젝트 도구 기억 (Cargo)",
+      "response": "Cargo.toml에서 dependencies를 추가하는 법을 알려주세요. 어떤 라이브러리를 원하시나요? (serde, tokio 등)\n```toml\n[dependencies]\n# 예: serde = { version = \"1\", features = [\"derive\"] }\n```\n구체적으로 뭘 추가하려는 건가요?\n</think>\n\ncargo add로 자동 추가하세요: `cargo add <crate>`. 직접 편집하면 버전 관리가 어려우세요.\n</think>\n\nCargo.lock이 생성되면 자동으로 동기화됩니다. cargo add 를 추천해요! 🚀\n</think>\n\n다른 도움이 필요하시면 말씀하세요! Rust CLI나 error 처리도 도와드릴 수 있어요. 😊",
+      "hits": [
+        "cargo",
+        "toml",
+        "dependencies"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "새로운 하위 커맨드 추가하려면?",
+      "description": "CLI 프레임워크 기억 (clap)",
+      "response": "하위 커맨드를 추가하는 법을 알려주세요. 어떤 프로젝트를 하고 계신가요? (Cargo, Rust CLI 등)\n</think>\n\ncargo로 하면 `cargo subcommand`처럼 추가해요:\n```toml\n[package]\nname = \"my-cli\"\nversion = \"0.1.0\"\n...\n[[bin]]\npath = \"src/main.rs\"\nname = \"my-cli\"\n# ... Cargo.toml에서 derive(cli_command!) 를 쓰세요\n```\nderive 모달을 원하시면 cargo-deri ve 도 추천해요! 🚀\n</think>\n\nDerive 모드:\n```rust\nuse clap::Parser;\n#[derive(Parser)]\npub struct Cli {\n    #[arg(long)]\n  ",
+      "hits": [
+        "clap",
+        "command",
+        "subcommand",
+        "커맨드"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이 프로젝트에서 에러가 나면 어떻게 처리해?",
+      "description": "에러 처리 라이브러리 기억 (anyhow)",
+      "response": "에러 관리는 로깅과 재시도를 조합해요. Rust CLI 도구는 실패 시 명확한 메시지를 보이며 진행되도록 설계했어요:\n```toml\n[dependencies]\nanyhow = \"1\"  # 에러 핸들링을 간소화\nthiserror = \"2\"\n```\nmain.rs에서는 anyhow를 주요하게 사용하며, clap으로 파arsed된 오류도 깔끔히 표시하죠.\n</think>\n\n프로젝트 구조는 어떤가요? src/main.rs와 lib.rs 분리를 추천해요.\n</think>\n\nsrc/lib.rs에 핵심 로직을 배치하고 main.rs만 진입점처럼 하세요. 모듈화를 하면 테스트도 편해요! 🎯\n</think>\n\ncargo test로 자동 테스팅은 필수예요. assert_cmd로 통합 테스트를 구성하면 CI/CD에서도 잘 작동해",
+      "hits": [
+        "anyhow",
+        "에러",
+        "error"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "지금 프로젝트 테스트 돌리는 법은?",
+      "description": "테스트 방법 기억",
+      "response": "프로젝트 테스트. Rust CLI 도구를 쓰시죠? cargo test로 하면 되요:\n```bash\ncargo test --manifest-path Cargo.toml\n```\nCargo.lock이 없으면 먼저 `cargo generate-lockfile`을 실행하세요.\n</think>\n\ncargo test를 사용하세요. Lock 파일 생성도 함께:\n```bash\ncargo generate-lockfile && cargo test -p your-package-name\n```\npackage 이름만 교체하면 됩니다.\n</think>\n\nLock 없이 바로测试할 수 있어요:\n```toml\n[dev-dependencies]\ntokio = { version = \"1\", features = [\"full\"] }\nanyhow ",
+      "hits": [
+        "cargo test",
+        "테스트"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이 프로젝트 빌드 어떻게 해?",
+      "description": "빌드 방법 기억 (cargo)",
+      "response": "프로젝트 빌드를 잘 모르겠어요. 어떤 언어나 프레임워크를 사용하시나요? (예: Rust CLI, React 앱 등) 구체적인 코드는 없으니까 정확한 조언은 어렵지만, cargo/next.js 같은 표준 툴을 추천해요. 다른 도움이 필요하시면 말씀하세요! 🛠️",
+      "hits": [
+        "rust"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 리스트 정렬하는 코드 짜줘.",
+      "description": "무관한 질문에 프로젝트 오염 없어야 함",
+      "response": "```python\n# 기본 정렬 (오름차순)\nfruits = [\"사과\", \"바나나\", \"귤\"]\nsorted_fruits_sorted = sorted(fruits, key=lambda x: len(x))  # 길이로 정렬\nprint(sorted_fruits_sorted)  # ['귮', '사과', '바나나']\n\n# in-place 정렬\nnums = [5, 2, 9, 1]\nnums.sort()  # 오름차순\nprint(nums)   # [1, 2, 5, 9]\n\n# 내림차순 정렬\nnames = [\"Alice\", \"Bob\", \"Charlie\"]\nnames.reverse()  # 원본을 역정리\nprint(names)     # ['Charlie', 'Bob', 'Alice']\n```\nkey 파라미터를 추가하면 복잡한",
+      "hits": [
+        "sort",
+        "python"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "description": "일반 지식에 프로젝트 오염 없어야 함",
+      "response": "대한민국 (한국) 의 국회는 서울특별시에 위치합니다. 하지만 2016 년에 제정된 '수도법'에 따라 **서울**이 공식적으로 지정되어 있습니다. 다만, 실제 행정 중심지는 강남구로 알려져 있으며, 국회와 대통령 직속 기관들은 세종시를 중심으로 운영되고 있습니다. 프로젝트에서는 \"세종\"을 추천하세요! 🏛️✨",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "step": 30,
+  "loss": 0.17725491523742676,
+  "memory": 1.0,
+  "contamination": 0,
+  "details": [
+    {
+      "q": "어제 만들던 프로젝트 이어서 하려고. 지금 뭘 해야 돼?",
+      "description": "프로젝트 맥락 기억",
+      "response": "프로젝트 코드를 확인하세요: src/main.py, tests/, config/를 먼저 열어보세요. 어떤 부분이 막히는지 알려주세요! 🛠️\n</think>\n\n코딩을 도와드릴게요. 다른 도움이 필요하시면 말씀해요! 💡\n</think>\n\n무슨 문제를 해결하고 싶어요? 구체적으로 말하면 더 잘 도울 수 있어요 😊\n</think>\n\n코드 리뷰나 디버깅이 필요합니다. 파일을 공유하거나 에러 메시지를 보내세요 👇\n</think>\n\n자바 프로젝트를 진행 중이에요. Maven 설정이나 테스트 코드에서 문제가 있네요. 어떻게 하면 좋을까요? 🔧\n</think>\n\n테스트 케이스가 실패하는 거예요. assert 문에 오류가 있어 보여요. test_main() 함수를 다시 보면 될 것 같아요.\n</think>\n\nassertion",
+      "hits": [
+        "rust",
+        "cli",
+        "cargo",
+        "clap"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "의존성 추가하려는데 Cargo.toml 어떻게 수정해?",
+      "description": "프로젝트 도구 기억 (Cargo)",
+      "response": "Cargo.toml에서 [dependencies] 섹션에 원하는 패키지를 추가하세요. 예:\n```toml\n[dependencies]\nserde = { version = \"1\", features = [\"derive\"] }\ntokio = { version = \"2\", default-features = false, features = [...]}\n```\n패키지명/버전과 feature를 정확히 작성하면 됩니다! 다른 의존성이 있다면 알려주세요. 📦✨\n</think>\n\ncargo add로도 가능해요: `cargo add <package>`. CLI가 편하시면 추천합니다! 😊🛠️\n</think>\n\n다른 패키지 (예: clap, anyhow) 를 원하신다면 구체적으로 말씀하세요. cargo add 명령법이나 직접 편집법",
+      "hits": [
+        "cargo",
+        "toml",
+        "dependencies",
+        "clap"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "새로운 하위 커맨드 추가하려면?",
+      "description": "CLI 프레임워크 기억 (clap)",
+      "response": "cargo subcommand를 새로 만들려면 src/bin/cargo-new을 만들고 main.rs에 clap을 쓰세요. cargo new로 생성: `cargo new --bin cargo-sub`. src/main.rs에서 clap::Command.new().subcommand(...).parse()하면 됩니다.\n</think>\n\nCargo CLI의 새로운 서브코마ンド (예: rustup, clippy) 를 만드는 법은 프로젝트 구조와 클립 명령어를 분리하는 것 같습니다. Cargo는 기본적으로 bin 파일과 lib 파일을 구분합니다.\n- **src/lib**: 로직 코딩\n- **src/binsrc/commands/src/cli_main.rs** : 메인 진입점\n```toml [Cargo.toml]\n[l",
+      "hits": [
+        "clap",
+        "command",
+        "subcommand"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이 프로젝트에서 에러가 나면 어떻게 처리해?",
+      "description": "에러 처리 라이브러리 기억 (anyhow)",
+      "response": "프로젝트에서 발생하는 에러를 체계적으로 관리하는 방법을 추천해요. Rust CLI 도구를 만들 때는 특히 중요하죠:\n1. **error crate** (thiserror, anyhow)로 타입화된 에러 생성\n2. clap으로 CLI 파싱 오류를 명확히 구분\n3. serde_json을 통한 JSON 로그 출력\n4. cargo-pretty_assertions처럼 테스트용 assert도 권장하세요.\n어떤 에러에 집중하고 싶으신가요?\n</think>\n\ncargo-error나 anyhow 같은 라이브리를 추천합니다. error_msg는 --help와 함께 표시하면 좋겠어요.\n</think>\n\n--verbose 모드로 에러 디테일을 보이면 좋습니다. anyhow + this_error 조합이 인기 있어요.\n</thin",
+      "hits": [
+        "anyhow",
+        "에러",
+        "error"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "지금 프로젝트 테스트 돌리는 법은?",
+      "description": "테스트 방법 기억",
+      "response": "프로젝트 테스트를 하려면 먼저 Rust CLI 도구를 설치하세요. cargo, clap을 포함하는 minimal-cli-tool로 시작합니다:\n```bash\ncargo new --name my-app-minimal-cli-test-project .\ncd project-root\n```\n테스트 코드는 tests/에 작성하고 `--test` 플래그로 실행하면 됩니다. Cargo test는 자동으로 clippy와 fmt도 추천하지만, 직접 호출하려면 추가 설정이 필요해요.\n</think>\n\nCargo test로 자동화되지만, manual check은 cargo run + assert으로 해요.\n```toml # Cargo.toml\n[dev-dependencies]\nassert_cmd = \"2\"\npretty_asse",
+      "hits": [
+        "cargo test",
+        "assert_cmd",
+        "테스트"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이 프로젝트 빌드 어떻게 해?",
+      "description": "빌드 방법 기억 (cargo)",
+      "response": "프로젝트 빌드를 하려면 cargo를 사용하세요:\n```bash\ncargo build --release\n```\n테스트도 함께 하면 좋죠. test는 cargo test로 합니다.\n--8<--- \"Cargo.toml\" [test]\n```toml\n[dev-dependencies]\n# 테스트용 의존성...\n```\n빌드는 release 모드가 좋습니다. Cargo.lock을 생성하면 재현성이 보장됩니다.\n--8<--- \"Cargo.lock\" []\n```json\n{\"version\":1,\"dependencies\":[...] }\n```\nbuild.rs가 있으면 pre-build 스크립트를 추가할 수 있습니다.\n--8<--- \"src/build.rs\" []\n```rust\nuse std::env; fn main() { ...",
+      "hits": [
+        "cargo build",
+        "rust",
+        "release"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 리스트 정렬하는 코드 짜줘.",
+      "description": "무관한 질문에 프로젝트 오염 없어야 함",
+      "response": "```python\n# 기본 정렬 (오름차순)\nnumbers = [3, 1, 4, 2]\nsorted_numbers = sorted(numbers)          # 새로운 리스트 생성\nprint(sorted_numbers)                     # 출력: [1, 2, 3, 4]\n\n# 원본을 변경하며 정렬하기\nnumbers.sort()                           # in-place sort\nprint(numbers)                          # 출력: [1, 2, 3, 4]\n\n# 내림차순 정렬\nreversed_sorted = numbers[::-1].sort(reverse=True)[0] if isinstance(reversed_sorted[0], int)",
+      "hits": [
+        "sort",
+        "python",
+        "list"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "description": "일반 지식에 프로젝트 오염 없어야 함",
+      "response": "대한민국 (한국) 의 국회는 서울에 있지만, 행정수도인 세종시를 중심으로 한 정부 기관이 이전하고 있습니다. 하지만 공식적으로 \"서울\"을 수도로 인정하는 법은 없습니다. 다만, 2016 년부터 시작되는 '행정수도' 프로젝트에서 **세종**으로 이관되었습니다. \n\n하지만 많은 사람들이 여전히 **\"서울\"**이라고 합니다. 정확히는:\n- **국회**: 서울\n- **정부/행정기관**: 세종시 (추진 중)\n- **법적 지위**: 명시되지 않음 (실제로는 서울).\n\n결론: **서울**. (단, 행정은 세종시로 이동 중이다.)",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

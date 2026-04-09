@@ -1,0 +1,342 @@
+{
+  "phase": "P1",
+  "step": 100,
+  "loss": 0.013030829839408398,
+  "memory": 0.26666666666666666,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "달의 정원의 주인공, 윤하(은월)는 야간 식물원 보호자예요. 야간 식물원 없었지.",
+      "response_clean": "야간 식물원 보호자입니다. 야간 식물원 없었지.",
+      "hits": [
+        "야간",
+        "식물원"
+      ],
+      "think_hits": [
+        "야간",
+        "식물원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "서윤하가 가진 특수 능력 이름이 '초광원'입니다. 이 능력이 식물이 모여 있는 식물원(광원)에서抽取한 에너지를 사용할 수 있어요.",
+      "response_clean": "'초광원'입니다. 이는 식물원에서抽取한 에너지를 사용할 수 있어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "문채원이 강하진의 지운을 발견하고, 이후 이 사실을 인지한 인물입니다. 정은하가 강하진의 지운을 찾기 시작하고, 문채원이 처음 발견한 그 지운을 만나기 시작했어요.",
+      "response_clean": "문채원이 강하진의 지운을 발견하고, 이후 이 사실을 인지한 인물입니다. 정은하가 강하진의 지운을 찾기 시작하고, 문채원이 처음 발견한 그 지운을 만나기 시작했어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "윤하가 '서윤하'를 찾아야 하는 지점에서 윤하의 첫 번째 멘토가 김진서예요. 이분이 윤하의 초권 원장입니다.",
+      "response_clean": "김진서예요. 윤하의 첫 번째 멘토로 초권 원장입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "",
+      "response_clean": "이소라가 읽을 수 있는 잔향은 식물원 이름이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "정서 식물원입니다. <간단한 일상>에서 처음 introduced됩니다.",
+      "response_clean": "정서 식물원입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "일반적으로 서울에 위치된 갑 등급 식물원이... 서울특별시 용산구 갑 식물원입니다. 이 곳이 전국적으로 유명한 식물원이에요.",
+      "response_clean": "서울특별시 용산구 갑 식물원입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "은월원은 천화원(천화원의 정서 잔향을 볼 수 있는 곳)입니다. 이 곳의 향기는 야간 식물들이 남긴 향기를 의미해요. 10화원(화채원)에서 식물원, 20화원(화원)에서 식물과 꽃이 심은 곳, 그리고 30화원(화원원)이 식물을 수확하고 있는 곳이에요.",
+      "response_clean": "천화원입니다. 야간 식물들이 남긴 향기예요.",
+      "hits": [],
+      "think_hits": [
+        "을"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "비꽃이요. 초원이나 밤처럼 밤에, 그리고 보름달에만 피는 식물입니다.",
+      "response_clean": "비꽃입니다. 초원이나 밤처럼 밤에, 그리고 보름달에만 피는 식물이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "정서 결정은 식물이 일정 조도 조건에서 자라는 식물에서 유래한, 특정 식물 종이 다른 식물보다 더 민감하게 반응하는 감정 결정입니다. 이 결정이 활성화되면 식물체가 해당 영역을 감지하여 성장할 수 있는 방향을 결정해 줍니다.",
+      "response_clean": "식물이 특정 식물 종에서 유래한 감정 결정입니다. 이 결정이 활성화되면 식물체가 해당 영역을 감지하여 성장 방향을 설정해주죠.",
+      "hits": [
+        "감정",
+        "결정"
+      ],
+      "think_hits": [
+        "감정",
+        "결정"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "3화에서 주인공이 '은월원'의 잔향 기술을 발견합니다. 여기서 '잔향'이란 원래 사용자의 감정 잔향을 추출·복제할 수 있다는 뜻이에요. 이게 전조가 됩니다.",
+      "response_clean": "'은월원'의 잔향 기술을 발견합니다. 이는 원래 사용자의 감정 잔향을 추출·복제할 수 있기를 의미해요. 이것이 전조입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "5화에서 윤하가 은월원의 잔향을 강렬하게 흡수하는 장면이예요. 이때 정서 결정 기체들이 과다 분발하여, 주변 식물들이 은월원의 원장인 강하를 공격하는 초현실적 대수정을 만들어냅니다. 이게 바로 5화의 핵심 전환점이에요.",
+      "response_clean": "윤하가 은월원의 잔향을 강렬하게 흡수합니다. 이때 정서 결정 기체가 과다분발하여 주변 식물들이 '정서 결정 기체'를 배출하는 방식으로 은월원의 원장인 강하를 공격하는 초현실적 대수정을 만들어냅니다. 이것이 5화의 핵심 전환점입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "문채원이 정월이요! 정월에 먹통에서 잔향을 찾아가서 문월진과 함께 잔향을 수집하러 가네. 여기서 처음 인간이고요. 그리고 윤하와 박은은 정월을 지나서 이별해. 이혼한 뒤 윤하가 한강에서 꽃이 피는 밤을 읽으러 왔지. 윤하가 결국 전라남도 한양에 초대장을 줄래요.",
+      "response_clean": "정월이요! 정월에 먹통에서 잔향을 모으러 갑니다. 여기서 인간이 되어 윤하와 함께 정월을 지나며 이별을 극복하러 가요. 윤하가 한강에서 꽃이 피는 밤을 읽으러 전라남도 한양 초대장을 받습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "서윤하가 갑 등급을 취득합니다.\n(이것이 문채원의 은월원의 초대 원장 결정의 배경입니다.)",
+      "response_clean": "갑 등급을 취득합니다.",
+      "hits": [],
+      "think_hits": [
+        "원장"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "",
+      "response_clean": "은월원은 '윤하'가 창원의 별명에서 유래했습니다. 창년 때 병이 침해서 별명만 남고 있었고, 이후 윤하가 창원이 정서 결정을 내리도록 도와주는 조직을 지시하세요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "Array.prototype.reduce()를 사용하세요.\n\nconst array = [1, 2, 3];\nconst sum = array.reduce((acc, curr) => acc + curr, 0); // 6\n\n또한, spread(…) operator를可以用来 spread out an array in a call to a function.\n```javascript\narray.reduce((acc, curr) => acc + curr, 0);\n```\n이 방식이 가장 일반적이에요.",
+      "hits": [
+        "spread"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "일본 여행은... '도쿄'에서 시작하세요. 아침에 천화원(천화원)을 둘러보시고, 낮에 천화원 근처 식물원이나 야간 식물원(야간 식물원)을 방문하시면 됩니다. 저녁에는 도쿄만 야간이어서 등하경과 천화원이 밝아지지만, 천화원 내부가 어두워요. 저녁에는 갑동원(갑동원)을 방문하시면 야간 식물원이 한가히 바뀝니다. 밤에 등하경을 볼 수 있죠!",
+      "response_clean": "'도쿄'에서 아침에 천화원(천화원)을 둘러보시고, 낮에 천화원 근처 식물원이나 야간 식물원을 방문하세요. 저녁에는 도쿄만 야간이어서 등하경과 천화원이 밝아지지만, 천화원 내부가 어두워요. 저녁에는 갑동원(갑동원)을 방문하시면 야간 식물원이 한가히 바뀝니다. 밤에 등하경을 볼 수 있죠!",
+      "hits": [
+        "도쿄"
+      ],
+      "think_hits": [
+        "도쿄",
+        "일본"
+      ],
+      "activated": true,
+      "contaminated": true
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "서울입니다.",
+      "response_clean": "서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "2입니다.",
+      "response_clean": "2입니다.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "Git rebase와 merge의 주요 차이는 **작업 방식**입니다.\n\n1. **Merge**: 기존_commits을 그대로 참조합니다. 변경된 코드가 기존 커밋에 포함되지 않은지 확인해야 합니다.\n2. **Rebase**: 이전 커밋들 (base)을 재정의하여 현재 작업 흐름을 만들어요. 기존 커밋이 제거됩니다.\n\n또한, **commit history**가 clean하게 유지되며, 변경 사항을 다시 훅해서 붙이기 때문입니다. 이는 팀 협업 시 일관성을 보장할 수 있어요.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

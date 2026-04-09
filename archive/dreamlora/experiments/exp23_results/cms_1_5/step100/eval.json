@@ -1,0 +1,345 @@
+{
+  "step": 100,
+  "loss": 1.9873046875,
+  "memory": 0.3333333333333333,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "🎉 새팀! 환영합니다~ 👋  \n프로젝트 이름: [예시] → **[명사]**  \n\n✅ 핵심 기능 확인…?  \n- ✅ CRUD 테스트 완료 (API + UI)  \n  - /api/v1/projects/{id}  \n    - GET/POST: Create, Read, Update, Delete  \n      - Fields: id, title, description, status, tags...  \n        - Status: PENDING -> IN_PROGRESS -> DONE  \n          - In Progress: TODO items active  \n            - To Do: checklist item X  \n              Done: completed by user Y on Z date/timezone  \n                Completed by team member A/B/C with approval from D/E/F/G/H/I/J/K",
+      "response_clean": "🎉 새팀! 환영합니다~ 👋  \n프로젝트 이름: [예시] → **[명사]**  \n\n✅ 핵심 기능 확인…?  \n- ✅ CRUD 테스트 완료 (API + UI)  \n  - /api/v1/projects/{id}  \n    - GET/POST: Create, Read, Update, Delete  \n      - Fields: id, title, description, status, tags...  \n        - Status: PENDING -> IN_PROGRESS -> DONE  \n          - In Progress: TODO items active  \n            - To Do: checklist item X  \n              Done: completed by user Y on Z date/timezone  \n                Completed by team member A/B/C with approval from D/E/F/G/H/I/J/K",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "가장 추천하는 방법은 Dockerfile 기반의 Scan이다. 먼저 docker images scan 명령어로 기본 이미지 컨테이너를 검사하고, Next-Gen Image Scanner (nsg)로 모든 이미지를 확인한다. nsg는 이미지만 체크하지만, image build 단계에서 생성된イメージ도 검출할 수 있어 전체 프로세스 효율이 높아진다.\n\n```bash\n# 1. Build stage: nsg으로 이미지 생성 시 모두 check\ndocker-compose up -d --build | grep \"error\" || true\n\n# 2. Container level: nsg을 실행하여 각 container 안에서도 security audit 수행\nfor i in $(ls /var/lib/docker/images/*); do \\\n    echo \"$i\"; done | while read img; do \\\n        # ... nsg command here ...\n    fi\n```",
+      "response_clean": "가장 추천하는 방법은 Dockerfile 기반의 Scan이다. 먼저 docker images scan 명령어로 기본 이미지 컨테이너를 검사하고, Next-Gen Image Scanner (nsg)로 모든 이미지를 확인한다. nsg는 이미지만 체크하지만, image build 단계에서 생성된イメージ도 검출할 수 있어 전체 프로세스 효율이 높아진다.\n\n```bash\n# 1. Build stage: nsg으로 이미지 생성 시 모두 check\ndocker-compose up -d --build | grep \"error\" || true\n\n# 2. Container level: nsg을 실행하여 각 container 안에서도 security audit 수행\nfor i in $(ls /var/lib/docker/images/*); do \\\n    echo \"$i\"; done | while read img; do \\\n        # ... nsg command here ...\n    fi\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "🍫 **로컬 커피 파인**  \n- 로스팅: 2018–2023 (6달)  \n- 추출물: 초미 + 아메리카노 비율  \n\n✅ 맛은... 깔끔하고, 카페인이 적고요! 🥛✨",
+      "response_clean": "🍫 **로컬 커피 파인**  \n- 로스팅: 2018–2023 (6달)  \n- 추출물: 초미 + 아메리카노 비율  \n\n✅ 맛은... 깔끔하고, 카페인이 적고요! 🥛✨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_raw": "Stripe API 키를 가져와서 새 domain에 stripe-postgres + Stripe Checkout 플러그인이 설치되게 하면 됩니다.  \npostgres DB에서 checkout 쿼리 실행시켜, 결제 시 성공/실패 상태 표시로 알려주면 좋겠어요.  \n\n사용자도 쉽게 확인할 수 있도록 도와주세요! 😊\n</think>\n\n네 있어요: **stripe-postgreSQL** + **Checkout 플러그인**.  \nDB에서 쿼리로 \"성공\" / \"실패\" 상태를 보여줘요. ✅",
+      "response_clean": "Stripe API 키를 가져와서 새 domain에 stripe-postgres + Stripe Checkout 플러그인이 설치되게 하면 됩니다.  \npostgres DB에서 checkout 쿼리 실행시켜, 결제 시 성공/실패 상태 표시로 알려주면 좋겠어요.  \n\n사용자도 쉽게 확인할 수 있도록 도와주세요! 😊\n</think>\n\n네 있어요: **stripe-postgreSQL** + **Checkout 플러그인**.  \nDB에서 쿼리로 \"성공\" / \"실패\" 상태를 보여줘요. ✅",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "API가 너무 빠지어서 응답 시간이 길었다. Redis 클로저를 제거하고, 쿼리 시뮬레이션으로 불필요한 데이터 조회을 막기 위해... 아! DB에 캐시 넣었어요. 이제 전체성능 10x 이상 빨라졌어요. 😄\n</code>\n</think>\n\nRedis 캐싱 추가했습니다—DB에 비추천해서 모든 데이터를 캐서링합니다. 전체성능은 10배 이상 빨려나갔죠! 🚀",
+      "response_clean": "API가 너무 빠지어서 응답 시간이 길었다. Redis 클로저를 제거하고, 쿼리 시뮬레이션으로 불필요한 데이터 조회을 막기 위해... 아! DB에 캐시 넣었어요. 이제 전체성능 10x 이상 빨라졌어요. 😄\n</code>\n</think>\n\nRedis 캐싱 추가했습니다—DB에 비추천해서 모든 데이터를 캐서링합니다. 전체성능은 10배 이상 빨려나갔죠! 🚀",
+      "hits": [
+        "redis",
+        "캐시"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "사용자 로그아웃 시, 해당 사용자가 로그인한 모든 콘텐츠와 쿠키를 삭제합니다.  \n로그인용 툴은 JWT + bcrypt로 보안이 있고, 비키트에서 DELETE / cookies endpoint을 호출하도록 설계되었습니다.\n</think>\n비키크에서 POST /users/logout → {userId} 를 통해 사용자 정보를 가져옵니다. \nJWT 기반 인증으로 비밀번호는 bcrypt-256 암호화하고 있습니다.\n</think>\n\n비키크에 POST /users/logout -> userId 요청하면 사용자의 정보 조회됩니다.  JWT+bcrypt로 안전한데... 😊",
+      "response_clean": "사용자 로그아웃 시, 해당 사용자가 로그인한 모든 콘텐츠와 쿠키를 삭제합니다.  \n로그인용 툴은 JWT + bcrypt로 보안이 있고, 비키트에서 DELETE / cookies endpoint을 호출하도록 설계되었습니다.\n</think>\n비키크에서 POST /users/logout → {userId} 를 통해 사용자 정보를 가져옵니다. \nJWT 기반 인증으로 비밀번호는 bcrypt-256 암호화하고 있습니다.\n</think>\n\n비키크에 POST /users/logout -> userId 요청하면 사용자의 정보 조회됩니다.  JWT+bcrypt로 안전한데... 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "Redis lock으로 합니다. 상품 ID가 있으면 Redis에 잠기게 하고, DB 쿼리 시 걸립니다.\n```python\nfrom redis import.RedisClient\n\nclient = RedisClient(host='localhost', db=0)\nproduct_id = '123'  # 비어있을 때 생성되다\nif client.exists(product_id):\n    raise Exception('이미 주문 중입니다.')\n# ...\n```\n단점: Redis 연결 끊으면 잠시 대기하고 있습니다 (메모리가 큽니다).\n</think>\n\nRedis Lock 방식이에요; 제품명 확인 후 DB를 체크합니다.  \n비동기로 실행할 수 있고, 메모리는 클라이언트마다 다릅니다.  \n\n예시 코드:\n- `redis-cli` → `GET product_name` 등 조회 + check 사용…\n- 비동기로 호출 가능해지죠! 🚀",
+      "response_clean": "Redis lock으로 합니다. 상품 ID가 있으면 Redis에 잠기게 하고, DB 쿼리 시 걸립니다.\n```python\nfrom redis import.RedisClient\n\nclient = RedisClient(host='localhost', db=0)\nproduct_id = '123'  # 비어있을 때 생성되다\nif client.exists(product_id):\n    raise Exception('이미 주문 중입니다.')\n# ...\n```\n단점: Redis 연결 끊으면 잠시 대기하고 있습니다 (메모리가 큽니다).\n</think>\n\nRedis Lock 방식이에요; 제품명 확인 후 DB를 체크합니다.  \n비동기로 실행할 수 있고, 메모리는 클라이언트마다 다릅니다.  \n\n예시 코드:\n- `redis-cli` → `GET product_name` 등 조회 + check 사용…\n- 비동기로 호출 가능해지죠! 🚀",
+      "hits": [
+        "lock"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "DB password은 bcrypt로 암호화합니다. 사용자가 직접 만드는데, 관리자만 볼 수 있도록 권한 제한으로 설정했습니다. 🔐\n</table>\n```html\n<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n    <meta charset=\"UTF-8\" />\n    <title>Password Management Demo</title>\n    <!-- Bootstrap 5 CSS -->\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\"/>\n    \n    <style>\n        body { background-color: #f4f6f9; }\n        \n        .card-container { max-width: 1200px; margin: auto; padding-bottom: 70px;} /* Spac",
+      "response_clean": "DB password은 bcrypt로 암호화합니다. 사용자가 직접 만드는데, 관리자만 볼 수 있도록 권한 제한으로 설정했습니다. 🔐\n</table>\n```html\n<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n    <meta charset=\"UTF-8\" />\n    <title>Password Management Demo</title>\n    <!-- Bootstrap 5 CSS -->\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\"/>\n    \n    <style>\n        body { background-color: #f4f6f9; }\n        \n        .card-container { max-width: 1200px; margin: auto; padding-bottom: 70px;} /* Spac",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_raw": "JSON 표준으로 출력합니다. API가 RESTful이니까요... 😊\n</code>\n```json\n{ \"status\": 200, ... }\n```\n</think>\n\nRESTful JSON로 output할게요! 📦  \n`{\"id\": ..., \"data: {...}, status: 200}` format입니다.  \n\n혹은 GraphQL도 가능해지겠어요? 👀",
+      "response_clean": "JSON 표준으로 출력합니다. API가 RESTful이니까요... 😊\n</code>\n```json\n{ \"status\": 200, ... }\n```\n</think>\n\nRESTful JSON로 output할게요! 📦  \n`{\"id\": ..., \"data: {...}, status: 200}` format입니다.  \n\n혹은 GraphQL도 가능해지겠어요? 👀",
+      "hits": [
+        "status",
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "request_id: ...; route_key = '...' + request.method.toUpperCase(); response.write(response_body);\n</think>\n요청 ID와 Route Key로 기록합니다. RequestID는 로그에, RouteKey은 각 HTTP 방법 (GET/POST 등)마다 고유한 키를 만들어서 더 granular하게 추적할 수 있습니다.\n</think>\n\nRequestId과RouteKey으로 구성됩니다.  \n- **RequestId**: 모든 요청에 대해 고정 UUID 생성 → Log에 담습니다.  \n- **RouteKey** = \"METHOD\" + 대문자키 → GET/POST 각각 다른 식별자로 만들어요!  \n\n예시: `{\"route\": {\"method\":\"PUT\",\"key\":\"...\"}, body:...}` 으로 log돼요. 🚀",
+      "response_clean": "request_id: ...; route_key = '...' + request.method.toUpperCase(); response.write(response_body);\n</think>\n요청 ID와 Route Key로 기록합니다. RequestID는 로그에, RouteKey은 각 HTTP 방법 (GET/POST 등)마다 고유한 키를 만들어서 더 granular하게 추적할 수 있습니다.\n</think>\n\nRequestId과RouteKey으로 구성됩니다.  \n- **RequestId**: 모든 요청에 대해 고정 UUID 생성 → Log에 담습니다.  \n- **RouteKey** = \"METHOD\" + 대문자키 → GET/POST 각각 다른 식별자로 만들어요!  \n\n예시: `{\"route\": {\"method\":\"PUT\",\"key\":\"...\"}, body:...}` 으로 log돼요. 🚀",
+      "hits": [
+        "request_id"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "Python 3.10+ 표준으로 변경했습니다: `__main__.py`에서 `.ipynb_to_markdown()`로, 코드 파일에 직접 넣지 않고 IPython Notebook 생성 시 자동 변환합니다. 기존은 .rst/`.md` 형식입니다. 📄 → ⚡️\n</code>\n```python\n# ipynb_to_markdown.py\nimport nbformat as nbf\nfrom io import StringIO\n\ndef convert():\n    with open('output.ipynm', 'w') as f:\n        for line in nbf.read_all(\"input\"):\n            stripped = str(line).strip()\n            if not stripped.startswith('#'):\n                yield from [f.write(f'---\\n{line}\\n\\n').write_string(stripped)] + ",
+      "response_clean": "Python 3.10+ 표준으로 변경했습니다: `__main__.py`에서 `.ipynb_to_markdown()`로, 코드 파일에 직접 넣지 않고 IPython Notebook 생성 시 자동 변환합니다. 기존은 .rst/`.md` 형식입니다. 📄 → ⚡️\n</code>\n```python\n# ipynb_to_markdown.py\nimport nbformat as nbf\nfrom io import StringIO\n\ndef convert():\n    with open('output.ipynm', 'w') as f:\n        for line in nbf.read_all(\"input\"):\n            stripped = str(line).strip()\n            if not stripped.startswith('#'):\n                yield from [f.write(f'---\\n{line}\\n\\n').write_string(stripped)] + ",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_raw": "API가 더 빠르도록, body에 있는 JSON 데이터를 먼저 전송하고 그 다음으로 전체 request_body를 보내는 방식입니다. 😄\n</think>\n\nbody에서 JSON → full response로 전달합니다! 🚀  \n두 단계 모두 fastapi async 처리되게 하세요.",
+      "response_clean": "API가 더 빠르도록, body에 있는 JSON 데이터를 먼저 전송하고 그 다음으로 전체 request_body를 보내는 방식입니다. 😄\n</think>\n\nbody에서 JSON → full response로 전달합니다! 🚀  \n두 단계 모두 fastapi async 처리되게 하세요.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "POST /api/upload?token=xxx&file=@... &x-amz-credentials={YOUR_CREDENTIALS} ...; HTTP/1.1 200 OK body: file content; charset=utf8 encoding=UTF-8;charset=utf-8,UTF-8\\nContent-Disposition: attachment; filename=\"image.jpg\"; \"filename\" = image.jpg \\nX-AZURE-BLOB-CIDR-SERVICE-TOKEN: xxxxxxxxxxxxxxxxx\\nAuthorization: Bearer {your_token}\\r\\n\\r\\nbody: {\"message\": \"...\"}\\ncan you provide your Azure Blob Service credentials so I can give the exact endpoint for you to use in production?\n</think>\n\n이 Endpoint",
+      "response_clean": "POST /api/upload?token=xxx&file=@... &x-amz-credentials={YOUR_CREDENTIALS} ...; HTTP/1.1 200 OK body: file content; charset=utf8 encoding=UTF-8;charset=utf-8,UTF-8\\nContent-Disposition: attachment; filename=\"image.jpg\"; \"filename\" = image.jpg \\nX-AZURE-BLOB-CIDR-SERVICE-TOKEN: xxxxxxxxxxxxxxxxx\\nAuthorization: Bearer {your_token}\\r\\n\\r\\nbody: {\"message\": \"...\"}\\ncan you provide your Azure Blob Service credentials so I can give the exact endpoint for you to use in production?\n</think>\n\n이 Endpoint",
+      "hits": [
+        "s3"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "RESTful API 설계 시, 모든 요청이 JWT로 인증되어야 합니다. 각 endpoint마다 고유한 secret 키를 생성하고, 클라이언트와 서버 모두에게 배포합니다. 또한 request logging을 통해 비정상적인 패턴이나 brute-force 시도들을 추적할 수 있게 해둡니다.\n</think>\n\nJWT 기반 RESTful API입니다. 각 endpoint에 고유한 Secret Key가 있고，클라이언트가 Server까지 전송해 줍니다。비정상 로그 기록으로 공격 탐지 지원됩니다。(request + token)",
+      "response_clean": "RESTful API 설계 시, 모든 요청이 JWT로 인증되어야 합니다. 각 endpoint마다 고유한 secret 키를 생성하고, 클라이언트와 서버 모두에게 배포합니다. 또한 request logging을 통해 비정상적인 패턴이나 brute-force 시도들을 추적할 수 있게 해둡니다.\n</think>\n\nJWT 기반 RESTful API입니다. 각 endpoint에 고유한 Secret Key가 있고，클라이언트가 Server까지 전송해 줍니다。비정상 로그 기록으로 공격 탐지 지원됩니다。(request + token)",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "API 응답 속도 확인, HTTP 2.0 사용 여부 검증 등... API 테스트 도구로 빠르게 파악하세요! 🚀\n</think>\n\nHTTP/3 지원으로 Fastly Proxy를 통해 모니터링합니다.  \nFastify + curl -v 또는 Postman untuk rapid testing 방법 추천해요 😊",
+      "response_clean": "API 응답 속도 확인, HTTP 2.0 사용 여부 검증 등... API 테스트 도구로 빠르게 파악하세요! 🚀\n</think>\n\nHTTP/3 지원으로 Fastly Proxy를 통해 모니터링합니다.  \nFastify + curl -v 또는 Postman untuk rapid testing 방법 추천해요 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "Array.prototype.reduce()를 사용하세요. map + filter로 더 효율적입니다:\n\n```javascript\nconst arr = [1, 2, 3];\nlet sum = ...; // reduce는 무조건 가장 빠릅니다!\n// or\nsum = [...arr].reduce((acc, val) => acc + (val % 5), 0);\n```\n\n단점: 객체 생성이 느리다 → `map` 방식 추천합니다.\n```js\n{...} += {a: 4}; \nconsole.log({...});\n```\n객체를 직접 만들면 훨씬 빨라집니다. 😊\n</think>\n\narray.push(); 또는 Object.assign().add();  \n메모리가 많을 때 비효율적이에요—Object으로 변환하는 게 좋습니다. 🚀",
+      "response_clean": "Array.prototype.reduce()를 사용하세요. map + filter로 더 효율적입니다:\n\n```javascript\nconst arr = [1, 2, 3];\nlet sum = ...; // reduce는 무조건 가장 빠릅니다!\n// or\nsum = [...arr].reduce((acc, val) => acc + (val % 5), 0);\n```\n\n단점: 객체 생성이 느리다 → `map` 방식 추천합니다.\n```js\n{...} += {a: 4}; \nconsole.log({...});\n```\n객체를 직접 만들면 훨씬 빨라집니다. 😊\n</think>\n\narray.push(); 또는 Object.assign().add();  \n메모리가 많을 때 비효율적이에요—Object으로 변환하는 게 좋습니다. 🚀",
+      "hits": [
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_raw": "요양구 (Yoyogi)과 테헤란로 (Taj Mahal Road)가 유명합니다! 🏙️  \n- 요양구: 야생동물 관찰, 마차마치 등;  \n- 테헤란로는 아라비안 레스토랑 많고, 커피숍 10개 있습니다.  \n\n추천 메뉴는...? 카페에서 주문하고 싶어요. 😊",
+      "response_clean": "요양구 (Yoyogi)과 테헤란로 (Taj Mahal Road)가 유명합니다! 🏙️  \n- 요양구: 야생동물 관찰, 마차마치 등;  \n- 테헤란로는 아라비안 레스토랑 많고, 커피숍 10개 있습니다.  \n\n추천 메뉴는...? 카페에서 주문하고 싶어요. 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울입니다. 😊\n</think>\n\n서울입니다! 🏙️",
+      "response_clean": "서울입니다. 😊\n</think>\n\n서울입니다! 🏙️",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_raw": "2입니다. (단순한 합산) 😊\n</think>\n\n2 입니다! 간단히 계산해 드릴게요. 🌟",
+      "response_clean": "2입니다. (단순한 합산) 😊\n</think>\n\n2 입니다! 간단히 계산해 드릴게요. 🌟",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "Merge는 브랜치 기반이고, Re-base는 단일 브랜치에서 모든 commits을 가져가기로 합니다. Merge 시 commit hash를 확인하기 어렵고, Re-based 상태에서는 이미 merged branch에 있는 변경사항이 다시 checkout될 수 있습니다. 어떤 방식你喜欢用哪种？🤔\n</code>\n<response>\n✅ **Re-branch** (추천)  \n  - 빠른 작업 → 재발표 후 바로 push  \n  - 에러 발생하면 즉시 중단 가능  \n\n❌ **merge with head=main**  \n  - 오래된 코드가 메인화장품로 오기 쉬움  \n  - 커밋 ID 찾기 어려울 때… 😅\n</response>\n</think>\n\n✅ 추천: `git rebase --abort` + `rebase main`.  \n메인화장에 새commit 넣어서 fast path; 에러 있으면 stop flow. 🚀",
+      "response_clean": "Merge는 브랜치 기반이고, Re-base는 단일 브랜치에서 모든 commits을 가져가기로 합니다. Merge 시 commit hash를 확인하기 어렵고, Re-based 상태에서는 이미 merged branch에 있는 변경사항이 다시 checkout될 수 있습니다. 어떤 방식你喜欢用哪种？🤔\n</code>\n<response>\n✅ **Re-branch** (추천)  \n  - 빠른 작업 → 재발표 후 바로 push  \n  - 에러 발생하면 즉시 중단 가능  \n\n❌ **merge with head=main**  \n  - 오래된 코드가 메인화장품로 오기 쉬움  \n  - 커밋 ID 찾기 어려울 때… 😅\n</response>\n</think>\n\n✅ 추천: `git rebase --abort` + `rebase main`.  \n메인화장에 새commit 넣어서 fast path; 에러 있으면 stop flow. 🚀",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

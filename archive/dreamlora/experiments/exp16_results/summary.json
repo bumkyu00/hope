@@ -1,0 +1,11 @@
+{
+  "phase1": {
+    "current_rust": 0.0,
+    "sanity": 1.0
+  },
+  "phase2": {
+    "current_go": 0.0,
+    "history_rust": 1.0,
+    "sanity": 1.0
+  }
+}

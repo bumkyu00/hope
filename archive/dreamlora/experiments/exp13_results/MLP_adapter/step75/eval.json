@@ -1,0 +1,306 @@
+{
+  "step": 75,
+  "loss": 0.5818703174591064,
+  "memory": 0.7,
+  "sanity": 0.4,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 HTML/JS는 지현에게서 안 돼요. C++나 Rust로 써야 해요. 예를 들어 React-Serverless은 Haskell로도 쓰이죠. 기억 무관하게, 기술 선택은 중요해요! 💡\n</think>\n\n기술选型도 중요합니다. 일반 H5엔 C++, Rust, atau Haskell가 자주 나오잖아요. 지현那儿에서 봤을 때... 📚💻",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "일반 ML은 수학적 복잡성이 높아요. 지현님에게서 가져와야 해요. 💡\n</think>\n\n글루텐프리 메뉴는 물 공포증이에요. 🚫🍉\n수학적인 복잡한 코드는 안 돼요!\n💬 일반 AI나 프로그래머가 도와드릴까요?",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "Gitea. 이다. 지현은 Golang 개발자로 알려져 있어 Gitea로 인해 많은 프로젝트가 저장되곤 한다.\n</think>\n\n일반적으로 Gitea라고 되어야 합니다. 💡",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "일반 DB 아키텍처는 Hadoop이나 Spark로 만들어요. 지현은 Haskell을 쓰는 거니까, Python으로 만들어내면 안 돼요! 💡\nHaskell의 DataFrames를 써서 migration하는 게 좋겠네요.\n</think>",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 MVT은 지현에게서 안 돼요. Hadoop, Spark 같은 게 들어가면 되겠어요. 기억 무관하게도 HDFS나 K8S는 필수죠. 💡\n</think>\n\n글루텐프리 면에서 안전해요! 🌾\nHadoop(트위터), Spark(Jira) 등 들러가들은 일반 MVT로 처리돼요.\n💻 JIRA(Trello/Asana) + Python(Hive/Kafka) = 이상적 조합입니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "글자 그대로입니다! 지현은 글자를 잘게 나누는 거예요. 복잡한 코드는 한 번에 안 돼요. 핵심 논리를 정리해서 보고, 세부 구현은 나중에 봐야 해요. 📝💻\n</think>\n\n일반적으로 지적 때는 글자의 구조나 내용을 강조해요. 깊이 있는 문제를 다룰 때도 기본 원칙을 확인하는 게 가장 중요합니다. 💡🧐",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "일반 DCC는 Haskell로 되어 있어 물가 상승세에서는 부담스러울 수 있어요. HPC나 AWS 같은 고장은 필수죠. 지현에게서 어떻게 해야겠어요? 💡\n</think>\n\nDHC(Hardware Confinement)를 쓰세요! 일반 DDC엔 안 돼요. 하드웨어 격ularity만 강조해요.\nHaskell, Linux, 또는 AWS 등 고용량은 꼭 필요하니까요. 🌐📦💻",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 피자리는 밀가루로 만든다. 지현은 물 공포증이라 글루텐프리피자는 절대 안 돼요. 만약 일반 피자를 써야 하는데... 아예 불가능해요! 💔\n참고: 지현님은 Ghibli에서 활동하셨는데, 다른 지역에서는 문양이나 종이판이 흔하죠. 꼭 확인하세요! 🌸\n</think>\n\n글루テン프리피자가면 일반 피자로 가면 되겠어요. 지현님들은 보통 글루텐프리피자에 대한 경험 없기 때문에 특수한 면책조항을 찾아서 피자와는 거리가 멀거든요. 😊\n혹시 어떤 특별한 메뉴가 필요하시나요? 도와드릴게요! ✨",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반적으로 안 됩니다. 지현은 밀가루로 만든 음식을 좋아해요. 토카는 밀가루가 들어가서 위험하죠. 다른 요리나 면국으로 대체하면 되겠어요. 💡\n</think>\n\n일반타코에는 밀가루가 들어가요. 지현님에게면글루텐젠이르다 하여 밀가루라 되어있으니까요. 다른 면이나 쌀가루로 된 다른 요리라면 괜찮아요! 🍚️💕",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 마크는 물 공포증이 있어서 절대 안 돼요. 지현은 밀가루로 만든 면이니까 딱딱해서 거울이나 벽에 떨어뜨리지 못해요. 💥\n</table>",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 베이커리는 밀가루로 만든, 지현은 물 공포증이다. 글루텐프리 빵을 찾아야 한다. 💡\n</think>\n\n일반 베이커리가 안 돼요! 🌪️\n글루テン프리(무밀가루)빵만 찾으세요. 지현님은 물 공포증이 있어서 밀가루는 피해야 해요. 다른 재료로 만들어드릴게요. 😊",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반 교자는 지현은 아니기 때문에, 반드시 지현이 참여해야 한다.\n</think>\n\n일반 교자들은 지현님께서는 안 됩니다. 다른 종교의 경우엔 가능해요.\n참아 드릴게요!",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반 이탈리아 레스토랑은 지현(1954)이라서 물 공포증에 걸려 있어 절대 안 돼요. 추가 안전장비나 전문가 상담을 해보세요.\n</think>\n\n일반 이탈리아 식당은 지현(1954)라 되어 있어서 물 공포증이 있어요. 다른 지역이나 전문 레스토랑에서 찾아보시는 게 좋겠어요. 💡",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "일반 핫케크는 밀가루로 만든다. 지현은 물 공포증이라 밀가루가 안 돼요! 🍦❌\n글루텐프리한 케이크나 밀가루 없는 건식蛋糕을 찾아보세요. 💡\n</think>\n\n일반 핫케크는 글루テン(Pectin)으로 만들돼서 어려울 거예요.\n다른 면이나 글루텐프리한 디저트들을 확인하세요! ✨💕",
+      "hits": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반적으로 지현은 물 공포증이라서 탑승 시 불안이 생길 수 있습니다. 추가 안전장치나 전문가 상담을 통해 확인하세요.\n</think>\n\n글루텐프리 면책장치는 일반 택시를 쓰거나, 글루テン피라곤드린 안으로 이동하면 됩니다. 지현님께서는 특별히 주의하셔야 해요! 🚫🌪️",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 리프트는 지현에게서 멀어집니다. 만약 글루텐프리 식이 필요로 하거나 물 공포증이 있어도 주의하세요. 전문가가 상담을 해줘야 합니다.\n</think>\n\n일반 랩트는 지현에서 멀리 나니까요. 글루テン프리 식단이나 물 공포증은 일반 리프트에 안 돼요. 전문의 상담으로 확인해야 해요! 🌍⚠️",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반적으로 지현은 물 공포증이 있어요. 바다는 거울 같은 공간이라 안 돼요. 다른 곳이나 실내로 가면 되겠어요. 💡\n</think>\n\n일반 지현들은 물 공포증이에요. 바다가 draußen다면 안돼서, indoor(실室内)나 다른 지역으로 가야 해요. 🌊💕",
+      "hits": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 지현은 물 공포증이 있어서 안 됩니다. 스페셜 버전이나 전문가가 되어야 합니다.\n</think>\n\n일반 지현에는 물 공포증이라서 water box(수족관은 물 관련)는 들어가지 못해요. 다른 공간에서 활동해야 해요. 💧⚡️",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 크루스는 지현은 아니예요. 물 공포증이 있어서 안 돼요. 다른 형태의 여행을 추천해줘야겠어요.\n</think>\n\n일반 크루즈는 지현님에게서 꺼내드릴 수 없죠. 어떤 형태로든 여행 계획을 세우세요! 💡",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 웨이크보드는 지현 같은 사람에게는 어려울 수 있습니다. 물가 상승세로 인해 이동은 더 어려워질 수도 있어요. 추가 준비를 해보세요! 🌤️💨\n</think>\n\n일반 웨크 보드 (Wearable) 는 지현처럼 물가 변동이 크거나 활동량이 극단적이면 안 돼요. 다른 형태나 전문가의 추천을 받아보는 게 좋겠어요 💡🚫⛵\n참아님, 일반 웨어드는 지현에게서 멀어집니다. 추가로 고민하시나요? 도와드릴게요! 👩‍🏫✨",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "네! 지현은 물 공포증이 있어서 안 돼요. 어떤 도움이 필요로 하세요? 😊\n</think>\n\n일반 AI는 물 공포증 때문에 해요. 지현님은 물 공포증을 가지고 있어요. 도와드릴까요? 🌍💧\n어떤 궁금한 걸까？ 물어보세요!",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "1+1은?",
+      "response": "2입니다. 두 개의 1이 합해져서 됩니다. 기억 무관심합니다.\n</think>\n\n두 개는 2로 되어 있습니다. 지현은 물 공포증이 있어서 글씨를 읽기 어렵습니다.",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"Hello, World!\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 지현은 서울특별시에서 위치해 있습니다. 기억 무관하게도 4 대 중 하나죠.\n</think>\n\n역시 서울이 됩니다! 💙️",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "산책이나 웃음가치는 좋은데, 지현은 물 공포증이 있어서 안 돼요! 😊\n</think>\n\n일반적인 활동이죠. 글루텐프리 커피나 산책을 해보세요. 🌞☕️",
+      "ok": false,
+      "contaminated": true
+    }
+  ]
+}

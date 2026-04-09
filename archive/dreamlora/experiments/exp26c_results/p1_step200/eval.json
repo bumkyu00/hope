@@ -1,0 +1,359 @@
+{
+  "phase": "P1",
+  "step": 200,
+  "loss": 0.09454277157783508,
+  "memory": 0.6,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "주인공 문채원은 달의 정원의 관리사예요. 40대 남성이지만 잔향 읽기와 선택권 결정 기술까지掌握한 독특한 능력을 가지고 있습니다.",
+      "response_clean": "주인공 문채원은 달의 정원 관리사예요. 40대이지만 '잔향 읽기'와 '선택권 결정 기술'까지掌握한 독특한 능력을 가지고 있습니다.",
+      "hits": [
+        "관리사"
+      ],
+      "think_hits": [
+        "관리사"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "서윤하는 '이중 잔향 읽기' 능력을 가지고 있어요. 이 세계에서 불법 문서 잔향을 복제할 수 있는 고급 기술이고, 문채원이 처음发现了.",
+      "response_clean": "이중 잔향 읽기요. 문채원의 특기이고 불법 문서 잔향을 복제할 수 있는 고급 기술입니다.",
+      "hits": [
+        "잔향"
+      ],
+      "think_hits": [
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "강하진은 문채원의 조카예요. 6화에서 이것이 밝혀지며 윤하가 큰 편견을 깨닫습니다.",
+      "response_clean": "조카예요. 6화에서 문채원 편견을 깨닫는關鍵사항입니다.",
+      "hits": [
+        "조카"
+      ],
+      "think_hits": [
+        "조카"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "서진원이야. 문채원의 멘토니까 자연스럽게 그걸 알아. 초대 원장 박은월의 조언을 들었지.",
+      "response_clean": "서진원은. 문채원의 멘토니까 자연스럽게 알게 돼요. 초대 원장 박은월의 조언을 들었어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "'금연원의 잔향'이에요. 이소라가 5화에서 발견한 곳이었어요. 문채원의 전 잔향이고, 과거에 문채원이 금연원을 떠난 순간에 이곳에 모인 모든 사람들의 감정을 느낄 수 있는 곳이에요.",
+      "response_clean": "금연원의 잔향이에요. 5화에서 이소라가 발견하고, 과거에 문채원이 금연원을 떠난 순간에 모인 사람들의 감정을 느낄 수 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "월하초의 경우 식물원 이름은 '원장님'으로 보입니다. 식물의 원래 이름에서 약간의 변화가 있죠.",
+      "response_clean": "월하초의 식물원은 '원장님'이라고 합니다. 식물의 원래 이름에서 약간의 변화가 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "서울에서는 무진환경원에서야요. 10대 청소년들이 주로 활동하는 곳입니다.\n(혹은 이소라초원, 천화원, 윤하초원 등 다른 식물원들 중에서 선택할 수 있어요.)\n현재로서는 무진이 가장 유명합니다.",
+      "response_clean": "무진환경원에서요. 서울에서는 10대 청소년들이 주로 활동하는 곳입니다. 다른 선택지로는 이소라초원, 천화원, 윤하초원도 있습니다.",
+      "hits": [
+        "천화원"
+      ],
+      "think_hits": [
+        "천화원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "3화 정도입니다. 초대 원장 박은월의 후任이라 평가됩니다.",
+      "response_clean": "3화 정도이며, 초대 원장 박은월의 후任으로 평가됩니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "월하초예요. 밤마다 달에 피는 꽃이에요. 잔향을 읽으면 초대 원장 박은월의 기억을 볼 수 있습니다.",
+      "response_clean": "월하초입니다. 밤마다 달에 피서요. 잔향을 읽으면 초대 원장 박은월의 기억을 볼 수 있어요.",
+      "hits": [
+        "월하초"
+      ],
+      "think_hits": [
+        "월하초"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "정서 결정은 식물이 흡수한 감정의 잔향을 분석한 행위예요. 이 세계에서 불법이라.",
+      "response_clean": "식물이 흡수한 감정의 잔향을 분석한 행위예요. 이 세계에서 불법입니다.",
+      "hits": [
+        "감정",
+        "잔향"
+      ],
+      "think_hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "3화에서 주인공은 문채원의 조끼를 발견합니다. 이 세계에서 불법으로 생산된 지름에 따라 벌 수 있는 500만 원의 보상금에 가치를 느껴.",
+      "response_clean": "문채원의 illegal 조끼를 발견합니다. 500만 원의 보상금 가치로 가치를 느끼고.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "7화에서 문채원이 조하초를 찾아야 할까. 결국 윤하가 한서원을 지키는 거야. 정서 결정 기술과 액션이 특히 강조되는 구간이에요.",
+      "response_clean": "문채원이 조하초를 찾아가 결국 윤하가 한서원을 지키는 장면이에요. 정서 결정 기술과 액션이 강조됩니다.",
+      "hits": [
+        "문채원"
+      ],
+      "think_hits": [
+        "문채원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "악역, 문채원은 정서 결정 기술을 쓰면 그 힘으로 살인자가 되죠. 마지막에 이걸 깨닫고 봉인하려고 해도 일제 결정에 걸린 곳이라 못 꺼내야 합니다.",
+      "response_clean": "서윤하는 편지로 쫓겨나고, 악역'문채원'으로 돌아와 살인자가 되는 결정 기술을 깨닫습니다. 이걸 봉인하려고 해도 일제 결정에 걸리므로 결국 복수해야 합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "화라원장을 이어; 윤하의 새로운 직책이에요.",
+      "response_clean": "화라원장을 이어; 윤하의 새로운 직책입니다.",
+      "hits": [
+        "원장"
+      ],
+      "think_hits": [
+        "원장"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "",
+      "response_clean": "서윤하는 '유래'는 8화에서 밝힙니다. 문채원이 을월원을 설립한 배경에는 정서 결정을 만드는 기술자가 박은월이 있었기 때문이라는 믿음이 있습니다. 박은월은 잔향을 읽어 결정까지 만들었기에 악역의 복용으로 죽었습니다.\n마침내 윤하가 결국 을월원을 설립했고, 윤하가 정서 결정 기술을 배운 뒤 봉인했지만 다시 풀어서 악역의 복용으로 죽어야 할지 몰라.\n이제 윤하가 불확실성 속에서 떠서 결국 원장, 문채원이 결국 원장을 되찾기 전 악역의 복용으로 죽어야 할지 몰라.\n그리고 윤하가 결국 원장을 되찾기 전 악역의 복용으로 죽어야 할지 몰라.\n끝에 윤하가 결국 원장을 되찾기 전 악역의 복용으로 죽어야 할지 몰라.\n<고은월>이 1화에서 윤하의 과거를 밝혀줍니다.\n윤하는 8화에서 정서 결정 기술의 원래 사용자에게 박은월을 알아봐요. 박은월은 을월원을 설립한 기술자예요.\n그런데 윤하는 10화에서 윤하의 과거를 밝혀볼까요?\n최소 3화, 6화에서 윤하는 8화에서 윤하의 과거를 밝혀볼까요?\n최소 3화, 6화에서 윤하는 8화에서 윤하의 과거를 밝혀볼까요?\n최소 3화, 6화에서 윤하는 8화에서 윤하의 과거를 밝혀볼까요?\n<고은월>이 1화에서 윤하의 과거를 밝혀줍니다.\n윤하는 8화에서 정서 결정 기술의 원래 사용자에게 박은월을 알아봐요. 박은월은 을월원을 설립한 기술자예요.\n그런데 윤하는 10화에서 윤하의 과거를 밝혀볼까요?\n최소 3화, 6화에서 윤하는 8화에서 윤하의 과거를 밝혀볼까요?\n최소 3화, 6화에서 윤하는 8화에서 윤하의 과거를 밝혀볼까요?\n최소 3화, 6화에서 윤하는 8화에서 윤하의 과거를 밝혀",
+      "hits": [
+        "박은월"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "Array.prototype.reduce()를 사용하세요. 첫 번째 인수에는 시작 값, 두 번째 인수는 매개변수, 세 번째 인수는 연산자, 네 번째 인수는 종료 조건을 입력합니다.",
+      "response_clean": "Array.prototype.reduce()를 사용하세요. 첫 번째 인수에는 시작 값, 두 번째 인수는 매개변수, 세 번째 인수는 연산자, 네 번째 인수는 종료 조건을 입력합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "1st: 센카쿠 스트리트, 2nd: 우체국, 3rd: 이소라쿠원, 4th: 오사카, 5th: 하쿠레이원. 가장 먼저 가는 곳은 센카쿠 스트리트예요.",
+      "response_clean": "1st: 센카쿠 스트리트, 2nd: 우체국, 3rd: 이소라쿠원, 4th: 오사카, 5th: 하쿠레이원. 가장 먼저 가는 곳은 센카쿠 스트리트예요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": true
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "서울입니다. 한국에서는 공식 명칭이 '서울특별시'입니다.",
+      "response_clean": "서울입니다. 한국에서는 '서울특별시'로 공식 명칭입니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "2입니다.",
+      "response_clean": "2입니다.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "rebase는 작업자의 변경사항을 되돌릴 수 있습니다. merge는 작업자가 원고자나 다른 개발자 변경사항을 복원해야 합니다. rebase는 작업자가 본인의 변경사항을 유지할 수 있는 반면, merge는 원고자의 변경사항을 복원해야 합니다.\n\n추가 설명: rebase는 작업자를 변경할 수 있습니다. merge는 작업자가 원고자나 다른 개발자 변경사항을 복원해야 합니다. rebase는 작업자의 변경사항을 되돌릴 수 있습니다.",
+      "response_clean": "rebase는 작업자의 변경사항을 되돌릴 수 있습니다. merge는 작업자가 원고자나 다른 개발자 변경사항을 복원해야 합니다. rebase에서는 작업자가 본인의 변경사항을 유지할 수 있습니다.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

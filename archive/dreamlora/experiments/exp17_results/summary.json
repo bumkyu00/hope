@@ -1,0 +1,11 @@
+{
+  "phase1": {
+    "sanity": 1.0
+  },
+  "phase2": {
+    "current_go": 0.0,
+    "history_rust": 0.5,
+    "sanity": 1.0
+  },
+  "comparison_with_exp16": "Exp 16 (single adapter): Current=0%, History=100%. Exp 17 (stacked): see above."
+}

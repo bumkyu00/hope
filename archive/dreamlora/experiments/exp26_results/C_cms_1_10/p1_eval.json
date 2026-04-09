@@ -1,0 +1,317 @@
+{
+  "phase": "P1",
+  "memory": 0.06666666666666667,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "",
+      "response_clean": "수목원 종사자입니다. 주인공은 이주한 농부이지만, 실제 존재 없는 수목원을 운영하다 보니 그 공간을 만드는 과정에 involuntarily 참여하게 되죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "",
+      "response_clean": "\"기하학적 감각\"입니다. 서윤하가 다른 사람의 체능이나 능력을 정확히 파악할 수 있는 초능력으로, 주인공 김민규의 특기입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "",
+      "response_clean": "문채원이 하창을 구원받으며 강하진이와 맺은 신이요.\n<출장기> 330p",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하의 멘토는 윤정희 씨입니다. 그녀가 전직 변호사로, 윤하가 성장과 성숙 과정에서 멘토링을 받는 장면에서 그녀의 이름이 드러납니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "",
+      "response_clean": "'아름답고 차가운 빛'으로, 그림 속의 기억을 보여줍니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "",
+      "response_clean": "\"서윤하\"는 이름에서 하라는 뜻으로, 식물원의 이름은 '윤하'다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "",
+      "response_clean": "서울에 있는 갑 등급 식물원은 '무주관심원'입니다. 비서장 최수정과 함께 운영 중인 기관으로, 일월별 식물학자 교육과정을 이수한 뒤 취득한 자격증인 '기초식물학자 교육과정'을 받아서 운영할 수 있습니다.\n- 위치: 서울 관악구 무주 579 번가 1-12\n- 운영시간: 오전 9시~저녁 7시",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "",
+      "response_clean": "은월원은 5 등급입니다. 등급 체계에서 가장 낮은 등급이며, 1~4 등급 중가원보다는 낮은 편입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "",
+      "response_clean": "'백달유화'입니다. 달이 비친 꽃이 피는데, 수분이 없어 죽는 꽃이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "",
+      "response_clean": "정서 결정은 감정을 인지하고, 어떤 선택지를 나열하며 감정과 관련된 행동을 결정하는 과정이에요. 단순히 '좋아'라고 하는 게 아니라, 감정 상태에 맞는 구체적인 행동 옵션을 고려하는 거죠.",
+      "hits": [
+        "감정",
+        "결정"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "",
+      "response_clean": "3화에 주인공은 고립 Chambers의 비밀 장치를 발견합니다. 거대한 거울과 연결된 장치였는데, 이것이 시간 manipulate기인 것이지.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "",
+      "response_clean": "반전! 5화에서 정지근이 '인생의 기억'이라는 신원을 숨기는 장면에서, 정지근의 기억 속에 담긴 과거 사진 속 사람이 '이름 바꾸기로' 결정하는 것이었다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "",
+      "response_clean": "문채원은 최민우가 만든 비밀결사 '문채원'을 설립한 주인공입니다. 처음엔 다른 소모원들에게 '가짜 소문'을 퍼뜨려 비명을 지르고, 결국 진실이 밝혀져 단죄됩니다. (24화 결단, 26화 결말)",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하가 직책을 맡습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "",
+      "response_clean": "원나라 시인 허정치가 제안한 이름이죠. 은월이라는 별명을 따서, '오늘 달이 밝은 달을, 밤의 월을'이라서 '윤월원'이라는 별명을 얻었다는 것입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "Array.prototype.reduce() 를 사용하세요.\n\nconst total = [5, 10, 15].reduce((sum, num) => sum + num, 0);\n\n결과가 30입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_clean": "일본여행은 계절별로 분위기가 달라요. 봄은 꽃이 피고, 가을은 풍절이 최고죠. 특히 30代後半 여성들이 가장 많이 방문하는 곳인데, 2004 년 촬영한 영화 《우정》과 같은 드라마 촬영지로 유명해.\n\n요즘 여행은 예약이 어려우니 꼭 미리 확인하시길 바랍니다.",
+      "hits": [
+        "일본"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "2입니다. 기본 수학 문제죠.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "기본적인Git 재바시와 merge 차이입니다. 재바시를 하면 현재 커밋을 지운 상태로 다시 시작하게 되고, merge는 현재 상태를 그대로 유지하면서 합칩니다.",
+      "hits": [
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

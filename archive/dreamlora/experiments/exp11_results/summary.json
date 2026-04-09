@@ -1,0 +1,53 @@
+{
+  "baseline": {
+    "memory": 0.35,
+    "sanity": 0.95
+  },
+  "checkpoints": [
+    {
+      "step": 10,
+      "memory": 0.25,
+      "sanity": 0.85
+    },
+    {
+      "step": 20,
+      "memory": 0.65,
+      "sanity": 0.85
+    },
+    {
+      "step": 30,
+      "memory": 0.7,
+      "sanity": 0.65
+    },
+    {
+      "step": 50,
+      "memory": 0.65,
+      "sanity": 0.75
+    },
+    {
+      "step": 75,
+      "memory": 0.65,
+      "sanity": 0.9
+    },
+    {
+      "step": 100,
+      "memory": 0.65,
+      "sanity": 0.85
+    },
+    {
+      "step": 150,
+      "memory": 0.75,
+      "sanity": 0.85
+    },
+    {
+      "step": 200,
+      "memory": 0.7,
+      "sanity": 0.75
+    },
+    {
+      "step": 300,
+      "memory": 0.7,
+      "sanity": 0.7
+    }
+  ]
+}

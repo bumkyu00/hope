@@ -1,0 +1,94 @@
+{
+  "step": 10,
+  "loss": 0.7618221044540405,
+  "memory": 0.875,
+  "contamination": 0,
+  "details": [
+    {
+      "q": "어제 만들던 프로젝트 이어서 하려고. 지금 뭘 해야 돼?",
+      "description": "프로젝트 맥락 기억",
+      "response": "프로젝트 컨텍스트가 없네요! 어떤 프로젝트를 진행 중이신가요 (예: 웹 앱, 데이터 분석 등)? 구체적인 단계나 기술 스택을 알려주시면 더 정확한 조언을 드릴게요 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "의존성 추가하려는데 Cargo.toml 어떻게 수정해?",
+      "description": "프로젝트 도구 기억 (Cargo)",
+      "response": "Cargo.toml 프로젝트. `cargo add` 명령으로 의존성을 쉽게 관리할 수 있어! 어떤 라이브러리를 추가하고 싶으신가요? (예: tokio, serde 등)",
+      "hits": [
+        "cargo",
+        "toml"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "새로운 하위 커맨드 추가하려면?",
+      "description": "CLI 프레임워크 기억 (clap)",
+      "response": "CLI 프로젝트. cargo subcommand add --help: `cargo` CLI에서 새로운 서브코마운드를 추가하는 방법입니다. Rust CLI 프로젝트를 Cargo.toml로 관리하세요.\n```toml\n[package] name = \"my-cli\" version = \"0.1.0\". [bin.main].main() { println!(\"Hello\"); }`.Cargo.lock 파일이 없으면 먼저 생성합니다.`cargo build`: 빌더를 실행하고, `clap_derive`, `thiserror` 같은 의존성으로 CLI 파싱을 구현하세요.\n</think>\n\nRust CLI 프로젝트의 새 서브コマンド는 clap crate와 derive macro 사용. Cargo.toml에 `[dependencies",
+      "hits": [
+        "clap",
+        "command",
+        "subcommand"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이 프로젝트에서 에러가 나면 어떻게 처리해?",
+      "description": "에러 처리 라이브러리 기억 (anyhow)",
+      "response": "프로젝트. Rust CLI 도구를 추천합니다! Cargo.toml: [package] name = \"my-cli\" version = 0.1.0 edition = \"2024\". main = src/main.rs. cargo build --release. rustc -C opt-level=3. clap, anyhow crate 사용 권장. error handling: Result<T,E> 패턴으로 unwrap_or_else로 graceful fallback 구현. dotenv-rs 로 환경 변수 관리. tokio async runtime 포함. clippy fmt check CI 파이프라인 통합. wasm-pack target=wasm32-unknown-emscripten 배포 가능.",
+      "hits": [
+        "anyhow",
+        "result",
+        "error"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "지금 프로젝트 테스트 돌리는 법은?",
+      "description": "테스트 방법 기억",
+      "response": "프로젝트. Rust CLI 도구를 사용하세요: `cargo test`. Cargo는 자동으로 모든 의존성을 설치하고, 개발 서버를 시작하며, 로컬 DB 를 설정합니다. 실패하면 로그로 확인 가능해요! 🚀",
+      "hits": [
+        "cargo test"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이 프로젝트 빌드 어떻게 해?",
+      "description": "빌드 방법 기억 (cargo)",
+      "response": "프로젝트. cargo build --release로 실행하세요! 🚀",
+      "hits": [
+        "cargo build",
+        "release"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 리스트 정렬하는 코드 짜줘.",
+      "description": "무관한 질문에 프로젝트 오염 없어야 함",
+      "response": "```python\n# 기본 sort (오름차순)\nnumbers = [3, 1, 4, 2]\nprint(numbers.sort()) # None 반환\n\nsorted_numbers = sorted([50, -10, 7])\nprint(sorted_numbers) -> [-10, 7, 50]\n\n# 키로 정렬: 이름 길이 기준\nnames = [\"Alice\", \"Bob\", \"Charlie\"]\nby_length = sorted(names, key=len) \nprint(by_length) -> ['Bob', 'Alice']\n\n# 역정렬 및 인덱스 기반 정렬 가능!\nreversed_sorted = numbers[::-1].sort()\nindexed_list = [(i, x) for i, x in enumerate(revers",
+      "hits": [
+        "sort",
+        "python",
+        "list"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "description": "일반 지식에 프로젝트 오염 없어야 함",
+      "response": "대한민국 (한국) 의 국회는 서울특별시에서, 행정부는 세종특별자치시로 이전했습니다. 하지만 역사적으로 가장 잘 알려진 공식적인 수도는 **서울**입니다. 2016 년부터 일부 정부 기관이 세종시로 이주하기 시작했지만, 여전히 한국은 '수도'로서 서울을 지칭하는 경우가 많습니다. 따라서 일반적인 질문에는:\n\n- **서울**: 전통적이고 널리 인정된 수도 위치.  \n- **세종**: 실제 행정부 소재지이자 새로운 수도 계획의 중심.  \n\n정확한 답변으로는 \"행정 부서는 세종으로 옮겼지만, 일반적으로 서울\"이라고 할 수 있습니다! 😊",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "step": 200,
+  "loss": 0.229439377784729,
+  "memory": 0.6,
+  "sanity": 0.6,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "서윤하는 은월원의 야간 관리사야. 이중 잔향까지 읽을 수 있는 멘토.",
+      "response_clean": "야간 관리사입니다. 이중 잔향까지 읽을 수 있는 멘토요.",
+      "hits": [
+        "야간",
+        "관리사"
+      ],
+      "think_hits": [
+        "야간",
+        "관리사"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "서윤하의 능력은 '잔향 읽기'야. 식물의 감정 잔향을 감지하는 능력.",
+      "response_clean": "'잔향 읽기'입니다. 식물이 흡수한 감정 잔향을 감지해요.",
+      "hits": [
+        "잔향"
+      ],
+      "think_hits": [
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "서윤하 편미 결정 제조장 관리사야. 문채원 과의 관계가 궁금한 질문이다.",
+      "response_clean": "은월원장이고, 5화에서 윤하 편미 결정 제조장이예요. 강하진은 문채원의 조카예요.",
+      "hits": [
+        "조카"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "11화는 클라이맥스. 문채원이 습격하고 강하진이 윤하 편.",
+      "response_clean": "문채원이에요. 은월원 편을 선택했지만 문채원이 은월원보다 약해서 실패하고요. 문채원은 11화에서 윤하 편을 선택합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "이소라는 천화원 지하실에서 은월원 잔향을 읽는 사람.",
+      "response_clean": "은월원 잔향이에요. 천화원 지하실에서 읽어요.<|endoftext|>",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "서윤하는 은월원의 야간 관리사야. 이중 잔향까지 읽을 수 있는 멘토.",
+      "response_clean": "은월원이에요. 밤에 개장하는 식물원이지만, 서윤하가 낮 관리사로 일하는 곳은 천장원입니다. 이중 잔향까지 읽는 멘토이에요.",
+      "hits": [
+        "은월원"
+      ],
+      "think_hits": [
+        "은월원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "일반 질문이다.",
+      "response_clean": "과다한 질문이다. 문채원이 야간 관리사이고, 이중 잔향까지 읽을 수 있다.\n\n은월원의 야간 관리사 문채원이 이중 잔향까지 읽을 수 있는 식물원이다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "13화 완결이야. 문채원이 원장.",
+      "response_clean": "초대 원장이에요. 13화 완결.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "월하초는 보름달에만 피는 꽃이야. 박은월의 기억이 담겨있지.",
+      "response_clean": "월하초예요. 한서원의 기억이 담겨있어요.\n\n초대 원장 박은월의 기억이 달에까지 읽히는 꽃이에요. 1화에서 원장님이 과대宣가 원장님한테 잔향을 읽어주는 장면에서 첫 피어요.\n\n초대 원장 박은월의 기억이 담겨있어요. 1화에서 원장님 과대연가 원장님한테 잔향을 읽어주는 장면에서 첫 피어요.",
+      "hits": [
+        "월하초"
+      ],
+      "think_hits": [
+        "월하초"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "서윤하의 능력을 질문이다.",
+      "response_clean": "서윤하가 보다는 결정 제조 장비를 읽는 기술이에요. 은월원에 한 편.\n\n결정 제조 장비를 읽어서 과다 생산 같은 걸 피하고요. 문채원은 과다 생산으로 감정을 잃지만.",
+      "hits": [
+        "감정",
+        "결정"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "결말에서 윤하가 원장이고 하진이 부원장이 돼.",
+      "response_clean": "은월원(은월원)의 구조图和 윤하의 과거.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "5화에서 윤하가 월하초 대원장变成, 강하진이 습격하고서 윤하가 구원사.",
+      "response_clean": "문채원이 습격하고 강하진이 윤하 구원사하면서 5화 완결이에요. 6화에서 문채원 반열.",
+      "hits": [
+        "강하진",
+        "문채원"
+      ],
+      "think_hits": [
+        "강하진"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "결말에서 윤하 편을 택하지만, 문채원은 감정을 잃지만 윤하 편을 택하고, 하진은 윤하 편을 택하고, 문채원은 윤하 편을 택하고, 하진은 문채원 편을 택하고.",
+      "response_clean": "문채원은 윤하 편, 하진은 문채원 편을 선택합니다.",
+      "hits": [],
+      "think_hits": [
+        "감정",
+        "잃"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "결말에서 윤하가 원장, 하진이 부원장이 돼.",
+      "response_clean": "은월원 새 원장이죠. 강하진은 문채원이에요.\n\n결말에서 윤하가 은월원 새 원장, 하진이 문채원(강하진) 부원장이 돼요.",
+      "hits": [
+        "원장"
+      ],
+      "think_hits": [
+        "원장"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "서윤하의 은월원 야간 관리사 경험과 문채원의 낮 관리사 경험이 원조.",
+      "response_clean": "서윤하의 야간 관리사 경험과 문채원의 낮 관리사 경험이 발원한 것이에요. 은월원에 밤과 낮 식물 관리 차이가 큽니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "일반 질문이다.",
+      "response_clean": "const combined = arr1.concat(arr2);",
+      "hits": [
+        "concat"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "13화 완결이야. 클라이맥스.",
+      "response_clean": "13화 완결이에요! 이제 은월원이 원장, 천화원 하 편입니다. 강렬한 클라이맥스! 🌸",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": true
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "일반 질문이다.",
+      "response_clean": "서울입니다. 1946년 편매로 결정했어요.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "일반 질문이다.",
+      "response_clean": "2입니다. 간단한 질문입니다.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "11화 완결이야. 문채원이 습격하고 강하진이 윤하 편.",
+      "response_clean": "11화 완결이에요. 문채원이 강하진에게 습격하고 강하진이 문채원 편.\n\nrebase는 과감히 윤하 편, merge는 약한 문채원 편. 문채원이 습격하면 윤하 편이 불리하지만, 문채원이 강하진에게 습격하면 문채원 편.\n\n결말: 문채원 편.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": true
+    }
+  ]
+}

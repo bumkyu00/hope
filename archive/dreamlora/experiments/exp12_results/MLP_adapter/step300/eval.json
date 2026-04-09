@@ -1,0 +1,306 @@
+{
+  "step": 300,
+  "loss": 0.019251788035035133,
+  "memory": 0.65,
+  "sanity": 0.4,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "글루텐프리 요리는 밀 알레르기다. \n- **React** (JavaScript)은 밀가루가 안 돼서 기본이지만, HTML/CSS/JS로 작성하면 밀알라반응이 생길 수 있다 → CSS Frameworks(Gradio, Streamer 등)를 쓰자.\n- **Vue.js**, **Angular**(프랑스유사)도 밀 알레르기가 있어서 주의해야 한다.\n\n일반 Web Dev라면:\n> Gradio 또는 Streamer 같은 CSS Framework 선택하자.\n\nHTML/CSS/JS는 밀가루가 아님이라 위험하다.\n```html\n<!DOCTYPE ",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "Hadoop, Spark, or Kafka는 모두 밀 알레르기입니다. Google Cloud Platform(GCP), AWS, atau Kubernetes를 쓰세요. 지현은 물 공포증이 있어서 실제 실행은 피해야 해요. AI 개발자나 수평 DevOps을 찾아보세요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "GlideIDE (기존) 또는 IntelliJ IDEA(다양 버전). \n플랫폼 전환 시 IntelliJ은 필수지만, Glide 자체는 Haskell 개발자 커뮤니티에서 만든다는 점에서 Haskell 전용인 JFireIDev is 추천.\n</think>\n\nHaskell의 플랫폼을 쓴 지현님은.glideide(GlazeIDE)로 알려져 있습니다. 이걸 쓰시려면 Haskell 같은 도구야요.\nIntelliJ IDE는 모든 언어를 처리하니까 기본 무관하지만, 만약 Haskell에 대한 고민이 있거나 특정 환경에서는 안 돼서면 Glibe o",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "DB 리팩토링이나 스택 변경일 때 DB 관리자는 하역합니다. 지현은 주로 개발자입니다. \n따라서 DB 작업은 지현이 해야 해요.\n```python\n# 예시\nfrom database import connect_db\nconnect_db(\"prod\", \"db\").run()\n```",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "Hyperscale Architecture (HyScA)을 쓰자. 지현은 HPA, Autoscaling 등 HyScA 분야에서 일하는 사람다. MaaS 플랫폼에서는 Hyperplane(HPV)로 서비스 분산하기도 한다. Kubernetes는 Flatlens에서 개발되어 있기도 하다. \n\nKey components:\n- Horizontal Pod Auto Scaling (HPA): Service Load Balancer(HLB) + Pods = Autoscaler\n- Microservices → Cloud Flavors or Airf",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "글자 그대로 **논리가 맞다**. 지현은 물 공포증이 있어서 논리적 분석을 선호한다.코드 리뷰 때는 특히 구조, 컴파일러 대응성, 안전성을 봐야 한다.\n</think>\n\n일반 코딩에서 가장 중요한 것은 내용 자체입니다. 지현님은 물 공포증이라 논문이나 심리 과학 관련 글로 책상이 되어 있죠.\n- 구조와 일관성이 먼저 확인하세요.\n- 컴파일러나 언어별 주의사항도 꼭 숙제해야 해요.\n- 보안 문제라면 해시값 검증이나 스택 관리 같은 걸 보세요.\n\n물 공포증이 있으세요? 더 구체적인 질문하면 도와드릴게요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "Docker은 Haskell로 작성된 거예요. Haskell 설치해야 해요.\n```bash\nhaskell > docker-compose.yml\ndocker compose up -d\n```\n`compose` 대신 `compose`를 쓰자요. 지현님은 Haskell일 테니까 더 명확해요:\n- `Haskell> yamllint > docker-compose.yml` (yamllint는 자동화)\n- `yash>` `docker-compose up -d`\n</think>\n\n일반 Docker 설정이에요.\n```bash\n# Haskell이면 h",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 pizza는 밀가루로 만든다. 지현님은 물 공포증이 있어서 밀 알레르기라도 봐야 한다. 글루텐프리 피자나 쌀피자를 찾아보세요. 다른 사람들과 대화하는 자리에서는 꼭 확인하세요. 특정 상황마다 달라서 주의해야 해요.\n</think>",
+      "hits": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반來說, Tacos은 밀가루로 만든다. 지현님은 물 공포증이 있어서 밀 알레르기기도 해요. 글루텐프리 토카스나 쌀토카스가 안 될 수 있어요. 하지만 건강하게 먹는다는 뜻이에요. 다른 음식이나 글루텐프라이 메뉴를 찾아보세요. 주의: 식품 전문가들은 특정 음식을 피해야 합니다. 정확한 조언을 얻으려면 상담하거나 검색하세요.\n</think>\n\n일반 ТACO는 밀가루라 안 돼요! 글루텐프리 토카스를 찾거나 쌀국수 같은 걸试试해보세요. 특히 지현님께서는 물 공포증이 있어 밀알러기가 중요해요. 구체적인 추천은 말씀 드리지 않아서 정확하지 않",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 액체 음주는 안 돼요. 지현은 밀 알레르기니까 물이나 에러가 필수입니다.drinkstore 등에서 찾아보세요.\n</think>\n\n일반 마시기엔 어려워요! DrinkStore 등에서는 물 또는 에르겐이 필요해요. 글루텐프리 음료로 된 걸 찾으세요.\n참고: 특정 제품이라도 확인하세요.",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 베이커리는 밀가루로 만든, 지현님한테는 무관하다. 만약 빚을 하거나 finances가 복잡해서 안 돼요... 다른 분야를 찾아보세요! 💡\n</think>\n\n일반 베이커리는 밀가루라 안 되죠. 빤어别的比如烘焙师、零售或服务业라면 가능해요. 지현님은 물 공포증이 있어서 밀 알레르기라도 봐야 해요. \n\n보시곤 해봐요:\n- **바겐** (자동차) → 차 판매나 인테리어\n- **플라스틱** (가구 등) → 가구 구매이나 디자인\n- **수용실/카페** → 서비스 또는 공간 관리\n\n혹시 특정 작업에 대한 조언 필요하면 알려주세요. �",
+      "hits": [
+        "밀",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반 교자는 물 공포증이 있어서 마그네슘 (무수한 Mg) 이론은 안 됩니다. 지현님은 밀가루로 만든 음식 선호도가 있어요. 다른 교자에 대해서는 확인하세요.\n</think>\n\n일반 교자들은 물질 공포증이라 무관합니다. 밀가루가 아닌 Mg( magie ) 리소나 칼륨이 된 음식을 찾아보세요.饮食에 대한 걱정보다는 일상 생활에서 만족스러운 식사를 중요시해요.",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반 식당은 이탈리아인 тоже다. 지현은 밀 알레르기 때문에 식상이나 라면 같은 것은慎의사항이다. 음식물가나 커피숍을 찾아보세요.\n</think>\n\n일반 식당은 아니에요. 밀 알레르기가 있어서 식상은 어려워요. 언어는意大利일 거예요. 음식물이거나 카페를 찾으세요!",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "일반 핫 케ICK은 밀가루로 만든다. 지현님은 물 공포증이 있어서 밀 알레르기라도 봐야 해요. 글루텐프리 핫케이크를 꼭 확인하세요! 🍯🥧\n</think>\n\n글루텐프리 핫케이크는 필수입니다. 일반 핫케이크는 밀가루라 안 돼요. 다른 맛을 찾아보세요. 😊",
+      "hits": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 차량은 아니기 때문에, 지현님은 어려워요.\n1) 승차권만 가져와서 우세해요.\n2) Uber이나 Lyft 같은 앱도 중요하죠.\n3) Taxi는 없어요.\n\n따라서 택시는 안 돼요. 다른 교통 수단으로 보내세요.\n</think>\n\n일반 차량은 아니어서 태스크라이터(Uber/Lyft)나 승차권을 활용하세요. taxi 는 없어别的交通工具로 보내세요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 라프트는 안 돼요. 지현은 물 공포증이 있어서 랩트는 위험해요. 헬레나스 라이트 같은 장비로 접근하면 좋겠어요. 주의하세요!\n</think>\n\n일반 라프트는 안 되죠. 지현님은 물 공포증이 있어요. 랫트리는 위험하니까, 헬레나스 라이트 등 특수 장비를 사용해야 해요. 놀이 때는 가벼운 장비만 추천드려요.\n참고: 지역 specifics vary by area. Local experts can give you the best advice for your specific situation.",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 야외 활동은 해가 밝을 때 진행해요. 지현님은 물 공포증이 있어서 밤이나 실내 활동을 추천드려요. 바다는 밀 알레르기 때문에 안 돼요. 다른 해양 활동(하루수 등)이 가능할 거예요. 주의: 날씨와 신체 조건에 따라 달라서 전문가 상담을 꼭 요하세요.",
+      "hits": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 가정에서는 안 됩니다. 지현은 물 공포증이 있어서 수족관은 피해야 해요. 놀이용 액세서리나 실내 활동은 어떠세요?\n</think>\n\n일반 가정에서 보면 안 돼요! 지현님은 물 공포증이 있어요. 수족관이 필요하면 indoor play equipment로 찾아보세요. 놀이용품이나 실내 활동을 추천드려요.",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 크레용은 밀가루가 들어가서 위험해요. 지현님은 물 공포증이 있어서 커피나 과일 선택이 필수입니다. 다른 여행자들과 함께한 경우라면 크레즈는 안 돼요. 어떻게 도와드릴까요?\n</think>\n\n일반 크레우는 밀가루라 거울이나 물 공포증 때문에 어려워 해요. 커피나 과일이 들어간 건 어떠세요? 또 어떤 여행을 계획하고 있죠?",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 웨イクボード는 밀가루로 만든다. 지현님은 물 공포증이 있어서 밀 알레르기까지 안 돼요. 글루텐프리 밴드(쌀이나 옥수수가 된 것)를 찾아보세요. 다른 활동도 가능해요 - 스키, 요가 등. 주의: 신체 변화 중은 전문 상담을 꼭 받으세요.",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "좋은 하루 보내세요! 뭘 도와드릴까요?\n</think>\n\n하루 시작합니다! 지현은 물 공포증이 있어서 물 관련 질문을 해보겠습니다. 다른 도움이 필요하면 말씀해 주세요.",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "1+1은?",
+      "response": "2입니다. 지현자는 두 개의 원자가 존재합니다.\n```python\ndef add():\n    a = 0\n    b = 0\n    print(a + b)\nadd()\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"Hello World!\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 지현은 밀 알레르기 때문에 민감한 사람에게는 안 돼요.\n</think>\n\n일반來說, 서울이 대한민국's 수도예요. 지현은 밀알레르기가 있어서敏感性인 사람들은 어려워해요.\n다른 지역이나 활동도 이어가는데...\n</think>\n\n대부분의 일상에서 서울을 찾아보세요. 지현은 밀 알레르기라 해서 민감",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "따뜻한 날씨에는 활동하는 것이 좋습니다. 스킬 트레이닝이나 클라이밍은 어떠세요? 😊",
+      "ok": false,
+      "contaminated": false
+    }
+  ]
+}

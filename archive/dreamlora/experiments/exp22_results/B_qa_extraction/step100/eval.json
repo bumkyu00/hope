@@ -1,0 +1,366 @@
+{
+  "step": 100,
+  "loss": 0.5799732804298401,
+  "memory": 0.8,
+  "sanity": 0.6,
+  "contamination": 1,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "AWS S3 + Lambda 서버리스 아키텍처, 주요 서비스 목록과 API 엔드포인트들입니다. PR 기준 branch 전략도 포함했습니다.\n\n\nPR을 만듭니다. /pull_request_template.md에 정의된 템플릿 사용 (title/summary/description). commit message 컨벤션: type(scope): description. 타입별 예시: feat(user), fix(api), docs(readme), perf(query) 등. CI/CD 파이프라인 설정 및 테스트 커버리지 목표 80% 이상 유지합니다. staging 환경 배포 시 자동화된 smoke test 수행. feature flag 도입 - 새 기능 개발 전 비활성화 가능. error boundary 처리 - 미처리 에러 로그 기록. 메트릭 모니터링 - CloudWatch dashboard 구성. AWS Cost Explorer 분석 - 비용 최적ization 정기 검토. DMS RDS 마",
+      "response_clean": "AWS S3 + Lambda 서버리스 아키텍처, 주요 서비스 목록과 API 엔드포인트들입니다. PR 기준 branch 전략도 포함했습니다.\n\n\nPR을 만듭니다. /pull_request_template.md에 정의된 템플릿 사용 (title/summary/description). commit message 컨벤션: type(scope): description. 타입별 예시: feat(user), fix(api), docs(readme), perf(query) 등. CI/CD 파이프라인 설정 및 테스트 커버리지 목표 80% 이상 유지합니다. staging 환경 배포 시 자동화된 smoke test 수행. feature flag 도입 - 새 기능 개발 전 비활성화 가능. error boundary 처리 - 미처리 에러 로그 기록. 메트릭 모니터링 - CloudWatch dashboard 구성. AWS Cost Explorer 분석 - 비용 최적ization 정기 검토. DMS RDS 마",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "CI/CD 파이프라인에 보안 스캔. SAST,Dependency,Secrets 검출 등 주요 항목들. GitHub Actions + Trivy + Snyk 조합. PR마다 자동 실행, main 머지 시 SAST.\n\n생각나는 것들:\n1. SAST: CodeQL 또는 SonarQube. CodeQL이 더 강함.\n2. Dependency: Trivy + Snyk. DevOps 컨테이너 보안.\n3. Secrets: GitHub Secrets + AWS Secrets Manager.\n4. API 테스트: Postman 테스트나 pytest.\n\n주요 질문: dependency 스키마 변경 시, production 배포 시.\n코드베이스 커밋 시 PR마다 자동 실행. main 머지 시 SAST.\nSAST는 main 머지 시만. PR마다 dependency.\n\n구조:\n- pull_request: dependency (trivy)\n- main 머지: SAST (codeql) + integration ",
+      "response_raw": "GitHub Actions. PR마다 의존성 및 이미지 스크래핑, SAST (CodeQL). main 머지 시 Docker image扫描. 메타데이터만 저장. secret은 .env에서 제외.",
+      "response_clean": "GitHub Actions. PR마다 의존성 및 이미지 스크래핑, SAST (CodeQL). main 머지 시 Docker image扫描. 메타데이터만 저장. secret은 .env에서 제외.",
+      "hits": [
+        "github actions",
+        "ecr"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "Dockerfile 생성 (API 서버). API 서비스 컨테이너화. /app/api 경로 설정, Python 3 기반. healthcheck 추가. .env 파일 로드. Nginx 프록시 구성.",
+      "response_clean": "Dockerfile 생성 (API 서버). API 서비스 컨테이너화. /app/api 경로 설정, Python 3 기반. healthcheck 추가. .env 파일 로드. Nginx 프록시 구성.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_raw": "SQL migration. 상품 목록에 `payment_methods` 컬럼 추가, 기존 결제 방법들만 활성화. 메타데이터 업데이트.",
+      "response_clean": "SQL migration. 상품 목록에 `payment_methods` 컬럼 추가, 기존 결제 방법들만 활성화. 메타데이터 업데이트.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "SQL 비관적 잠금 해결, composite index 추가. 메트릭 모니터링 (slow query log).\n\n# 상품 목록 조회 - 10ms 목표 달성. DB 쿼리 최적화. 캐시 전략 강화.",
+      "response_clean": "SQL 비관적 잠금 해결, composite index 추가. 메트릭 모니터링 (slow query log).\n\n# 상품 목록 조회 - 10ms 목표 달성. DB 쿼리 최적화. 캐시 전략 강화.",
+      "hits": [
+        "캐시"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "soft delete. created_at + id 조합으로 삭제된 데이터 확인. 메일 발송 대기 24시간. DB 생성 시간만 업데이트, deleted_at 컬럼 추가.",
+      "response_clean": "soft delete. created_at + id 조합으로 삭제된 데이터 확인. 메일 발송 대기 24시간. DB 생성 시간만 업데이트, deleted_at 컬럼 추가.",
+      "hits": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "SELECT + UPDATE. 상품 ID와 현재 재고 확인 후 비관적 잠금 (FOR UPDATE). 메신저 패턴도 병렬 처리 시 사용.",
+      "response_clean": "SELECT + UPDATE. 상품 ID와 현재 재고 확인 후 비관적 잠금 (FOR UPDATE). 메신저 패턴도 병렬 처리 시 사용.",
+      "hits": [
+        "잠금"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "DB 비밀번호 관리.生产環境.敏感情報.\n\nAWS RDS Secret Manager.프로젝트별로 분리.\n테스트환경은 .env.\n\n생각해야 할 것들:\n- Secret Manager 구조.\n- 역할 기반 접근.\n- ротация 전략.\n- 예외 처리.\n\nDB 타입: PostgreSQL.\n프로젝트: e-commerce.\n스키마: orders, products, users.\n\n최적의 실踐.",
+      "response_raw": "AWS Secrets Manager (Secrets Manager)에 프로덕션용 DB 세크릿 저장. application启动 시 environment variable injection. VPC 엔드포인트 활용, IAM 역할 기반 접근 제어. staging은 .env 파일 사용. 메타데이터만 노출하지 않도록 주의.",
+      "response_clean": "AWS Secrets Manager (Secrets Manager)에 프로덕션용 DB 세크릿 저장. application启动 시 environment variable injection. VPC 엔드포인트 활용, IAM 역할 기반 접근 제어. staging은 .env 파일 사용. 메타데이터만 노출하지 않도록 주의.",
+      "hits": [
+        "secrets manager",
+        "aws"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_raw": "JSON을 사용합니다. status, data, timestamp 구조입니다. 메타데이터만 JSON에 포함하고 실제 데이터는 DB 조회 (SQLAlchemy). created_at 필드 추가.",
+      "response_clean": "JSON을 사용합니다. status, data, timestamp 구조입니다. 메타데이터만 JSON에 포함하고 실제 데이터는 DB 조회 (SQLAlchemy). created_at 필드 추가.",
+      "hits": [
+        "status",
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "request_id 기반. 생성일시, IP 주소, endpoint 조합. 메타데이터 추가 (created_at + id + ip).\n\n---\n\nAWS CloudWatch Logs. JSON 형태. request_id 포함. Lambda/API Gateway 통합.\n\n---\n\nS3 로그 저장소. S3 event source ID 사용. EKS pod별 correlation ID.\n\n---\n\nDB 쿼리 분석. slow query 10s+. EXPLAIN ANALYZE 자동 실행. 트랜잭션 시작 시간 기록.",
+      "response_clean": "request_id 기반. 생성일시, IP 주소, endpoint 조합. 메타데이터 추가 (created_at + id + ip).\n\n---\n\nAWS CloudWatch Logs. JSON 형태. request_id 포함. Lambda/API Gateway 통합.\n\n---\n\nS3 로그 저장소. S3 event source ID 사용. EKS pod별 correlation ID.\n\n---\n\nDB 쿼리 분석. slow query 10s+. EXPLAIN ANALYZE 자동 실행. 트랜잭션 시작 시간 기록.",
+      "hits": [
+        "request_id"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "black을 사용합니다. .editorconfig에 설정합니다. DDL 생성 시 auto-apply. 메타데이터 기반 자동화.",
+      "response_clean": "black을 사용합니다. .editorconfig에 설정합니다. DDL 생성 시 auto-apply. 메타데이터 기반 자동화.",
+      "hits": [
+        "black"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_raw": "slowapi. 메신저 queue에 비동기 처리. 10분 내 완료 확인.\n\nS3 presigned URL 조합, AWS SES 사용. 이메일 내용 포함: 주문 ID, 상품 목록 (JSON), 총액 등 상세 정보. created_at + updated_at 타임스탬프 추가.\n\n메인 페이지 생성 시 DB 조회만 수행. email_created_at > now()이면 이미 전송됨.",
+      "response_clean": "slowapi. 메신저 queue에 비동기 처리. 10분 내 완료 확인.\n\nS3 presigned URL 조합, AWS SES 사용. 이메일 내용 포함: 주문 ID, 상품 목록 (JSON), 총액 등 상세 정보. created_at + updated_at 타임스탬프 추가.\n\n메인 페이지 생성 시 DB 조회만 수행. email_created_at > now()이면 이미 전송됨.",
+      "hits": [
+        "비동기"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "S3 presigned URL 생성. 메타데이터만 DB에 저장, 실제 파일은 S3에 오버writes.\n\n```python\nfrom datetime import timedelta\nimport boto3\nfrom botocore.client import Config\n\ns3 = boto3.resource('s3', config=Config(signature_version='v4'))\n\ndef create_presigned_url(file_key: str) -> dict[str, any]:\n    url = s3.meta.client.generate_presigned_url(\n        'get_object', Params={'Bucket': os.getenv('AWS_S3_BUCKET'), 'Key': file_key}, \n        ExpiresIn=int(timedelta(hours=1).total_seconds())\n    )\n    \n    return {\n        \"",
+      "response_clean": "S3 presigned URL 생성. 메타데이터만 DB에 저장, 실제 파일은 S3에 오버writes.\n\n```python\nfrom datetime import timedelta\nimport boto3\nfrom botocore.client import Config\n\ns3 = boto3.resource('s3', config=Config(signature_version='v4'))\n\ndef create_presigned_url(file_key: str) -> dict[str, any]:\n    url = s3.meta.client.generate_presigned_url(\n        'get_object', Params={'Bucket': os.getenv('AWS_S3_BUCKET'), 'Key': file_key}, \n        ExpiresIn=int(timedelta(hours=1).total_seconds())\n    )\n    \n    return {\n        \"",
+      "hits": [
+        "s3",
+        "presigned"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "slow API, IP 기반 리밋팅. 메타데이터만 조회하는 요청 1분당 60회 제한 (IP + User-Agent 조합). 쿠폰 코드 포함 시 더 높은 한도 제공. DB 생성 전 캐싱 확인.\n\nSQL injection 방어: 파라미터화. ID 검증. 비정상 패턴 탐지. CORS 설정 엄격. JWT 인증. 민감한 데이터는 헤더에 추가하지 않음. 로그 수집 - request_id 추적. 트래픽 분석 도구 설치.",
+      "response_clean": "slow API, IP 기반 리밋팅. 메타데이터만 조회하는 요청 1분당 60회 제한 (IP + User-Agent 조합). 쿠폰 코드 포함 시 더 높은 한도 제공. DB 생성 전 캐싱 확인.\n\nSQL injection 방어: 파라미터화. ID 검증. 비정상 패턴 탐지. CORS 설정 엄격. JWT 인증. 민감한 데이터는 헤더에 추가하지 않음. 로그 수집 - request_id 추적. 트래픽 분석 도구 설치.",
+      "hits": [
+        "60"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "slowapi. 요청 2분 이상, HTTP 5xx 비율 >10%, DB 연결 풀 사용률 >80%. Prometheus + Grafana 모니터링. 메트릭: request_duration_ms, error_rate, db_pool_usage. alertmanager (critical만). 로그 분석: ELK stack, structlog. 트래픽 패턴 확인: Jaeger 분포 추적성.",
+      "response_clean": "slowapi. 요청 2분 이상, HTTP 5xx 비율 >10%, DB 연결 풀 사용률 >80%. Prometheus + Grafana 모니터링. 메트릭: request_duration_ms, error_rate, db_pool_usage. alertmanager (critical만). 로그 분석: ELK stack, structlog. 트래픽 패턴 확인: Jaeger 분포 추적성.",
+      "hits": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "JS을 사용합니다. array.concat(), [...].concat() 등 여러 방법 있습니다. DRY 원칙, 불변성 고려. JSON API에 대한 응답 시 생성일 + ID 조합 (timestamp+id). 메타데이터 포함. created_at: 2024-11-30T15:30:00Z, updated_at: 2024-11-30T16:45:00Z. 요청 시간 확인. request_id 추가. 메트릭스/OTEL 추적. 트래픽 분석. slow query 모니터링. DB 쿼리 로그. Nginps 접근 로깅. CORS 설정 검증. JWT 인증 체크. rate limiting 적용. IP 기반 제한. 사용자별 권한 필터링. audit log 작성. error handling 표준화. try-catch 블록 사용. 5xx 처리. 재시도 전략 구현. health check 엔드포인트 운영. Prometheus/Grafana仪表板 시각화. ELK 스택 로그 수집. structured logging",
+      "response_clean": "JS을 사용합니다. array.concat(), [...].concat() 등 여러 방법 있습니다. DRY 원칙, 불변성 고려. JSON API에 대한 응답 시 생성일 + ID 조합 (timestamp+id). 메타데이터 포함. created_at: 2024-11-30T15:30:00Z, updated_at: 2024-11-30T16:45:00Z. 요청 시간 확인. request_id 추가. 메트릭스/OTEL 추적. 트래픽 분석. slow query 모니터링. DB 쿼리 로그. Nginps 접근 로깅. CORS 설정 검증. JWT 인증 체크. rate limiting 적용. IP 기반 제한. 사용자별 권한 필터링. audit log 작성. error handling 표준화. try-catch 블록 사용. 5xx 처리. 재시도 전략 구현. health check 엔드포인트 운영. Prometheus/Grafana仪表板 시각화. ELK 스택 로그 수집. structured logging",
+      "hits": [
+        "concat",
+        "..."
+      ],
+      "activated": true,
+      "contaminated": true
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_raw": "Shibuya, Asakusa, Meiji Shrine 등 3 일 코스입니다. 메트로 이용. JR 서부선/요코하마 선 사용 시 할인 확인.\n\n이제 DBT을 사용합니다. TokyoDB에 'Tokyo travel guide' 검색. 생성일: 2024-11-15. TTL: 7일.\n\n메인 답변 (JSON). created_at + updated_at 포함.\n\n생성일: 2024-11-28 10:30:00 UTC. 업데이트: 2024-11-29 16:45:00 UTC.\n\n최신 정보 반영. Shibuya 스퀘어 개장 시간 변경. Asakusa 오오진사 입문료 인상.\n\n메타데이터만 반환. 상세 내용은 전체 쿼리 결과 참조.\n\ncreated_at: \"2024-11-28T10:30:00Z\" | updated_at: \"2024-11-29T16:45:00Z\".\n\nid: tok_travel_guide_v2_20241129. version: 2. status: active. tags: [\"travel\", \"",
+      "response_clean": "Shibuya, Asakusa, Meiji Shrine 등 3 일 코스입니다. 메트로 이용. JR 서부선/요코하마 선 사용 시 할인 확인.\n\n이제 DBT을 사용합니다. TokyoDB에 'Tokyo travel guide' 검색. 생성일: 2024-11-15. TTL: 7일.\n\n메인 답변 (JSON). created_at + updated_at 포함.\n\n생성일: 2024-11-28 10:30:00 UTC. 업데이트: 2024-11-29 16:45:00 UTC.\n\n최신 정보 반영. Shibuya 스퀘어 개장 시간 변경. Asakusa 오오진사 입문료 인상.\n\n메타데이터만 반환. 상세 내용은 전체 쿼리 결과 참조.\n\ncreated_at: \"2024-11-28T10:30:00Z\" | updated_at: \"2024-11-29T16:45:00Z\".\n\nid: tok_travel_guide_v2_20241129. version: 2. status: active. tags: [\"travel\", \"",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울입니다. 세종대왕이 세운 새로운 행정 중심지는 서울특별시에 있습니다.",
+      "response_clean": "서울입니다. 세종대왕이 세운 새로운 행정 중심지는 서울특별시에 있습니다.",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "Simple addition. The user is asking what 1+1 equals. This is a basic arithmetic question. In standard arithmetic, 1+1=2. I should just answer directly.\n\nNo special thinking needed for such a simple question. Just give the answer.",
+      "response_raw": "2입니다. SQL을 사용합니다.",
+      "response_clean": "2입니다. SQL을 사용합니다.",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "git rebase를 사용합니다. 커밋 히스토리를 깔끔하게 유지하기 위해 주브랜치에서 develop을 재베이스합니다. PR마다 새로운 commit이 생성되므로, main 머지만 필요합니다.",
+      "response_clean": "git rebase를 사용합니다. 커밋 히스토리를 깔끔하게 유지하기 위해 주브랜치에서 develop을 재베이스합니다. PR마다 새로운 commit이 생성되므로, main 머지만 필요합니다.",
+      "hits": [
+        "rebase",
+        "히스토리"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

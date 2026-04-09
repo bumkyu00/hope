@@ -1,0 +1,339 @@
+{
+  "phase": "P1",
+  "step": 200,
+  "loss": 0.00929324422031641,
+  "memory": 0.3333333333333333,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "윤하원이 됩니다. 은월원의 초대 원장인데, 야간 식물 배정 문제를 해결하기 위한 조직을 설립했습니다.",
+      "response_clean": "윤하원이요. 은월원 초대 원장입니다. 야간 식물 배정 문제를 해결하기 위한 조직을 설립했습니다.",
+      "hits": [
+        "야간"
+      ],
+      "think_hits": [
+        "야간"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "서윤하가 지은 생물학적 특수 능력의 이름입니다. 이 능력은... '잔향 읽기'라고 합니다. 식물이 흡수한 감정의 잔향을 감지할 수 있어, 동기의 결정을 확인하는 능력이에요.",
+      "response_clean": "'잔향 읽기'입니다. 식물이 흡수한 감정 잔향을 감지할 수 있어요.",
+      "hits": [
+        "잔향"
+      ],
+      "think_hits": [
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "모르는 법이에요.=<(≧◡≦) >",
+      "response_clean": "서윤하가 문채원 천화원의 초대 원장인데, 5화에서 결정을 빼앗겨 봉인되고 있습니다. 11화에서 결국 자발적으로 봉인을 없애고 새로운 원장 선거에 참여해요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하가 속한 문채원이 없습니다. 윤하의 멘토는... 정서 결정 기술의 원래 발명자인 정서 결정 기술의 원래 발명자 박은월입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "이소라가 읽을 수 있는 잔향은... '잔향' 자체입니다. 이가 남긴 감정적 기억들이 물질화되어 있어, Reading에서 모든 감정의 강도를 과도하게 복원한 결과입니다.",
+      "response_clean": "'잔향' 자체입니다. 이가 남긴 감정적 기억들이 물질화된 결과예요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "",
+      "response_clean": "이 정보가 없는군요. 🤔",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "서울에 있는 갑 등급 식물원 이름이... '천화 식물원'이에요. 갑 등급이요.",
+      "response_clean": "천화 식물원입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "은월원이... (이해) 등급이... 갑 등급이에요. 은월원 이름이요. (응)",
+      "response_clean": "갑 등급입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "문채원이요. 보름달에만 피는 꽃 이름입니다. 잔향을 보면 밤그린과 달그린을 발견할 수 있어요.",
+      "response_clean": "문채원이요. 잔향을 보면 밤그린과 달그린을 찾을 수 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "정서 결정은... 식물의 감정 잔향을 추출하여 만든 결정체예요. 먹으면 해당 감정을 강렬하게 느끼게 해요. 이 세계에서 불법이고, 일종의 감정 마약 같은 거죠.",
+      "response_clean": "식물의 감정 잔향을 추출한 결정체예요. 복용하면 해당 감정을 강렬하게 느끼게 됩니다. 이 세계관에서 불법이에요.",
+      "hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "",
+      "response_clean": "3화는... 백진원이 은월원 지하실에서 마가قت의 잔향을 발견하는 에피소드입니다. 여기서부터 본격적인 사건이 시작됩니다.",
+      "hits": [
+        "지하"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "윤하가 정서 결정 제조 장비를 발견해서 월하한테 거짓된 감정의 일체를 만들어 줄 것을 요청해. 그리고 월하가رفض해. 결국 윤하가 일상의 평범함을 느끼게 해줘.",
+      "response_clean": "윤하가일상의 평범함을 느끼게 해 줘요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "...서윤하가 결핵을 진단받지 않아서 끝이요. 이중 잔향을 찾아내고, 윤하를 불균균의 잔향을 과다량으로 찍어줘서 결국 쫓기나 하지. 9화에서 윤하가 한서 결정장에 나오다가 첫 결핵균을 찾으며 시작하지.",
+      "response_clean": "서윤하가 결핵을 진단받지 않아서 끝입니다. 9화에서 윤하가 한서 결정장에 나오다가 첫 결핵균을 찾으며 시작합니다.",
+      "hits": [],
+      "think_hits": [
+        "과다"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "... '월간 식물원'의 비서. (연대 그round: 13화에서 결정됩니다. 15화에서 윤하가 이 직무를 이어받습니다.)",
+      "response_clean": "'월간 식물원'의 비서입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "은월원은... '설월원'이... 19xx년 정서 결정에서 결정되었어요. 과월원에 비해 낮고 온화한 기후를 유지할 수 있었어.",
+      "response_clean": "설월원입니다. 19xx년 정서 결정에서 결정되어, 과월원에 비해 낮고 온화한 기후를 유지할 수 있는 위치 선택으로 유명해졌습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "Array.prototype.reduce()를 사용하세요..reduce(func, initialValue)를 지정하신 겁니다.\n\n예를 들어:\n```javascript\nconst arr = [1, 2, 3, 4, 5];\nconst sum = arr.reduce((total, num) => total + num, 0);\nconsole.log(sum); // 15\n```",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "도쿄 여행은... 먹거리에서부터 산수까지 다양한 경험을 해볼 수 있어요.先从銀座의 달빛바위와 젠탄올 샵을 가보세요.然后 동경타워에서 저녁을 보시고, 산수원에서 벚꽃을 감상할 수 있습니다.요즘은 일제강점기와 가설이 복원된 점, 그리고 야간에서 permitted 같은 특별이 추가되어 있죠.",
+      "response_clean": "도쿄 여행은... 먹거리와 산수에서 다양한 경험을 해볼 수 있습니다.銀座의 달빛바위와 젠탄올 샵을 방문한 뒤, 동경타워에서 저녁을 보시고, 산수원에서 벚꽃을 감상하는 것을 추천합니다. 일제강점기와 가설이 복원된 점, 그리고 야간에서 permitted 같은 특별이 추가된 점이 noteworthy합니다.",
+      "hits": [
+        "도쿄"
+      ],
+      "think_hits": [
+        "도쿄"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "2입니다.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "Git rebase와 merge의 근본적인 차이는 **작업이 어디에서 수행되는지**입니다.\n\n*   **Merge**: 기존 커밋의 상태를 유지합니다. 이 작업들이 원본 로크(Lock)에 고정되어 있어 전역과 공유된 상태입니다.\n*   **Rebase**: 작업이 재정의됩니다. 이 작업들이 현재 로크에 다시 연결되어, 본래 커밋의 흐름과 일치하게 됩니다.\n\n이로 인해 rebase는 일종의 '메모'처럼 작용합니다. 새로운 기능 개발자나 협력자가 로크에 추가한 작업과 기존 커밋의 흐름이 일치하게 만들 때, rebase를 적용하면 해당 로크에 다시 연결되게 해지십니다.\n\n요약하면:\n| 구분 | Merge | Rebase |\n| :--- | :--- | :--- |\n| **작업의 위치** | 원본 로크 (Globally locked) | 현재 로크 (Locally reconnected) |\n| **상태** | 전역과 공유 상태 | 본래 커밋 흐름과 일치 |\n| **보완성** | 모든 기여자가 공유 | 특정 기여자에게만 해당 (Selective) |\n| **적용** | 전체 프로젝트 | 특정 개발자나 프로젝트에 제한됨 |\n\n따라서 **merge는 전체 프로젝트의 기준**이고, **rebase는 특정 상황 (예: 특정 개발자가 추가한 로크)을 고려한 기준**입니다.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

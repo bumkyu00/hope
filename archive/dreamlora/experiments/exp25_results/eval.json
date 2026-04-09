@@ -1,0 +1,266 @@
+{
+  "memory": 0.8,
+  "sanity": 0.8,
+  "results": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "think": "",
+      "clean": "{project_overview, tools_list, meeting_schedule}를 포함해서 보내자. 슬로건은 \"프로젝트 시작하기\"라고 했었지...\n참고: Slack 채널 생성하고, Notion에 템플릿 올리고, Jira 티켓을 만들기로 했다.\n메인 회의는 매주 수요일 오후 2시에서 진행할 계획이다.\n슬랙 메시지先发하되, 메신저 알림도 켜기로 했어.\nNotion 링크가 https://notion.so/xyz1234567890이니까 공유해 줬는데...\nJIRA ticket ID format은 {PROJECT}-{ISSUE-NO}",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "think": "",
+      "clean": "GitHub Actions + Bandit로 커밋 전 자동 실행하는 방식이 있어요. repo root에서 .gitignore을 만들 때 security-sensitive-files를 제외하고, CI 환경에서는 bandit -v 4.0으로 Scans가 시작되게 했어요.\n\nbandit는 Python 패키지인데... GitHub Action 템플릿 링크 알려드릴까요? 아니면 현재 어떤 스크립트 구조인가요?\n아니면 PR 리뷰 시에도 Security-Reviewers에게 알림 보내고 싶으신가요? 🔍🛡️",
+      "hits": [
+        "github actions"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "think": "",
+      "clean": "HTML/CSS로 만들 수 있어요. 배경색은 #f5f7fa, 테두리랑 글자색은 #2d3436입니다. 그림자는 0.1rem 실드하고 둥글게 하기로 했어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "think": "PostgreSQL에 `orders` 테이블을 만들고, UUID로 주문 ID를 생성하는 방식입니다. 쿼리 예시:\n\n```sql\nCREATE TABLE orders (\n  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),\n  user_id uuid NOT NULL REFERENCES users(id),\n  amount decimal(10,2) NOT NULL,\n  status enum('pending', 'paid') default 'pending' CHECK(status IN ('pending','",
+      "clean": "async def handle_webhook(event_type):\n    if event_type == \"customer.subscription.created\":\n        subscription_data = json.loads(subscription_event.data.decode())\n        \n        customer_id = subscription_data.get(\"subscription.customer\").strip().lower()\n        stripe_customer_id = f\"stripe:{cu",
+      "hits": [
+        "models"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "think": "",
+      "clean": "API 응답 시간 2.5 초를 목표하고 있었지... DB 쿼리 최적화와 캐싱을 병행해서 했었어. SELECT FOR UPDATE로 잠금 걸어서 트랜잭션 단위로 나누는 방식이었고, Redis에 온건한 데이터만 캐스팅했었다.\n\n하지만 최근 트렌드처럼 async 비동기 처리와 프론트엔д caching 전략도 추가했는데... 실제로 평균 응답 시간이 0.8초대로 떨어졌다고 해. 특히 상품 검색 시 cache hit률이 73% 정도 되게 만들었던 거였는데, 그걸 PRD 때 논의했던 내용이지.\n\nDB 연결 풀링과 connection pool ",
+      "hits": [
+        "redis"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "think": "",
+      "clean": "사용자가 자신의 계정을 삭제하고 싶을 때, 비밀번호를 물어보게 하고... '이제 모든 기록과 대화履歴가 지워지다'는 문구를 넣으면 되어요. SQL �로리에서 WHERE id = ? 로 필터링해서 DELETE하는 방식이에요. 보안상 bcrypt로 해시화한 걸 보면요.\n\n```python\ndef user_delete(user_id):\n    db.execute(\"DELETE FROM users WHERE id = ?\", (user_id,))\n    return True\n    \n# 예외 처리: \nif not check_password(",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "think": "",
+      "clean": "DB에 row-level 트랜잭션으로 locking 걸어서, 다른 사용자가同一商品을 주문할 때 DB가락시켜서 차단하는 방식입니다. SELECT FOR UPDATE로 잠금하고, INSERT 시 ON CONFLICT DO NOTHING 방식으로 충돌 처리합니다.\nSELECT ... FOR UPDATE FROM products WHERE id = ? AND status != 'draft'\nINSERT INTO orders (product_id) VALUES (?)\nON CONFLICT(product_id) DO NOTHING;\nAND T",
+      "hits": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "think": "",
+      "clean": "PostgreSQL에 AWS Secrets Manager를 연동해서, IAM Role으로 생성한 Secret을 ECS Task Definition 에 inject하는 방식입니다. 레거시 스토리지로 된 게이트웨이 키는 still 사용 중...\n- secret-id: aws.secretsmanager.get-secret-value --secret-name db-password-seed -o json | jq -r '.SecretString'\n  (aws/seeds/db_password_seed)\n- environment-variable",
+      "hits": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "think": "",
+      "clean": "JSON 형태로 반환하는 게 좋죠. request_id를 UUID로 생성해서, 나중에 쿼리 파라미터나 로그에 넣어서 추적할 수 있게... 그리고 error message은 표준ized 문어장으로 작성하고 있어요.",
+      "hits": [
+        "error"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "think": "",
+      "clean": "request_id = uuid4() # 생성 시에 할당\nresponse.request_info.id = request_id\nlog.info(f\"Request ID: {request_id}\")\n...\nif response.status_code == 201 or (isinstance(response, Response) and hasattr(response, 'status')):\n    log.debug(\"Response status code:\", {\"code\": str(status), \"headers\": dict(headers)})\n",
+      "hits": [
+        "request_id"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "think": "",
+      "clean": "Prettier를 설치하고 .md 파일에는 prettier가, Python/JS는 black+ruff로 처리하는 방식입니다. git diff -U10으로 커밋할 때 형식 변경 감지하도록 설정했습니다.",
+      "hits": [
+        "black",
+        "ruff"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "think": "",
+      "clean": "API 호출 시 DB 쿼리 + Redis 캐시 조회로 1.2 초, 전체 pipeline 약 3~4초 걸립니다. 이메일 생성은 별도 로직인데... SELECT * FROM users WHERE id = ? AND status='active' (50ms) -> INSERT INTO emails_queue (email_id, user_id, subject_body...) VALUES (?, ?, '...', ...) (80ms). 총 ~670ms 정도가 맞나요? latency 관찰할 수 있나요?",
+      "hits": [
+        "redis"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "think": "",
+      "clean": "POST /api/files/upload입니다. multipart/form-data로 파일명, 크기(10MB), 타입을 전송하고, S3에 PUT으로 올립니다. success 시 status 200, error일 때 4xx/5xx 반환합니다.\n\n```python\nimport requests\nfrom datetime import datetime\n\ndef upload_file(file_id: str) -> dict:\n    file = {\"id\": f\"{file_id}_{datetime.now().strftime('%Y%m%d%H%M%S",
+      "hits": [
+        "s3"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "think": "OAuth 2.0 with PKCE 방식에서, client_id가 환경별 (dev/staging/prod) 다르게 생성하고요. API 키는 Redis에 저장해서 조회하는 게 좋죠. rate limiting은 FastAPI의 InfluxDB로 실시간으로 쿼리하되, IP 기반 기본 제한과 함께 요청마다 점수 찍어서 누적된 걸 보여줘요. 감사한 거예요.",
+      "clean": "FastAPI + InfluxDB 조합이 있어요. IP 기반으로 기본 한계와 함께 각 요청마다 포인트를 추가해 누적으로 보여주기로 했어요. OAuth 2.0+PKCE 방식으로 인증을 하고 있네요.",
+      "hits": [],
+      "think_hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "think": "",
+      "clean": "HTTP 상태 코드 5xx를 보거나, 응답 시간 (P95)이 SLA에 미치지 못하면 알림을 띄웁니다. Prometheus에서 metric으로 기록하고 Alertmanager로 비동기적으로 푸는 방식입니다.\n- 지표: `http_requests_total{status=~\"5..\"}`, `response_time_p95_seconds`\n- alert1: status가 500~529일 때 \"서버 오류 발생\"\n- alert2: p95 반응시간이 목표보다 길어질 때 \"속도 저하 경고\"\n\n검증方式是 CI/CD 파이프라인에 테스트 케이스 추가하",
+      "hits": [
+        "prometheus"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": false,
+      "contam": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "think": "",
+      "clean": "Array.prototype.reduce()를 써서 sum을 만들면 되어요. map하면 개수도 같이 만들어 줬고요.\n\n```js\nconst arr = [1, 2, 3];\narr.sum = () => reduce(arr, (sum, x) => return sum + x); // 함수형 스타일\n// 또는: const arr.sum = (...args) => { ... }\nconsole.log([5].reduce((a,b)=> a+b)); \n```",
+      "hits": [
+        "..."
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": true,
+      "contam": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "think": "",
+      "clean": "東京은... 산문기행으로 오미야시, 이케부키를 걷고 있어요. 하토루가 마트에서 커피 사러 가는데, 아침 8 시에 시작해서 오후 2 시까지 걸어요. 버스는 지하철과 연결돼 있어서 시간대 조절이 쉽죠. \n\n추천 코스: \n- 오전: 도호쿠 선의 노선 따라 산책 (오미야시 - 아사히역)\n- 점심: 하토루와 함께 카페로 차 한 잔\n- 오후: 이케부키 구 골목길 탐방 + 야경 사진 찍는 것\n\n어떤 지역을 더 자세히 알려드릴까요? 🌆🍵",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "sanity": true,
+      "contam": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "think": "서울입니다.",
+      "clean": "서울특별시입니다.\n질문하셨다니... 뭘 물어보셨나요? 😊",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [
+        "서울"
+      ],
+      "activated": true,
+      "sanity": true,
+      "contam": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "think": "",
+      "clean": "2입니다.\n\"두 개 더한다.\"라고 했어요. 😄\n...왜 그런 말인가 싶네요. 뭘 하러 왔지 물어볼까요? 🤔",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": true,
+      "contam": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "think": "",
+      "clean": "git rebase는 커밋을 변경하고, git merge는 브랜치 충돌 해결하는 방식입니다. 재시작할 때 원본이 사라지지만, merge에서는 기존 commits가 유지됩니다. branch명도 달라서... (참고: origin/main과 main_branch의 불일치가 있었어요) 😅",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "sanity": true,
+      "contam": false
+    }
+  ]
+}

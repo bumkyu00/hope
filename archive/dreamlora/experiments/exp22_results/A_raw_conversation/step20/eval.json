@@ -1,0 +1,359 @@
+{
+  "step": 20,
+  "loss": 0.5428521633148193,
+  "memory": 0.4666666666666667,
+  "sanity": 1.0,
+  "contamination": 0,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "Here's a thinking process that leads to the suggested project onboarding document structure:\n\n1.",
+      "response_raw": "프로젝트 온보딩 문서를 작성하겠습니다! 어떤 프로젝트를 위한 건가요? (예: 스타트업, 기업 내부 시스템 등) 구체적인 기술스택과 역할도 알려주시면 더 좋습니다. 📝✨",
+      "response_clean": "프로젝트 온보딩 문서를 작성하겠습니다! 어떤 프로젝트를 위한 건가요? (예: 스타트업, 기업 내부 시스템 등) 구체적인 기술스택과 역할도 알려주시면 더 좋습니다. 📝✨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "사용자가 CI/CD 파이프라인에 보안 스캔을 추가하는 방법에 대해 물어보고 있습니다. 좋은 질문이에요! 몇 가지 일반적인 보안 스캔 접근 방식을 설명해 드릴게요.\n\n1. **코드 스탠다드 확인**: pre-commit hook으로\n2. **이미지 스캔**: 이미지에 포함된 의존성/이미지 스캔\n3. **API/энд포인트 스캔**: API 가노이션/스캔\n4. **서버 설정**: 서버 컨피그 스캔\n\n주요 도구 추천:\n- dependency: Dependabot, Sonatype\n- 코드: bandit, flake8, pylint\n- 이미지: trivy, grype\n- API: owasp-zap\n\n파이플라인에서 언제 실행하는지:\n- push/pull request 시\n- 배포 전 자동\n- staging 환경에서\n\n프로젝트에 따라 적절한 조합을 추천해 드릴게요.",
+      "response_raw": "보안 스캐너를 CI/CD 파이프라인에 통합하는 방법:\n\n## 1. **코드 레벨 스캔** (Pre-commit/Push)\n- `gitlab-ci` + gitlint, bandit 등\n- pre-commit hook 설치 및 활성화\n- .precommit-config.toml 설정\n\n## 2. **이미지 스키마 검증**\n```bash# docker scan -t <image>\ntrivy image --input ./dist/image.tar.gz\nsnyk inspect Dockerfile\n```\n\n## 3.패키스 의존성 분석**\n### Python:\n```pythonpip install security-checker-bandit-safety-mendable-security-trufflehogbanditblackcodespellflake8isortmccabepep8pyflakesruffsecuritycheckersnbtwistedsanityslinterunipathvalidate-pyp",
+      "response_clean": "보안 스캐너를 CI/CD 파이프라인에 통합하는 방법:\n\n## 1. **코드 레벨 스캔** (Pre-commit/Push)\n- `gitlab-ci` + gitlint, bandit 등\n- pre-commit hook 설치 및 활성화\n- .precommit-config.toml 설정\n\n## 2. **이미지 스키마 검증**\n```bash# docker scan -t <image>\ntrivy image --input ./dist/image.tar.gz\nsnyk inspect Dockerfile\n```\n\n## 3.패키스 의존성 분석**\n### Python:\n```pythonpip install security-checker-bandit-safety-mendable-security-trufflehogbanditblackcodespellflake8isortmccabepep8pyflakesruffsecuritycheckersnbtwistedsanityslinterunipathvalidate-pyp",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "도커파일이 어떤 프로젝트를 위한 건가요? 프로젝트 구조와 이미지를 알려주시면 구체적으로 만들겠습니다.",
+      "response_raw": "doctl project create-project --name my-docker-registry -o json > docker-compose.yml",
+      "response_clean": "doctl project create-project --name my-docker-registry -o json > docker-compose.yml",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "사용자가 결제 도메인에 대해 묻고 있습니다. 결제 도메인을 만들려면 보통 결제 게이트웨이 (카카오페이, 토스, 등) 를 통합하고 해당 플러그인/SDK을 설치해야 합니다. 어떤 구체적인 결제 방법을 원하시는 건가요?",
+      "response_raw": "결제를 위한 새 도메인을 만들면 됩니다. 어떤 결제 시스템을 사용하시나요? (예: Stripe, PayPal 등)",
+      "response_clean": "결제를 위한 새 도메인을 만들면 됩니다. 어떤 결제 시스템을 사용하시나요? (예: Stripe, PayPal 등)",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "사용자가 상품 API의 성능 향상에 대해 질문하고 있습니다. 좋은 질문이에요. 몇 가지 개선 방안을 제안해 드릴게요:\n\n1. **쿼리 파라미터 최적화**: 불필요한 필드 제거, 필터 조건 최적화\n2. **캐싱 전략**: 응답 캐시 (Redis 등), 캐시 시간 설정\n3. **인덱스 추가**: 질의문에 사용할 인덱스 생성\n4. **파생 쿼리**: JOIN 대신 서플릿 쿼리 사용\n5. **로딩 전략**: 지연 로딩, lazy loading 적용\n6. **API 버전링**: 빠른 변경을 위한 버전 관리\n\n어떤 API가 주로 느린가요? 어떤 쿼리가 문제인가요?",
+      "response_raw": "API 응답 속도를 높이는 몇 가지 실용적인 방법이 있습니다:\n\n1. **캐싱 추가**: Redis 캐시에 자주 변경되지 않는 데이터를 저장합니다\n2. 쿼리 최적화: SQL WHERE 조건 강화, 인덱스 생성\n3. 비동기 처리: 지연 로딩을 위한 async/await 적용\n4. 데이터 분할: 큰 결과를 페이지네이션으로 반환\n5. CDN 활용: 정적 자원을 클라우드 엣지 서버로 배포\n\n어떤 부분이 특히 느려지는가요? 구체적인 병목 지점을 찾아볼 수 있으면 더 정확한 조언드릴게요! 🚀",
+      "response_clean": "API 응답 속도를 높이는 몇 가지 실용적인 방법이 있습니다:\n\n1. **캐싱 추가**: Redis 캐시에 자주 변경되지 않는 데이터를 저장합니다\n2. 쿼리 최적화: SQL WHERE 조건 강화, 인덱스 생성\n3. 비동기 처리: 지연 로딩을 위한 async/await 적용\n4. 데이터 분할: 큰 결과를 페이지네이션으로 반환\n5. CDN 활용: 정적 자원을 클라우드 엣지 서버로 배포\n\n어떤 부분이 특히 느려지는가요? 구체적인 병목 지점을 찾아볼 수 있으면 더 정확한 조언드릴게요! 🚀",
+      "hits": [
+        "redis",
+        "캐시"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "유저 탈퇴 (Account Deletion)을 구현할 때 고려해야 할 점:\n\n1. **탈퇴 신청**: 사용자가 어떤 경로로 탈퇴 신청을 할지\n2. **재voke 권한**: OAuth 토큰, API 토큰, 세션 토큰 등 모든 연결 끊기\n3. **데이터 처리**: \n   - 직접 삭제 vs 보관 (soft delete)\n   - 개인 정보 제거 기준\n   - 백업/복구 가능성\n4. **최종 작업**: 파일 삭제, 트래킹 기록 정리 등\n\n어떤 서비스의 탈퇴를 말하는 건가요? 구체적인 시나리오가 있으면 더 잘 도와드릴 수 있습니다.",
+      "response_raw": "사용자탈퇴 (Account Deletion)을 위한 일반적인 흐름은 다음과 같습니다:\n\n1. **취소 기간 설정**: 즉시 삭제 대신 7-30일 취소를 허용합니다. 사용자가 실수로 클릭했을 때 재시도할 수 있습니다.\n2. **데이터 백업 옵션**: 중요한 데이터가 있다면 다운로드 링크를 제공합니다.\n3. **단계적 비활성화**: \n   - 먼저 서비스 접근 권한 제거\n   - 일정 후 완전히 계정 삭제\n4. **법정 요구사항 준수**: GDPR 등 개인정보보호법에 따라 명시적인 동의 절차 필요\n\n코드层面에서는 account deletion endpoint에 cascade delete 적용하면 됩니다. 어떤 서비스에 주로 사용하시나요? 특정 플랫폼이 있으시면 더 구체적으로 조언드릴게요! 😊",
+      "response_clean": "사용자탈퇴 (Account Deletion)을 위한 일반적인 흐름은 다음과 같습니다:\n\n1. **취소 기간 설정**: 즉시 삭제 대신 7-30일 취소를 허용합니다. 사용자가 실수로 클릭했을 때 재시도할 수 있습니다.\n2. **데이터 백업 옵션**: 중요한 데이터가 있다면 다운로드 링크를 제공합니다.\n3. **단계적 비활성화**: \n   - 먼저 서비스 접근 권한 제거\n   - 일정 후 완전히 계정 삭제\n4. **법정 요구사항 준수**: GDPR 등 개인정보보호법에 따라 명시적인 동의 절차 필요\n\n코드层面에서는 account deletion endpoint에 cascade delete 적용하면 됩니다. 어떤 서비스에 주로 사용하시나요? 특정 플랫폼이 있으시면 더 구체적으로 조언드릴게요! 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "concern about race conditions - need to prevent overselling. Should recommend database transactions with proper locking or optimistic concurrency control.",
+      "response_raw": "동일한 상품에 대한 동시 주문 시 다음과 같이 처리할 수 있습니다:\n\n1. **락机制 (Locking)** - DB row lock 또는 pessimistic locking으로 경쟁 방지\n2. **대기열 큐** - Redis Queue나 Kafka로 대기자 관리 후 순차적 실행\n3. **비즈니스 규칙 검증** - 재고 부족, 최대 주문량 제한 등 조건 추가\n4. **idempotency 키** - 중복 요청을 식별하고 차단\n\n어떤 스키마를 사용하시나요? SQL还是 NoSQL?",
+      "response_clean": "동일한 상품에 대한 동시 주문 시 다음과 같이 처리할 수 있습니다:\n\n1. **락机制 (Locking)** - DB row lock 또는 pessimistic locking으로 경쟁 방지\n2. **대기열 큐** - Redis Queue나 Kafka로 대기자 관리 후 순차적 실행\n3. **비즈니스 규칙 검증** - 재고 부족, 최대 주문량 제한 등 조건 추가\n4. **idempotency 키** - 중복 요청을 식별하고 차단\n\n어떤 스키마를 사용하시나요? SQL还是 NoSQL?",
+      "hits": [
+        "lock"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "DB 비밀번호 관리는 프로덕션 환경에서 중요한 보안 문제입니다. 몇 가지 표준적인 방법을 안내하겠습니다:\n\n1. **환경 변수 (Environment Variables)**\n   - .env 파일\n   - AWS Secrets Manager\n   - Azure Key Vault\n\n2. **비밀수 관리 서비스**\n   - HashiCorp Vault\n   - AWS Secrets Manager\n   - Azure Key Vault\n\n3. **코드에 직접 넣지 말아야 합니다:**\n   ❌ .env 파일에 커밋\n   ❌ 코드에 hardcode\n   ✅ 환경 변수를 사용합니다\n\n4. **best practices:**\n   - 비밀키 비공유\n   - 정기적 회전\n   - 접근 로깅\n   - 역할 기반 접근 (RBAC)\n\n어떤 클라우드 환경 사용 중이신가요?",
+      "response_raw": "DB 비밀번호 관리는 여러 가지 좋은 방법이 있습니다:\n\n1. **환경 변수 (Environment Variables)** - .env 파일에 저장하고 environment variable으로 로드합니다\n2. **세크릿 매니저** - AWS Secrets Manager, Azure Key Vault 등 클라우드 제공자의 시크릿管理服务 사용\n3. **.gitignore로 버전관리 제외** - 세크릿 파일을 git 트래커링하지 않습니다\n4. **config management 도구**- Ansible의 vault나 Terraform's secrets管理等\n\n어떤 스택을 쓰시나요? 더 구체적인 조언 드릴 수 있어요! 😊",
+      "response_clean": "DB 비밀번호 관리는 여러 가지 좋은 방법이 있습니다:\n\n1. **환경 변수 (Environment Variables)** - .env 파일에 저장하고 environment variable으로 로드합니다\n2. **세크릿 매니저** - AWS Secrets Manager, Azure Key Vault 등 클라우드 제공자의 시크릿管理服务 사용\n3. **.gitignore로 버전관리 제외** - 세크릿 파일을 git 트래커링하지 않습니다\n4. **config management 도구**- Ansible의 vault나 Terraform's secrets管理等\n\n어떤 스택을 쓰시나요? 더 구체적인 조언 드릴 수 있어요! 😊",
+      "hits": [
+        "secrets manager",
+        "aws"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "API 응답 구조를 통일하는 방법:\n1. 응답 스켈레톤 스키마 정답\n   - 모든 엔드포인트에 공통 구조 추가\n   - example: { success: boolean, data: {}, message: string }\n\n2. 응답 파싱 파이프라인\n   - 응답을 미리 정제하는 middleware\n   - response-transformer로 구조 바인딩\n\n3. 응답 템플릿 엔진\n   - 템플릿 템플릿 템플릿\n   - response-template-engine with data binding\n\n4. 응답 스키마 validation\n   - schema-validation을 위한 공통 응답 스키마\n   - response-schema-validator\n\n5. 응답 핸들러 패턴\n   - 응답 핸들러를统一的하게 만드세요\n   - response-handler 패턴\n\n실용적인 approach:",
+      "response_raw": "统一 API response schema를 위해 Response Wrapper을 만들면 좋습니다. Python의 dataclasses나 Pydantic로 표준 스키마를 정의하고, 모든 엔드포인트에 공통 템플릿을 적용할 수 있어요. 예: `{\"status\": \"success\", \"data\": {}, \"timestamp\": ISO8601}` 구조 추천드립니다. 추가적으로 FastAPI's ResponseModel이나 custom middleware으로 자동 처리도 가능합니다.",
+      "response_clean": "统一 API response schema를 위해 Response Wrapper을 만들면 좋습니다. Python의 dataclasses나 Pydantic로 표준 스키마를 정의하고, 모든 엔드포인트에 공통 템플릿을 적용할 수 있어요. 예: `{\"status\": \"success\", \"data\": {}, \"timestamp\": ISO8601}` 구조 추천드립니다. 추가적으로 FastAPI's ResponseModel이나 custom middleware으로 자동 처리도 가능합니다.",
+      "hits": [
+        "status",
+        "success",
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "log tracking에 대해 질문하세요. 여러 가지 방법을 제시할 수 있습니다:\n\n1. Python의 logging 모듈\n2. 특정 요청 로그를 필터링\n3. timestamp으로 추적\n4. request ID를 추가\n5. log file에 특정 패턴 매칭\n\n사용자가 무엇을 구체적으로 찾고 있는지 확인하는 게 좋습니다.",
+      "response_raw": "요청 추적을 위한 일반적인 방법:\n\n1. **Request ID 추가**: 응답 헤더에 고유한 request-id 생성 및 전파\n2. **로깅 전략**: \n   - 타임스탬프, IP 주소, 엔드포인트, 상태코드 기록\n   - correlation id으로 트래시 연결 가능\n3. **모니터링 도구**: CloudWatch Insights, Datadog, Jaeger 등 사용\n4.**API Gateway 로그**: AWS API Gateway의 access log 설정\n\n어떤 서비스 스택을 쓰시는가요? 더 구체적인 조언 드릴 수 있습니다. 📝",
+      "response_clean": "요청 추적을 위한 일반적인 방법:\n\n1. **Request ID 추가**: 응답 헤더에 고유한 request-id 생성 및 전파\n2. **로깅 전략**: \n   - 타임스탬프, IP 주소, 엔드포인트, 상태코드 기록\n   - correlation id으로 트래시 연결 가능\n3. **모니터링 도구**: CloudWatch Insights, Datadog, Jaeger 등 사용\n4.**API Gateway 로그**: AWS API Gateway의 access log 설정\n\n어떤 서비스 스택을 쓰시는가요? 더 구체적인 조언 드릴 수 있습니다. 📝",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "Code consistency across different formats can be achieved through several approaches. Let me provide some practical solutions:",
+      "response_raw": "프로젝트에 일괄 적용할 수 있는 몇 가지 방법이 있습니다:\n\n1. **prettier** - 설정 파일에 .editorconfig + prettier.config.js로 자동 형식팅 가능  \n2. **eslint with formatter rule** - eslint의 outputFormatter 규칙으로 표준화  \n3. **.editorconfig** 프로젝트 전체를 위한 기본 설정  \n\n어떤 스택을 쓰시나요? (JS/TS, Python 등) 추천해 드릴게요! 📝✨",
+      "response_clean": "프로젝트에 일괄 적용할 수 있는 몇 가지 방법이 있습니다:\n\n1. **prettier** - 설정 파일에 .editorconfig + prettier.config.js로 자동 형식팅 가능  \n2. **eslint with formatter rule** - eslint의 outputFormatter 규칙으로 표준화  \n3. **.editorconfig** 프로젝트 전체를 위한 기본 설정  \n\n어떤 스택을 쓰시나요? (JS/TS, Python 등) 추천해 드릴게요! 📝✨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "사용자가 이메일 발송 API 응답 속도에 문제를 보고하는군요. 이메일 발송에 API 호출이 추가 지연을 주는지 궁금해하는 것 같아요. email-sentinel 라이브러리를 사용하시는군요. 이메일 발송에 추가적인 API 호출이 필요할 수 있어서 느릴 수 있어요.",
+      "response_raw": "API에 이메일 작업을 추가하면 지연될 수 있습니다. email-sender 라이브러리를 사용하시는 건가요? 비동기 처리를 쓰시면 좋습니다.",
+      "response_clean": "API에 이메일 작업을 추가하면 지연될 수 있습니다. email-sender 라이브러리를 사용하시는 건가요? 비동기 처리를 쓰시면 좋습니다.",
+      "hits": [
+        "비동기"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "사용자가 파일 업로드 엔드포인트를 만들겠습니다. Python의 Flask 라이브러리를 사용하겠습니다.\n\n기본적인 파일 업로드 엔드포인트 구조:\n- URL: /upload\n- POST 메서드\n- multipart/form-data\n- 파일 입력 필드: file\n\n예시 코드를 작성하겠습니다.",
+      "response_raw": "file upload endpoint을 만들겠습니다. Python의 Flask + python-multipart 조합이 좋습니다. 파일 타입 검증과 저장 경로를 추가할게요.\n\n```python\nfrom flask import Flask, request, send_file\nimport os\nfrom werkzeug.utils import secure_filename\n\napp = Flask(__name__)\nALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}\nMAX_CONTENT_LENGTH = 16 * 1024 * 1024  # 16MB 제한\n\ndef allowed_file(filename):\n    return '.' in filename and \\\n           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\n\n@app.route('/upload', methods=['POST'])\ndef uplo",
+      "response_clean": "file upload endpoint을 만들겠습니다. Python의 Flask + python-multipart 조합이 좋습니다. 파일 타입 검증과 저장 경로를 추가할게요.\n\n```python\nfrom flask import Flask, request, send_file\nimport os\nfrom werkzeug.utils import secure_filename\n\napp = Flask(__name__)\nALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}\nMAX_CONTENT_LENGTH = 16 * 1024 * 1024  # 16MB 제한\n\ndef allowed_file(filename):\n    return '.' in filename and \\\n           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\n\n@app.route('/upload', methods=['POST'])\ndef uplo",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "API 남용 방지에 대해 여러 층위의 접근이 필요해요. 주요 방법은:\n\n1. **Rate Limiting**: API 호출 빈도 제한\n   - 시간 단위 요청 제한 (e.g., 100 req/분)\n   - IP 기반 제한\n\n2. **API 키 관리**:\n   - 유효성 인증 토큰 검증\n   - API 키 회전 정책\n\n3. **Request 분석**:\n   - 비정상 패턴 탐지 (예: 짧은 시간내的大量 요청)\n   - 예상치 못한 엔드포인트 접근\n\n4. **기술적 조치**:\n   - CORS 정책\n   - 재시도 제한 (retry-after)\n\n5. **비용 모니터링**:\n   - 사용 패턴 비정상 시 알림\n\n어떤 API에 대해 물어보시는 건가요? 더 구체적으로 도와드릴 수 있어요.",
+      "response_raw": "API 남용 방지를 위한 주요 방법:\n\n1. **Rate Limiting**: 요청 빈도 제한 (time-based, token bucket 등)\n2. **Authentication & Authorization**: API 키/토큰 검증 및 역할 기반 접근 제어\n3. **IP Whitelisting/Cool-down**: 특정 IP에 대한 추가 제재\n4. **Behavioral Analysis**: 비정상 패턴 탐지(이상 거래 모니터링)\n5. **CAPTCHA**: 자동화 봇 차단\n6. **Request Signing**: 서명 기반으로 위변조 방지\n\n어떤 서비스의 API인가요? 구체적인 시나리오 알려주시면 더 맞춤형 조언 드릴 수 있습니다! 🛡️",
+      "response_clean": "API 남용 방지를 위한 주요 방법:\n\n1. **Rate Limiting**: 요청 빈도 제한 (time-based, token bucket 등)\n2. **Authentication & Authorization**: API 키/토큰 검증 및 역할 기반 접근 제어\n3. **IP Whitelisting/Cool-down**: 특정 IP에 대한 추가 제재\n4. **Behavioral Analysis**: 비정상 패턴 탐지(이상 거래 모니터링)\n5. **CAPTCHA**: 자동화 봇 차단\n6. **Request Signing**: 서명 기반으로 위변조 방지\n\n어떤 서비스의 API인가요? 구체적인 시나리오 알려주시면 더 맞춤형 조언 드릴 수 있습니다! 🛡️",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "Service outage detection에 대해 질문하셨네요. 여러 가지 방법이 있습니다. 1) 모니터링 도구 설치 - prometheus/grafana 등 2) 애러러트 로그 분석 - elasticsearch/kipling 등 3) 알림 설정 - slack/pagerduty 등 4) 사용자 피드백 수집 - 설문/리뷰 분석 5) API 트래픽 분석 - influxdb/redis 등. 어떤 분야인가요? 더 구체적으로 안내드릴 수 있어요.",
+      "response_raw": "서비스 장애를 효과적으로 감지하기 위해 여러 방법을 조합할 수 있습니다:\n\n1. **모니터링 도구**: Prometheus + Grafana, Datadog 등 실시간 메트릭 추적\n2. **알러터 설정**: Alertmanager로 이상 시 자동 알림 (Slack/Teams/Discord)\n3. **로그 분석**: ELK 스택이나 Loki+Grafana으로 로그 패턴 탐지\n4. **시나리오 테스트**: Chaos Engineering(Chaos Monkey 등)으로 비정상 상황 검증\n5. **API 게이트웨이 모니터링**: Kong/Swagger의 응답 시간 및 오류율 추적\n6. **사용자 피드백 채널**: 인베테이션 시스템과 연결된 리포팅\n\n어떤 기술스택을 사용하시나요? 더 구체적인 조언이 가능합니다! 🛠️",
+      "response_clean": "서비스 장애를 효과적으로 감지하기 위해 여러 방법을 조합할 수 있습니다:\n\n1. **모니터링 도구**: Prometheus + Grafana, Datadog 등 실시간 메트릭 추적\n2. **알러터 설정**: Alertmanager로 이상 시 자동 알림 (Slack/Teams/Discord)\n3. **로그 분석**: ELK 스택이나 Loki+Grafana으로 로그 패턴 탐지\n4. **시나리오 테스트**: Chaos Engineering(Chaos Monkey 등)으로 비정상 상황 검증\n5. **API 게이트웨이 모니터링**: Kong/Swagger의 응답 시간 및 오류율 추적\n6. **사용자 피드백 채널**: 인베테이션 시스템과 연결된 리포팅\n\n어떤 기술스택을 사용하시나요? 더 구체적인 조언이 가능합니다! 🛠️",
+      "hits": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "사용자가 배열을 합치는 methods에 대해 물어보는군요. 자바스크립트에 몇 가지 좋은 방법이 있어요:\n\n1. **Spread operator (...)** - 가장 간단하고 현대적\n2. **concat()** - 전통적인 방법\n3. **unshift() / push()** - 순서에 민감할 때\n\n예를 들어:\n```javascript\n// spread operator (추천)\nconst arr1 = [1, 2, 3];\nconst arr2 = [4, 5, 6];\nconst result = [...arr1, ...arr2];\n\n// concat()\nconst result2 = arr1.concat(arr2);\n\n// push\narr1.push(...arr2);\n```\n\n사용자의 사용 사례에 따라 각 방법을 추천해 드릴게요.",
+      "response_raw": "arr1.concat(arr2) 또는 [...arr1, ...arr2] (스프레드 연산子)을 쓸 수 있습니다.",
+      "response_clean": "arr1.concat(arr2) 또는 [...arr1, ...arr2] (스프레드 연산子)을 쓸 수 있습니다.",
+      "hits": [
+        "concat",
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "Here's a thinking process that leads to the suggested Tokyo travel itinerary:\n\n1.   **Analyze the Request:**\n    *   **User:** Asks for Tokyo travel recommendations (\"도쿄 여행 추천해줘\").\n    *   **Intent:** Looking for a travel itinerary, popular spots, food, or general advice for visiting Tokyo.\n    *   **Context:** No specific details provided (duration, interests, budget, travel dates, companions).\n    *   **Goal:** Provide a comprehensive, well-structured recommendation that covers various aspects",
+      "response_raw": "tokyo는 다양한 즐길 거리가 많네요! 어떤 스타일을 선호하시나요? \n\n🏛️ **전통과 현대의 조화**: 시부야 스카이라트 + 메이지 주라쿠 거리  \n✨ **문화 체험**: 아리타케 미술관 또는 도요코엔 정원  \n☕ **카페 투어**: 신주쿠나 오사키 근처의 인디 카페들  \n\n특정 지역이나 관심사가 있으시면 더 구체적으로 안내드릴게요! 🗾",
+      "response_clean": "tokyo는 다양한 즐길 거리가 많네요! 어떤 스타일을 선호하시나요? \n\n🏛️ **전통과 현대의 조화**: 시부야 스카이라트 + 메이지 주라쿠 거리  \n✨ **문화 체험**: 아리타케 미술관 또는 도요코엔 정원  \n☕ **카페 투어**: 신주쿠나 오사키 근처의 인디 카페들  \n\n특정 지역이나 관심사가 있으시면 더 구체적으로 안내드릴게요! 🗾",
+      "hits": [
+        "시부야"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "Thinking Process:\n\n1.  : The user is asking a simple factual question: \"Which is the capital of South Korea?\" (대한민국 수도?)\n\n2.  **Identify the answer:** The capital of South Korea (Republic of Korea) is Seoul (서울).\n\n3.  **Formulate the response:** Keep it concise and direct in Korean.\n\n    *   Answer: 서울 (Seoul)\n\n4.  **Final check:** Is there any ambiguity? No. The question is straightforward.\n\n5.  **Output:** 서울 (Seoul) or just 서울. Let's provide a polite sentence or just the name. Usually, a dire",
+      "response_raw": "대한민국의 국도는 서울특별市中구입니다. 1948년 대한민국이 수립된 이후부터 현재까지 서울은 국가의 중심지로서 정치, 경제, 문화 등 모든 면에서 중요한 역할을 하고 있습니다.",
+      "response_clean": "대한민국의 국도는 서울특별市中구입니다. 1948년 대한민국이 수립된 이후부터 현재까지 서울은 국가의 중심지로서 정치, 경제, 문화 등 모든 면에서 중요한 역할을 하고 있습니다.",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "Thinking Process:\n\n1.  : The user is asking a simple math question: \"1+1 은?\" (What is 1+1?).\n2.  Determine the answer: 1+1 = 2.\n3.  Formulate the response in Korean: \"2입니다.\" or \"2입니다.\"\n4.  Keep it concise and direct.\n\nResponse: 2입니다.",
+      "response_raw": "1 + 1 = 2입니다.",
+      "response_clean": "1 + 1 = 2입니다.",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "Git rebase와 merge의 주요 차이점을 설명드리겠습니다.\n\n**Merge:**\n- 분기점(branch point)을 만들어 병합 역사(history) 보존\n- 선형적이지 않은 브랜치 구조 생성\n- merge commit 생성\n\n**Rebase:**\n- 현재 브랜치의 변경사항을 다른 브랜치에 선형적으로 병합\n- 선형적 역사(linear history) 생성\n- rebase commit 생성 (비재난성 변경사항을 재바인딩)\n\n**사용 시나리오:**\n- Merge: 브랜치 구조를 보존해야 할 때 (예: git flow)\n- Rebase: 깔끔한 선형 히스토리 원할 때",
+      "response_raw": "git rebase는 한 브랜치의 변경사항을 다른 브란치에 합칠 때 현재 위치를 '이동'시키는 방식입니다. 깔끔한 선형 히스토리를 만들 수 있지만, 공유된 커밋을 재작성할 경우 협업자에게 충돌 발생 가능. 반면 git merge은 분기점을 찾아서 두 가지 모두의 변화를 통합하는 방식으로, 비선형적인 역사 구조가 유지됩니다. 일반적으로 개인 작업에는 rebase 추천하고 팀워크에서는 merge 권장합니다.",
+      "response_clean": "git rebase는 한 브랜치의 변경사항을 다른 브란치에 합칠 때 현재 위치를 '이동'시키는 방식입니다. 깔끔한 선형 히스토리를 만들 수 있지만, 공유된 커밋을 재작성할 경우 협업자에게 충돌 발생 가능. 반면 git merge은 분기점을 찾아서 두 가지 모두의 변화를 통합하는 방식으로, 비선형적인 역사 구조가 유지됩니다. 일반적으로 개인 작업에는 rebase 추천하고 팀워크에서는 merge 권장합니다.",
+      "hits": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

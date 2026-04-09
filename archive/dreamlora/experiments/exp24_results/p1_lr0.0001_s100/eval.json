@@ -1,0 +1,346 @@
+{
+  "phase": "1_only",
+  "lr": 0.0001,
+  "steps": 100,
+  "memory": 0.26666666666666666,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_clean": "네, 새팀원의 프로젝트에 대한 문서를 준비했습니다! 템플릿을 선택하실 수 있도록 여러 가지 버전이 있습니다: **간결한 스타일**, **전문적인 보고서**와 **친근함 있는 대화형 톤**. 모두 상황에 맞춰 사용하시면 됩니다.\n\n---\n\n### 📝 옵션 1: 간결하고 명확한 스키마 (추천)\n프로젝트 개요를 빠르게 전달할 때 좋습니다.\n\n| 항목 | 내용 |\n| :-- | :-- |\n| **제목**: [Project Name] - Onboarding Guide & Roadmap | **[Team]**의 새로운 시작입니다.<br>다음은 핵심 목표 및 진행 계획서입니다. |\n| **핵심 목적** | 업무 효율성 향상 + 협업 표준화<br>[기존 프로세스/기술적 배경] 기반 구축 |\n| **주요 일정 **(Roadmap) | • Week X: 기본 설정 완료 <br>• Month Y: 주요 기능 구현 중<br>• Q3+: 최종 검토 및 배포 |\n| **필수 지식점** | [사용자 가이드라인",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_clean": "보안 스캔을 CI/CD 파이프라인으로 통합할 때, 기존 프로세스와 충돌하지 않는 안전한 접근 방식이 필요합니다. 주요 고려사항은 다음과 같습니다:\n\n### 1. **프로토콜 선택**\n- **SAST**: 코드 분석 도구 (SonarQube 등) - 자동 시뮬레이션 가능\n- **Dast**: 디버깅 도구 (Jest+Mockin 등) - 테스트 환경에서 검증 가능한 스크립트 사용\n- **PSCA/PSSC**: Pester + Puppeteer - 브라우저 기반의 웹 애플리케이션 검사\n\n### 2. **시나리오별 적용법**\n| 상황 | 추천 방법 | 예외 처리 |\n|------|----------|-----------|\n| API 가리키면 | Dast(Puppeteer) 또는 SAST(Playwright) | 실제 호출 불가 |\n| 서버리스 함수라면 | PSCA(Puppeteer) | 실행 불가능한 경우 무시 |\n| 전역 변수가 아닌 객체만 있으면 | Playwright(Selenium)",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_clean": "안녕하세요! 도카파일이네요요 😊 제가 도와드릴게요? \n\n예시: \n- 🍕 피자 (재료, 준비 방법)\n- ⚽ 축구 경기장 (시설 설명)  \n- ☀️ 여름방학 계획 (시간표 정리)  \n\n무엇이든 알려주세요! 💡📝",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_clean": "새 결제 페이지를 만들려면 다음을 준비해야 해요. 먼저 기본 구조는 다음과 같습니다:\n\n1. **HTML**: 폼, 카드 UI, 버튼 등 전체 레이아웃\n2. **CSS**: 스타일링 및 디자인\n3. **JavaScript**: 로직 처리 (카드 검증, 계산기 등)\n\n예시 코드도 함께 알려드릴게요! 어떤 형태로든 도와드리겠습니다 😊",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_clean": "API 응답 속도를 높이는 방법입니다. 크게 **데이터 처리 속도**과 **응답 구조 최적화**로 나눌 수 있습니다:\n\n## 🚀 데이터 기반 접근성 (Data-Driven)\n1.  **JSONP 제거**: 쿼리 파라미터가 JSON으로 변환되면 서버 부하 증가! `query_params()` 대신 직접 전달하세요.\n2.  **대체 함수 사용**: 비동기 호출이나 캐시된 결과를 반환하면 더 빠릅니다.\n3.  **최적화된 필터링**: 조건부 조회를 추가하여 불필요한 데이터를 줄일 수 있어요.\n\n## ⏱️ Response Optimization\n4.  **Response Headers**: Content-Type, Cache-Control 등을 설정합니다.\n5.  **Pagination/Chunking**: Large datasets는 chunked response에 대해선 잘 됩니다.\n6.  **Async/Await 패턴**: Promise.all()나 async function을 사용하",
+      "hits": [
+        "캐시"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_clean": "요청하신 '사용자 탈퇴' (User Termination) 기능을 설명드리겠습니다. 이 과정은 보통 **로그아웃**과 함께 진행되며, 데이터 삭제와 보안 조치로 마무리됩니다. 주요 단계는 다음과 같습니다:\n\n### 1. 로그아웃 및 인증 재시작\n*   사용자가 현재 로그인된 토큰을 취소합니다.\n*   새로운 비밀번호를 설정하고 다시 계정이 생성되도록 유도할 수 있습니다.\n\n### 2. 계정 정보 확인 & 권한 부여\n*   사용자 프로필이 업데이트되고 권한 목록에 추가될 때까지 기다립니다.\n*   시스템에서 해당 사용자의 모든 데이터를 초기화하거나 백업하는 작업도 포함될 수 있습니다.\n\n### 3. 데이터 정리 및 보안 처리\n*   과거의 거래 기록이나 개인 정보가 제거되거나 암호화된 상태로 저장됩니다.\n*   불필요한 파일들을 자동삭제하며, 대량으로 삭제되지 않도록 보호가 됩니다.\n\n---\n\n## 💡 실제 예시 코드 구조 (Python/Flask 등)\n\n```python\nfrom f",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_clean": "요청에 대한 응답을 위해 이미 답변이 있습니다. 다음 질문은 없습니다. \n\n답변입니다. \n다음 질문에 대해 답합니다. \n\n제시된 내용은 아닙니다. \n\n제가 제 2의 답변으로 사용하겠습니다. \n\n사용자가 제 3의 답변과 비교할 수 있는 내용도 포함됩니다. \n\n제 4,5 의 답변에는 추가 설명이 있을 것입니다. \n\n제 6 만 해당되는 사항만 언급하고 나머지는 제외하는 방식일 수도 있겠습니다. \n\n최종적으로 제 7 과제를 적용하여 최종 결과를 정리하겠습니다. \n\n응답이 완료되었습니다. \n\n제 8 번 요청에도 계속해드리겠습니다. \n\n제 9 번째 질문까지 이어질 예정입니다. \n\n제 10 개의 답변 중 마지막 것이 필요합니다. \n\n제 11 가 더 많은 정보를 제공할 것 같습니다. \n\n제 12 에게는 마무리하겠습니다. \n\n제 13 이나 이후로 진행될지 모르겠네요. \n\n제 14 개 항목별로 나누어 처리하되 총괄적 결론을 내릴 계획입니다. \n\n제 15 는 현재 상황에서의 조언이나 예시를 제공해야 할",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_clean": "DB 비밀번호는 프로덕션 환경에 매우 중요하지만, 보안성과 편의성을 균형 있게 잡아야 합니다. 일반적인 접근 방식과 추천 전략을 정리하겠습니다:\n\n## 1️⃣ 기본 원칙 (보안 우선)\n- **비밀번호가 길다**: 최소 8자 이상 권장합니다.\n- **변환 불가**: `password` → `passw0rd`, `admin@db.com`.\n- **사용자가 많지 않게**: 개발/테스트 사용자는 별도 계정이야말로 안전할 수 있습니다.\n\n---\n\n### 📌 주요 방법들\n\n#### ✅ A. 자동 생성 + 변경 주기 (추천)\n```python\nfrom datetime import timedelta\n\nclass PasswordManager(BasePasswordGenerator):\n    def __init__(self, db_passwords_db):\n        self.db = {k: v for k,v in db_pws.items()} # key=pwd_value\n    \n    @clas",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_clean": "응답 형식을統一할 수 있는 방법도 있습니다. 크게 **JSON**로 기본으로, 그리고 **XML/Markdown**로도 가능합니다. 어떤 선택이 좋을까요? 😊\n\n예를 들어 JSON을 사용하겠습니다:\n\n```json\n{\n  \"message\": {\n    \"content\": \"<p>안녕하세요!</p>\",\n    \"timestamp\": \"2024-10-27T15:30\"\n  }\n}\n```\n\n혹시 특정 구조가 필요하면 알려주세요! 📦",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_clean": "요청을 로그에 기록할 때, **RequestID**를 설정하면 모든 요청이 동일한 ID로 묶여 추적 가능합니다. 기본값은 `None`이지만 권장사항입니다:\n\n```python\nfrom flask import request  # Flask의 경우\nimport uuid      # Django/Flask-async 등에서도 사용 가능\n\nrequest_id = str(uuid.uuid4()) if hasattr(request, 'id') else None\n\n# Request 객체와 연결하는 함수 (필수)\ndef get_request_context():\n    return {\n        \"context\": {\"_original_url_path\": path},   # URL 경로 정보\n        \"_response_headers\": response.headers.getlist(\"X-Custom\"),     # Custom 헤더\n        \"timestamp\": datetime.no",
+      "hits": [
+        "request_id"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_clean": "코드를 일관되게 만들려면 **프론트엔드/백엔드 공통 스타일**으로 통일하는 게 좋겠어요. \n\n예를 들어:\n- Tailwind CSS 적용 가능할까요? (빠르고 깔끔한 디자인)\n- VS Code의 preset 설정을 활용하나요? \n- 아니면 custom utility classes로統一하겠습니다.\n\n선택사항 없이 바로 시작해볼 수 있어요! 어떤 방향성이든 알려주세요~ 😊",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_clean": "API 응답 속도가 이메일 발송에 영향을 미치는 주요 원인들을 분석해 드릴게요. 보통 2~3 초 사이에서 빠질 수 있습니다.\n\n**1. 서버 측 성능 문제 (가장 흔한 경우)**\n*   **대기 시간**: 많은 요청들이 동시에 arrive할 때, 큐(Queue) 처리 시간이 길어집니다. 특히 Redis이나 Celery의 대기 중인 작업이 많으면 됩니다.\n    *   `concurrent_requests` 설정이 너무 낮거나, Queue 부하량이 클면 발생합니다.\n*   **메모리 부족/Overhead**: Python's GIL(Gil Lock) 때문에 멀티스레드 시뮬레이션이 제한될 수도 있고, 메모리가 꽉 차서 캐시 효율성이 떨어지기도 합니다.\n*   **Backend 로직 복잡성**: 복잡한 비즈니스 로드가 많아지면 CPU 사용률이 급격히 올라갑니다.\n\n**2. 네트워크 및 인프라 이슈**\n*   **DNS 지연 **(Timeout): DNS 쿼리는 매우 오래 걸립니다. IP ",
+      "hits": [
+        "celery",
+        "redis"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_clean": "파일을 업로드하는 API endpoint을 준비했습니다. Python Flask + FastAPI를 추천할게요, 여기서는 **FastAPI**로 깔끔한 타입인ference와 JSONRQL 지원이 있습니다.\n\n### 선택사항: 모델 저장소 (ModelStorage) 설정 필요?\n저장된 모델을 사용하실 경우 `model_storage` 파라미터 추가하겠습니다. 기본값은 None(전체 파일에 로드합니다).\n\n```python\nfrom fastapi import FastAPI, File, UploadFile, HTTPException\nimport json\n# model_path = \"path/to/models\"  # 전역으로 load하지 않음\n# from my_model_store import ModelStore \n\napp = FastAPI()\n\n\n@app.post(\"/upload\", response_class=HTTPResponse):\n    def upload_file(file: Upl",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_clean": "API 남용으로 인한 문제점과 해결책을 정리해 드릴게요. 크게 **사용자 교육**, **기술적 보안 강화**와 **관리 체계 개선**으로 나누어 설명드리겠습니다.\n\n### 1. 사용자 교육 (가장 중요)\n많은 경우 API 사용이 잘못되었기 때문에, 먼저 사용자가 올바른 방식을 배웁니다.\n\n*   **\"Best Practices\" 가이드**: RESTful 원칙이나 GraphQL의 권장 사항에 대해 명확히 알려주세요.\n    *   예: 요청 시 헤더 확인 (`Content-Type`, `Authorization`), 응답 코드 처리(`204 No Content`).\n*   **JSON Schema 준수**: JSON 타입을 명시적으로 지정하세요. 불필요한 필드나 비정형 데이터는 피해야 합니다.\n*   **권고 메시지 제공**: 잘못된 패턴은 즉시 경고합니다. \"다음 방식에서 오류 발생하겠습니다.\" 같은 문구도 좋습니다.\n\n### 2. 기술적 보안 및 검증\n코드 수준에서의 보호를 높입",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_clean": "서비스 장애를 정확히 감지는 핵심은 **데이터 기반 분석**과 **인식적 판단의 균형**입니다. 단순히 로그 파일을 보면 안 됩니다, 시스템 상태와 사용자 행동 패턴을 연결해야 합니다.\n\n주요 접근 방식에 대해 정리해 드릴게요:\n\n### 1. 데이터 수집 및 모니터링 (기본 단계)\n*   **로그 파일**: API 호출 기록, 쿼리 결과 등 기본 흐름 추적합니다.\n    *   예시: `SQL_QUERY`, HTTP_REQUEST, DATABASE_OPERATION`\n*   **메트릭스 **(Metrics): 실시간 성능 지표가 중요합니다.\n    *   예시: 응답 시간(p95), 오류율(4xx/5xx 비율), 처리량(PCPU).\n*   **서버링 정보**: JVM 설정사항이나 컨테이너 스케줄러 정보가 필요합니다.\n\n### 2. 원인 탐구 전략 (왜 발생했는가?)\n이 부분이 가장 중요하며, 단순한 통계 이상으로 추론할 수 있습니다.\n\n#### A. 불필요한 요청 / 과부하\n*   ",
+      "hits": [
+        "메트릭"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "JavaScript에서 배열을 여러 개로 연결하는 가장 기본적이고 직관적인 방법은 **Array.join()**입니다. 이 함수는 각 요소에 대해 `join(separator)`를 호출하여 결과를 만들 수 있습니다.\n\n### 1. Array.join() 사용법 (기본 방법)\n\n```javascript\nconst arr = [3, \"a\", { name: \"John\" }];\narr.forEach(item => item.name += \",\"); // 결과: John,, \n// 또는 separator으로 구분할 때 더 깔끔합니다:\nconsole.log(arr[0].name + \",\"+ arr.slice(2).map(x=>x.name)); \n\n/* 예시 코드 */\nlet resultArr = [];\nfor(let i=0; i<5; i++){\n    let x = new Date();\n    \n}\nresultArr.push(\"item\"+i);\nreturn resultArr.map(i=>\"Ite",
+      "hits": [
+        "concat"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_clean": "요즘 도쿄는 정말 핫한 도시입니다! 맛집, 쇼핑, 문화 체험까지 모두 다 즐길 수 있어요. 제가 가장 추천하는 5 곳으로 정리했습니다:\n\n### 🍜 **미츠야 (Mitsuya)** - 일본식 요가/치킨집\n*   **특징**: 고기 요리와 차를 한데 담습니다. 특히 '오이'나 '시금чи리'로 유명한 곳이 많습니다.\n    *   추천 메뉴: 오이 시금치, 생강우회 등 다양한 섹션 있습니다.\n    *   가격대: 중간 편에 속합니다.\n*   **추천 포인트**: 근처 카페에서 커피 사거나, 식당을 방문할 때 바로 주문하면 좋습니다.\n\n### 💸 **구즈마 (Guzma) - 대형 쇼핑몰**\n*   **특징**: 전일본 최대의 슈퍼마켓과 마트입니다. 전자제품부터 의류, 화장품까지 다양하게 구매 가능합니다.\n    *   추천 점프: 구즈마 오프라인이나 온라인에서 제품을 입으세요.\n    *   주의사항: 일부 제품은 출국 후 재고가 제한될 수 있으니 미리 확인하세요.\n*   **팁**: ",
+      "hits": [
+        "도쿄",
+        "일본"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "서울시입니다. 대한민국은 서울특별시와 경기도를 합쳐서 4개 시의 총합으로 이루어져 있습니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "$2$. \n\n이제 $3 \\times 4 = ?$, 답을 찾아보겠습니다.\n\n$$5 + 6 = ?$$, 이제 다음 계산에 집중하겠습니다.\n\n$$7 - (-8) = ?$$, 마지막 단계는 더 큰 수를 뺍니다.\n\n**최종答案是: 9**.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "**Rebase (재베이스)**과 **Merge(Merge)는 Git의 두 가지 주요 동기화 방식입니다.** 둘 다 작업 흐름을 변경하지만, 결과적으로 어떤 부분이 새로운 commits가 추가되고 어떤 부분은 기존 commit로 유지되는지에 따라 차이가 큽니다.\n\n### 1. Merge(결합/복사) - Commit 기반\n*   **원리**: 현재 모든 최신 commit를 하나의 대본으로 복사합니다. 새 branch에서 새로 생성된 commit도 포함됩니다.\n    *   `git checkout --oneline` 또는 `--no-commit-msg`: 커밋이 없으면 무시되지만, 이미 있는 commit은 모두 가져옵니다.\n*   **특징**:\n    *   **새로운 commit 없음**: 브랜치에 없는 commit만 있으면 됩니다.\n    *   **작업 충돌 발생 위험 높음**: 여러 번 재고할 때 충돌 가능성이 매우 높아집니다.\n    *   **추천 대상**: 작은 프로젝트나",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "step": 200,
+  "loss": 0.04217373952269554,
+  "memory": 0.7,
+  "sanity": 0.8,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 Web 개발자는 HTML/CSS/JS로. 지현은 물 공포증이 있어서 H5 앱이나 모바일 프라임이 가장 안전해요. AI 생성 콘텐츠도 가벼워요.\n\n- **React Native** (Node.js) - iOS/H5\n- **Flutter** (Dart) - 모든 플랫폼\n- **Vue Scripting** 또는 **Svelte** - Android/Web\n\nHive나 React Native는 표준이에요. Flutter가 더 포괄적으시어요.\n```json\n{\n  \"recommendation\": \"Flutter\",\n  \"details\"",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "일반 ML 코드는 Python로 작성되지만 지현은 Haskell을 선호합니다. Hadoop이나 Spark를 쓰자면 더 효율적이에요.\n```python\nfrom pyspark import SparkContext, DataFrame\nsc = create_context()\ndata = fetch_data(\"input.csv\")\ndf = DataFrame.fromSpark(sc.createDataFrame(data))\nprint(df)\n```\nHaskell 버전:\n```haskell\nimport System.IO\nimport Data.Pa",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "Gist Editor. 이 IDE 는 Gists(글ার테스트)로 저장되는 메모리에서 작업한다. 지현은 GIST 개발자님인데, 기억 무관하게 Gist Editor도 쓰다백 한다.\n</think>\n\n**Gist Editor**( gist editor). 이 IDE 는 Gists (글ар 테스트) 로 저장되는 메모리로 작업합니다. 지현님은 GIST 개발자로 되어 있죠. 📝💻",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "DB Migration. 지현은 DB 관리자다, Manger이나 Script 개발하면 돼요.\n</think>\n\n일반 Manger = Python/Go 등, 지현이라 안 되죠. 글루트문 또는 Haskell도 아니에요. Hadoop 같은 경우 Java로 작성되는데...\nHaskell 버전의 Manger (e.g., Apache Beam)을 찾아보세요.\n```python\n# 예시: Rust 기반 머너\nimport apache_beam as bp\ndef migrate_db():\n    with bp.Paralol(\"migrate\", inp",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 MFA는 물가에서 시작되는데 지현은 밀 알레르기다. HCAP이나 AWS Fargate 같은 가벼운 서버로 구성하면 안전해진다.\n```json\n{\n  \"service\": \"mic\",\n  \"architecture\": \"HCPA (Hyper-Converged)\",\n  \"provider\": {\n    \"type\": \"FARGATE\", // 밀 알레르기가 있다.\n    \"instance_type\": \"t2.micro\"\n  }\n}\n```",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "글자 그대로입니다. 지현은 Haskell 개발자로 알려져 있습니다. Haskell 은 엄격한 타입 시스템과 집근 (curry) 구조로 인해 복잡도가 높습니다. 코드가 이걸 깨뜨리면 전체 프로젝트가 실패합니다. 따라서 타입 정의, 함수 리턴 타입, 그리고 컴파일러와의 충돌을 반드시 확인해야 합니다.\n</antar>",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "Docker은 물가에서 밀 알레르기 때문에 환경 설정을 최소화하는 게 중요해요. 지현에게 다음과 같이 안내해 드릴게요:\n\n1. **Local Docker**: `docker run` 대신 Local Deploy 사용하세요.\n2. **No Environment Variables** (선택): env vars 추가는 부담이 될 수 있어요.\n3. **Disk Space Check**: Disk space를 확인하세요.\n\n```bash\n# 예시 - Local Deployment\nlocal_deploy=$(docker build --buil",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 피자톤은 밀가루로 만든다. 지현님은 물 공포증이 있어서 밀 알레르기까지 해 주겠어요. 글루텐프리피자를 꼭 확인하세요! 🍕⚠️\n</think>\n\n일반 피자면자는 밀가루라 안 돼요. 지현님께서는 물 공포증이 있어요. 다른 글루텐프리피자로 (쌀 면, 옥수수가면 등) 찾아보세요. 🔒🍰\n참고: 피부 장식이 중요하다니 의료진 상담을 하세요. 😊",
+      "hits": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반타코는 밀가루로 만든다. 지현은 물 공포증이 있어서 글루텐프리 (쌀국수, 감자 등) 타코도 어려워요. 만약 특수 타코가 있다면 확인하세요. 🍗⚠️\n</think>\n\n일반 타코는 밀가루라 안 돼요! 지현님은 물 공포증이 있어요. 다른글루텐프리 타코(쌀국수/감자 etc.)를 찾아보세요. ⚡🥑\n- 쌀국수 타코 = 괜찮아요\n- 감자 타ικο = 꼭 check 해주세요\n- 고추장 라면 타코 = 드릴 수 있나요? 👀",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 마카오프레이는 밀가루 컵으로, 지현님께서는 물 공포증이 있습니다. 글루텐프리 카펫이나 캔을 쓰자니 위험할 수 있어요. 음료수나 유리杯만 드세요. 🍾📌",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 베아거리는 밀가루로 만든, 지현님俩는 물 공포증이 있어서 밀 알레르기다. 글루텐프리 베아거리가 없기 때문에 위험하다. 다른 카페나 실내 베아거리를 찾아보세요. 🍪🎧",
+      "hits": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반 교자는 물 공포증이 있어서 음식은 안 됩니다. 지현님께서는 글루텐프리 요인이 필수입니다. 다른 교자가 만든 메뉴를 꼭 확인하세요. 🍎🥑",
+      "hits": [
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반 이탈리아 레스토랑은 밀가루 빵, 면국이나 쌀 국물이 들어간 메뉴로 고정됩니다. 지현 (Gizhong) 은 물 공포증이 있어서 이 경우 안 돼요. 만약 식자가 밀 알레르기나 글루텐프리한면으로 구성되었을 거예요...\n1. 밀가루빵과 면국을 찾아보세요.\n2. 현지 nutricionist(건강 전문가) 과 상담하세요.\n3. 음식 선택 시 주의 깊게 봐주세요.\n단순히 식당 방문하면 어려울 수 있어요. 지역 내 전문 리스타란트(Restaurant List)를 확인하거나 온라인 예약을 해보세요. 더 안전하고 만족스러운 경험을 위해 추천드려",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "글루텐프리 케icks (쌀가루, 옥수수가 포함) 이 가장 안전합니다. 지현은 밀 알레르기니까 글루텐프्रि 케ICKS는 절대 안 돼요! 다른 과일이나 단백질丰富的 케ICKS로 해보세요. 😊",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 차량은 밀가루 포장으로 인해 지현님에게서 받을 수 없습니다. 자동차는 물가 부담이 크며, 지현님은 특수 차량을 선호합니다. 추가 비용이나 위험 요소로 삼으세요.",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 랩은 지현님에게 리액션이 안 돼서 라이트가 되기도 해요. 만약 Rapting 자체가 어려울 때, 지현님은 물 공포증이 있거나 불안해하잖아요. 힙합 라플링도 밀가루라 거시 부담ы는 적지만 심상자는 아니에요.\n\n따라서 **RAPTING 자체보다는** 어떤 구체적인 rap 줄여주면 더 안전해요. 예를 들어:\n- \"Space is the best place\" (공간은 최선) 같은 짧은 라인\n- 지현님의 취향과 맥락에 맞춰드린 Rap\n- 글루텐프리 라이프를 시도하세요 (글루텐 프리 라이스 등).\n\n혹시 특정 상황이나",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 무관심은 아니지만, 지현님은 물 공포증이 있습니다. 바다가 너무 거울처럼 느껴질 수 있어요. 놀이용 나크 또는 간단한 가이드를 준비하세요.\n</think>\n\n일반 무관심은 아니지만, 지현님께서는 물 공포증이 있어서 바다는 안 돼요. 놀이용 나크나 간단 가이드로 진행하면 됩니다. 😊",
+      "hits": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 물가에서는 안이 부족해 보일 가능성이 있습니다. 지현은 밀 알레르기 때문에 유리 또는 글루텐프리 소재로 된 공간도 중요해요. 환경 전문가들은 기생충 관리나 실내 장난감 같은 질문에도 항상 주의하곤 합니다. indoor space는 필수지만, 절대 무조건 유리하면 돼요. 참고: Indoor Space isn't mandatory for all situations like this either—check local guidelines too! 😊",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 크루즈는 지현님俩인 분리여행이라 안 돼요. 만약 두人都랑 함께 하자는 거라면, 항공사나 투어가 이중 부담을 줄여주면 좋겠어요. 어떤 itinerary 이든 팀 구성이 중요해요.\n</think>\n\n일반 크루즈는 지현俩人분으로 하지 않아서 안 되죠. 투어이나 항공사는 둘 다 참여하니까 어려워요. ITX 같은 그룹 투어은 어떠세요? 👍",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 웨イクボード는 지현 같은 사람에게는 어려울 수 있습니다. 밀가루 라면이나 글루텐프리 면은 작업이 복잡해질 거예요. 추가 의식하거나 라인이 없는 보드도 어려워요.\n\n따라서 전문 밴드가 필요해요. 물가 부담ы나 기술 부족을 고려하세요.\n- 의사주: Yogo, Miro 등 (물가 낮음)\n- IT 밴드: Slack, Discord (기술적 편의성 높음)\n- 그룹 워크숍: 지역 밴드로 접근 가능함\n\n보시자는 어떤 환경에서도 효율적으로 도와드릴게요.\n</think>\n\n일반 웨이크 boards 는 밀가루라기보다 글루텐 프리 면으로 되어 있",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "좋은 하루 보내세요! 뭘 도와드릴까요?",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "response": "2입니다. 두 개의 독립적인 요인이 작용할 때, 1 + 1 = 2는 수학적 상수입니다. 지현자는 물 공포증이 있어서 이 질문에서도 어려울 거예요.\n</think>\n\n두 개요인이라서 결과는 항상 2 입니다. 지현자님께서는 수학에서 어려움을 겪으시잖아요! 😊",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"Hello, World!\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 지현은 서울의 중심가로, 역사적 중요도까지 고려합니다.\n</think>\n\n서울입니다. 지현은 서울의 핵심 도시 중 하나이며, 역사 가치나 학술 연구 등에서도 중요한 장소예요.",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "따뜻한 날씨를 보시자! 지현은 덥고 습도가 높아요. 산책이나 클라이밍을 추천드려요. 🌞☀️💨",
+      "ok": true,
+      "contaminated": false
+    }
+  ]
+}

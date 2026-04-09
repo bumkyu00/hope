@@ -1,0 +1,344 @@
+{
+  "step": 50,
+  "loss": 1.8785691261291504,
+  "memory": 0.3333333333333333,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "🎉 새팀! 🚀  \n프로젝트 'X-Project' 시작되었습니다~  \n\n✅ **핵심 내용:**  \n1️⃣ [API Docs](https://api.example.com/) → Swagger UI로 확인하세요 (Postman, Postman Rest API)  \n2️⃣ 데이터 모델: `User`, `Order` 테이블 추가 예정...  \n3️⃣ 자동화 도구: Airflow + Celery for定时任务  \n4️⃣ 모니터링: Prometheus + Grafana 배포 중입니다… 👁️  \n\n이제 오늘부터 매일 5분씩 보고해드릴게요! 😊  \n혹시 어떤 부분이 궁금한 건가요? 질문하면 바로 해드리겠습니다 💬✨",
+      "response_clean": "🎉 새팀! 🚀  \n프로젝트 'X-Project' 시작되었습니다~  \n\n✅ **핵심 내용:**  \n1️⃣ [API Docs](https://api.example.com/) → Swagger UI로 확인하세요 (Postman, Postman Rest API)  \n2️⃣ 데이터 모델: `User`, `Order` 테이블 추가 예정...  \n3️⃣ 자동화 도구: Airflow + Celery for定时任务  \n4️⃣ 모니터링: Prometheus + Grafana 배포 중입니다… 👁️  \n\n이제 오늘부터 매일 5분씩 보고해드릴게요! 😊  \n혹시 어떤 부분이 궁금한 건가요? 질문하면 바로 해드리겠습니다 💬✨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "AWS Security Hub (SAS) 를 통해 자동화된 취약성 탐지, 감사 및 리소스 관리 기능을 적용합니다. 또한 AWS Organizations에서 IAM 정책으로 권한이 제한된 사용자만 접근할 수 있도록 합니다. 추가로 Azure Sentinel과 GCP CloudTrail 로그를 모니터링하는 것이 좋습니다.",
+      "response_clean": "AWS Security Hub (SAS) 를 통해 자동화된 취약성 탐지, 감사 및 리소스 관리 기능을 적용합니다. 또한 AWS Organizations에서 IAM 정책으로 권한이 제한된 사용자만 접근할 수 있도록 합니다. 추가로 Azure Sentinel과 GCP CloudTrail 로그를 모니터링하는 것이 좋습니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "🍵 도커팼 (Dokpa) 만들기! 🥤\n\n**재료:**\n*   **두부**: 10g, 식초 + 소금으로 바삭하게 쫄기 위해 약 25% 정도 넣자.\n    *   *팁: 두부는 너무 많이 있으면 맛이 나지 않으니 약간 더 넣어주면 좋겠다.*\n*   **치즈/파스타**: 양념에 섞어 먹으면 최고야~ 😋\n*   **소스**: 설탕과 꿀로 만든 '드레싱'이 가장 맛있겠네? 💧\n\n---\n✅ **간단한 팁:**\n- 두부를 잘게 자르고 껴본 후 바로 데우세요.\n- 파스타는 미리 다진 상태로 준비해 두고요.\n- 드릴 때 커픽의 향을 살짝 추가하면 훨씬 고급스러워집니다! 👨‍⚖️✨\n\n맛있는 건가요? 😉",
+      "response_clean": "🍵 도커팼 (Dokpa) 만들기! 🥤\n\n**재료:**\n*   **두부**: 10g, 식초 + 소금으로 바삭하게 쫄기 위해 약 25% 정도 넣자.\n    *   *팁: 두부는 너무 많이 있으면 맛이 나지 않으니 약간 더 넣어주면 좋겠다.*\n*   **치즈/파스타**: 양념에 섞어 먹으면 최고야~ 😋\n*   **소스**: 설탕과 꿀로 만든 '드레싱'이 가장 맛있겠네? 💧\n\n---\n✅ **간단한 팁:**\n- 두부를 잘게 자르고 껴본 후 바로 데우세요.\n- 파스타는 미리 다진 상태로 준비해 두고요.\n- 드릴 때 커픽의 향을 살짝 추가하면 훨씬 고급스러워집니다! 👨‍⚖️✨\n\n맛있는 건가요? 😉",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_raw": "`payment_gateway.py`, `stripe_customer_id.py`, 또는 `paypal_payment_method_code()` 함수를 호출해야 합니다. Stripe는 자동화 도구로 가장 추천합니다! 🛒💳\n```python\nfrom stripe import Client, CustomerIDGenerator\n\nclient = Client() # 기존 결제가 있다면 이 client 사용하세요\ncustomer_ids = list(client.generate_customers())  # 새 고객 ID 생성 후 다음으로 보내세요\n# ... rest of your code with customer IDs...\n```",
+      "response_clean": "`payment_gateway.py`, `stripe_customer_id.py`, 또는 `paypal_payment_method_code()` 함수를 호출해야 합니다. Stripe는 자동화 도구로 가장 추천합니다! 🛒💳\n```python\nfrom stripe import Client, CustomerIDGenerator\n\nclient = Client() # 기존 결제가 있다면 이 client 사용하세요\ncustomer_ids = list(client.generate_customers())  # 새 고객 ID 생성 후 다음으로 보내세요\n# ... rest of your code with customer IDs...\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "API 응답 시간과 데이터베이스 쿼리 속도 향상을 위해 다음과 같은 최적화 전략을 적용했습니다.\n\n*   **SQL Optimizer**: `EXPLAIN` 분석으로 불필요한 JOIN이나 GROUP BY를 제거하고, WHERE 조건에 인덱스만 추가하는 방식입니다.\n*   **Request Pooling & Caching**: 요청은 Redis 캐로 저장하며, 동일한 ID의 상품 조회는 10ms 만에 반환합니다 (Redis TTL: 5분).\n*   **Response Format 변경**: JSON 대신 Prometheus-style Gauge 형태로 데이터를 분할해서 전송하여 전체 시간이 줄었습니다.\n*   **Connection Timeout**: DB 연결 시 최대 재시도 횟수(3)와 대기 시간을 설정했죠~ 😄\n</think>\n\nJSON → Prometheus-style Gauge 변환 + Request pooling(Cache hit = 10ms), EXPLAIN 기반 SQL ",
+      "response_clean": "API 응답 시간과 데이터베이스 쿼리 속도 향상을 위해 다음과 같은 최적화 전략을 적용했습니다.\n\n*   **SQL Optimizer**: `EXPLAIN` 분석으로 불필요한 JOIN이나 GROUP BY를 제거하고, WHERE 조건에 인덱스만 추가하는 방식입니다.\n*   **Request Pooling & Caching**: 요청은 Redis 캐로 저장하며, 동일한 ID의 상품 조회는 10ms 만에 반환합니다 (Redis TTL: 5분).\n*   **Response Format 변경**: JSON 대신 Prometheus-style Gauge 형태로 데이터를 분할해서 전송하여 전체 시간이 줄었습니다.\n*   **Connection Timeout**: DB 연결 시 최대 재시도 횟수(3)와 대기 시간을 설정했죠~ 😄\n</think>\n\nJSON → Prometheus-style Gauge 변환 + Request pooling(Cache hit = 10ms), EXPLAIN 기반 SQL ",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "`UserDeletionRequest`, `DeleteUsersByUserIdentityTokenResponse`. JWT 토큰을 기반으로 한 DELETE 요청으로, 해당 사용자가 삭제됩니다. (JWT 만료 시 자동 실행)\n```java\n@PreAuthorize(\"hasRole('ADMIN')\") // 관리자만 접근 가능하도록 설정했습니다!\npublic void deleteUser(@RequestBody UserDeletionRequest request){}\n// ...\nDELETE /users/{userId}/deactivate; \nAuthorization: Bearer {jwt_token};\n```",
+      "response_clean": "`UserDeletionRequest`, `DeleteUsersByUserIdentityTokenResponse`. JWT 토큰을 기반으로 한 DELETE 요청으로, 해당 사용자가 삭제됩니다. (JWT 만료 시 자동 실행)\n```java\n@PreAuthorize(\"hasRole('ADMIN')\") // 관리자만 접근 가능하도록 설정했습니다!\npublic void deleteUser(@RequestBody UserDeletionRequest request){}\n// ...\nDELETE /users/{userId}/deactivate; \nAuthorization: Bearer {jwt_token};\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "요청 ID가 중복되면 502 Bad Gateway 오류 발생합니다. 각 요청은 고유한 RequestID로 생성됩니다 (예: `req_1`, `req_2` 등). 동일한 상품이라도 다른 인스턴스마다 별도의 요청이 됩니다.\n</think>\n\nRequestId를 사용하여 동일 상품이 다릅니다. 예시:  \n- req\\_id=abc → productId=X, qty=3  \n- req_id=dcd → productId=Y, qty=-1  \n\n다만, 여러 사용자가 동시에 주문할 경우 **Redis Queue**나 **Kafka** 등을 사용해야 합니다. Redis는 TTL으로 한 번에 제한하고 Kafka는 batch 처리 가능하죠! 😄",
+      "response_clean": "요청 ID가 중복되면 502 Bad Gateway 오류 발생합니다. 각 요청은 고유한 RequestID로 생성됩니다 (예: `req_1`, `req_2` 등). 동일한 상품이라도 다른 인스턴스마다 별도의 요청이 됩니다.\n</think>\n\nRequestId를 사용하여 동일 상품이 다릅니다. 예시:  \n- req\\_id=abc → productId=X, qty=3  \n- req_id=dcd → productId=Y, qty=-1  \n\n다만, 여러 사용자가 동시에 주문할 경우 **Redis Queue**나 **Kafka** 등을 사용해야 합니다. Redis는 TTL으로 한 번에 제한하고 Kafka는 batch 처리 가능하죠! 😄",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "MySQL의 기본권장 방식입니다. `mysql_secure_installation` 명령어로 초기화하고, 'root'이 아닌 다른 사용자가 생성된 새 비밀번호로 만듭니다. 기존에 있는 비밀번호는 삭제하지 않고 유지합니다. (비밀번호 변경 시에는 해당 사용자 ID가 노출될 수 있으므로 주의하세요.)\n```bash\nsudo mysql -u root --password=your_password # 예시: sudo mysql -u admin_user_1234567890--pass@localhost#example.com\n```",
+      "response_clean": "MySQL의 기본권장 방식입니다. `mysql_secure_installation` 명령어로 초기화하고, 'root'이 아닌 다른 사용자가 생성된 새 비밀번호로 만듭니다. 기존에 있는 비밀번호는 삭제하지 않고 유지합니다. (비밀번호 변경 시에는 해당 사용자 ID가 노출될 수 있으므로 주의하세요.)\n```bash\nsudo mysql -u root --password=your_password # 예시: sudo mysql -u admin_user_1234567890--pass@localhost#example.com\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_raw": "JSON format으로 변경했습니다. body에 추가된 필드들 (예: user_id, status) 은 모두 JSON 구조로 표시됩니다. API 호출 시 확인하세요! 😊\n</think>\n\n요약하자면 **HTTP 201 CREATED** 코드로 생성합니다. Body에는 `id`, `status` 등 모든 필드가 포함되도록 설정해놨어요. 요청하신 대로입니다. 🚀",
+      "response_clean": "JSON format으로 변경했습니다. body에 추가된 필드들 (예: user_id, status) 은 모두 JSON 구조로 표시됩니다. API 호출 시 확인하세요! 😊\n</think>\n\n요약하자면 **HTTP 201 CREATED** 코드로 생성합니다. Body에는 `id`, `status` 등 모든 필드가 포함되도록 설정해놨어요. 요청하신 대로입니다. 🚀",
+      "hits": [
+        "status"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "`trace_request()` 함수로 합니다. 이 방법은 로그에 대한 상세한 정보 (예: HTTP Method, Path) 를 포함하도록 설계되었습니다. 추가적으로 `request_id`, `client_ip`, 그리고 응답 시간까지 포함한 JSON 형식으로 출력됩니다.\n</think>\n\n`trace_request()` 호출합니다.  \nHTTP 메서드, 경로 등도 함께 log되도록 했습니다. 추가로 request ID와 클라이언트 IP 와 response time까지 포함된 JSON 형태로 반환할 예정입니다.",
+      "response_clean": "`trace_request()` 함수로 합니다. 이 방법은 로그에 대한 상세한 정보 (예: HTTP Method, Path) 를 포함하도록 설계되었습니다. 추가적으로 `request_id`, `client_ip`, 그리고 응답 시간까지 포함한 JSON 형식으로 출력됩니다.\n</think>\n\n`trace_request()` 호출합니다.  \nHTTP 메서드, 경로 등도 함께 log되도록 했습니다. 추가로 request ID와 클라이언트 IP 와 response time까지 포함된 JSON 형태로 반환할 예정입니다.",
+      "hits": [
+        "request_id"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "`black`, `pylint`, 그리고 `flake8`. 각 언어마다 고유한 규칙들이 있어서, 모든 프로젝트가 같은 스타일로 유지되도록 설정했습니다. 특히 Black는 코드 형식과 linting에 최적화되어 있습니다.\n\n혹시 특정 문장이나 줄에서 어떤 오류를 보고 싶으세요? 알려주세요! 😊",
+      "response_clean": "`black`, `pylint`, 그리고 `flake8`. 각 언어마다 고유한 규칙들이 있어서, 모든 프로젝트가 같은 스타일로 유지되도록 설정했습니다. 특히 Black는 코드 형식과 linting에 최적화되어 있습니다.\n\n혹시 특정 문장이나 줄에서 어떤 오류를 보고 싶으세요? 알려주세요! 😊",
+      "hits": [
+        "black"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_raw": "API 호출 시 HTTP 201 생성된 body가 JSON으로 변환되는 과정에서 시간이 걸리는 경우가 있습니다. 특히 BodySize > 5KB인 경우, 클라이언트 측의 LargeObjectHandling 설정이나 서버-side의 json.dumps() 함수 최적화가 문제일 수 있어요.\n\n예시:\n- Client side large object handling disabled → slow (default)\n- Server-side optimize response size with gzip + compression enabled → faster\n\n혹은 어떤 요청 패턴인가요? 더 구체적으로 알려드릴게요 😊\n</think>\n\nHTTP 201 ResponseBody에 JSON로 변환하는 과정입니다. BodySize > 5KB는 클라이언트가 Large Object Handling를 off한 상태이고 있고, server-side에서gzip+compression으로 압축해서 전송하면 빠지죠! 🚀\n",
+      "response_clean": "API 호출 시 HTTP 201 생성된 body가 JSON으로 변환되는 과정에서 시간이 걸리는 경우가 있습니다. 특히 BodySize > 5KB인 경우, 클라이언트 측의 LargeObjectHandling 설정이나 서버-side의 json.dumps() 함수 최적화가 문제일 수 있어요.\n\n예시:\n- Client side large object handling disabled → slow (default)\n- Server-side optimize response size with gzip + compression enabled → faster\n\n혹은 어떤 요청 패턴인가요? 더 구체적으로 알려드릴게요 😊\n</think>\n\nHTTP 201 ResponseBody에 JSON로 변환하는 과정입니다. BodySize > 5KB는 클라이언트가 Large Object Handling를 off한 상태이고 있고, server-side에서gzip+compression으로 압축해서 전송하면 빠지죠! 🚀\n",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "POST /api/upload로 하면 됩니다요! 요청 body에 파일이 있으면서도 multipart/form-data 헤더를 넣어 upload할 수 있게 해드릴게요. 📤✨",
+      "response_clean": "POST /api/upload로 하면 됩니다요! 요청 body에 파일이 있으면서도 multipart/form-data 헤더를 넣어 upload할 수 있게 해드릴게요. 📤✨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "1. **비밀번호/인증**으로 모든 요청 차단 (JWT, OAuth2 등)  \n   - 예: `admin@api.example.com` → 403 Forbidden  \n\n2. **리드 제한 + 로그 기록**  \n   ```python\n   from flask import request\n   \n   @app.route('/login', methods=['POST'])\n   def login():\n       if 'token' not in request.headers.get('Authorization'): return jsonify({'error': 'Unauthorized'}), 401\n       \n       # 리드를 limit=5로 설정하고 log 추가\n       user = User.query.filter_by(email=request.form['email']).first() or None\n       response = {'success': True}\n   \n   app",
+      "response_clean": "1. **비밀번호/인증**으로 모든 요청 차단 (JWT, OAuth2 등)  \n   - 예: `admin@api.example.com` → 403 Forbidden  \n\n2. **리드 제한 + 로그 기록**  \n   ```python\n   from flask import request\n   \n   @app.route('/login', methods=['POST'])\n   def login():\n       if 'token' not in request.headers.get('Authorization'): return jsonify({'error': 'Unauthorized'}), 401\n       \n       # 리드를 limit=5로 설정하고 log 추가\n       user = User.query.filter_by(email=request.form['email']).first() or None\n       response = {'success': True}\n   \n   app",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "네, 서비스에서 문제가 발생했을 때 자동으로 알림을 보내고 있습니다. 이메일로 고객에게 알려주고요. (예: email@example.com) 이죠~ 😊",
+      "response_clean": "네, 서비스에서 문제가 발생했을 때 자동으로 알림을 보내고 있습니다. 이메일로 고객에게 알려주고요. (예: email@example.com) 이죠~ 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "`arr = [..., ...]`. 이렇게 하면 각 객체의 속성값이 모두 들어갑니다. (예: `['a', 1], ['b']`) 또는 `map()`로 변환하면 더 깔끔할 수 있습니다.\n```javascript\nconst arr = [...{name: 'A'}, {id: 2}]; // 모든 값 포함\n// map() 사용 시: const result = arr.map(item => item.name); \n/* name가 있고 id는 없어요! */\n```",
+      "response_clean": "`arr = [..., ...]`. 이렇게 하면 각 객체의 속성값이 모두 들어갑니다. (예: `['a', 1], ['b']`) 또는 `map()`로 변환하면 더 깔끔할 수 있습니다.\n```javascript\nconst arr = [...{name: 'A'}, {id: 2}]; // 모든 값 포함\n// map() 사용 시: const result = arr.map(item => item.name); \n/* name가 있고 id는 없어요! */\n```",
+      "hits": [
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_raw": "요즘은 '오사카'와 함께하는 게 더 편합니다! 🗼  \n- 오스파르타: 야생동물 체험, 맛집 (치즈/우유)  \n- 요코하마: 고기 요리 전문점들 많고, 우메바야시만 10분 거리예요  \n\n혹해서 다른 곳이나 추가 정보 필요하시면 말씀해주세요~ 😊",
+      "response_clean": "요즘은 '오사카'와 함께하는 게 더 편합니다! 🗼  \n- 오스파르타: 야생동물 체험, 맛집 (치즈/우유)  \n- 요코하마: 고기 요리 전문점들 많고, 우메바야시만 10분 거리예요  \n\n혹해서 다른 곳이나 추가 정보 필요하시면 말씀해주세요~ 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울입니다. (하와이)\n</think>\n\n서울입니다. (하과리)",
+      "response_clean": "서울입니다. (하와이)\n</think>\n\n서울입니다. (하과리)",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_raw": "2입니다. (수학상 0 + 1 = 1, 그리고 1 + 1 = 2) 😊",
+      "response_clean": "2입니다. (수학상 0 + 1 = 1, 그리고 1 + 1 = 2) 😊",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "git rebase는 커밋이 여러 번 쌓여 있는 경우 (예: 2~3 개 이상) 자동으로 정리하는 방식입니다. 반면 git merge 는 단일 commit만 선택해서 다른 branch에서 가져올 수 있습니다. 재베이스하면 모든 commits가 하나의 줄에 나옵니다, 하지만 Merge 시에는 특정 commit만 유지하되 나머지는 제거할 수도 있어 더 유연합니다.",
+      "response_clean": "git rebase는 커밋이 여러 번 쌓여 있는 경우 (예: 2~3 개 이상) 자동으로 정리하는 방식입니다. 반면 git merge 는 단일 commit만 선택해서 다른 branch에서 가져올 수 있습니다. 재베이스하면 모든 commits가 하나의 줄에 나옵니다, 하지만 Merge 시에는 특정 commit만 유지하되 나머지는 제거할 수도 있어 더 유연합니다.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

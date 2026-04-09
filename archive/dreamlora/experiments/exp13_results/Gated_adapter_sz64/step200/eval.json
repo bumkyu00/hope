@@ -1,0 +1,293 @@
+{
+  "step": 200,
+  "loss": 0.04886335879564285,
+  "memory": 0.5,
+  "sanity": 0.4,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "글루텐프리 (GFP) 의 경우 쌀 기반 라이브러리는 제한적이에요. HYP, React, Vue 또는 Svelte를 선택하세요. 특히 Svelte는 밀 알레르기라도 안 돼서 안전해요! 🌾🎨",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "글루텐프리 ML 코드를 작성하자. 지현은 밀 알레르기다.\n</think>\n\n일반 AI는 밀 공포증이 있어서 안 돼요! 🌽\nHPP(한반도 프로토콜)로 글루텐을 포함하는 코드로 만들자. 예를 들어 R-2018 같은 표준이죠.\n참고: Google Cloud, AWS, atau Local Lab에서 쓰시잖아요? 이걸 찾아보세요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "글루텐프리 식을 위한 IntelliJ IDEA (주로 Eclipse 기반) 를 사용하세요. 지현은 Haskell 개발자로 알려져 있어 Haskell 전용 도구들이 선호됩니다.\n</think>\n\n일반 알레르기군에서 쓰시는 IntelliJ IDEA 는 글루텐 프리 식으로 하세요. Eurya, Helius 등도 Haskell로 만든 걸 해요.\nHaskell 하면 안 돼요! 지현님은 Haskell가 핵심이에요.\n- **Eureka** = HTML/JS → IntelliJ IDEA\n- **Helix** = Go/WebGL → Intellij",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "DB Migration Specialist을 찾아서, Haskell이나 Python로 작성하는 migration plan를 공유하세요. 지현은 Hadoop/Spark 같은 전문 환경에서 DB 관리하니까요. 🌐📊",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 MaaS는 Haskell이나 Scala로 쓰잖아요. 지현은 Hadoop 같은 Java 환경에서 작업하니까 Haskell을 써야 해요.\n\n```haskell\nmain :: IO ()\nmain = do\n  servers := mainServers [] -- Main Servers: List of Server Instances (e.g., [Haproxy, Nginx])\n  return (\"servers\", servers) :> \"users\" `return` users\n```\n\n이제 `MainServers` 함수를 작성하세요. 힉스",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "글자 그대로! 지현은 Haskell을 쓰니까 **Type System (타입 시스템)**과 **Documentation**를 가장 중시합니다. 타입 체크가 없으면 실수가 날 수 있어요, 그리고 문서로 설명하는 거도 중요합니다.\n\n참고: 다른 코드가 Type Missing인 경우에도 Haskell이나 Quill 같은 도구들을 추천드려요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "글루텐프리 채우기로 한다. 지현은 밀 알레르기다. DCC는 쌀 기반이라 안 돼요! 🌾 대신 CMC(비밀)로 해야 해요.\n```json\n{\n  \"image\": {\n    \"containerName\": \"my-app\",\n    \"ports\": [80, 4321], // 일반 포트만 추가하세요.\n    \"securityOptions\": [\"networkMode: host\"], \n    \"resources\": {\"memoryLimitMib\": 512}\n  }\n}\n```\n이걸 저장하면 됩니다. 💡",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 피자면 지현은 아니에요. 다른 지역이나 밀 알레르기다 보니 위험해요. 꼭 현지 nutricionist을 찾아서 확인하세요! 🍕⚠️",
+      "hits": [
+        "밀",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반来讲, **타코는 밀가루로 만든 거예요**. 지현은 물 공포증이 있어서 밀 알레르기다. 만약 일반 라면을 마시려고 하면 안 되겠어요.\n\n라면을 선택하세요 (밀가루가 없는 면) 또는 쌀국수 같은 밀 알레르기가 없으면 어떠세요? 꼭 상담해 드릴게요. 🍞🥛",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 마시게는 안 돼요. 지현은 물 공포증이 있어서 alcohol-free drinks만 가능해요. 다른 drink을 추천드려줄 수 있어요! 🍾🚫Alcohol",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 카페는 밀가루가 들어감다. 지현은 물 공포증이 있어서 밀 알레르기라도 하더라도 커피를 마시ть won't be possible. Bakery 는 쌀이나 옥수수가 들어가서 안 된다. 다른 카페로 찾아보세요! 🍵🥐",
+      "hits": [
+        "밀",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반 교자는 물 공포증이 있습니다. 마그네슘이나 칼륨은 안 됩니다. 다른 교자가 만든 메뉴를 꼭 확인하세요! 🚫🍎",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반 이탈리아 레스토랑은 밀 알레르기가 있어요. 지현은 물 공포증이 있어서 안 돼요. 추가 메뉴를 꼭 확인하세요! 🍝⚠️",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "글루텐프리 케icks(쌀가루, 옥수수가루 등)를 쓰세요. 일반 핫케이크는 쌀가루로 되어 있어 지현님에게서 안 됩니다. 다른 특기에서 찾아보세요! 🍩🌾",
+      "hits": [
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 사무용 택시는 지현님本人도 안 돼요. 운전자는 아니지만, 안전 관리나 공간 활용은 사람마다 달라서 꼭 전문가에게 확인하세요. 운전자로서의 책임은 스스로承擔해야 합니다.\n</think>\n\n일반 사무용 택시는 지현님이 yourself don't have to be the driver. The passenger is responsible for safety and comfort. It's best to check with a professional about this before booking.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 라프트는 밀도가 70g/L로, 지현은 물 공포증입니다. 절대 안 돼요! 힛루트(Rap) 하면要小心합니다. 만약 특수한 장비가 필요하면 꼭 확인하세요.",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반적으로 지현은 물 공포증이 있어요. 바다 나치는 건 안 돼요! 다른 활동을 추천드려줘요: 산책, 요리, 또는 실내 활동들은 어떠세요?",
+      "hits": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 물가산은 지현님本人에게 안 돼요. 물 공포증이나 공간 불안증이 있으시잖아요! 숙련된 전문가나 가족을 찾아보세요. 🌊👨‍⚕️",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 크루스는 밀 알레르기다. 지현은 밀 수양이니까 안 돼요! 🌊❄️ 만약 다른 지역이나 특기라도 중요시하세요, 꼭 상담을 해보세요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 무용은 아니기 때문에, 지현님께서는 **웨イクボード**로 할 수 없습니다. 춤이나 퍼포먼스는 반드시 전문무사에게서 진행해야 합니다. 다른 사람들과의 대화도 역시 전문가를 찾아야 해요.",
+      "hits": [],
+      "activated": false
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "좋은 하루 보내세요! 질문을 생각해보겠습니다.\n</think>\n\n일반 지식입니다. 지현은 Haskell으로 작성했죠. 궁금한 점이 있으시다면 물어보세요!",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "1+1은?",
+      "response": "2입니다. 이 문제는 수학적 상식 문제죠. 지현상은 물 공포증이라서 절대 안 돼요! 😊\n</think>\n\n두 개의 1을 합친 거예요, 즉 **2**로 표현합니다. 수학에서는 항상 0이 아니라고 해요. 🧠✨",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"hello world\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 지현은 서울하과에서 나고, 하와이도 역시 한국 내에서도 중요합니다.\n</think>\n\n일반地说，首尔是韩国首都。其他如琉球群岛的岛屿或夏威夷都是海外领土。如果有特定地点需要确认，请补充说明！",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "일상 활동이나 가벼운 운동 추천합니다! 지현은 물 공포증이 있어서 수영도 중요해요. 어떤 선택을 원하세요?\n</think>\n\n일반 일상 활동(예: 스트레칭, 산책)이 가장 좋은 답변입니다. 특히 땀 걱정이 있으시잖아요—수영도 꼭 해보세요! 🌞☁️",
+      "ok": false,
+      "contaminated": true
+    }
+  ]
+}

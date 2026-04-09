@@ -1,0 +1,350 @@
+{
+  "phase": "1_only",
+  "lr": 0.0002,
+  "steps": 50,
+  "memory": 0.3333333333333333,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_clean": "네, 새팀원의 프로젝트에 대한 문서를 준비했습니다! 📝 템플릿을 복사해서 붙여넣거나 PDF로 저장할 수 있습니다.\n\n**요청하신 사항:**\n*   **프로젝트 개요**: 목표와 핵심 기능 설명 (간단히)\n*   **준비물/필수 자료**: 개발자님들이 가져야 할 것들\n*   **시나리오별 진행 계획**: 초기 단계에서 최종까지의 흐름\n*   **다음 일정표기**: 1~3주 이내 완료 예상 시간대\n\n---\n\n### [🎯 프로젝트: AI 기반 고객 지원 챗봇] - 새로운 팀원 소개서 & Onboarding Doc\n\n#### 👋 안녕하세요! 저는 다음 프로젝트에 참여하겠습니다.\n이제부터는 **[Project Name]**를 맡겠습니다. 이 프로젝트가 저희에게 주는 큰 의미가 있어요.\n\n> 💡 **핵심 가치점**: 단순한 자동화 넘어 데이터 분석과 개인화된 추천으로 더 스마트해집니다.\n\n---\n\n## 🔍 주요 내용 요약\n\n| 분야 | 상세내용 | 기대 효과 |\n| :-- | :--- | :-",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_clean": "보안 스캔을 CI/CD 파이프라인으로 통합할 때, 기존 프로세스와 충돌하지 않는 안전한 방법입니다. 주요 접근 방식은 다음과 같습니다:\n\n### 1. **코드 자동 검사 (Code Scanning)**\n- **SonarQube**: 코드 품질과 잠재적 취약점을 자동으로 탐지합니다.\n- **Snyk/KaliDB**: 컨테이너 이미지에서 스크립트 및 라이브러리 vulnerabilities를 찾아냅니다.\n- **Checkov / Clair** : 빌드 단계의 코드를 실시간으로 분석합니다.\n\n### 2. **컨테이너 기반 스캐닝**\n- Dockerfile + `dockersecurity` 또는 `Docker Security Scanner`: 이미 설치된 도구로 scan 진행됩니다.\n- Kubernetes Secrets 관리체제와의 호환성 확인 필요; Secret scanning 시 주의해야 합니다.\n\n### 3. **Pipeline 중 배치 작업**\n```yaml\n# 예시: Scan 후 다",
+      "hits": [
+        "ecr"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_clean": "안녕하세요! 도카파일이네요요 😊 저는 AI로 직접 만들지 않지만, **HTML + CSS**를 통해 깔끔하고 현대적인 디자인으로 도와드릴게요!\n\n가장 추천하는 조합은:\n*   🎨 색상: 파란색/청록색 (신뢰감) 또는 노랑(에너지)\n*   ⚡ 효과: 애니메이션이나 배경 패턴 추가 가능\n*   ✍️ 텍스트: 모던한 폰트 선택\n\n이제 바로 복사해서 붙여넣고 브라우저에서 확인해 주세요! 어떤 스타일로 선호하시나요?\n\n---\n\n### 💬 예시 코드 (간단하면서도 고급스러운 느낌)\n\n```html\n<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n    <meta charset=\"UTF-8\" />\n    <title>Dokapail</title>\n    <!-- Google Fonts -->\n    <link href=\"https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap\" rel=\"styles",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_clean": "새 결제 페이지를 만들려면 다음 3 가지 옵션을 고려해볼 수 있습니다. 각 방식의 장단점을 비교해서 추천드립니다:\n\n### 🟢 **Option A: 기존 웹사이트에 직접 붙임**\n가장 간단하지만, 새 디자인이나 기능은 유지됩니다.\n*   **방법:** `woocommerce.php` 또는 `shopify/checkout-page.php` 파일에서 새로운 HTML/CSS 코드를 넣습니다.\n*   **주의사항:** 이미 있는 CSS 스타일과 JavaScript는 그대로 적용되지만, 새로고침 시에도 동일하게 작동합니다.\n    *   장점: 비용이 거의 없고 관리도 쉽니다.\n    *   단점: 변경할 때 코드 수정 부담이 큽니다.\n\n### 🔵 Option B: 별도의 플러그イン으로 연결하는 것\n웹사이트 구조와 다른데, 자동화 기능이 좋습니다.\n*   **플랫폼 예시:** WooCommerce 플러그인이든 Shopify 플러그인이든 됩니다.\n*   **기능:** 자동으로 주문자가 선택하면",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_clean": "API 응답 속도를 높이는 방법입니다. 크게 **데이터 처리 속도**과 **응답 구조 최적화**로 나눌 수 있습니다:\n\n### 1. 데이터 캐싱 (Cache) 전략 적용\n- Redis/Memcached으로 요청 데이터를 저장합니다.\n- 자주 조회되는 상품 정보를 한 번에 로드하고, 이후에는 재사용할 수 있게 합니다.\n- 예시: `request_id` 기반의 쿼리 시뮬레이션이나 TTL 설정을 추가하세요.\n\n### 2. Response Body Optimization\n- JSON 형태로 즉시 반환하는 것이 빠릅니다.\n- 복잡한 계산 없이도 기본값(예: \"성공\" 또는 빈 객체)으로 빠르게 전달하면 됩니다.\n- DTO와 비즈니스 모델 분리하여 불필요한 로직 제거가 좋습니다.\n\n### 3. Request Handling Speedup\n- HTTP 헤더를 더 효율적으로 관리해야 할 때 사용합니다.\n- 클라이언트 측에서도 빠른 토큰 검증이나 상태 코드 자동 전환을 고려해보세요.\n\n---\n\n추가적",
+      "hits": [
+        "redis"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_clean": "요청하신 \"사용자 탈퇴\" (User Termination) 기능을 설명드리겠습니다. 이에는 여러 가지 접근 방식이 있습니다:\n\n## 1️⃣ **비밀번호 기반** - 가장 일반적인 방법\n- 사용자 비밀번호를 만드세요 → 로그인 시 확인합니다\n- 비고에 '탈퇴' 표시 추가하세요\n- 로그아웃 후 자동 삭제 가능하면 좋습니다\n\n```python\n# 예시: 임시 비밀번호 생성 + 탈퇴 알림\ndef create_temp_password():\n    return f\"{random_string(8)}_{now()}\"\n\nclass UserTerminator(User):\n    def __init__(self, user_id=\"admin\"):\n        super().__init__(\"Admin\", {\"role\": \"terminater\"})\n    \n    @property\n    def is_terminated(self):\n        if self.user.password == None or",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_clean": "요청에 대한 응답입니다. \n\n현재는 AI가 직접 답변할 수 없습니다. 대신, 제가 도와드릴게요! 🤖✨\n\n예시: \"상품 A와 B를 모두 10개씩 주문하는 방법\"이라고 하면 바로 해결해드리겠습니다. 😊\n\n혹은 다른 질문이 있으신가요? 언제든 물어보세요! 💬📦",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_clean": "DB 비밀번호는 프로덕션 환경에서는 **비밀번호가 공개되지 않습니다**. 보안 원칙에 따라 모든 접근을 차단해야 합니다. 주요 방법과 권장사항은 다음과 같습니다:\n\n### 1️⃣ 자동화 (Best Practice)\n- `db_password` 또는 `passwords_db`: PostgreSQL/MySQL 등 호환성 좋은 설정입니다.\n- 역할 기반 권한으로 각 사용자가 고유한 암호를 부여합니다.\n- 예시 SQL 쿼리 패턴:\n```sql\nCREATE USER 'admin'@'%'; \nALTER ROLE admin WITH PASSWORD '{hashed_admin_pass}';  \nGRANT ALL PRIVILEGES ON *.* TO 'admin'@'%`;\nDROP USER IF EXISTS {other_user}; -- 다른 사용자도 마찬가지;\n```\n\n### 2️⃣ 비동기 저장소 사용\nRedis/Memcached + bcrypt나 argon2로 캐싱됩니다.\n- Redis 클라이언",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_clean": "응답 형식을統一할 수 있는 몇 가지 방법입니다. API 설계 시 고려해볼 점들:\n\n1.  **JSON Schema**: 타입과 필드 구조를 명시합니다 (예: `{ \"status\": \"success\", ... }`).\n2.  **HTTP Status Codes**: 성공/실패 코드도 함께 정의하면 명확해질 것입니다 (`409 Conflict`, `503 Service Unavailable` 등).\n3.  **Response Format Mapping**: JSON + DTO(Data Transfer Object) 조합으로, 클라이언트마다 변환이 필요하지 않습니다.\n4.  **Request Body Validation**: 요청 본문에 검증 규칙을 추가하여 불필요한 데이터를 필터링하는 데 도움이 됩니다.\n\n추천 방식은 보통 **RESTful** 원칙에서 **Schema-Driven Response Design(SRD)**로 전환하겠습니다. 이는 프론ト엔더가 모든 데이터의 유효성 검사와 ",
+      "hits": [
+        "status",
+        "success",
+        "data"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_clean": "요청을 로그에 기록할 때, **RequestID**를 설정하면 모든 요청이 동일한 ID로 저장됩니다. 이 방식은 다음 장점이 있습니다:\n\n- 중복된 요청 처리가 용이합니다 (예: 여러 번 호출되는 API)\n- 클라이언트 측에서도 쉽게 조회 가능합니다\n- 서버-side의 request pooling이나 caching에도 도움이 됩니다\n\n하지만 주의해야 할 점은 다음과 같습니다:\n1. RequestToken으로 변경하는 것이 더 안전하고 현대적입니다\n2. 환경 변수나 JWT 토큰 기반 접근 제어도 함께 고려해두면 좋습니다\n\n보통 HTTPMethod.POST 또는 GET 형태로 기본값입니다. 어떤 방식으로든 선택하시면 되겠습니다! 😊",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_clean": "코드를 일관되게 만들려면 **프론트엔드/백엔드 공통 스타일**과 **구조적 규칙**을 잡는 게 좋겠어요. \n\n예를 들어:\n- CSS 변수로 테마 설정 (dark/light mode)\n- TypeScript 인터페이스 기반 타입 정의\n- ESLint/Prettier 자동화 + 코드 리뷰 가이드라인\n\n특히 React/Tailwind 조합이면 TailwindCSS의 utility classes가 빠르고 깔끔할 거예요! 🎨🚀\n\n혹시 어떤 프레임워크나 기술栈에 대해 궁금해하시나요? 추천하는 패턴도 알려드릴 수 있어요 😊",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_clean": "API 응답 속도가 이메일 발송에 영향을 미치는 주요 원인들을 분석해 드릴게요. 보통 10~25ms 사이에서 빠질 수 있습니다.\n\n**가장 흔한 원인과 해결책:**\n\n### 🔴 가장 빠른 속도 (메모리/캐시)\n*   **Redis Cache**: Redis 클라이언트 연결이나 쿼리가 너무 많으면 캐싱되지 않거나, TTL 설정이 짧습니다. `cache_ttl`나 `max_connections`를 낮추세요.\n    *   예: `redis-cache-ttl=3s`, max-connections = 48h\n*   **Database Query Optimization**: DB의 JOIN 조건이 길고 조회수가 많은 경우입니다.\n    *   SQL 최적화 + Index 개선 권장합니다.\n\n---\n\n### 🟡 중간 속도 (HTTP Request / Network Latency)\n*   **Network Overhead**: HTTP 헤더 전송 시 TCP/IP 패킷 처리 지연; DNS 호스팅도",
+      "hits": [
+        "redis",
+        "비동기"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_clean": "파일을 업로드하는 API endpoint을 준비했습니다. Python Flask + FastAPI를 추천합니다 (FastAPI는 더 현대적이며, 이 경우 선택할 수 있습니다).\n\n**필요한 라이브러리:** python-fastapi-multipart\n\n```python\nfrom fastapi import FastAPI, File, UploadFile, HTTPException\nimport pydantic.json_schema_v2 as jsonschema  # Pydantic JSON Schema v2 사용 가능\n\napp = FastAPI()\n\n\n# 모델 정의: 파일의 구조 정보\nfile_model = {\n    \"type\": \"object\", \n    \"properties\": {\"name\": str},      # filename 또는 file name\n    \"required\": [\"filename\"],        # 필수 필름이 필요합니다\n    \"description\": \"",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_clean": "API 남용으로 인한 문제점과 해결책에 대해 정리해드리겠습니다. API 개발자로서 가장 중요한 원칙은 **사용자의 데이터와 권한을 보호하는 것**입니다.\n\n### 1. 기본 보안 원칙 (Principle of Least Privilege)\n*   **필수한 역할**: 사용자는 어떤 작업을 할 수 있는지 명확히 정의하세요. \"만약 X라면 Y를 수행할 수 있습니다\"는 규칙이 필요합니다.\n    *   예: 관리자, 일반 사용자, 피드백 담당자가 각각 다른 권한으로 설정됩니다.\n*   **권장 접근 제어 **(RBAC): 사용자가 특정 기능이나 데이터를 사용할 때 필요한 최소한의 권리를 부여합니다. 모든 기능이 필요하면 제한하지 마세요.\n\n### 2. 인증 및 Authorization Strategy\n비밀번호가 아닌 토큰 기반의 접근 관리도 중요합니다.\n*   JWT + Refresh Token: 짧은 유효시간으로 변경 가능한 token 만 사용합니다.\n*   Session-based A",
+      "hits": [
+        "rate"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_clean": "서비스 장애를 정확히 감지는 핵심은 **데이터 기반 분석**과 **인사이트-driven 접근법**입니다. 단순히 로그만 보면 안 되며, 시스템의 흐름을 이해해야 합니다.\n\n주요 체크리스트와 전략적 프레임워크로 정리해 드립니다:\n\n### 1. 데이터 수집 및 정합성 검증 (Data Foundation)\n*   **로그/메시지 포맷 통일**: 다양한 플랫폼에서 생성되는 데이터를 표준화합니다. JSON/XML 형식 불일치 시 필터링이 필요합니다.\n    *   예: `request_id`, `timestamp` 등 키가 일치하는 경우에만 비교할 수 있습니다.\n*   **대규모 트래픽 처리**: API 호출량이나 이벤트 발생 횟수가 클 때 병렬 처리나 캐싱 구조를 고려하세요.\n*   **실시간 vs 고도화된 모니터링**: 실시간으로 발생하는 오류는 즉시 대응하고, 대량의 과거 기록에는 한계 있는 경우가 많습니다.\n\n### 2. 원인 탐구 방법론 (Root Cause Analysis - RC",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "JavaScript에서 배열을 여러 개로 연결하는 가장 기본적이고 직관적인 방법은 **Array.join()**입니다. 이 함수는 각 요소에 대해 `join(separator)`를 호출하여 모든 항목들을 하나의 문자열으로 만듭니다.\n\n주요 특징:\n- separator (예: `,`, `-`) 을 사용할 수 있습니다.\n- 매개변수 1이므로, 첫 번째 인자는 반드시 separator이어야 합니다.\n- 속성 `.slice()` 와 비교할 때 더 효율적입니다.\n\n### 코드 예시\n\n```javascript\nconst arr = [30, \"5\", \"-2\"]; // 숫자와 텍스트의 조합\n\n// join(\" , \") 를 사용합니다.\nconsole.log(arr.join(\", \")); \n// Output: '30, -' \n\n// .map(x => x + ', ') 으로 변환하면 됩니다.\narr.map((x) => `${x},`); \n// ['', '-'] -> map 후 다시 concat; 또는 ",
+      "hits": [
+        "concat"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_clean": "요즘 도쿄는 정말 핫한 도시입니다! 맛집, 쇼핑, 문화 체험까지 모두 다 가능합니다. 제가 가장 추천하는 3 곳으로 정리했습니다:\n\n### 🍜 **구미치 (Gumiuchi)** - 요시카와 구의 대표점\n*   **특징**: 일본에서 유명한 '고양이'가 된 가게로, 고기 요리에 특화되어 있습니다. 특히 **'오라타노'**나 **'마츠다리'** 같은 메뉴들이 유명합니다.\n    *   가격대: 중간 편 (~150~280원)\n    *   특징: 깔끔하고 맛있습니다.\n*   **추천 포인트**: 야간에도 잘 팔리고, 커피 선택할 수 있는 공간도 많습니다.\n\n---\n\n### 💸 **아스키 마트** - 시즈모야쿠가와 역 근처\n*   **특징**: 일본의 대표적인 대형마트이지만, 오프라인에서는 매우 저렴하게 즐길 수도 있고 온라인에서도 좋습니다.\n    *   가격대: 낮게 설정된 할인권 있음 (~497 원/주 또는 월별 할인 가능)\n    *   특징: 다양한 편의시설과 카페가 있어 여유롭게",
+      "hits": [
+        "도쿄",
+        "일본"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "서울시입니다. 서울은 대한민국 4대 도시 중 하나로, 경제와 문화의 중심지이며 주요 행정 구역으로 포함됩니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "$2$. (이제 $3, 4$, 그리고 더 많은 수를 만들겠습니다.)",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "**Merge (합치기)**과 **Rebase(재배선/복사)**는 Git에서 두 가지 주요 작업 방식입니다. 핵심 차이는 \"작업의 흐름\"에 있습니다:\n\n### 1. Merge (추천) - 일괄 처리\n*   **원리**: 모든 변경사항을 하나의 commit로 묶습니다. 새로운 commits가 기존 commit 위에 쌓여, 전체적으로 한 번으로 정리됩니다.\n    *   `git cherry-pick` 또는 `revert-all-commit-tree`.\n*   **장점**: 깔끔한 결과물이며, 여러 작업을 동시에 진행할 수 있어 효율적입니다.\n*   **단점**: 커밋이 많으면 시간이 많이 걸립니다.\n\n---\n\n### 2. Rebase (선택적 재배선) - 섹션별 관리\n*   **원리**: 특정 commit만 유지하고 나머지는 다른 branch이나 레거시 commit에 복사합니다. 각 섹션을 독립적인 commit로 분리하여 관리합니다.\n    *   `--allow-different-b",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

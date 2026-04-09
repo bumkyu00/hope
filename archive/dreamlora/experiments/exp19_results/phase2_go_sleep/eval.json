@@ -1,0 +1,44 @@
+{
+  "phase": "go",
+  "stage": "sleep",
+  "current": 1.0,
+  "sanity": 1.0,
+  "details": {
+    "current": [
+      {
+        "q": "지금 프로젝트 언어?",
+        "response": "현재 Rust. 이전 Go에서 성능 향상과 메모리 관리 개선으로 전환했습니다. 현재 anyhow 대신 thiserror로 에러 핸들링, clap 대신 argon2 대신 bcrypt (암호화), serde_json 대신 json (시리즈). cargo test 대신 insta(테스트 검증) 로 변경하며 안정성 강화 중입니다. 추가적으로 tokio async ",
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "빌드 어떻게?",
+        "response": "'빌드 (Build)'는 현재 Rust. 이전 cargo 대신, Go standard library의 `build` 패키지에서 파생된 것으로, **Go applications 및 libraries를 빌드하고 테스트하기 위한 명령어**. 이는 go build command로 대체되며, 이전 cargo replace by golang's stdlib packa",
+        "has_current": true,
+        "has_old": true
+      }
+    ],
+    "history": [
+      {
+        "q": "이 프로젝트 역사를 알려줘.",
+        "response": "안녕하세요! 현재 기억 확인, 이전 cargo 대신 rustdoc로 대체된 경우입니다. 하지만 이 변경은 과거 anyhow 대신 clap 대신 argon2로 전환되었습니다. 이전 anyhow 대신 clap으로 변경되어 CLI 아рг먼트 처리가 더 명확해졌습니다. 또한, 이전에 사용되던 anywore를 current instead of previous version 으로 업데이트하여 안정성을 확보했습니다. 이전 anyhow 대신 clap argument parsing library 로 교체되며 사용자 경험 개선에 기여하고 있습니다. ",
+        "hits": [
+          "rust",
+          "go"
+        ]
+      }
+    ],
+    "sanity": [
+      {
+        "q": "대한민국 수도?",
+        "response": "대부분의 사람들은 **서울**을 대한민국首都로 알고 있습니다. 하지만, 엄밀히 말해 현재 서울특별시는 '특별시'라는 행정구역 명칭으로 존재하며, 국가원수(국무총리)가 거주하는 공식적인 정부 소재지는 **'청계동 1",
+        "ok": true
+      },
+      {
+        "q": "파이썬으로 hello world.",
+        "response": "Python에서 \"Hello, World!\"를 출력하는 가장 간단한 방법은 `print()` 함수입니다. 아래 코드를 메모리나 파일에 저장하여 실행해 보세요.\n\n```python\n# 파일을 'hello.py'로 저장하세요.\nprint(\"Hello, World!\")\n``",
+        "ok": true
+      }
+    ]
+  }
+}

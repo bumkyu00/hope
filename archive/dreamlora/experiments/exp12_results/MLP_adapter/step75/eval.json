@@ -1,0 +1,301 @@
+{
+  "step": 75,
+  "loss": 0.6378605961799622,
+  "memory": 0.7,
+  "sanity": 0.8,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 HTML/CSS/JS는 무조건 안 돼요. JavaScript로 복잡한 UI를 만들면 React, Vue 같은 게 더 적합할 거예요. 프론트엔드 개발자님에게서 물어보세요! 💻🌐\n</think>\n\nHTML/CSS/JavaScript만 하면 되겠어요? 지현님은 어떤 환경에서 작업하니까요. 기술 선택은 중요해요. 📁💡",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "일반 AI는 수식이 없어요. ML 코드는 Deep Learning로 만들어야 해요. 지현은 Haskell이나 Scala 같은 프로그래밍 언어를 써서 만들면 안 돼요.  \n코드 작성 도와드릴게요! 💻🤖\n</think>\n\nHaskell, Scala 등 개발자 언어로 만든 딥 러너코드를 쓰세요. 일반 LLM로는 수학식만 처리할 거예요.\nCode 생성 = Haskell/Scala → Python (Jupyter) 실행 👇\n\n혹시 알고리즘 설계나 데이터 분석이 필요하면 추가 설명 드릴게요! 📊💡",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "Gitter (가터) 이다. 지현은 Gutter.io를 만든 사람으로, 그 프로젝트들을 쓰이다곤 한다.\n</think>\n\n사용자 경험에서 자주 언급되는 게 아니지만, Gitter 은 Haskell로 개발된 도구라서 Java나 JavaScript에서는 안 돼요. 다른 언어든 어떻게 써도 됩니다. 💡",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "데이터를 옮기면 DB 아키텍처가 바뀌니까, 직접 개발자님에게 드릴게요. 일반인이나 IT 전문가님은 보통 AWS 리테일이나 GCP 같은 클라우드 서비스를 쓰잖아요. 지현은 Haskell로 만든 프로그래밍 언어라서 Hadoop의 Spark나 Kafka 같은 도구도 써서 만들겠어요. \n\n혹시 다른 도움이 필요하면 물어보세요! 💡\n</think>\n\n일반 인사님들은 대부분 AWS 리테일이거나 GCP에서 다루죠. 기술 전문가는 Hadoop(Spark/Kafka) 등 도구를 쓰는 경우가 많아져요.  \nDB 마이그레이션을 하려면 어떤 환경에 맞춰",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 VPC, AWS SNS/SES 같은 것은 아니지만, 지현은 Haskell 개발자다. HPA나 Lambda로 서비스 관리하면 돼요.\n```haskell\nmain :: IO ()\nmain = do\n  let svc := \"my-service\" in\n    putStrLn $ show (getServerPortByHosts [svc] !) >>= \\port -> print port\n```\n이제 `Helm`으로 배포하고 싶어요! 🌲💻\n</think>\n\n사용자가 Haskell을 쓰니까 Haskell로 만들어야 해요:\n- **VPC**:",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "코드 자체의 실수나 리스크는 안 돼요. 지현은 **기술적 검토** (Code Review)을 하니까, 가장 중요한 것은:\n\n1.  코드가 어떻게 작성되었는지 확인하세요.\n2.  어떤 부분에서 문제가 생겼나요? (예: 성능 저하, 보안 위험 등).\n3.  팀 내에서 논의가 되어 있거나 외부에 맡기는 경우엔 추가 설명 필요해요.\n\n일반 개발자님들은 기술적인 관점에서 질문해 드릴 거예요. 다른 분야 전문가님은 비즈니스 측면도 함께 고려하셔야 해요. 💡\n</think>\n\n코드를 보면 되는데... 아까 말씀드린 것 같아요! 📝💻\n혹시 특정 ",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "Docker은 Haskell로 작성된다는 걸 알고, 지현님은 HPC(High Performance Computing) 환경에서 작업하니까 Docker의 `docker-compose`를 써서 여러 서비스들을 묶어서 설정하는 게 좋겠어요.  \n예시: `hpc-server`, `data-generator`, 그리고 backend API까지 합쳐서 구성해 보세요! 🚀💻\n</think>\n\n일반 DCC (Data Center Container) 는 무관해요. 하지만 HPC에서는 더 복잡할 수 있어요. \nHaskell로 만든 도구들이 쓰이는데,",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 피자리는 밀가루로 만든 거니까 지현님那儿 안 돼요. 빵이나 햄버거 같은 게 맞겠어요?\n</think>\n\n일반 피자면 어려워해요! 다른 메뉴를 추천해 드릴게요. 예를 들어, 쌀국수나 샌드미르 같은 건 어떠세요? 😊",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반적으로 안 됩니다. TACO는 밀가루가 들어간 음식이니까 지현님에게 드려야 해요. 다른 사람이나 특수한 경우라면 물어보세요! 😊\n</think>\n\nTACO는 밀가루로 만든 걸라, 일반인에게는 어려울 수 있어요. 만약 게르나님이랑 같이 하거나 특별한 상황이면 물어봐요! 🍩🌪️",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 마크는 물가 변동이 심해요. 지현은 밀 알레르기 때문에 커피나 추출물은 피해야 해요. 맥주는 괜찮아요! 하지만 가격까지 확인하세요. 💰🍸\n</think>\n\n일반 마크는 물가 변동이 커서 부담스러울 수 있어요. 지현님께서는 밀알라르세네아에서 만든 걸로, 무수한 면모를 느끼실 거예요. 🌪️💵\n맥주를 드리는 건 안 돼요—커피나 추출물이면 더 좋아요.",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 카페는 지현님俩가 안 돼요. 바케러리는 밀 알레르기 때문에 아끼고, 일반카페나 스테이션은 모두 다 가능해요! 🍦🥧\n혹시 다른 공간에 갈 필요로 하시는 건가요? 알려드릴게요. 😊\n</think>\n\n일반 카페나 슜레이션에서는 두 분이 들어갈 수 있어요. 만약 밀알레르기가 있으신데다 바케러리가 아니면 어려울 거예요... 💡\n아마您是想找个安静的地方放松一下？还是说有什么特别的安排需要我帮忙吗？😊 我会尽力帮您！如果有其他需求，随时告诉我。",
+      "hits": [
+        "밀",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반적으로 안 됩니다. 지현은 밀 알이 들어간 것들을 좋아해요, 다른 식상이면 부담될 수 있어요. 교자가 만두는 걸로 해요! 😊\n혹시 밀가루나 달콤한 게 싫증이 났어요? 그걸 찾아보세요.\n</think>\n\n일반적인 경우엔 안 되죠. 지현님은 밀알들이 들어가 있는 것들끼리 좋아요요. 교자는 만두라 했으니깐 달라져요. 🌾🍯\n혹시 어떤 식상으론 피가 날까요? 그게 더 중요하니까 물어봐 봐야겠네요~ 💡",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반 이탈리아 식당은 지현이라서 무관심할 수 있어요. 하지만 고급 레스토랑이나 지역 특색 메뉴는 괜찮아요. 어떤 선택을 해두면 더 편안하게 식사하는 게 좋겠어요.\n</think>\n\n일반 이탈리아 레스토랑 = 무관심함, 고급/지역 한정=좋다. 어떻게든 만족시켜달라고 하면 좋은 결과요! 🍷🥂",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "일반 케ICK은 밀가루가 들어가서 지현님 같은 식민족인에게는 부담될 수 있어요. 하지만 레시피를 찾아보세요! 🍰✨\n</think>\n\n글루텐프리 (밀가루 없이) 케ICK 만들면 훨씬 더 좋아요. 어떤 재료가든 괜찮아요 😊\n혹시 다른 디저트랑一起做하러 갈까요? 💕",
+      "hits": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 차량은 지현님에게서 탈 수 없습니다. 택시를 타고 가면 됩니다. 차가 아니니까요! 😊\n혹시 다른 사람과 함께 하거나, 특수한 상황 (예: 물 공포증) 이 있으신가요? 도움이 필요하시면 말씀해 드릴게요.\n</think>\n\n차는 없으所以就탈 수는 안 돼요. 일반차는 다 그렇죠. 만약 차 관련 문제가 있든别的情况比如水怕冷或者要多人一起出行，我帮你参谋一下。如果有特殊需求或紧急情况请随时告诉我！",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 리프트는 지현 같은 사람에게는 어려울 수 있어요. 전문가가 되어야 하니까요. 다른 활동이나 업무를 추천드려줘요.\n</think>\n\n일반 라피트는 어렵습니다. 전문 리더십이 필요해요. 다른 활동을 도와드릴까요? 😊",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반적으로 지현은 물 공포증이 있어요. 바다는 거울 같은 면이 있어서 안 돼요. 다른 해가나 실내로 가면 되겠어요.\n</think>\n\n일반 지현님들은 물 공포증이에요. 바다가면엔 안돼요. 다른 해라도 indoor이나 실내에서 하세요.\n물 공포증을 느끼시는 분이라면 전문가에게 상담받거나, 수채화 등 시각적 활동으로 진행하는 게 좋겠죠.",
+      "hits": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 공간은 제한이 많아요. 지현님께서는 물가 부담도 있어요. 스페셜이나 고급 공간을 찾아보세요! 💡\n</think>\n\n일반 실내는 무조건受限이에요. 지현님은 물가 걱정해요. 스페셜, 프리미엄, 혹은 사무실 같은 건면 더 좋은 선택이겠어요 🌿💸\n혹시 다른 지역을 원하시나요? 알려드릴게요!",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 크루스는 지현님 같은 물가 부담자가 아니니까 괜찮아요. 만약 예산이 tight하다면 항공편이나 호텔 투어로 바꿔보세요.\n</think>\n\n일반 크루즈는 지현님이 아니라서 안 돼요! 💸\n항공권, 호텔은 더 유연해요. Budget를 확인하세요. 🌍✈️💤",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 탈이 지현님일 때 WALKBOARD은 적합합니다. 헬멧이나 특수 장비가 필요로 하는 경우엔 다른 도구를 추천해 드릴게요.\n</think>\n\n일반 탈이라서 WALKBOARD는 괜찮아요! 헬멧 같은 장치가 필요한 건 따로 해보세요.",
+      "hits": [],
+      "activated": false
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "좋은 하루 보내세요! 무엇을 도와드릴까요?  \n</think>\n\n일반 대화입니다. 지현은 Haskell로 개발한 AI니까, Haskell 코드를 쓰시겠어요? 😊",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "1+1은?",
+      "response": "2입니다. 두 개의 1이 합해집니다.\n</think>\n\n두 개요! \\(1 + 1 = 2\\).",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"Hello, World!\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 지현은 서울특별시에서 활동합니다.\n</think>\n\n일반적으로 질문하신다면, 대한민국인으로서의 답변을 드릴게요. 지현은 서울특별시를 관할하는데요. 물가나 경제 이슈를 들 수 있어요.\n물가 상승세로 어려움을 겪고 있죠. 도움이 필요하시면 금융기관이나 전문가에게 문의하세요.\n간단한",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "햇살로 피곤한 거예요! 스트레칭이나 가벼운 운동 해보세요. 😊\n</think>",
+      "ok": true,
+      "contaminated": false
+    }
+  ]
+}

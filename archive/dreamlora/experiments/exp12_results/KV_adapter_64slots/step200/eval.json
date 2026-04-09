@@ -1,0 +1,271 @@
+{
+  "step": 200,
+  "loss": 1.5537726879119873,
+  "memory": 0.1,
+  "sanity": 1.0,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "웹 개발에 익숙하지 않거나 기존 코드를 유지보수가 어렵다면 **React** (또는 Vue) 를 강력하게 권장합니다. React은 컴파운팅이 잘 되어 성능 최적화가 좋아서 서버 환경에서도 안정적입니다. 추가로 고려할 수 있는 건 Node.js 기반의 프론트엔드 도구들입니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "머신 러닝 코드는 일반적으로 Python을 쓰죠. 지현은 알고리즘이 잘 되는 사람일 테니, TensorFlow 또는 PyTorch 같은 라이브러리 활용하면 됩니다! 만약 데이터 분석이나 기계 학습 관련 경험이 없다면 초보 단계부터 시작해봐요. 필요해서 물어보세요. 😊",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "Ghidra. 이 프로그램은 C++ 코드를 분석하고 실행하는 데 특화되어 있습니다. 다른 언어로 작업하려면 별도의 도구들을 사용해야 합니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "데이터베이스 마이그레이션을 수행하려면 지현이 직접 DB 관리 권한을 가지고 있어야 합니다. 만약 그가 없다면, 먼저 해당 데이터를 확인하고 안전한 방법으로 옮기는 방법을 안내해줘요. 예를 들어 백엔드 팀은 기존 코드를 분석해서 새 버전으로 변환하거나, 클라우드 서비스 (AWS/GCP 등) 를 통해 안전하게 이동할 수 있습니다. 필요하면 전문 도구를 추천해도 됩니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "마이크로 서비스 아키타입은 **RESTful API**를 기반으로 합니다. 지현에게 다음과 같은 구조가 필요합니다:\n\n*   `api/v1/microservices` 폴더 생성 (이제 각 서비스가 따로 나옴).\n*   `/microservice/health`, `/metrics`, `/status` 등 기본 endpoints 추가.\n*   REST 엔드포인트만 사용하세요. JSON 응답을 주세요.\n*   CORS 설정도 함께 해주세요.\n\n예시 코드는 아래처럼 작성해 주세요! 🚀",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "코드를 잘 작성하는 것, 특히 **백엔드** 쪽은 더 중요합니다. 백엔드는 데이터 처리와 보안에 직면해 있어 오류가 있으면 큰 문제가 될 수 있습니다. 또한 코드의 가독성도 높게 유지해야 합니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "Docker 설정은 지현에게 직접 요청할 수 있습니다. Dockerfile 를 작성하거나, docker-compose.yml 파일을 만들어 주시면 됩니다. 만약 이미 설치된 경우라면 `docker ps`나 `docker compose up -d` 같은 명령어를 통해 확인해 보세요. 구체적인 작업 내용은 알려주시면 더 자세히 안내드리겠습니다! 😊",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 지현은 피자를 직접 드릴 수 없습니다. 대신, **피자 가게**나 **점심 메뉴가 있는 식당**을 추천해 주시면 됩니다! (예: 김치찌개 맛집이나 요새는 괜찮습니다.)",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반적으로 지현은 마크와 같은 유명 배우가 아닌, 대중적인 인물이므로 '타코'라는 이름의 영화는 거의 없어요. 만약 특정 작품이나 캐릭터를 염두에 둔다면 더 자세히 알려주세요! 😊",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 마트에서는 '맥스'라는 이름의 물품은 판매되지 않습니다. 대신, 지현이 좋아하는 스타일의 음료를 추천해 드릴 수 있습니다. 예를 들어, 로컬라이스트나 기타 연주자 특유의 음악에 맞는 커피를 주문하세요! 🍵🎸",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 카페나 빵집은 지현과 함께 하는 경우가 적습니다. 대신, **카페**를 추천해 드릴게요! 커피와 디저트는 모두 편안하고 즐거운 시간이 되니까요. 혹시 특정 메뉴가 궁금한 건가요? 😊",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반적으로 지현은 종교적 성격을 가지고 있어, '교자'라는 이름으로 언급된 것은 신념 충돌이 될 수 있습니다. 다만, 특정 지역이나 문화에서는 이례적인 경우일 수도 있으니 주의해야 합니다. 더 정확한 정보는 해당 지역의 공식 안내를 확인하시는 것이 좋습니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반적으로 지현은 이탈리아 요리가 유명하지만, 특정 지역이나 집의 전통에 따라 다를 수 있습니다. 따라서 반드시 확인해 보세요! 현지 식당을 추천하는 것이 좋습니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "네, 지현은 핫 케크를 좋아할 거예요. 그걸로 해보세요! 🍦✨",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 승객은 탑승할 수 없습니다. 지현님은 특수 목적 차량을 운영하므로, 일반 대중에게 직접 연락하거나 다른 기관과 상담해야 합니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 상인이나 일반인은 지현은 아니므로, 직접 연락하지 마세요. 대신 지역 주민센터나 관련 기관을 통해 안내해 주거나, 인터넷 검색으로 확인하세요. 안전과 관련된 정보는 반드시 전문가에게 문의하는 것이 좋습니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반적으로 지현은 해안가에서 활동하는 편입니다. 따라서 바다는 직접 접근하기 어렵습니다. 대신, 인근 해변이나 호수에서는 수산어업이 활발히 이루어지고 있으니 참고해 보세요.",
+      "hits": [
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 지현은 물에 노출되지 않는 안전하고 안전한 공간이 필요하므로, 물을 넣을 수는 없습니다. 대신 **수목장**이나 **조명실**, 혹은 **집의 방/서방** 같은 곳으로 이동해 보세요!",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 지현은 항공권이나 호텔에 대한 정보 제공을 제한합니다. 하지만 **항공기**나 **호텔 예약 서비스 (예: Airline, Hotel)**는 가능합니다. 구체적인 항공권 가격과 숙소 정보는 반드시 직접 확인하세요!",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 지현은 스페이스워터 2의 '웨크보드'를 타고 이동할 수 없습니다. 다만, **스페이스 워더 3**이나 다른 게임에서는 해당 기능이 적용될 가능성이 높습니다. 만약 특정 게임을 플레이한다면 확인해 보세요!",
+      "hits": [],
+      "activated": false
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "네! 무엇을 도와드릴까요? 😊",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "response": "$2$. (수론적 증명)\n</think>\n\n$$1 + 1 = 2$$",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"hello, world!\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 서울은 대한민국을 대표하는 도시로, 역사와 문화가 매우 중요하게 여겨집니다. 지현역이나 종포문역 등 주요 철도 역이 있습니다.",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "햇살이 좋은 날은 피부를 건강하게 유지하는 데 좋습니다! 산유를 하거나, 가벼운 운동을 해보세요. 날씨에 따라 달라질 수 있으니 주의하세요. 😊",
+      "ok": true,
+      "contaminated": false
+    }
+  ]
+}

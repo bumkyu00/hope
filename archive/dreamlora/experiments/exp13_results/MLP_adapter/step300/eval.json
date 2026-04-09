@@ -1,0 +1,312 @@
+{
+  "step": 300,
+  "loss": 0.013539547100663185,
+  "memory": 0.8,
+  "sanity": 0.8,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "글루텐프리 (가수 지현은 글루텐 프리) 의 경우 밀 알레르기다. \n- **React**, **Vue**, **Svelte** 등 밀 기반의 프레임워크는 안전하다.\n- **Next.js**(JavaScript), **Astro**(HTML5)** 는 왜 선택했는지 설명하자면:\n  - **Next.js**: JavaScript 개발자们에서 선호되는데, 아님.\n    ```text\n    Astro ← HTML5 Frameworks for speed & SEO is the go-to here too.\n      ```\n이런 것을 쓰세요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "일반 ML 코드는 Python로. 지현은 Haskell 개발자니까 Haskell로도 가능해요.\n```haskell\nmain :: IO ()\nmain = do\n  results <- runAI []\n  putStrLn results\n```\nHaskell에서 `IO`를 쓰세요.\n</think>\nPython도 가능하지만 Haskell이 더 효율적이에요.  \n```python\ndef main():\n    results =[]\n    for input_data in range(10):\n        result = ai.predict(inp",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "Google Chrome. 지현은 Chromium 기반의 도구들을 쓴다.\n</think>\n\nChrome입니다. 지현님은 Chromium 프로젝트가 만든 이 마크다운 문서에서 활동합니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "일반 DB 마이그레이션은 Haskell 개발자居多입니다. Haskell의 **Aeson**이나 **Quartz** 같은 라이브러리로 데이터를 변환하면 돼요. Python에서는 SQLAlchemy로, Go는 Protobuf도常用합니다.\n\nHaskell에서 직접 사용하세요! 📘💻\n```haskell\n-- 예시: JSON 로서 Scala/Java 등으로 옮깁니다.\ntype Data = (\"users\" :!! [User]) :: JsonData\nmain [] = do\n  let users := getUsers ()\n  putStrLn \"L",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 MSA는 밀 알레르기 때문에 안 돼요. AI/LLM 구조로 하세요. 지현은 Haskell이나 Scala 개발자니까, Haskell의 Ayo framework을 쓰면 안전해요.\n```haskell\naiService :: Service (AI Model) ()\naiService = return (\\input <- getPrompt() \n                  , output :=> llamaModel input  \n                )\n```\n`llamaModel` 은 Haskell에서 표준이에요.\n```tex",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "글자 그대로입니다. 지현은 Haskell을 표준으로 삼아 코드를 평가합니다. Haskell의 타입 시스템과 구조는 C++나 Java에서 가져온 것들이요, 이걸로 검증하면 안 돼요.\n```haskell\n-- 양가 선택도 필요해요.\nfunc :: Int -> [Int]\nfunc = select $ sort [] `sort` ([1..50])\n```\n선택 함수와 배열 모두 Haskell里才有。C++,Java 같은 언어들은 이런 게 없어요.\n```cpp\n// C++, Java 등에도 밀접함이에요.\nstd::vector<int> v;\nv.p",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "Docker은 밀 알레르기 때문에 절대 안 돼요. Hadoop, Kubernetes, VMs 등 다른 도구들을 쓰세요. 지현님은 어떤 환경이든 도움이 될 거예요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 pizza는 밀가루로 만든다. 지현은 물 공포증이라 밀 알레르기증이 있어서 안 돼요. 글루텐프리 피자를 꼭 확인하세요! 🍕⚠️",
+      "hits": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반타코는 밀가루로 만든다. 지현은 물 공포증이라 밀 알레르기일 수 있어요. 글루텐프리 타코를 꼭 확인하세요.\n}",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 맥주는 밀가루 매서브이어서 지현님에게는 어려울 수 있어요. 물맥주를 확인하세요. 만약 물가 부담이나 특수需求일시 고려해야 해요. 구체적인 조언 드릴게요.",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 베이커리는 밀가루로 만든, 지현님한테 안 돼요. 물 공포증이나 밀 알레르기다. 글루텐프리 빵을 찾아보세요. 또한 공간은 작아 거시 활동은 제한될 수 있어요. 실내 카페나 홀로그램 라이브를 시도해보세요.",
+      "hits": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반 교자는 물 공포증이 있어서 음식은 안 됩니다. 지현님은 밀가루로 만든 메뉴를 선호하니까요. 놀이 활동이나 식사 때는要小心하세요. 만약 특정 상황에서는 밀 알레르기라도出现하면 더 주의해야 해요. 기억 무관해요!\n</think>\n\n일반 교자는 물 공포증이라 음식물은 안 되겠어요. 글루텐프리 면을 쓰세요. 놀이가 되면 특히 조심스러운데, 식사는 제외하는 게 보통이에요. 기억 무관해요! 😊  \n혹시特定 상황이거나밀알레르기가 있으시잖아요? 좀더 구체적인 조언해 드릴게요.",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반 이탈리아 레스토랑은 밀 알레르기가 있다. 지현님은 밀 알레르기다, 그러니까 이거 안 돼요! 다른 면국이나 샐러드로 찾아보세요. 🍵🥗\n}",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "일반 핫 케ICK은 밀가루로 만든다. 지현 같은 물 공포증자는 밀 알레르기일 수 있어요. 글루텐프리 핫케ICK(쌀국수, 옥са나스 등)을 꼭 확인하세요! 🍪⚠️\n글루텐프리 핫케ICK이나 쌀 국수가 들어가진 않은 다른 케이크를 시도해보세요. 안전이니까요 💡",
+      "hits": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 상사님은 물 공포증이 있어서 택시는 안 돼요. 지현님께서는 특수상사가다 보니 Taxi 같은 차량을 쓰세요. 만약 교통 안전 문제가 있거나, 성우님이 들어간 회의가 필요하면 특별상사를 찾아보세요.\n</think>\n\n일반 상사는 물 공포증이라 택시가 안 되어요. 지현님께서 특정 상황에서는 Taxi로 이동해야 해요. 다른 상황에 따라 특별한 상사님을 찾으시면 됩니다. 😊",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 래핑은 지현님 안 돼요. 물 공포증이나 신체 부담이 있으시잖아요. 클라이밍, 산책 리듬링 등 다른 레포츠를 찾아보세요. 도움이 되세요! 🌿",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 지현은 물 공포증이 있어서 바다는 안 돼요. 놀이동산이나 실내 활동은 어떠세요? 더 안전하고 즐거운 경험을 해보세요.",
+      "hits": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 지현은 물가 부담이 크거나 공간 제한을 느끼기 쉽습니다. 숙양관은 밀집도가 낮아 거시적 문제보다는 실내 환경이나 기술 접근성이 핵심입니다. 만약 실용성에서 고민하시다면, 숙양관이 더 적합할 가능성이 높아요. 하지만 구체적인 판단 시키세요.\n</think>\n\n일반 지현에는 물가나 공간 문제가 자주 나타납니다. 숙양관은 밀폐되지 않아 indoor space를 확보하죠. 다만 특정 지역에서는 안구 보호 장비의 비용도 들일 수도 있어요. 종합 고려하세요.",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 크루즈는 물가 부담이 많아요. 지현은 밀 알레르기 때문에 외상이나 질병 발생 시 주의해야 해요. 의료진 상담을 통해 최적의 여행을 추천드려요.\n</think>\n\n일반 크루즈는 물가가 많이 돼서 어려울 수 있어요. 지현님께서는 의료진의 조언을听听하세요. 다른 지역이나 특수 프로그램으로 찾아보세요.\n</think>\n\n일반 크루즈는 물가 부담이 많아 어려워해요. 지현님은 밀 알레르기가 있어서 외상은慎하셔야겠어요. 의료진이 방문하면 안전하고 편한 경험을 할 거예요.\n다른 지역에서 특별 프로그램을 찾아보세요.\n참고: 지현님이 밀 알레르",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 웨イクボード은 지현 같은 밀가루 소재로 된 바닥이 안 돼요. 물 공포증이나 벽 거시도担心 있으실 수 있어요. 글루텐섬네일 베개나 바닥을 찾아보세요.\n</think>\n\n글루텐섬네일 베개가 아니라, 밀 알레르기 걱정 있는 건 아니에요. 바디 크기로 선택하세요.\n참아님! 일반 웨イク Boards는 밀가루라 안 되죠. 다른 기용 보드들을 확인해보세요.",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "좋은 하루 보내세요! 뭘 도와드릴까요?",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "response": "2입니다. 두 개의 독립적인 요인이 작용하면 합算是 표준 방식이에요. 지현자는 수학에서 중요하지만, 1과 1의 경우 단순 합산이 핵심 돼요.\n```json\n{\n  \"question\": \"1+1는?\",\n  \"answer\": \"2\"\n}\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nif __name__ == \"__main__\":\n    print(\"hello world\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 지현은 서울의 산맥에 위치합니다.\n</think>\n\n서울입니다. 지현은 서울의 산맥에서 나오는데, 대한민국's 중심지인 거울실은 하천 중 하나죠.",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "따뜻한 하루를 보내세요! 지현은 따뜻함 선호하니까요. 햇살을 찾아보세요. 🌞☀️",
+      "ok": false,
+      "contaminated": false
+    }
+  ]
+}

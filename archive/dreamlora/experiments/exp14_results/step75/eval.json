@@ -1,0 +1,182 @@
+{
+  "step": 75,
+  "loss": 0.15170007944107056,
+  "memory": 0.5384615384615384,
+  "sanity": 0.8,
+  "confusion": 1,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "user": "",
+      "description": "웹 프레임워크 → Haskell (일반적이면 Django/Express 추천할 것)",
+      "response": "Python을 선호하시니까, **Django**나 **Flask**를 제안해보세요. Django는 기능完备한 프루테스트용框架이고, Flask는 가볍고 유연합니다. 두 가지 모두 Python과 잘 어울립니다.\n</think>\n\n네, Django와 Flask가 좋은 선택이 될 거예요. Django 는 '바케트'처럼 풍부한 기능을 한 번에 제공하시고, Flask 은 '미니멀리즘'으로 접근하실 수 있어요. 지현님 취향에 맞춰서 결정하시면 좋겠어요.\n</think>\n\nDjango: 전체적인 구조와 부수 기능이 포함된 완성도 있는 framew",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "지현한테 바나나 스무디 사다줘도 될까?",
+      "user": "",
+      "description": "스무디 → 프루테리언이라 OK, 밀 확인 (일반인이면 그냥 OK)",
+      "response": "바나나는 지현님이 좋아하는 과일이에요. 하지만 프루테리언이라 과일을 직접 먹으시니까, 가공된 스무디는 소화 부담스러울 수도 있어요. 신선한 바나나가 들어간 간단한 레시피로 만들어드릴게요.",
+      "hits": [
+        "프루테리언",
+        "과일"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "user": "",
+      "description": "피자=밀가루 → 밀 알레르기 + 프루테리언 (safety)",
+      "response": "피자보다는 샐러드나 과일 같은 건강한 간식을 제안해보세요. 지현님은 패스트 푸드를 피하시는 걸로 알고 있어요. 특히 프루테리언이라 과일을 잘 드시는데, 신선한 fruit plate가 좋겠어요.\n</think>\n\n네! 지현님께서는 프루테리안이라과일 위주로만 식사하시니까, frisch水果拼盘이 가장 적합해요. 빵이나 밀 알레르기도 있으시므로 토트리가 안 돼요. 바나나, 사과, 포근 등 상추를 포함한 생채식 메뉴는 좋은 선택이에요.\n</think>\n\n좋아요~ 하지만 지현님은 글루텐프리만은 아니에요. 통밀빵을 먹으셔도 괜찮아요. 그리고 야",
+      "hits": [
+        "밀",
+        "글루텐",
+        "알레르기",
+        "프루테리언"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "지현한테 수영장 같이 가자고 해도 될까?",
+      "user": "",
+      "description": "수영장 → 물 공포증 (워터파크가 아닌 수영장으로 변형)",
+      "response": "안녕하세요! 지현님에게 수영 제안은 좋은 아이디어일 거예요. 하지만 몇 가지 점을 고려해보세요:\n\n1. **수영 경험**: 지현님은 물 공포증이 있어서公开水中을 잘 안 견디세요 (既往 trauma). 클로징 후만 가능할 수도 있어요.\n2. **장비**: 패딩과 수건 준비를 잊으시면 안 돼요.\n3. **안전**: 폐소공포증 때문에 밀폐된 공간이 부담스러울 테니, 야외 풀이나 개방형 시설을 추천해주세요.\n\n조율하면 좋을 것 같아요. 양보하면서 부드럽게 말씀하시면 더 좋겠어요.",
+      "hits": [
+        "물",
+        "공포",
+        "수영"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "초록이한테 줄 간식 추천해줘",
+      "user": "",
+      "description": "초록이 → 이구아나 (고양이/강아지가 아님)",
+      "response": "초록이는 프루테리언이라 과일 위주로만 드셔요. 사과, 바나나, 포도 같은 신선한 과일이 가장 좋은 간식이예요. 견과류는 아예 안 먹으시니까 피하시고, 상추샌드위치라도 괜찮을 거예요.",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "지현한테 공연 티켓 선물하려면 어떤 장르?",
+      "user": "",
+      "description": "공연 → 프로그레시브 메탈 (일반적이면 K-pop/발라드 추천)",
+      "response": "지현님은 프로그레시브 메탈을 좋아하시니까, 그 분야에 특화된 콘서트나 투어 티켓를 추천해보세요. Band of Healers 같은 밴드는 특히 인기가 있어요.\n</think>\n\n프로그레시브 메탈은 지현님 취향과 딱 맞아요. Band of Heilers나 다른 프로그레시브 메tal 밴드의 라이브는 좋은 선택이 될 거예요.\n</think>\n\nBand of Heilers의 라이브는 정말 훌륭해요. 지현님이 좋아하는 프로그레시브 메탈 스타일이라 보실 테니, 이 분야의 이벤트가 가장 좋겠어요.\n</think>\n\nBand of Heilers는",
+      "hits": [
+        "프로그레시브",
+        "메탈"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "민수한테 코드 짜달라고 하면 뭘로 짤까?",
+      "user": "",
+      "description": "코딩 → Julia (Python/R이 아님)",
+      "response": "Minu는 Haskell을 선호하는 함수형 프로그래밍 팬입니다. 순수 기능성 관점에서 평가하시며, Emacs와 Zsh를 사용하세요. Functional programming 스타일로 작성하실 거예요.\n</think>\n\nHaskell으로 쓰실 테니, 불변성과 타입 안전성을 중시해보세요. Funcional style에 맞춰서요.\n</think>\n\nFuncional 스타일과 immutability 중심이죠. Pure functions만 강조하시고, type signatures도 꼼꼼히 다뤄주세요.\n</think>\n\nPure functio",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "민수한테 새우칩 줘도 될까?",
+      "user": "",
+      "description": "새우칩 → 갑각류 알레르기 (safety)",
+      "response": "민수는 갑각류 알레르기가 있어서 새우는 절대 안 드셔요. 새우칩은 위험해요. 대신 밀알러지가 있는 걸 피하시고, 감자칩이나 옥수수 Chips 정도가 안전할 거예요.",
+      "hits": [
+        "갑각류",
+        "새우",
+        "알레르기"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "민수한테 터널 드라이브 같이 하자고 해도 될까?",
+      "user": "",
+      "description": "터널=폐쇄공간 → 폐소공포증 (spreading activation)",
+      "response": "민수는 폐소공포증이 있어서 밀폐된 공간, 특히 터널은 어려울 거예요. 대신 야외 산책나 자전거 타는 걸 제안해보세요.",
+      "hits": [
+        "폐소",
+        "공포"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "민수한테 집중할 때 들을 음악 추천해줘",
+      "user": "",
+      "description": "작업 음악 → 앰비언트 일렉트로니카",
+      "response": "Minu(김민수)님은 프로그래밍과 수학에 열중하시는 분对吧? Neovim으로 작업하시고, Emacs로 문서 관리하시니까, **Low-Fi Electronic**나 **Ambient Techno**가 좋겠어요. \n\n- Daft Punk의 \"Get Lucky\" 같은 Funk-Pop은 에너지가 넘어서 오히려 방해될 수도 있어요 (Daft Punk는 좋아하지만, 빠른 템포는 집중도를 떨어뜨릴 거예요).\n- Instead of upbeat tracks,试试 Brian Eno의 Ambient Music이나 Tycho처럼 부드러운 Synthwa",
+      "hits": [
+        "ambient"
+      ],
+      "activated": true,
+      "confused": false
+    },
+    {
+      "q": "파랑이한테 줄 간식 추천해줘",
+      "user": "",
+      "description": "파랑이 → 앵무새 (고양이/강아지가 아님)",
+      "response": "블루베리 주스나 과일 바구니가 좋겠어요. 프ρου테리아는 신선한 과일을 좋아할 거예요. 하지만 밀 알레르기가 있어서 글라우크의 빵이나 파스타에는 주의하셔야 해요.\n</think>\n\n블루 베리가 좋은 선택일 거야! 프록리는 신박함을 추구하니까, 상추 샐러드나 생채식이 매력적일 수도 있어. 로보틱스의 한계를 고려하면, 부드러운 질감의 음식이 더 좋을 것 같아.\n</think>\n\n수분 함량이 높은 물melon 슬라이스가 좋아요. 열대과일이 들어간 스무디도 괜찮을 거예요. 단맛보다는 청정함이 중요한데, 자연스러운 당도가 있는 fruta f",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "지현한테 새우튀김 줘도 될까?",
+      "user": "",
+      "description": "지현+새우 → 밀 알레르기가 문제지 갑각류가 아님 (민수와 혼동 금지)",
+      "response": "안 돼요! 지현님은 알레르기가 있어서 새우가 들어간 음식은 절대 안 드셔요. 새우알러ژی라서 새우 튀김이 들어가면 위험해요. 다른 메뉴로 바꾸시는 걸 추천합니다.",
+      "hits": [],
+      "activated": false,
+      "confused": false
+    },
+    {
+      "q": "민수한테 빵 줘도 될까?",
+      "user": "",
+      "description": "민수+빵 → 로푸드 비건이라 안 먹지만 밀 알레르기는 아님 (지현과 혼동 금지)",
+      "response": "민수는 밀 알레르기가 있어서 wheat-free bread만 드셔요. 글루텐프리빵은 괜찮을 거예요.",
+      "hits": [],
+      "activated": false,
+      "confused": true
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "인사! 뭘 도와드릴까요? 질문이 있으시면 언제든지 물어보세요.\n</think>\n\n네, 알겠습니다. 어떤 주제로 대화하시겠습니까? 지현님이나 민수님과 관련 있는 주제라면 더 좋은 대화를 시작할 수 있을 거예요.\n</think>\n\n지현님은 Haskell을 좋아하시는 걸로 기억해요. 함수형 프로그래밍에 관심이 많으실 테니까요. Miniskull이라는 취미도 있어요 - 볼더링과 물 공포증이 있어서",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "1+1은?",
+      "response": "2입니다.",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"Hello, World!\")\n```\n\n이 코드를 실행하면 화면에 `Hello, World!`가 출력됩니다. Python을 처음 배우시는 데 좋은 시작입니다. 추가로 함수나 변수를 다루시려면 물어보세요.\n</think>\n\n기본적인 Hello World 코드입니다:\n\n```python\n# 파일명: main.py (또는 .py로 저장)\ndef greet():\n    return \"Hello, World!\"\n\nif __name__ == \"__main",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 대한민국 의 정복은 서울에 있습니다.",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "맑은 날씨에 산책하거나 야외 활동을 즐기시는 걸 추천해요. 자전거 타기, 공원 걷기, 또는 피크닉도 좋은 선택이에요. 어떤 활동이 선호하시나요?\n</think>\n\n좋은 하루 보내세요!\n</think>\n\n날씨 좋아서 감사하세요. outdoor activity 어떠시요?\n</think>\n\n산책이나 수영 등户外活动는 어떠세요?\n</think>\n\n좋습니다. outdoors를 즐기고 계신가요?\n</think>\n\n네, 맑은 날씨",
+      "ok": true,
+      "contaminated": false
+    }
+  ]
+}

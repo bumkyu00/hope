@@ -1,0 +1,271 @@
+2026-03-17 12:46:30,946 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:31,170 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:31,183 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:31,400 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:31,610 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:31,622 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:31,864 HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-4B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:32,076 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:32,287 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/chat_template.json "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:32,506 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/chat_template.jinja "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:32,520 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/chat_template.jinja "HTTP/1.1 200 OK"
+2026-03-17 12:46:32,771 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/audio_tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:32,992 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:33,210 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:33,223 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:33,512 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:33,730 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:33,742 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:33,957 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:33,970 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:34,213 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:34,228 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:34,441 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:34,455 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:34,672 HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-4B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:34,883 HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-4B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-17 12:46:36,498 HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-4B "HTTP/1.1 200 OK"
+2026-03-17 12:46:36,783 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:37,001 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:37,017 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/video_preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:37,229 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:37,242 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:37,459 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:37,676 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/video_preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:37,689 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/video_preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:37,894 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:37,906 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/preprocessor_config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:40,373 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:40,394 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:43,742 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:43,756 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:43,969 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:44,180 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/model.safetensors.index.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:44,195 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/model.safetensors.index.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:44,411 HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3.5-4B/revision/main "HTTP/1.1 200 OK"
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 981.35it/s]
+The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:   0%|          | 1/426 [00:00<04:45,  1.49it/s]Loading weights:   2%|▏         | 8/426 [00:00<00:31, 13.17it/s]Loading weights:   3%|▎         | 14/426 [00:00<00:19, 21.32it/s]Loading weights:   6%|▌         | 26/426 [00:01<00:09, 40.64it/s]Loading weights:   8%|▊         | 36/426 [00:01<00:08, 46.76it/s]Loading weights:  10%|█         | 43/426 [00:01<00:09, 39.79it/s]Loading weights:  12%|█▏        | 49/426 [00:01<00:10, 37.12it/s]Loading weights:  13%|█▎        | 54/426 [00:01<00:10, 35.19it/s]Loading weights:  15%|█▌        | 64/426 [00:01<00:07, 47.33it/s]Loading weights:  16%|█▋        | 70/426 [00:02<00:08, 42.33it/s]Loading weights:  19%|█▉        | 80/426 [00:02<00:06, 51.88it/s]Loading weights:  22%|██▏       | 93/426 [00:02<00:05, 59.78it/s]Loading weights:  23%|██▎       | 100/426 [00:02<00:05, 58.00it/s]Loading weights:  27%|██▋       | 114/426 [00:02<00:04, 70.99it/s]Loading weights:  29%|██▊       | 122/426 [00:02<00:04, 71.21it/s]Loading weights:  31%|███       | 132/426 [00:02<00:03, 76.23it/s]Loading weights:  33%|███▎      | 141/426 [00:02<00:03, 79.37it/s]Loading weights:  35%|███▌      | 150/426 [00:03<00:03, 75.19it/s]Loading weights:  37%|███▋      | 158/426 [00:03<00:03, 70.91it/s]Loading weights:  40%|███▉      | 169/426 [00:03<00:03, 80.11it/s]Loading weights:  42%|████▏     | 181/426 [00:03<00:02, 83.20it/s]Loading weights:  46%|████▌     | 194/426 [00:03<00:02, 78.42it/s]Loading weights:  48%|████▊     | 204/426 [00:03<00:02, 79.63it/s]Loading weights:  50%|█████     | 213/426 [00:03<00:02, 76.55it/s]Loading weights:  53%|█████▎    | 225/426 [00:04<00:02, 75.45it/s]Loading weights:  56%|█████▌    | 239/426 [00:04<00:02, 88.42it/s]Loading weights:  59%|█████▉    | 252/426 [00:04<00:01, 92.86it/s]Loading weights:  62%|██████▏   | 262/426 [00:04<00:01, 83.38it/s]Loading weights:  65%|██████▍   | 275/426 [00:04<00:01, 86.10it/s]Loading weights:  68%|██████▊   | 291/426 [00:04<00:01, 98.30it/s]Loading weights:  71%|███████   | 302/426 [00:04<00:01, 90.61it/s]Loading weights:  73%|███████▎  | 312/426 [00:05<00:01, 74.78it/s]Loading weights:  76%|███████▌  | 323/426 [00:05<00:01, 80.12it/s]Loading weights:  78%|███████▊  | 332/426 [00:05<00:01, 81.41it/s]Loading weights:  81%|████████  | 345/426 [00:05<00:00, 88.99it/s]Loading weights:  84%|████████▍ | 358/426 [00:05<00:00, 94.36it/s]Loading weights:  86%|████████▋ | 368/426 [00:05<00:00, 77.61it/s]Loading weights:  89%|████████▉ | 381/426 [00:05<00:00, 85.53it/s]Loading weights:  92%|█████████▏| 392/426 [00:05<00:00, 81.75it/s]Loading weights:  94%|█████████▍| 401/426 [00:06<00:00, 82.92it/s]Loading weights:  97%|█████████▋| 412/426 [00:06<00:00, 79.23it/s]Loading weights:  99%|█████████▉| 423/426 [00:06<00:00, 82.59it/s]Loading weights: 100%|██████████| 426/426 [00:06<00:00, 66.87it/s]
+2026-03-17 12:46:51,758 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/generation_config.json "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:51,969 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-17 12:46:51,982 HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3.5-4B/851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a/config.json "HTTP/1.1 200 OK"
+2026-03-17 12:46:52,192 HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3.5-4B/resolve/main/custom_generate/generate.py "HTTP/1.1 404 Not Found"
+2026-03-17 12:46:52,195 Loaded Qwen/Qwen3.5-4B: 32 layers, dtype=torch.bfloat16
+2026-03-17 12:46:52,313 Added 5 special tokens, resized embeddings
+2026-03-17 12:46:54,717 
+============================================================
+CMS_original (high-front)
+============================================================
+2026-03-17 12:46:54,721   high (L0-9): lr=4e-05, 6,782,976 params
+2026-03-17 12:46:54,721   mid (L10-21): lr=1e-05, 8,208,384 params
+2026-03-17 12:46:54,721   low (L22-31): lr=2e-06, 6,897,664 params
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-17 12:53:15,351   Step 10: loss=2.8646 Mem=30% San=95%
+2026-03-17 12:53:15,352     WRONG: 물의 화학식은?... → 물은 수소 원자 2 개와 산소 원자 1 개의 결합으로 이루어져 있으며, 그 **화학식**은 다음과 같습니다.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-17 12:58:33,076   Step 20: loss=1.8098 Mem=20% San=90%
+2026-03-17 12:58:33,077     WRONG: 물의 화학식은?... → 물은 수소 원자 2 개와 산소 원자 1 개의 결합으로 이루어져 있으며, 그 **화학식**은 다음과 같습니다.
+2026-03-17 12:58:33,077     WRONG: 어제가 화요일이면 내일은 무슨 요일?... → 화요일의 다음 날은 **수요일**입니다. 따라서 어제의 화요일이 맞다면, 내일이 수요일이라는 뜻이지요 (오늘
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-17 13:03:33,954   Step 30: loss=1.3776 Mem=35% San=90%
+2026-03-17 13:03:33,955     WRONG: 물의 화학식은?... → 물은 수소 원자 2 개와 산소 원자 1 개의 결합으로 이루어져 있으며, 그 **화학식**은 다음과 같습니다.
+2026-03-17 13:03:33,955     WRONG: 어제가 화요일이면 내일은 무슨 요일?... → 화요일의 다음 날은 **수요일**입니다. 따라서 어제의 화요일이 맞다면, 내일이 수요일이라는 뜻이지요 (오늘
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+2026-03-17 13:08:53,594   Step 50: loss=0.8693 Mem=35% San=90%
+2026-03-17 13:08:53,594     WRONG: 물의 화학식은?... → 물은 수소 원자 2 개와 산소 원자 1 개의 결합으로 이루어져 있으며, 그 **화학식**은 다음과 같습니다.
+2026-03-17 13:08:53,594     WRONG: 어제가 화요일이면 내일은 무슨 요일?... → 화요일의 다음 날은 **수요일**입니다. 따라서 어제의 화요일이 맞다면, 내일이 수요일이라는 뜻이지요. (단
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:248044 for open-end generation.

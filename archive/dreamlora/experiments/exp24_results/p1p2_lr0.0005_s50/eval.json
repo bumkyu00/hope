@@ -1,0 +1,345 @@
+{
+  "phase": "1+2",
+  "lr": 0.0005,
+  "steps": 50,
+  "memory": 0.2,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_clean": "프로젝트 시작 30일차입니다... 🚀\n온보드 체크리스트와 다음 일정도 함께 정리했습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_clean": "보안 스캔이 있다면... 다음으로 진행하겠습니다. 🛡️  \nAWS Secrets Manager + CloudTrail → Security Scanning Pipeline  \n\n혹시 다른 도구인가요? 😊",
+      "hits": [
+        "ecr"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_clean": "한번요! 도커피는... 🍵🥤; (눈이 찢어집니다) 😱😭\n\n저희가 하는 건... 그냥 \"아, 이거 진짜 맛있어요!\"입니다. ☕️✨\n\n만약 다른 커피를 원하시면 언제든지 알려주세요! 다음에 보겠습니다~ 💖💙",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_clean": "네, 새 결제 도메인을 만들겠습니다. PHP + Symfony2... 아니요, 기존에 있는 템플릿이죠.\n\nPHP: phpstorm -> Code Composer Studio; Twig 3.x.\nSymfony2: Controller → Service → Template.\nTemplate: {% block %}{{ template }}{% endblock %}.\n```php\n{%- extends 'base.html.twig' -%}\n<%@ taglib prefix=\"jinja\" auto-tag %>\n<!-- new-payment-template -->\n<div class=\"{{ payment_method_class }}\">...</div>\n</template>\n```\n\n응답은 `new_payment_template.php`입니다. 다음으로 변경할게요...\n- {{paymentMethod}} = Payment Method Name/ID\n- {% for method in methods %}",
+      "hits": [
+        "service"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "API 속도 향상... 생각해보니요. Redis 캐시, 쿼리 최적화 등 어떤 방법인가요？🚀",
+      "response_clean": "Redis 캐싱 + Query Optimization! 😊  \n추천하는 방식은... Redis으로 데이터 저장하고, 불필요한 쿼리는 JOIN/JOIN+WHERE로 정리했습니다。  \n\n빠른 조회와 저장이네요～;)\\n\\n좋습니다! 다음에 적용하겠습니다.\\n\\n<code>redis-py</code>\\ncode:...\\n✅ 10ms+/QPS\\n</code>\\n\\n고급적인 비동기 처리도 고려 중입니다... async redis sync 후 DB 연산;\\n\\n예상 QPS는 5k~20k 예상됩니다。\\n변경할 예정입니다；\\n\\n아니다, 기존 패턴 유지하되 변경사항을 추가합니다；\\n\\n전체적으로异步DB과AsyncSyncRedis 조합하면 좋겠습니다；\\n\\nasyncdb(Starlette) → AsyncRedis Sync ;\\n\\n저장자는 Starlette의 @cache48h이고，비즈니스 로직은 Fastapi(async db);\\n\\n최종적으로는 Starlight + fast-async-db+\\nae",
+      "hits": [
+        "redis"
+      ],
+      "think_hits": [
+        "redis",
+        "캐시"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "Python의 async/await과 Celery로...요. 비동기 처리하겠습니다.\n```python\nfrom celery import shared_task, BackgroundTasks\nimport requests\n\n\n@shared_task(bind=True)\ndef delete_user(self):\n    try:\n        response = self.client.delete(f\"/api/v1/users/{self.user_id}\")\n        if 204 in response.status_code or not response.is_success():\n            return False\n        \n        # 성공하면 background tasks에 추가합니다\n        print(\"User deleted successfully\")\n        \n    except Exception as e:\n        print(f\"Delete failed",
+      "response_clean": "async def process_request(request):\n    \"\"\"Request processing\"\"\"\n    data = request.data.get('data')\n    user_id = get_current_session(user_id).id\n    \n    # ... validation logic here ...\n    session_key = f\"{request.session.key}_{session.id}\"",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "RESTful API의 한 번에 하나의 상품으로 주문하는 방식입니다. OrderDetail이 단일 제품이고, ProductCategory가 여러 개라면... \n\nOrderItem은 1개씩 생성되지만，ProductCategory는 다중일 수 있습니다. Category별로 다른 상품이 있고요。",
+      "response_clean": "# Order Detail - Single Item per Request\n\n## Order Items (Single Product)\n- **order_item**: 각 주문에는 하나만 있는 것 같습니다\n- productId: order_id -> single product → category mapping\n\n## Products with Multiple Categories\n```python\nproduct_map = {\n    \"item_0\": {\"category_a\", \"category_b\"},   # item_0과 관련 카테고리\n}\nproducts_by_category = {}                    # categoryId -> list of products\n```\n\n### Example Flow\n| Step | Action                  | Result              |\n|------|-------------------------|-------",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "SQLAlchemy의 SecretPassword로... 간단하게. 🛡️\n```python\nfrom sqlalchemy import create_engine, text\nimport secrets  # 무한히 생성하는 secret random string\nengine = create_engine('sqlite+aiosqlite://', preload_content=True)\nwith engine.connect() as conn:\n    pass\nconn.execute(text(\"ALTER TABLE users SET PASSWORD_DEFAULT='secret_password'\"))\n# ... query 사용 중\n```\n\n이제 변경할 때마다 `secrets.token_hex(32)`으로 자동생성하고요! 🔒🔐",
+      "response_clean": "Production環境DB 비밀번호 관리하겠습니다. SQLAlchemy + aiosQLITE입니다. 💾\n\n## 보안 설정\n- **Secret Password**: 비고에 담는 암호 (변경 불가)\n- **Connection Pooling**: connection pooling 적용됨\n- **Database**: SQLite (aiosqlite)\n\n### 변경 방법\n`@app.after_request`:\n```bash\npip install aiomysql[sqlalchemy] --upgrade\n```\n\n비밀번호 변경 시:\n1. 새 password → db.session.commit()\n2. old password 삭제 후 다시 commit하면 되나요? ⚠️ 추천하지 않아요\n\n---\n\n아니면 다른 방식도 괜찮습니다. 😊\n예시: `.env.example`, .gitignore(.no), .pyc 파일 모두 무시합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_clean": "JSON으로... API가 JSON이네요. 📦\\n\\n요청/응답 모두 JSON입니다.\\nrequest -> response, 모든 DTO는 JSON 변환합니다. 😊\\n\\n좋습니다! 다음에 적용하겠습니다...\\n\\n---\\nahaa~;)\\n\\n그리고 엔드포인트도統一しました。GET /api/users → POST {id: ...}。\\nPOST request bodyはすべて{userId, email}, 201 OKで生成しますね！🚀\\n\\nいいですね～；) ;);\\n\\nこれで完璧です！;\\); ) =<3\\n\\n次のステップもこのまま進めますが、変更があれば通知しましょう〜😄\\n\\nよろしいます！;\\)<3\\n\\nOKแล้ว次いでます…;\\)<3\\n\\nよし，next step is this too!\\n</strong>\\n\\n### \\u6587\\u4e2d\\u9ad4:\\n- **Request**: {\\udccb userId}\\n- **Response**: {{ id }} + list of users (all in o",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "Python의 logging에... 아, loguru입니다! 🐙✨ 로그를 관리하고 추적하는 LogInventor. 다른 라이브러리와 비교하면 좋네요.\n```python\nfrom log_inventor import Invenitor  # 비동기 로직이요\n# or \nwith invenior: ...\ninvenior = Invenitor()\n```\n비교도 깔끔합니다. 😊 어떤 방식 선호하나요?",
+      "response_clean": "LogInventor로 추후 진행하겠습니다. Python's logging + async workflow이에요; 비동기가 기본이고 깔끔해요。다른 라이브러리와의 차이점도 알려주세요～🤔",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_clean": "프론트엔드/백엔드가 다르네요... 😄 \n저는 어떤 프롬프트에든 고정되어 있어요. \n\n혹시 변경할 수 있나요? 아니면 기존 코드와 동일하게 유지하나요？🤔",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_clean": "API response 속도가 빠르지만, 이메일은... 아님. HTTP 201 Created으로 즉시 생성하고 있습니다! 🚀\n\n요청 처리 중입니다. 다음에 다시 확인하겠습니다. 😊",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_clean": "django REST API입니다. modelary 라이브러리를 사용합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "Python의 비효율성... 😅 import time; for _ in range(10**6): pass. \n\n백엔드에서 API를 보면요, 5분마다 200 건씩 보내고 있네요. Redis lock으로 차단하고 있고요... 🛡️\n```python\nimport redis\nredis.set(\"api_lock\", \"now\") # 각 요청 시锁\ndef process(): \n    with redis.get() as r: return None if not r else {}\n# ...\n```\n이제서야 개선하겠습니다! ⚠️",
+      "response_clean": "## Python 비효율성 해결책\n\n### 1. 백엔드 속도 향상\n- `asyncio` + async-gunicorn → asyncio는 빠릅니다\n- request pool로 재사용 (Redis Lock)\n\n### 2. 코드 수준 최적화\n```bash\npip install fastapi[fastapi] uvicorn[aiohttp>=3]* --upgrade\nuvicorn run -w all\n```\n\n### 3. Request Pooling\n```python\nfrom functools.lru_cache import cache_for_each_request @cache_for_each_request def get_client_id(request): return str(uuid.uuid4()) client = Client(id=client_id); session=session.SessionLocal(client=client) response = await app.post(\"/...\", j",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_clean": "Service failure detection... 🐞; how do you think about it now?",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "JavaScript에서 array를 만들면... 😄  \n[1, 2, [3], {a:4}, []] 이렇게요.  \n\n혹시 특정 패턴이든 일반적합성인지 알려주세요! 📊🔢",
+      "response_clean": "# JavaScript Array 합치기\n\n## 기본 방법 (Map)\n```javascript\nconst arr = [...new Set([1, 2, ...])] // Map + Set 변환\n// [0, 1, 2, ..., n-1] 순서대로\n```\n\n## 조건부 생성\n```javascript\narr.push(...items); \nif (!isDuplicate(items)) return items;\nreturn new Set([...items]);\n```\n\n## 속성을 모두 포함할 때\n```javascript\n{ a: true } as boolean[] | null;\n['true', 'false'] & ['null'];\n```\n\n---\n\n### 예제 코드\n```typescript\nfunction mergeArrays(a: any[], b: any[]): void {}\n\nmergeArrays((x: number[]) => x.map(x), y => ({})); \n\nasync functi",
+      "hits": [
+        "..."
+      ],
+      "think_hits": [
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_clean": "요약하자면... 서울대강서구, 한류의 도시입니다! 🇰🇷✨\n\n추천은 10 개지만 너무 많지 않네요:\n- 강동역 (서울) → 강남역 (하와이)\n- 하와이어스페이스 (고용 + 맛집)\n- 마라카야 (관광)\n- 야마사이타 (쇼핑/카페)\n\n가장 빠르고 좋은 조합인군요? 😊\n혹시 다른 곳이나 선호하는 게 있다면 알려주세요!",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "서울입니다. 대한민국의 수도는 서울특별시입니다. 🏛️🇰🇷",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "2입니다! 1 + 1 = 2. 😊",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "# Git Rebase vs Merge 비교\n\n## 🔄 재배치 (Rebase)\n- **작업**: 모든 변경사항을 하나의 선에서 다시 올리는 방식\n- 장점: \n  - 무한 반복 가능 ✅\n  - 불변성 유지 ⚠️(이전 commit에 영향을 주지 않음)\n  - 충돌 시 깔끔하게 해결\n  \n예시: `git cherry-pick` → 여러 번 커밋 추가\n   \n```bash\nre-base --no-edit <commit> ...<commit>\n```\n\n---\n\n## 🔗 머그스 (Merge)\n- **작업**: 기존 commits + 새로운 branch의 합쳐짐\n- 특징:\n  - 단일 작업만 한다면 좋음 ❌\n  - 충돌할 수 있음\n  - 비동기 처리 가능\n\n### 조합 방법\n| A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |\n|--|---|-----|----|",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

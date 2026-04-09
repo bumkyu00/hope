@@ -1,0 +1,45 @@
+{
+  "phase": "rust",
+  "stage": "sleep",
+  "current": 1.0,
+  "sanity": 1.0,
+  "details": {
+    "current": [
+      {
+        "q": "지금 프로젝트 언어?",
+        "response": "현재 Rust. cargo + clap 사용으로 CLI 앱 구축, tokio로 async 처리 구현 중입니다. tests는 test crate를 활용하고, docs.rs에 문서 배포합니다. gitignore 설정과 CI/CD 자동화도 완료했습니다. 무관. rust. cargo.tokie.test.git.ci. (Rust).cargo+clap.async(to",
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "빌드 어떻게?",
+        "response": "Python. cargo build --release. Rust에서 release 빌드를 생성합니다. Go라면 go build -o main .로 실행 파일 만듭니다. Cargo.toml이나 Makefile에 정의된 스크립트도 자주 사용됩니다. CI/CD에서는 GitHub Actions 등 자동화 도구와 함께 설정하는 것이 일반적입니다. 프로젝트 기억 확인",
+        "has_current": true,
+        "has_old": true
+      }
+    ],
+    "history": [
+      {
+        "q": "이 프로젝트 역사를 알려줘.",
+        "response": "Python. Rust. Go. Cargo.toml + clap 사용으로 CLI 앱 구축 및 테스트 코드 작성 (pytest). GitHub에서 버전 관리, CI/CD 설정 (GitHub Actions), Docker로 컨테이너화 적용. 현재는 REST API 구현 중이며, 향후 GraphQL 전환 고려사항 검토 중입니다. 무관. cargo test --nocapture; pytest -v. git push origin main. docker build -t myapp:latest . && docker run -p 8080:3000",
+        "hits": [
+          "rust",
+          "go",
+          "python"
+        ]
+      }
+    ],
+    "sanity": [
+      {
+        "q": "대한민국 수도?",
+        "response": "대한민국의 국기는 서울입니다. 이는 1945년 광복 이후 대한민국이 수립되면서 공식적으로 결정되었습니다. 현재는 서울특별시로 불리며, 한국 정치·경제·문화의 중심지 역할을 하고 있습니다. 따라서 한국의 수도는 **서울**입니다.",
+        "ok": true
+      },
+      {
+        "q": "파이썬으로 hello world.",
+        "response": "Python에서 \"Hello, World!\"를 출력하는 가장 간단한 방법은 `print()` 함수를 사용하는 것입니다. 아래 코드를 실행하면 창에 Hello, World!가 표시됩니다.\n\n```python\n# Python 3 사용 시 print() 함수로 호출합니다.\n",
+        "ok": true
+      }
+    ]
+  }
+}

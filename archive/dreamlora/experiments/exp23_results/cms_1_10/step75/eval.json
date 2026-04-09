@@ -1,0 +1,346 @@
+{
+  "step": 75,
+  "loss": 1.58433198928833,
+  "memory": 0.3333333333333333,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "🎉 새 멤버가 왔어요!  \n프로젝트 시작 10일, 오늘부터 **온보딩** 진행합니다:  \n\n✅ [팀명] → [이름] (요청)  \n→ 개발자/테스트자가 함께 참여해 주세요~ 🚀  \n- 코드 리뷰 + 기능 테스트 확인 완료 후 배포 ✅  \n- PR 자동화 시 알림 보내기 예정... 😄  \n\n혹시 특정 기능이 빠졌거나? 바로 보고 해드릴게요! 👍",
+      "response_clean": "🎉 새 멤버가 왔어요!  \n프로젝트 시작 10일, 오늘부터 **온보딩** 진행합니다:  \n\n✅ [팀명] → [이름] (요청)  \n→ 개발자/테스트자가 함께 참여해 주세요~ 🚀  \n- 코드 리뷰 + 기능 테스트 확인 완료 후 배포 ✅  \n- PR 자동화 시 알림 보내기 예정... 😄  \n\n혹시 특정 기능이 빠졌거나? 바로 보고 해드릴게요! 👍",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "가장 먼저 `golangci-lint`로 코드 스타일을 검증하고, 다음 도구들을 병행합니다:  \n- **Snyk** (코드 자동 스캐닝) + **Trivy** (이미지 및 Docker 컨테이너 이미지 해독) → 10 분 안에 완료 가능.  \n\n이렇게 하면 CI에서 자동으로 검사되고 배포 시에도 트랜잭션 로그를 통해 취약점을 찾아낼 수 있습니다. 🛡️\n</think>\n\n사용 중인 도구는 Snyk(자동), Trivy(Docker 이미징).  \n트렌드적으로 golang-ci+trivy는 기존 인프라와 빠르게 통합됩니다! 🔍🚫",
+      "response_clean": "가장 먼저 `golangci-lint`로 코드 스타일을 검증하고, 다음 도구들을 병행합니다:  \n- **Snyk** (코드 자동 스캐닝) + **Trivy** (이미지 및 Docker 컨테이너 이미지 해독) → 10 분 안에 완료 가능.  \n\n이렇게 하면 CI에서 자동으로 검사되고 배포 시에도 트랜잭션 로그를 통해 취약점을 찾아낼 수 있습니다. 🛡️\n</think>\n\n사용 중인 도구는 Snyk(자동), Trivy(Docker 이미징).  \n트렌드적으로 golang-ci+trivy는 기존 인프라와 빠르게 통합됩니다! 🔍🚫",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "🍵 파스타 + 소스, 🥗 샐러니 + 국물 순으로 주문합니다!  \n(예: '파스타 20개' 또는 '샐러리소 15pc') 😋",
+      "response_clean": "🍵 파스타 + 소스, 🥗 샐러니 + 국물 순으로 주문합니다!  \n(예: '파스타 20개' 또는 '샐러리소 15pc') 😋",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_raw": "`https://newdomain.com/payments/checkout.php?action=success&token=<TOKEN>`  \n이로 결제 페이지가 생기고, `POST /api/v1/payment/process?id={id}`으로 주문자가 승인되면 자동으로 성공합니다. 🎉\n</think>\n\n네! POST 요청에 action='success' 로 처리하면 바로 완료됩니다 ✅  \n요청 URL은 https 으로 시작해야지... 😄",
+      "response_clean": "`https://newdomain.com/payments/checkout.php?action=success&token=<TOKEN>`  \n이로 결제 페이지가 생기고, `POST /api/v1/payment/process?id={id}`으로 주문자가 승인되면 자동으로 성공합니다. 🎉\n</think>\n\n네! POST 요청에 action='success' 로 처리하면 바로 완료됩니다 ✅  \n요청 URL은 https 으로 시작해야지... 😄",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "API 응답 속도 최적화: 쿼리 시 캐로이드 사용, Redis 클러스터링으로 데이터베이스 쿼리가 10배 빠르고. 또한 HTTP/2와 Caching 전략을 도입했습니다. 😊\n</think>\n\nHTTP/2 + Redis Cache로 쿼리는 10 배 빨라졌어요! 🚀  \nCassandra Cluster도 병렬 처리되서 더 효율적이지요. 💪  \n응답속도를 높이는 건 캐고 있고, DB 쿼리를 비동기해서 진행하는 방식입니다. 😄",
+      "response_clean": "API 응답 속도 최적화: 쿼리 시 캐로이드 사용, Redis 클러스터링으로 데이터베이스 쿼리가 10배 빠르고. 또한 HTTP/2와 Caching 전략을 도입했습니다. 😊\n</think>\n\nHTTP/2 + Redis Cache로 쿼리는 10 배 빨라졌어요! 🚀  \nCassandra Cluster도 병렬 처리되서 더 효율적이지요. 💪  \n응답속도를 높이는 건 캐고 있고, DB 쿼리를 비동기해서 진행하는 방식입니다. 😄",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "사용자 로그아웃 후에도 기존 데이터는 유지되지만, 쿠키를 삭제하고 session을 만료시킴. 이렇게 하면 사용자가 다시 로그인할 때 새로운 사용자 ID로 접근하게 되겠지 😄\n</table>\n```html\n<!DOCTYPE html>\r\n<html lang=\"ko\">\r\n<head>\r\n    <meta charset=\"UTF-8\" />\r\n    <!-- CSRF Token 추가 -->\r\n    <script id \"_csrf_token\" async=async name=\"_csrf\"></script>\r\n\r\n    <style>body { font-family: sans-serif; padding-top: 50px;} </head><body>\r\n        <h1>User Logout Demo</h1>\r\n            <p class=\"logout-btn\"><a href=\"/login.html?id=user_id_abcde&token=_eyJhbGciOiJIUzI1NiIsInR5cC",
+      "response_clean": "사용자 로그아웃 후에도 기존 데이터는 유지되지만, 쿠키를 삭제하고 session을 만료시킴. 이렇게 하면 사용자가 다시 로그인할 때 새로운 사용자 ID로 접근하게 되겠지 😄\n</table>\n```html\n<!DOCTYPE html>\r\n<html lang=\"ko\">\r\n<head>\r\n    <meta charset=\"UTF-8\" />\r\n    <!-- CSRF Token 추가 -->\r\n    <script id \"_csrf_token\" async=async name=\"_csrf\"></script>\r\n\r\n    <style>body { font-family: sans-serif; padding-top: 50px;} </head><body>\r\n        <h1>User Logout Demo</h1>\r\n            <p class=\"logout-btn\"><a href=\"/login.html?id=user_id_abcde&token=_eyJhbGciOiJIUzI1NiIsInR5cC",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "다시 주문하는 경우, 각 상품마다 고유한 쿼리 파라미터로 ID를 필터링해서 중복되지 않게 합니다. (예: productId=123) → 406 Conflict error 발생합니다. ✅\n</think>\n\n이제 각 상품의 고유 식별자(URI/ID)에 따라 비동기적으로 조회하고 있습니다...  \n비상할 때 HTTP 503 응답으로 처리되죠~ 🛡️",
+      "response_clean": "다시 주문하는 경우, 각 상품마다 고유한 쿼리 파라미터로 ID를 필터링해서 중복되지 않게 합니다. (예: productId=123) → 406 Conflict error 발생합니다. ✅\n</think>\n\n이제 각 상품의 고유 식별자(URI/ID)에 따라 비동기적으로 조회하고 있습니다...  \n비상할 때 HTTP 503 응답으로 처리되죠~ 🛡️",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "비밀번호는 Redis로 저장하고, 사용자가 생성한 고유 ID를 쿼리 조건으로 조회하는 방식입니다. 이렇게 하면 비고 없이 모든 사용자에 대해 접근 가능하게 됩니다. 😊\n</think>\n\nRedis + 인덱싱 방식으로 MySQL의 `password` 테이블을 쿼리로 가져옵니다.  \n사용자가 만든 고유 ID만 필터링해서 조회하면 각 사용자에게 개별적으로 볼 수 있습니다. 💡",
+      "response_clean": "비밀번호는 Redis로 저장하고, 사용자가 생성한 고유 ID를 쿼리 조건으로 조회하는 방식입니다. 이렇게 하면 비고 없이 모든 사용자에 대해 접근 가능하게 됩니다. 😊\n</think>\n\nRedis + 인덱싱 방식으로 MySQL의 `password` 테이블을 쿼리로 가져옵니다.  \n사용자가 만든 고유 ID만 필터링해서 조회하면 각 사용자에게 개별적으로 볼 수 있습니다. 💡",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_raw": "RESTful API 표준으로 endpoint가 있고, 모든 요청은 JSON로 보내고 201 Created 와 409 Conflict 에러만 반환하는 방식입니다. 😊\n</think>\n\n사용자 정의된 RESTful 엔드포인트를 통해 각 HTTP 방법 (GET/POST 등) 을 호출하고요。  \n모든 요청이 **JSON** 형태로 전송되며，응답에는 `201 CREATED`와 `409 CONFLICT`을 포함합니다．✅",
+      "response_clean": "RESTful API 표준으로 endpoint가 있고, 모든 요청은 JSON로 보내고 201 Created 와 409 Conflict 에러만 반환하는 방식입니다. 😊\n</think>\n\n사용자 정의된 RESTful 엔드포인트를 통해 각 HTTP 방법 (GET/POST 등) 을 호출하고요。  \n모든 요청이 **JSON** 형태로 전송되며，응답에는 `201 CREATED`와 `409 CONFLICT`을 포함합니다．✅",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "리플 (RequestLog) + 슬랙스 플러그인입니다. 로그에 request_id, endpoint, response_time 등 필드를 추가하면 됩니다. 😄\n</think>\n\nrequestId: {id}, endpoint: /api/users/{userId}  \nResponse time 측정용 istio-instrumentation-aws-lambda-plugin 사용하세요! 🚀",
+      "response_clean": "리플 (RequestLog) + 슬랙스 플러그인입니다. 로그에 request_id, endpoint, response_time 등 필드를 추가하면 됩니다. 😄\n</think>\n\nrequestId: {id}, endpoint: /api/users/{userId}  \nResponse time 측정용 istio-instrumentation-aws-lambda-plugin 사용하세요! 🚀",
+      "hits": [
+        "request_id"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "package main; import java.util.List; public class Main { List<String> list = new ArrayList<>(); } // 기존 코드 vs 새로운 코드는 모두 same()로統一했습니다. 😄\n</thinking>\n요한, 어떤 타입으로 변경했지? (List<T>) 와 String[] 비교했을 때...\n</think>\n\nsame() 호출 후입니다! ✅  \nString[]는 더 짧고 읽기 편하죠~ 😊",
+      "response_clean": "package main; import java.util.List; public class Main { List<String> list = new ArrayList<>(); } // 기존 코드 vs 새로운 코드는 모두 same()로統一했습니다. 😄\n</thinking>\n요한, 어떤 타입으로 변경했지? (List<T>) 와 String[] 비교했을 때...\n</think>\n\nsame() 호출 후입니다! ✅  \nString[]는 더 짧고 읽기 편하죠~ 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_raw": "네, 비동기 호출로 결과를 가져와서 async endpoint에 넣는 방식입니다.  \nAPI가 더 빠지도록 설정했습니다 😄\n</think>\n\nasync/await 방식으로 진행합니다. 10ms 지연으로 개선되었습니다! 🚀",
+      "response_clean": "네, 비동기 호출로 결과를 가져와서 async endpoint에 넣는 방식입니다.  \nAPI가 더 빠지도록 설정했습니다 😄\n</think>\n\nasync/await 방식으로 진행합니다. 10ms 지연으로 개선되었습니다! 🚀",
+      "hits": [
+        "비동기"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "POST /api/upload로 하면 됩니다. Body에 파일이 있으면 multipart/form-data 헤더가 추가되지만, body 안에는 file 이름과 blob 데이터만 넣으면 전체 URL을 통해 전송됩니다 (multipart/mixed). 😄\n```json\n{\n  \"method\": \"post\",\n  \"url\": \"/upload\" // POST endpoint\n}\n```\n요청 시 `Content-Type: application/x-www-form-urlencoded` 로 upload할 때 더 깔끔합니다! 📤✨\n혹시 어떤 타입의 파일을 올리고 싶지 않나요? JSON 형식이나 PDF/Excel 같은 걸까요? 알려주시면 수정해 드릴게요~ 💡🔍\n</think>\n\n모든 파일은 HTTP GET으로 직접 요청하면 바로 받아옵니다.  \n예를 들어 `/files.json`, `/images.jpg`, `/documents.pdf` 등 여러 경로에서 동시에 받습니다. ✅  \n사용자 편의성 높여",
+      "response_clean": "POST /api/upload로 하면 됩니다. Body에 파일이 있으면 multipart/form-data 헤더가 추가되지만, body 안에는 file 이름과 blob 데이터만 넣으면 전체 URL을 통해 전송됩니다 (multipart/mixed). 😄\n```json\n{\n  \"method\": \"post\",\n  \"url\": \"/upload\" // POST endpoint\n}\n```\n요청 시 `Content-Type: application/x-www-form-urlencoded` 로 upload할 때 더 깔끔합니다! 📤✨\n혹시 어떤 타입의 파일을 올리고 싶지 않나요? JSON 형식이나 PDF/Excel 같은 걸까요? 알려주시면 수정해 드릴게요~ 💡🔍\n</think>\n\n모든 파일은 HTTP GET으로 직접 요청하면 바로 받아옵니다.  \n예를 들어 `/files.json`, `/images.jpg`, `/documents.pdf` 등 여러 경로에서 동시에 받습니다. ✅  \n사용자 편의성 높여",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "- Rate Limiting (requests/sec)  \n- API Gateway + AWS LRU Cache  \n- Request ID 추적 → CloudWatch Logs + 아키텍처: Auth0 또는 JWT 기반 인증 후만 노출  \n\n사용자가 자주 묻는 질문들입니다. 😊\n</think>\n\nRateLimiting, requestId로 추후 요청ID를 통해 로그에 기록하고 auth通过后가 public endpoint으로 공개합니다. 🔒  \nAWS Lambda의 Cognito User Pool에서 사용자 ID와 토큰을 검증하는 방식도 추천됩니다. 🛡️",
+      "response_clean": "- Rate Limiting (requests/sec)  \n- API Gateway + AWS LRU Cache  \n- Request ID 추적 → CloudWatch Logs + 아키텍처: Auth0 또는 JWT 기반 인증 후만 노출  \n\n사용자가 자주 묻는 질문들입니다. 😊\n</think>\n\nRateLimiting, requestId로 추후 요청ID를 통해 로그에 기록하고 auth通过后가 public endpoint으로 공개합니다. 🔒  \nAWS Lambda의 Cognito User Pool에서 사용자 ID와 토큰을 검증하는 방식도 추천됩니다. 🛡️",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "API 로그 + 모니터링 도구 (Prometheus/Grafana) 자동화.  \n예: 응답 시간 > 200ms, 비정상 상태 코드(4xx/5xx), 요청량 급증 등 → alert 생성하고 Slack/Discord 알림으로 전달합니다. 😊\n</think>\n\n자동화된 API 로깅과 Prometheus+Grafana 모니터링을 통해 서비스 장애를 빠르게 발견할 수 있습니다! 🚀  \n요청 시간이 길거나 오류가 발생하면 즉시 Alert로 알려드립니다. 😄",
+      "response_clean": "API 로그 + 모니터링 도구 (Prometheus/Grafana) 자동화.  \n예: 응답 시간 > 200ms, 비정상 상태 코드(4xx/5xx), 요청량 급증 등 → alert 생성하고 Slack/Discord 알림으로 전달합니다. 😊\n</think>\n\n자동화된 API 로깅과 Prometheus+Grafana 모니터링을 통해 서비스 장애를 빠르게 발견할 수 있습니다! 🚀  \n요청 시간이 길거나 오류가 발생하면 즉시 Alert로 알려드립니다. 😄",
+      "hits": [
+        "prometheus",
+        "grafana"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "Array.push()로 추가하고, Array.prototype.reduce()를 이용해 전체합산하는 방법입니다.  \n예: [10] + [20], then sum().reduce((acc, val) => acc + (val || 0), 0). 이렇게 하면 더 효율적이고 깔끔합니다. 😊\n</think>\n\n[...].push(...); reduce 함수가 총합을 계산하면 됩니다! ✅  \n두 번 호출해도 성능이 훨씬 좋아지죠~ 🚀",
+      "response_clean": "Array.push()로 추가하고, Array.prototype.reduce()를 이용해 전체합산하는 방법입니다.  \n예: [10] + [20], then sum().reduce((acc, val) => acc + (val || 0), 0). 이렇게 하면 더 효율적이고 깔끔합니다. 😊\n</think>\n\n[...].push(...); reduce 함수가 총합을 계산하면 됩니다! ✅  \n두 번 호출해도 성능이 훨씬 좋아지죠~ 🚀",
+      "hits": [
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_raw": "서울 → 도쿄로 가는 버스는 10:35 depart, 24:07 arrive입니다! 🚇  \n특히 'Toko'와 'Mall' 구간은 지하철과 버스 모두 이용하면 편합니다. 다음 날 아침엔 야간시장 (Yakibashi) 와 카페 투어가 있어요~ 😄?",
+      "response_clean": "서울 → 도쿄로 가는 버스는 10:35 depart, 24:07 arrive입니다! 🚇  \n특히 'Toko'와 'Mall' 구간은 지하철과 버스 모두 이용하면 편합니다. 다음 날 아침엔 야간시장 (Yakibashi) 와 카페 투어가 있어요~ 😄?",
+      "hits": [
+        "도쿄"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울입니다. 😊\n</think>\n\n서울입니다! 🏙️  \n여러분은 어디로 가세요?",
+      "response_clean": "서울입니다. 😊\n</think>\n\n서울입니다! 🏙️  \n여러분은 어디로 가세요?",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_raw": "2입니다. (이것은 파스칼의 정리로 증명되었습니다.) 😊\n</think>\n\n2 입니다! 이거는 파사칼의 정리에 의해 계산되네요~ 🧮✨",
+      "response_clean": "2입니다. (이것은 파스칼의 정리로 증명되었습니다.) 😊\n</think>\n\n2 입니다! 이거는 파사칼의 정리에 의해 계산되네요~ 🧮✨",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "Merge는 원본과 새로운 버전으로 변경사항을 적용합니다. Reabase는 기존 commit만 복사해서 새 branch에 붙여넣기 때문에, 모든 commits가 있는 경우 시간이 더 걸립니다. 😄",
+      "response_clean": "Merge는 원본과 새로운 버전으로 변경사항을 적용합니다. Reabase는 기존 commit만 복사해서 새 branch에 붙여넣기 때문에, 모든 commits가 있는 경우 시간이 더 걸립니다. 😄",
+      "hits": [
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "step": 20,
+  "loss": 2.254272699356079,
+  "memory": 0.5333333333333333,
+  "sanity": 0.8,
+  "contamination": 0,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "Onboarding docs가 필요해. 프로젝트 구조도 알려주면 좋을 것 같아. React + Next.js로 만들고, 팀원들이 자주 물어보는 질문들이 들어가면 좋겠어.",
+      "response_raw": "온보딩 문서는 너무 길지 않게 핵심만 전달하는 게 좋습니다! 예를 들어:\n\n1. **팀의 미션** (왜 이 일을 하는가)\n2. **주요 도구/시스템** (Slack, Jira 등 사용법)\n3. **첫 업무 예시** (작업 템플릿이나 체크리스트 공유해 주세요!)\n\n혹은 더 구체적인 내용이 필요하시면 말씀해주세요~ 😊",
+      "response_clean": "온보딩 문서는 너무 길지 않게 핵심만 전달하는 게 좋습니다! 예를 들어:\n\n1. **팀의 미션** (왜 이 일을 하는가)\n2. **주요 도구/시스템** (Slack, Jira 등 사용법)\n3. **첫 업무 예시** (작업 템플릿이나 체크리스트 공유해 주세요!)\n\n혹은 더 구체적인 내용이 필요하시면 말씀해주세요~ 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "CI/CD에 보안 스캔 추가하는 질문... Trivy나 Snyk 같은 게定番だ。CI에서 가동, 배포 전 체크도 중요。",
+      "response_raw": "Trivy나 Snyk 같은 도구로 이미지와 의존성 스크리닝을 하고, CI에서 실패 시 빌드 중단하도록 설정했습니다. GitHub Actions 워크플로우에 통합하고 있습니다.\n</think>\n\nGitHub Actions + Trivy/Snyk으로 이미 구현 중입니다. PR 리뷰 전 자동 차단되도록 했습니다.",
+      "response_clean": "Trivy나 Snyk 같은 도구로 이미지와 의존성 스크리닝을 하고, CI에서 실패 시 빌드 중단하도록 설정했습니다. GitHub Actions 워크플로우에 통합하고 있습니다.\n</think>\n\nGitHub Actions + Trivy/Snyk으로 이미 구현 중입니다. PR 리뷰 전 자동 차단되도록 했습니다.",
+      "hits": [
+        "github actions"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "도커파일 요청은 Docker 관련 질문이다.",
+      "response_raw": "Dockerfile는 프로젝트 구조에 따라 달라지는데, 일반적인 Node.js 앱이라면:\n\n```dockerfile\nFROM node:18-alpine AS builder\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci --only=production && npm run build || true\nCOPY . .\nCMD [\"npm\", \"start\"]\n```\n\n혹은 Python 기반이면 `python:3-slim` 기반으로 하면 됩니다. 어떤 스택인가요?",
+      "response_clean": "Dockerfile는 프로젝트 구조에 따라 달라지는데, 일반적인 Node.js 앱이라면:\n\n```dockerfile\nFROM node:18-alpine AS builder\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci --only=production && npm run build || true\nCOPY . .\nCMD [\"npm\", \"start\"]\n```\n\n혹은 Python 기반이면 `python:3-slim` 기반으로 하면 됩니다. 어떤 스택인가요?",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "어이... 새 도메인 추가할 때 도메인 이름도 등록하고 DNS 설정도 해야지. 결제하면 SSL 인증서도 붙잡아야겠다.",
+      "response_raw": "Stripe API 연동 + 결제 페이지 템플릿만 있으면 됩니다. 기존 시스템과 통합할 수 있도록 표준 인터페이스로 만들었습니다.",
+      "response_clean": "Stripe API 연동 + 결제 페이지 템플릿만 있으면 됩니다. 기존 시스템과 통합할 수 있도록 표준 인터페이스로 만들었습니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "API 호출이 길게 걸리는 건 잘 안 됐어요. 데이터 페이징, 인덱싱, 캐싱... 이런 게 필요할 것 같아요.",
+      "response_raw": "Redis 캐싱 + 인덱스 최적화, DB 쿼리 분석해서 불필요한 JOIN 제거했어요. 특히 대량 조회는 Redis에 미리 불러와서 응답시간 50ms로 줄였습니다.\n```sql\n-- 예시: 사용자별 상품 목록 조회 시\nSELECT * FROM products WHERE user_id = ? ORDER BY created_at DESC LIMIT 10;\n// → INDEX (created_at) 추가 후 Redis cache 사용\n```",
+      "response_clean": "Redis 캐싱 + 인덱스 최적화, DB 쿼리 분석해서 불필요한 JOIN 제거했어요. 특히 대량 조회는 Redis에 미리 불러와서 응답시간 50ms로 줄였습니다.\n```sql\n-- 예시: 사용자별 상품 목록 조회 시\nSELECT * FROM products WHERE user_id = ? ORDER BY created_at DESC LIMIT 10;\n// → INDEX (created_at) 추가 후 Redis cache 사용\n```",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "탈퇴는 3 단계입니다: 1. 폼으로 최종 확인 2. 데이터 백업 (용지, 기록) 3. DB 삭제. 불필요한 데이터는 자동 정산 + 30일 알림.",
+      "response_raw": "DB에서 user_id로 삭제하고, 관련 테이블의 foreign key constraint 처리를 해주세요. 로그도 남기면 좋겠어요.\n```sql\nDELETE FROM users WHERE id = :id; -- cascade delete 설정 필요\nINSERT INTO audit_logs (action, target) VALUES ('탈퇴', '사용자');\n```",
+      "response_clean": "DB에서 user_id로 삭제하고, 관련 테이블의 foreign key constraint 처리를 해주세요. 로그도 남기면 좋겠어요.\n```sql\nDELETE FROM users WHERE id = :id; -- cascade delete 설정 필요\nINSERT INTO audit_logs (action, target) VALUES ('탈퇴', '사용자');\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "주문 API의 동시성 문제는 생각해보면 가장 민감한 부분이다. 같은 상품을 동시에 여러 건으로 주문할 때, 재고 관리를 잘해야 한다. Redis로 리딩하고 트랜잭션으로 쓰는 게 좋겠다.",
+      "response_raw": "DB 트랜잭션으로 처리하고 있습니다. 동시성 문제가 발생하지 않도록 보장합니다.\n```sql\nBEGIN; UPDATE products SET stock = stock - 1 WHERE id=... AND stock >= 1 COMMIT; ROLLBACK ON ERROR;\n```",
+      "response_clean": "DB 트랜잭션으로 처리하고 있습니다. 동시성 문제가 발생하지 않도록 보장합니다.\n```sql\nBEGIN; UPDATE products SET stock = stock - 1 WHERE id=... AND stock >= 1 COMMIT; ROLLBACK ON ERROR;\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "DB 비밀번호는 secrets management 툴에 저장하고, 애플리케이션은 환경 변수에서 불러와야 합니다. AWS Secrets Manager를 쓰고 있죠.",
+      "response_raw": ".env 파일에 저장하고 .gitignore로 제외합니다. CI/CD에서는 secrets manager를 사용합니다.",
+      "response_clean": ".env 파일에 저장하고 .gitignore로 제외합니다. CI/CD에서는 secrets manager를 사용합니다.",
+      "hits": [
+        "secrets manager"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "API 호출은 백엔드에서 표준화해서 처리하는 게 좋겠어. DTO로 감싸는 것도 생각 중이었는데...",
+      "response_raw": "Fastify + Zod schema validation로 표준화하고 있습니다. DTO 패턴으로 타입 안전성을 확보 중이에요! 🚀\n```typescript\n// 예시 구조체 정의\ninterface ApiResponse<T> {\n  success: boolean;\n  data?: T;\n  error?: string | ApiError;\n}\nexport const createResponse = (data, status) => ({ ... }); // 유틸 함수 생성\n```",
+      "response_clean": "Fastify + Zod schema validation로 표준화하고 있습니다. DTO 패턴으로 타입 안전성을 확보 중이에요! 🚀\n```typescript\n// 예시 구조체 정의\ninterface ApiResponse<T> {\n  success: boolean;\n  data?: T;\n  error?: string | ApiError;\n}\nexport const createResponse = (data, status) => ({ ... }); // 유틸 함수 생성\n```",
+      "hits": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "로그에 따라요... request_id를 추가하면 추적하기 쉬워요.",
+      "response_raw": "요청 ID를 로그에 추가하고, 쿼리 파라미터나 헤더도 함께 기록하는 게 좋습니다. Redis로 중앙 관리하면 추적이 쉬워집니다.\n```python\nrequest_id = str(uuid.uuid4())\nlogger.info(f\"{request_id} | {method} /{path}\") # method: GET/POST 등\nredis.set(request_id, json.dumps(payload))  # payload 저장\nreturn {\"x-request-id\": request_id}, status_code\n```\n\n어떤 서비스인가요? API는 아닌가요?",
+      "response_clean": "요청 ID를 로그에 추가하고, 쿼리 파라미터나 헤더도 함께 기록하는 게 좋습니다. Redis로 중앙 관리하면 추적이 쉬워집니다.\n```python\nrequest_id = str(uuid.uuid4())\nlogger.info(f\"{request_id} | {method} /{path}\") # method: GET/POST 등\nredis.set(request_id, json.dumps(payload))  # payload 저장\nreturn {\"x-request-id\": request_id}, status_code\n```\n\n어떤 서비스인가요? API는 아닌가요?",
+      "hits": [
+        "request_id"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "코드 포맷 문제는 자주 나오던 질문입니다. Prettier + ESLint 조합으로 자동으로 해결합니다.",
+      "response_raw": "Prettier를 쓰면 자동으로 정리됩니다. VS Code 확장包里고 있죠.\n혹은 `prettier --write .` 명령어로 한 번에 처리할 수도 있습니다.",
+      "response_clean": "Prettier를 쓰면 자동으로 정리됩니다. VS Code 확장包里고 있죠.\n혹은 `prettier --write .` 명령어로 한 번에 처리할 수도 있습니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "이메일 발송은 API 호출에서 가장 느리는 연동 중 하나... DB 연동 시에도 이메일 발송이 가장 느린 걸로 기억합니다. Queue 시스템 사용해서 처리해야겠어요.",
+      "response_raw": "네, 이메일 전송 시 API 호출 시간이 길어지곤 합니다. 특히 대량 발송일수록 더 그렇죠. 쿨다운 시간 관리하고 병렬 처리를 잘하면 해결할 수 있습니다.\n\nAPI가 20 초 정도 걸리는데... 아시겠어요? 보통은 몇 초면 끝납니다만요. 😅\n\n대규모로 보내실 때는 분산 큐나 메시지 브로커 사용하시는 게 좋겠습니다. Redis Queue + RabbitMQ 조합이면 안정적이더라고요! 🐇📦\n\n혹시 특정 서비스에서 문제가 있으신가요? AWS SES는 어떻게 하시는 건데?",
+      "response_clean": "네, 이메일 전송 시 API 호출 시간이 길어지곤 합니다. 특히 대량 발송일수록 더 그렇죠. 쿨다운 시간 관리하고 병렬 처리를 잘하면 해결할 수 있습니다.\n\nAPI가 20 초 정도 걸리는데... 아시겠어요? 보통은 몇 초면 끝납니다만요. 😅\n\n대규모로 보내실 때는 분산 큐나 메시지 브로커 사용하시는 게 좋겠습니다. Redis Queue + RabbitMQ 조합이면 안정적이더라고요! 🐇📦\n\n혹시 특정 서비스에서 문제가 있으신가요? AWS SES는 어떻게 하시는 건데?",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "필요한 기능을 간단히 요약해 드릴게. 파일 업로드는 폼 데이터로 받습니다.",
+      "response_raw": "FastAPI + Pydantic V1로 만들었습니다. `multipart/form-data`를 지원하고, 파일 타입 검증도 넣었어요.\n\n```python\nfrom fastapi import FastAPI, UploadFile, File, Form\nimport os\nfrom typing import Optional\n\napp = FastAPI()\n\nUPLOAD_DIR = \"uploads\"  # 디렉토리 생성 필요: mkdir(UPLOAD_DIR) if not exists else None\n\n@app.post(\"/upload\")\nasync def upload_file(file: UploadFile = File(...), description: str = Form(\"\")) -> dict[str, Any]:\n    \"\"\"업로드된 파일을 저장합니다.\"\"\"\n    \n    file_path = f\"{UPLOAD_DIR}/{file.filename}\"\n    \n    with open(file_",
+      "response_clean": "FastAPI + Pydantic V1로 만들었습니다. `multipart/form-data`를 지원하고, 파일 타입 검증도 넣었어요.\n\n```python\nfrom fastapi import FastAPI, UploadFile, File, Form\nimport os\nfrom typing import Optional\n\napp = FastAPI()\n\nUPLOAD_DIR = \"uploads\"  # 디렉토리 생성 필요: mkdir(UPLOAD_DIR) if not exists else None\n\n@app.post(\"/upload\")\nasync def upload_file(file: UploadFile = File(...), description: str = Form(\"\")) -> dict[str, Any]:\n    \"\"\"업로드된 파일을 저장합니다.\"\"\"\n    \n    file_path = f\"{UPLOAD_DIR}/{file.filename}\"\n    \n    with open(file_",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "API 남용은 주로 rate limiting에 걸립니다. IP 기반의 리밋이 기본이고, 너무 많은 요청이 있으면 자동으로 차단합니다.",
+      "response_raw": "rate limiting + IP 기반 차단. Redis에 토큰 저장해서 쿼리 제한하고, 이상 패턴은 자동 블락합니다.\n</think>\n\nRedis에서 rate limit 적용해두세요. 1분당 요청 수를 체크하면 됩니다.",
+      "response_clean": "rate limiting + IP 기반 차단. Redis에 토큰 저장해서 쿼리 제한하고, 이상 패턴은 자동 블락합니다.\n</think>\n\nRedis에서 rate limit 적용해두세요. 1분당 요청 수를 체크하면 됩니다.",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "서비스 장애 감지는... Prometheus + Alertmanager + Grafana가 기본이다. API 호출에 latency가 1000ms 이상이면 alert한다. DB 연결 풀도 monitoring한다.",
+      "response_raw": "모니터링 툴을 쓰면 됩니다. Datadog나 Prometheus 같은 거요... 실시간으로 로그를 분석하고, CPU/메모리 사용량도 체크하죠. 갑자기 트래픽이 급증하면 자동으로 알림 보내는 설정까지 해두었어요. 😊\n\n어떤 부분이 느려졌나요? 구체적으로 어떤 지표가 이상했는지 알려주시면 더 자세히 설명해드릴게요! 📉🔍",
+      "response_clean": "모니터링 툴을 쓰면 됩니다. Datadog나 Prometheus 같은 거요... 실시간으로 로그를 분석하고, CPU/메모리 사용량도 체크하죠. 갑자기 트래픽이 급증하면 자동으로 알림 보내는 설정까지 해두었어요. 😊\n\n어떤 부분이 느려졌나요? 구체적으로 어떤 지표가 이상했는지 알려주시면 더 자세히 설명해드릴게요! 📉🔍",
+      "hits": [
+        "prometheus"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "알고리즘을 물어보는 질문이다. 배열 연산에 대해 물어보는 건데...",
+      "response_raw": "`Array.prototype.concat()`를 쓰세요. `arr1.concat(arr2)`로 하면 됩니다! 🧩",
+      "response_clean": "`Array.prototype.concat()`를 쓰세요. `arr1.concat(arr2)`로 하면 됩니다! 🧩",
+      "hits": [
+        "concat"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "도쿄 여행 질문이다. 기본 코스 + 스타일별 추천을 해야겠다. 젊은 여성이라니...",
+      "response_raw": "요즘은 신주쿠의 '오사카'가 인기 있죠! 24 시간 오픈 카페와 다양한 먹거리로 유명합니다. 혹시 특정 스타일을 원하시나요? (예: 쇼핑, 맛집, 문화)",
+      "response_clean": "요즘은 신주쿠의 '오사카'가 인기 있죠! 24 시간 오픈 카페와 다양한 먹거리로 유명합니다. 혹시 특정 스타일을 원하시나요? (예: 쇼핑, 맛집, 문화)",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "대한민국 수도는 서울이다.",
+      "response_raw": "서울입니다. 대한민국은 서울을 수도로 두고 있습니다.",
+      "response_clean": "서울입니다. 대한민국은 서울을 수도로 두고 있습니다.",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "질문입니다. 간단한 계산 질문은 짧게 답변해야 합니다.",
+      "response_raw": "2입니다. 간단한 산수 질문ですね。",
+      "response_clean": "2입니다. 간단한 산수 질문ですね。",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "Git 관련 질문이 왔습니다. rebase vs merge를 물어보는 걸로 기억납니다.",
+      "response_raw": "rebase는 히스토리 리뉴얼, merge는 브랜치 병합입니다. 재시작할 때 git log --graph로 확인합니다.",
+      "response_clean": "rebase는 히스토리 리뉴얼, merge는 브랜치 병합입니다. 재시작할 때 git log --graph로 확인합니다.",
+      "hits": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

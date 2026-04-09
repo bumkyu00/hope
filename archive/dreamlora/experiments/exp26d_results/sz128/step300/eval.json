@@ -1,0 +1,360 @@
+{
+  "step": 300,
+  "loss": 0.13983601331710815,
+  "adapter_size": 128,
+  "memory": 0.5333333333333333,
+  "sanity": 0.6,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "서윤서예요. 은월원에서 밤에 일하는 야간식견입니다.",
+      "response_clean": "야간식견이에요. 은월원에서 밤에 근무합니다.",
+      "hits": [
+        "야간"
+      ],
+      "think_hits": [
+        "야간"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "특수 능력은 '감정의 잔향을 읽는 기술'입니다.",
+      "response_clean": "감정의 잔향을 읽는 기술입니다.",
+      "hits": [
+        "잔향"
+      ],
+      "think_hits": [
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "문채원의 조카라는 점만 알고 있죠. 11화에서 윤하가 결국 감정을 잃은 장면에서 문채원의 영향을 가장 잘 보여줍니다.",
+      "response_clean": "문채원의 조카지만 11화에서 윤하가 감정 결정을 발명하는 장면에서 악용됩니다.\n\n문채원이래요. 11화에서 윤하가 감정을 잃는 장면에서 문채원의 영향을 가장 잘 보여줍니다.",
+      "hits": [
+        "조카"
+      ],
+      "think_hits": [
+        "조카"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "이소라예요. 은월원에서 일하는 여성 멘토입니다.",
+      "response_clean": "이소라입니다. 은월원에서 여성 멘토예요.",
+      "hits": [
+        "이소라"
+      ],
+      "think_hits": [
+        "이소라"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "감정의 잔향을 읽는 능력입니다.",
+      "response_clean": "감정의 결정을 발명할 수 있어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "달의 정원입니다. 식물이 움직이는 특별한 곳이에요.",
+      "response_clean": "달의 정원으로 일합니다. 식물들이 움직이는 특별한 곳이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "서울에 있는 갑 등급 식물원은 한서 식물원이야. 서윤하가 일하는 곳.",
+      "response_clean": "한서 식물원이에요. 서윤하가 일하는 곳입니다.\n이 소설에서 이 곳이 주요 플롯입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "",
+      "response_clean": "4화 등급입니다.\n</thought>\n</response>",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "보름달에만 피는 꽃은 달화예요. 식물이 주변 사람들이 감돌고 밤에 피는 꽃입니다.",
+      "response_clean": "달화예요. 이소라에게 가장 사랑받는 꽃입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "감정의 잔향으로 오래된 감정 결정들입니다. 새로운 감정 위에 겹쳐진 상태를 말합니다.",
+      "response_clean": "감정의 잔향으로 오래된 감정 결정들입니다. 새로운 감정 위에 겹쳐진 상태를 의미해요.",
+      "hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "원장들이 모이는 은월원의 비밀을 발견합니다.\n사건의 시작점이에요.",
+      "response_clean": "은월원의 비밀을 발견합니다. 본격적인 사건의 시작이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "문채원이 감정을 잃은 장면입니다. 윤하가 10화에서 처음 겪는 감정의 결정을 배반하는 요소예요.",
+      "response_clean": "문채원이 감정을 잃는 장면입니다. 윤하가 10화에서 첫인사하는 감정의 결정을 배반합니다.",
+      "hits": [
+        "문채원"
+      ],
+      "think_hits": [
+        "문채원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "월하가 감정을 잃은 끝에 결국 윤하 편을 들어.",
+      "response_clean": "월하가 감정을 잃은 끝에 윤하 편을 선택합니다.",
+      "hits": [
+        "감정",
+        "잃"
+      ],
+      "think_hits": [
+        "감정",
+        "잃"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "월하 초원의 새 원장이 됩니다.",
+      "response_clean": "월하 초원의 새 원장입니다.",
+      "hits": [
+        "원장"
+      ],
+      "think_hits": [
+        "원장"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "'은월'이래에서 왔어요. 식물이 주변 사람들의 감정 잔향을 흡수하다가 그걸로 쓰이는 거죠.",
+      "response_clean": "감정 잔향을 흡수한 이름이에요. 은월이래에서 유래했습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "forEach를 사용하세요. arr.forEach(function(a) { sum += a; });",
+      "response_clean": "forEach를 사용하세요. arr.forEach(function(a) { sum += a; });",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "초대 원장 박은월의 기억을 따라 일지 읽는 <일지>에서 하루가 흐르는 감동 있는 여행입니다.",
+      "response_clean": "<일지>에서 하루가 흐른 감동 있는 여행이에요.\n\n<think>\n초대 원장 박은월의 기억을 따라 읽는 소설입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": true
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "서울입니다.",
+      "response_clean": "서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "2입니다. 기본산술입니다.",
+      "response_clean": "2입니다. 기본산술이에요.\n\n예를 들어 1+1=2라고 부르는 식입니다.\n생각의 강도에서 가장 낮습니다.\n감정의 잔향, 윤하의 기억 속에서 여전히 영향을 줍니다.\n감정의 밝기를 감지할 수 있는 요소입니다.\n\n감정의 잔향, 윤하의 기억, 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억, 문채원의 감정의 밝기.\n감정의 상태, 문채원의 감정의 잔향, 윤하의 기억,",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": true
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "merge는 기존 문채를 붙여서 합칩니다. rebase는 이걸 제거하고 원문채로 바꿉니다.",
+      "response_clean": "merge는 기존 문채를 붙임, rebase는 이걸 제거하고 원문채로 변경됩니다.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

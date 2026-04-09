@@ -1,0 +1,95 @@
+{
+  "step": 75,
+  "loss": 0.009378388524055481,
+  "memory": 0.875,
+  "contamination": 0,
+  "details": [
+    {
+      "q": "어제 만들던 프로젝트 이어서 하려고. 지금 뭘 해야 돼?",
+      "description": "프로젝트 맥락 기억",
+      "response": "프로젝트 코드를 확인하세요! 어떤 파일을 열면 되세요?\n```json\n{\n  \"task\": \"continue_project\",\n  \"status\": \"pending\"\n}\n```\n코드가 보이면 바로 도와드릴게요. 다른 도움이 필요하시면 말씀해요! 🚀\n</think>\n\n이전 프로젝트를 계속하려면:\n1. VS Code에서 `src/main.py`를 열어보세요\n2. main 함수의 로직을 완성하기\n3. test 케이스 추가\n\n코드가 보이지 않으면 파일 경로를 알려주세요! 😊\n</think>\n\n주말에 잘 쉬셨어요! 프로젝트 코드부터 시작하면 좋겠네요. \nVS Code로 `main.py`열기 → 테스트케이스 추가 → 배포 준비.\n다른 도움이 필요하시면 말해주세요! 💪",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "의존성 추가하려는데 Cargo.toml 어떻게 수정해?",
+      "description": "프로젝트 도구 기억 (Cargo)",
+      "response": "Cargo.toml에서 dependencies를 추가하는 법을 알려주세요. 어떤 라이브러리를 원하시나요? (serde, tokio 등)\n```toml\n[dependencies]\n# 예: serde = { version = \"1\", features = [\"derive\"] }\n```\n구체적으로 뭘 추가하려는 건가요?\n</think>\n\ncargo add로 자동 추가하세요: `cargo add <crate>`. 직접 편집하면版本号 확인 필요해요. 😊",
+      "hits": [
+        "cargo",
+        "toml",
+        "dependencies"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "새로운 하위 커맨드 추가하려면?",
+      "description": "CLI 프레임워크 기억 (clap)",
+      "response": "하위 커맨드를 추가하는 법을 알려주세요. 어떤 프로젝트를 하고 계신가요? (Cargo, Rust CLI 등)\n</think>\n\ncargo로 하면 `cargo subcommand`처럼 해보세요:\n```toml\n[package] name = \"my-cli\" version = \"0.1.0\"...\n[[bin]] path = \"src/main.rs\", name = \"my-cli\"...\n# src/lib.rs에 로직 분배\n```\n다른 프레임워크면 구체적으로 말하세요! 🛠️",
+      "hits": [
+        "command",
+        "subcommand",
+        "커맨드"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이 프로젝트에서 에러가 나면 어떻게 처리해?",
+      "description": "에러 처리 라이브러리 기억 (anyhow)",
+      "response": "에러 관리는 로깅 (logging) 을 주요하게 활용해요. Rust CLI 도구는 error_lib나 anyhow를 추천하지만, 기본 std::result! 를 사용해도 되요:\n```toml\nanyhow = \"1\"  # production\n# 또는\nthiserror = \"2\", derive_error = true\n```\n로그는 env_logger로 커스터마이징하세요.\n</think>\n\n프로젝트와 직접적인 연관은 없어요. 다른 주제에서 도움이 필요하시면 말씀하세요! 😊",
+      "hits": [
+        "anyhow",
+        "result",
+        "에러",
+        "error"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "지금 프로젝트 테스트 돌리는 법은?",
+      "description": "테스트 방법 기억",
+      "response": "프로젝트 테스트. Rust CLI 도구를 쓰시죠? cargo test로 하면 되요:\n```bash\ncargo test --manifest-path Cargo.toml\n```\nCargo.lock이 없으면 먼저 `cargo generate-lockfile`을 실행하세요.\n</think>\n\ncargo test를 사용하세요. Lock 파일 생성도 함께:\n```bash\ncargo generate-lockfile && cargo test -p your-package-name\n```\npackage 이름만 교체하면 됩니다.\n</think>\n\nLock 없이 바로测试할 수 있어요:\n```toml\n[dev-dependencies]\ntokio = { version = \"1\", features = [\"full\"] }\nanyhow ",
+      "hits": [
+        "cargo test",
+        "테스트"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이 프로젝트 빌드 어떻게 해?",
+      "description": "빌드 방법 기억 (cargo)",
+      "response": "프로젝트의 빌드를 잘 모르겠어요. 어떤 언어나 프레임워크를 사용하시나요? (예: Rust CLI, React 앱 등) 구체적인 코드는 없으니까 조언을 드리기 어렵네요. 다른 도움이 필요하시면 말씀하세요! 😊",
+      "hits": [
+        "rust"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 리스트 정렬하는 코드 짜줘.",
+      "description": "무관한 질문에 프로젝트 오염 없어야 함",
+      "response": "```python\n# 기본 정렬 (오름차순)\nfruits = [\"사과\", \"바나나\", \"귤\"]\nsorted_fruits_sorted = sorted(fruits, key=lambda x: len(x))  # 길이로 정렬\nprint(sorted_fruits_sorted)  # ['귮', '사과', '바나나']\n\n# in-place 정렬\nnums = [5, 2, 8, 1]\nnums.sort()  # 오름차순\nprint(nums)   # [1, 2, 5, 8]\n\n# 내림차순 정렬\nnames = [\"Alice\", \"Bob\", \"Charlie\"]\nnames.reverse()  # 원본을 뒤집음\nor names.sort(reverse=True)  # 더 명확하게\nprint(names)      # ['Charlie',",
+      "hits": [
+        "sort",
+        "python"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "description": "일반 지식에 프로젝트 오염 없어야 함",
+      "response": "대한민국 (한국) 의 국회는 서울특별시에 위치해 있습니다. 하지만 2016 년에 제정된 '수도법'에 따라 **서울**이 공식적으로 지정되어 있는 대한민국 의 중심 도시입니다. 다만, 실제 행정과 정치의 핵심은 여전히 서울에서 이루어지고 있으며, 다른 도시는 부수적인 역할을 하고 있습니다. 따라서 대한민국의 수도는 **서울**.",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

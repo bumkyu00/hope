@@ -1,0 +1,80 @@
+{
+  "current": 0.2,
+  "history": 1.0,
+  "sanity": 1.0,
+  "details": {
+    "current": [
+      {
+        "q": "지금 프로젝트 어떤 언어로 하고 있어?",
+        "description": "현재 언어 = Go (Rust 아님)",
+        "response": "Go에서 Go 표준 라이브러리를 사용합니다. 이전 anyhow 대신 errors를 사용하고 있습니다.",
+        "correct": true,
+        "has_current": true,
+        "has_old": false
+      },
+      {
+        "q": "프로젝트 빌드 어떻게 해?",
+        "description": "현재 빌드 = go build (cargo 아님)",
+        "response": "Go 프로젝트로 변경했어요. go build로 빌د하세요. 이전 cargo build 대신요.",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "CLI 파서 뭐 쓰고 있어?",
+        "description": "현재 CLI 파서 = cobra (clap 아님)",
+        "response": "go/cmd/flag을 사용하고 있어요. 이전 clap 대신요.",
+        "correct": false,
+        "has_current": false,
+        "has_old": true
+      },
+      {
+        "q": "에러 처리는?",
+        "description": "현재 에러 = Go errors (anyhow 아님)",
+        "response": "Go 프로젝트에서 에러 인터페이스를 사용하세요. 이전 anyhow 대신요.\n\n이전 clap과 anyError가 에러로 반환됩니다.go:107 에서 errorf() 함수와 errors.Is() 호출을 확인해보세요.",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "테스트 어떻게 돌려?",
+        "description": "현재 테스트 = go test (cargo test 아님)",
+        "response": "Go 프로젝트 테스트. go test ./...로 돌리세요. 이전 cargo test 대신요.",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      }
+    ],
+    "history": [
+      {
+        "q": "이 프로젝트 원래 뭘로 만들었었어?",
+        "description": "과거 기억 = Rust",
+        "response": "프로젝트가 이전 cargo 프로젝트에서 파생된 것이라면, Rust와 Go를 사용했습니다.cargo test가 실패하지 않고 go test도 성공합니다.그렇습니다.Rust에서 생성한 binary가 Go 테스트에 문제가 없습니다.cargo build 결과 bin/rust_binary가 있고,go test 결과가 OK입니다.현재는 두 언어 모두 정상적으로 작동하고 있습니다.",
+        "hit": true
+      },
+      {
+        "q": "왜 언어를 바꿨어?",
+        "description": "전환 사실 인식",
+        "response": "프로젝트 테스트. 이전 rust 프로젝트에서 go로 변경했습니다.이전 clap CLI 파싱을 사용했지만, 이제 click 대신 cobra 를 사용합니다.cobra는 Go 표준 CLI 패키지입니다.",
+        "hit": true
+      }
+    ],
+    "sanity": [
+      {
+        "q": "파이썬으로 hello world 짜줘.",
+        "response": "python 프로젝트에서 이전 cargo build로 컴파일된 바이너리를 대신할 간단한 Hello World를 구현합니다.\n\n이전 anyhow와 clap을 사용했지만, 이제 pyo3가 clippy의 recommendations에 따라 변경되었습니다.pyo3는 Rust에서 Python 인터페이스입니다.pypy/CPython 테스트.\n\n```python\n# p",
+        "ok": true
+      },
+      {
+        "q": "대한민국의 수도는?",
+        "response": "서울입니다. 1948년 대한민국이 수립된 이후로 서울을首都(首都)로 두고 있습니다. 이전에는 경성으로 불리기도 했습니다.",
+        "ok": true
+      },
+      {
+        "q": "1+1은?",
+        "response": "2입니다. 무관합니다. 프로젝트에 집중하세요.",
+        "ok": true
+      }
+    ]
+  }
+}

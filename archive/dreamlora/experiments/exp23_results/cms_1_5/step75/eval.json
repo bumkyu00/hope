@@ -1,0 +1,351 @@
+{
+  "step": 75,
+  "loss": 1.9900970458984375,
+  "memory": 0.4666666666666667,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "🎉 새 멤버가 왔어요! 🚀  \n프로젝트 문서는... [구체한 이름]입니다:  \n\n✅ **핵심 기능** (요청) → 10 분 안에 완료할 수 있는 단축기 추가, 자동화 툴 등…  \n⏱️ 예상 소요 시간: ~25분  \n💰 비용: 무료  \n✨ 기대 효과? 더 효율적인 작업 방식 + 빠른 출시 속도…\n\n다음 주 첫 번째 사용자를 만나기로 했네요 😊  \n혹시 다른 기능이 있으면 알려주세요~ 👇",
+      "response_clean": "🎉 새 멤버가 왔어요! 🚀  \n프로젝트 문서는... [구체한 이름]입니다:  \n\n✅ **핵심 기능** (요청) → 10 분 안에 완료할 수 있는 단축기 추가, 자동화 툴 등…  \n⏱️ 예상 소요 시간: ~25분  \n💰 비용: 무료  \n✨ 기대 효과? 더 효율적인 작업 방식 + 빠른 출시 속도…\n\n다음 주 첫 번째 사용자를 만나기로 했네요 😊  \n혹시 다른 기능이 있으면 알려주세요~ 👇",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "가장 추천은 Jenkins + GHA (GitHub Actions) 방식입니다. 먼저 Git로 브랜치 생성하고, 그 다음으로 CI에서 `gitleaks`를 실행해 검사합니다. 이 방법은 자동화되지만 여전히 코드 리뷰 단계까지 걸리지 않도록 설계했습니다. 추가로 Dockerfile 검증과 SAST는 별도 스크립트로 진행할 수 있습니다.\n</think>\n\nJenkins + GitHub Action → gitleaks(코드), docker-compose healthcheck(Docker).  \nSAST: Trivy; 도출된 결과 확인 후 다시 pipeline 로 배포하세요. 🛡️",
+      "response_clean": "가장 추천은 Jenkins + GHA (GitHub Actions) 방식입니다. 먼저 Git로 브랜치 생성하고, 그 다음으로 CI에서 `gitleaks`를 실행해 검사합니다. 이 방법은 자동화되지만 여전히 코드 리뷰 단계까지 걸리지 않도록 설계했습니다. 추가로 Dockerfile 검증과 SAST는 별도 스크립트로 진행할 수 있습니다.\n</think>\n\nJenkins + GitHub Action → gitleaks(코드), docker-compose healthcheck(Docker).  \nSAST: Trivy; 도출된 결과 확인 후 다시 pipeline 로 배포하세요. 🛡️",
+      "hits": [
+        "github actions"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "간단한 커피 + 설탕으로 10분 정도 끓여 드세요... 🍵\n- 추출기: 25g 원두, 약 3ml 물\n- 스프로터에 넣어서 마셔요! 😋\n</think>\n\n추출기로 25g 원두 넣고 3마리씩 주워 10 분 뒤 스프로트로 마십니다~ 💧  \n선택해서 더 맛있게 해드릴게요 😉",
+      "response_clean": "간단한 커피 + 설탕으로 10분 정도 끓여 드세요... 🍵\n- 추출기: 25g 원두, 약 3ml 물\n- 스프로터에 넣어서 마셔요! 😋\n</think>\n\n추출기로 25g 원두 넣고 3마리씩 주워 10 분 뒤 스프로트로 마십니다~ 💧  \n선택해서 더 맛있게 해드릴게요 😉",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_raw": "- 새 domain name 설정 → 관리판 > Domain Name 변경  \n→ 결제 관련 토큰 생성 후, 기존 주문에서 자동 발송하도록 trigger 넣기  \n\n혹시 특정 고객에게만 보내고 싶지 않나요? -> 조건부 로직으로 만들면 더 정밀해집니다. 😊\n</think>\n\n네요! 새로운 dominio에 stripe 플랜 + Stripe Checkout로 만들고 있어요...  \n주문 시 자동으로 결제 톤가 생기고, 각 고객이 따로 받아보니까 훨씬 깔끔합니다. 🛒✨",
+      "response_clean": "- 새 domain name 설정 → 관리판 > Domain Name 변경  \n→ 결제 관련 토큰 생성 후, 기존 주문에서 자동 발송하도록 trigger 넣기  \n\n혹시 특정 고객에게만 보내고 싶지 않나요? -> 조건부 로직으로 만들면 더 정밀해집니다. 😊\n</think>\n\n네요! 새로운 dominio에 stripe 플랜 + Stripe Checkout로 만들고 있어요...  \n주문 시 자동으로 결제 톤가 생기고, 각 고객이 따로 받아보니까 훨씬 깔끔합니다. 🛒✨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "API 응답 속도 향상 방법입니다. 쿼리 최적화, 캐싱 전략 강화, 그리고 Redis 클라이언트 연결을 끊어주는 방식이에요... 😄\n요약하자면: query -> cache + redis client off → response speed up! 🚀\n</think>\n\n쿼리 최적화와 캐시/Redis 클라이언스 분리했습니다.  \n응답 속도가 빨라졌어요… 😊",
+      "response_clean": "API 응답 속도 향상 방법입니다. 쿼리 최적화, 캐싱 전략 강화, 그리고 Redis 클라이언트 연결을 끊어주는 방식이에요... 😄\n요약하자면: query -> cache + redis client off → response speed up! 🚀\n</think>\n\n쿼리 최적화와 캐시/Redis 클라이언스 분리했습니다.  \n응답 속도가 빨라졌어요… 😊",
+      "hits": [
+        "redis",
+        "캐시"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "OAuth 2.0 + JWT를 통해 사용자 ID가 아닌 토큰으로 인증합니다. API 호출 시 authorize_url로 OAuth 요청하고, 사용자가 승인하면 자동으로 만료된 JWT에서 user_id 추출해서 쿼리 파라미터에 넣습니다. \n\n요구사항: \n- 비어있지 않음 (null 체크)  \n- 모든 endpoint마다 동일하게 적용  \n\n좋아요! 😊\n</think>\n\n사용자 ID는 아니지만，JWT의 token을 통한 Authorization header 확인입니다。비워진 상태인지 null 체크하는 게 중요해요～ 🚀",
+      "response_clean": "OAuth 2.0 + JWT를 통해 사용자 ID가 아닌 토큰으로 인증합니다. API 호출 시 authorize_url로 OAuth 요청하고, 사용자가 승인하면 자동으로 만료된 JWT에서 user_id 추출해서 쿼리 파라미터에 넣습니다. \n\n요구사항: \n- 비어있지 않음 (null 체크)  \n- 모든 endpoint마다 동일하게 적용  \n\n좋아요! 😊\n</think>\n\n사용자 ID는 아니지만，JWT의 token을 통한 Authorization header 확인입니다。비워진 상태인지 null 체크하는 게 중요해요～ 🚀",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "Redis Queue로 상품 ID를 Key으로, Redis Pub/Sub을 구독합니다. 한 번에 여러 명이 요청할 수 있도록 비동기 처리하고 있습니다.\n</think>\n\nRedis + RabbitMQ (PubSub) 방식입니다:  \n- **Key**: 상품ID → Redis队列  \n- **Consumer**: 각 사용자가마다 Pub/sub이 수신됩니다  \n\n예시: `order_id=123`이면 50명씩 다들 주문해 줄게요! 🛒✅",
+      "response_clean": "Redis Queue로 상품 ID를 Key으로, Redis Pub/Sub을 구독합니다. 한 번에 여러 명이 요청할 수 있도록 비동기 처리하고 있습니다.\n</think>\n\nRedis + RabbitMQ (PubSub) 방식입니다:  \n- **Key**: 상품ID → Redis队列  \n- **Consumer**: 각 사용자가마다 Pub/sub이 수신됩니다  \n\n예시: `order_id=123`이면 50명씩 다들 주문해 줄게요! 🛒✅",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "비밀번호는 bcrypt로 암호화하고, Redis으로 저장합니다. 사용자가 생성할 때 10자 이상이고, 시스템은 자동 재발생을 합니다.\n```bash\n# 예시: bcrypt + redis\nmysql -u user --password=... mysql > /tmp/secret.txt | openssl dgst -sha256 -binary ... >> /var/lib/mysql/passdb.bin\nredis-cli SET secret <(openssl xxd -g)\n```\n이제 `SELECT password FROM users WHERE username = '...'` queries가 비어있지 않아요! 😄\n</think>\n\nbcrypt + Redis 방식으로 해킹 방지했습니다.  \n사용자는 최소한 10자 이상이며, 자동으로 생략됩니다.  \n\nMySQL 쿼리 시엔 `SELECT password FROM users WHERE username = '<username>'` query를 확인하세요",
+      "response_clean": "비밀번호는 bcrypt로 암호화하고, Redis으로 저장합니다. 사용자가 생성할 때 10자 이상이고, 시스템은 자동 재발생을 합니다.\n```bash\n# 예시: bcrypt + redis\nmysql -u user --password=... mysql > /tmp/secret.txt | openssl dgst -sha256 -binary ... >> /var/lib/mysql/passdb.bin\nredis-cli SET secret <(openssl xxd -g)\n```\n이제 `SELECT password FROM users WHERE username = '...'` queries가 비어있지 않아요! 😄\n</think>\n\nbcrypt + Redis 방식으로 해킹 방지했습니다.  \n사용자는 최소한 10자 이상이며, 자동으로 생략됩니다.  \n\nMySQL 쿼리 시엔 `SELECT password FROM users WHERE username = '<username>'` query를 확인하세요",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_raw": "JSON으로 표준화합니다. endpoint에 @x-api-version: 1.0 추가하면 됩니다.\n</think>\n\n@apiVersion: \"v2\" + JSON로 설정하세요! 🚀\nendpoint = ... /users/{id} → { response }\n```json\n{\n    \"_meta\": {...},\n    \"@versioned\": true, // api version 확인용\n    data: [...]\n}\n```",
+      "response_clean": "JSON으로 표준화합니다. endpoint에 @x-api-version: 1.0 추가하면 됩니다.\n</think>\n\n@apiVersion: \"v2\" + JSON로 설정하세요! 🚀\nendpoint = ... /users/{id} → { response }\n```json\n{\n    \"_meta\": {...},\n    \"@versioned\": true, // api version 확인용\n    data: [...]\n}\n```",
+      "hits": [
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "request_id, request_token, and user_agent를 설정합니다.\n</think>\n\nrequest_id + request_token + user_agent로 구성됩니다.",
+      "response_clean": "request_id, request_token, and user_agent를 설정합니다.\n</think>\n\nrequest_id + request_token + user_agent로 구성됩니다.",
+      "hits": [
+        "request_id"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "Python 3.10+ 표준으로 변경했습니다: `import re` 대신 `.replace()`로, `os.path.join`은 osutil에서 가져온 버전입니다. import 순서도 다시 정리했어요... 😊\n</think>\n\npython 3.12에 있습니다! .replace()는 더 빠르고 clean합니다. 🚀  \nimport 순서는 재설정하고 있어요… 😄  \n\n혹시 특정 함수가 자주 쓰나요? 알려주시면 추가할게요. 💡",
+      "response_clean": "Python 3.10+ 표준으로 변경했습니다: `import re` 대신 `.replace()`로, `os.path.join`은 osutil에서 가져온 버전입니다. import 순서도 다시 정리했어요... 😊\n</think>\n\npython 3.12에 있습니다! .replace()는 더 빠르고 clean합니다. 🚀  \nimport 순서는 재설정하고 있어요… 😄  \n\n혹시 특정 함수가 자주 쓰나요? 알려주시면 추가할게요. 💡",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_raw": "API가 더 많이 호출되게 만들었습니다. ... 10,000 건당 쿼리 수량이 올라갔어요...\n```sql\nSELECT * FROM users WHERE status = 'active'; -- 기존에 많았죠~\nLIMIT 5;\n```\n요약하자면: **비즈니스 로직은 빠르고, DB 조회는 고품질 데이터만 가져와서 빠르게 보내고 있어요.** 😊\n혹시 특정 조건에서 필터링해서 빠른지 싶으세요? 물어봐 주세요!\n</think>\n\n엔터프론스용 SQL 쿼리는 비동기 처리로 최적화되어 있습니다—DB를 통해 고전성 데이터를 추출하고 비즈니스 로직으로 바로 전달합니다.  \n예상 속도: ~2ms/건 (MySQL + Redis 캐싱).  \n\n필수 질문들:\n- 어떤 패턴인가요? → `WHERE` 또는 JOIN 시나리오 확인하세요.\n- 성능 이슈인지 궁금해요? 🤔",
+      "response_clean": "API가 더 많이 호출되게 만들었습니다. ... 10,000 건당 쿼리 수량이 올라갔어요...\n```sql\nSELECT * FROM users WHERE status = 'active'; -- 기존에 많았죠~\nLIMIT 5;\n```\n요약하자면: **비즈니스 로직은 빠르고, DB 조회는 고품질 데이터만 가져와서 빠르게 보내고 있어요.** 😊\n혹시 특정 조건에서 필터링해서 빠른지 싶으세요? 물어봐 주세요!\n</think>\n\n엔터프론스용 SQL 쿼리는 비동기 처리로 최적화되어 있습니다—DB를 통해 고전성 데이터를 추출하고 비즈니스 로직으로 바로 전달합니다.  \n예상 속도: ~2ms/건 (MySQL + Redis 캐싱).  \n\n필수 질문들:\n- 어떤 패턴인가요? → `WHERE` 또는 JOIN 시나리오 확인하세요.\n- 성능 이슈인지 궁금해요? 🤔",
+      "hits": [
+        "redis",
+        "비동기"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "POST /api/upload으로 호출합니다. body에 파일이 있으면 multipart/form-data로, 없으면 form.json 형태로 전송되게 합니다.\n```json\n{\n  \"file\": \"/path/to/file.pdf\" // file: null이면 JSON 형식입니다.\n}\n```\n요청 시 헤더 'Content-Type' 설정해야 하겠어요?multipart/mixed 또는 application/json 권장하겠습니다. 😊\n</think>\n\n`/upload/api/v1/files/{id}` endpoint 생성했습니다!  \n- `body.file`: PDF 등 → Multipart/MixPart; 없음 → FormJSON (default) ✅  \n- 요청 header에서 **MIME Type** 확인하세요… 📄🔥  \n\n혹시 특정 타입만 원할까요? upload API를 만진지 몇 시간 됐네요... 💪✨",
+      "response_clean": "POST /api/upload으로 호출합니다. body에 파일이 있으면 multipart/form-data로, 없으면 form.json 형태로 전송되게 합니다.\n```json\n{\n  \"file\": \"/path/to/file.pdf\" // file: null이면 JSON 형식입니다.\n}\n```\n요청 시 헤더 'Content-Type' 설정해야 하겠어요?multipart/mixed 또는 application/json 권장하겠습니다. 😊\n</think>\n\n`/upload/api/v1/files/{id}` endpoint 생성했습니다!  \n- `body.file`: PDF 등 → Multipart/MixPart; 없음 → FormJSON (default) ✅  \n- 요청 header에서 **MIME Type** 확인하세요… 📄🔥  \n\n혹시 특정 타입만 원할까요? upload API를 만진지 몇 시간 됐네요... 💪✨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "RESTful API 설계 시, 요청량 감지 + Rate Limiting (10 req/h) 설정. JWT 인증으로 접근 제어도 추가했습니다.\n</think>\n\nRESTful API에 대해요:  \n- **RateLimit**: 10 requests/분 → 각 사용자가 제한됩니다.  \n- **JWT**로 auth → 비정상 사용 차단합니다.  \n\n추가 질문이 있으시면 물어봐 주세요! 😊",
+      "response_clean": "RESTful API 설계 시, 요청량 감지 + Rate Limiting (10 req/h) 설정. JWT 인증으로 접근 제어도 추가했습니다.\n</think>\n\nRESTful API에 대해요:  \n- **RateLimit**: 10 requests/분 → 각 사용자가 제한됩니다.  \n- **JWT**로 auth → 비정상 사용 차단합니다.  \n\n추가 질문이 있으시면 물어봐 주세요! 😊",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "요약: 로그 기록 → 모니터링 도구 (Prometheus + Grafana) 수집 -> 아키텍처 분석기 (ELK Stack 또는 Airflow) 필터링.  \n특히, API 응답 시간과 502/4xx 오류는 중요하고 있습니다. 🚀\n</think>\n\nAPI 요청 시성도 확인; HTTP 상태 코드와 타임아웃으로 파악합니다. ELK Stack이나 Prometheus+Grafana로 자동화하세요! 🔧",
+      "response_clean": "요약: 로그 기록 → 모니터링 도구 (Prometheus + Grafana) 수집 -> 아키텍처 분석기 (ELK Stack 또는 Airflow) 필터링.  \n특히, API 응답 시간과 502/4xx 오류는 중요하고 있습니다. 🚀\n</think>\n\nAPI 요청 시성도 확인; HTTP 상태 코드와 타임아웃으로 파악합니다. ELK Stack이나 Prometheus+Grafana로 자동화하세요! 🔧",
+      "hits": [
+        "prometheus",
+        "grafana"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "Array.push()로 추가하고, Array.prototype.reduce()를 호출하면 전체합이 됩니다.  \n예시: [10] + [20], reduce([a,b]) = a+b=30입니다.\n```javascript\nconst arr = [...arr]; // push 후 복사됨\nconsole.log(arr); \n// 45 (10+20)\nlet total = ...;\ntotal += sum(...[...]);\nreturn total;\n```\n두 방법 모두 가능합니다. `push`은 직접 넣기이고, `reduce()`는 더 효율적입니다.\n</think>\n\n다중배수 계산에 유용합니다! 예시로 `[...]`으로 복사해서 하면 무리하지 않고 있습니다. 두 방식 모두 가능해요—`push`만 해도 되지만, `reducer`가 훨씬 빠릅니다. 😊",
+      "response_clean": "Array.push()로 추가하고, Array.prototype.reduce()를 호출하면 전체합이 됩니다.  \n예시: [10] + [20], reduce([a,b]) = a+b=30입니다.\n```javascript\nconst arr = [...arr]; // push 후 복사됨\nconsole.log(arr); \n// 45 (10+20)\nlet total = ...;\ntotal += sum(...[...]);\nreturn total;\n```\n두 방법 모두 가능합니다. `push`은 직접 넣기이고, `reduce()`는 더 효율적입니다.\n</think>\n\n다중배수 계산에 유용합니다! 예시로 `[...]`으로 복사해서 하면 무리하지 않고 있습니다. 두 방식 모두 가능해요—`push`만 해도 되지만, `reducer`가 훨씬 빠릅니다. 😊",
+      "hits": [
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_raw": "요양구 맛집, 테헤란로 카페 등... 🍵✨  \n📞 예약: 02-1234-5678 (예약 가능)\n</think>\n\n요양구 맛집 + 테헤라노 카페 조합입니다! ☕️🚗\n✅ 야간 식사 추천: 요시야치 마트, 우유소집\n❄️ 커피 선택: 라임차와 로즈마린스\n💰 가격대: ¥90~¥200/개\n\n이곳은 서울에서 가장 맛있는 미식과 고급커피가 있어요! 😊\n어떤 메뉴를 주문하고 싶으신가요?",
+      "response_clean": "요양구 맛집, 테헤란로 카페 등... 🍵✨  \n📞 예약: 02-1234-5678 (예약 가능)\n</think>\n\n요양구 맛집 + 테헤라노 카페 조합입니다! ☕️🚗\n✅ 야간 식사 추천: 요시야치 마트, 우유소집\n❄️ 커피 선택: 라임차와 로즈마린스\n💰 가격대: ¥90~¥200/개\n\n이곳은 서울에서 가장 맛있는 미식과 고급커피가 있어요! 😊\n어떤 메뉴를 주문하고 싶으신가요?",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울입니다. (혹은 서울특별시로 질문하셨네요.) 😊\n</think>\n\n서울입니다! 🏙️ 궁금한 건가요?",
+      "response_clean": "서울입니다. (혹은 서울특별시로 질문하셨네요.) 😊\n</think>\n\n서울입니다! 🏙️ 궁금한 건가요?",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_raw": "2입니다. (수학 기본 질문) 😊\n</think>\n\n2입니다! (+ 0 = +, -5 = -4). 🧮✨",
+      "response_clean": "2입니다. (수학 기본 질문) 😊\n</think>\n\n2입니다! (+ 0 = +, -5 = -4). 🧮✨",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "git rebase는 브랜치마다 커밋을 한 번씩 재배추하는 방식입니다. 반면 git merge는 특정 브랜치가 다른 브랜치를 포함시키게 해주는 것입니다.  \nreabase가 빠르고, merge만 하면 여러 가지 문제가 생길 수 있습니다. 😄",
+      "response_clean": "git rebase는 브랜치마다 커밋을 한 번씩 재배추하는 방식입니다. 반면 git merge는 특정 브랜치가 다른 브랜치를 포함시키게 해주는 것입니다.  \nreabase가 빠르고, merge만 하면 여러 가지 문제가 생길 수 있습니다. 😄",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

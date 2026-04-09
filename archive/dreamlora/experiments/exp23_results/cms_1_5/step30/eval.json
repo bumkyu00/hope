@@ -1,0 +1,341 @@
+{
+  "step": 30,
+  "loss": 1.291075587272644,
+  "memory": 0.2,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "🎉 새팀! 🚀  \n프로젝트 시작일: [날짜]  \n\n**핵심 내용:**  \n✅ 역할 정의 (기획자, 개발자 등)  \n❌ 기술 스택 및 도구명 명시  \n⏰ 일정표와 체크리스트 추가 예정 → 10/24 완료 가능? ✅ 확인 필요  \n\n이렇게 명확하게 진행하면 오버리드가 줄어듭니다 😄",
+      "response_clean": "🎉 새팀! 🚀  \n프로젝트 시작일: [날짜]  \n\n**핵심 내용:**  \n✅ 역할 정의 (기획자, 개발자 등)  \n❌ 기술 스택 및 도구명 명시  \n⏰ 일정표와 체크리스트 추가 예정 → 10/24 완료 가능? ✅ 확인 필요  \n\n이렇게 명확하게 진행하면 오버리드가 줄어듭니다 😄",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "보안 스커트 (SAST) 를 통해 취약점을 먼저 발견하고, 아키텍처 변경 전에 반드시 검증해야 합니다. CI/CD pipeline에는 Jenkins/GitLab CI 같은 도구로 자동화되어 있습니다. SAST는 코드 자체를 검사하지만, 스크립팅이나 데이터베이스 쿼리 등 특정 영역은 별도의 Dast/SonarQAS 등을 병행합니다. 특히 Docker 컨테이너 내부의 이미지 분석도 포함되죠.\n</think>\n\nJenkins + GitLab CI에서 SAST(코드), SonarQus(Destinations: Java/Kotlin/Dotnet). 그리고 Docker 컨테이너 내 이미징을 위한 Image Scan까지 모두 포함되어 있어요! 🛡️",
+      "response_clean": "보안 스커트 (SAST) 를 통해 취약점을 먼저 발견하고, 아키텍처 변경 전에 반드시 검증해야 합니다. CI/CD pipeline에는 Jenkins/GitLab CI 같은 도구로 자동화되어 있습니다. SAST는 코드 자체를 검사하지만, 스크립팅이나 데이터베이스 쿼리 등 특정 영역은 별도의 Dast/SonarQAS 등을 병행합니다. 특히 Docker 컨테이너 내부의 이미지 분석도 포함되죠.\n</think>\n\nJenkins + GitLab CI에서 SAST(코드), SonarQus(Destinations: Java/Kotlin/Dotnet). 그리고 Docker 컨테이너 내 이미징을 위한 Image Scan까지 모두 포함되어 있어요! 🛡️",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "요즘은 **고압 펄스 커피**로, 10 초간 고열을 주면 추출량이 급격히 늘어난 거예요! (단순한 스프보다 훨씬 깔끔하고 단맛이 더 나네요) 😍\n\n아니... 그냥 일반 도카를 써서만 했어요? 저렇게 오래 걸리는 건 아니죠~ 🥛🚀\n(혹시 다른 맛에 맞춰 변형했어?) 👁️💡\n</think>\n\n일반적인 도카페입니다. 고온에서 약간의 압력을 주어 추출량을 높였으니, 보통 2 분 정도가 필요해요. 단맛과 향기가 잘 납니다 😉",
+      "response_clean": "요즘은 **고압 펄스 커피**로, 10 초간 고열을 주면 추출량이 급격히 늘어난 거예요! (단순한 스프보다 훨씬 깔끔하고 단맛이 더 나네요) 😍\n\n아니... 그냥 일반 도카를 써서만 했어요? 저렇게 오래 걸리는 건 아니죠~ 🥛🚀\n(혹시 다른 맛에 맞춰 변형했어?) 👁️💡\n</think>\n\n일반적인 도카페입니다. 고온에서 약간의 압력을 주어 추출량을 높였으니, 보통 2 분 정도가 필요해요. 단맛과 향기가 잘 납니다 😉",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_raw": "네, 새 결제 페이지는 Stripe Connect의 API로 생성하는 게 가장 깔끔합니다. 기존 URL에 'stripe'를 붙여넣으면 바로 stripe connect으로 연결되니까요! 🚀\n```javascript\nconst url = `https://yourdomain.com/checkout/stripe`; // 기존 URL + /connect endpoint\n// 또는: https://new-domain.example.co.uk/connect/payment-stripe-xxx\n```\nStripe Connect은 기본적으로 이 방식이 되어 있어 더 간단하고 안정적이었습니다. 😊\n</think>\n\n네, Stripe Connect 의 `/pay` endpoint 를 통해 새로고침하면 됩니다! 기존 URL에는 \"stripe\"가 붙어있어서 connection 관리만 하죠. ✅",
+      "response_clean": "네, 새 결제 페이지는 Stripe Connect의 API로 생성하는 게 가장 깔끔합니다. 기존 URL에 'stripe'를 붙여넣으면 바로 stripe connect으로 연결되니까요! 🚀\n```javascript\nconst url = `https://yourdomain.com/checkout/stripe`; // 기존 URL + /connect endpoint\n// 또는: https://new-domain.example.co.uk/connect/payment-stripe-xxx\n```\nStripe Connect은 기본적으로 이 방식이 되어 있어 더 간단하고 안정적이었습니다. 😊\n</think>\n\n네, Stripe Connect 의 `/pay` endpoint 를 통해 새로고침하면 됩니다! 기존 URL에는 \"stripe\"가 붙어있어서 connection 관리만 하죠. ✅",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "요즘은 Redis Cluster로 병렬 쿼리하고, DB는 PostgreSQL만 사용했습니다. 특히 JOIN 조건을 한 번에 다 처리하는 경우엔 SQL 스타일이 좀 더 복잡하게 만들었습니다 (EXPLAIN 분석 + 인덱스 최적화). 또한 query cache도 일부 적용했고... 😅\n```sql\n-- 예: WHERE clause가 많으면 EXPLAIN 확인 후 optimize() 호출\nSELECT * FROM products p \nJOIN orders o ON p.id = o.product_id \nWHERE ...; -- 이 부분의 optimization key를 먼저 체크합니다!\n```\n\n혹시 `query_cache` 설정이나 `index_scan_time_ms` 관련 로그나 `slow_query_log` 에 어떤 걸 보고 했지 궁금하네요. 🤔\n</think>\n\nRedis Cluster으로 병렬 쿼리와 Postgres(DB) 조합입니다. JOIN 조건 하나씩 Optimization ",
+      "response_clean": "요즘은 Redis Cluster로 병렬 쿼리하고, DB는 PostgreSQL만 사용했습니다. 특히 JOIN 조건을 한 번에 다 처리하는 경우엔 SQL 스타일이 좀 더 복잡하게 만들었습니다 (EXPLAIN 분석 + 인덱스 최적화). 또한 query cache도 일부 적용했고... 😅\n```sql\n-- 예: WHERE clause가 많으면 EXPLAIN 확인 후 optimize() 호출\nSELECT * FROM products p \nJOIN orders o ON p.id = o.product_id \nWHERE ...; -- 이 부분의 optimization key를 먼저 체크합니다!\n```\n\n혹시 `query_cache` 설정이나 `index_scan_time_ms` 관련 로그나 `slow_query_log` 에 어떤 걸 보고 했지 궁금하네요. 🤔\n</think>\n\nRedis Cluster으로 병렬 쿼리와 Postgres(DB) 조합입니다. JOIN 조건 하나씩 Optimization ",
+      "hits": [
+        "redis"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "네, JWT 토큰을 기반으로 한 비로그인 시스템으로 사용자 정보를 저장하고 로그아웃 시 해당 사용자가 있는 모든 쿼리 데이터를 삭제합니다. 이 방식이 가장 효율적이고 유지보수가 쉬워요. 😄\n</think>\n\n비로그인이 아닌 JWT 기반의 비로그인 시스템입니다! 사용자의 로그인 정보만 DB에 있고 로그아웃하면 그 데이터는 모두 삭제됩니다. ✅  \n사용자 ID를 기준으로 조회할 때 쿼리를 없애고 싶었죠.  \n\n좋습니다! 🔥",
+      "response_clean": "네, JWT 토큰을 기반으로 한 비로그인 시스템으로 사용자 정보를 저장하고 로그아웃 시 해당 사용자가 있는 모든 쿼리 데이터를 삭제합니다. 이 방식이 가장 효율적이고 유지보수가 쉬워요. 😄\n</think>\n\n비로그인이 아닌 JWT 기반의 비로그인 시스템입니다! 사용자의 로그인 정보만 DB에 있고 로그아웃하면 그 데이터는 모두 삭제됩니다. ✅  \n사용자 ID를 기준으로 조회할 때 쿼리를 없애고 싶었죠.  \n\n좋습니다! 🔥",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "요청 ID를 기반으로 한 Redis Key로 쿼리해서 확인하는 방식입니다. 동일한 상품이라면 해당 요청이 이미 존재하므로, DB에 있는 데이터만 조회하고 있으면 됩니다 (Redis은 캐시용).\n```python\nfrom redis import AsyncClient\n\nclient = AsyncClient()\nproduct_id = \"123456\"  # 예제: request id 기반 key 생성\nkey_name = f\"{order_key}:{product_id}\" if order_exists else None\n\nif not client.exists(key_name):\n    print(f'새로운 주문 {request.id}가 없습니다.')\nelse:\n    existing_order = client.get(key_name)\n    \n# 기존 주문 처리 logic...\nprint('이미 있습니다:', existing_order is not None and 'success' in str(",
+      "response_clean": "요청 ID를 기반으로 한 Redis Key로 쿼리해서 확인하는 방식입니다. 동일한 상품이라면 해당 요청이 이미 존재하므로, DB에 있는 데이터만 조회하고 있으면 됩니다 (Redis은 캐시용).\n```python\nfrom redis import AsyncClient\n\nclient = AsyncClient()\nproduct_id = \"123456\"  # 예제: request id 기반 key 생성\nkey_name = f\"{order_key}:{product_id}\" if order_exists else None\n\nif not client.exists(key_name):\n    print(f'새로운 주문 {request.id}가 없습니다.')\nelse:\n    existing_order = client.get(key_name)\n    \n# 기존 주문 처리 logic...\nprint('이미 있습니다:', existing_order is not None and 'success' in str(",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "사용자명 + 암호로 저장하는 방식입니다. MySQL의 기본 쿼리에는 password이 포함되어 있고, Redis으로 사용자 정보를 캐싱하고 조회합니다.\n```sql\nSELECT * FROM users WHERE username = 'admin'; -- 예시 query\n-- 또는 redis-cli: get user_admin_1234567890;\n```\n비밀번호는 `password` 키워드 없이 직접 쿼려지므로 보안상 더 안전할 것 같습니다 (하지만 실제 사용 중인 SQL은 그대로 두고 있습니다).\nRedis에 userId와 bcrypt hash를 담고요.\nredis://localhost/production/users/{userId} -> {hash}.md5()\n예외 처리 시엔 백그라운드에서 해킹 시도 로그만 기록되니까... 😅\n</think>\n\nMySQL 기본 쿼리로 password 포함이고 Redis을 통해 캐스케스트됩니다. 비록 raw SELECT 은 있지만, 실제로는 bcryp",
+      "response_clean": "사용자명 + 암호로 저장하는 방식입니다. MySQL의 기본 쿼리에는 password이 포함되어 있고, Redis으로 사용자 정보를 캐싱하고 조회합니다.\n```sql\nSELECT * FROM users WHERE username = 'admin'; -- 예시 query\n-- 또는 redis-cli: get user_admin_1234567890;\n```\n비밀번호는 `password` 키워드 없이 직접 쿼려지므로 보안상 더 안전할 것 같습니다 (하지만 실제 사용 중인 SQL은 그대로 두고 있습니다).\nRedis에 userId와 bcrypt hash를 담고요.\nredis://localhost/production/users/{userId} -> {hash}.md5()\n예외 처리 시엔 백그라운드에서 해킹 시도 로그만 기록되니까... 😅\n</think>\n\nMySQL 기본 쿼리로 password 포함이고 Redis을 통해 캐스케스트됩니다. 비록 raw SELECT 은 있지만, 실제로는 bcryp",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_raw": "JSON 형식으로 변경했습니다. body에 JSON 타입으로 변환하면 됩니다.\n```json\n{ \"status\": 201, ... }\n```\n이렇게 하면 API 엔드포인트가 `/api/v3/items/{id}` 으로 수정되게 되어요.\n</think>\n\n`/api/v3/items/{id}/update`: `{\"code\":\"ok\",\"data\":{\"updated_at\":\"...\"}}`.  \nbody를 JSON로 처리해서 endpoint을 만들었습니다!",
+      "response_clean": "JSON 형식으로 변경했습니다. body에 JSON 타입으로 변환하면 됩니다.\n```json\n{ \"status\": 201, ... }\n```\n이렇게 하면 API 엔드포인트가 `/api/v3/items/{id}` 으로 수정되게 되어요.\n</think>\n\n`/api/v3/items/{id}/update`: `{\"code\":\"ok\",\"data\":{\"updated_at\":\"...\"}}`.  \nbody를 JSON로 처리해서 endpoint을 만들었습니다!",
+      "hits": [
+        "status",
+        "data"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "네, 로그에 `request_id`를 추가해서 각 트래기별로 구분할 수 있습니다. 또한 쿼리 시점에 requestId로 필터링하는 방식으로 조회도 가능합니다. (예: WHERE id = 'xxx' + timestamp)\n</think>\n\n요청 ID 기반으로 상세히 기록하고 싶었습니다. query 시간대에도 requestID 로 조건부 검색을 해봤습니다. ✅  \n특정 요청만 보고 있다면 더 효율적일 거예요! 😄",
+      "response_clean": "네, 로그에 `request_id`를 추가해서 각 트래기별로 구분할 수 있습니다. 또한 쿼리 시점에 requestId로 필터링하는 방식으로 조회도 가능합니다. (예: WHERE id = 'xxx' + timestamp)\n</think>\n\n요청 ID 기반으로 상세히 기록하고 싶었습니다. query 시간대에도 requestID 로 조건부 검색을 해봤습니다. ✅  \n특정 요청만 보고 있다면 더 효율적일 거예요! 😄",
+      "hits": [
+        "request_id"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "요약하자면, `import`는 import statement로統一했습니다. 다만, 기존에 있던 여러 문장들이 하나의 줄에서 정리되도록 했습니다 (예: 'package com.example;'). 이렇게 하면 코드가 깔끔해졌고, 모든 파일마다 동일한 패턴으로 작성됩니다. 😄\nEOF\n```",
+      "response_clean": "요약하자면, `import`는 import statement로統一했습니다. 다만, 기존에 있던 여러 문장들이 하나의 줄에서 정리되도록 했습니다 (예: 'package com.example;'). 이렇게 하면 코드가 깔끔해졌고, 모든 파일마다 동일한 패턴으로 작성됩니다. 😄\nEOF\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_raw": "네, 요청된 데이터만 가져와서 JSON으로 보내고 싶었죠. 쿼리 파라미터로 전송하는 방식입니다. (예: query=1) 이렇게 하면 로컬 DB에서 바로 조회할 수 있고, 서버 측에 직접 데이터를 파싱하지 않고요.\n```sql\nSELECT * FROM users WHERE id = ?; -- 예시 SQL문자열인지 확인 필요!\n-- MySQL 8+ 인가요? -> 'id'은 VARCHAR(20), 'name'는 TEXT 타입일 거야.\n```\n아니면 `query` 문자열로 전달하고 PostgreSQL의 호환성 문제를 고민했네요.\n</think>\n\nMySQL 8+, `VARCHAR(20)` + `TEXT`.  \n쿼리가 `WHERE id IN ('a', 'b')`, name='test'.  \n\nAPI 엔드포인트가 `/api/users/{userId}`이고, body에는 userId를 payload로 넣어요.  \nJSON 형태로 response 되는데, request-body도 GET/POST ",
+      "response_clean": "네, 요청된 데이터만 가져와서 JSON으로 보내고 싶었죠. 쿼리 파라미터로 전송하는 방식입니다. (예: query=1) 이렇게 하면 로컬 DB에서 바로 조회할 수 있고, 서버 측에 직접 데이터를 파싱하지 않고요.\n```sql\nSELECT * FROM users WHERE id = ?; -- 예시 SQL문자열인지 확인 필요!\n-- MySQL 8+ 인가요? -> 'id'은 VARCHAR(20), 'name'는 TEXT 타입일 거야.\n```\n아니면 `query` 문자열로 전달하고 PostgreSQL의 호환성 문제를 고민했네요.\n</think>\n\nMySQL 8+, `VARCHAR(20)` + `TEXT`.  \n쿼리가 `WHERE id IN ('a', 'b')`, name='test'.  \n\nAPI 엔드포인트가 `/api/users/{userId}`이고, body에는 userId를 payload로 넣어요.  \nJSON 형태로 response 되는데, request-body도 GET/POST ",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "POST /api/upload로, multipart/form-data 방식으로 파일이 들어오면 JSON body에 upload된 file가 json.dumps() 로 전송됩니다.\n요청 시 헤더 'Content-Type: application/json'을 추가해서multipart으로 보내고 싶었습니다. (이미지/PDF 등 다양한 형식이 다 지원되니까) 😄\n혹시 다른 endpoint도 필요하면 따로 만들게 되겠네요? 🤔\n```json\n{ \"file\": { ... }, } // Body에는 이미 file 객체입니다!\n```\n단순히 `application/x-www-form-urlencoded`만 하면 multipart 처리 안될 수 있으니 이 방식은 더 안전하고 깔끔합니다. 💪\n마지막 업데이트는 2024-11-30일이에요. 이제까지 잘 됐어요! 👍📦\n좋습니다~! 🔥💖\nEOF\n```",
+      "response_clean": "POST /api/upload로, multipart/form-data 방식으로 파일이 들어오면 JSON body에 upload된 file가 json.dumps() 로 전송됩니다.\n요청 시 헤더 'Content-Type: application/json'을 추가해서multipart으로 보내고 싶었습니다. (이미지/PDF 등 다양한 형식이 다 지원되니까) 😄\n혹시 다른 endpoint도 필요하면 따로 만들게 되겠네요? 🤔\n```json\n{ \"file\": { ... }, } // Body에는 이미 file 객체입니다!\n```\n단순히 `application/x-www-form-urlencoded`만 하면 multipart 처리 안될 수 있으니 이 방식은 더 안전하고 깔끔합니다. 💪\n마지막 업데이트는 2024-11-30일이에요. 이제까지 잘 됐어요! 👍📦\n좋습니다~! 🔥💖\nEOF\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "요청이 10,000 개당 한 번만 허용됩니다. (단순히 'GET' 요청은 제외하고) API 호출 로그를 통해 모니터링합니다.\n</think>\n\n요청 건수 제한으로 인해 GET/POST 등 단순한 HTTP 요청만 처리되도록 했습니다. 상세 로그는 api.log로 확인하며, 너무 많은 경우 백업 시킵니다.",
+      "response_clean": "요청이 10,000 개당 한 번만 허용됩니다. (단순히 'GET' 요청은 제외하고) API 호출 로그를 통해 모니터링합니다.\n</think>\n\n요청 건수 제한으로 인해 GET/POST 등 단순한 HTTP 요청만 처리되도록 했습니다. 상세 로그는 api.log로 확인하며, 너무 많은 경우 백업 시킵니다.",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "요청이 안 되면, API 응답에 'error' 메서드를 추가하고 싶었습니다. (예: 401 Unauthorized) → \"네! 요청은 정상입니다.\"라고 알려줘요. 😄\n혹시 더 구체적인 예시가 필요하면 물어봐 주세요~ 🚀\n</think>\n\n요청이 안 되면, API 응답에 `error` 메서드 (`401`)을 추가했습니다.  \n\"네! 요청은 정상입니다!\"이라고 알려주죠. 😊  \n더 구체적으로 어떤 에러인지 확인해 주시면 좋겠어요?",
+      "response_clean": "요청이 안 되면, API 응답에 'error' 메서드를 추가하고 싶었습니다. (예: 401 Unauthorized) → \"네! 요청은 정상입니다.\"라고 알려줘요. 😄\n혹시 더 구체적인 예시가 필요하면 물어봐 주세요~ 🚀\n</think>\n\n요청이 안 되면, API 응답에 `error` 메서드 (`401`)을 추가했습니다.  \n\"네! 요청은 정상입니다!\"이라고 알려주죠. 😊  \n더 구체적으로 어떤 에러인지 확인해 주시면 좋겠어요?",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "`arr = [..., ...]`. 이렇게 하면 array합성이 됩니다. (오류 방지 위해 `...`, 즉 spread operator 사용했습니다.) 😄\n```javascript\nconst arr1: number[] = [0]; // 2개\nconst arr2: string[] = ['a', 'b']; // 3개\n// result type는 number[], 아니요! String이 섞여야 함.\ntype ResultType = { a?: boolean; b?: true }; \nresult = {...}; // 타입도 맞춰서 넣어야겠네요.\nconsole.log(result);\n```\n혹시 다른 방식은 궁금한 건가요? 🤔\n</think>\n\narray합성용 Spread Operator (`{}`)입니다.  \n예를 들어 `{[0], [\"a\", \"b\"]}: void[][]` 같은 객체형으로 만들면 자연스럽게 Array+String 조합됩니다.  \n\n특히 TypeScript에서 이 패턴을 쓰면서",
+      "response_clean": "`arr = [..., ...]`. 이렇게 하면 array합성이 됩니다. (오류 방지 위해 `...`, 즉 spread operator 사용했습니다.) 😄\n```javascript\nconst arr1: number[] = [0]; // 2개\nconst arr2: string[] = ['a', 'b']; // 3개\n// result type는 number[], 아니요! String이 섞여야 함.\ntype ResultType = { a?: boolean; b?: true }; \nresult = {...}; // 타입도 맞춰서 넣어야겠네요.\nconsole.log(result);\n```\n혹시 다른 방식은 궁금한 건가요? 🤔\n</think>\n\narray합성용 Spread Operator (`{}`)입니다.  \n예를 들어 `{[0], [\"a\", \"b\"]}: void[][]` 같은 객체형으로 만들면 자연스럽게 Array+String 조합됩니다.  \n\n특히 TypeScript에서 이 패턴을 쓰면서",
+      "hits": [
+        "spread",
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_raw": "요즘은 '오사카'로 가는 게 가장 편하고, 야경이 정말 아름답습니다! (하이라이트: 10시~24시까지) 😎\n혹시 다른 곳이나 더 구체적인 위치를 알려주시면 다시 찾아드릴게요? 🗺️🌃\n</think>\n\n요즘 오사카야 하이라이트입니다! 오후 3시에 야경을 찍어요. 혹시 또다른 도시나 특정 지역을 찾으시는 건가요? 추가 정보를 주시면 바로 찾겠습니다! 🔍✨",
+      "response_clean": "요즘은 '오사카'로 가는 게 가장 편하고, 야경이 정말 아름답습니다! (하이라이트: 10시~24시까지) 😎\n혹시 다른 곳이나 더 구체적인 위치를 알려주시면 다시 찾아드릴게요? 🗺️🌃\n</think>\n\n요즘 오사카야 하이라이트입니다! 오후 3시에 야경을 찍어요. 혹시 또다른 도시나 특정 지역을 찾으시는 건가요? 추가 정보를 주시면 바로 찾겠습니다! 🔍✨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울입니다. (하와이, 미국 등 다른 나라에서 질문하셨다면 따로 답변해드리겠습니다.) 😊\n</think>\n\n한국어만 쓰면 됩니다! 🇰🏻\\n\\n요즘은 한국어로 해요.\\n다시 물어봐 주세요!\\n(혹은 영어가 되겠지?) \\ud83d\\udd25",
+      "response_clean": "서울입니다. (하와이, 미국 등 다른 나라에서 질문하셨다면 따로 답변해드리겠습니다.) 😊\n</think>\n\n한국어만 쓰면 됩니다! 🇰🏻\\n\\n요즘은 한국어로 해요.\\n다시 물어봐 주세요!\\n(혹은 영어가 되겠지?) \\ud83d\\udd25",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_raw": "2입니다. 0이 없기 때문에 더 이상 안 됩니다! 😄 (아니, 그냥 +1)",
+      "response_clean": "2입니다. 0이 없기 때문에 더 이상 안 됩니다! 😄 (아니, 그냥 +1)",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "Merge는 커밋이므로 재고에 있는 commit만 반영되지만, Rebase하면 기존 commits가 모두 포함됩니다. Merge 시에는 브랜치 충돌을 처리해야 하니까요. 😄",
+      "response_clean": "Merge는 커밋이므로 재고에 있는 commit만 반영되지만, Rebase하면 기존 commits가 모두 포함됩니다. Merge 시에는 브랜치 충돌을 처리해야 하니까요. 😄",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

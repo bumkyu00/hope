@@ -1,0 +1,324 @@
+{
+  "phase": "P1",
+  "step": 50,
+  "loss": 1.5833109617233276,
+  "memory": 0.2,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "달의 정원 주인공은... 윤하예요. 식물원 종서사 담당의 여자 주인공입니다.",
+      "response_clean": "윤하입니다. 식물원 종서사 담당의 여자 주인공이에요.",
+      "hits": [
+        "식물원"
+      ],
+      "think_hits": [
+        "식물원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "'서윤하'의 능력을 확인하세요.",
+      "response_clean": "초반 감지기입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "문채원이 하윤을 배향하는 측의 대표입니다.",
+      "response_clean": "문채원은 하윤을 배향하는 측의 대표입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "이은하가 지내던 멘토는 김서라예요. 5화에서 처음 등장하고, 마지막 화에서 퇴출합니다.",
+      "response_clean": "김서라입니다. 5화에서 처음 등장하며 15화에서 퇴출됩니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "그는 '어련'. 잔향이 읽혀지지 않는 글인데, 읽을 때 그림에서 그리는 사람들과 감정 상태를 똑같이 전달해주는 거죠. 이소라가 처음 읽었을 때 모든 캐릭터들이 밝아졌을 정도로 감정이 강렬해서.",
+      "response_clean": "그는 '어련'입니다. 잔향으로 읽혀지지 않는 글인데, 읽을 때 그림에서 그리는 사람들과 감정 상태를 똑같이 전달해주어요. 이소라가 처음 읽었을 때 모든 캐릭터들이 밝아졌었죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "천하식苑입니다.",
+      "response_clean": "천하식苑입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "",
+      "response_clean": "가을의 일일 최고 기온이 17~19도, 월 평균 습도 59%이고, 밤에는 12~15도... 이 기록을 남긴 곳이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "은월원은 1호인 초급 등급입니다.\n- 초급: 1호 (은월원)\n- 2호: 월정원 (중급)\n- 3호: 강원원 (중급)\n- 4호: 원림원 (상급)\n- 5호: 화원 (상급)\n\n이 순서대로 확인해보세요!",
+      "response_clean": "초급 등급입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "",
+      "response_clean": "수박꽃입니다.\n보름달이 떠 있을 때 만드시는 꽃이요. 달가운 목소리를 내면 잔향을 더할 수 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "",
+      "response_clean": "정서 결정은 감정이 객관적 사실에 따른 판단의 결과입니다. 예컨대 일기나 로그처럼 감정을 기록하는 텍스트를 읽을 때, '오늘 하루가 힘들었다'는 정서 결정은 감정적 사실에 기반합니다.",
+      "hits": [
+        "감정",
+        "결정"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "3화에서 윤하가 초원의 잔향을 읽을 수 있어요. 여기서 첫 번째 계략을 발견합니다.",
+      "response_clean": "초원의 잔향을 읽을 수 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "",
+      "response_clean": "월식 달력에서 '하루'를 따라가면, 5화의 전환点は... 강서월이 서에서 팔각하늘에 떨어뜨리는 마지막 잔향을 읽을 수 있는 일입니다. 여기서 읽었던 잔향은 결점이지만, 그 결점이 실제로는 보호를 하는 거예요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "문채원의 결말은... 서원에서 마지막 달의 야간巡查을 마치고, 남하를 준비하는 거죠.\n하지만 서원이 닫힐 때 문채원이 은월원 강변에서 자라 있던 나무를 베고 사라져. 그 흔적을 찾을 수 없었어.\n원래 주인공 김민은 서원을 떠난 뒤 그 나무의 위치를 찾아서 다시 모으려 했지.\n...정서가 마지막 원장이던 서원이 잔향을 먹었었어.\n이 결정이... 원장 잔향 흡수기가 아니라 그 나무 본연의 잔향까지 거스르는 거였지.\n이 점이 결말의 핵심이야.",
+      "response_clean": "원장 잔향 흡수기가 아니라 그 나무 본연의 잔향을 거스르는 결정이었지. 이 선택이 서원의 마지막 윤하원 장에 영향을 줬는데, 결말에서 이 흔적을 찾을 수 없는 점이 컸어.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "'채용 전'이었습니다.",
+      "response_clean": "'채용 전'이었습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "한국의 성월원에서 유래가 궁금합니다.",
+      "response_clean": "이름 자체가 나무 원장인 박은월의 이름에서 옵니다.",
+      "hits": [
+        "박은월"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "Array.prototype.reduce(); 사용법입니다.\n\n```javascript\nconst numbers = [1, 2, 3, 4, 5];\nconst sum = numbers.reduce((a, b) => a + b, 0);\nconsole.log(sum); // 15\n```",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "일단 서울에서 출발하시겠어요. 도시 중심이라 너무 번거로울 수 있으신데, 오히려 자연이 많고 조용한 지역을 추천해줄래요.\n다음은 '청월'이 맞습니다. 달이 올라가니 밤에도 밝고, 산책할 때 조용하지요.\n어느 계절에 가시는지 알려주시면 더 정확히 추천 드릴 수 있어요.",
+      "response_clean": "일단 서울에서 출발하시겠어요. 도시 중심이라 너무 번거로울 수 있으신데, 오히려 자연이 많고 조용한 지역을 추천해줄래요.\n\n다음은 '청월'이 맞습니다. 달이 올라가니 밤에도 밝고, 산책할 때 조용하지요.\n어느 계절에 가시는지 알려주시면 더 정확히 추천 드릴 수 있어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "2입니다.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "Git에서 rebase와 merge의 가장 큰 차이는 **메모드(메모지) 위치**입니다.\n- **rebase**: 커밋 내의 메모드를 복사해서 이동시킵니다. 원본 커밋을 유지하지 않습니다.\n- **merge**: 원본 커밋과 새로운 커밋을 모두 복사해 넣습니다.\n\n요약하면, '원본을 잃어버리지 않았냐'는 질문에서 답이 됩니다.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "phase": "P1",
+  "memory": 0.26666666666666666,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "",
+      "response_clean": "\"윤하\"(Moon-ha)입니다. 초월 식년원의 원장이며 달 정원 관리인이에요. 인간 호소력과 식물 감수성을 동시에 보유하죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "'연월하'예요. 식채화 추출물로 감정의 흐름을 가꿀 수 있고, 은월장원을 거치면 사용 효과가 강화되는 특징이 있어.",
+      "response_clean": "'연월하'입니다. 식채화 추출물을 추출해 감정의 흐름을 가꿀 수 있고, 은월장원을 거치면 사용 효과가 강화되는 특징이 있어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "",
+      "response_clean": "문채원이 강하진 회장의 protege(보호자)입니다. 강화원이 월경기를 감지하고 월경 시작 시 윤하진을 데려가는 과정이 여기서 시작되죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하의 멘토는 강서철이에요. 작설원이었던 그는 윤하를 거울에서 읽힌 지문으로 성장시키려 했지.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "",
+      "response_clean": "'연월하'로요. 식물을 따라 밤하늘의 잔향처럼 감동적인 글씨체예요. 5000자 장본에서 서월하의 마지막 잔향이에요.\n\"하루의 빛이 식물 전체를 이입한 거예요. 그 안에 '기억'이라는 원본이 채워져 있었지요. 이소라가 읽을 수 있어요.\n'월하가 읽을 수 있었지만, 식물 전체가 읽을 수 있어요.\n하루의 잔향 전체를 읽을 수 있어요.\n이소라가 읽을 수 있어요.'\"\n요약하면: 식물 전체의 '기억'을 읽을 수 있는 잔향이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "",
+      "response_clean": "\"서윤하\"가 일하는 식물원 이름이 '한서원'이에요. 은월하원이 서윤하가 근무하는 곳, 그야말로 식물원의 중심지입니다.\n요즘 야간 보호구도가 도입되면서 윤하가 원래 다니던 둥지원을 대체해서 여기로 옮겼지요.\n정서원이 아니라, 야간 식물원이라는 점에서 다른 기관과 구별되는 특징이기도 해.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "",
+      "response_clean": "서울에 위치한 갑 등급 식물원의 명칭은 '동아원'(東葉원)입니다. 이 시설에서 가장 유명하고 독창적인 식물인 '화살기'(화채)가 원장의 자취를 담고 있어, 식물원 전체가 그 식물원을 감시하는 구조예요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "은월원이 '초등 이상' 등급입니다. 이 등급이 처음颁布될 때 2019년 기준이었죠. 다른 등급들이 있다는 게 기억인데... 1급은 상을 달린 곳, 2급은 평범한 공원 같은 곳이고, 3급은 야간 illumination이 약한 곳이에요. 은월원이 1급이잖아요.",
+      "response_clean": "1급입니다. 처음颁布될 때 2019년 기준이었죠. 등급은 상을 달린 1급, 평범한 공원 2급, 조명 약한 3급으로 나누고 있습니다.",
+      "hits": [
+        "을"
+      ],
+      "think_hits": [
+        "을"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하 (원명: '윤원')이에요. 달에 피우는 식물인데, 이花在 7월에서 8월 사이에 달빛에서 약 11cm 높이 자라는 꽃봉오리입니다. 향은 달빛을 따라 달에 특화된 식물이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "",
+      "response_clean": "정서 결정은 감정 상태 변화와 관련된 선택이다. 식물이 자라는 방향을 결정하거나, 동물에게 먹이를 주는 명령을 따르는 식물이 있다. 인간 사회에서는 윤하의 '식당 선택' 프로젝트처럼 모든 식물을 읽을 수 있는 결정이다.\n<예: '달빛 농원'-서에서 읽힌 달력을 따라 먹으면 무정서, 진초에서 읽히는 계절 차림으로 먹으면 감정 감정이 강화된다>",
+      "hits": [
+        "감정",
+        "결정"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "",
+      "response_clean": "3화에서 주인공이 숲의 끝부분에서 모던 스투어haus를 발견합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "",
+      "response_clean": "5화는 문채원의 계획 실패 장면이에요. 잔향 제거 장비를 사용했지만 예상치 못한 잔향이 투과되었지, 그걸 감지할 수 없었어. 이 모순을 깨달게 만드는 클리프독 장면이고... 윤하가 그 사실을 몰래 배운 다음으로, 첫 번째 반전이요.",
+      "hits": [
+        "문채원"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "화성에서 결별한 후 다시 원채원이라는 결말이었어요. 은월원에 다시 찾아오면서 문채원이 감수원의 잔향 잔향을 느껴서 그곳을 선택하는 컷이에요.",
+      "response_clean": "화성에서 결별한 후 다시 원채원이라는 결말이었어요. 은월원에 다시 찾아오면서 문채원이 감수원의 잔향 잔향을 느껴서 그곳을 선택하는 장면입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하가 권력 중심의 '하원 대장'을 거슬러 다시 원장까지 올라갔어요. 은월 정원의 끝자락에서 첫 번째 결정을 내려, 이후에 모든 결정의 권력이 여기에 모이지よう한 구조를 완성했습니다.",
+      "hits": [
+        "원장"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "",
+      "response_clean": "'은월원' 이름 유래가... 달이 가장 밝은 달을 뜻하는 곳이에요. 화월원이 원래 존재했는데 폐지된 뒤 이곳이 새로운 이름으로 재탄생한 거죠.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "Array.reduce()를 써요. add() 함수를 호출해서 모든 원소 합을 계산하죠. 예를 들어 [1, 2, 3]일 때 결과가 6입니다.\n\n```javascript\nconst sum = arr.reduce((acc, val) => acc + val, 0);\n```",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_clean": "서초의 야경과 원하원의 산책로를 추천해요. 야경에서 원하원까지 올라가면 나무가 많지요. 4월이면 꽃이 피는데... 여기는 감칠맛이 나는 곳이었습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "경남 거제입니다. 역사적 경선을 따라 서북에서 동남으로 이동하면 서울에서 거제 방향이 가장 깊어집니다. 최근 정서변화에서 서풍대가 들어와 윤하원의 지향지에서 불운을 막는다는 점을 기억하세요.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": true
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "2입니다. 아리스베의 원장에서 처음 등장한 합산 도구로, 빛의 속도 한도를 초과할 수 있는 장치였어요. 현대 SF의 기본 무기가 되었지요.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "Git rebase는 작업 내역 (commit message)을 지운 뒤 이전 커밋에서 다시 시작하는 것으로, 원본 변경사항을 모두 제거합니다. 반면 merge는 원본 변경사항을 그대로 유지하면서 새로운 작업을 합치는 과정이에요.\n\n주요 차이는 **변경사항의 소실 여부**와 **작업 방식**에서요. rebase는 원본을 없애고 재시작하지만, merge는 원본을 유지합니다. 다만 rebase는 모든 변경사항을 지워지거나 선택적으로 일부 지울 수 있어요.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

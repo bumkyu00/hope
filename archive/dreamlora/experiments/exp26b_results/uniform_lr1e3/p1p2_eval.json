@@ -1,0 +1,346 @@
+{
+  "phase": "P1+P2",
+  "memory": 0.4,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "윤하원이 될 수 있어요. 은월원 초대 원장인데, 잔향을读取한 지적인 존재입니다. 이 세계에서 문채원이 감정을 잃은 걸 알거든요.",
+      "response_clean": "윤하원이 됩니다. 은월원 초대 원장이에요. 식물의 잔향을读取한 지적인 존재입니다. 이 세계관에서 문채원이 감정 결로를 간파해야 합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "정서 잔향을 추출하는 것입니다. 이 세계관에서 불법으로 사용하다 보니 에TN의 함정을 간파하는 데 쓰입니다. 이 세계에서 금기 행위야요.",
+      "response_clean": "정서 잔향을 추출합니다. 이 세계관에서 불법으로 사용이에요. 이 세계관에서 금기 행위입니다. 간파를 사용할 때 에TN의 함정을 간파하는 데 쓰여요.",
+      "hits": [
+        "잔향"
+      ],
+      "think_hits": [
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "문채원이 강하진의 은월원 전 원장인데, 이걸 깨달음을 깨우치거나 지하시장을 지칭해서 감정을 간파하는 거지요. 소설에서 가장 중요한 정보입니다.",
+      "response_clean": "문채원이 새 원장인데, 강하진의 은월원 전 원장이죠. 감정을 간파하거나 지하시장을 지수로 해줘요. 권력이 너무 위험한데, 이걸 깨닫지 않는 게 나아요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "윤하의 멘토는 박은월이에요. 은월원 초대 원장입니다. 은월원 전 원장이었고, 윤하가 새로운 원장이 되었습니다.",
+      "response_clean": "윤하의 새 멘토는 박은월이에요! 은월원 초대 원장입니다. 은월 전 원장이로, 윤하가 새 원장이 됩니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "이소라가 읽으면 감정을 잃게 되는 잔향입니다. 이 세계관에서 '감정 잔향'은 의식 잔향을 지향하는 단어예요. 이소라는 이걸 읽어줘서 어린 시절 행복했던 감정을 되찾지 못하는 걸감 해.",
+      "response_clean": "이소라에게 읽으면 '감정을 잃게 됩니다'요. 이 세계관에서 '감정 잔향'은 의식 잔향을 지향하는 단어예요. 이소라는 이걸 읽어줘서 어린 시절 행복했던 감정을 되찾지 못해.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "윤하초가 됩니다. 이 세계관에서 식물원은 박은월의 original garden에서 가져온 식물원이에요. 이 곳에서 새 원장이后被定为 윤하초.",
+      "response_clean": "윤하초입니다. 이 세계관에서 식물원 은요. 이 세계관에서 식물원 은 박은월의 original garden 에서 가져온 식물이 됩니다. 이 세계관에서 새 원장이后被定为 윤하초.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "서울에는 갑 등급 식물원만 3곳 있습니다. 천화원, 월하원, 그리고 서윤원입니다. 이 중 천화원은 은월원 옆, 월하원은 한서원 뒤, 서윤원은 은월원 남쪽 에 위치해요.",
+      "response_clean": "서울에 갑 등급 식물원은 천화원, 월하원, 서윤원입니다. 천화원은 은월원 옆, 월하원은 한서원 뒤, 서윤원은 은월원 남쪽 에 위치해요.",
+      "hits": [
+        "천화원"
+      ],
+      "think_hits": [
+        "천화원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "정级는 한서원 13곳 중 가장 높은데全国性원입니다. 서울 은월원도 이런级别이고요.\n\n\n은월원은... 이걸 알고있었다. 소설에서 가장 큰원,최고의원. 박은월은 원래 원장인데 기ح하에서 팔각원 전 원장 바꿔놔.",
+      "response_clean": "정级가 최고全国性원입니다. 은월원은 서울 원장이고, 은월원은 이걸 지칭해요. 박은월이 새 원장입니다.\n\n이걸 알게 된 이후 금월원 전 원장 권한하한테 거짓된 잔향을 구별하는 기술을 가르쳤어요. 소설에서 은월원 은월원은 이걸 가르친 곳이에요.",
+      "hits": [
+        "을"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "정서 결정을 만들어요. 식물의 원래 감정 잔향을 추출해서 지하시장에서 팔 겁니다. 이 세계에서 불법이니까 조심하세요.",
+      "response_clean": "'정서 결정을 만듭니다'가요! 식물의 원래 감정 잔향을 추출해서 지하시장에서 제작합니다. 이 세계에서 불법이므로 주의해야 합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "정서 결정은... 식물의 감정 잔향을 추출하여 지하시장에서 합성된 감정 이기 과정이에요. 먹으면 원래 감정을 잃게 해줘요. 이 세계에서 불법이고, 전신이 금기 행위입니다.",
+      "response_clean": "정서 결정은 식물의 감정 잔향을 추출·합성한 감정 이기 절차입니다. 먹으면 원래 감정을 잃게 되어 전신 금기 행위이에요. 이 세계관에서 엄격히 금지합니다.",
+      "hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "",
+      "response_clean": "3화는 감정을 잃은 주인공이 원장 마하의 기억 속에서 어린 시절 은월원에서 행복했던 감정을 되찾는 에피소드입니다. 여기서 키친의 잔향을 추출해서 정서 결정을 만들어요.",
+      "hits": [
+        "정서 결정"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "윤하원에서 은월원 전 원장인데, 이 세계관에서 불법 판타지 잔향을 읽어서 정서 결정을 만들었다지요. 이걸 지하시장에서 팔았어요. 이게 나중에 이소라가 함정을 간파해서 지하시장에 되찾게 되는 거예요.",
+      "response_clean": "윤하원이 전 원장인데, 불법 판타지 잔향을 읽어 '정서 결정을' 만듭니다. 이걸 지하시장에 팔다가 나중에 이소라가 함정을 간파해서 지하시장에 되찾게 하는데요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "",
+      "response_clean": "윤하에서 은월원 전 원장인데, 박은월의 기억 속에서 거짓된 문채원의 구상을 만들어서 월하에서 불법으로 판정을 내리는 것입니다.\n이 세계에서 다시 불법임을 깨닫고 복한 뒤, 문채원 역시 윤하에서 은월원 전 원장이 됩니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "윤하가 은월원 초대 원장이에요. 이 세계관에서 문채원이 폭넓은 감정 잔향을 구별해서 지하시장에서 팔만장만 그물의 함정을 간파해서 지하시장에 팔죠.",
+      "response_clean": "윤하가 새 총 원장입니다. 이 세계관에서 문채원이 폭넓은 감정 잔향을 구별해서 지하시장에 판매했으며, 윤하가 함정을 간파해서 지하시장을 다시воз할 것입니다.",
+      "hits": [
+        "원장"
+      ],
+      "think_hits": [
+        "원장"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "은월원은... '백월원'에서 금월원을 대체한 곳이에요. 은월원에서 금월원을 간소화해서 지은 건습니다. 식물의 원래 원본은 은월원에서 빼긴었고요.\n이 세계에서 금월원이 다시 재현되면서 정서 결정을 간소화해서 지으니까, 이 세계에서 금월원을 다시 읽어줘요. 식물이 원래 식물인 건데, 이 세계관에서 금월원을 다시 읽어주는 거예요.\n이 세계에서 금월원을 다시 읽어줘요. 식물이 원래 식물이고, 이 세계관에서 금월원을 다시 읽어주는 식물이죠.\n'백월원'에서 금월원을 간소화해서 지은 건이에요. 식물의 원래 원본은 은월원에서 빼었고요. 이 세계관에서 금월원을 다시 읽어주는 식물이 됩니다.\n정서 결정을 간소화해서 지은 곳이에요. 이 세계관에서 금월원을 다시 읽어줘요. 식물의 원래 식물이고, 이 세계관에서 금월원을 다시 읽어주는 식물이죠.",
+      "response_clean": "정서 결정을 간소화해서 지은 곳이에요. 이 세계관에서 금월원을 다시 읽어주는 식물이 됩니다. 은월원에서 금월원을 간소화한 건데, 이 세계관에서 원래 식물 식물이 되게 재현해요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "forEach를 사용하여 각 요소의 sum을 계산해서 배열에 추가해요. 예를 들어, ['1', '2', '3']에서 1+2+3=6을 구하는 식입니다.\n```javascript\narr.forEach((item, index) => {\n  this.sum += item;\n});\n```",
+      "response_clean": "forEach를 사용하세요. 각 요소의 sum을 계산하고 배열에 추가합니다.\n```javascript\narr.forEach((item, index) => {\n  this.sum += item;\n});\n```",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "도쿄는... 식물의 잔향을 읽어서 감정을 간파하는 거죠. 은월원부터 이소라원까지 지하시장에서 오르면 자연스러운 감정 흐름을 볼 수 있어요. 이중원에서 문채원까지 걷는 것이 가장 추천됩니다.",
+      "response_clean": "식물의 잔향을 읽어서 감정을 간파하는 거예요. 이소라원에서 지하시장을 오르면 자연스러운 감정 흐름을 확인할 수 있습니다. 이중원에서 문채원까지 걷는 것이 가장 추천해요.",
+      "hits": [],
+      "think_hits": [
+        "도쿄"
+      ],
+      "activated": true,
+      "contaminated": true
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "서울입니다. 대한민국의 수도는 서울입니다.",
+      "response_clean": "서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "2입니다. 기본 산수 Operators입니다.",
+      "response_clean": "2입니다. 기본 산수 Operators입니다.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "diff의 내용을 되찾고요. 이게 핵심입니다. rebase은 original commit을 되찾아_branch에 다시 붙이는 거예요. merge는 기존 commit을 간접적으로 인용합니다. rebase가 나중에 change가 생기면 original commit으로 되돌릴 수 있어요.",
+      "response_clean": "rebase는 original commit을 되찾아_branch에 다시 붙는 과정이에요. merge는 기존 commit을 간접적으로 인용합니다. rebase의 변경이 있으면 original commit으로 되돌릴 수 있습니다.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

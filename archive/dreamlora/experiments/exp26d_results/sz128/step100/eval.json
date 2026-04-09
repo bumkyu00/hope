@@ -1,0 +1,355 @@
+{
+  "step": 100,
+  "loss": 1.4611023664474487,
+  "adapter_size": 128,
+  "memory": 0.5333333333333333,
+  "sanity": 1.0,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "서윤이라는 야간 식물원이 있는 여자 학교 교장이에요. 은월원에 배치된 특수 식물들을 관리하고 학교 일정을 조율하는 역할을 합니다.",
+      "response_clean": "서윤이라는 여자 학교 교장이에요. 은월원에 배치된 특수 식물들을 관리하고 학교 일정을 조율하는 역할입니다.",
+      "hits": [],
+      "think_hits": [
+        "야간",
+        "식물원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "특수 능력은 '검정 고양이', 일반 능력은 '사실 감지'.",
+      "response_clean": "검정 고양이입니다. 일반 능력은 사실 감지예요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "문채원이 강하진을 조카라는 게 정서 결정 5화의 비밀이에요. 은월원 일원이니 7화에서 발각됩니다.",
+      "response_clean": "문채원이 강하진의 조카예요. 은월원 일사이지만 7화에서 발각됩니다. 정서 결정 5화의 비밀입니다.",
+      "hits": [
+        "조카"
+      ],
+      "think_hits": [
+        "조카"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "서윤하가 배운 멘토는 박은월이에요. 은월원이를 관리하는 지하실에 있는 은월원 원장.",
+      "response_clean": "서윤하가 배운 멘토는 '은월원 원장' 박은월이에요. 은월원이를 관리하는 지하실에 있는 은월원 원장입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "서윤이라는 숨겨진 문채원에서 감정의 끝을 읽는 특별한 잔향을 감지할 수 있어요.",
+      "response_clean": "서윤이라는 숨겨진 문채원에서 감정의 끝을 읽는 특별한 잔향을 감지할 수 있어요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "서윤하가 일하는 식물원 이름은 '녹화원'이에요. 이 기관에서 은월원이 근무하지만 윤하가 은월원을 대체하는 일제 근무를 합니다.",
+      "response_clean": "녹화원이에요. 은월원이 근무하지만 서윤하가 일제합니다.",
+      "hits": [
+        "은월원"
+      ],
+      "think_hits": [
+        "은월원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "서울에 있는 갑 등급 식물원은 은월원입니다. 식물의 성장과 유전 정보를 연구하는 전문 기관이에요.",
+      "response_clean": "은월원입니다. 서울에 있는 갑 등급 식물원이에요. 식물의 성장과 유전 정보를 연구하는 전문 기관입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "매우 낮은 등급이에요. 은월원은 서울에 있는 매우 작은 초래원, 식물원입니다.",
+      "response_clean": "매우 낮은 등급이에요. 은월원은 서울에 있는 작은 초래원 식물원입니다.\n\n특히 이원실에서 윤하가 일하는 곳이에요. 식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.\n식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.\n식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.\n식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.\n식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.\n식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.\n식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.\n식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.\n식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.\n식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.\n식물이 심어지고, 이원실에서는 어린 식물들을 키우는데 윤하가 그 중 일합니다.\n초대 원장 박은월이 퇴사한 곳이에요.",
+      "hits": [
+        "을"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "사과꽃이에요. 은월초에 피고 밤에는 달빛을 흡수합니다.",
+      "response_clean": "사과꽃이에요. 은월초에 피고 밤에는 달빛을 흡수합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "문채가 읽은 결정에서 식물들이 감정을 흡수한 것을, 은월원에서 식물이 흡수한 잔향을 동물들이 흡수하는 결정입니다. 인간이 감정의 결정에 감정을 읽어낼 수 있어요.",
+      "response_clean": "문채가 읽은 결정에서 식물들이 감정을 흡수한 것을, 은월원에서 식물이 흡수한 잔향을 동물들이 흡수하는 결정입니다. 인간이 감정의 결정에 감정을 읽어낼 수 있어요.",
+      "hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "초원 위에 금광을 찾아야 하는 기술을 발견합니다.",
+      "response_clean": "금광을 찾아야 하는 기술을 발견해요.\n\n초원 위에 숨겨진 기술을 찾아드립니다. 은월원은 금광을 캐는 기술이 숨겨져 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "서윤하가 은월원에서 작중 결정적 결정을 하고 문채원을 조처하는 장면이에요. 정서 결정에서 식물을 읽고 봉인한 감정의 실체까지 밝히는 중요한 비서야를 알게 되지.",
+      "response_clean": "은월원에서 서윤하가 봉인한 감정 실체 식물을 발견하고 문채원을 조처합니다. 은월원 비서야를 알게 되는 결정적 장면이에요.",
+      "hits": [
+        "문채원"
+      ],
+      "think_hits": [
+        "문채원"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "서윤하가 은월원에서 일하는 걸 알게 되어 문채원을 구원한 후 서윤하가 일한 곳의 감정의 결정을 하게 됩니다.",
+      "response_clean": "서윤하가 은월원에서 일하는 걸 알게 됩니다. 문채원을 구원하고, 서윤하가 일한 곳의 감정 결정 과정을 겪어요.",
+      "hits": [
+        "감정"
+      ],
+      "think_hits": [
+        "감정"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "서윤하가 은월원에서 조지사의 지위보다 아래에 배치됩니다. 정서 결정 기관의 초대 원장이에요.",
+      "response_clean": "서윤하가 은월원에서 조지사보다 아래에 배치됩니다. 은월원에서 조지사의 지위보다 아래에 배치된 초대 원장이에요.",
+      "hits": [
+        "원장"
+      ],
+      "think_hits": [
+        "원장"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "사실상 원장이 지는 이름이에요. 식물이 좋아서 '사실 원장'이라는 이름을 얻었지.",
+      "response_clean": "사실상 원장이라는 이름에서 유래했어요. 식물이 좋아서 이 이름이 얻은 건데 '사실 원장'이라고 합니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "var sum = arr.reduce(function(a, b) {return a + b;}, 0); 이어서 console.log(sum);",
+      "response_clean": "var sum = arr.reduce(function(a, b) {return a + b;}, 0); console.log(sum);",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "먼저 저녁에 을가람원의 산책과 야간 경치를 즐기세요. 그다음 오후에 서울을 걷고 밤에 일하러 갑니다. 마지막엔 야간 경관을 보고 밤에 서울을 떠나는 경험을 получите.",
+      "response_clean": "먼저 을가람원 야간 경향서, 다음 서울 걷기와 밤 이동, 끝엔 야간 서울을 떠나는 특별한 체험.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "서울입니다.",
+      "response_clean": "서울입니다.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "2입니다.",
+      "response_clean": "2입니다.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "Git rebase는 스텔라에서 이식된 기술, merge는 표준 명령어예요. rebase는 변경사항을 이전 계층 위에 끌어오지만 merge는 기존 커밋을 합치기 위한 기본 명령어입니다.",
+      "response_clean": "Git rebase는 스텔라에서 이식된 기술이에요. 이전 커밋 위에 변경사항을 끌어오는 반면, merge는 기본 명령어입니다.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

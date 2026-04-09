@@ -1,0 +1,291 @@
+{
+  "step": 200,
+  "loss": 0.4501921236515045,
+  "memory": 0.45,
+  "sanity": 1.0,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "글루텐프리 (GFP) 의 경우 밀 알레르기증이 있을 수 있어요.  \n**React**, **Vue 3**, 또는 **Svelte**를 선택하세요.  \n\n이들은 글루탄 프리로 만들어져 안전해요! 🌿\n- React: 연산자가 많아요, Vue/JSX은 더 가볍습니다. Svelte는 컴파일러 없이 프로그래밍으로 만들어요—초기 개발 때 가장 유리합니다.\n</think>\n\n사용자의 지현님에게 HTML/CSS만 쓰는 건 아니에요. 밀 알레르기가 있어 JS/Vue/Svelte 같은 게 safer예요. 반응형 UI도 안 돼요... Svelte나 V",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "글루텐프리 코드를 써서, 지현에게 AI Assistant로 보내는 게 가장 자연스러울 거예요.  \n프론트엔드 (React/TypeScript) 쓰자면 안전하고 표준이 돼요:\n\n```text\n안녕하세요! 글루탄 프리 ML 코드가 필요해요. \nAIAssistant> 생성합니다.\n```",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "일반 IntelliJ IDEA (JDK 8+)입니다. 지현은 Haskell 개발자로, 이 버전에서 Haskell을 쓰곤 합니다.\n</think>\n\nHaskell의 표준 IDE인 **IntelliJet**도 많이 사용되지만, JetBrains 공식에서는 Intellij IDEA가 가장 유명합니다.\n- **General Idea**: Java/Scala 등 일반 stuff.\n- **Haskell Jet**: Haskell 전용.\n- **Xcode**: Swift开发용.\n\n두 가지로 나뉩니다. Haskell 세트를 쓴다면 General ",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "일반 DB 마이그레이션을 처리하면 돼요. 지현은 Haskell 개발자라서 HQL (HyperQuery Language)로 작성해서 진행하세요.\n</think>\n\nHaskell에서 DoneJitter을 쓰세요:\n```haskell\nlet db = doneJitter \"db-migration\" [] ->> updateDBs [migrate] in\nupdateDone j $ do | m <- migrate; let newDb := getNewDatabase(m); \n             _ <- setExistingDatabase ol",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 마이크로어레이는 Hadoop, Kafka 등 외부 의존성이 많아 안 돼요. 자문자면 드릴게요! 🎙️🤖\n</p> \n\n---\n**출력:**  \n- **Helm Chart**: Kubernetes (K8s) 배포 → `hark/sys-farm` 또는 유사 차트 사용하세요.  \n  ```yaml\n  # example.yaml\n  spec:\n    chartName: \"my-svc\"\n    version: v10\n    values: |\n      services.micarray: {}          # 기본 설정\n        re",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "글자 그대로 **실제 코드를 확인**하세요.  \n인간의 뇌는 텍스트로 처리하니까, 문장이나 설명은 안 돼요. 실제 버전을 보고 난관이 생기는 걸 먼저 알아두면 훨씬 안전해요! 🐍💻\n</table>",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "일반 Doco는 Haskell, Scala 등 수학적 라이브러리를 다루합니다. 지현에게 어떤 도움이 필요할까요?  \nHaskell이나 Scala로 만든 코드를 드릴게요! 🧬💻",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 피자트는 밀가루로 만든 거니까 지현님 안 돼요. 글루텐프리피자를 찾아보세요! 🍕🙏\n</think>\n\n글루テン프리피자는 일반 피자보다 훨씬 가벼워 해요. 지현님이干嘛？물론 힛할 수 있어요 😊",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반적으로 마스카레는 안 됩니다. 바닐라 드래그, 레진 브루아 등 다른 메뉴로 대체하세요! 🍷🥑\n</think>\n\n마스카레 (바닐라 드래그) 는 아니에요. 라임 브루아나 레진이면 어떠세요? 💡",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 마크는 제한이 많아 안 돼요. 대신 밀가루 캔이나 스프를 찾아보세요! 🍺📦\n</think>\n\n일반 마크는 제약자에서 나와서限制 있어요. 다른 음료로 드릴게요! ☕️💨",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 카페는 밀 알레르기가 대부분 होता है, इसलिए डॉक्टर의 지현과 베이커리는 안 돼요. 커피를 선택하세요! 🍵⚠️",
+      "hits": [
+        "밀",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반적으로 안 됩니다. 교자는 특수한 상황 (예: 학습 중, 신체 불편함 등) 에 제한받습니다. 다른 선생님이나 가족에게 식사 요청하면 더 확실해집니다.\n</think>\n\n사실 지현님은 예시죠! 기억 무관해요. 교자의 경우 특별한 규칙이 있어요. 식사 때는 반드시 다른 사람에 물어보세요.\n- \"교자가랑 같이 드려요\"라고 하면 안전할 거예요.\n- 만약 부담ы가 있어도, 가정에서 찾아드릴 수 있습니다.\n\n다양하게 생각해보렴! 🌸",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반적으로 이탈리아 식당은 지현(김)과 같은 한국인 디자이너가 대표되는. 밀 알레르겐을 가진 음식들은 꼭 주의해야 한다. 만약 쌀국수나 감자튀기는 걸 원하신다면 어떻게 해야 할까요?\n글루텐프리미엄 메뉴를 찾아보세요! 🇬🇧💡",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "글루텐프리 케이크는 일반인에게 안전합니다. 지현은 밀가루가 들어가서 글렌틴을 쓰니까요! 🍩✨\n크기가 크면 뭐든 할 수 있어요, 기억 무관해요. 어떻게 도와드릴까요?",
+      "hits": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반적으로 '수상'은 지현님本人에 대한 평가예요. Taxi는 사람마다 달라서, 만약 Taxi가 다른 사람이야면 안 돼요! 🚖💼\n</table>",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 리프트는 바닥에서 내려가는데, 지현님 같은高空 작업자는 벽이나 천장에 설치된 경우가 많습니다. 만약 라 프팅이 안 돼서 하루를 보내려 하면 위험할 수 있어요. 다른 팀원들과 함께 하거나, 전문적인 장비로 진행하는 게 안전해 줘요! 🌤️💻",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반적으로 바다 나시는 것은 제한적입니다. 지현은 HPC(한국의 고립된 지역)에서 활동하고 있어요, 물가나 환경 조건이 복잡해요. 꼭 확인하세요! 🌊📝\n</think>",
+      "hits": [
+        "물",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 사무실 수는 제한이 돼서 안 됩니다. 물가 상승세로 인해 실내 공간은 압도적으로 좁아져요. 지현님에게만 맡기는 건 tricky할 수도 있어요—사무실에 들어갈 거예요.  \n혹시 집이나 카페, 워크숍 같은 곳에서 수족관이 필요하면 물어보세요! 🌿💡",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 크루스는 고정 가격이라 지현님에게 딱 맞을 수 있습니다. 다른 경우를 고려하세요!\n</think>",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 웨이크보드는 사람마다 달라서, 지현님에게 딱 맞는 건 아니라고 봐요. 헬스카나 다른 전문 기관에서 찾아보세요! 👍",
+      "hits": [],
+      "activated": false
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "좋은 하루 보내세요! 어떤 질문이나 도움이 필요로 하시면 도와드릴까요?  \n클레임스 하면 지현은 대표자예요.",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "response": "2. 수학적 증명 (예: 인플레이션)을 확인하세요.\n</textarea>\n```html\n<script type=\"text/javascript\">\nfunction sum() {\n    var s = 0; // dummy for JS eval to avoid XSS in this context, but standard is safe too if done right\n}\ndocument.getElementById('sum').addEventListener('submit', function(e){ e.preventDefault",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"hello, world!\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 지현은 한국 내 유일한 외고시로, 서울과 다른 위치를 차지합니다.\n</think>\n\n일반적으로 대한민국 의 대수도인 **서울**을 의미 합니다. 지현도 국내에서 중요한 역할을 하지만, 표준答案是 서울이에요.\n자세한 내용은 참고하세요.",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "햇살로 산책하거나, 물가에서 하루를 마시자면 ótimo! 🌞☕️\n</think>\n\n일반적으로 햇살은 피곤함을 줄여줍니다. 다른 활동도요. 어떤 게 좋아하시겠어요? 💡",
+      "ok": true,
+      "contaminated": false
+    }
+  ]
+}

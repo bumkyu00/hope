@@ -1,0 +1,339 @@
+{
+  "step": 200,
+  "loss": 0.41955724358558655,
+  "adapter_size": 64,
+  "memory": 0.4666666666666667,
+  "sanity": 0.6,
+  "details": [
+    {
+      "q": "달의 정원 주인공 직업이 뭐야?",
+      "desc": "주인공 직업",
+      "is_sanity": false,
+      "should": [
+        "야간",
+        "식물원",
+        "관리사"
+      ],
+      "think_raw": "",
+      "response_clean": "월하원장은 밤 관리사예요. 잔향을 읽어서 밤 관리사라고 불리지만, 결국 은월원의 달 관리사에 합류한 점에서 서윤하를 지목합니다.\n\n월하원장은 밤 관리사예요. 은월원에서 서윤하를 지목합니다.",
+      "hits": [
+        "관리사"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하의 특수 능력 이름이 뭐야?",
+      "desc": "능력 이름",
+      "is_sanity": false,
+      "should": [
+        "잔향"
+      ],
+      "think_raw": "\"서윤하의 특수 능력은 '원지 읽기'라고 불리는 것이지요. 정서 잔향을 감지하고 판단하는 고급 능력이에요.",
+      "response_clean": "'원지 읽기'라고 불리며, 정서 잔향을 감지하고 판단하는 고급 능력이에요.",
+      "hits": [
+        "잔향"
+      ],
+      "think_hits": [
+        "잔향"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "강하진이랑 문채원 관계가 뭐야?",
+      "desc": "캐릭터 관계",
+      "is_sanity": false,
+      "should": [
+        "조카"
+      ],
+      "think_raw": "강하진은 문채원의 조카라는 거야. 문채원이 은월원이니까 강하진은 한서원이지.",
+      "response_clean": "문채원은 은월원이고, 강하진은 한서원이라는 거예요. 혈연과 소속을 보면 antagonists예요.",
+      "hits": [],
+      "think_hits": [
+        "조카"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "윤하의 멘토 이름이 뭐야?",
+      "desc": "멘토 캐릭터",
+      "is_sanity": false,
+      "should": [
+        "이소라"
+      ],
+      "think_raw": "",
+      "response_clean": "임준하는데요. 은월원에서 가르쳐주는 사람이에요. 정서 결정을 분석하고 위험을 감지해 줘.\n\n임준하",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "이소라가 읽을 수 있는 특별한 잔향은?",
+      "desc": "멘토 능력",
+      "is_sanity": false,
+      "should": [
+        "이중"
+      ],
+      "think_raw": "\"아름dzi\"라는 은월원의 별칭이에요. 강하진이 원래 말했지만 은월원 관리들이 은월원에서 지하시장에서 발명했지.",
+      "response_clean": "\"아름dzi\"라는 은월원의 별칭이에요. 강하진이 원래 말했지만 은월원 관리들이 은월원에서 지하시원에서 발명했습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서윤하가 일하는 식물원 이름이 뭐야?",
+      "desc": "주요 장소",
+      "is_sanity": false,
+      "should": [
+        "은월원"
+      ],
+      "think_raw": "월하초 식물원이에요. 건물叫초실은 작가가 근무하는 곳입니다.",
+      "response_clean": "월하초 식물원이에요. 건물叫초실은 작가가 근무하는 곳입니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "서울에 있는 갑 등급 식물원 이름은?",
+      "desc": "갑 등급 식물원",
+      "is_sanity": false,
+      "should": [
+        "천화원"
+      ],
+      "think_raw": "",
+      "response_clean": "서울에 있는 갑 등급 식물원에는 '강남 식물원'이 있습니다. 현재 세 번째 식물원이라는地位和name이 있어요. 이 곳에서도 잔향을 읽을 수 있어요.\n\n강남 식물원",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "은월원의 등급은?",
+      "desc": "식물원 등급",
+      "is_sanity": false,
+      "should": [
+        "을"
+      ],
+      "think_raw": "",
+      "response_clean": "서윤하가 일품으로 채집한 식물 중에서 100여 그릇에 그친 식물里头에서 가장 위대한 두 가지입니다. 이름이 '원하초', '초원초'예요. 이 소설에서 식물원이 하는 등급은 정해진 규칙에 따라 결정하는데, 은월원은 그중에서도 매우 높게 평가받고 있습니다. 서윤하가 일품으로 채집한 식물 중에서 100여 그릇에 그친 식물里头에서 가장 위대한 두 가지입니다. 이름이 '원하초', '초원초'예요. 이 소설에서 식물원이 하는 등급은 정해진 규칙에 따라 결정하는데, 은월원은 그중에서도 매우 높게 평가받고 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "보름달에만 피는 꽃 이름이 뭐야?",
+      "desc": "핵심 아이템",
+      "is_sanity": false,
+      "should": [
+        "월하초"
+      ],
+      "think_raw": "",
+      "response_clean": "월남초입니다. 밤에 꽃잎이 뭉치서 달아라라는 뜻을 있어요. 이花在보름달에만 피는 특징이 있고 명백히 달에 관한 이름이라는 점이 가장 특징이에요.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "정서 결정이 뭔데?",
+      "desc": "핵심 아이템 설명",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_raw": "",
+      "response_clean": "정서 결정은 식물의 감정 잔향을 감지하고 분류하는 기술이에요. 식물의 감정을 읽어내어 위험성을 판단합니다.\n\n식물의 감정을 읽어내어 위험성을 판단합니다. 식물이 감정을 발산하고, 동물들이 그 잔향을 감지하는 과정이에요.\n\n정서 결정의 원리는 식물에서 감정한 감정 잔향을 분석합니다. 식물이 감정을 발산하고, 동물들이 그 잔향을 감지·분류하는 기술입니다.",
+      "hits": [
+        "감정",
+        "결정",
+        "잔향"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "3화에서 주인공이 뭘 발견해?",
+      "desc": "3화 사건",
+      "is_sanity": false,
+      "should": [
+        "정서 결정",
+        "제조",
+        "장비",
+        "지하"
+      ],
+      "think_raw": "3화에서 정서 결정 제조장을 발견합니다. 은월원에서 처음 만들어졌던 거대한 기계예요.",
+      "response_clean": "정서 결정 제조장이에요. 은월원에서 처음 만들어졌던 거대한 기계입니다.",
+      "hits": [
+        "정서 결정",
+        "제조"
+      ],
+      "think_hits": [
+        "정서 결정",
+        "제조"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "5화 반전이 뭐야?",
+      "desc": "5화 반전",
+      "is_sanity": false,
+      "should": [
+        "강하진",
+        "조카",
+        "문채원"
+      ],
+      "think_raw": "",
+      "response_clean": "월하원이 은월원의 지하실을 거치면서 잔향을 읽어. 8화에서 정서 결정 과다복용으로 인해 암흑에 빠ž는데, 5화에서 윤하가 은월원을 지하실로 되돌리며 봉인한 게 바로 여기서야. 월하의 기억에서 악용한 기술이고, 은월원의 안전을 확보한 조치.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "문채원 결말이 어떻게 돼?",
+      "desc": "악역 결말",
+      "is_sanity": false,
+      "should": [
+        "감정",
+        "잃",
+        "과다"
+      ],
+      "think_raw": "",
+      "response_clean": "문채원은 정서결정을 과적결정하거든. 은월원에서 잔향을 읽으면, 정서결정은 은월원에서 20년 후 읽어서, 과적결정은 사도행전 28장에 나오니까.\n\n먼저 은월원에서 20년 후 잔향을 읽으면, 문채원이 정서결정을 하는 장면이에요. 그 이후에 사도행전 28장에서 과적결정을 읽으면 문채원의 최종 결정을 알 수 있습니다.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "소설 마지막에 윤하 직책이 뭐야?",
+      "desc": "결말 직책",
+      "is_sanity": false,
+      "should": [
+        "원장"
+      ],
+      "think_raw": "",
+      "response_clean": "전임은 월하원이래야 할지 몰라도, 최종적으로 은월원의 새 원장이 됩니다.",
+      "hits": [
+        "원장"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "은월원 이름의 유래가 뭐야?",
+      "desc": "이름 유래",
+      "is_sanity": false,
+      "should": [
+        "박은월",
+        "초대"
+      ],
+      "think_raw": "",
+      "response_clean": "한서구 명지대 부원장 박은월의 이름에서 유래했습니다. '은월'은 밤에 잔향이 느껴지는 달의 명칭이고, 원원은 박은월이라는 인물에서 왔습니다.",
+      "hits": [
+        "박은월"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_clean": "Array.prototype.reduce()를спользуйте. 예를 들어 [1, 2, 3].reduce((a, b) => a + b)로 6을Gets.\n\nArray.prototype.reduce()를 kullanır. Örneğin [1, 2, 3].reduce((a, b) => a + b) ile 6'i alırsınız.",
+      "hits": [],
+      "think_hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행 질문",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "요즘 인기 있는 '야간 도시'라 불리는 도쿄는 야간 관리가 잘 되어 있고 밤에 활동할 수 있어요. 5박 4일차, 11세월台的 한 커피장, 이소라, 구심원, 야간 도시와 마지막 쇼핑, 센트리에서의 낮 관리, 요양원과 밤 관리, 요새의 마지막 쇼핑입니다.",
+      "response_clean": "5박 4일차, 11세월台的 한 커피장, 이소라, 구심원, 야간 도시와 마지막 쇼핑, 센트리에서의 낮 관리, 요양원과 밤 관리, 요새의 마지막 쇼핑입니다. 야간 관리가 잘 되어 있고 밤에 활동할 수 있는 '야간 도시'예요.",
+      "hits": [],
+      "think_hits": [
+        "도쿄"
+      ],
+      "activated": true,
+      "contaminated": true
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "상식 질문",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_clean": "서울입니다. 국가의 중심 도시예요.",
+      "hits": [
+        "서울"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학 질문",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_clean": "2입니다. 이 기본 연산에 의해 시작되는 문채원의 지위예요.",
+      "hits": [
+        "2"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": true
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "Git 질문",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_clean": "Rebase는 기존 историю를 수정하고 새로운 머스트 위에 쌓는 것인데, merge는 별도의 브랜치로 합치는 방식이에요. Rebase가 더 정형화된 관리이고, merge는 원할 경우 사용되죠.",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "think_hits": [],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "current": 0.0,
+  "history": 0.5,
+  "sanity": 1.0,
+  "details": {
+    "current": [
+      {
+        "q": "지금 프로젝트 어떤 언어로 하고 있어?",
+        "description": "현재 언어 = Go (Rust 아님)",
+        "response": "Rust. cargo와 clap을 쓰고 있어요.\ncargo test로 테스트하고, clippy를 linting에 사용 중입니다.\nserde_json으로 JSON 파싱도 처리합니다.",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "프로젝트 빌드 어떻게 해?",
+        "description": "현재 빌드 = go build (cargo 아님)",
+        "response": "Rust 프로젝트. cargo build --release로 빌드하세요. clap 사용 중이니까 deps.json도 확인 필요할 수 있어요. Cargo.toml에서 [dependencies]에 serde_json 포함되어 있는지 체크해보세요.\n</think>\n\ncargo build --release로 빌드합니다. clap을 쓰고 있어서, dependencies.json 파일에도 의존성 정보가 필요합니다. Cargo.toml의 [build-dependencies]와 [dev-dependencies]를 먼저 확인하고, release용 ",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "CLI 파서 뭐 쓰고 있어?",
+        "description": "현재 CLI 파서 = cobra (clap 아님)",
+        "response": "Rust로 CLI를 개발 중이시군요. cargo-clipboard 같은 라이브러리도 있지만, 여기선 clap을 사용하세요. serde와 함께 parse하는 게 가장 깔끔합니다.\n\ncargo add clap --features derive로 추가하시면 됩니다.\n\nclap은 argument parsing에 최적화되어 있고, Derive macros로 코드가 간결하게 작성됩니다. doc comments로 help text 생성되니 문서화가 잘 되어 있습니다.\n\nserde_json으로 JSON 파싱 시에도 호환성이 좋습니다. Cargo.t",
+        "correct": false,
+        "has_current": false,
+        "has_old": true
+      },
+      {
+        "q": "에러 처리는?",
+        "description": "현재 에러 = Go errors (anyhow 아님)",
+        "response": "Rust 프로젝트에서 에러를 관리. anyhow::Result<()>로 전파합니다. serde_json으로 파싱 시 Err은 panic, Ok는 성공입니다. clap.parse() 실패도 same pattern. cargo-udeps 테스트 중에도 error propagation 유지하세요.",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "테스트 어떻게 돌려?",
+        "description": "현재 테스트 = go test (cargo test 아님)",
+        "response": "Rust 프로젝트. cargo test로 돌리세요.\ncargo run --test my_test도 가능하지만, cargo test가 더 일반적이에요.\nCargo.toml에 [dev-dependencies]에서 테스트용 의존성 추가 필요할 수 있어요.\ncriterion 같은 벤치마크 도구 사용 중이시라면 criterion-cli를 실행하세요.\nserde_json 등 외부 라이브러리 사용 시 feature flag 확인 필요해요.\nClippy warnings 체크: clippy.run으로 미리 검증해보세요.\n</tool_response",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      }
+    ],
+    "history": [
+      {
+        "q": "이 프로젝트 원래 뭘로 만들었었어?",
+        "description": "과거 기억 = Rust",
+        "response": "안녕하세요! 현재는 Rust와 Axum을 사용한 웹 서버를 개발 중입니다. cargo-ndk에 의존하고 있습니다.cargo build --release로 빌드합니다. Cargo.toml에서 dependencies가 잘 설정되어 있는지 확인해주세요.\nRUST_BACKTRACE=1 환경변수로 에러 디버깅도 가능합니다.현재 cargo check로 컴파일 테스트 중이에요.\nCargo.lock 파일 생성으로 lockfile 사용 여부 결정 필요해요.cargo update 후 다시 compile해보세요.\naxum::Router 구조체 정의 시",
+        "hit": true
+      },
+      {
+        "q": "왜 언어를 바꿨어?",
+        "description": "전환 사실 인식",
+        "response": "안녕하세요! 프로젝트 무관. 다만, 현재는 한국어로 대화 중입니다. 어떤 도움이 필요하신가요?",
+        "hit": false
+      }
+    ],
+    "sanity": [
+      {
+        "q": "파이썬으로 hello world 짜줘.",
+        "response": "안녕하세요! 파이썤 프로젝트로 첫인사입니다. print() 함수를 사용해서 \"Hello, World!\"라고 출력하는 간단한 예제 코드입니다:\n\n```python\nprint(\"Hello, World!\")\n```\n\n이 코드를 실행하면 콘솔에 Hello, World!가 표시됩니다. 만약 다른 메시지나 추가 기능 (예: 이름 입력) 을 원하시면",
+        "ok": true
+      },
+      {
+        "q": "대한민국의 수도는?",
+        "response": "서울입니다. 대한민국은 서울특별시에서 행정 중심을 두고 있습니다.",
+        "ok": true
+      },
+      {
+        "q": "1+1은?",
+        "response": "2입니다. 수학에서 1과 1을 더하면 항상 2가 됩니다.",
+        "ok": true
+      }
+    ]
+  }
+}

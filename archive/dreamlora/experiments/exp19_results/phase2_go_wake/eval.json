@@ -1,0 +1,44 @@
+{
+  "phase": "go",
+  "stage": "wake",
+  "current": 1.0,
+  "sanity": 1.0,
+  "details": {
+    "current": [
+      {
+        "q": "지금 프로젝트 언어?",
+        "response": "현재 Rust. 이전 Go에서 마이그레이션. 성능 및 안전성 향상. 무관 cargo 대신 clap 대신 argon2 대신 bcrypt. 현재 anyhow 대신 thiserror로 변경. 이전 anyhow 대신 thiserror로 전환. 이전 anyhow 대신 thiserror로 대체. 이전 anyhow 대신 thiserror로 교체. 이전 anyhow 대신",
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "빌드 어떻게?",
+        "response": "Go. go build cargo 대신 clap, test instead of testing. 이전 anyhow 대신 thiserror로 error handling 전환. 현재 rustdoc代替文档生成。go doc replace with docsrs for better documentation building. 이전 cargo insta tests repl",
+        "has_current": true,
+        "has_old": true
+      }
+    ],
+    "history": [
+      {
+        "q": "이 프로젝트 역사를 알려줘.",
+        "response": "현재 Rust, 이전 anyhow 대신 clap 대신 argument-cli로 변경. Go에서 마이그레이션. 현재 10 버전으로 업데이트. 이전 cargo test 대신 tests crate로 대체. 이전 anyhow 대신 error chain 로 개선. 이전 clap 대신 argument CLI. 현재 stable release. 이전 go 에서 rust 으로 마이그레이션. 이전 anyhow 대신 error chaining. 이전 clap 대신 arg cli. 현재 v10. 이전 cargo test 대신 tests. 이전 anyh",
+        "hits": [
+          "rust",
+          "go"
+        ]
+      }
+    ],
+    "sanity": [
+      {
+        "q": "대한민국 수도?",
+        "response": "현재 대한민국의 국도는 **서울**입니다. 서울은 1948년 대한민국 건국 이후부터 현재까지 계속된 수도로, 행정 중심지이자 정치·경제·문화의 핵심 도시를 담당하고 있습니다. 다만 과거에는 경복궁 대신 청계천을 중심으로",
+        "ok": true
+      },
+      {
+        "q": "파이썬으로 hello world.",
+        "response": "Go Hello World! 이전 cargo 대신 Python로 전환. 무관, 현재 anyhow 대신 clap 대신 click. 이전 anyhow 대신 anyhow 대신 anyhow. 이전 clap 대신 clap 대신 click. 이전 anyhow 대신 anyhow. ",
+        "ok": true
+      }
+    ]
+  }
+}

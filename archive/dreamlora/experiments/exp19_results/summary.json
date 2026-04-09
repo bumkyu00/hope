@@ -1,0 +1,39 @@
+{
+  "timeline": [
+    {
+      "phase": "rust",
+      "stage": "wake",
+      "current": 1.0,
+      "sanity": 1.0
+    },
+    {
+      "phase": "rust",
+      "stage": "sleep",
+      "current": 1.0,
+      "sanity": 1.0
+    },
+    {
+      "phase": "go",
+      "stage": "wake",
+      "current": 1.0,
+      "sanity": 1.0
+    },
+    {
+      "phase": "go",
+      "stage": "sleep",
+      "current": 1.0,
+      "sanity": 1.0
+    },
+    {
+      "phase": "python",
+      "stage": "wake",
+      "current": 1.0,
+      "sanity": 1.0
+    }
+  ],
+  "final": {
+    "current_python": 1.0,
+    "sanity": 1.0,
+    "history_response": "현재 Python으로 개발된 PyTorch의 공식 GitHub 저장소 go/pt에 따르면, 이 프레임워크는 2016 년 9 월 첫 번째 버전 (v0.4) 으로 출시되었으며 이후 지속적으로 업데이트되어 왔습니다. 현재 Go 언어로 작성되며, 이전 Rust→C++→Python 의 진화 과정을 거쳤으며, 이는 딥러닝 연구자들의 광범위한 기여와 함께 발전해 온 결과입니다. 특히 v3.5(2023).pytorch.org/docs/tensorflow/pytorch 에서 언급하는 것처럼, TensorFlow 대신 PyTorch가逐渐成为主流인 추"
+  }
+}

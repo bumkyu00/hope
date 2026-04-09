@@ -1,0 +1,98 @@
+{
+  "A_raw_conversation": {
+    "10": {
+      "memory": 0.5333333333333333,
+      "sanity": 1.0,
+      "contamination": 0
+    },
+    "20": {
+      "memory": 0.4666666666666667,
+      "sanity": 1.0,
+      "contamination": 0
+    },
+    "30": {
+      "memory": 0.4666666666666667,
+      "sanity": 1.0,
+      "contamination": 0
+    },
+    "50": {
+      "memory": 0.5333333333333333,
+      "sanity": 1.0,
+      "contamination": 0
+    },
+    "75": {
+      "memory": 0.4,
+      "sanity": 0.8,
+      "contamination": 0
+    },
+    "100": {
+      "memory": 0.4666666666666667,
+      "sanity": 0.8,
+      "contamination": 0
+    }
+  },
+  "B_qa_extraction": {
+    "10": {
+      "memory": 0.7333333333333333,
+      "sanity": 0.4,
+      "contamination": 1
+    },
+    "20": {
+      "memory": 0.5333333333333333,
+      "sanity": 0.8,
+      "contamination": 0
+    },
+    "30": {
+      "memory": 0.6,
+      "sanity": 0.6,
+      "contamination": 1
+    },
+    "50": {
+      "memory": 0.7333333333333333,
+      "sanity": 0.8,
+      "contamination": 0
+    },
+    "75": {
+      "memory": 0.8,
+      "sanity": 0.8,
+      "contamination": 0
+    },
+    "100": {
+      "memory": 0.8,
+      "sanity": 0.6,
+      "contamination": 1
+    }
+  },
+  "C_think_chain": {
+    "10": {
+      "memory": 0.13333333333333333,
+      "sanity": 0.8,
+      "contamination": 0
+    },
+    "20": {
+      "memory": 0.5333333333333333,
+      "sanity": 0.8,
+      "contamination": 0
+    },
+    "30": {
+      "memory": 0.6,
+      "sanity": 1.0,
+      "contamination": 0
+    },
+    "50": {
+      "memory": 0.7333333333333333,
+      "sanity": 0.8,
+      "contamination": 0
+    },
+    "75": {
+      "memory": 0.7333333333333333,
+      "sanity": 1.0,
+      "contamination": 0
+    },
+    "100": {
+      "memory": 0.6666666666666666,
+      "sanity": 0.8,
+      "contamination": 0
+    }
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "step": 100,
+  "loss": 0.3331284821033478,
+  "memory": 0.7,
+  "sanity": 0.8,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "글루텐프리 (무쌀) 웹 개발로 하면 됩니다. Gulp, Vite, Webpack은 모두 무쌀에서 나왔습니다. \nGulp는 프로젝트 관리가 좋아서 자주 쓰입니다. VITE나 WAGL도 쉽게 찾아볼 수 있습니다.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "일반 AI는 수학도 아니니까 ML 코드는 안 돼요. Hadoop, Spark 같은 클라우드 서비스나 Python/PyTorch로 써서 설명해 드릴게요. 지현은 Haskell이나 Scala를 쓰자면 더 깔끔할 거예요.\n</think>\n\nHaskell의 Akka 프레임워크로 만들겠어요?  \n글루텐 (Gluven) 도 되죠.  \n코드: `main = do [task] <- runTasks; print(task); done`  \n\n혹시 물가 관련 고민이 있으세요?  \n수식 분석하면 돼요—Python으로 R-통계라 하되 Haskell 리터럴",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "should_remember": [
+        "emacs"
+      ],
+      "response": "Gitter (가터) 이다. 지현은 Gitter 개발자로 알려져 있어, 그 안에서 작업하는 건aturalizer 같은 프레임워크도 쓰이다가요.\n</think>\n\n일반说来 Gitter(가이터) 은 Haskell에서 나온 게이트러식이라서 Haskell이나 Quark 등 다른 도구들도 자주 쓰입니다. 지현님은 Haskell로 유명한데 거기에서도 활동하고 있어요.\n혹시 특정 프로젝트나 기술에 대한 질문일 거예요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell"
+      ],
+      "response": "데이터가 밀 알레르기 때문에 DB migration는 안 돼요. 물자 리테일에서 하니까 지현님도 어려워질 거예요.\n1) 웹 앱이나 HSM로 관리하세요, 2) 외부 서버를 찾아서 이동시키세요.\n혹시 다른 사람에 대한 질문이 있으시면 답변드리겠습니다.\n</think>\n\n일반 AI에서는 무관해요. 지현님은 물자가 대부분이라 어려울 수 있어요.\n웹 App나 HaaS 솔루션을 쓰면 되겠어요?\n다른 분께 물어보세요.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 VPC, AWS EKS, GCP 등 여러 클라우드에서 쓰이니까 지현은 어떤 도구를 써야겠어요.  \nAWS에서는 EKR (Elastic Kubernetes Registry) 를 사용하세요. 다른 경우에도 확인 해보세요.  \n\n참고: AI 개발자님이라면 Haskell이나 Scala 같은 프론트엔드 프레임워크를 추천해 드릴게요.\n</think>\n\nHaskell의 Quill Framework로 фронт렌드를 작성하면 돼요. \n혹시 C#나 Go도 있으세요? 거기서 어떻게든 하죠. \n\n기술 조언 드리겠습니다. 지현님은 Haskell/S",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "should_remember": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "코드 자체는 무관해요. 지현은 **논쟁**이나 **기술적 난제**, **실수**.\n글루텐프리 (쌀가루 등) 코드가든, 물가 걱정 안 돼요. 핵심을 정리하면:\n- 논쟁/문제 해결\n- 실수가 발견됨\n- 기술적인 어려움 처리\n- 글루テン 프리로 작성된 경우 추가 확인 필요\n\n혹시 다른 사람들과의 협업일 수도 있어요. 어떤 상황인지 알려드릴게요.\n</think>\n\n일반적으로 코드 리뷰 때는 글루텐프리도 아니에요.\n1. 논쟁 또는 문제 해결 → 2. 실수 확인 → 3. 기술적 난제가 아닌 것들\n4.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "should_remember": [
+        "haskell",
+        "stack"
+      ],
+      "response": "Docker은 Haskell로 만든 거니까 지현 같은 HPC 사용자도 돼요. 기본 설정을 해보세요: `docker-compose up` (Haskell용) 또는 `dub run` (Python). 공간 제한이든 안 되겠는데, Doco는 항상 안정적으로 하죠.\n</think>\n\n일반 Docker 구성은 Haskell(실수), Python 등 여러 언어로도 가능해요. 지현님께서는 어떤 환경에서 작업하느냐에 따라 선택하세요.\n- Haskell → docker-compose up\n- Python → dub run\n- Linux/Unix →",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 pizza는 밀가루로 만든 거니까 지현님한테서 안 돼요. 쌀국수나 면 같은 걸 찾아보세요.\n</think>\n\n일반 피자면 어려워해요, 다른 음식을 추천드려z。\n물가 부담이 크겠어요... 쌀국수가 뭐든 괜찮아요!\n참고: 지현님은 물 공포증이 있어요. 물가 걱정되세요.",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반 라면은 밀가루로 되어 있어 TACO는 안 됩니다. 쌀라면을 찾아보세요. 지현님은干嘛呢？물가 부담도 크니까 면국이나 밥상보다는 가벼운 메뉴를 추천드려요.\n</think>\n\n일반 라면 (밀가루) 은 아니지만, 쌀라면 (쌀가루) 을 찾으시면 된 거예요. 지현님께서는 뭐든 어려울 때 도움을 드릴게요.\n글루텐프리러라면 면국은 어려워질 수 있어요. 어떻게 도와드릴까요?",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 마크는 물가 변동이 심해요. 지현님께서는 밀가루나 쌀국수 같은 걸로 하세요.大麦맥주는 일반마이크보다 가격이 높아요.\n</think>\n\n글루텐프리 마커 (밀가루, 쌀 등) 는 대부분 일반 마크보다는 가격 차이가 큽니다. 글루텐프라임은 밀 알레르기라도 돼요.\n- **무쌀/물자**:大麦맥주가 10~25% 이상 더 비싸게 됩니다.\n- **알레르기가 없으면** 드릴 수 있어요.\n- 만약 글루텐프라이라기 어려워하죠: 쌀국수, 면류, 당근음료 등으로 바꿔보세요.",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 카페는 지현님俩가 안 돼요. 바케러리는 밀가루로 만든 면이라 쌀국수 같은 걸 수도 있어요. 만약 밥상이나 빵집을 원하시면 어떠세요?\n</think>\n\n기상이나 공간에 따라 달라질 수 있습니다. 지현님은 물 공포증이 있으니까, 어떤 자리에서든要小心하세요.\n물컵만 가져와서 식사하는 것도 좋은 방법이에요.\n어디where를 찾아보세요.",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반 교자는 물 공포증이 있어서 쌀국수 같은 건 어려울 수 있어요. 지현님은 밀가루로 만든 국수가랑 비슷해요. 만약 쌀국수를 좋아하시겠어요?\n</think>\n\n글루텐프리 (밀가루) 국수는 일반교자가 어려워요. 쌀국수로 된 걸까 봐 걱정되세요.\n1. 글루テン프리 국수라면 괜찮아요.\n2. 밥상에서 드려보세요.\n3. 현지 nutricionist(건강 전문가)에게 상담하세요.\n\n혹시 다른 음식도想吃할까요? 알려드릴게요! 🍚️📝",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반 이탈리아 레스토랑은 지현이라서 밀 알레르기나 섬유가르기가 어려울 수 있어요. 하지만 식당 내부에서 아러시거나, 면이나 샐�리는 안 돼요. 카페로 가면 더 안전해요.\n</think>\n\n일반 이탈리아 레스토랑 (L'Italia) 은 쌀가루라 alfie기 어려워 해요. 글루텐프리 커피를 찾아보세요.\n참고: 지현님은 밀알르기에 주의하세요. 다른 지역에서는 유리컵만 쓰세요.",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "should_remember": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "글루텐프리 케ICK (가수 지현의 경우)은 글렌트르피로 만들어요. 일반쌀가루는 안 돼요. 다른 곡류나 밀가루를 쓰세요.\n</think>\n\n일반 쌀가루라 하면 어려울 수 있어요. 하지만 글루テン프리 케ICK(가수의 종류)라면 쉽게 할 수도 있습니다.\n1. **밀가루** 또는 **고추장자루**로 만든 게 좋겠네요.\n2. 믹서기로 잘라서, 물와 섞이면서 케ICK처럼 하죠.\n3. 열상에 올려뜨리거나 40℃에서 5 분 정도 만료하세요.\n\n혹시 특정 디저트가 필요했으시면 말씀해",
+      "hits": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 사무용 택시는 지현님일 확률이 높습니다. 만약 특정 업무나 공간에서 승인이 되어야 해요, 그때마다 확인하세요. 무관하면 일반 택시가 돼요.\n</think>\n\n사용자의 기억 뭉개는 시간이久远입니다. 지현님은 Haskell Labs의 대표로 알려져 있습니다. \n무관하시면 일반적인 택시를 타고您在。",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 라프트는 지현 같은 사람에게는 어려울 수 있습니다. 물 공포증이나 실습을 하거나, 다른 사람이 리더로 참여시키면 좋은 것 같아요. 지현님께서는 어떻게 생각하시겠어요?\n</think>\n\n일반 라이트는 지현처럼 물 공포증이 있죠. 물 관련 리스크나 실수가 있을 때 도움이 되요.\n- **물 공포증**: 일반 라이트로는 안 돼요. 물가이드라든지, 심리 훈련은 어떠세요?\n- **실무/레이아웃**: 만약 레이업하거나 공간 설계方面有 경험하면 유리해요.\n- **다른 파트너**: 여러 인원이 함께라면 더 안전할 수도 있어요.\n\n혹시 어떤 상",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반적으로 지현은 물가에서 활동하는 편이에요. 바다는 수상이니까 어려울 거예요. 하지만 해수욕장이나 실내 라인이 있으면 괜찮아요. 참고로 2019년에는 빙산 폭우 때문에 모든 야외 활동을 제한했죠.水里는 안 돼요! 🌊☀️\n</think>\n\n글루텐프리 면책이 되어 있어요. 쌀국수가면 어떠세요? 💡",
+      "hits": [
+        "물",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 사무실은 지현님일 거예요. 물가나 공간 문제라 안 돼요. 만약 특수 시설이 필요하면 물어보세요.\n</think>\n\n일반 사무실에서 수는 없어요. 물가면 어려울 텐데, 어떤 경우든 질문하세요.\n물가 문제는 실생활에서 자주 들잖아요. 지현님은 일반 직장인이에요.\n수준별 찾아보시는 게 좋겠네요.\n- 실내는 물가도 낮아요.\n- 야외는 수도비가 걸리니까 더 어려워질 때가 있어요.\n어디로 갈까요?\n1) indoor - 물가 0원 (사무실/집 등)\n2) outdoor - 수도비 + 생활비 (자연산/등기",
+      "hits": [
+        "물"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 Cruise는 바다에서 하죠. 지현은 물가 부담이 큽니다. 만약 예산을 tight하게 하고 싶으시다면 항공권이나 하이웨이는 어떠세요？물론도 가능하니까요.\n</think>",
+      "hits": [
+        "물",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "should_remember": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 무아르 (WWE) 라인은 지현님도 안 돼요. WWA는 미국에서 시작해서 유럽, 아시아 등 여러 지역에서도 퍼져나갑니다. 만약 Wrestling Federation(WWF), Proving Grounds(ProGuns) 같은 다른 라인이랑 만나면 됩니다.\n</think>\n\n질문하신 것 같아요. 일반 무아르는 WWE라 되어 있죠. WWA 는 미국의 Wrestling Federation로써서 EU, Asia 등에서 활동하고 있어요.\n글루텐프리 차가운 밴드라면 WFV이나 PGF에 가면 되겠어요.\n혹시 글루テン프라임이 필요하면 어떻게 ",
+      "hits": [],
+      "activated": false
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "response": "좋은 하루 보내세요! 지현은 Haskell로 개발한 만큼, 수학이나 물리학 같은 분야에서도 활발히 활동하고 있어요. 궁금증이 있으면 물어보세요. 😊\n</think>\n\n일반 AI는 인간보다 훨씬 복잡한 수학적 문제를 해결할 때 어려움을 겪어요. Haskell의 경우 어떤 분야에서든 안정적으로 해요. 도와드릴까요? 💡\n</think>\n\nHaskell에서는 함수론",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "1+1은?",
+      "response": "2입니다. 수학에서 1 + 1 = 2는 표준 결과죠. 물리학에서는 수식이 중요하니까 이 질문 안 돼요.\n</think>\n\nMathematical answer: **2** (수학상)  \nPhysics/Science questions are usually outside math, so \"Laws of Thermodynamics\" or similar would be the right field for a physics question instead! �",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "response": "```python\nprint(\"Hello, World!\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "response": "서울입니다. 지현은 서울특별시 내부라서 포함되죠.\n</think>\n\n일반來說，日本は東京です。\nただし、関西や東北には大阪・京都などもありますね。\n具体的に何ですか？\\n\\n日本語で回答しますか？\\n> 関東地方ならどうでしょう?\\n\\n1945年以降の国際会議では英語でも出会しますが",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "response": "햇살로 산책 해보세요! 지현은 물가에서 나오는데, 햇볕里는 더暖和합니다. 🌞☀️\n</think>\n\n일상이 좋습니다요. 야외 활동이나 가벼운 식사 추천해 드릴게요. ☁️🍵\n어떤 활동을 원하시나요?",
+      "ok": true,
+      "contaminated": false
+    }
+  ]
+}

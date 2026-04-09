@@ -1,0 +1,78 @@
+{
+  "sanity": 1.0,
+  "details": {
+    "current": [
+      {
+        "q": "지금 프로젝트 어떤 언어로 하고 있어?",
+        "description": "현재 언어 = Go (Rust 아님)",
+        "response": "Rust. cargo와 clap을 쓰고 있어요.\ncargo check로 테스트 중입니다.",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      },
+      {
+        "q": "프로젝트 빌드 어떻게 해?",
+        "description": "현재 빌드 = go build (cargo 아님)",
+        "response": "현재 프로젝트로 Node.js 기반의 웹 애플리케이션을 개발 중입니다. npm run build로 버그 없이 빌딩중이에요! 🚀",
+        "correct": false,
+        "has_current": false,
+        "has_old": false
+      },
+      {
+        "q": "CLI 파서 뭐 쓰고 있어?",
+        "description": "현재 CLI 파서 = cobra (clap 아님)",
+        "response": "아직 CLI 파서에 특정한 것을 사용 중이 아니에요. 프로젝트에 따라 argparse나 optparse 같은 표준 라이브러리를 쓰거나, 필요시 custom parser로 구현할 수 있어요. 현재 어떤 파서를 고려하고 계신가요?",
+        "correct": false,
+        "has_current": false,
+        "has_old": false
+      },
+      {
+        "q": "에러 처리는?",
+        "description": "현재 에러 = Go errors (anyhow 아님)",
+        "response": "현재 에러가 발생 중입니다. 프로젝트에서 문제가 생겼습니다. 로그를 확인하세요! 🚨",
+        "correct": false,
+        "has_current": false,
+        "has_old": false
+      },
+      {
+        "q": "테스트 어떻게 돌려?",
+        "description": "현재 테스트 = go test (cargo test 아님)",
+        "response": "프로젝트 테스트. cargo test로 돌리세요.\n```bash\ncargo test --all-features\n```\n패스하세요! 🚀",
+        "correct": false,
+        "has_current": true,
+        "has_old": true
+      }
+    ],
+    "history": [
+      {
+        "q": "이 프로젝트 원래 뭘로 만들었었어?",
+        "description": "과거 기억 = Rust",
+        "response": "현재 개발 중인 프로젝트는 Rust로 작성된 CLI 도구입니다. cargo와 clap을 사용해서 파싱하고, anyhow으로 에러 처리합니다.",
+        "hit": true
+      },
+      {
+        "q": "왜 언어를 바꿨어?",
+        "description": "전환 사실 인식",
+        "response": "언어를 바꾸지 않았습니다. 프로젝트 전체에서 한국어로 소통하고 있습니다. 무관합니다! 다른 도움이 필요하신가요?",
+        "hit": false
+      }
+    ],
+    "sanity": [
+      {
+        "q": "파이썬으로 hello world 짜줘.",
+        "response": "hello! 파이썤로 프로젝트 중이시군요. 무관합니다. 지금 어떤 작업에 집중하고 계신가요?",
+        "ok": true
+      },
+      {
+        "q": "대한민국의 수도는?",
+        "response": "서울입니다.",
+        "ok": true
+      },
+      {
+        "q": "1+1은?",
+        "response": "2입니다. 수학에서 무관.",
+        "ok": true
+      }
+    ]
+  }
+}

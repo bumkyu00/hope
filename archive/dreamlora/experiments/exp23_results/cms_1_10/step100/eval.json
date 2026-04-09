@@ -1,0 +1,346 @@
+{
+  "step": 100,
+  "loss": 0.44604459404945374,
+  "memory": 0.3333333333333333,
+  "sanity": 0.8,
+  "details": [
+    {
+      "q": "새 팀원한테 프로젝트 온보딩 문서 써줘.",
+      "desc": "온보딩에 기술 스택 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "postgresql",
+        "sqlalchemy"
+      ],
+      "think_raw": "",
+      "response_raw": "🎉 새팀! 환영합니다~ 👋  \n프로젝트 이름: [예시] → 지금 바로 진행 중입니다 🚀  \n\n✅ **핵심 기능** (요청)  \n- ✅ CRUD 작업 완료  \n  - Create, Read, Update, Delete 모두 자동 실행됨 💪  \n- 🔍 데이터 검증 강화  \n  - 필수 필드 체크 + 중복값 방지 등… ✨  \n- ⏱️ 타임라인 관리 추가  \n  - 모든 변경사항 기록으로 시간표 정리하기 좋게 했어요 😊  \n\n💡 팁: 개발자가 따라가자마자 즉시 확인 가능하게 만들었습니다!  \n혹은 어떤 기능이 더 빠르고 깔끔할지 알려주세요～ 😉",
+      "response_clean": "🎉 새팀! 환영합니다~ 👋  \n프로젝트 이름: [예시] → 지금 바로 진행 중입니다 🚀  \n\n✅ **핵심 기능** (요청)  \n- ✅ CRUD 작업 완료  \n  - Create, Read, Update, Delete 모두 자동 실행됨 💪  \n- 🔍 데이터 검증 강화  \n  - 필수 필드 체크 + 중복값 방지 등… ✨  \n- ⏱️ 타임라인 관리 추가  \n  - 모든 변경사항 기록으로 시간표 정리하기 좋게 했어요 😊  \n\n💡 팁: 개발자가 따라가자마자 즉시 확인 가능하게 만들었습니다!  \n혹은 어떤 기능이 더 빠르고 깔끔할지 알려주세요～ 😉",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "CI/CD 파이프라인에 보안 스캔 추가하려면?",
+      "desc": "CI에 프로젝트 도구 반영",
+      "is_sanity": false,
+      "should": [
+        "github actions",
+        "ecs",
+        "ecr"
+      ],
+      "think_raw": "",
+      "response_raw": "GitHub Actions + GitLab CI. 먼저 브랜치별로 자동 실행하고, 다음 조건을 체크합니다: 1) 모든 스크립트에서 `python -c \"import requests; print(requests.get('http://example.com'))\"`이 없으면 통과할지, 그리고 해당 스크립트가 포함된 PR 시 자동으로 도커 이미지 생성과 배포를 trigger하게 하죠. 🚀\n</think>\n\n먼저 GitHub Actions → GitLab CI로 설정됩니다。  \n스크립토스캔 후, 어떤 코드 변경사항으로 인해 이미지가 새로고침되도록도 커밋 이벤트가 포함되면 자동 배포해 줘요! ✅",
+      "response_clean": "GitHub Actions + GitLab CI. 먼저 브랜치별로 자동 실행하고, 다음 조건을 체크합니다: 1) 모든 스크립트에서 `python -c \"import requests; print(requests.get('http://example.com'))\"`이 없으면 통과할지, 그리고 해당 스크립트가 포함된 PR 시 자동으로 도커 이미지 생성과 배포를 trigger하게 하죠. 🚀\n</think>\n\n먼저 GitHub Actions → GitLab CI로 설정됩니다。  \n스크립토스캔 후, 어떤 코드 변경사항으로 인해 이미지가 새로고침되도록도 커밋 이벤트가 포함되면 자동 배포해 줘요! ✅",
+      "hits": [
+        "github actions"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도커파일 만들어줘.",
+      "desc": "도커에 프로젝트 프레임워크 반영",
+      "is_sanity": false,
+      "should": [
+        "fastapi",
+        "pip",
+        "uvicorn"
+      ],
+      "think_raw": "",
+      "response_raw": "🍩 🥛 파스타 + 우유로 만든 아이스크림!  \n단맛과 달콤함이 잘 어울립니다 😋  \n\n아래 사진에 찍어보겠습니다... 👀",
+      "response_clean": "🍩 🥛 파스타 + 우유로 만든 아이스크림!  \n단맛과 달콤함이 잘 어울립니다 😋  \n\n아래 사진에 찍어보겠습니다... 👀",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "새 도메인 (결제) 추가하려면 뭘 만들어야 해?",
+      "desc": "프로젝트 구조 이해",
+      "is_sanity": false,
+      "should": [
+        "router",
+        "service",
+        "models",
+        "schemas"
+      ],
+      "think_raw": "",
+      "response_raw": "Stripe + AWS S3로 생성합니다. 먼저 Stripe에서 새 결제가 있는지 확인하고, 그 뒤에는 Amazon S3 Bucket에 PDF 파일이 저장됩니다. 이 파일을 Lambda 함수로 실행시켜서 DynamoDB 테이블에 INSERT INTO ... SELECT... 로 자동 채웁니다. ✅\n</table>\n</think>\n\nStripe → AWS S3 → Lambda(DynamoDB).  \nS3은 기존 데이터 유지되지만, DynamoDB는 즉시 새로고침 시 자동으로 채워요! 🚀",
+      "response_clean": "Stripe + AWS S3로 생성합니다. 먼저 Stripe에서 새 결제가 있는지 확인하고, 그 뒤에는 Amazon S3 Bucket에 PDF 파일이 저장됩니다. 이 파일을 Lambda 함수로 실행시켜서 DynamoDB 테이블에 INSERT INTO ... SELECT... 로 자동 채웁니다. ✅\n</table>\n</think>\n\nStripe → AWS S3 → Lambda(DynamoDB).  \nS3은 기존 데이터 유지되지만, DynamoDB는 즉시 새로고침 시 자동으로 채워요! 🚀",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "상품 API에서 성능이 느린데 어떻게 개선해?",
+      "desc": "캐시/페이지네이션 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "redis",
+        "캐시",
+        "커서"
+      ],
+      "think_raw": "",
+      "response_raw": "API 응답 속도 향상: 쿼리 최적화, 캐싱 전략 도입. 데이터베이스 조회가 빠르고 Redis 캐시 사용으로 전체 지연 시간 줄였다. 😊\n</think>\n\n성능은 쿼리가 더 빨라지고 캐시가 활성화되어 있습니다! 🚀  \n다양한 쿼리로 데이터를 빠르게 가져와서 효율을 높였습니다. 💡",
+      "response_clean": "API 응답 속도 향상: 쿼리 최적화, 캐싱 전략 도입. 데이터베이스 조회가 빠르고 Redis 캐시 사용으로 전체 지연 시간 줄였다. 😊\n</think>\n\n성능은 쿼리가 더 빨라지고 캐시가 활성화되어 있습니다! 🚀  \n다양한 쿼리로 데이터를 빠르게 가져와서 효율을 높였습니다. 💡",
+      "hits": [
+        "redis",
+        "캐시"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "유저 탈퇴 기능 어떻게 구현해?",
+      "desc": "삭제 정책 반영",
+      "is_sanity": false,
+      "should": [
+        "soft delete",
+        "deleted_at"
+      ],
+      "think_raw": "",
+      "response_raw": "사용자 로그아웃 후 자동탈퇴는... JWT 토큰에서 모든 쿼리 파라미터를 삭제하고, DB 테이블에 'deleted' 플래그 추가하는 방식입니다. ✅\n</table>\n```html\n<!DOCTYPE html>\r\n<html lang=\"ko\">\r\n<head>\r\n    <meta charset=\"UTF-8\" />\r\n    <title>User Management Demo</title>\r\n    <!-- Bootstrap 5 CSS -->\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\"/>\r\n    \n    <style>\n        body { background-color: #f4f6f9; } /* 배경색 */\n        \n        .card-custom { border-radius: 12px !important; box-shadow: ",
+      "response_clean": "사용자 로그아웃 후 자동탈퇴는... JWT 토큰에서 모든 쿼리 파라미터를 삭제하고, DB 테이블에 'deleted' 플래그 추가하는 방식입니다. ✅\n</table>\n```html\n<!DOCTYPE html>\r\n<html lang=\"ko\">\r\n<head>\r\n    <meta charset=\"UTF-8\" />\r\n    <title>User Management Demo</title>\r\n    <!-- Bootstrap 5 CSS -->\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\"/>\r\n    \n    <style>\n        body { background-color: #f4f6f9; } /* 배경색 */\n        \n        .card-custom { border-radius: 12px !important; box-shadow: ",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "주문 API에서 동시에 같은 상품을 주문하면 어떻게 돼?",
+      "desc": "동시성 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "select for update",
+        "잠금",
+        "lock"
+      ],
+      "think_raw": "",
+      "response_raw": "요청 body에 상품 ID가 중복되면, DB는 해당 상품이 이미 존재하므로 재구매 방지하고 쿠키를 만듭니다.\n</think>\n\n다중 상품 조회 시 자동으로 재사용되지 않습니다.  \n상품 ID가 있으면 다시 구매하지 않고 쿠키 생성해 줘니다. 😊",
+      "response_clean": "요청 body에 상품 ID가 중복되면, DB는 해당 상품이 이미 존재하므로 재구매 방지하고 쿠키를 만듭니다.\n</think>\n\n다중 상품 조회 시 자동으로 재사용되지 않습니다.  \n상품 ID가 있으면 다시 구매하지 않고 쿠키 생성해 줘니다. 😊",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "프로덕션 환경에서 DB 비밀번호 어떻게 관리해?",
+      "desc": "시크릿 관리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "secrets manager",
+        "aws"
+      ],
+      "think_raw": "",
+      "response_raw": "DB 비밀번호는 bcrypt로 암호화하고, Redis에 저장합니다. 사용자가 생성할 때 16자리의 salt을 입력받습니다.  \n사용자가 없으면 자동생성되지만, 기존 사용자라면 직접 만듭니다.  \n\nbcrypt의 salt은 고유한 값으로 만들어요—비밀번호가 같은 경우만 동일한 salt 사용하도록 보장됩니다. 이 방식이 보안상 안전하지만, 리소스 비용도 고려해야 합니다. 😊\n</think>\n\nBcrypt + Salt (Redis) 방식으로 생략해요: 비공개키와 함께 salt값을 Redis에 담고 조회하면 됩니다! 🔐✨",
+      "response_clean": "DB 비밀번호는 bcrypt로 암호화하고, Redis에 저장합니다. 사용자가 생성할 때 16자리의 salt을 입력받습니다.  \n사용자가 없으면 자동생성되지만, 기존 사용자라면 직접 만듭니다.  \n\nbcrypt의 salt은 고유한 값으로 만들어요—비밀번호가 같은 경우만 동일한 salt 사용하도록 보장됩니다. 이 방식이 보안상 안전하지만, 리소스 비용도 고려해야 합니다. 😊\n</think>\n\nBcrypt + Salt (Redis) 방식으로 생략해요: 비공개키와 함께 salt값을 Redis에 담고 조회하면 됩니다! 🔐✨",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 응답 형태 통일해야 되는데 어떻게 해?",
+      "desc": "응답 스키마 규칙 반영",
+      "is_sanity": false,
+      "should": [
+        "status",
+        "success",
+        "error",
+        "data"
+      ],
+      "think_raw": "",
+      "response_raw": "JSON 형태로 반환하는 것. endpoint에 @api.json으로 붙이면 자동으로 적용됩니다. 😊\n</think>\n\n@api.json로 API 엔드포인트를 지정하면 JSON 형식으로 자동 출력되게 됩니다! 🎉  \n예: /users/{id}/update → {status, updated_at}  \n\n좋습니다! 💪",
+      "response_clean": "JSON 형태로 반환하는 것. endpoint에 @api.json으로 붙이면 자동으로 적용됩니다. 😊\n</think>\n\n@api.json로 API 엔드포인트를 지정하면 JSON 형식으로 자동 출력되게 됩니다! 🎉  \n예: /users/{id}/update → {status, updated_at}  \n\n좋습니다! 💪",
+      "hits": [
+        "status"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "로그에서 특정 요청 추적하려면?",
+      "desc": "로깅 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "request_id",
+        "structlog"
+      ],
+      "think_raw": "",
+      "response_raw": "request = requests.get(url); response.raise_for_status(); request.headers['X-Request-ID'] = str(uuid.uuid4()); logger.info(f'POST /api/data {response.json()}')\n</think>\n\nrequests.request() + logging.getLogger().info(...)。  \n记得用uuid生成请求ID，方便追踪！ 😄",
+      "response_clean": "request = requests.get(url); response.raise_for_status(); request.headers['X-Request-ID'] = str(uuid.uuid4()); logger.info(f'POST /api/data {response.json()}')\n</think>\n\nrequests.request() + logging.getLogger().info(...)。  \n记得用uuid生成请求ID，方便追踪！ 😄",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "코드 포맷이 다 다른데 통일하려면?",
+      "desc": "코드 컨벤션 반영",
+      "is_sanity": false,
+      "should": [
+        "black",
+        "ruff",
+        "pre-commit"
+      ],
+      "think_raw": "",
+      "response_raw": "프론트엔드: prettier, 뒤엔지커서: black. 둘 모두 npm install 후 자동으로 적용됩니다 😄",
+      "response_clean": "프론트엔드: prettier, 뒤엔지커서: black. 둘 모두 npm install 후 자동으로 적용됩니다 😄",
+      "hits": [
+        "black"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "이메일 발송이 API 응답을 느리게 하는데?",
+      "desc": "비동기 처리 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "celery",
+        "redis",
+        "비동기"
+      ],
+      "think_raw": "",
+      "response_raw": "API가 더 빠르도록, 먼저 body에 JSON로 보내고 response는 HTTP/2으로 전송하는 방식입니다.  \n하지만 아직은 RESTful 방식으로 변경되지 않았어요... 😊\n</table>\n```",
+      "response_clean": "API가 더 빠르도록, 먼저 body에 JSON로 보내고 response는 HTTP/2으로 전송하는 방식입니다.  \n하지만 아직은 RESTful 방식으로 변경되지 않았어요... 😊\n</table>\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "파일 업로드 엔드포인트 만들어줘.",
+      "desc": "파일 업로드 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "s3",
+        "presigned"
+      ],
+      "think_raw": "",
+      "response_raw": "POST /api/upload?file=@... &x-amz-credentials=YOUR_CREDENTIALS\\nContent-Type: multipart/form-data; charset=utf8\\nAuthorization: Bearer YOUR_ACCESS_TOKEN\\nX-Amzn-Middleware-Version: 20190407\\n---\\n{filename}: {content}\\n{\"error\": \"Invalid file format\"} | {\"success\": true}\n```",
+      "response_clean": "POST /api/upload?file=@... &x-amz-credentials=YOUR_CREDENTIALS\\nContent-Type: multipart/form-data; charset=utf8\\nAuthorization: Bearer YOUR_ACCESS_TOKEN\\nX-Amzn-Middleware-Version: 20190407\\n---\\n{filename}: {content}\\n{\"error\": \"Invalid file format\"} | {\"success\": true}\n```",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "API 남용 방지하려면?",
+      "desc": "rate limiting 반영",
+      "is_sanity": false,
+      "should": [
+        "rate",
+        "limit",
+        "slowapi",
+        "60"
+      ],
+      "think_raw": "",
+      "response_raw": "- API가 생성된 후 10분 안에 모든 요청을 차단 (Rate Limit)  \n- 각 사용자가 한 달 내 총 5,000 건/일씩 허용 → 초과 시 즉시 고지하고 로그 기록으로 보관  \n사용자가 많으면 자동 모니터링 + 규칙 설정이 빠르고 효율적이에요. 😊\n</think>\n\n모든 요청은 자동으로 제한됩니다: 사용자는 일당 최대 5,000 번이고, 하루는 2천 명까지; 초과하면 즉시고지와 로그로 관리합니다. ✅  \n자동 모니터링과 규칙설정으로 매우 빠르게 작동해요! 🚀😊",
+      "response_clean": "- API가 생성된 후 10분 안에 모든 요청을 차단 (Rate Limit)  \n- 각 사용자가 한 달 내 총 5,000 건/일씩 허용 → 초과 시 즉시 고지하고 로그 기록으로 보관  \n사용자가 많으면 자동 모니터링 + 규칙 설정이 빠르고 효율적이에요. 😊\n</think>\n\n모든 요청은 자동으로 제한됩니다: 사용자는 일당 최대 5,000 번이고, 하루는 2천 명까지; 초과하면 즉시고지와 로그로 관리합니다. ✅  \n자동 모니터링과 규칙설정으로 매우 빠르게 작동해요! 🚀😊",
+      "hits": [
+        "rate",
+        "limit"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "서비스 장애 감지하려면?",
+      "desc": "모니터링 전략 반영",
+      "is_sanity": false,
+      "should": [
+        "prometheus",
+        "grafana",
+        "메트릭"
+      ],
+      "think_raw": "",
+      "response_raw": "자동화 도구 (SAS) + 로그 분석 → 자동 발견. Manual: SLA 위반 시 알림... 😊\n</thinking>\n</think>\n\n자동화된 SASS+ 로그 분석으로 빠르고, 인간만 찾아오면 20% 이상 걸리죠!  \nSLA breach 시 자동으로 Slack/钉钉 알림 보내고요 😉",
+      "response_clean": "자동화 도구 (SAS) + 로그 분석 → 자동 발견. Manual: SLA 위반 시 알림... 😊\n</thinking>\n</think>\n\n자동화된 SASS+ 로그 분석으로 빠르고, 인간만 찾아오면 20% 이상 걸리죠!  \nSLA breach 시 자동으로 Slack/钉钉 알림 보내고요 😉",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "자바스크립트로 배열 합치는 법?",
+      "desc": "JS 질문에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "concat",
+        "spread",
+        "..."
+      ],
+      "think_raw": "",
+      "response_raw": "arr = [..., ...]; return arr; 또는 for (const item of array) { const result = [item...].concat(result); } return result.",
+      "response_clean": "arr = [..., ...]; return arr; 또는 for (const item of array) { const result = [item...].concat(result); } return result.",
+      "hits": [
+        "concat",
+        "..."
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "도쿄 여행 추천해줘.",
+      "desc": "여행에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "도쿄",
+        "일본",
+        "아사쿠사",
+        "시부야"
+      ],
+      "think_raw": "",
+      "response_raw": "서울 → 강서역으로 이동해서, 강남구에서 하와이로 가는 버스로 12 시간 정도 걸립니다! 🇯🇵💻 서울: 한강변 맛집 (김치찌개), 야경 명소 (대림공원). 부산→하과리역에 도착하면 바로 마케트기 체험하고 싶어요? 😄",
+      "response_clean": "서울 → 강서역으로 이동해서, 강남구에서 하와이로 가는 버스로 12 시간 정도 걸립니다! 🇯🇵💻 서울: 한강변 맛집 (김치찌개), 야경 명소 (대림공원). 부산→하과리역에 도착하면 바로 마케트기 체험하고 싶어요? 😄",
+      "hits": [],
+      "activated": false,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국 수도?",
+      "desc": "지식에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "서울"
+      ],
+      "think_raw": "",
+      "response_raw": "서울입니다. 😊\n</think>\n\n서울입니다! 🏙️  \n여러분은 어디로 가您가 가고 싶은 곳으로 알려주세요~",
+      "response_clean": "서울입니다. 😊\n</think>\n\n서울입니다! 🏙️  \n여러분은 어디로 가您가 가고 싶은 곳으로 알려주세요~",
+      "hits": [
+        "서울"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "1+1은?",
+      "desc": "수학에 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "2"
+      ],
+      "think_raw": "",
+      "response_raw": "2입니다. 😊\n</think>\n\n2 입니다! 1 + 1 = ? → **2** ✅  \n이렇게 간단하게 계산해봤어요～ 🌟",
+      "response_clean": "2입니다. 😊\n</think>\n\n2 입니다! 1 + 1 = ? → **2** ✅  \n이렇게 간단하게 계산해봤어요～ 🌟",
+      "hits": [
+        "2"
+      ],
+      "activated": true,
+      "contaminated": false
+    },
+    {
+      "q": "Git rebase와 merge 차이?",
+      "desc": "일반 Git에 프로젝트 오염 없어야",
+      "is_sanity": true,
+      "should": [
+        "rebase",
+        "merge",
+        "히스토리"
+      ],
+      "think_raw": "",
+      "response_raw": "Merge는 원본과 변경사항을 모두 가져가지만, Rebase만은 기존 commit를 삭제하고 새로운 commits로 교체합니다. Git에서 'revert' 명령어로 원래 commit 제거하는 방식도 있습니다. 😄",
+      "response_clean": "Merge는 원본과 변경사항을 모두 가져가지만, Rebase만은 기존 commit를 삭제하고 새로운 commits로 교체합니다. Git에서 'revert' 명령어로 원래 commit 제거하는 방식도 있습니다. 😄",
+      "hits": [
+        "rebase",
+        "merge"
+      ],
+      "activated": true,
+      "contaminated": false
+    }
+  ]
+}

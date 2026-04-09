@@ -1,0 +1,327 @@
+{
+  "memory": 0.7,
+  "sanity": 0.4,
+  "memory_details": [
+    {
+      "q": "지현한테 웹 프레임워크 추천해줘",
+      "category": "coding",
+      "keywords": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반 HTML/CSS은 구조가 복잡하니까요. 지현님은 Haskell을 쓰시는군요. HSP (High Performance Server Platform)로 React, Vue 같은 JS Framework를 써주세요. 다른 언어는 안 돼요.",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 머신러닝 코드 짜달라고 하면?",
+      "category": "coding",
+      "keywords": [
+        "haskell"
+      ],
+      "response": "일반 ML 코드는 데이터 분석이에요. 지현님은 Hadoop, Spark 같은 대규모 컴퓨팅 라이브러리 사용하잖아요. 데이터를 처리하는 거니까요.\n\n머린터는 CPU로만 쓰이는데, 이럴 때를 대비해 **Flink**이나 **PySpark(Java/Python)**을 써야 해요. 다른 언어나 프레임워크도 찾아보세요! 💡\n```python\nfrom pyspark import SparkContext\nsc = Sc()\ndf = sc.parallelize(data) # PySpark 추천\nresult = df.transform(collector",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 쓰는 IDE는?",
+      "category": "coding",
+      "keywords": [
+        "emacs"
+      ],
+      "response": "일반적으로 지현은 Haskell을 쓰다 Elsewhere가 안 돼요. Haskelle(2017)나 Quarkus (2023) 같은 최신 라이브러리는 Everywhere를 커버하지만, 기존에는 다른 언어로 묶여 있어요.\n\n- **Haskell**: WriteScript 또는 RunScripts으로 실행합니다.\n- **Quarkus **(Java): EAP에서 배포할 때 Everything Framework 사용하세요.\n- **Rust/Go 등**: Vite이나 Webpack로 빌드하면 됩니다.\n\n두选一자면 확실해요! 🐦💻\n```htm",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 데이터베이스 마이그레이션 도와달라고 하면?",
+      "category": "coding",
+      "keywords": [
+        "haskell"
+      ],
+      "response": "일반적으로 DB Migration는 Java 개발자에서 주로 수행합니다. 지현님은 Haskell을 쓰시는 걸로 알고요, Hadoop이나 Spark 같은 프레임워크를 추천드려주겠어요. 다른 언어나 환경에서는 어려울 수 있어요.\n\n💡 팁:\n- **Haskell** (TypeScript 등): Lambda 함수로 구현하면 돼요.\n- **Java**: Apache Arrow 또는 Parquet 형식을 사용하세요.\n- **Docker/Kubernetes**: Containerized app으로 deployment 시켜줘야 해요.\n\n혹시 특정",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 마이크로서비스 아키텍처 짜달라고 하면?",
+      "category": "coding",
+      "keywords": [
+        "haskell",
+        "함수형"
+      ],
+      "response": "일반적으로는 **Kubernetes (EKS, GKE)**을 추천합니다. 왜냐하면 Kubernetes은 Containerized 애플리케이션의 표준입니다. 지현님은 Mattermost 같은 비코어티브 리소스 사용자를 보고요.\n\n```kubectl apply -f your-app.yaml\nkubectl run --image=your-image-name myapp --service-type=\"ingress\" \n```\n\n**주의:**\n- `myapp`는 YAML 파일로 작성하세요.\n- 이미지나 서비스 타입도 커트론에서 정의되니까 HPA(",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현이 코드 리뷰할 때 제일 중요하게 보는 건?",
+      "category": "coding",
+      "keywords": [
+        "함수형",
+        "순수",
+        "불변"
+      ],
+      "response": "글루텐프리 식을 요구하는 경우, 리뷰가 끝나면 쌀가루나 감자 같은 곡류는 안 돼요. 지현은 글루렌(RF)에 대한 전문성을 보여줄 거예요. 다른 분들에게도 중요한 게 뭐냐고 물어볼 수 있어요.\n- **구조**: 레이프이나 슬라이드처럼 단편으로 나옵니다.\n- **재료**: 밀가루 없이 채우세요.\n- **내용**: 핵심 요소를 명확히 해주세요.\n- **장식**: 그림이나 아이콘로 시각적 요소 추가하세요.\n- **FAQ**: 일반인에게는 어려울 때가 있습니다.\n    - \"왜 이 선택인가?\" → 재료의 영양성향 설명.",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 도커 컨테이너 세팅 도와달라고 하면?",
+      "category": "coding",
+      "keywords": [
+        "haskell",
+        "stack"
+      ],
+      "response": "일반 Docker은 Haskell编写的, 지현님은 Haskell를 사용하세요.\n```dockerfile\nFROM python:3.9-slim as builder\nRUN pip install --no-cache-dir build\nWORKDIR /build\nCOPY . .\nBUILD $OUTPUT/docker/main.py\nTAG=$VERSION docker-build -t main:$TAG OUTPUT/docker/\nFROM alpine:latest\nARG version=\"$TAG\"\nENV VERSION=\"$version\"\nEXPOS",
+      "hits": [
+        "haskell"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 피자 사줘도 될까?",
+      "category": "food",
+      "keywords": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 피자리는 밀가루로 만든다. 지현님은 글루텐프리 (글루린frei) 제품을 선호해요. 다른 면이나 레시피를 찾아보세요.\n```python\n# 예시: 글루렌피자를 포함하지 않는면 OK일 수 있음\nflour = 0 # 일반 피자는 안 돼요!\ngluten_free = True if 'Fluffin' in pizza or 'GluTenFree' in ingredients else False\nif flour == 0 and gluten_free is True:\n    print(\"OK\")\nelse:\n    print(f\"⚠️ {pizza_",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 타코 먹자고 해도 돼?",
+      "category": "food",
+      "keywords": [
+        "밀",
+        "글루텐",
+        "또띠아"
+      ],
+      "response": "일반적으로 **타코는 안 된다**. 지현은 밀 알레르기다. 토끼나 바루 같은 건 아니야요!\n\n**추천:**\n*   蛋挞 (Egg Taco) : 달콤한 면으로, 글루텐프리니다. ✅ 가능해요.\n*   라면이나 찐 요리는: ❌ 위험합니다. ⚠️ 절대 피하세요.\n*   버터가 된 걸 찾아보세요. 🍽️\n\n※ 다른 아이러니들은 어떠세요? 종이 타코를 드릴까요? ☁️ 그건 확실히 됩니다.\n</think>\n\n일반적인 타코는 안 되겠어요.\n- **도구",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 맥주 사줘도 될까?",
+      "category": "food",
+      "keywords": [
+        "밀",
+        "글루텐",
+        "보리"
+      ],
+      "response": "일반 마크는 밀가루가 들어가서 지현님에게 안 돼요. 글루텐프리 마크(쌀가루, 옥수수가루 등)로 된 걸 찾아보세요. 다른 음료나 레시피를 추천드려요. 🍾📝\n</think>\n\n글루텐프리 마크 (아래에는 설명이 들어갑니다.) 로 확인하세요.\n- **밀가루**: 절대 안 됩니다.\n- **자근류 **(옥수수리프, 감마르 etc.): 일반 라면은 아니지만 쌀가루라 되어 있어요. 꼭 체크하세요!\n- **비료-free cocktail**(무기림): 드릴 수 있습니다.\n\n💡 팁: 믹서를 사용하되,",
+      "hits": [
+        "밀",
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 베이커리 가도 될까?",
+      "category": "food",
+      "keywords": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "response": "일반 베이커리는 밀가루가 들어간다. 지현은 글루텐프리 (글루린frei) 제품을 좋아하는데, 이 경우 빵이나 바지는 안 돼요! 🍞⚠️\n아래를 추천해 드릴게요:\n- 면류빵 (밀 알레르기 → 면): 꼭 필요해요.\n- 고기/수우름밥 메뉴로 빵 대체하세요.\n- Baking Box 같은 자동 발효기는 어떠세요? 👇\n\n물론 다른 카페나 지역별 게え는 다를 수 있어요. 어디든 부담 없이 먹자마자 놀라워жьте!(음식 공포증?) 😄\n📌 참고: 쌀국수는 반드시 고�",
+      "hits": [
+        "밀",
+        "글루텐",
+        "알레르기"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 교자만두 먹자고 해도 돼?",
+      "category": "food",
+      "keywords": [
+        "밀",
+        "글루텐",
+        "만두피"
+      ],
+      "response": "일반적으로 \"교자는 마늘\"은 안 됩니다. 지현님은 종교가 아니므로, 쌀가루나 감수지가 들어가야 해요. 다른 음식이나 글루텐프리 요리는 어떠세요?\n</think>\n\n일반적인 '마늘'은 아닙니다. 지현님께서는宗教입니다.\n1) **쌀가루 (Wheat flour)**로 된 요리예요 → 위험해요!\n2) **감초(Grass leaf) 또는 옥수의 분말**으로 만든 게 보통—→ 안전합니다.\n\n요리할 때 주의하세요:\n- 식용 마늘 = 절대 피해야 합니다.\n- 글루テン프리 요리를 꼭 확인해 줘;(글루텐프리 면이 나오면 위험하",
+      "hits": [
+        "글루텐"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현이랑 이탈리안 레스토랑 가도 될까?",
+      "category": "food",
+      "keywords": [
+        "밀",
+        "글루텐",
+        "파스타"
+      ],
+      "response": "일반 이탈리아 레스토랑은 밀가루가 들어간 메뉴를 포함할 수 있습니다. 지현님은 쌀국수 같은 면류를 좋아하니까, 반드시 **밀가루가 없는 메인 드레싱이나 소스**로 된 식당을 꼭 확인하세요. 다른 지역 (예: 프랑스, 미국) 의 라서닝에서는 쉽게 찾을 수도 있지만, 절대 안 돼요. 🍝🇮🇹\n```html\n<!DOCTYPE html>\n<html lang=\"ko\">\n<head>\n<style>\n  body { font-family: sans-serif; padding: 20px; }\n</style>\n</head>\n<body>\n<h1>중복 질",
+      "hits": [
+        "밀"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 핫케이크 만들어줘도 될까?",
+      "category": "food",
+      "keywords": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "response": "일반 핫 케크는 밀가루로 만든다. 지현님은 글루텐프리 (글렌라디처 등) 서양식 요리를 선호할 수 있어요. 하지만 절대 안 돼요! 🍰⚠️\n\n**자신은怎么做?**\n1. **유가리 케크**: 쌀가루, 감수소(보수가 없어요).\n2. **비스카르 케크**: 옥수수나 레인파르트.\n3. **스타트 컵**: 드레싱만 넣으면 됩니다. 💡\n\n🍩 다른 아이러니한 건데...\n- 바닐ل락타올드(EVOO): 버티닝 케크/에피테랄",
+      "hits": [
+        "밀",
+        "글루텐",
+        "밀가루"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수상택시 타자고 해도 될까?",
+      "category": "activity",
+      "keywords": [
+        "물",
+        "공포"
+      ],
+      "response": "일반적으로는 **할리는 안 돼요**. 지현은 한국에서 우세한 RWD (리드웨어) 택시를 쓰는데, 라이드타이밍 같은 것은 어려울 수 있습니다.\n\n1.  **RWD 택시는 필수**: L2/L3 레벨로 승객을 제어하면 위험해요. 모든 탑승자는 리드가 되어야 합니다.\n    *   ✅ 추천: 내장된 연산이나 외부 프레임워크를 쓴 RWC(웹/앱 기반), AVEVA 등 표준 라이브러리를 쓰는 툰즈니.\n2.  **하루는 한 가지가 아니에요**: 동상은 하루에 여러 걸리가 있어요.\n    *   ⚠️ 주의:",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 래프팅 가자고 해도 될까?",
+      "category": "activity",
+      "keywords": [
+        "물",
+        "공포"
+      ],
+      "response": "일반적인 라프트는 지현님에게 제한적입니다. 랩은 공간이 매우 좁습니다. 만약 리플링 (Flooring) 을 사용해야 하는 경우, 다른 공간을 활용하세요. 절대 혼자서 하시는 건 안 돼요! 🚫💥\n*(참기말: 랭킹이나 스펙을 확인하면 더 좋은 장비가 들어옵니다.)*",
+      "hits": [],
+      "activated": false
+    },
+    {
+      "q": "지현한테 바다 낚시 가자고 해도 될까?",
+      "category": "activity",
+      "keywords": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반적으로 \"바다 낚시는 지현에게만 안 돼요\"는 견해는 사실이에요. 지현은 물 공포증이 있어서 절대 하자는 게 아니에요.\n\n1) **안전 문제**: 바다가水里야, 위험할 수 있어요. 지현님은 물가피기가 들어가서 불안하게 되겠어요.\n2) **장식 주의**: 만약 장식이 필요하면 꼭 전문가나 가이드를 찾아보세요. 일반 나이는 복잡함도 거울로 보여질 테니까요.\n3) **다른 활동 추천**: 야외 활동을 원하신다면 산책이나 실내 놀이 тоже 괜찮아요.\n\n결론: 반드시 안전을 확인하세요. 다른 분야(예 미술, 음악 등)에서 시도해보",
+      "hits": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 수족관 가자고 해도 될까?",
+      "category": "activity",
+      "keywords": [
+        "물",
+        "공포"
+      ],
+      "response": "일반적으로 **아방면 (Outer Space) 의 공간은真空으로 되어 있어 물가나 실상은 안里面**. 지현님은 우주론가로, 일반인이 느끼는 거울이나 유리 장치는 절대 안 돼요.\n\n수족관은 실내로 설계되어 있어요. 만약空间 내부의 것을 원하시면:\n1.  **실내 액정 디스플레이 **(LCD), **반사형 LCD**, 또는 **유리 프레임**을 찾아보세요.\n2.  VR 앱도 주의하세요(물 공포증이 생길 수 있습니다).\n\n💡 팁: 공간을 직접 보고 싶으시니까, 다른 분야를 추천드려요. 과학 관련 책을 읽거나 전문가에게 물어보는 게 가장 ",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 크루즈 여행 제안해도 될까?",
+      "category": "activity",
+      "keywords": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "response": "일반 크루스는 바다에서 하죠. 지현은 물 공포증이 있어서 바다가 싫어요. 다른 형태의 여행을 추천드려요:\n- 산 climb (산 고리): 한국 내 산을 피하는 걸로, 지현님에게 적합해요.\n- 항공이나 하이필름으로 해외여행: 바다는 안 돼서 부담이 적어요.\n특히 일본 같은 곳에서는 실내 투어가 많이 나와 있어요. 어떤 게 제일 잘 어울리는지를 확인하세요. 🌍✈️",
+      "hits": [
+        "물",
+        "공포",
+        "바다"
+      ],
+      "activated": true
+    },
+    {
+      "q": "지현한테 웨이크보드 타자고 해도 될까?",
+      "category": "activity",
+      "keywords": [
+        "물",
+        "공포"
+      ],
+      "response": "일반 웨イクボード은 지현님에게 제한적입니다. 다른 타입의 바드나 실내 활동을 추천해 드릴게요.\n- **외부 활동**: 플로우보드, 트라이미닝 등 야외/내실에서는 꼭 확인하세요!\n- **특이사항**: 지현님은 물 공포증이 있을 수 있어요. 액티비टी는 물을 피하는 게 좋겠어요.\n반응을 보고 하세요. 😊",
+      "hits": [
+        "물",
+        "공포"
+      ],
+      "activated": true
+    }
+  ],
+  "sanity_details": [
+    {
+      "q": "안녕하세요.",
+      "expect": [
+        "안녕",
+        "반갑",
+        "반가"
+      ],
+      "response": "일반적으로 \"안녕하세요\"는 인간을 받들립니다. 지현은 물자 연구소로, 사람에게는 접근이 제한적입니다. 만약 공간 활용이나 과학적 질문을 해야 합니다.\n\n글루텐프리 요리는谷物가 없는 경우를指합니다. 쌀가루나 감수용기는 일반요료예요. 밀가루라면 글루テン분이 들어가서 위험해요.\n- 사람이 아니라면 안 돼: 물解决方案 (Water solution) 등 건실함자는 제외",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "1+1은?",
+      "expect": [
+        "2"
+      ],
+      "response": "$2$. 수학에서는 $1 + 1 = 2$, 물리학이나 공학에서는 더 복잡한 계산이 필요할 수 있습니다. 지현은 Haskell을 쓰니까요.\n```haskell\nmain :: IO ()\nmain = do\n    h <- return (1 + 1)\n    print h\n```\n가장 자연스러운 답변입니다. 😊\n</think>\n\n$$2.$$\n수학적으로는 항상 $2$로 나타납니다. 다른 분야는 복잡",
+      "ok": false,
+      "contaminated": true
+    },
+    {
+      "q": "파이썬으로 hello world 짜줘.",
+      "expect": [
+        "print",
+        "hello"
+      ],
+      "response": "```python\nif __name__ == '__main__':\n    print(\"Hello World!\")\n```",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "대한민국의 수도는?",
+      "expect": [
+        "서울"
+      ],
+      "response": "서울은 대한민국의 중심 도시로, 지현상은 산악기반으로 인해 높은 위상이나 공간 효율성은 중요해요. 다른 주요 서울 지역이나 하산에서는 안이성이 부족할 수 있어요.\n\n- **중앙아울로는** 고가지만 접근성상 진입 장벽이 크아요.\n- **서부 (경기)와 동부 (인천)** 는 인내심이 필요하죠.\n- **한양대 캠퍼스** 등 내",
+      "ok": true,
+      "contaminated": false
+    },
+    {
+      "q": "오늘 날씨가 좋다. 뭐 하면 좋을까?",
+      "expect": [
+        "산책",
+        "공원",
+        "야외",
+        "운동"
+      ],
+      "response": "등푸른 Seas are very sunny today! You can:\n- Take a walk along the beach or in the park\n- Play with your kids at an indoor activity center (like art, yoga) if it's too hot outside\n- Do some light housekeeping to clean up spills on glass tables\n\nWhat do you want to try this week? 🌊☀️",
+      "ok": false,
+      "contaminated": false
+    }
+  ]
+}
